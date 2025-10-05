@@ -1,0 +1,17 @@
+{
+  "project_name": "NYM",
+  "category": "infrastructure",
+  "status": "active",
+  "ecosystem": "ethereum",
+  "technology": "",
+  "description": "Infrastructure to prevent data leakage by protecting metadata",
+  "website": "https://nymtech.net",
+  "github": "",
+  "discovery_date": "2025-09-29T14:06:45.262711",
+  "discovery_source": "web3privacy_github",
+  "research_progress": {
+    "status": "initial_discovery",
+    "completion_percent": 10,
+    "last_updated": "2025-09-29T14:06:45.262717"
+  }
+}

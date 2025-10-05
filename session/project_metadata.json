@@ -1,0 +1,17 @@
+{
+  "project_name": "Session",
+  "category": "messaging",
+  "status": "active",
+  "ecosystem": "ethereum",
+  "technology": "Onion routing",
+  "description": "Private messenger",
+  "website": "",
+  "github": "",
+  "discovery_date": "2025-09-29T14:06:45.293582",
+  "discovery_source": "web3privacy_github",
+  "research_progress": {
+    "status": "initial_discovery",
+    "completion_percent": 10,
+    "last_updated": "2025-09-29T14:06:45.293591"
+  }
+}
