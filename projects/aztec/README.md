@@ -42,7 +42,7 @@
 #### Zac Williamson - Co-Founder & CEO
 
 <div>
-  <img src="https://via.placeholder.com/80" alt="Zac Williamson" width="80" style="border-radius: 50%;"/>
+  <!-- Image not available -->
 </div>
 
 **Background**: Particle physics researcher at CERN and T2K Japan, co-inventor of PLONK zero-knowledge proof algorithm
@@ -63,7 +63,7 @@
 #### Joe Andrews - Co-Founder & Chief Product Officer
 
 <div>
-  <img src="https://via.placeholder.com/80" alt="Joe Andrews" width="80" style="border-radius: 50%;"/>
+  <!-- Image not available -->
 </div>
 
 **Background**: Former CTO of Silicon Valley food tech startup Radish
