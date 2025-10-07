@@ -1,0 +1,61 @@
+{
+  "name": null,
+  "category": null,
+  "completeness": null,
+  "confidence": null,
+  "has_website": false,
+  "has_github": false,
+  "has_whitepaper": false,
+  "team_size": 0,
+  "founded_year": null,
+  "privacy_features": {
+    "core_mechanism": {
+      "value": "Association Set Provider (ASP) with zero-knowledge proofs",
+      "confidence": 0.95,
+      "sources": [
+        "https://docs.privacypools.com/",
+        "https://github.com/0xbow-io/privacy-pools-core"
+      ],
+      "verification_count": 4
+    },
+    "compliance_approach": {
+      "value": "Blocks illicit actors through approved address sets, enables compliant anonymity",
+      "confidence": 0.95,
+      "sources": [
+        "https://docs.privacypools.com/",
+        "https://0xbow.io/"
+      ],
+      "verification_count": 5
+    },
+    "key_features": [
+      {
+        "feature": "Partial withdrawals",
+        "confidence": 0.9,
+        "sources": [
+          "https://docs.privacypools.com/"
+        ]
+      },
+      {
+        "feature": "Non-custodial design",
+        "confidence": 0.9,
+        "sources": [
+          "https://docs.privacypools.com/"
+        ]
+      },
+      {
+        "feature": "Ragequit mechanism for fund recovery",
+        "confidence": 0.9,
+        "sources": [
+          "https://docs.privacypools.com/"
+        ]
+      },
+      {
+        "feature": "Multi-asset support (ETH, ERC20)",
+        "confidence": 0.9,
+        "sources": [
+          "https://docs.privacypools.com/"
+        ]
+      }
+    ]
+  }
+}

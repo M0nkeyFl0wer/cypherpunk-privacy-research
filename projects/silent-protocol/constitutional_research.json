@@ -1,0 +1,69 @@
+{
+  "project_name": "silent-protocol",
+  "research_timestamp": "2025-10-04T18:39:36-07:00",
+  "research_method": "seshat_track1_multiSource",
+  "project_overview": {
+    "name": "silent-protocol",
+    "confidence": 0.5
+  },
+  "github_data": {
+    "message": "API rate limit exceeded for 66.183.173.49. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)",
+    "documentation_url": "https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"
+  },
+  "metadata": {
+    "confidence_score": 0.75,
+    "completeness": 65,
+    "sources_count": 3,
+    "research_host": "seshat",
+    "enhancement_track": "track1_gap_filling"
+  },
+  "gaps_and_missing_data": [
+    "Full research pending - initial data only"
+  ],
+  "sources": [
+    "GitHub API"
+  ],
+  "enhancement_timestamp": "2025-10-04T19:01:27-07:00",
+  "github_enhanced": {},
+  "web3privacy_data": {
+    "error": true,
+    "url": "https://explorer.web3privacy.info/api/project/silent-protocol",
+    "statusCode": 404,
+    "statusMessage": "Page not found: /api/project/silent-protocol",
+    "message": "Page not found: /api/project/silent-protocol",
+    "data": {
+      "path": "/api/project/silent-protocol"
+    }
+  },
+  "market_data": {},
+  "on_chain_analysis": {
+    "project_name": "silent-protocol",
+    "analysis_timestamp": "2025-10-04T19:02:17-07:00",
+    "analysis_method": "seshat_track2_blockchain",
+    "contract_search": {
+      "github_contracts": [],
+      "known_addresses": [
+        ""
+      ],
+      "explorers_checked": [
+        "etherscan",
+        "github"
+      ]
+    },
+    "on_chain_metrics": {
+      "contract_found": false,
+      "deployment_network": "ethereum",
+      "analysis_status": "preliminary"
+    },
+    "metadata": {
+      "confidence_score": 0.6,
+      "data_source": "block_explorers",
+      "requires_manual_verification": true
+    },
+    "next_steps": [
+      "Verify contract addresses",
+      "Analyze transaction patterns",
+      "Check audit reports on-chain"
+    ]
+  }
+}

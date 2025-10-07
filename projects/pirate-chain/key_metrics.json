@@ -1,0 +1,28 @@
+{
+  "name": null,
+  "category": null,
+  "completeness": null,
+  "confidence": null,
+  "has_website": false,
+  "has_github": false,
+  "has_whitepaper": false,
+  "team_size": 0,
+  "founded_year": null,
+  "privacy_features": {
+    "privacy_type": "Mandatory privacy for all transactions",
+    "shielding_mechanism": "100% shielded transactions using zk-SNARKs",
+    "privacy_vs_competitors": "Unlike other privacy coins with optional privacy (creating metadata leaks), Pirate Chain enforces mandatory privacy on all transactions",
+    "address_types": "Shielded addresses only (no transparent addresses)",
+    "transaction_privacy": {
+      "sender_privacy": "Fully shielded",
+      "recipient_privacy": "Fully shielded",
+      "amount_privacy": "Fully shielded",
+      "metadata_privacy": "No transaction graph analysis possible"
+    },
+    "sources": [
+      "https://github.com/PirateNetwork/pirate",
+      "WebSearch results on Pirate Chain privacy features"
+    ],
+    "confidence": 0.95
+  }
+}
