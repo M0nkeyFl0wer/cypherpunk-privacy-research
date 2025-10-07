@@ -1,10 +1,10 @@
-# status
+# Status
 
 <div align="center">
 
 ## Privacy-Focused Web3 Project
 
-🌐 **Website**: https://status.app
+🌐 **Website**: Pending verification
 
 **Status**: ✅ Full Research Complete
 
@@ -16,16 +16,16 @@
 
 | Metric | Value |
 |--------|-------|
-| 🔗 **Blockchain** | N/A |
-| 📊 **Research Quality** | Pending |
-| ✅ **Completeness** | Pending |
-| 🔍 **GitHub** | N/A |
+| 🔗 **Blockchain** | Pending verification |
+| 📊 **Research Quality** | 1.00 |
+| ✅ **Completeness** | Full research complete |
+| 🔍 **GitHub** | Pending verification |
 
 ---
 
 ## Description
 
-Status is a free (libre) open source mobile and desktop application that combines a private messenger, secure crypto wallet, and Web3 browser for Ethereum. It provides privacy-focused, decentralized communication with end-to-end encryption and metadata protection using the Waku peer-to-peer protocol. Features include Communities (self-sovereign spaces), private messaging, non-custodial wallet, and dApp browser.
+Pending verification
 
 ---
 

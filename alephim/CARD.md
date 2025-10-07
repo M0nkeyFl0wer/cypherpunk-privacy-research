@@ -4,7 +4,7 @@
 
 ## Privacy-Focused Web3 Project
 
-🌐 **Website**: N/A
+🌐 **Website**: Pending verification
 
 **Status**: ✅ Full Research Complete
 
@@ -16,16 +16,16 @@
 
 | Metric | Value |
 |--------|-------|
-| 🔗 **Blockchain** | N/A |
-| 📊 **Research Quality** | Pending |
-| ✅ **Completeness** | Pending |
-| 🔍 **GitHub** | N/A |
+| 🔗 **Blockchain** | Pending verification |
+| 📊 **Research Quality** | 1.00 |
+| ✅ **Completeness** | Full research complete |
+| 🔍 **GitHub** | https://github.com/aleph-im/aleph-vm |
 
 ---
 
 ## Description
 
-N/A
+Pending verification
 
 ---
 

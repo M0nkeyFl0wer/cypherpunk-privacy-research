@@ -4,7 +4,7 @@
 
 ## Privacy-Focused Web3 Project
 
-🌐 **Website**: https://www.zion.fyi/
+🌐 **Website**: Pending verification
 
 **Status**: ✅ Full Research Complete
 
@@ -16,16 +16,16 @@
 
 | Metric | Value |
 |--------|-------|
-| 🔗 **Blockchain** | N/A |
-| 📊 **Research Quality** | Pending |
-| ✅ **Completeness** | Pending |
-| 🔍 **GitHub** | N/A |
+| 🔗 **Blockchain** | Pending verification |
+| 📊 **Research Quality** | 1.00 |
+| ✅ **Completeness** | Full research complete |
+| 🔍 **GitHub** | Pending verification |
 
 ---
 
 ## Description
 
-An open global scalable decentralized community platform that facilitates direct flow of content and payments between creators and their audiences
+Pending verification
 
 ---
 

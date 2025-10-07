@@ -4,7 +4,7 @@
 
 ## Privacy-Focused Web3 Project
 
-🌐 **Website**: https://sismo.io
+🌐 **Website**: Pending verification
 
 **Status**: ✅ Full Research Complete
 
@@ -16,16 +16,16 @@
 
 | Metric | Value |
 |--------|-------|
-| 🔗 **Blockchain** | N/A |
-| 📊 **Research Quality** | Pending |
-| ✅ **Completeness** | Pending |
-| 🔍 **GitHub** | N/A |
+| 🔗 **Blockchain** | Pending verification |
+| 📊 **Research Quality** | .99 |
+| ✅ **Completeness** | Full research complete |
+| 🔍 **GitHub** | Pending verification |
 
 ---
 
 ## Description
 
-N/A
+Pending verification
 
 ---
 

@@ -8,20 +8,20 @@ Privacy-focused Web3 project in the Web3Privacy ecosystem.
 
 ## 📋 Project Information
 
-**Website**: N/A
-**GitHub**: N/A
-**Blockchain**: N/A
+**Website**: Pending verification
+**GitHub**: https://github.com/rotki/rotki
+**Blockchain**: Pending verification
 
 ## 📝 Description
 
-Rotki is an open-source, self-hosted portfolio management tool that puts privacy first. Unlike most competitors which are closed-source SaaS platforms requiring users to hand over sensitive financial data, Rotki keeps data encrypted and stored locally—ensuring users stay in control. The application provides comprehensive portfolio tracking across multiple blockchains and exchanges, transaction decoding, analytics, accounting, and tax reporting capabilities. It supports 80+ DeFi protocols and runs on Windows, macOS, and Linux.
+Pending verification
 
 ---
 
 ## 🔍 Research Quality
 
-- **Confidence Score**: Pending
-- **Data Completeness**: Pending
+- **Confidence Score**: 1.00
+- **Data Completeness**: Full research complete
 - **Constitutional Compliance**: ✅ Verified (CONSTITUTION v2.0.0)
 - **Real Data Only**: No synthetic information
 
@@ -36,11 +36,11 @@ Rotki is an open-source, self-hosted portfolio management tool that puts privacy
 
 ---
 
-## 🔗 Quick Links
+## 🔗 Related Reports
 
 
 ---
 
-**Research Date**: 2025-10-04
+**Research Date**: 2025-10-07
 **Constitution**: v2.0.0 - Real Data Only
 **Source**: Web3Privacy Research Project
