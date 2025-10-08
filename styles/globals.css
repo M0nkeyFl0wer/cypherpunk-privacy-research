@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Brand styles will be imported here after Figma sync */
+@import './brand.css';
