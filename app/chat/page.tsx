@@ -5,8 +5,9 @@ import Link from 'next/link';
 import ChatMessage from '@/components/Chat/ChatMessage';
 import ChatInput from '@/components/Chat/ChatInput';
 import QuickActions from '@/components/Chat/QuickActions';
+import ApiKeySettings from '@/components/Chat/ApiKeySettings';
 import { getExampleQueries } from '@/lib/ai/queryProcessor';
-import { chatWithOllama, type OllamaMessage } from '@/lib/ai/ollamaClient';
+import { chat, getStoredProvider, getStoredApiKey, type AIProvider, type AIMessage } from '@/lib/ai/aiProvider';
 import { getAllProjectSummaries } from '@/lib/data/client-data';
 
 interface Message {
@@ -17,11 +18,10 @@ interface Message {
   timestamp: Date;
 }
 
-interface ConversationMessage extends OllamaMessage {
-  timestamp?: Date;
-}
-
 export default function ChatPage() {
+  const [provider, setProvider] = useState<AIProvider>('ollama');
+  const [apiKey, setApiKey] = useState<string | null>(null);
+  const [showSettings, setShowSettings] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
@@ -41,7 +41,7 @@ How can I help you today?`,
   ]);
   const [isProcessing, setIsProcessing] = useState(false);
   const [streamingMessage, setStreamingMessage] = useState('');
-  const [conversationHistory, setConversationHistory] = useState<ConversationMessage[]>([]);
+  const [conversationHistory, setConversationHistory] = useState<AIMessage[]>([]);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = () => {
@@ -51,6 +51,14 @@ How can I help you today?`,
   useEffect(() => {
     scrollToBottom();
   }, [messages]);
+
+  useEffect(() => {
+    // Load stored provider and API key on mount
+    const storedProvider = getStoredProvider();
+    const storedKey = getStoredApiKey();
+    setProvider(storedProvider);
+    setApiKey(storedKey);
+  }, []);
 
   const handleSendMessage = async (input: string) => {
     // Add user message
@@ -76,7 +84,7 @@ How can I help you today?`,
         .join('\n');
 
       // Build conversation history
-      const systemPrompt: OllamaMessage = {
+      const systemPrompt: AIMessage = {
         role: 'system',
         content: `You are an AI assistant helping users explore Web3 privacy projects. You have access to research data on 134 projects focused on privacy, security, and anonymity.
 
@@ -95,23 +103,25 @@ Be helpful, accurate, and privacy-focused.`,
       };
 
       // Add user message to conversation history
-      const userPrompt: OllamaMessage = {
+      const userPrompt: AIMessage = {
         role: 'user',
         content: input,
       };
 
       // Include recent conversation history (last 4 messages)
       const recentHistory = conversationHistory.slice(-4);
-      const messages: OllamaMessage[] = [
+      const chatMessages: AIMessage[] = [
         systemPrompt,
         ...recentHistory,
         userPrompt,
       ];
 
-      // Call Ollama with streaming
+      // Call AI provider with streaming
       let responseText = '';
-      await chatWithOllama(
-        messages,
+      await chat(
+        chatMessages,
+        provider,
+        apiKey || undefined,
         (chunk) => {
           responseText += chunk;
           setStreamingMessage(responseText);
@@ -152,7 +162,9 @@ Be helpful, accurate, and privacy-focused.`,
       const errorMessage: Message = {
         id: (Date.now() + 1).toString(),
         role: 'assistant',
-        content: 'Sorry, I encountered an error connecting to the AI. Please check that the Ollama server is running on Seshat and try again.\n\nError details: ' + (error as Error).message,
+        content: provider === 'ollama'
+          ? 'Sorry, I encountered an error connecting to the Ollama server. Please check that Ollama is running on Seshat.\n\nError: ' + (error as Error).message
+          : 'Sorry, I encountered an error with the Anthropic API. Please check your API key in settings.\n\nError: ' + (error as Error).message,
         timestamp: new Date(),
       };
 
@@ -201,6 +213,19 @@ Be helpful, accurate, and privacy-focused.`,
               >
                 Visualizations
               </Link>
+
+              {/* Settings Button */}
+              <button
+                onClick={() => setShowSettings(true)}
+                className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-brand-text-secondary hover:text-brand-accent-purple hover:bg-brand-bg-active rounded-lg transition-colors"
+                title="AI Settings"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                Settings
+              </button>
             </nav>
           </div>
         </div>
@@ -279,10 +304,28 @@ Be helpful, accurate, and privacy-focused.`,
       <div className="bg-brand-bg-darker border-t border-brand-bg-active">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
           <p className="text-xs text-brand-text-muted text-center">
-            🤖 Powered by <strong>Ollama</strong> (self-hosted AI on Seshat) • Free, private, and aligned with Web3 privacy values
+            {provider === 'ollama' ? (
+              <>
+                🤖 Powered by <strong>Ollama</strong> (self-hosted AI on Seshat) • Free, private, and aligned with Web3 privacy values
+              </>
+            ) : (
+              <>
+                🔑 Using <strong>Anthropic Claude</strong> with your API key • All requests go directly to Anthropic
+              </>
+            )}
           </p>
         </div>
       </div>
+
+      {/* Settings Modal */}
+      <ApiKeySettings
+        isOpen={showSettings}
+        onClose={() => setShowSettings(false)}
+        onProviderChange={(newProvider) => {
+          setProvider(newProvider);
+          setApiKey(getStoredApiKey());
+        }}
+      />
     </div>
   );
 }
