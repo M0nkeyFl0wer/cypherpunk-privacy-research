@@ -161,6 +161,13 @@
     "searchableText": "deeper network other privacy-focused web3 project"
   },
   {
+    "slug": "docs",
+    "name": "Docs",
+    "category": "Uncategorized",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "docs uncategorized privacy-focused web3 project"
+  },
+  {
     "slug": "dusk-network",
     "name": "Dusk Network",
     "category": "Uncategorized",

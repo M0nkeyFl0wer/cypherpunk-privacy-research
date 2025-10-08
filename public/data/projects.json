@@ -8,8 +8,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 20
+    "hasCard": true,
+    "completeness": 30
   },
   {
     "slug": "1inch-privacy",
@@ -32,7 +32,7 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
+    "hasCard": true,
     "completeness": 0
   },
   {
@@ -56,8 +56,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "anoma",
@@ -80,8 +80,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "aztec",
@@ -92,8 +92,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 20
+    "hasCard": true,
+    "completeness": 30
   },
   {
     "slug": "aztec-network",
@@ -104,8 +104,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 40
+    "hasCard": true,
+    "completeness": 50
   },
   {
     "slug": "aztec-protocol",
@@ -116,8 +116,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 20
+    "hasCard": true,
+    "completeness": 30
   },
   {
     "slug": "beam",
@@ -128,8 +128,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 20
+    "hasCard": true,
+    "completeness": 30
   },
   {
     "slug": "brave-browser",
@@ -152,8 +152,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "cake-wallet",
@@ -164,8 +164,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "chainport",
@@ -176,8 +176,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "circom",
@@ -188,8 +188,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "concordium",
@@ -200,8 +200,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "curve-privacy",
@@ -224,8 +224,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 20
+    "hasCard": true,
+    "completeness": 30
   },
   {
     "slug": "dark-forest",
@@ -248,8 +248,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "dash",
@@ -272,8 +272,20 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
+    "hasCard": true,
+    "completeness": 40
+  },
+  {
+    "slug": "docs",
+    "name": "Docs",
+    "category": "Uncategorized",
+    "website": null,
+    "description": "Privacy-focused Web3 project",
+    "privacyTechniques": [],
+    "techStack": [],
+    "hasReadme": false,
     "hasCard": false,
-    "completeness": 30
+    "completeness": 0
   },
   {
     "slug": "dusk-network",
@@ -296,8 +308,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 20
+    "hasCard": true,
+    "completeness": 30
   },
   {
     "slug": "elusiv",
@@ -308,8 +320,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "eth2-deposit-cli",
@@ -344,8 +356,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "findora",
@@ -356,8 +368,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "firn-protocol",
@@ -368,8 +380,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "firo",
@@ -380,8 +392,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "fluidkey",
@@ -392,8 +404,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "frame",
@@ -404,8 +416,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "gitcoin-grants",
@@ -428,8 +440,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 20
+    "hasCard": true,
+    "completeness": 30
   },
   {
     "slug": "hopr",
@@ -440,8 +452,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "horizen",
@@ -464,8 +476,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "iexec",
@@ -476,8 +488,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "incognito",
@@ -488,8 +500,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "iron-fish",
@@ -500,8 +512,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "keep-network",
@@ -524,8 +536,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "lens-protocol",
@@ -548,8 +560,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "litentry",
@@ -560,8 +572,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "maci",
@@ -584,8 +596,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "mask",
@@ -608,8 +620,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "metamask-snaps",
@@ -644,8 +656,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "monero",
@@ -656,8 +668,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "mysterium-network",
@@ -668,8 +680,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "nighthawk-wallet",
@@ -680,8 +692,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "nillion",
@@ -692,8 +704,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "nucypher",
@@ -716,8 +728,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 40
+    "hasCard": true,
+    "completeness": 50
   },
   {
     "slug": "oasis-network",
@@ -728,8 +740,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "orchid",
@@ -740,8 +752,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "oxen",
@@ -752,8 +764,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "panther-protocol",
@@ -764,8 +776,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "penumbra",
@@ -776,8 +788,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 40
+    "hasCard": true,
+    "completeness": 50
   },
   {
     "slug": "phala-network",
@@ -788,8 +800,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "pirate-chain",
@@ -800,8 +812,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 20
+    "hasCard": true,
+    "completeness": 30
   },
   {
     "slug": "platon-network",
@@ -812,8 +824,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "polygon-hermez",
@@ -824,8 +836,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "polygon-id",
@@ -836,8 +848,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "polygon-nightfall",
@@ -848,8 +860,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "polygon-zero",
@@ -860,8 +872,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "privatepool",
@@ -872,8 +884,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "pse--privacy---scaling-explorations-",
@@ -896,8 +908,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 40
+    "hasCard": true,
+    "completeness": 50
   },
   {
     "slug": "railgun-relay-adapt",
@@ -908,8 +920,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 20
+    "hasCard": true,
+    "completeness": 30
   },
   {
     "slug": "railway-wallet",
@@ -920,8 +932,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "ronin",
@@ -944,8 +956,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "samourai-wallet",
@@ -968,8 +980,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "secret-network",
@@ -980,8 +992,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 40
+    "hasCard": true,
+    "completeness": 50
   },
   {
     "slug": "semaphore",
@@ -992,8 +1004,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "sentinel",
@@ -1004,8 +1016,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "session",
@@ -1016,8 +1028,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "sienna-network",
@@ -1028,8 +1040,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "silent-protocol",
@@ -1040,8 +1052,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "sismo",
@@ -1052,8 +1064,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "snapshot-x",
@@ -1076,8 +1088,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "starkex",
@@ -1088,8 +1100,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "starknet",
@@ -1112,8 +1124,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "suterusu",
@@ -1124,8 +1136,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "taiko",
@@ -1136,8 +1148,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "ten",
@@ -1148,8 +1160,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "tornado-cash",
@@ -1168,8 +1180,8 @@
       "JavaScript"
     ],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 70
+    "hasCard": true,
+    "completeness": 80
   },
   {
     "slug": "typhoon-network",
@@ -1180,8 +1192,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "umbra-cash",
@@ -1204,8 +1216,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "wasabi-wallet",
@@ -1216,8 +1228,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "webb-protocol",
@@ -1228,8 +1240,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "xx-network",
@@ -1240,8 +1252,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "zano",
@@ -1265,8 +1277,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 40
+    "hasCard": true,
+    "completeness": 50
   },
   {
     "slug": "zcash",
@@ -1277,8 +1289,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "zeal",
@@ -1289,8 +1301,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "zecrey",
@@ -1313,8 +1325,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "zk-money",
@@ -1325,8 +1337,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "zkbob",
@@ -1361,8 +1373,8 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   },
   {
     "slug": "zkvote",
@@ -1373,7 +1385,7 @@
     "privacyTechniques": [],
     "techStack": [],
     "hasReadme": true,
-    "hasCard": false,
-    "completeness": 30
+    "hasCard": true,
+    "completeness": 40
   }
 ]
