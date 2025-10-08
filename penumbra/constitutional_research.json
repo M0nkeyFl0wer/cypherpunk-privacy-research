@@ -75,5 +75,6 @@
   "research_metadata": {
     "batch3_seshat_processed": true,
     "seshat_website_found": true
-  }
+  },
+  "github": "https://github.com/penumbra-zone/penumbra"
 }

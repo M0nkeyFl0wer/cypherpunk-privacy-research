@@ -1,0 +1,117 @@
+{
+  "repository": "https://github.com/ten-protocol/go-ten",
+  "full_name": "ten-protocol/go-ten",
+  "description": "Official Golang implementation of the TEN protocol",
+  "statistics": {
+    "stars": 63,
+    "forks": 47,
+    "watchers": 63,
+    "open_issues": 40,
+    "size_kb": 90078
+  },
+  "language_breakdown": {
+    "Go": 85.88,
+    "Solidity": 6.88,
+    "TypeScript": 4.69,
+    "Shell": 1.62,
+    "Dockerfile": 0.75,
+    "JavaScript": 0.18
+  },
+  "primary_language": "Go",
+  "license": "Other",
+  "topics": [
+    "blockchain",
+    "confidential-computing",
+    "crypto",
+    "encryption",
+    "ethereum",
+    "evm",
+    "l2",
+    "layer2",
+    "tee",
+    "web3"
+  ],
+  "created_at": "2022-01-18T09:23:34Z",
+  "updated_at": "2025-10-07T13:03:00Z",
+  "pushed_at": "2025-10-08T10:47:12Z",
+  "homepage": "https://ten.xyz",
+  "default_branch": "main",
+  "archived": false,
+  "recent_commits": [
+    {
+      "sha": "e9173b6",
+      "message": "get the token from path in JSON-RPC (#2704)",
+      "author": "\u017diga Kokelj",
+      "date": "2025-10-07T13:02:55Z"
+    },
+    {
+      "sha": "71fad3a",
+      "message": "Addition of v1.6 change log details (#2706)",
+      "author": "Moray Grieve",
+      "date": "2025-10-07T11:20:05Z"
+    },
+    {
+      "sha": "98d0184",
+      "message": "- explicitly handle invalid connection (#2705)",
+      "author": "Tudor Malene",
+      "date": "2025-10-07T10:16:19Z"
+    },
+    {
+      "sha": "1b92a07",
+      "message": "Merge releases/1.5 into main (#2703)",
+      "author": "badgersrus",
+      "date": "2025-10-06T14:59:27Z"
+    },
+    {
+      "sha": "119bc59",
+      "message": "host: always assert that active seq enclave is not behind (#2698)",
+      "author": "Matt",
+      "date": "2025-10-06T14:50:19Z"
+    }
+  ],
+  "top_contributors": [
+    {
+      "username": "otherview",
+      "contributions": 1044
+    },
+    {
+      "username": "tudor-malene",
+      "contributions": 850
+    },
+    {
+      "username": "BedrockSquirrel",
+      "contributions": 415
+    },
+    {
+      "username": "Jennievon",
+      "contributions": 414
+    },
+    {
+      "username": "StefanIliev545",
+      "contributions": 178
+    },
+    {
+      "username": "zkokelj",
+      "contributions": 169
+    },
+    {
+      "username": "badgersrus",
+      "contributions": 125
+    },
+    {
+      "username": "moraygrieve",
+      "contributions": 112
+    },
+    {
+      "username": "GavT",
+      "contributions": 57
+    },
+    {
+      "username": "pbienek",
+      "contributions": 38
+    }
+  ],
+  "analyzed_at": "2025-10-08T10:12:07.186614",
+  "confidence": 1.0,
+  "data_source": "GitHub API v3"
+}

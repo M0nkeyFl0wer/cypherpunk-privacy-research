@@ -1,0 +1,70 @@
+{
+  "repository": "https://github.com/cycloneprotocol",
+  "full_name": "cycloneprotocol/cyclone-contracts",
+  "description": "Cyclone is a multi-chain, non-custodial, privacy-preserving protocol. Cyclone applies zkSNARKs to enable transactional privacy by breaking the on-chain link between depositor and recipient addresses. It uses a smart contract that accepts coins/tokens deposits, which can be withdrawn by a different address. Whenever an asset is withdrawn from Cyclone, there is no way to link the withdrawal to the deposit for absolute privacy.",
+  "statistics": {
+    "stars": 63,
+    "forks": 9,
+    "watchers": 63,
+    "open_issues": 12,
+    "size_kb": 11854
+  },
+  "language_breakdown": {
+    "Solidity": 77.21,
+    "JavaScript": 22.79
+  },
+  "primary_language": "Solidity",
+  "license": "GNU General Public License v3.0",
+  "topics": [
+    "blockchain",
+    "defi",
+    "privacy"
+  ],
+  "created_at": "2021-01-16T15:25:16Z",
+  "updated_at": "2024-11-04T15:57:04Z",
+  "pushed_at": "2021-05-08T14:17:13Z",
+  "homepage": "",
+  "default_branch": "main",
+  "archived": false,
+  "recent_commits": [
+    {
+      "sha": "1c75636",
+      "message": "Create IDelegator.sol",
+      "author": "bf945",
+      "date": "2021-05-08T14:17:13Z"
+    },
+    {
+      "sha": "6b15d04",
+      "message": "Create ICycloneV2dot2.sol",
+      "author": "bf945",
+      "date": "2021-05-08T14:15:51Z"
+    },
+    {
+      "sha": "3e6332c",
+      "message": "Create CycloneV2dot2.sol",
+      "author": "bf945",
+      "date": "2021-05-08T14:15:28Z"
+    },
+    {
+      "sha": "ab01279",
+      "message": "Create AeolusV2dot1.sol",
+      "author": "bf945",
+      "date": "2021-05-08T14:14:59Z"
+    },
+    {
+      "sha": "c95f85c",
+      "message": "Create AeolusV2dot2.sol",
+      "author": "bf945",
+      "date": "2021-05-08T14:14:36Z"
+    }
+  ],
+  "top_contributors": [
+    {
+      "username": "bf945",
+      "contributions": 14
+    }
+  ],
+  "analyzed_at": "2025-10-08T10:11:54.130961",
+  "confidence": 1.0,
+  "data_source": "GitHub API v3"
+}

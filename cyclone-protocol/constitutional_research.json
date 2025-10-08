@@ -66,5 +66,6 @@
       "Analyze transaction patterns",
       "Check audit reports on-chain"
     ]
-  }
+  },
+  "github": "https://github.com/cycloneprotocol/cyclone-contracts"
 }
