@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { useRouter } from 'next/navigation';
 import * as d3 from 'd3';
 
 interface TreemapProps {
@@ -14,6 +15,7 @@ interface TreemapNode {
   value: number;
   category?: string;
   children?: TreemapNode[];
+  project?: any; // Full project for tooltip
 }
 
 interface TreemapRectNode extends d3.HierarchyRectangularNode<TreemapNode> {
@@ -23,6 +25,7 @@ interface TreemapRectNode extends d3.HierarchyRectangularNode<TreemapNode> {
 export default function Treemap({ projects, width = 1000, height = 600 }: TreemapProps) {
   const svgRef = useRef<SVGSVGElement>(null);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const router = useRouter();
 
   useEffect(() => {
     if (!svgRef.current || projects.length === 0) return;
@@ -50,6 +53,7 @@ export default function Treemap({ projects, width = 1000, height = 600 }: Treema
             (p.completeness || 0)
           ),
           category: category,
+          project: p, // Store full project for tooltip
         })),
       })),
     };
@@ -173,32 +177,48 @@ export default function Treemap({ projects, width = 1000, height = 600 }: Treema
           .attr('fill-opacity', 1)
           .attr('stroke-width', 3);
 
-        const project = projects.find(p => p.name === d.data.name);
+        const p = d.data.project;
 
         tooltip
           .style('opacity', 1)
           .html(`
-            <div style="font-weight: bold; margin-bottom: 4px;">${d.data.name}</div>
+            <div style="font-weight: bold; font-size: 14px; margin-bottom: 4px;">${d.data.name}</div>
             <div style="color: #a0aec0; font-size: 10px; margin-bottom: 8px;">
               ${d.data.category || 'Uncategorized'}
             </div>
-            ${project?.description ? `
-              <div style="margin-bottom: 8px; color: #cbd5e0;">
-                ${project.description.slice(0, 100)}${project.description.length > 100 ? '...' : ''}
+            ${p?.description ? `
+              <div style="margin-bottom: 8px; color: #cbd5e0; font-size: 11px; max-width: 300px;">
+                ${p.description.slice(0, 150)}${p.description.length > 150 ? '...' : ''}
               </div>
             ` : ''}
-            ${project?.techStack?.length > 0 ? `
-              <div style="margin-bottom: 4px;">
-                <strong>Tech:</strong> ${project.techStack.slice(0, 3).join(', ')}
+            ${p?.website ? `
+              <div style="margin-bottom: 4px; font-size: 10px;">
+                🌐 <a href="${p.website}" target="_blank" style="color: #8b5cf6;">${new URL(p.website).hostname}</a>
               </div>
             ` : ''}
-            ${project?.privacyTechniques?.length > 0 ? `
-              <div style="margin-bottom: 4px;">
-                <strong>Privacy:</strong> ${project.privacyTechniques.slice(0, 3).join(', ')}
+            ${p?.github ? `
+              <div style="margin-bottom: 4px; font-size: 10px;">
+                💻 <a href="${p.github}" target="_blank" style="color: #8b5cf6;">${p.github.replace('https://github.com/', '')}</a>
               </div>
             ` : ''}
-            <div style="color: #718096; font-size: 10px; margin-top: 8px;">
-              Size: ${(d.x1 - d.x0).toFixed(0)} × ${(d.y1 - d.y0).toFixed(0)}px
+            ${p?.techStack?.length > 0 ? `
+              <div style="margin-bottom: 4px; font-size: 10px;">
+                <strong>Tech:</strong> ${p.techStack.slice(0, 4).join(', ')}${p.techStack.length > 4 ? '...' : ''}
+              </div>
+            ` : ''}
+            ${p?.privacyTechniques?.length > 0 ? `
+              <div style="margin-bottom: 4px; font-size: 10px;">
+                <strong>Privacy:</strong> ${p.privacyTechniques.slice(0, 4).join(', ')}${p.privacyTechniques.length > 4 ? '...' : ''}
+              </div>
+            ` : ''}
+            ${p?.completeness ? `
+              <div style="margin-bottom: 4px; font-size: 10px;">
+                <strong>Completeness:</strong> ${p.completeness}%
+              </div>
+            ` : ''}
+            <div style="color: #718096; font-size: 10px; margin-top: 8px; padding-top: 8px; border-top: 1px solid #4a5568;">
+              Box: ${(d.x1 - d.x0).toFixed(0)} × ${(d.y1 - d.y0).toFixed(0)}px •
+              <span style="color: #8b5cf6; font-weight: bold;">Click for full details →</span>
             </div>
           `)
           .style('left', (event.pageX + 10) + 'px')
@@ -220,8 +240,9 @@ export default function Treemap({ projects, width = 1000, height = 600 }: Treema
       })
       .on('click', function(event, d) {
         event.stopPropagation();
-        const category = d.data.category || d.parent?.data.name;
-        setSelectedCategory(category === selectedCategory ? null : category || null);
+        if (d.data.project) {
+          router.push(`/project/${d.data.project.slug}`);
+        }
       });
 
     // Cleanup
