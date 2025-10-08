@@ -1,0 +1,918 @@
+{
+  "generated_at": "2025-10-08T12:09:53.698Z",
+  "projects": [
+    {
+      "id": "0xbow",
+      "name": "0Xbow",
+      "category": "unknown",
+      "status": "active",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "github": "https://github.com/0xbow-io/privacy-pools-core"
+    },
+    {
+      "id": "alephim",
+      "name": "Aleph.im",
+      "category": "computing",
+      "status": "active",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": "",
+      "github": "https://github.com/aleph-im/aleph-vm"
+    },
+    {
+      "id": "arpa",
+      "name": "ARPA Network",
+      "category": "computing",
+      "status": "active",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "aztec",
+      "name": "Aztec",
+      "category": "unknown",
+      "status": "active",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "github": "https://github.com/AztecProtocol/aztec-packages"
+    },
+    {
+      "id": "aztec-network",
+      "name": "Aztec Network",
+      "category": "defi",
+      "status": "active",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": "https://aztec.network",
+      "github": "https://github.com/AztecProtocol"
+    },
+    {
+      "id": "aztec-protocol",
+      "name": "Aztec Protocol",
+      "category": "unknown",
+      "status": "active",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "github": "https://github.com/AztecProtocol/aztec-packages"
+    },
+    {
+      "id": "beam",
+      "name": "Beam",
+      "category": "currency",
+      "status": "active",
+      "confidence": 0,
+      "founded": 2018,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": "https://beam.mw",
+      "github": "https://github.com/BeamMW"
+    },
+    {
+      "id": "brume-wallet",
+      "name": "Brume Wallet",
+      "category": "wallet",
+      "status": "active",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "cake-wallet",
+      "name": "cake-wallet",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "chainport",
+      "name": "ChainPort",
+      "category": "bridges",
+      "status": "active",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "circom",
+      "name": "circom",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "concordium",
+      "name": "concordium",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "cyclone-protocol",
+      "name": "Cyclone Protocol",
+      "category": "mixing",
+      "status": "active",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "darkfi",
+      "name": "darkfi",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "deeper-network",
+      "name": "deeper-network",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "edge-wallet",
+      "name": "Edge Wallet",
+      "category": "wallet",
+      "status": "active",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "elusiv",
+      "name": "elusiv",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "fileverse",
+      "name": "fileverse",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "findora",
+      "name": "findora",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "firn-protocol",
+      "name": "Firn Protocol",
+      "category": "defi",
+      "status": "Live",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "firo",
+      "name": "firo",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "fluidkey",
+      "name": "fluidkey",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "frame",
+      "name": "Frame",
+      "category": "wallet",
+      "status": "active",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "grin",
+      "name": "Grin",
+      "category": "currency",
+      "status": "active",
+      "confidence": 0,
+      "founded": 2016,
+      "location": "Decentralized (global community)",
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": "https://grin.mw/"
+    },
+    {
+      "id": "hopr",
+      "name": "hopr",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "iden3",
+      "name": "iden3",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "iexec",
+      "name": "iExec",
+      "category": "computing",
+      "status": "active",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "incognito",
+      "name": "incognito",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "iron-fish",
+      "name": "iron-fish",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "labyrinth",
+      "name": "Labyrinth",
+      "category": "defi",
+      "status": "Private Testnet",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "light-protocol",
+      "name": "Light Protocol",
+      "category": "defi",
+      "status": "active",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "litentry",
+      "name": "Litentry",
+      "category": "did",
+      "status": "active",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "manta-network",
+      "name": "Manta Network",
+      "category": "infrastructure",
+      "status": "active",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "mask-network",
+      "name": "mask-network",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "mobilecoin",
+      "name": "mobilecoin",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "monero",
+      "name": "monero",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "mysterium-network",
+      "name": "mysterium-network",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "nighthawk-wallet",
+      "name": "nighthawk-wallet",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "nillion",
+      "name": "Nillion",
+      "category": "computing",
+      "status": "active",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "nym",
+      "name": "NYM",
+      "category": "infrastructure",
+      "status": "active",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": "https://nymtech.net"
+    },
+    {
+      "id": "oasis-network",
+      "name": "oasis-network",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "orchid",
+      "name": "orchid",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "oxen",
+      "name": "oxen",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "panther-protocol",
+      "name": "Panther Protocol",
+      "category": "defi",
+      "status": "active",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "penumbra",
+      "name": "Penumbra",
+      "category": "infrastructure",
+      "status": "active",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": "https://penumbra.zone"
+    },
+    {
+      "id": "phala-network",
+      "name": "Phala Network",
+      "category": "computing",
+      "status": "active",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "pirate-chain",
+      "name": "Pirate Chain",
+      "category": "currency",
+      "status": "active",
+      "confidence": 0,
+      "founded": "2018-08-29",
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": "https://piratechain.com"
+    },
+    {
+      "id": "platon-network",
+      "name": "PlatON Network",
+      "category": "computing",
+      "status": "active",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "polygon-hermez",
+      "name": "polygon-hermez",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "polygon-id",
+      "name": "Polygon ID",
+      "category": "did",
+      "status": "active",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "polygon-nightfall",
+      "name": "Polygon Nightfall",
+      "category": "layer2",
+      "status": "active",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "polygon-zero",
+      "name": "polygon-zero",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "privatepool",
+      "name": "privatepool",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "railgun",
+      "name": "Railgun",
+      "category": "defi",
+      "status": "active",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": "https://railgun.org",
+      "github": "https://github.com/Railgun-Privacy"
+    },
+    {
+      "id": "railgun-relay-adapt",
+      "name": "RAILGUN",
+      "category": "bridges",
+      "status": "active",
+      "confidence": 0,
+      "founded": 2021,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": "https://www.railgun.org"
+    },
+    {
+      "id": "railway-wallet",
+      "name": "Railway Wallet",
+      "category": "wallet",
+      "status": "active",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "rotki",
+      "name": "rotki",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "scroll",
+      "name": "Scroll",
+      "category": "layer2",
+      "status": "active",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "secret-network",
+      "name": "Secret Network",
+      "category": "infrastructure",
+      "status": "active",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": "https://scrt.network",
+      "github": "https://github.com/scrtlabs/SecretNetwork"
+    },
+    {
+      "id": "semaphore",
+      "name": "semaphore",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "sentinel",
+      "name": "sentinel",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "session",
+      "name": "Session",
+      "category": "messaging",
+      "status": "active",
+      "confidence": 0,
+      "founded": 2018,
+      "location": "Switzerland (Session Technology Foundation), formerly Australia (OPTF)",
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": "https://getsession.org"
+    },
+    {
+      "id": "sienna-network",
+      "name": "sienna-network",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "silent-protocol",
+      "name": "Silent Protocol",
+      "category": "defi",
+      "status": "active",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "sismo",
+      "name": "Sismo",
+      "category": "did",
+      "status": "active",
+      "confidence": 0,
+      "founded": "2021",
+      "location": "Paris, France",
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": "https://sismo.io"
+    },
+    {
+      "id": "snarkjs",
+      "name": "snarkjs",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "starkex",
+      "name": "starkex",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "status",
+      "name": "Status",
+      "category": "messaging",
+      "status": "active",
+      "confidence": 0,
+      "founded": 2016,
+      "location": "Zug, Switzerland",
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": "https://status.app"
+    },
+    {
+      "id": "suterusu",
+      "name": "suterusu",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "taiko",
+      "name": "Taiko",
+      "category": "layer2",
+      "status": "active",
+      "confidence": 0,
+      "founded": 2022,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": "https://taiko.xyz"
+    },
+    {
+      "id": "ten",
+      "name": "TEN",
+      "category": "layer2",
+      "status": "active",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "tornado-cash",
+      "name": "tornado-cash",
+      "category": "privacy_mixer",
+      "status": "sanctions_lifted_march_2025",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "typhoon-network",
+      "name": "typhoon-network",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "veramo",
+      "name": "Veramo",
+      "category": "did",
+      "status": "active",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "wasabi-wallet",
+      "name": "wasabi-wallet",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "webb-protocol",
+      "name": "webb-protocol",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "xx-network",
+      "name": "xx-network",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "zano",
+      "name": "zano",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": {
+        "primary_url": "https://zano.org",
+        "blog_url": "https://blog.zano.org/",
+        "explorer_url": "https://explorer.zano.org/",
+        "confidence": 0.95,
+        "sources": [
+          {
+            "url": "https://zano.org",
+            "method": "direct HTTP curl",
+            "status_code": 200,
+            "verification": "HTTPS verified, Cloudflare-secured"
+          }
+        ]
+      }
+    },
+    {
+      "id": "zcash",
+      "name": "zcash",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "zeal",
+      "name": "zeal",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "zion",
+      "name": "Zion",
+      "category": "messaging",
+      "status": "active",
+      "confidence": 0,
+      "founded": 2021,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": "https://www.zion.fyi/"
+    },
+    {
+      "id": "zk-money",
+      "name": "zk-money",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "zksync",
+      "name": "zksync",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    },
+    {
+      "id": "zkvote",
+      "name": "zkvote",
+      "category": "other",
+      "status": "unknown",
+      "confidence": 0,
+      "privacyTechniques": [],
+      "techStack": [],
+      "website": ""
+    }
+  ],
+  "stats": {
+    "totalProjects": 84,
+    "averageConfidence": 0,
+    "constitutionalCompliance": 0,
+    "statusDistribution": {
+      "active": 39,
+      "unknown": 42,
+      "Live": 1,
+      "Private Testnet": 1,
+      "sanctions_lifted_march_2025": 1
+    },
+    "privacyTechniques": {},
+    "techStacks": {},
+    "foundedYears": {
+      "2016": 2,
+      "2018": 2,
+      "2021": 3,
+      "2022": 1,
+      "2018-08-29": 1
+    },
+    "locations": {
+      "Decentralized (global community)": 1,
+      "Switzerland (Session Technology Foundation), formerly Australia (OPTF)": 1,
+      "Paris, France": 1,
+      "Zug, Switzerland": 1
+    },
+    "categories": {
+      "unknown": 3,
+      "computing": 6,
+      "defi": 7,
+      "currency": 3,
+      "wallet": 4,
+      "other": 42,
+      "bridges": 2,
+      "mixing": 1,
+      "did": 4,
+      "infrastructure": 4,
+      "layer2": 4,
+      "messaging": 3,
+      "privacy_mixer": 1
+    }
+  }
+}

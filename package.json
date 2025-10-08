@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "npm run generate:data",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -13,6 +14,7 @@
     "test:e2e": "playwright test",
     "test:a11y": "playwright test --grep @a11y",
     "validate": "node scripts/validate-data.js",
+    "generate:data": "node scripts/generate-project-index.js",
     "build:search-index": "node scripts/build-search-index.js",
     "build:viz-data": "node scripts/build-viz-data.js",
     "sync:figma": "node scripts/sync-figma-assets.js",

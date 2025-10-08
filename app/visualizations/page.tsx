@@ -1,12 +1,38 @@
+'use client';
+
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import StatCard from '@/components/Visualizations/StatCard';
 import BarChart from '@/components/Visualizations/BarChart';
 import PieChart from '@/components/Visualizations/PieChart';
-import { aggregateProjectStats, getAllProjectSummaries, getTopN } from '@/lib/data/aggregateStats';
+import { getAllProjectSummaries, getProjectStats, getTopN, type ProjectStats, type ProjectSummary } from '@/lib/data/client-data';
 
 export default function VisualizationsPage() {
-  const stats = aggregateProjectStats();
-  const projects = getAllProjectSummaries();
+  const [stats, setStats] = useState<ProjectStats | null>(null);
+  const [projects, setProjects] = useState<ProjectSummary[]>([]);
+
+  useEffect(() => {
+    async function loadData() {
+      const [statsData, projectsData] = await Promise.all([
+        getProjectStats(),
+        getAllProjectSummaries()
+      ]);
+      setStats(statsData);
+      setProjects(projectsData);
+    }
+    loadData();
+  }, []);
+
+  if (!stats) {
+    return (
+      <div className="min-h-screen bg-brand-bg-dark flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin w-12 h-12 border-4 border-brand-accent-purple border-t-transparent rounded-full mx-auto mb-4"></div>
+          <p className="text-brand-text-secondary">Loading visualizations...</p>
+        </div>
+      </div>
+    );
+  }
 
   // Prepare data for charts
   const privacyTechniquesData = getTopN(stats.privacyTechniques, 12).map(item => ({
