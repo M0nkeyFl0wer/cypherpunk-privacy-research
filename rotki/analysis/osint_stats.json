@@ -1,0 +1,37 @@
+{
+  "scan_id": "5525402B",
+  "project": "rotki",
+  "target": "rotki.com",
+  "total_events": 333,
+  "modules_used": 10,
+  "event_types": {
+    "CO_HOSTED_SITE": 87,
+    "CO_HOSTED_SITE_DOMAIN": 77,
+    "TCP_PORT_OPEN": 26,
+    "AFFILIATE_IPADDR": 19,
+    "AFFILIATE_INTERNET_NAME": 19,
+    "IPV6_ADDRESS": 16,
+    "SSL_CERTIFICATE_ISSUED": 15,
+    "SSL_CERTIFICATE_RAW": 15,
+    "SSL_CERTIFICATE_ISSUER": 15,
+    "INTERNET_NAME": 11,
+    "IP_ADDRESS": 10,
+    "SSL_CERTIFICATE_MISMATCH": 4,
+    "COMPANY_NAME": 4,
+    "CO_HOSTED_SITE_DOMAIN_WHOIS": 3,
+    "DOMAIN_NAME_PARENT": 3,
+    "DOMAIN_WHOIS": 2,
+    "PUBLIC_CODE_REPO": 2,
+    "DOMAIN_REGISTRAR": 2,
+    "DOMAIN_NAME": 2,
+    "ROOT": 1
+  },
+  "risk_distribution": {
+    "0": 333
+  },
+  "date_range": {
+    "start": "2025-09-30 00:19:27",
+    "end": "2025-09-30 00:26:21"
+  },
+  "processed_at": "2025-09-30 00:26:31"
+}

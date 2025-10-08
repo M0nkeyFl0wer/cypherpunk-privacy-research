@@ -1,0 +1,156 @@
+{
+  "owner": "tornadocash",
+  "repo_name": "tornado-core",
+  "full_name": "tornadocash/tornado-core",
+  "github_url": "https://github.com/tornadocash/tornado-core",
+  "html_url": "https://github.com/tornadocash/tornado-core",
+  "stars": 1609,
+  "forks": 612,
+  "watchers": 1609,
+  "open_issues": 22,
+  "contributors": 11,
+  "created_at": "2019-07-09T13:07:46Z",
+  "updated_at": "2025-10-07T10:29:44Z",
+  "pushed_at": "2022-07-16T04:47:11Z",
+  "size_kb": 1684,
+  "default_branch": "master",
+  "primary_language": "JavaScript",
+  "languages": [
+    {
+      "name": "JavaScript",
+      "bytes": 91101,
+      "percentage": 74.7
+    },
+    {
+      "name": "Solidity",
+      "bytes": 29928,
+      "percentage": 24.54
+    },
+    {
+      "name": "Shell",
+      "bytes": 471,
+      "percentage": 0.39
+    },
+    {
+      "name": "HTML",
+      "bytes": 455,
+      "percentage": 0.37
+    }
+  ],
+  "total_languages": 4,
+  "top_contributors": [
+    {
+      "username": "poma",
+      "contributions": 176,
+      "avatar_url": "https://avatars.githubusercontent.com/u/2109710?v=4",
+      "profile_url": "https://github.com/poma"
+    },
+    {
+      "username": "pertsev",
+      "contributions": 118,
+      "avatar_url": "https://avatars.githubusercontent.com/u/11399003?v=4",
+      "profile_url": "https://github.com/pertsev"
+    },
+    {
+      "username": "rstormsf",
+      "contributions": 38,
+      "avatar_url": "https://avatars.githubusercontent.com/u/9360827?v=4",
+      "profile_url": "https://github.com/rstormsf"
+    },
+    {
+      "username": "3q-coder",
+      "contributions": 2,
+      "avatar_url": "https://avatars.githubusercontent.com/u/38461197?v=4",
+      "profile_url": "https://github.com/3q-coder"
+    },
+    {
+      "username": "Agonical",
+      "contributions": 1,
+      "avatar_url": "https://avatars.githubusercontent.com/u/47953674?v=4",
+      "profile_url": "https://github.com/Agonical"
+    },
+    {
+      "username": "howjmay",
+      "contributions": 1,
+      "avatar_url": "https://avatars.githubusercontent.com/u/13924801?v=4",
+      "profile_url": "https://github.com/howjmay"
+    },
+    {
+      "username": "Lucienest",
+      "contributions": 1,
+      "avatar_url": "https://avatars.githubusercontent.com/u/61408704?v=4",
+      "profile_url": "https://github.com/Lucienest"
+    },
+    {
+      "username": "tsunamidev",
+      "contributions": 1,
+      "avatar_url": "https://avatars.githubusercontent.com/u/63130562?v=4",
+      "profile_url": "https://github.com/tsunamidev"
+    },
+    {
+      "username": "gnidan",
+      "contributions": 1,
+      "avatar_url": "https://avatars.githubusercontent.com/u/151065?v=4",
+      "profile_url": "https://github.com/gnidan"
+    },
+    {
+      "username": "mirru2532",
+      "contributions": 1,
+      "avatar_url": "https://avatars.githubusercontent.com/u/92937104?v=4",
+      "profile_url": "https://github.com/mirru2532"
+    }
+  ],
+  "recent_commits": [
+    {
+      "sha": "1ef6a26",
+      "message": "Merge pull request #97 from tornadocash/sol-coverage",
+      "author": "Alexey Pertsev",
+      "date": "2022-03-24T19:28:35Z",
+      "url": "https://github.com/tornadocash/tornado-core/commit/1ef6a263ac6a0e476d063fcb269a9df65a1bd56a"
+    },
+    {
+      "sha": "f9f19b7",
+      "message": "add coverage to CI",
+      "author": "Drygin",
+      "date": "2022-03-24T18:48:38Z",
+      "url": "https://github.com/tornadocash/tornado-core/commit/f9f19b70e471751508fe684939eb1428d511b6f8"
+    },
+    {
+      "sha": "10aeb05",
+      "message": "add sol-coverage",
+      "author": "Drygin",
+      "date": "2022-03-05T17:33:06Z",
+      "url": "https://github.com/tornadocash/tornado-core/commit/10aeb054170acd8902e27d1238ce7e10eb9c0f56"
+    },
+    {
+      "sha": "896fc22",
+      "message": "Merge pull request #93 from HowJMay/typo",
+      "author": "Roman Semenov",
+      "date": "2021-10-31T15:57:19Z",
+      "url": "https://github.com/tornadocash/tornado-core/commit/896fc224ffd3619dfe3f09aad90e0021a8d41dd7"
+    },
+    {
+      "sha": "0b8bbf6",
+      "message": "fix typos",
+      "author": "HowJMay",
+      "date": "2021-10-31T14:07:39Z",
+      "url": "https://github.com/tornadocash/tornado-core/commit/0b8bbf631716c943c33282b2802c57f55d11f8aa"
+    }
+  ],
+  "total_commits_sample": 10,
+  "description": "Tornado cash. Non-custodial private transactions on Ethereum. ",
+  "homepage": "https://tornado.cash",
+  "topics": [],
+  "license": "GNU General Public License v3.0",
+  "is_fork": false,
+  "is_archived": true,
+  "is_disabled": false,
+  "is_private": false,
+  "has_wiki": true,
+  "has_issues": true,
+  "has_projects": true,
+  "analyzed_at": "2025-10-07T23:23:28.737467",
+  "data_source": "github-api-v3",
+  "confidence": 1.0,
+  "verified": true
+}

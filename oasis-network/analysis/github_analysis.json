@@ -1,0 +1,175 @@
+{
+  "owner": "oasisprotocol",
+  "repo_name": "oasis-core",
+  "full_name": "oasisprotocol/oasis-core",
+  "github_url": "https://github.com/oasisprotocol/oasis-core",
+  "html_url": "https://github.com/oasisprotocol/oasis-core",
+  "stars": 356,
+  "forks": 142,
+  "watchers": 356,
+  "open_issues": 389,
+  "contributors": 51,
+  "created_at": "2018-03-31T01:42:22Z",
+  "updated_at": "2025-10-06T18:34:58Z",
+  "pushed_at": "2025-10-07T07:08:33Z",
+  "size_kb": 33255,
+  "default_branch": "master",
+  "primary_language": "Go",
+  "languages": [
+    {
+      "name": "Go",
+      "bytes": 6897571,
+      "percentage": 80.9
+    },
+    {
+      "name": "Rust",
+      "bytes": 1557890,
+      "percentage": 18.27
+    },
+    {
+      "name": "Shell",
+      "bytes": 33151,
+      "percentage": 0.39
+    },
+    {
+      "name": "Makefile",
+      "bytes": 28316,
+      "percentage": 0.33
+    },
+    {
+      "name": "Dockerfile",
+      "bytes": 5784,
+      "percentage": 0.07
+    },
+    {
+      "name": "Python",
+      "bytes": 1841,
+      "percentage": 0.02
+    },
+    {
+      "name": "Jinja",
+      "bytes": 1148,
+      "percentage": 0.01
+    }
+  ],
+  "total_languages": 7,
+  "top_contributors": [
+    {
+      "username": "kostko",
+      "contributions": 3151,
+      "avatar_url": "https://avatars.githubusercontent.com/u/543739?v=4",
+      "profile_url": "https://github.com/kostko"
+    },
+    {
+      "username": "ptrus",
+      "contributions": 1203,
+      "avatar_url": "https://avatars.githubusercontent.com/u/3691472?v=4",
+      "profile_url": "https://github.com/ptrus"
+    },
+    {
+      "username": "Yawning",
+      "contributions": 1153,
+      "avatar_url": "https://avatars.githubusercontent.com/u/3646968?v=4",
+      "profile_url": "https://github.com/Yawning"
+    },
+    {
+      "username": "pro-wh",
+      "contributions": 1075,
+      "avatar_url": "https://avatars.githubusercontent.com/u/38229038?v=4",
+      "profile_url": "https://github.com/pro-wh"
+    },
+    {
+      "username": "peternose",
+      "contributions": 990,
+      "avatar_url": "https://avatars.githubusercontent.com/u/28194514?v=4",
+      "profile_url": "https://github.com/peternose"
+    },
+    {
+      "username": "tjanez",
+      "contributions": 544,
+      "avatar_url": "https://avatars.githubusercontent.com/u/2518544?v=4",
+      "profile_url": "https://github.com/tjanez"
+    },
+    {
+      "username": "dependabot[bot]",
+      "contributions": 348,
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "profile_url": "https://github.com/apps/dependabot"
+    },
+    {
+      "username": "abukosek",
+      "contributions": 258,
+      "avatar_url": "https://avatars.githubusercontent.com/u/2519303?v=4",
+      "profile_url": "https://github.com/abukosek"
+    },
+    {
+      "username": "bennetyee",
+      "contributions": 220,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1486192?v=4",
+      "profile_url": "https://github.com/bennetyee"
+    },
+    {
+      "username": "jberci",
+      "contributions": 185,
+      "avatar_url": "https://avatars.githubusercontent.com/u/6883025?v=4",
+      "profile_url": "https://github.com/jberci"
+    }
+  ],
+  "recent_commits": [
+    {
+      "sha": "fa87314",
+      "message": "Merge pull request #6345 from oasisprotocol/anzoman/trivial/nancy-add-sonatype-oss-index-auth",
+      "author": "An\u017ee Luzar",
+      "date": "2025-10-06T10:42:22Z",
+      "url": "https://github.com/oasisprotocol/oasis-core/commit/fa873145e655e946bda7f84d5df2634862502e7a"
+    },
+    {
+      "sha": "e8fcb08",
+      "message": "buildkite: Use env vars for Sonatype OSS Index auth",
+      "author": "An\u017ee Luzar",
+      "date": "2025-10-03T13:36:00Z",
+      "url": "https://github.com/oasisprotocol/oasis-core/commit/e8fcb08f341b33b80995de8c4a2e079deef73e4a"
+    },
+    {
+      "sha": "88a78c9",
+      "message": "buildkite: Require Sonatype OSS Index auth for nancy audit",
+      "author": "An\u017ee Luzar",
+      "date": "2025-10-03T09:54:28Z",
+      "url": "https://github.com/oasisprotocol/oasis-core/commit/88a78c97d96ed9fd2be6018789aa505748422a2e"
+    },
+    {
+      "sha": "a17cbda",
+      "message": "Merge pull request #6330 from oasisprotocol/ptrus/bugfix/rhp-propagate-failures",
+      "author": "Peter Us",
+      "date": "2025-09-22T08:36:02Z",
+      "url": "https://github.com/oasisprotocol/oasis-core/commit/a17cbda4ee5f4ee2c74c9798fb2a49c797e9932d"
+    },
+    {
+      "sha": "5501ded",
+      "message": "runtime/protocol: Propagate write failures",
+      "author": "ptrus",
+      "date": "2025-09-19T13:17:38Z",
+      "url": "https://github.com/oasisprotocol/oasis-core/commit/5501ded6d3ab22eaad328c0ee984b7335f7f76b3"
+    }
+  ],
+  "total_commits_sample": 10,
+  "description": "Performant and Confidentiality-Preserving Smart Contracts + Blockchains",
+  "homepage": "https://oasisprotocol.org",
+  "topics": [
+    "blockchain",
+    "privacy",
+    "smart-contracts"
+  ],
+  "license": "Apache License 2.0",
+  "is_fork": false,
+  "is_archived": false,
+  "is_disabled": false,
+  "is_private": false,
+  "has_wiki": false,
+  "has_issues": true,
+  "has_projects": false,
+  "analyzed_at": "2025-10-07T23:22:05.121024",
+  "data_source": "github-api-v3",
+  "confidence": 1.0,
+  "verified": true
+}

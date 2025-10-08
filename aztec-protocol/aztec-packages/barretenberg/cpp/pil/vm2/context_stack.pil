@@ -1,0 +1,48 @@
+namespace context_stack;
+    pol commit sel;
+    sel * (1 - sel) = 0;
+
+    #[skippable_if]
+    sel = 0;
+
+    // Sel = 1 IFF context_id != 0 - this is probably overconstrained, since it's a lookup
+    // it maybe naturally constrained to be 1 based on the lookup relations
+    pol commit context_id_inv;
+    context_id * ((1 - sel) * (1 - context_id_inv) + context_id_inv) - sel = 0;
+
+    pol commit entered_context_id;
+    pol commit context_id; // Constrained to != 0 based on context.pil
+    pol commit parent_id;
+    pol commit next_pc;
+    pol commit msg_sender;
+    pol commit contract_address;
+    pol commit bytecode_id;
+    pol commit is_static;
+
+    pol commit parent_calldata_addr;
+    pol commit parent_calldata_size;
+
+    pol commit parent_l2_gas_limit;
+    pol commit parent_da_gas_limit;
+
+    pol commit parent_l2_gas_used;
+    pol commit parent_da_gas_used;
+
+    // Tree State
+    pol commit note_hash_tree_root;
+    pol commit note_hash_tree_size;
+    pol commit num_note_hashes_emitted;
+
+    pol commit nullifier_tree_root;
+    pol commit nullifier_tree_size;
+    pol commit num_nullifiers_emitted;
+
+    pol commit public_data_tree_root;
+    pol commit public_data_tree_size;
+
+    pol commit written_public_data_slots_tree_root;
+    pol commit written_public_data_slots_tree_size;
+
+    // Side effects state
+    pol commit num_unencrypted_log_fields;
+    pol commit num_l2_to_l1_messages;

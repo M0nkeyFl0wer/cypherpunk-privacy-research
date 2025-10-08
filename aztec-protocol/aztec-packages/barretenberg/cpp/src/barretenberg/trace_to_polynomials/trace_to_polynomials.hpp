@@ -1,0 +1,57 @@
+// === AUDIT STATUS ===
+// internal:    { status: not started, auditors: [], date: YYYY-MM-DD }
+// external_1:  { status: not started, auditors: [], date: YYYY-MM-DD }
+// external_2:  { status: not started, auditors: [], date: YYYY-MM-DD }
+// =====================
+
+#pragma once
+#include "barretenberg/flavor/flavor.hpp"
+#include "barretenberg/flavor/flavor_concepts.hpp"
+#include "barretenberg/honk/composer/permutation_lib.hpp"
+#include "barretenberg/srs/global_crs.hpp"
+
+namespace bb {
+
+template <class Flavor> class TraceToPolynomials {
+    using Builder = typename Flavor::CircuitBuilder;
+    using Polynomial = typename Flavor::Polynomial;
+    using FF = typename Flavor::FF;
+    using ExecutionTrace = typename Builder::ExecutionTrace;
+    using Wires = std::array<SlabVector<uint32_t>, Builder::NUM_WIRES>;
+    using ProverPolynomials = typename Flavor::ProverPolynomials;
+
+  public:
+    static constexpr size_t NUM_WIRES = Builder::NUM_WIRES;
+
+    /**
+     * @brief Given a circuit, populate a proving key with wire polys, selector polys, and sigma/id polys
+     * @note By default, this method constructs an exectution trace that is sorted by gate type. Optionally, it
+     * constructs a trace that is both sorted and "structured" in the sense that each block/gate-type has a fixed amount
+     * of space within the wire polynomials, regardless of how many actual constraints of each type exist. This is
+     * useful primarily for folding since it guarantees that the set of relations that must be executed at each row is
+     * consistent across all folding steps.
+     *
+     * @param builder
+     * @param is_structured whether or not the trace is to be structured with a fixed block size
+     */
+    static void populate(Builder& builder, ProverPolynomials&, ActiveRegionData&);
+
+  private:
+    /**
+     * @brief Populate wire polynomials, selector polynomials and copy cycles from raw circuit data
+     * @return std::vector<CyclicPermutation> copy cycles describing the copy constraints in the circuit
+     */
+    static std::vector<CyclicPermutation> populate_wires_and_selectors_and_compute_copy_cycles(Builder& builder,
+                                                                                               ProverPolynomials&,
+                                                                                               ActiveRegionData&);
+
+    /**
+     * @brief Construct and add the goblin ecc op wires to the proving key
+     * @details The ecc op wires vanish everywhere except on the ecc op block, where they contain a copy of the ecc op
+     * data assumed already to be present in the corrresponding block of the conventional wires in the proving key.
+     */
+    static void add_ecc_op_wires_to_prover_instance(Builder& builder, ProverPolynomials&)
+        requires IsMegaFlavor<Flavor>;
+};
+
+} // namespace bb

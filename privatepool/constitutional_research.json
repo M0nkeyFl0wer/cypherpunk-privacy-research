@@ -8,7 +8,11 @@
     "constitutional_version": "2.0.0",
     "compliance_status": "COMPLIANT",
     "multi_source_verification": true,
-    "total_sources": 12
+    "total_sources": 12,
+    "batch2_processed": true,
+    "github_enrichment_date": "2025-10-06T12:46:49.640045Z",
+    "batch_number": 2,
+    "seshat_website_found": true
   },
   "basic_information": {
     "official_name": {
@@ -48,7 +52,7 @@
         "https://www.theblock.co/post/348959/0xbow-privacy-pools-new-cypherpunk-tool-inspired-research-ethereum-founder-vitalik-buterin",
         "https://mpost.io/0xbows-privacy-pools-debut-on-ethereum-providing-legal-on-chain-privacy/"
       ],
-      "confidence": 0.90,
+      "confidence": 0.9,
       "verification_count": 2
     }
   },
@@ -126,7 +130,7 @@
           "https://docs.privacypools.com/",
           "https://www.bankless.com/read/0xbows-privacy-pools"
         ],
-        "confidence": 0.90,
+        "confidence": 0.9,
         "verification_count": 2
       },
       "packages": {
@@ -153,7 +157,7 @@
           "https://docs.privacypools.com/",
           "https://www.bankless.com/read/0xbows-privacy-pools"
         ],
-        "confidence": 0.90,
+        "confidence": 0.9,
         "verification_count": 2
       },
       "smart_contracts": {
@@ -162,7 +166,7 @@
           "sources": [
             "Web search results"
           ],
-          "confidence": 0.70,
+          "confidence": 0.7,
           "verification_count": 1,
           "note": "Network-specific address not confirmed"
         },
@@ -171,7 +175,7 @@
           "sources": [
             "Web search results"
           ],
-          "confidence": 0.70,
+          "confidence": 0.7,
           "verification_count": 1,
           "note": "Network-specific address not confirmed"
         }
@@ -198,7 +202,7 @@
         "https://docs.privacypools.com/",
         "https://github.com/0xbow-io/privacy-pools-core"
       ],
-      "confidence": 0.90,
+      "confidence": 0.9,
       "verification_count": 2
     }
   },
@@ -279,7 +283,7 @@
         "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4563364",
         "https://docs.privacypools.com/"
       ],
-      "confidence": 0.90,
+      "confidence": 0.9,
       "verification_count": 2
     }
   },
@@ -295,7 +299,7 @@
         "https://www.bankless.com/read/0xbows-privacy-pools",
         "https://www.theblock.co/post/348959/0xbow-privacy-pools-new-cypherpunk-tool-inspired-research-ethereum-founder-vitalik-buterin"
       ],
-      "confidence": 0.90,
+      "confidence": 0.9,
       "verification_count": 2
     },
     "vitalik_participation": {
@@ -304,7 +308,7 @@
         "https://followin.io/en/feed/17174905",
         "https://bitcoinethereumnews.com/ethereum/ethereum-introduces-privacy-pools-vitalik-buterin-deposits-first-eth/"
       ],
-      "confidence": 0.90,
+      "confidence": 0.9,
       "verification_count": 2
     }
   },
@@ -343,7 +347,7 @@
       "sources": [
         "https://0xbow.io/blog/getting-started-with-privacy-pools"
       ],
-      "confidence": 0.90,
+      "confidence": 0.9,
       "verification_count": 1
     }
   },
@@ -365,7 +369,7 @@
         "sources": [
           "https://www.coindesk.com/tech/2025/04/03/0xbow-s-ethereum-privacy-pools-surpass-200-deposits-as-user-interest-grows"
         ],
-        "confidence": 0.90,
+        "confidence": 0.9,
         "verification_count": 1
       },
       "initial_stats": {
@@ -418,7 +422,7 @@
   },
   "data_gaps": [],
   "completeness_score": 0.92,
-  "overall_confidence": 0.90,
+  "overall_confidence": 0.9,
   "constitutional_compliance": {
     "real_data_only": true,
     "multi_source_verification": true,
@@ -426,5 +430,36 @@
     "gap_reporting": true,
     "no_synthetic_data": true,
     "validation_passed": true
-  }
+  },
+  "description": "Privacy Pools by 0xbow is a compliant way to anonymously transact on Ethereum. 0xbow blocks illicit actors to ensure pool integrity.",
+  "description_confidence": 0.95,
+  "description_sources": [
+    "https://api.github.com/repos/0xbow-io/privacy-pools-core"
+  ],
+  "technical_stack": {
+    "github_statistics": {
+      "stars": 80,
+      "forks": 21,
+      "watchers": 80,
+      "language": "TypeScript",
+      "api_source": "https://api.github.com/repos/0xbow-io/privacy-pools-core",
+      "confidence": 1.0,
+      "enrichment_date": "2025-10-06T12:46:49.639985Z"
+    },
+    "programming_languages": {
+      "TypeScript": 530883,
+      "Solidity": 371635,
+      "JavaScript": 50724,
+      "Circom": 9286,
+      "Mustache": 1021,
+      "Shell": 736,
+      "Dockerfile": 302
+    }
+  },
+  "website": "https://privatepool.com",
+  "website_confidence": 0.85,
+  "website_sources": [
+    "https://privatepool.com",
+    "seshat domain discovery"
+  ]
 }

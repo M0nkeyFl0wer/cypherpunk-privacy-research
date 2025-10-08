@@ -1,0 +1,16 @@
+telemetry:
+  enabled: true
+
+validator:
+  replicas: 1
+  sequencer:
+    minTxsPerBlock: 0
+  validator:
+    disabled: false
+
+bootNode:
+  enabled: false
+
+bot:
+  enabled: false
+

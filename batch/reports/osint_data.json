@@ -1,0 +1,107 @@
+{
+  "timestamp": "2025-09-29T22:34:38",
+  "total_projects": 9,
+  "scans_started": 9,
+  "scans_completed": 0,
+  "results": [
+    {
+      "project": "Aztec",
+      "project_id": "aztec",
+      "scan_id": "1ECB12A1",
+      "website": "https://aztec.network",
+      "github": [
+        "https://github.com/AztecProtocol/aztec-packages"
+      ],
+      "started_at": "2025-09-29T22:34:08",
+      "status": "started"
+    },
+    {
+      "project": "Railgun",
+      "project_id": "railgun",
+      "scan_id": "6A310BDF",
+      "website": "https://railgun.org",
+      "github": [
+        "https://github.com/Railgun-Privacy"
+      ],
+      "started_at": "2025-09-29T22:34:10",
+      "status": "started"
+    },
+    {
+      "project": "0xbow",
+      "project_id": "0xbow",
+      "scan_id": "2033061B",
+      "website": "https://0xbow.io",
+      "github": [
+        "https://github.com/0xbow-io"
+      ],
+      "started_at": "2025-09-29T22:34:15",
+      "status": "started"
+    },
+    {
+      "project": "Fluidkey",
+      "project_id": "fluidkey",
+      "scan_id": "64D12C11",
+      "website": "https://fluidkey.com",
+      "github": [
+        "https://github.com/fluidkey"
+      ],
+      "started_at": "2025-09-29T22:34:20",
+      "status": "started"
+    },
+    {
+      "project": "Rotki",
+      "project_id": "rotki",
+      "scan_id": "EE29AF95",
+      "website": "https://rotki.com",
+      "github": [
+        "https://github.com/rotki/rotki"
+      ],
+      "started_at": "2025-09-29T22:34:23",
+      "status": "started"
+    },
+    {
+      "project": "Mask Network",
+      "project_id": "mask-network",
+      "scan_id": "82C7A9FC",
+      "website": "https://mask.io",
+      "github": [
+        "https://github.com/DimensionDev/Maskbook"
+      ],
+      "started_at": "2025-09-29T22:34:25",
+      "status": "started"
+    },
+    {
+      "project": "Fileverse",
+      "project_id": "fileverse",
+      "scan_id": "58AE9371",
+      "website": "https://fileverse.io",
+      "github": [
+        "https://github.com/fileverse"
+      ],
+      "started_at": "2025-09-29T22:34:28",
+      "status": "started"
+    },
+    {
+      "project": "PrivatePool",
+      "project_id": "privatepool",
+      "scan_id": "E6D1674B",
+      "website": "https://privatepool.xyz",
+      "github": [
+        "https://github.com/privatepool/core"
+      ],
+      "started_at": "2025-09-29T22:34:31",
+      "status": "started"
+    },
+    {
+      "project": "ZKVote",
+      "project_id": "zkvote",
+      "scan_id": "F5EABC88",
+      "website": "https://zkvote.io",
+      "github": [
+        "https://github.com/zkvote/protocol"
+      ],
+      "started_at": "2025-09-29T22:34:38",
+      "status": "started"
+    }
+  ]
+}

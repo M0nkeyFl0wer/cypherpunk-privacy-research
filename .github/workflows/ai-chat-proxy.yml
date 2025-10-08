@@ -1,9 +1,0 @@
-name: AI Chat Proxy
-on:
-  repository_dispatch:
-    types: [chat-request]
-jobs:
-  chat:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "Placeholder for TASK-029"

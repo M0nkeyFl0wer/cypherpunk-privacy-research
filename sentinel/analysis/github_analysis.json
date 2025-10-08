@@ -1,0 +1,165 @@
+{
+  "owner": "sentinel-official",
+  "repo_name": "hub",
+  "full_name": "sentinel-official/sentinelhub",
+  "github_url": "https://github.com/sentinel-official/hub",
+  "html_url": "https://github.com/sentinel-official/sentinelhub",
+  "stars": 89,
+  "forks": 44,
+  "watchers": 89,
+  "open_issues": 9,
+  "contributors": 11,
+  "created_at": "2019-06-25T10:02:24Z",
+  "updated_at": "2025-10-07T07:57:44Z",
+  "pushed_at": "2025-10-07T07:57:40Z",
+  "size_kb": 6993,
+  "default_branch": "development",
+  "primary_language": "Go",
+  "languages": [
+    {
+      "name": "Go",
+      "bytes": 796958,
+      "percentage": 99.48
+    },
+    {
+      "name": "Makefile",
+      "bytes": 2762,
+      "percentage": 0.34
+    },
+    {
+      "name": "Dockerfile",
+      "bytes": 1043,
+      "percentage": 0.13
+    },
+    {
+      "name": "Shell",
+      "bytes": 385,
+      "percentage": 0.05
+    }
+  ],
+  "total_languages": 4,
+  "top_contributors": [
+    {
+      "username": "ironman0x7b2",
+      "contributions": 792,
+      "avatar_url": "https://avatars.githubusercontent.com/u/31726361?v=4",
+      "profile_url": "https://github.com/ironman0x7b2"
+    },
+    {
+      "username": "bsrinivas8687",
+      "contributions": 674,
+      "avatar_url": "https://avatars.githubusercontent.com/u/16146591?v=4",
+      "profile_url": "https://github.com/bsrinivas8687"
+    },
+    {
+      "username": "dependabot[bot]",
+      "contributions": 78,
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "profile_url": "https://github.com/apps/dependabot"
+    },
+    {
+      "username": "bitsndbyts",
+      "contributions": 64,
+      "avatar_url": "https://avatars.githubusercontent.com/u/42209090?v=4",
+      "profile_url": "https://github.com/bitsndbyts"
+    },
+    {
+      "username": "baymax19",
+      "contributions": 29,
+      "avatar_url": "https://avatars.githubusercontent.com/u/39290834?v=4",
+      "profile_url": "https://github.com/baymax19"
+    },
+    {
+      "username": "jay-dee7",
+      "contributions": 4,
+      "avatar_url": "https://avatars.githubusercontent.com/u/10788442?v=4",
+      "profile_url": "https://github.com/jay-dee7"
+    },
+    {
+      "username": "anukul",
+      "contributions": 1,
+      "avatar_url": "https://avatars.githubusercontent.com/u/44864521?v=4",
+      "profile_url": "https://github.com/anukul"
+    },
+    {
+      "username": "freak12techno",
+      "contributions": 1,
+      "avatar_url": "https://avatars.githubusercontent.com/u/83376337?v=4",
+      "profile_url": "https://github.com/freak12techno"
+    },
+    {
+      "username": "anthrax314",
+      "contributions": 1,
+      "avatar_url": "https://avatars.githubusercontent.com/u/30640502?v=4",
+      "profile_url": "https://github.com/anthrax314"
+    },
+    {
+      "username": "freQniK",
+      "contributions": 1,
+      "avatar_url": "https://avatars.githubusercontent.com/u/93114223?v=4",
+      "profile_url": "https://github.com/freQniK"
+    }
+  ],
+  "recent_commits": [
+    {
+      "sha": "b5e9c41",
+      "message": "chore: use context.Context instead sdk.Context in oracle GetQuotePrice method",
+      "author": "Tony Stark",
+      "date": "2025-10-07T07:57:23Z",
+      "url": "https://github.com/sentinel-official/sentinelhub/commit/b5e9c41adcdd8f86047bfe8a376052f414f42a53"
+    },
+    {
+      "sha": "60804d2",
+      "message": "chore: rename height to spot_price_height in asset",
+      "author": "Tony Stark",
+      "date": "2025-10-07T07:37:01Z",
+      "url": "https://github.com/sentinel-official/sentinelhub/commit/60804d26218c234626f9747a1cfb7c818e41d6e0"
+    },
+    {
+      "sha": "3861011",
+      "message": "chore: store protorev pool and spot price requests in asset",
+      "author": "Tony Stark",
+      "date": "2025-10-07T06:43:31Z",
+      "url": "https://github.com/sentinel-official/sentinelhub/commit/3861011eaf000bd5f8a9f135c392cfff8495d2eb"
+    },
+    {
+      "sha": "b1ba280",
+      "message": "fix: set price precision to 18 digits",
+      "author": "Tony Stark",
+      "date": "2025-10-06T16:01:55Z",
+      "url": "https://github.com/sentinel-official/sentinelhub/commit/b1ba280084dbba41b77b0ee9e781ba99523efbcb"
+    },
+    {
+      "sha": "3f1d7c3",
+      "message": "chore(deps): remove replace lines of gin-gonic/gin and rapid",
+      "author": "Tony Stark",
+      "date": "2025-10-03T15:49:07Z",
+      "url": "https://github.com/sentinel-official/sentinelhub/commit/3f1d7c39a3db8e8c3070539b48ae46d26becc896"
+    }
+  ],
+  "total_commits_sample": 10,
+  "description": "Blockchain core managing Sentinel network services, staking, and governance",
+  "homepage": "https://sentinel.co",
+  "topics": [
+    "blockchain",
+    "cosmos-sdk",
+    "dapp",
+    "dvpn",
+    "privacy",
+    "sentinel",
+    "tendermint",
+    "vpn"
+  ],
+  "license": "Apache License 2.0",
+  "is_fork": false,
+  "is_archived": false,
+  "is_disabled": false,
+  "is_private": false,
+  "has_wiki": true,
+  "has_issues": true,
+  "has_projects": false,
+  "analyzed_at": "2025-10-07T23:22:57.241613",
+  "data_source": "github-api-v3",
+  "confidence": 1.0,
+  "verified": true
+}

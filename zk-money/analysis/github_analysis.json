@@ -1,0 +1,181 @@
+{
+  "owner": "AztecProtocol",
+  "repo_name": "zk-money",
+  "full_name": "AztecProtocol/zk-money",
+  "github_url": "https://github.com/AztecProtocol/zk-money",
+  "html_url": "https://github.com/AztecProtocol/zk-money",
+  "stars": 13,
+  "forks": 15,
+  "watchers": 13,
+  "open_issues": 13,
+  "contributors": 26,
+  "created_at": "2023-01-17T14:43:19Z",
+  "updated_at": "2025-04-19T08:04:17Z",
+  "pushed_at": "2025-04-17T14:45:08Z",
+  "size_kb": 15434,
+  "default_branch": "master",
+  "primary_language": "TypeScript",
+  "languages": [
+    {
+      "name": "TypeScript",
+      "bytes": 2490442,
+      "percentage": 95.88
+    },
+    {
+      "name": "SCSS",
+      "bytes": 68107,
+      "percentage": 2.62
+    },
+    {
+      "name": "HCL",
+      "bytes": 24153,
+      "percentage": 0.93
+    },
+    {
+      "name": "CSS",
+      "bytes": 7564,
+      "percentage": 0.29
+    },
+    {
+      "name": "JavaScript",
+      "bytes": 3120,
+      "percentage": 0.12
+    },
+    {
+      "name": "HTML",
+      "bytes": 1744,
+      "percentage": 0.07
+    },
+    {
+      "name": "MDX",
+      "bytes": 1533,
+      "percentage": 0.06
+    },
+    {
+      "name": "Dockerfile",
+      "bytes": 354,
+      "percentage": 0.01
+    },
+    {
+      "name": "Shell",
+      "bytes": 334,
+      "percentage": 0.01
+    }
+  ],
+  "total_languages": 9,
+  "top_contributors": [
+    {
+      "username": "charlielye",
+      "contributions": 416,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5764343?v=4",
+      "profile_url": "https://github.com/charlielye"
+    },
+    {
+      "username": "joss-aztec",
+      "contributions": 200,
+      "avatar_url": "https://avatars.githubusercontent.com/u/94053499?v=4",
+      "profile_url": "https://github.com/joss-aztec"
+    },
+    {
+      "username": "jonybur",
+      "contributions": 175,
+      "avatar_url": "https://avatars.githubusercontent.com/u/11148144?v=4",
+      "profile_url": "https://github.com/jonybur"
+    },
+    {
+      "username": "PhilWindle",
+      "contributions": 93,
+      "avatar_url": "https://avatars.githubusercontent.com/u/60546371?v=4",
+      "profile_url": "https://github.com/PhilWindle"
+    },
+    {
+      "username": "LeilaWang",
+      "contributions": 91,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5442376?v=4",
+      "profile_url": "https://github.com/LeilaWang"
+    },
+    {
+      "username": "Maddiaa0",
+      "contributions": 70,
+      "avatar_url": "https://avatars.githubusercontent.com/u/47148561?v=4",
+      "profile_url": "https://github.com/Maddiaa0"
+    },
+    {
+      "username": "LHerskind",
+      "contributions": 53,
+      "avatar_url": "https://avatars.githubusercontent.com/u/16536249?v=4",
+      "profile_url": "https://github.com/LHerskind"
+    },
+    {
+      "username": "joeandrews",
+      "contributions": 40,
+      "avatar_url": "https://avatars.githubusercontent.com/u/4138549?v=4",
+      "profile_url": "https://github.com/joeandrews"
+    },
+    {
+      "username": "zac-williamson",
+      "contributions": 31,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1476668?v=4",
+      "profile_url": "https://github.com/zac-williamson"
+    },
+    {
+      "username": "jcf120",
+      "contributions": 28,
+      "avatar_url": "https://avatars.githubusercontent.com/u/2387225?v=4",
+      "profile_url": "https://github.com/jcf120"
+    }
+  ],
+  "recent_commits": [
+    {
+      "sha": "3d9c5c9",
+      "message": "Update LICENSE",
+      "author": "josh crites",
+      "date": "2025-04-17T14:45:08Z",
+      "url": "https://github.com/AztecProtocol/zk-money/commit/3d9c5c94811d06c67312278fe3be71dbc5aa8422"
+    },
+    {
+      "sha": "9108e10",
+      "message": "Merge pull request #126 from AztecProtocol/critesjosh-patch-1",
+      "author": "josh crites",
+      "date": "2025-02-28T19:21:04Z",
+      "url": "https://github.com/AztecProtocol/zk-money/commit/9108e102fa83fba52bb11ac4b7e3aea12ba237e3"
+    },
+    {
+      "sha": "549088f",
+      "message": "fix: increased slippage used by euler bridge (#145)",
+      "author": "Jan Bene\u0161",
+      "date": "2024-04-05T10:29:10Z",
+      "url": "https://github.com/AztecProtocol/zk-money/commit/549088f10e3f63f423af113c2c60394021d9f7cf"
+    },
+    {
+      "sha": "fccbaca",
+      "message": "chore: move const out of class (#143)",
+      "author": "Lasse Herskind",
+      "date": "2023-11-06T16:53:22Z",
+      "url": "https://github.com/AztecProtocol/zk-money/commit/fccbaca589a5b171fefd7cd211a015f8139d3f81"
+    },
+    {
+      "sha": "72bfe1f",
+      "message": "Bump build-system commit.",
+      "author": "Charlie Lye",
+      "date": "2023-11-06T16:20:45Z",
+      "url": "https://github.com/AztecProtocol/zk-money/commit/72bfe1f8ca0c51d89dcaf65d410f8b577b61445d"
+    }
+  ],
+  "total_commits_sample": 10,
+  "description": null,
+  "homepage": null,
+  "topics": [],
+  "license": "Apache License 2.0",
+  "is_fork": false,
+  "is_archived": false,
+  "is_disabled": false,
+  "is_private": false,
+  "has_wiki": true,
+  "has_issues": true,
+  "has_projects": true,
+  "analyzed_at": "2025-10-07T23:24:16.445837",
+  "data_source": "github-api-v3",
+  "confidence": 1.0,
+  "verified": true
+}

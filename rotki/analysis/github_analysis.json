@@ -1,0 +1,211 @@
+{
+  "owner": "rotki",
+  "repo_name": "rotki",
+  "full_name": "rotki/rotki",
+  "github_url": "https://github.com/rotki/rotki",
+  "html_url": "https://github.com/rotki/rotki",
+  "stars": 3285,
+  "forks": 640,
+  "watchers": 3285,
+  "open_issues": 397,
+  "contributors": 100,
+  "created_at": "2018-03-05T11:26:09Z",
+  "updated_at": "2025-10-07T16:36:53Z",
+  "pushed_at": "2025-10-07T16:36:49Z",
+  "size_kb": 446730,
+  "default_branch": "develop",
+  "primary_language": "Python",
+  "languages": [
+    {
+      "name": "Python",
+      "bytes": 14278188,
+      "percentage": 75.25
+    },
+    {
+      "name": "TypeScript",
+      "bytes": 2424065,
+      "percentage": 12.78
+    },
+    {
+      "name": "Vue",
+      "bytes": 2133185,
+      "percentage": 11.24
+    },
+    {
+      "name": "Rust",
+      "bytes": 85565,
+      "percentage": 0.45
+    },
+    {
+      "name": "JavaScript",
+      "bytes": 21985,
+      "percentage": 0.12
+    },
+    {
+      "name": "HTML",
+      "bytes": 10575,
+      "percentage": 0.06
+    },
+    {
+      "name": "PowerShell",
+      "bytes": 8907,
+      "percentage": 0.05
+    },
+    {
+      "name": "Shell",
+      "bytes": 5259,
+      "percentage": 0.03
+    },
+    {
+      "name": "Dockerfile",
+      "bytes": 2764,
+      "percentage": 0.01
+    },
+    {
+      "name": "SCSS",
+      "bytes": 1963,
+      "percentage": 0.01
+    },
+    {
+      "name": "Makefile",
+      "bytes": 1224,
+      "percentage": 0.01
+    },
+    {
+      "name": "Perl",
+      "bytes": 988,
+      "percentage": 0.01
+    }
+  ],
+  "total_languages": 12,
+  "top_contributors": [
+    {
+      "username": "LefterisJP",
+      "contributions": 8638,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1658405?v=4",
+      "profile_url": "https://github.com/LefterisJP"
+    },
+    {
+      "username": "kelsos",
+      "contributions": 3611,
+      "avatar_url": "https://avatars.githubusercontent.com/u/2269732?v=4",
+      "profile_url": "https://github.com/kelsos"
+    },
+    {
+      "username": "yabirgb",
+      "contributions": 1908,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5068010?v=4",
+      "profile_url": "https://github.com/yabirgb"
+    },
+    {
+      "username": "lukicenturi",
+      "contributions": 1434,
+      "avatar_url": "https://avatars.githubusercontent.com/u/26648140?v=4",
+      "profile_url": "https://github.com/lukicenturi"
+    },
+    {
+      "username": "prettyirrelevant",
+      "contributions": 426,
+      "avatar_url": "https://avatars.githubusercontent.com/u/72208758?v=4",
+      "profile_url": "https://github.com/prettyirrelevant"
+    },
+    {
+      "username": "nicholasyoder",
+      "contributions": 343,
+      "avatar_url": "https://avatars.githubusercontent.com/u/145849440?v=4",
+      "profile_url": "https://github.com/nicholasyoder"
+    },
+    {
+      "username": "nebolax",
+      "contributions": 291,
+      "avatar_url": "https://avatars.githubusercontent.com/u/63492346?v=4",
+      "profile_url": "https://github.com/nebolax"
+    },
+    {
+      "username": "tewshi",
+      "contributions": 194,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5625068?v=4",
+      "profile_url": "https://github.com/tewshi"
+    },
+    {
+      "username": "isidorosp",
+      "contributions": 176,
+      "avatar_url": "https://avatars.githubusercontent.com/u/27592?v=4",
+      "profile_url": "https://github.com/isidorosp"
+    },
+    {
+      "username": "vnavascues",
+      "contributions": 171,
+      "avatar_url": "https://avatars.githubusercontent.com/u/14769962?v=4",
+      "profile_url": "https://github.com/vnavascues"
+    }
+  ],
+  "recent_commits": [
+    {
+      "sha": "3f6b924",
+      "message": "fix: rename seenTxHash to seenTxReference (#10696)",
+      "author": "Luki Centuri",
+      "date": "2025-10-07T16:36:49Z",
+      "url": "https://github.com/rotki/rotki/commit/3f6b924e99b8c9f4d34dd7399dc139b040fcccc7"
+    },
+    {
+      "sha": "d0fab48",
+      "message": "Improve error handling etc in solana code",
+      "author": "Nicholas Yoder",
+      "date": "2025-10-07T13:27:41Z",
+      "url": "https://github.com/rotki/rotki/commit/d0fab481983abe2a8d92f293a02f4507dcf9127a"
+    },
+    {
+      "sha": "310d1ae",
+      "message": "refactor `TokenEncounterInfo`",
+      "author": "Isaac Adewumi",
+      "date": "2025-10-06T21:07:53Z",
+      "url": "https://github.com/rotki/rotki/commit/310d1ae26e26b5b7fbe04ad48f298831a06dc1eb"
+    },
+    {
+      "sha": "658c967",
+      "message": "decode solana spl/token2022 transfers",
+      "author": "Isaac Adewumi",
+      "date": "2025-10-06T12:40:34Z",
+      "url": "https://github.com/rotki/rotki/commit/658c967dd7491c5323c6f50bb3b281a2295020d5"
+    },
+    {
+      "sha": "942f261",
+      "message": "feat: save last known filter for history events (#10682)",
+      "author": "Luki Centuri",
+      "date": "2025-10-07T07:25:09Z",
+      "url": "https://github.com/rotki/rotki/commit/942f261ee735d185361a6b82f09ea529829b3863"
+    }
+  ],
+  "total_commits_sample": 10,
+  "description": "A portfolio tracking, analytics, accounting and management application that protects your privacy",
+  "homepage": "https://rotki.com",
+  "topics": [
+    "accounting",
+    "analytics",
+    "bitcoin",
+    "blockchain",
+    "cryptocurrencies",
+    "cryptocurrency-exchanges",
+    "cryptocurrency-portfolio",
+    "cryptocurrency-portfolio-tracking",
+    "ethereum",
+    "hacktoberfest",
+    "management",
+    "management-system",
+    "portfolio-tracker",
+    "tracking"
+  ],
+  "license": "GNU Affero General Public License v3.0",
+  "is_fork": false,
+  "is_archived": false,
+  "is_disabled": false,
+  "is_private": false,
+  "has_wiki": true,
+  "has_issues": true,
+  "has_projects": true,
+  "analyzed_at": "2025-10-07T23:22:44.024912",
+  "data_source": "github-api-v3",
+  "confidence": 1.0,
+  "verified": true
+}

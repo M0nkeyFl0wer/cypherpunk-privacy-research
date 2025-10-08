@@ -1,0 +1,99 @@
+{
+  "owner": "starkware-libs",
+  "repo_name": "starkex-contracts",
+  "full_name": "starkware-libs/starkex-contracts",
+  "github_url": "https://github.com/starkware-libs/starkex-contracts",
+  "html_url": "https://github.com/starkware-libs/starkex-contracts",
+  "stars": 286,
+  "forks": 119,
+  "watchers": 286,
+  "open_issues": 9,
+  "contributors": 3,
+  "created_at": "2020-02-11T15:29:54Z",
+  "updated_at": "2025-09-22T15:51:21Z",
+  "pushed_at": "2025-07-01T09:25:34Z",
+  "size_kb": 6186,
+  "default_branch": "master",
+  "primary_language": "Solidity",
+  "languages": [
+    {
+      "name": "Solidity",
+      "bytes": 4397251,
+      "percentage": 100.0
+    }
+  ],
+  "total_languages": 1,
+  "top_contributors": [
+    {
+      "username": "gkaempfer",
+      "contributions": 17,
+      "avatar_url": "https://avatars.githubusercontent.com/u/39151790?v=4",
+      "profile_url": "https://github.com/gkaempfer"
+    },
+    {
+      "username": "remollemo",
+      "contributions": 2,
+      "avatar_url": "https://avatars.githubusercontent.com/u/43035129?v=4",
+      "profile_url": "https://github.com/remollemo"
+    },
+    {
+      "username": "MichaelRiabzev-StarkWare",
+      "contributions": 1,
+      "avatar_url": "https://avatars.githubusercontent.com/u/39152713?v=4",
+      "profile_url": "https://github.com/MichaelRiabzev-StarkWare"
+    }
+  ],
+  "recent_commits": [
+    {
+      "sha": "f3b2506",
+      "message": "StarkPerpetual v3.2",
+      "author": "Remo",
+      "date": "2025-07-01T09:05:47Z",
+      "url": "https://github.com/starkware-libs/starkex-contracts/commit/f3b250690c5d927a6e398e9c1735d9193a643034"
+    },
+    {
+      "sha": "75f31b9",
+      "message": "StarkEx v5",
+      "author": "Gideon Kaempfer",
+      "date": "2023-05-01T08:59:09Z",
+      "url": "https://github.com/starkware-libs/starkex-contracts/commit/75f31b995eab2b7db9cd1f810c163093f8fe77ba"
+    },
+    {
+      "sha": "aecf37f",
+      "message": "Cairo and SHARP verifiers v3.0 audit report",
+      "author": "Gideon Kaempfer",
+      "date": "2023-04-27T14:25:05Z",
+      "url": "https://github.com/starkware-libs/starkex-contracts/commit/aecf37f2278b2df233edd13b686d0aa9462ada02"
+    },
+    {
+      "sha": "f81ba5f",
+      "message": "SHARP EVM Verifier v3.0",
+      "author": "Gideon Kaempfer",
+      "date": "2022-10-18T10:02:32Z",
+      "url": "https://github.com/starkware-libs/starkex-contracts/commit/f81ba5fdbd68516db50ea9679de9d0ac2f8049d8"
+    },
+    {
+      "sha": "210bd5f",
+      "message": "StarkEx v4.5.1",
+      "author": "Gideon Kaempfer",
+      "date": "2022-10-13T15:43:19Z",
+      "url": "https://github.com/starkware-libs/starkex-contracts/commit/210bd5f6bcb6977211677821fe925140859a0f6e"
+    }
+  ],
+  "total_commits_sample": 10,
+  "description": null,
+  "homepage": null,
+  "topics": [],
+  "license": "Other",
+  "is_fork": false,
+  "is_archived": false,
+  "is_disabled": false,
+  "is_private": false,
+  "has_wiki": true,
+  "has_issues": true,
+  "has_projects": true,
+  "analyzed_at": "2025-10-07T23:23:16.182239",
+  "data_source": "github-api-v3",
+  "confidence": 1.0,
+  "verified": true
+}

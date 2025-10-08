@@ -1,0 +1,251 @@
+{
+  "owner": "hyle-team",
+  "repo_name": "zano",
+  "full_name": "hyle-team/zano",
+  "github_url": "https://github.com/hyle-team/zano",
+  "html_url": "https://github.com/hyle-team/zano",
+  "stars": 144,
+  "forks": 86,
+  "watchers": 144,
+  "open_issues": 13,
+  "contributors": 24,
+  "created_at": "2018-12-27T15:45:04Z",
+  "updated_at": "2025-09-27T04:46:16Z",
+  "pushed_at": "2025-10-02T09:52:53Z",
+  "size_kb": 42022,
+  "default_branch": "master",
+  "primary_language": "C++",
+  "languages": [
+    {
+      "name": "C++",
+      "bytes": 9921771,
+      "percentage": 70.11
+    },
+    {
+      "name": "C",
+      "bytes": 3611636,
+      "percentage": 25.52
+    },
+    {
+      "name": "CMake",
+      "bytes": 124908,
+      "percentage": 0.88
+    },
+    {
+      "name": "Ada",
+      "bytes": 89080,
+      "percentage": 0.63
+    },
+    {
+      "name": "Shell",
+      "bytes": 87546,
+      "percentage": 0.62
+    },
+    {
+      "name": "C#",
+      "bytes": 55623,
+      "percentage": 0.39
+    },
+    {
+      "name": "Makefile",
+      "bytes": 52377,
+      "percentage": 0.37
+    },
+    {
+      "name": "Pascal",
+      "bytes": 42411,
+      "percentage": 0.3
+    },
+    {
+      "name": "HTML",
+      "bytes": 29827,
+      "percentage": 0.21
+    },
+    {
+      "name": "Roff",
+      "bytes": 27789,
+      "percentage": 0.2
+    },
+    {
+      "name": "DIGITAL Command Language",
+      "bytes": 27305,
+      "percentage": 0.19
+    },
+    {
+      "name": "Assembly",
+      "bytes": 16413,
+      "percentage": 0.12
+    },
+    {
+      "name": "Inno Setup",
+      "bytes": 11330,
+      "percentage": 0.08
+    },
+    {
+      "name": "JavaScript",
+      "bytes": 10735,
+      "percentage": 0.08
+    },
+    {
+      "name": "Dockerfile",
+      "bytes": 9934,
+      "percentage": 0.07
+    },
+    {
+      "name": "Batchfile",
+      "bytes": 9397,
+      "percentage": 0.07
+    },
+    {
+      "name": "Perl",
+      "bytes": 8835,
+      "percentage": 0.06
+    },
+    {
+      "name": "Python",
+      "bytes": 7058,
+      "percentage": 0.05
+    },
+    {
+      "name": "AppleScript",
+      "bytes": 1998,
+      "percentage": 0.01
+    },
+    {
+      "name": "SAS",
+      "bytes": 1847,
+      "percentage": 0.01
+    },
+    {
+      "name": "Module Management System",
+      "bytes": 1545,
+      "percentage": 0.01
+    },
+    {
+      "name": "M4",
+      "bytes": 786,
+      "percentage": 0.01
+    },
+    {
+      "name": "Objective-C++",
+      "bytes": 596,
+      "percentage": 0.0
+    }
+  ],
+  "total_languages": 23,
+  "top_contributors": [
+    {
+      "username": "sowle",
+      "contributions": 2244,
+      "avatar_url": "https://avatars.githubusercontent.com/u/29127158?v=4",
+      "profile_url": "https://github.com/sowle"
+    },
+    {
+      "username": "cryptozoidberg",
+      "contributions": 1980,
+      "avatar_url": "https://avatars.githubusercontent.com/u/7261328?v=4",
+      "profile_url": "https://github.com/cryptozoidberg"
+    },
+    {
+      "username": "stepan-dolgorukov",
+      "contributions": 31,
+      "avatar_url": "https://avatars.githubusercontent.com/u/63650851?v=4",
+      "profile_url": "https://github.com/stepan-dolgorukov"
+    },
+    {
+      "username": "anonimal",
+      "contributions": 27,
+      "avatar_url": "https://avatars.githubusercontent.com/u/12156341?v=4",
+      "profile_url": "https://github.com/anonimal"
+    },
+    {
+      "username": "zetov",
+      "contributions": 22,
+      "avatar_url": "https://avatars.githubusercontent.com/u/272181?v=4",
+      "profile_url": "https://github.com/zetov"
+    },
+    {
+      "username": "arthurest",
+      "contributions": 18,
+      "avatar_url": "https://avatars.githubusercontent.com/u/66943488?v=4",
+      "profile_url": "https://github.com/arthurest"
+    },
+    {
+      "username": "dimmarvel",
+      "contributions": 11,
+      "avatar_url": "https://avatars.githubusercontent.com/u/46869283?v=4",
+      "profile_url": "https://github.com/dimmarvel"
+    },
+    {
+      "username": "PRavaga",
+      "contributions": 11,
+      "avatar_url": "https://avatars.githubusercontent.com/u/10805734?v=4",
+      "profile_url": "https://github.com/PRavaga"
+    },
+    {
+      "username": "Mekasan",
+      "contributions": 9,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1795029?v=4",
+      "profile_url": "https://github.com/Mekasan"
+    },
+    {
+      "username": "NazarUsov",
+      "contributions": 7,
+      "avatar_url": "https://avatars.githubusercontent.com/u/45450850?v=4",
+      "profile_url": "https://github.com/NazarUsov"
+    }
+  ],
+  "recent_commits": [
+    {
+      "sha": "6e5e478",
+      "message": "Add Zano Governance proposal documentation",
+      "author": "cryptozoidberg",
+      "date": "2025-09-25T14:30:03Z",
+      "url": "https://github.com/hyle-team/zano/commit/6e5e4782cb92d612ff2c697944ee8bdc1169ef02"
+    },
+    {
+      "sha": "3334756",
+      "message": "Bump axios from 1.8.2 to 1.12.0 in /utils/JS (#579)",
+      "author": "dependabot[bot]",
+      "date": "2025-09-15T17:34:14Z",
+      "url": "https://github.com/hyle-team/zano/commit/3334756ce4bc22bef20f829c906ded5207461161"
+    },
+    {
+      "sha": "c0bb2dd",
+      "message": "hotfix for incorrect handling of SSL certs on Linux/macOS",
+      "author": "sowle",
+      "date": "2025-09-05T00:53:22Z",
+      "url": "https://github.com/hyle-team/zano/commit/c0bb2dddda6d8697f4bd4b84070d99cb361d3aef"
+    },
+    {
+      "sha": "36a0997",
+      "message": "Merge branch 'release'",
+      "author": "sowle",
+      "date": "2025-08-28T23:55:07Z",
+      "url": "https://github.com/hyle-team/zano/commit/36a09972c93417f46fb7f56ada50840dad0fa464"
+    },
+    {
+      "sha": "03ce1e6",
+      "message": "Merge branch 'develop' into release",
+      "author": "sowle",
+      "date": "2025-08-27T13:23:03Z",
+      "url": "https://github.com/hyle-team/zano/commit/03ce1e6c9db767c53281234f9a8f75bac600905e"
+    }
+  ],
+  "total_commits_sample": 10,
+  "description": "Confidential, Secure, Easy-to-Use",
+  "homepage": "https://zano.org",
+  "topics": [],
+  "license": "Other",
+  "is_fork": false,
+  "is_archived": false,
+  "is_disabled": false,
+  "is_private": false,
+  "has_wiki": true,
+  "has_issues": true,
+  "has_projects": true,
+  "analyzed_at": "2025-10-07T23:23:56.835657",
+  "data_source": "github-api-v3",
+  "confidence": 1.0,
+  "verified": true
+}

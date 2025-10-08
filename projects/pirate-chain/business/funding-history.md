@@ -1,3 +1,0 @@
-# Funding History
-## Pirate Chain
-

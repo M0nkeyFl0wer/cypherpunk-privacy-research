@@ -1,3 +1,0 @@
-# Smart Contract Analysis
-## Nym
-

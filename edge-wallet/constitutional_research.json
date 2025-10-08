@@ -1,0 +1,49 @@
+{
+  "project_name": "edge-wallet",
+  "research_timestamp": "2025-10-04T18:39:03-07:00",
+  "research_method": "seshat_track1_multiSource",
+  "project_overview": {
+    "name": "edge-wallet",
+    "confidence": 0.5
+  },
+  "github_data": {
+    "total_count": 0,
+    "incomplete_results": false,
+    "items": []
+  },
+  "metadata": {
+    "confidence_score": 0.75,
+    "completeness": 65,
+    "sources_count": 3,
+    "research_host": "seshat",
+    "enhancement_track": "track1_gap_filling"
+  },
+  "gaps_and_missing_data": [
+    "Full research pending - initial data only"
+  ],
+  "sources": [
+    "GitHub API"
+  ],
+  "enhancement_timestamp": "2025-10-04T19:01:14-07:00",
+  "github_enhanced": {},
+  "web3privacy_data": {
+    "error": true,
+    "url": "https://explorer.web3privacy.info/api/project/edge-wallet",
+    "statusCode": 404,
+    "statusMessage": "Page not found: /api/project/edge-wallet",
+    "message": "Page not found: /api/project/edge-wallet",
+    "data": {
+      "path": "/api/project/edge-wallet"
+    }
+  },
+  "market_data": {},
+  "website": "https://edge-wallet.com",
+  "website_confidence": 0.85,
+  "website_sources": [
+    "https://edge-wallet.com",
+    "seshat domain discovery"
+  ],
+  "research_metadata": {
+    "seshat_website_found": true
+  }
+}

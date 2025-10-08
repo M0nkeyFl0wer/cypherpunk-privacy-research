@@ -1,0 +1,207 @@
+{
+  "owner": "monero-project",
+  "repo_name": "monero",
+  "full_name": "monero-project/monero",
+  "github_url": "https://github.com/monero-project/monero",
+  "html_url": "https://github.com/monero-project/monero",
+  "stars": 9904,
+  "forks": 3276,
+  "watchers": 9904,
+  "open_issues": 745,
+  "contributors": 100,
+  "created_at": "2014-04-30T14:38:28Z",
+  "updated_at": "2025-10-07T19:46:17Z",
+  "pushed_at": "2025-10-07T21:29:08Z",
+  "size_kb": 193315,
+  "default_branch": "master",
+  "primary_language": "C++",
+  "languages": [
+    {
+      "name": "C++",
+      "bytes": 9678253,
+      "percentage": 80.0
+    },
+    {
+      "name": "C",
+      "bytes": 1521156,
+      "percentage": 12.57
+    },
+    {
+      "name": "Python",
+      "bytes": 416511,
+      "percentage": 3.44
+    },
+    {
+      "name": "CMake",
+      "bytes": 243197,
+      "percentage": 2.01
+    },
+    {
+      "name": "Shell",
+      "bytes": 102072,
+      "percentage": 0.84
+    },
+    {
+      "name": "Makefile",
+      "bytes": 56696,
+      "percentage": 0.47
+    },
+    {
+      "name": "Assembly",
+      "bytes": 51493,
+      "percentage": 0.43
+    },
+    {
+      "name": "Scheme",
+      "bytes": 12845,
+      "percentage": 0.11
+    },
+    {
+      "name": "q",
+      "bytes": 11168,
+      "percentage": 0.09
+    },
+    {
+      "name": "Awk",
+      "bytes": 2899,
+      "percentage": 0.02
+    },
+    {
+      "name": "Dockerfile",
+      "bytes": 1510,
+      "percentage": 0.01
+    },
+    {
+      "name": "Ruby",
+      "bytes": 664,
+      "percentage": 0.01
+    }
+  ],
+  "total_languages": 12,
+  "top_contributors": [
+    {
+      "username": "fluffypony",
+      "contributions": 3078,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1944293?v=4",
+      "profile_url": "https://github.com/fluffypony"
+    },
+    {
+      "username": "moneromooo-monero",
+      "contributions": 3058,
+      "avatar_url": "https://avatars.githubusercontent.com/u/8851073?v=4",
+      "profile_url": "https://github.com/moneromooo-monero"
+    },
+    {
+      "username": "luigi1111",
+      "contributions": 1623,
+      "avatar_url": "https://avatars.githubusercontent.com/u/11213361?v=4",
+      "profile_url": "https://github.com/luigi1111"
+    },
+    {
+      "username": "tobtoht",
+      "contributions": 382,
+      "avatar_url": "https://avatars.githubusercontent.com/u/41021257?v=4",
+      "profile_url": "https://github.com/tobtoht"
+    },
+    {
+      "username": "hyc",
+      "contributions": 260,
+      "avatar_url": "https://avatars.githubusercontent.com/u/306354?v=4",
+      "profile_url": "https://github.com/hyc"
+    },
+    {
+      "username": "Snipa22",
+      "contributions": 249,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1285502?v=4",
+      "profile_url": "https://github.com/Snipa22"
+    },
+    {
+      "username": "stoffu",
+      "contributions": 212,
+      "avatar_url": "https://avatars.githubusercontent.com/u/26077532?v=4",
+      "profile_url": "https://github.com/stoffu"
+    },
+    {
+      "username": "tewinget",
+      "contributions": 203,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5104870?v=4",
+      "profile_url": "https://github.com/tewinget"
+    },
+    {
+      "username": "selsta",
+      "contributions": 191,
+      "avatar_url": "https://avatars.githubusercontent.com/u/7697454?v=4",
+      "profile_url": "https://github.com/selsta"
+    },
+    {
+      "username": "warptangent",
+      "contributions": 168,
+      "avatar_url": "https://avatars.githubusercontent.com/u/9564330?v=4",
+      "profile_url": "https://github.com/warptangent"
+    }
+  ],
+  "recent_commits": [
+    {
+      "sha": "0d500f5",
+      "message": "Merge pull request #9752",
+      "author": "luigi1111",
+      "date": "2025-10-07T19:46:02Z",
+      "url": "https://github.com/monero-project/monero/commit/0d500f534941b072a3af9689482a76955ba2c003"
+    },
+    {
+      "sha": "3e2faec",
+      "message": "Merge pull request #9750",
+      "author": "luigi1111",
+      "date": "2025-10-07T19:45:29Z",
+      "url": "https://github.com/monero-project/monero/commit/3e2faec4da0f9c5c270736a5a5d7b05d9d2bc574"
+    },
+    {
+      "sha": "177e14a",
+      "message": "Merge pull request #9749",
+      "author": "luigi1111",
+      "date": "2025-10-07T19:44:52Z",
+      "url": "https://github.com/monero-project/monero/commit/177e14ac56afcccfac923d6ce944ac8cb343a90f"
+    },
+    {
+      "sha": "d3b80ce",
+      "message": "Merge pull request #9478",
+      "author": "luigi1111",
+      "date": "2025-10-07T19:44:07Z",
+      "url": "https://github.com/monero-project/monero/commit/d3b80ce528155ca6e3bef967f9853bcb1c180a23"
+    },
+    {
+      "sha": "ebfb495",
+      "message": "Merge pull request #9744",
+      "author": "luigi1111",
+      "date": "2025-10-07T19:42:52Z",
+      "url": "https://github.com/monero-project/monero/commit/ebfb495512c6ef94a38d422f174ea4d16a2b33e0"
+    }
+  ],
+  "total_commits_sample": 10,
+  "description": "Monero: the secure, private, untraceable cryptocurrency",
+  "homepage": "https://getmonero.org",
+  "topics": [
+    "blockchain",
+    "c-plus-plus",
+    "cmake",
+    "cryptocurrency",
+    "cryptography",
+    "cryptonote",
+    "monero",
+    "p2p",
+    "privacy",
+    "security"
+  ],
+  "license": "Other",
+  "is_fork": false,
+  "is_archived": false,
+  "is_disabled": false,
+  "is_private": false,
+  "has_wiki": true,
+  "has_issues": true,
+  "has_projects": false,
+  "analyzed_at": "2025-10-07T23:21:45.901074",
+  "data_source": "github-api-v3",
+  "confidence": 1.0,
+  "verified": true
+}

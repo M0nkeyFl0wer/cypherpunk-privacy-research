@@ -1,0 +1,183 @@
+{
+  "owner": "DimensionDev",
+  "repo_name": "Maskbook",
+  "full_name": "DimensionDev/Maskbook",
+  "github_url": "https://github.com/DimensionDev/Maskbook",
+  "html_url": "https://github.com/DimensionDev/Maskbook",
+  "stars": 1551,
+  "forks": 317,
+  "watchers": 1551,
+  "open_issues": 12,
+  "contributors": 67,
+  "created_at": "2019-04-01T07:13:57Z",
+  "updated_at": "2025-10-06T11:09:20Z",
+  "pushed_at": "2025-10-06T11:09:17Z",
+  "size_kb": 185867,
+  "default_branch": "develop",
+  "primary_language": "TypeScript",
+  "languages": [
+    {
+      "name": "TypeScript",
+      "bytes": 8092599,
+      "percentage": 98.54
+    },
+    {
+      "name": "JavaScript",
+      "bytes": 111541,
+      "percentage": 1.36
+    },
+    {
+      "name": "HTML",
+      "bytes": 5750,
+      "percentage": 0.07
+    },
+    {
+      "name": "Swift",
+      "bytes": 1831,
+      "percentage": 0.02
+    },
+    {
+      "name": "CSS",
+      "bytes": 345,
+      "percentage": 0.0
+    },
+    {
+      "name": "Shell",
+      "bytes": 84,
+      "percentage": 0.0
+    }
+  ],
+  "total_languages": 6,
+  "top_contributors": [
+    {
+      "username": "Jack-Works",
+      "contributions": 3428,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5390719?v=4",
+      "profile_url": "https://github.com/Jack-Works"
+    },
+    {
+      "username": "guanbinrui",
+      "contributions": 2570,
+      "avatar_url": "https://avatars.githubusercontent.com/u/52657989?v=4",
+      "profile_url": "https://github.com/guanbinrui"
+    },
+    {
+      "username": "UncleBill",
+      "contributions": 1096,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1141198?v=4",
+      "profile_url": "https://github.com/UncleBill"
+    },
+    {
+      "username": "hedgehogcare",
+      "contributions": 746,
+      "avatar_url": "https://avatars.githubusercontent.com/u/63733714?v=4",
+      "profile_url": "https://github.com/hedgehogcare"
+    },
+    {
+      "username": "nuanyang233",
+      "contributions": 697,
+      "avatar_url": "https://avatars.githubusercontent.com/u/28348152?v=4",
+      "profile_url": "https://github.com/nuanyang233"
+    },
+    {
+      "username": "lelenei",
+      "contributions": 675,
+      "avatar_url": "https://avatars.githubusercontent.com/u/72531217?v=4",
+      "profile_url": "https://github.com/lelenei"
+    },
+    {
+      "username": "septs",
+      "contributions": 372,
+      "avatar_url": "https://avatars.githubusercontent.com/u/3842474?v=4",
+      "profile_url": "https://github.com/septs"
+    },
+    {
+      "username": "dependabot-preview[bot]",
+      "contributions": 301,
+      "avatar_url": "https://avatars.githubusercontent.com/in/2141?v=4",
+      "profile_url": "https://github.com/apps/dependabot-preview"
+    },
+    {
+      "username": "swkatmask",
+      "contributions": 228,
+      "avatar_url": "https://avatars.githubusercontent.com/u/158803171?v=4",
+      "profile_url": "https://github.com/swkatmask"
+    },
+    {
+      "username": "Lanttcat",
+      "contributions": 215,
+      "avatar_url": "https://avatars.githubusercontent.com/u/19925717?v=4",
+      "profile_url": "https://github.com/Lanttcat"
+    }
+  ],
+  "recent_commits": [
+    {
+      "sha": "210eecc",
+      "message": "chore: update webpack (#12284)",
+      "author": "Jack Works",
+      "date": "2025-10-06T11:09:15Z",
+      "url": "https://github.com/DimensionDev/Maskbook/commit/210eecca8d3dacfad76f7fd61733c02c50181db7"
+    },
+    {
+      "sha": "db3fad3",
+      "message": "[Release] Hotfix 2.34.0 => 2.34.1 (patch) (#12268)",
+      "author": "guanbinrui",
+      "date": "2025-10-02T15:33:14Z",
+      "url": "https://github.com/DimensionDev/Maskbook/commit/db3fad3fefac9ab164dcc86613bfc137c2523bd6"
+    },
+    {
+      "sha": "f808136",
+      "message": "chore: fix typo in comment (#12282)",
+      "author": "yajianggroup",
+      "date": "2025-09-28T07:42:52Z",
+      "url": "https://github.com/DimensionDev/Maskbook/commit/f8081368b1572e65b7b5fffa1b97f665cc52423d"
+    },
+    {
+      "sha": "7b8c53b",
+      "message": "chore: remove deprecated application entry unlisted list storage and unused NextID binding proof hel",
+      "author": "Wukong Sun",
+      "date": "2025-09-24T01:37:44Z",
+      "url": "https://github.com/DimensionDev/Maskbook/commit/7b8c53b71d92bcb6bf19877b637fe158160f1376"
+    },
+    {
+      "sha": "651e156",
+      "message": "chore: serialize Headers (#12279)",
+      "author": "Jack Works",
+      "date": "2025-09-23T05:41:50Z",
+      "url": "https://github.com/DimensionDev/Maskbook/commit/651e1562e769d4af78934d64b0923fedf2c9b986"
+    }
+  ],
+  "total_commits_sample": 10,
+  "description": "The portal to the new, open Internet. ([I:b])",
+  "homepage": "https://mask.io",
+  "topics": [
+    "arweave",
+    "blockchain",
+    "browser-extension",
+    "crypto",
+    "cryptography",
+    "defi",
+    "dweb",
+    "encryption",
+    "ethereum",
+    "gundb",
+    "ipfs",
+    "nft",
+    "peer-to-peer",
+    "privacy-protection",
+    "social-network",
+    "web3"
+  ],
+  "license": "GNU Affero General Public License v3.0",
+  "is_fork": false,
+  "is_archived": false,
+  "is_disabled": false,
+  "is_private": false,
+  "has_wiki": false,
+  "has_issues": true,
+  "has_projects": false,
+  "analyzed_at": "2025-10-07T23:21:33.075118",
+  "data_source": "github-api-v3",
+  "confidence": 1.0,
+  "verified": true
+}

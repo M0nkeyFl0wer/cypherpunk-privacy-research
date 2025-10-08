@@ -1,0 +1,180 @@
+{
+  "owner": "hoprnet",
+  "repo_name": "hoprnet",
+  "full_name": "hoprnet/hoprnet",
+  "github_url": "https://github.com/hoprnet/hoprnet",
+  "html_url": "https://github.com/hoprnet/hoprnet",
+  "stars": 232,
+  "forks": 98,
+  "watchers": 232,
+  "open_issues": 131,
+  "contributors": 51,
+  "created_at": "2020-08-10T11:57:55Z",
+  "updated_at": "2025-10-07T13:44:10Z",
+  "pushed_at": "2025-10-07T19:36:49Z",
+  "size_kb": 523909,
+  "default_branch": "master",
+  "primary_language": "Rust",
+  "languages": [
+    {
+      "name": "Rust",
+      "bytes": 3433065,
+      "percentage": 70.53
+    },
+    {
+      "name": "Solidity",
+      "bytes": 1057272,
+      "percentage": 21.72
+    },
+    {
+      "name": "Python",
+      "bytes": 184583,
+      "percentage": 3.79
+    },
+    {
+      "name": "Shell",
+      "bytes": 58652,
+      "percentage": 1.21
+    },
+    {
+      "name": "Nix",
+      "bytes": 53577,
+      "percentage": 1.1
+    },
+    {
+      "name": "Makefile",
+      "bytes": 44542,
+      "percentage": 0.92
+    },
+    {
+      "name": "Lua",
+      "bytes": 31367,
+      "percentage": 0.64
+    },
+    {
+      "name": "Just",
+      "bytes": 4164,
+      "percentage": 0.09
+    }
+  ],
+  "total_languages": 8,
+  "top_contributors": [
+    {
+      "username": "hopr-version-bot",
+      "contributions": 5325,
+      "avatar_url": "https://avatars.githubusercontent.com/u/75608599?v=4",
+      "profile_url": "https://github.com/hopr-version-bot"
+    },
+    {
+      "username": "nionis",
+      "contributions": 1335,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1877679?v=4",
+      "profile_url": "https://github.com/nionis"
+    },
+    {
+      "username": "tolbrino",
+      "contributions": 1330,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1107?v=4",
+      "profile_url": "https://github.com/tolbrino"
+    },
+    {
+      "username": "0xjjpa",
+      "contributions": 1177,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1128312?v=4",
+      "profile_url": "https://github.com/0xjjpa"
+    },
+    {
+      "username": "mathcrypto",
+      "contributions": 853,
+      "avatar_url": "https://avatars.githubusercontent.com/u/20124778?v=4",
+      "profile_url": "https://github.com/mathcrypto"
+    },
+    {
+      "username": "Teebor-Choka",
+      "contributions": 648,
+      "avatar_url": "https://avatars.githubusercontent.com/u/9529609?v=4",
+      "profile_url": "https://github.com/Teebor-Choka"
+    },
+    {
+      "username": "NumberFour8",
+      "contributions": 582,
+      "avatar_url": "https://avatars.githubusercontent.com/u/433492?v=4",
+      "profile_url": "https://github.com/NumberFour8"
+    },
+    {
+      "username": "QYuQianchen",
+      "contributions": 428,
+      "avatar_url": "https://avatars.githubusercontent.com/u/10935300?v=4",
+      "profile_url": "https://github.com/QYuQianchen"
+    },
+    {
+      "username": "dependabot[bot]",
+      "contributions": 379,
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "profile_url": "https://github.com/apps/dependabot"
+    },
+    {
+      "username": "renovate[bot]",
+      "contributions": 368,
+      "avatar_url": "https://avatars.githubusercontent.com/in/2740?v=4",
+      "profile_url": "https://github.com/apps/renovate"
+    }
+  ],
+  "recent_commits": [
+    {
+      "sha": "a9e3ab5",
+      "message": "refactor: simplify channel operation between transport and session manager (#7568)",
+      "author": "Lukas",
+      "date": "2025-10-07T13:44:05Z",
+      "url": "https://github.com/hoprnet/hoprnet/commit/a9e3ab5762246212a49ca9ac11ca4e4b3147119e"
+    },
+    {
+      "sha": "fdc6c60",
+      "message": "fix(hopr-lib): external API modifications and DB fixes (#7559)",
+      "author": "Tibor",
+      "date": "2025-10-07T10:01:28Z",
+      "url": "https://github.com/hoprnet/hoprnet/commit/fdc6c60b7e3e687061acd045f73ef1eb9d1387e2"
+    },
+    {
+      "sha": "492d01a",
+      "message": "fix(ci): adapt load test and adding profiling changes (#7489)",
+      "author": "ausias-armesto",
+      "date": "2025-10-06T15:52:58Z",
+      "url": "https://github.com/hoprnet/hoprnet/commit/492d01a0437ca01e64447988e2ad82134f04bc9d"
+    },
+    {
+      "sha": "08c4f7f",
+      "message": "fix: balancer level update should not happen once the receiver has been closed (#7557)",
+      "author": "Lukas",
+      "date": "2025-10-06T10:21:26Z",
+      "url": "https://github.com/hoprnet/hoprnet/commit/08c4f7f17eb9909c77eb82630e755a53636fe363"
+    },
+    {
+      "sha": "805881c",
+      "message": "feat(hopr-lib): add a single point for chain protocol config (#7552)",
+      "author": "Tibor",
+      "date": "2025-10-06T09:00:13Z",
+      "url": "https://github.com/hoprnet/hoprnet/commit/805881c2ce393c0a86f39d24cde2ee892d16e005"
+    }
+  ],
+  "total_commits_sample": 10,
+  "description": "HOPR is an open incentivized mixnet which enables privacy-preserving point-to-point data exchange. HOPR is similar to Tor but actually private, decentralized and economically sustainable.",
+  "homepage": "https://hoprnet.org",
+  "topics": [
+    "blockchain",
+    "ethereum",
+    "privacy"
+  ],
+  "license": "GNU General Public License v3.0",
+  "is_fork": false,
+  "is_archived": false,
+  "is_disabled": false,
+  "is_private": false,
+  "has_wiki": false,
+  "has_issues": true,
+  "has_projects": true,
+  "analyzed_at": "2025-10-07T23:21:12.893263",
+  "data_source": "github-api-v3",
+  "confidence": 1.0,
+  "verified": true
+}

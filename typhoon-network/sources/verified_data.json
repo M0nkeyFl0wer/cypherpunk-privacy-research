@@ -1,0 +1,300 @@
+{
+  "project_metadata": {
+    "project_name": "Typhoon Network",
+    "project_id": "typhoon-network",
+    "research_date": "2025-10-07T20:30:00Z",
+    "researcher": "research-agent",
+    "constitution_version": "v2.0.0",
+    "research_quality": {
+      "overall_confidence": 0.65,
+      "data_completeness": 45,
+      "sources_verified": 2,
+      "multi_source_verification": false,
+      "notes": "Limited data available - most sources returned 404 or no data"
+    }
+  },
+
+  "tier_1_core_data": {
+    "website": {
+      "value": null,
+      "confidence": 0.0,
+      "sources": [],
+      "verification_status": "NOT_FOUND",
+      "gaps": [
+        {
+          "field": "website",
+          "reason": "No responsive domain found in common patterns",
+          "attempted_urls": [
+            "https://typhoon-network.io",
+            "https://typhoon-network.network",
+            "https://typhoon-network.com",
+            "https://typhoon.network"
+          ],
+          "checked_date": "2025-10-06"
+        }
+      ],
+      "notes": "Website URL could not be verified through standard domain patterns or GitHub organization profile"
+    },
+    "github_url": {
+      "value": "https://github.com/typhoonnetwork",
+      "confidence": 0.85,
+      "sources": [
+        {
+          "url": "https://github.com/web3privacy/web3privacy",
+          "source_type": "web3privacy_official_repository",
+          "retrieved_date": "2025-09-29",
+          "verified": true
+        },
+        {
+          "url": "/home/flower/web3privacy-research/research-data/github-urls-extracted.json",
+          "source_type": "local_research_data",
+          "retrieved_date": "2025-10-07",
+          "verified": true
+        }
+      ],
+      "verification_status": "VERIFIED",
+      "notes": "GitHub organization exists at github.com/typhoonnetwork. Multiple forks exist including github.com/PFDakotaBenger/typhoon-core"
+    },
+    "description": {
+      "value": null,
+      "confidence": 0.0,
+      "sources": [],
+      "verification_status": "NOT_FOUND",
+      "gaps": [
+        {
+          "field": "description",
+          "reason": "No project description found in available sources",
+          "attempted_sources": [
+            "GitHub organization profile",
+            "Web3Privacy Explorer API",
+            "Project website"
+          ],
+          "checked_date": "2025-10-06"
+        }
+      ],
+      "notes": "Project description requires manual verification from GitHub repositories or official documentation"
+    },
+    "category": {
+      "value": "mixing",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "url": "https://github.com/web3privacy/web3privacy",
+          "source_type": "web3privacy_comprehensive_projects",
+          "retrieved_date": "2025-09-29",
+          "data_extract": "Category listed as 'mixing' in Web3Privacy official project list"
+        }
+      ],
+      "verification_status": "VERIFIED",
+      "notes": "Categorized as privacy mixer protocol in Web3Privacy taxonomy"
+    }
+  },
+
+  "tier_2_extended_data": {
+    "logo": {
+      "value": null,
+      "confidence": 0.0,
+      "sources": [],
+      "verification_status": "NOT_FOUND",
+      "gaps": [
+        {
+          "field": "logo",
+          "reason": "No logo images found in research",
+          "attempted_sources": [
+            "GitHub organization avatar",
+            "Repository assets",
+            "Website (not accessible)"
+          ]
+        }
+      ]
+    },
+    "founders": {
+      "value": [],
+      "confidence": 0.0,
+      "sources": [],
+      "verification_status": "NOT_FOUND",
+      "gaps": [
+        {
+          "field": "founders",
+          "reason": "No team information publicly available",
+          "attempted_sources": [
+            "GitHub contributors API (rate limited)",
+            "LinkedIn profiles",
+            "Conference speaker bios",
+            "Press releases",
+            "Official website team page (not accessible)"
+          ],
+          "checked_date": "2025-10-06"
+        }
+      ],
+      "notes": "Team information is not publicly disclosed. GitHub API rate limits prevented contributor analysis"
+    },
+    "smart_contracts": {
+      "value": [],
+      "confidence": 0.0,
+      "sources": [],
+      "verification_status": "NOT_FOUND",
+      "gaps": [
+        {
+          "field": "smart_contracts",
+          "reason": "No contract addresses found in explorers or GitHub",
+          "attempted_sources": [
+            "Etherscan",
+            "GitHub repositories",
+            "Project documentation"
+          ],
+          "explorers_checked": ["etherscan", "github"],
+          "checked_date": "2025-10-04"
+        }
+      ],
+      "notes": "Smart contract addresses require verification from official documentation or deployed contract repositories"
+    },
+    "blockchain": {
+      "value": "Multi-chain",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "url": "https://github.com/web3privacy/web3privacy",
+          "source_type": "web3privacy_comprehensive_projects",
+          "retrieved_date": "2025-09-29",
+          "data_extract": "Ecosystem listed as 'Multi-chain' in official project categorization"
+        }
+      ],
+      "verification_status": "PRELIMINARY",
+      "notes": "Multi-chain designation from Web3Privacy taxonomy. Specific chain deployments not yet verified"
+    },
+    "status": {
+      "value": "active",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "url": "/home/flower/web3privacy-research/research-data/projects/typhoon-network/project_metadata.json",
+          "source_type": "local_research_metadata",
+          "retrieved_date": "2025-10-07",
+          "data_extract": "Status marked as 'active' in project metadata"
+        }
+      ],
+      "verification_status": "PRELIMINARY",
+      "notes": "Status designation based on inclusion in active Web3Privacy project list. GitHub activity not verified due to API rate limits"
+    }
+  },
+
+  "tier_3_community_data": {
+    "team": {
+      "value": null,
+      "confidence": 0.0,
+      "verification_status": "NOT_FOUND",
+      "gaps": [
+        {
+          "field": "team_information",
+          "reason": "No team info found via GitHub contributors or website scraping",
+          "attempted_sources": [
+            "GitHub API /contributors",
+            "Website /about page",
+            "Website /team page"
+          ],
+          "checked_date": "2025-10-06"
+        }
+      ]
+    },
+    "funding": {
+      "value": null,
+      "confidence": 0.0,
+      "verification_status": "NOT_FOUND",
+      "notes": "No funding information available from checked sources"
+    },
+    "social_links": {
+      "twitter": null,
+      "discord": null,
+      "telegram": null,
+      "medium": null,
+      "confidence": 0.0,
+      "verification_status": "NOT_FOUND",
+      "gaps": [
+        {
+          "field": "social_media",
+          "reason": "Social links not found in GitHub profile or website",
+          "attempted_sources": [
+            "GitHub organization profile",
+            "Repository README files"
+          ]
+        }
+      ]
+    },
+    "documentation": {
+      "value": null,
+      "confidence": 0.0,
+      "verification_status": "NOT_FOUND",
+      "notes": "Documentation links require access to project repositories or website"
+    },
+    "news": {
+      "value": [],
+      "confidence": 0.0,
+      "verification_status": "NOT_FOUND",
+      "notes": "No recent news or press coverage found in research"
+    }
+  },
+
+  "research_gaps": {
+    "critical_gaps": [
+      "Website URL verification required",
+      "Project description needed",
+      "Smart contract addresses missing",
+      "Team/founder information not available",
+      "Social media links not found"
+    ],
+    "data_quality_issues": [
+      "Web3Privacy Explorer API returned 404 for this project",
+      "GitHub API rate limiting prevented full contributor analysis",
+      "No responsive website found at common domain patterns",
+      "Market data unavailable from standard APIs"
+    ],
+    "recommended_next_steps": [
+      "Manual GitHub repository exploration to extract README descriptions",
+      "Review GitHub repository commits and code to identify deployed contracts",
+      "Search for project announcements on crypto forums (Reddit, Bitcointalk)",
+      "Check GitHub repository issues/discussions for team communication",
+      "Wait for GitHub API rate limit reset to fetch contributor data",
+      "Search Twitter/X for official Typhoon Network account",
+      "Check blockchain explorers for transaction patterns related to 'typhoon'"
+    ],
+    "constitutional_compliance": {
+      "real_data_only": true,
+      "no_fabrication": true,
+      "gaps_reported_honestly": true,
+      "placeholder_text_avoided": true,
+      "multi_source_verification_attempted": true,
+      "confidence_scores_provided": true
+    }
+  },
+
+  "metadata": {
+    "research_methodology": "Multi-source constitutional research",
+    "primary_sources": [
+      "Web3Privacy official GitHub repository",
+      "Local research data archives (seshat-results, batch processing)",
+      "GitHub API (limited by rate limits)"
+    ],
+    "excluded_sources": [
+      "Web3Privacy Explorer API (404 error)",
+      "Market data APIs (no data available)",
+      "Blockchain explorers (no contracts found)"
+    ],
+    "research_limitations": [
+      "GitHub API rate limiting prevented full analysis",
+      "Website inaccessible - cannot verify official information",
+      "Limited public information about team/founders",
+      "No smart contract deployments found in standard explorers"
+    ],
+    "data_integrity": {
+      "synthetic_data_used": false,
+      "placeholder_content": false,
+      "all_gaps_reported": true,
+      "sources_cited": true,
+      "confidence_scores_accurate": true
+    },
+    "last_updated": "2025-10-07T20:30:00Z",
+    "next_research_date": "2025-10-14",
+    "researcher_notes": "Typhoon Network appears in Web3Privacy official project list as a multi-chain mixer, but has minimal public documentation. GitHub organization exists but API rate limits prevented detailed analysis. Significant gaps remain across all data tiers. Recommend manual GitHub repository review and community outreach for additional verification."
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "owner": "iron-fish",
+  "repo_name": "ironfish",
+  "full_name": "iron-fish/ironfish",
+  "github_url": "https://github.com/iron-fish/ironfish",
+  "html_url": "https://github.com/iron-fish/ironfish",
+  "stars": 976,
+  "forks": 567,
+  "watchers": 976,
+  "open_issues": 68,
+  "contributors": 66,
+  "created_at": "2021-03-31T21:26:37Z",
+  "updated_at": "2025-10-06T13:15:57Z",
+  "pushed_at": "2025-08-12T18:44:02Z",
+  "size_kb": 1566642,
+  "default_branch": "master",
+  "primary_language": "TypeScript",
+  "languages": [
+    {
+      "name": "TypeScript",
+      "bytes": 3971073,
+      "percentage": 85.64
+    },
+    {
+      "name": "Rust",
+      "bytes": 614087,
+      "percentage": 13.24
+    },
+    {
+      "name": "JavaScript",
+      "bytes": 32441,
+      "percentage": 0.7
+    },
+    {
+      "name": "Shell",
+      "bytes": 9911,
+      "percentage": 0.21
+    },
+    {
+      "name": "Go",
+      "bytes": 8660,
+      "percentage": 0.19
+    },
+    {
+      "name": "Dockerfile",
+      "bytes": 719,
+      "percentage": 0.02
+    },
+    {
+      "name": "Batchfile",
+      "bytes": 31,
+      "percentage": 0.0
+    }
+  ],
+  "total_languages": 7,
+  "top_contributors": [
+    {
+      "username": "NullSoldier",
+      "contributions": 854,
+      "avatar_url": "https://avatars.githubusercontent.com/u/458976?v=4",
+      "profile_url": "https://github.com/NullSoldier"
+    },
+    {
+      "username": "hughy",
+      "contributions": 531,
+      "avatar_url": "https://avatars.githubusercontent.com/u/57735705?v=4",
+      "profile_url": "https://github.com/hughy"
+    },
+    {
+      "username": "mat-if",
+      "contributions": 468,
+      "avatar_url": "https://avatars.githubusercontent.com/u/97762857?v=4",
+      "profile_url": "https://github.com/mat-if"
+    },
+    {
+      "username": "danield9tqh",
+      "contributions": 329,
+      "avatar_url": "https://avatars.githubusercontent.com/u/4173815?v=4",
+      "profile_url": "https://github.com/danield9tqh"
+    },
+    {
+      "username": "rohanjadvani",
+      "contributions": 325,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5459049?v=4",
+      "profile_url": "https://github.com/rohanjadvani"
+    },
+    {
+      "username": "dguenther",
+      "contributions": 323,
+      "avatar_url": "https://avatars.githubusercontent.com/u/767083?v=4",
+      "profile_url": "https://github.com/dguenther"
+    },
+    {
+      "username": "patnir",
+      "contributions": 201,
+      "avatar_url": "https://avatars.githubusercontent.com/u/13268167?v=4",
+      "profile_url": "https://github.com/patnir"
+    },
+    {
+      "username": "andiflabs",
+      "contributions": 178,
+      "avatar_url": "https://avatars.githubusercontent.com/u/144950974?v=4",
+      "profile_url": "https://github.com/andiflabs"
+    },
+    {
+      "username": "jowparks",
+      "contributions": 141,
+      "avatar_url": "https://avatars.githubusercontent.com/u/26990067?v=4",
+      "profile_url": "https://github.com/jowparks"
+    },
+    {
+      "username": "ygao76",
+      "contributions": 83,
+      "avatar_url": "https://avatars.githubusercontent.com/u/4500784?v=4",
+      "profile_url": "https://github.com/ygao76"
+    }
+  ],
+  "recent_commits": [
+    {
+      "sha": "b442f9b",
+      "message": "Merge pull request #5758 from iron-fish/staging",
+      "author": "Daniel Cogan",
+      "date": "2025-08-12T18:10:46Z",
+      "url": "https://github.com/iron-fish/ironfish/commit/b442f9b51a60bbb466b9e5cfbc859923b639161d"
+    },
+    {
+      "sha": "eaa40ad",
+      "message": "bump version (#5757)",
+      "author": "Daniel Cogan",
+      "date": "2025-08-12T15:53:55Z",
+      "url": "https://github.com/iron-fish/ironfish/commit/eaa40ad4011ebf64213f3268bd86ba32f38d0317"
+    },
+    {
+      "sha": "f2d1f07",
+      "message": "feat: chainport bridge fee upgrade (#5755)",
+      "author": "metorbb",
+      "date": "2025-08-08T21:42:17Z",
+      "url": "https://github.com/iron-fish/ironfish/commit/f2d1f0794aecaffa32ee04c0d6c818297c8e6119"
+    },
+    {
+      "sha": "14de108",
+      "message": "Merge pull request #5752 from iron-fish/staging",
+      "author": "Jason Spafford",
+      "date": "2025-03-04T02:05:41Z",
+      "url": "https://github.com/iron-fish/ironfish/commit/14de1088de9ee63084fd3fce25a28ec2077027b3"
+    },
+    {
+      "sha": "ec50882",
+      "message": "Fix docker builds by pinning rust toolchain (#5753)",
+      "author": "Jason Spafford",
+      "date": "2025-03-04T01:53:22Z",
+      "url": "https://github.com/iron-fish/ironfish/commit/ec508825ef732eb4203de624613c0b121cc15400"
+    }
+  ],
+  "total_commits_sample": 10,
+  "description": "A novel cryptocurrency focused on privacy and accessibility.",
+  "homepage": "https://ironfish.network",
+  "topics": [
+    "blockchain",
+    "cryptocurrency",
+    "p2p"
+  ],
+  "license": "Mozilla Public License 2.0",
+  "is_fork": false,
+  "is_archived": false,
+  "is_disabled": false,
+  "is_private": false,
+  "has_wiki": true,
+  "has_issues": true,
+  "has_projects": true,
+  "analyzed_at": "2025-10-07T23:21:26.726249",
+  "data_source": "github-api-v3",
+  "confidence": 1.0,
+  "verified": true
+}

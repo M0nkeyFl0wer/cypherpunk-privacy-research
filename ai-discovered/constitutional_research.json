@@ -4,7 +4,6 @@
   "research_date": "2025-10-03T14:03:11Z",
   "researcher": "claude-code-researcher-agent",
   "constitutional_compliance": "CRITICAL_VIOLATION",
-
   "executive_summary": {
     "finding": "DATA_QUALITY_ISSUE_DETECTED",
     "severity": "CRITICAL",
@@ -12,7 +11,6 @@
     "confidence": 1.0,
     "constitutional_status": "NON_COMPLIANT"
   },
-
   "findings": {
     "project_authenticity": {
       "is_real_project": false,
@@ -28,7 +26,6 @@
       ],
       "confidence": 1.0
     },
-
     "duplicate_analysis": {
       "is_duplicate_of": "aztec-network",
       "duplicate_projects_found": [
@@ -69,11 +66,16 @@
       ],
       "deduplication_needed": true,
       "canonical_project": "aztec-network",
-      "projects_to_merge": ["aztec", "aztec-protocol", "ai-discovered"],
-      "projects_to_keep_separate": ["zk-money"],
+      "projects_to_merge": [
+        "aztec",
+        "aztec-protocol",
+        "ai-discovered"
+      ],
+      "projects_to_keep_separate": [
+        "zk-money"
+      ],
       "confidence": 1.0
     },
-
     "data_origin": {
       "created": "2025-09-29T14:00:00Z",
       "creation_context": "Automated GitHub repository discovery session",
@@ -85,7 +87,6 @@
       ],
       "confidence": 0.95
     },
-
     "constitutional_violations": [
       {
         "article": "Article I, Section 1.1",
@@ -113,7 +114,6 @@
       }
     ]
   },
-
   "verification_attempts": {
     "web_search": {
       "attempted": true,
@@ -138,7 +138,6 @@
       "confidence": 1.0
     }
   },
-
   "recommendations": {
     "immediate_action": "DELETE",
     "rationale": "This is not a real Web3 privacy project. It is a mislabeled duplicate of Aztec Protocol created during automated discovery.",
@@ -171,17 +170,19 @@
     ],
     "deduplication_strategy": {
       "canonical_entry": "aztec-network",
-      "merge_projects": ["aztec", "aztec-protocol", "ai-discovered"],
+      "merge_projects": [
+        "aztec",
+        "aztec-protocol",
+        "ai-discovered"
+      ],
       "preserve_data_from": "aztec-network (most complete)",
       "archive_location": "research-data/archive/duplicates/aztec-variants/"
     }
   },
-
   "data_gaps": {
     "no_gaps_to_report": true,
     "reason": "Project does not exist - cannot have legitimate data gaps"
   },
-
   "related_projects": {
     "aztec_ecosystem": [
       {
@@ -201,7 +202,6 @@
       }
     ]
   },
-
   "audit_trail": {
     "sources_checked": [
       "/home/flower/web3privacy-research/research-data/projects/ai-discovered/README.md",
@@ -218,7 +218,6 @@
       "2b20de4 [Planning] Create prioritized research plan for 85 Web3 privacy projects"
     ]
   },
-
   "constitutional_compliance_check": {
     "article_i_data_integrity": "FAILED - Synthetic placeholder name",
     "article_ii_prohibited_practices": "FAILED - Placeholder content present",
@@ -228,7 +227,6 @@
     "overall_compliance": "NON_COMPLIANT",
     "compliance_score": 0.2
   },
-
   "quality_metrics": {
     "data_completeness": 0.05,
     "data_accuracy": 0.0,
@@ -236,7 +234,6 @@
     "confidence_score": 1.0,
     "constitutional_compliance": 0.2
   },
-
   "next_actions": [
     {
       "action": "Delete ai-discovered project directory",
@@ -257,7 +254,6 @@
       "estimated_time": "10 minutes"
     }
   ],
-
   "metadata": {
     "research_duration_seconds": 180,
     "files_analyzed": 12,
@@ -266,5 +262,55 @@
     "review_status": "COMPLETE",
     "requires_human_review": false,
     "auto_remediation_recommended": true
-  }
+  },
+  "technical_stack": {
+    "github_statistics": {
+      "stars": 370,
+      "forks": 522,
+      "watchers": 370,
+      "language": "C++",
+      "api_source": "https://api.github.com/repos/AztecProtocol/aztec-packages",
+      "confidence": 1.0,
+      "enrichment_date": "2025-10-06T12:46:37.542250Z"
+    },
+    "programming_languages": {
+      "C++": 16768746,
+      "TypeScript": 10875069,
+      "Noir": 3939100,
+      "Solidity": 2069690,
+      "Shell": 975113,
+      "Rust": 190527,
+      "JavaScript": 182986,
+      "HCL": 155181,
+      "Python": 140981,
+      "Roff": 56243,
+      "Perl": 54781,
+      "CMake": 51671,
+      "Sage": 27485,
+      "CSS": 26886,
+      "Dockerfile": 23613,
+      "Smarty": 18415,
+      "Handlebars": 17117,
+      "jq": 16428,
+      "C": 12214,
+      "HTML": 9929,
+      "Makefile": 8251,
+      "Jupyter Notebook": 7923,
+      "Lua": 1585,
+      "Awk": 1122
+    }
+  },
+  "research_metadata": {
+    "batch2_processed": true,
+    "github_enrichment_date": "2025-10-06T12:46:37.542322Z",
+    "batch_number": 2,
+    "batch3_processed": true,
+    "batch3_web_research_date": "2025-10-06T12:50:00Z",
+    "seshat_team_found": true
+  },
+  "team_information": "GitHub contributors: ludamad,spalladino,benesjan,charlielye,alexghr,AztecBot,critesjosh,Maddiaa0,LHerskind,PhilWindle",
+  "team_confidence": 0.75,
+  "team_sources": [
+    "https://api.github.com/repos/AztecProtocol/aztec-packages/contributors"
+  ]
 }

@@ -1,0 +1,196 @@
+{
+  "owner": "mobilecoinfoundation",
+  "repo_name": "mobilecoin",
+  "full_name": "mobilecoinfoundation/mobilecoin",
+  "github_url": "https://github.com/mobilecoinfoundation/mobilecoin",
+  "html_url": "https://github.com/mobilecoinfoundation/mobilecoin",
+  "stars": 1169,
+  "forks": 152,
+  "watchers": 1169,
+  "open_issues": 228,
+  "contributors": 49,
+  "created_at": "2020-04-09T19:41:31Z",
+  "updated_at": "2025-10-03T05:05:02Z",
+  "pushed_at": "2025-10-07T17:44:47Z",
+  "size_kb": 31446,
+  "default_branch": "main",
+  "primary_language": "Rust",
+  "languages": [
+    {
+      "name": "Rust",
+      "bytes": 8061767,
+      "percentage": 94.5
+    },
+    {
+      "name": "Python",
+      "bytes": 245504,
+      "percentage": 2.88
+    },
+    {
+      "name": "Shell",
+      "bytes": 141017,
+      "percentage": 1.65
+    },
+    {
+      "name": "Smarty",
+      "bytes": 29715,
+      "percentage": 0.35
+    },
+    {
+      "name": "HTML",
+      "bytes": 25134,
+      "percentage": 0.29
+    },
+    {
+      "name": "Java",
+      "bytes": 15682,
+      "percentage": 0.18
+    },
+    {
+      "name": "Jupyter Notebook",
+      "bytes": 5175,
+      "percentage": 0.06
+    },
+    {
+      "name": "Go",
+      "bytes": 3965,
+      "percentage": 0.05
+    },
+    {
+      "name": "CSS",
+      "bytes": 1561,
+      "percentage": 0.02
+    },
+    {
+      "name": "PLpgSQL",
+      "bytes": 1145,
+      "percentage": 0.01
+    },
+    {
+      "name": "Ruby",
+      "bytes": 124,
+      "percentage": 0.0
+    },
+    {
+      "name": "RenderScript",
+      "bytes": 1,
+      "percentage": 0.0
+    }
+  ],
+  "total_languages": 12,
+  "top_contributors": [
+    {
+      "username": "dependabot[bot]",
+      "contributions": 969,
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "profile_url": "https://github.com/apps/dependabot"
+    },
+    {
+      "username": "eranrund",
+      "contributions": 302,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1485066?v=4",
+      "profile_url": "https://github.com/eranrund"
+    },
+    {
+      "username": "cbeck88",
+      "contributions": 266,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5683852?v=4",
+      "profile_url": "https://github.com/cbeck88"
+    },
+    {
+      "username": "nick-mobilecoin",
+      "contributions": 205,
+      "avatar_url": "https://avatars.githubusercontent.com/u/101757619?v=4",
+      "profile_url": "https://github.com/nick-mobilecoin"
+    },
+    {
+      "username": "jgreat",
+      "contributions": 120,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5324639?v=4",
+      "profile_url": "https://github.com/jgreat"
+    },
+    {
+      "username": "mfaulk",
+      "contributions": 82,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1364393?v=4",
+      "profile_url": "https://github.com/mfaulk"
+    },
+    {
+      "username": "sugargoat",
+      "contributions": 81,
+      "avatar_url": "https://avatars.githubusercontent.com/u/42020478?v=4",
+      "profile_url": "https://github.com/sugargoat"
+    },
+    {
+      "username": "kylefleming",
+      "contributions": 66,
+      "avatar_url": "https://avatars.githubusercontent.com/u/192120?v=4",
+      "profile_url": "https://github.com/kylefleming"
+    },
+    {
+      "username": "samdealy",
+      "contributions": 37,
+      "avatar_url": "https://avatars.githubusercontent.com/u/33067698?v=4",
+      "profile_url": "https://github.com/samdealy"
+    },
+    {
+      "username": "tsegaran",
+      "contributions": 35,
+      "avatar_url": "https://avatars.githubusercontent.com/u/92326?v=4",
+      "profile_url": "https://github.com/tsegaran"
+    }
+  ],
+  "recent_commits": [
+    {
+      "sha": "067f635",
+      "message": "Merge pull request #4062 from mobilecoinfoundation/jgreat/v7.1-to-main",
+      "author": "Jason Greathouse",
+      "date": "2025-09-09T20:11:41Z",
+      "url": "https://github.com/mobilecoinfoundation/mobilecoin/commit/067f635f51a039eef02d9c48658fa0aa3af5c8a8"
+    },
+    {
+      "sha": "9dbc480",
+      "message": "Merge pull request #4061 from mobilecoinfoundation/jgreat/v7.0.2-release-v7.1",
+      "author": "Jason Greathouse",
+      "date": "2025-09-08T19:52:00Z",
+      "url": "https://github.com/mobilecoinfoundation/mobilecoin/commit/9dbc48099abe8939c408659d4490a14ad61892e4"
+    },
+    {
+      "sha": "4c89d64",
+      "message": "bump version to v7.0.2 and update changelog (#4060)",
+      "author": "Jason Greathouse",
+      "date": "2025-09-08T16:08:44Z",
+      "url": "https://github.com/mobilecoinfoundation/mobilecoin/commit/4c89d64fa7d54f3f31694b3b749a90ae39116808"
+    },
+    {
+      "sha": "3dc020a",
+      "message": "make CD deployment region configurable (#4059)",
+      "author": "Jason Greathouse",
+      "date": "2025-09-05T21:43:21Z",
+      "url": "https://github.com/mobilecoinfoundation/mobilecoin/commit/3dc020a539474333ffcc653bd3fed0164abb5e82"
+    },
+    {
+      "sha": "5e1bde8",
+      "message": "less strict dependency versions (#4057)",
+      "author": "Eran Rundstein",
+      "date": "2025-08-20T16:59:41Z",
+      "url": "https://github.com/mobilecoinfoundation/mobilecoin/commit/5e1bde8e3ea200e044dc7806a3c2c3bd84b00e27"
+    }
+  ],
+  "total_commits_sample": 10,
+  "description": "Private payments for mobile devices.",
+  "homepage": null,
+  "topics": [],
+  "license": "Other",
+  "is_fork": false,
+  "is_archived": false,
+  "is_disabled": false,
+  "is_private": false,
+  "has_wiki": true,
+  "has_issues": true,
+  "has_projects": true,
+  "analyzed_at": "2025-10-07T23:21:39.442195",
+  "data_source": "github-api-v3",
+  "confidence": 1.0,
+  "verified": true
+}

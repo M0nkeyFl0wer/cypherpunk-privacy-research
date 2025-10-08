@@ -1,0 +1,17 @@
+{
+  "source": "Open Source Observer",
+  "discovered_at": "2025-09-29T14:42:57.287781",
+  "oso_name": "Phala Network",
+  "github_repos": [
+    "https://github.com/phala-network"
+  ],
+  "blockchain_addresses": [],
+  "websites": [],
+  "npm_packages": [
+    "https://www.npmjs.com/package/@phala/typedefs"
+  ],
+  "defillama_urls": [],
+  "description": "",
+  "social": {},
+  "confidence": "high"
+}

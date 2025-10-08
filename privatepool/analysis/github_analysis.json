@@ -1,0 +1,171 @@
+{
+  "owner": "0xbow-io",
+  "repo_name": "privacy-pools-core",
+  "full_name": "0xbow-io/privacy-pools-core",
+  "github_url": "https://github.com/0xbow-io/privacy-pools-core",
+  "html_url": "https://github.com/0xbow-io/privacy-pools-core",
+  "stars": 81,
+  "forks": 21,
+  "watchers": 81,
+  "open_issues": 13,
+  "contributors": 17,
+  "created_at": "2025-02-17T18:14:43Z",
+  "updated_at": "2025-10-08T00:45:22Z",
+  "pushed_at": "2025-09-04T13:17:19Z",
+  "size_kb": 72992,
+  "default_branch": "main",
+  "primary_language": "TypeScript",
+  "languages": [
+    {
+      "name": "TypeScript",
+      "bytes": 530883,
+      "percentage": 55.04
+    },
+    {
+      "name": "Solidity",
+      "bytes": 371635,
+      "percentage": 38.53
+    },
+    {
+      "name": "JavaScript",
+      "bytes": 50724,
+      "percentage": 5.26
+    },
+    {
+      "name": "Circom",
+      "bytes": 9286,
+      "percentage": 0.96
+    },
+    {
+      "name": "Mustache",
+      "bytes": 1021,
+      "percentage": 0.11
+    },
+    {
+      "name": "Shell",
+      "bytes": 736,
+      "percentage": 0.08
+    },
+    {
+      "name": "Dockerfile",
+      "bytes": 302,
+      "percentage": 0.03
+    }
+  ],
+  "total_languages": 7,
+  "top_contributors": [
+    {
+      "username": "0xmoebius",
+      "contributions": 258,
+      "avatar_url": "https://avatars.githubusercontent.com/u/132487952?v=4",
+      "profile_url": "https://github.com/0xmoebius"
+    },
+    {
+      "username": "bezze",
+      "contributions": 62,
+      "avatar_url": "https://avatars.githubusercontent.com/u/13110990?v=4",
+      "profile_url": "https://github.com/bezze"
+    },
+    {
+      "username": "attemka",
+      "contributions": 37,
+      "avatar_url": "https://avatars.githubusercontent.com/u/13239251?v=4",
+      "profile_url": "https://github.com/attemka"
+    },
+    {
+      "username": "n8wb",
+      "contributions": 25,
+      "avatar_url": "https://avatars.githubusercontent.com/u/22994087?v=4",
+      "profile_url": "https://github.com/n8wb"
+    },
+    {
+      "username": "ameensol",
+      "contributions": 13,
+      "avatar_url": "https://avatars.githubusercontent.com/u/2306490?v=4",
+      "profile_url": "https://github.com/ameensol"
+    },
+    {
+      "username": "lempire123",
+      "contributions": 8,
+      "avatar_url": "https://avatars.githubusercontent.com/u/61431140?v=4",
+      "profile_url": "https://github.com/lempire123"
+    },
+    {
+      "username": "casiojapi",
+      "contributions": 7,
+      "avatar_url": "https://avatars.githubusercontent.com/u/65874072?v=4",
+      "profile_url": "https://github.com/casiojapi"
+    },
+    {
+      "username": "turtlemoji",
+      "contributions": 5,
+      "avatar_url": "https://avatars.githubusercontent.com/u/78362532?v=4",
+      "profile_url": "https://github.com/turtlemoji"
+    },
+    {
+      "username": "0xnigir1",
+      "contributions": 5,
+      "avatar_url": "https://avatars.githubusercontent.com/u/168690269?v=4",
+      "profile_url": "https://github.com/0xnigir1"
+    },
+    {
+      "username": "0xtiti",
+      "contributions": 4,
+      "avatar_url": "https://avatars.githubusercontent.com/u/162849030?v=4",
+      "profile_url": "https://github.com/0xtiti"
+    }
+  ],
+  "recent_commits": [
+    {
+      "sha": "7bc392d",
+      "message": "Release v1.1.1 (#107)",
+      "author": "Patrick Aljord",
+      "date": "2025-09-02T15:00:23Z",
+      "url": "https://github.com/0xbow-io/privacy-pools-core/commit/7bc392dad5fa483f53cf74e25d7ad19f0fc6d85f"
+    },
+    {
+      "sha": "318aaf8",
+      "message": "modified sdk release script, changelog and version bump,",
+      "author": "Artem",
+      "date": "2025-09-02T10:55:10Z",
+      "url": "https://github.com/0xbow-io/privacy-pools-core/commit/318aaf8cd5a3c7861683b3aafc591bd26e15279d"
+    },
+    {
+      "sha": "4f93cf1",
+      "message": "Merge remote-tracking branch 'origin/main' into release/v1.1.1",
+      "author": "Artem",
+      "date": "2025-09-02T10:08:05Z",
+      "url": "https://github.com/0xbow-io/privacy-pools-core/commit/4f93cf1c31e7b7d0fdf2ca016af0519d650a5eb7"
+    },
+    {
+      "sha": "cbd962b",
+      "message": "fix(sdk): fix for duplicated precommitments (#106)",
+      "author": "attemka",
+      "date": "2025-09-01T20:18:38Z",
+      "url": "https://github.com/0xbow-io/privacy-pools-core/commit/cbd962bc8d60215a0352192165ffde070d91c21e"
+    },
+    {
+      "sha": "ae6f617",
+      "message": "fix(sdk): fix for missing deposits (#105)",
+      "author": "attemka",
+      "date": "2025-09-01T20:18:21Z",
+      "url": "https://github.com/0xbow-io/privacy-pools-core/commit/ae6f617abba3d77d927a28e4989b79056906bd25"
+    }
+  ],
+  "total_commits_sample": 10,
+  "description": "Privacy Pools by 0xbow is a compliant way to anonymously transact on Ethereum. 0xbow blocks illicit actors to ensure pool integrity.",
+  "homepage": "https://privacypools.com",
+  "topics": [],
+  "license": "Apache License 2.0",
+  "is_fork": false,
+  "is_archived": false,
+  "is_disabled": false,
+  "is_private": false,
+  "has_wiki": false,
+  "has_issues": true,
+  "has_projects": false,
+  "analyzed_at": "2025-10-07T23:22:37.222007",
+  "data_source": "github-api-v3",
+  "confidence": 1.0,
+  "verified": true
+}

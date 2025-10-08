@@ -5,6 +5,9 @@ import Link from 'next/link';
 import StatCard from '@/components/Visualizations/StatCard';
 import BarChart from '@/components/Visualizations/BarChart';
 import PieChart from '@/components/Visualizations/PieChart';
+import NetworkGraph from '@/components/Visualizations/NetworkGraph';
+import Timeline from '@/components/Visualizations/Timeline';
+import Treemap from '@/components/Visualizations/Treemap';
 import { getAllProjectSummaries, getProjectStats, getTopN, type ProjectStats, type ProjectSummary } from '@/lib/data/client-data';
 
 export default function VisualizationsPage() {
@@ -278,6 +281,48 @@ export default function VisualizationsPage() {
             color="yellow"
             maxBars={10}
           />
+        </section>
+
+        {/* Network Graph - Relationships */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-brand-text-primary mb-6 flex items-center gap-2">
+            <svg className="w-6 h-6 text-brand-accent-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+            </svg>
+            Project Network
+          </h2>
+
+          <div className="bg-brand-bg-darker rounded-lg p-6 border border-brand-bg-active">
+            <NetworkGraph projects={projects} width={800} height={600} />
+          </div>
+        </section>
+
+        {/* Timeline Visualization */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-brand-text-primary mb-6 flex items-center gap-2">
+            <svg className="w-6 h-6 text-brand-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            Historical Timeline
+          </h2>
+
+          <div className="bg-brand-bg-darker rounded-lg p-6 border border-brand-bg-active">
+            <Timeline projects={projects} width={800} height={400} />
+          </div>
+        </section>
+
+        {/* Treemap - Hierarchical View */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-brand-text-primary mb-6 flex items-center gap-2">
+            <svg className="w-6 h-6 text-brand-accent-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h4a1 1 0 011 1v7a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM14 5a1 1 0 011-1h4a1 1 0 011 1v2a1 1 0 01-1 1h-4a1 1 0 01-1-1V5zM14 12a1 1 0 011-1h4a1 1 0 011 1v7a1 1 0 01-1 1h-4a1 1 0 01-1-1v-7z" />
+            </svg>
+            Category Hierarchy
+          </h2>
+
+          <div className="bg-brand-bg-darker rounded-lg p-6 border border-brand-bg-active">
+            <Treemap projects={projects} width={800} height={600} />
+          </div>
         </section>
       </main>
 
