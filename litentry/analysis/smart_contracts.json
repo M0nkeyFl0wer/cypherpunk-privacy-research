@@ -1,6 +1,15 @@
 {
-  "contracts": [],
-  "search_attempted": true,
-  "note": "Manual verification needed - check website and docs",
-  "analyzed_at": "2025-09-29T14:12:14.316739"
+  "project": "litentry",
+  "network": "Ethereum",
+  "contracts": [
+    {
+      "name": "LIT Token",
+      "address": "0xb59490aB09A0f526Cc7305822aC65f2Ab12f9723",
+      "type": "Token",
+      "verified": true
+    }
+  ],
+  "analyzed_at": "2025-10-08T10:19:23.715532",
+  "confidence": 1.0,
+  "data_source": "Manual research + Etherscan verification"
 }
