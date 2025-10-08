@@ -185,6 +185,16 @@ export interface ProjectData {
 }
 
 /**
+ * Search filters for faceted search
+ */
+export interface SearchFilters {
+  categories?: string[];
+  tech_stacks?: string[];
+  privacy_techniques?: string[];
+  platforms?: string[];
+  status?: string[];
+}
+/**
  * Lightweight project data for search results
  * Used in search index to minimize bundle size
  */

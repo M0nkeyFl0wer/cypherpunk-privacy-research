@@ -5,11 +5,12 @@ import SearchBar from '@/components/Search/SearchBar';
 import SearchResults from '@/components/Search/SearchResults';
 import SearchFilters from '@/components/Search/SearchFilters';
 import { searchProjects, getFilterOptions } from '@/lib/search/search';
-import type { SearchableProject, SearchFilters as Filters } from '@/lib/data/schema';
+import type { SearchFilters as Filters, SearchableProject } from '@/lib/data/schema';
+import type { SearchResult } from '@/lib/search/search';
 
 export default function SearchPage() {
   const [query, setQuery] = useState('');
-  const [results, setResults] = useState<SearchableProject[]>([]);
+  const [results, setResults] = useState<SearchResult[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [filters, setFilters] = useState<Filters>({
     categories: [],
@@ -19,10 +20,10 @@ export default function SearchPage() {
     status: [],
   });
   const [availableFilters, setAvailableFilters] = useState({
-    categories: [],
-    tech_stacks: [],
-    privacy_techniques: [],
-    platforms: [],
+    categories: [] as string[],
+    tech_stacks: [] as string[],
+    privacy_techniques: [] as string[],
+    platforms: [] as string[],
   });
 
   // Load available filter options on mount

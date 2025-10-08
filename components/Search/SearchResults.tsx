@@ -2,10 +2,10 @@
 
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
-import type { SearchableProject } from '@/lib/data/schema';
+import type { SearchResult } from '@/lib/search/search';
 
 interface SearchResultsProps {
-  results: SearchableProject[];
+  results: SearchResult[];
   query: string;
   isLoading?: boolean;
   className?: string;

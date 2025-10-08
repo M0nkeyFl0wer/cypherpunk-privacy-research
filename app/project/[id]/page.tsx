@@ -145,9 +145,9 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
 
             {/* Quick links */}
             <div className="flex flex-col gap-2">
-              {metadata.website && (
+              {(typeof metadata.website === 'string' ? metadata.website : (metadata.website as any)?.primary_url) && (
                 <a
-                  href={metadata.website}
+                  href={typeof metadata.website === 'string' ? metadata.website : (metadata.website as any)?.primary_url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 transition-colors"
@@ -322,23 +322,30 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
                   All data verified per constitutional requirements
                 </p>
                 <ul className="space-y-3">
-                  {metadata.sources.map((source, idx) => (
-                    <li key={idx} className="text-sm">
-                      <div className="flex items-start gap-2">
-                        <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
-                          {source.type}
-                        </span>
-                        <a
-                          href={source.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-indigo-600 hover:text-indigo-700 break-all"
-                        >
-                          {source.url}
-                        </a>
-                      </div>
-                    </li>
-                  ))}
+                  {metadata.sources.map((source, idx) => {
+                    const sourceUrl = typeof source.url === 'string' ? source.url : (source.url as any)?.primary_url || 'N/A';
+                    return (
+                      <li key={idx} className="text-sm">
+                        <div className="flex items-start gap-2">
+                          <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                            {source.type}
+                          </span>
+                          {sourceUrl !== 'N/A' ? (
+                            <a
+                              href={sourceUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-indigo-600 hover:text-indigo-700 break-all"
+                            >
+                              {sourceUrl}
+                            </a>
+                          ) : (
+                            <span className="text-gray-500">No URL available</span>
+                          )}
+                        </div>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             )}
