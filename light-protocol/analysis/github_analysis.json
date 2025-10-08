@@ -1,0 +1,110 @@
+{
+  "repository": "https://github.com/Lightprotocol/light-protocol",
+  "full_name": "Lightprotocol/light-protocol",
+  "description": "The ZK Compression Protocol For Solana",
+  "statistics": {
+    "stars": 278,
+    "forks": 78,
+    "watchers": 278,
+    "open_issues": 80,
+    "size_kb": 786108
+  },
+  "language_breakdown": {
+    "Rust": 78.79,
+    "TypeScript": 12.14,
+    "Go": 5.97,
+    "Lean": 1.98,
+    "Shell": 0.92,
+    "JavaScript": 0.17,
+    "Dockerfile": 0.01,
+    "Python": 0.01,
+    "HTML": 0.0,
+    "RenderScript": 0.0
+  },
+  "primary_language": "Rust",
+  "license": "GNU General Public License v3.0",
+  "topics": [],
+  "created_at": "2021-11-17T23:55:16Z",
+  "updated_at": "2025-10-08T12:47:05Z",
+  "pushed_at": "2025-10-08T12:57:02Z",
+  "homepage": "https://www.zkcompression.com",
+  "default_branch": "main",
+  "archived": false,
+  "recent_commits": [
+    {
+      "sha": "ec70ba4",
+      "message": "fix: compressed token es module generation (#1964)",
+      "author": "ananas-block",
+      "date": "2025-10-08T12:47:01Z"
+    },
+    {
+      "sha": "c7227ba",
+      "message": "chore: remove cargo release (#1969)",
+      "author": "ananas-block",
+      "date": "2025-10-07T23:34:36Z"
+    },
+    {
+      "sha": "292e200",
+      "message": "update prover Dockerfile: bump go version and simplify proving-keys COPY rules (#1970)",
+      "author": "Sergey Timoshin",
+      "date": "2025-10-07T23:33:37Z"
+    },
+    {
+      "sha": "9a73e33",
+      "message": "chore(program-libs): bump versions (#1968)",
+      "author": "ananas-block",
+      "date": "2025-10-07T18:28:05Z"
+    },
+    {
+      "sha": "61b031b",
+      "message": "fix: rust release (#1966)",
+      "author": "ananas-block",
+      "date": "2025-10-07T18:17:44Z"
+    }
+  ],
+  "top_contributors": [
+    {
+      "username": "ananas-block",
+      "contributions": 870
+    },
+    {
+      "username": "sergeytimoshin",
+      "contributions": 344
+    },
+    {
+      "username": "vadorovsky",
+      "contributions": 245
+    },
+    {
+      "username": "dependabot[bot]",
+      "contributions": 184
+    },
+    {
+      "username": "SwenSchaeferjohann",
+      "contributions": 175
+    },
+    {
+      "username": "github-actions[bot]",
+      "contributions": 19
+    },
+    {
+      "username": "sleepyqadir",
+      "contributions": 16
+    },
+    {
+      "username": "Shigoto-dev19",
+      "contributions": 5
+    },
+    {
+      "username": "xonoxitron",
+      "contributions": 4
+    },
+    {
+      "username": "tilo-14",
+      "contributions": 3
+    }
+  ],
+  "analyzed_at": "2025-10-08T10:11:55.463008",
+  "confidence": 1.0,
+  "data_source": "GitHub API v3"
+}

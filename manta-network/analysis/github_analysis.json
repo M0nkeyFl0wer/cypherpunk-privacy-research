@@ -1,0 +1,111 @@
+{
+  "repository": "https://github.com/Manta-Network/manta-rs",
+  "full_name": "Manta-Network/manta-rs",
+  "description": "Rust Crates for the Manta Network Ecosystem",
+  "statistics": {
+    "stars": 79,
+    "forks": 51,
+    "watchers": 79,
+    "open_issues": 114,
+    "size_kb": 97666
+  },
+  "language_breakdown": {
+    "Rust": 97.35,
+    "Sage": 1.58,
+    "Shell": 0.96,
+    "JavaScript": 0.1,
+    "HTML": 0.02
+  },
+  "primary_language": "Rust",
+  "license": "GNU General Public License v3.0",
+  "topics": [
+    "eclair",
+    "manta",
+    "openzl",
+    "rust",
+    "zero-knowledge-proofs"
+  ],
+  "created_at": "2021-09-01T00:26:08Z",
+  "updated_at": "2025-08-18T07:40:20Z",
+  "pushed_at": "2023-09-01T15:24:34Z",
+  "homepage": "https://github.com/Manta-Network",
+  "default_branch": "main",
+  "archived": false,
+  "recent_commits": [
+    {
+      "sha": "eb282b1",
+      "message": " prune fix release (#366)",
+      "author": "Georgi Zlatarev",
+      "date": "2023-09-01T15:24:14Z"
+    },
+    {
+      "sha": "cc9223f",
+      "message": "Initial sync pruning fix (#363)",
+      "author": "Francisco Hern\u00e1ndez Iglesias",
+      "date": "2023-08-31T14:28:17Z"
+    },
+    {
+      "sha": "f69526a",
+      "message": "release (#362)",
+      "author": "Francisco Hern\u00e1ndez Iglesias",
+      "date": "2023-06-26T13:37:46Z"
+    },
+    {
+      "sha": "139eda2",
+      "message": "Select fix (#361)",
+      "author": "Francisco Hern\u00e1ndez Iglesias",
+      "date": "2023-06-26T12:05:48Z"
+    },
+    {
+      "sha": "c7c71fb",
+      "message": "release (#360)",
+      "author": "Francisco Hern\u00e1ndez Iglesias",
+      "date": "2023-06-20T15:52:43Z"
+    }
+  ],
+  "top_contributors": [
+    {
+      "username": "bhgomes",
+      "contributions": 71
+    },
+    {
+      "username": "SupremoUGH",
+      "contributions": 44
+    },
+    {
+      "username": "GhostOfGauss",
+      "contributions": 7
+    },
+    {
+      "username": "tsunrise",
+      "contributions": 6
+    },
+    {
+      "username": "AlexParshh",
+      "contributions": 3
+    },
+    {
+      "username": "stechu",
+      "contributions": 2
+    },
+    {
+      "username": "BoyuanFeng",
+      "contributions": 1
+    },
+    {
+      "username": "ghzlatarev",
+      "contributions": 1
+    },
+    {
+      "username": "Dengjianping",
+      "contributions": 1
+    },
+    {
+      "username": "dependabot[bot]",
+      "contributions": 1
+    }
+  ],
+  "analyzed_at": "2025-10-08T10:11:58.031620",
+  "confidence": 1.0,
+  "data_source": "GitHub API v3"
+}

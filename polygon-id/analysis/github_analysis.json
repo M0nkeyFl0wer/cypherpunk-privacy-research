@@ -1,0 +1,115 @@
+{
+  "repository": "https://github.com/0xPolygonID",
+  "full_name": "0xPolygonID/issuer-node",
+  "description": "Privado ID Self-Hosted Issuer Node",
+  "statistics": {
+    "stars": 102,
+    "forks": 95,
+    "watchers": 102,
+    "open_issues": 14,
+    "size_kb": 423969
+  },
+  "language_breakdown": {
+    "Go": 68.17,
+    "TypeScript": 29.39,
+    "Smarty": 0.64,
+    "Makefile": 0.59,
+    "SCSS": 0.48,
+    "Shell": 0.33,
+    "PLpgSQL": 0.24,
+    "HTML": 0.09,
+    "Dockerfile": 0.06,
+    "HCL": 0.02
+  },
+  "primary_language": "Go",
+  "license": "Apache License 2.0",
+  "topics": [
+    "api",
+    "did",
+    "polygonid",
+    "privadoid"
+  ],
+  "created_at": "2022-12-20T15:29:39Z",
+  "updated_at": "2025-10-08T13:57:32Z",
+  "pushed_at": "2025-09-05T14:32:51Z",
+  "homepage": "",
+  "default_branch": "main",
+  "archived": false,
+  "recent_commits": [
+    {
+      "sha": "f345ed0",
+      "message": "Merge pull request #932 from 0xPolygonID/hotfix-threadid",
+      "author": "Jordi Gim\u00e9nez",
+      "date": "2025-08-18T11:19:26Z"
+    },
+    {
+      "sha": "f90a91c",
+      "message": "fix: Rename protocol message threadid field to thid",
+      "author": "x1m3",
+      "date": "2025-08-18T10:39:25Z"
+    },
+    {
+      "sha": "bd78844",
+      "message": "Feat: ed25519 key type support (#928)",
+      "author": "volodymyr-basiuk",
+      "date": "2025-08-15T12:13:00Z"
+    },
+    {
+      "sha": "4a7ac87",
+      "message": "Merge pull request #924 from 0xPolygonID/develop",
+      "author": "dotas",
+      "date": "2025-07-14T12:15:47Z"
+    },
+    {
+      "sha": "390679b",
+      "message": "Adding new ECR push for main branch",
+      "author": "Dotas",
+      "date": "2025-07-11T17:25:09Z"
+    }
+  ],
+  "top_contributors": [
+    {
+      "username": "martinsaporiti",
+      "contributions": 1017
+    },
+    {
+      "username": "x1m3",
+      "contributions": 348
+    },
+    {
+      "username": "javip97",
+      "contributions": 258
+    },
+    {
+      "username": "amonsosanz",
+      "contributions": 237
+    },
+    {
+      "username": "adrifdez",
+      "contributions": 151
+    },
+    {
+      "username": "volodymyr-basiuk",
+      "contributions": 88
+    },
+    {
+      "username": "ilya-korotya",
+      "contributions": 30
+    },
+    {
+      "username": "Alexander-frenki",
+      "contributions": 23
+    },
+    {
+      "username": "elias-garcia",
+      "contributions": 19
+    },
+    {
+      "username": "Franky-zt",
+      "contributions": 15
+    }
+  ],
+  "analyzed_at": "2025-10-08T10:12:03.729303",
+  "confidence": 1.0,
+  "data_source": "GitHub API v3"
+}

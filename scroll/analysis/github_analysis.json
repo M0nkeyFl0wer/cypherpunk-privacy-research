@@ -1,0 +1,107 @@
+{
+  "repository": "https://github.com/scroll-tech/scroll",
+  "full_name": "scroll-tech/scroll",
+  "description": "Scroll's Monorepo",
+  "statistics": {
+    "stars": 738,
+    "forks": 626,
+    "watchers": 738,
+    "open_issues": 10,
+    "size_kb": 44487
+  },
+  "language_breakdown": {
+    "Go": 88.35,
+    "Rust": 5.71,
+    "Solidity": 2.42,
+    "Dockerfile": 1.2,
+    "Makefile": 1.15,
+    "Shell": 1.04,
+    "C": 0.13
+  },
+  "primary_language": "Go",
+  "license": "MIT License",
+  "topics": [],
+  "created_at": "2022-09-07T22:34:19Z",
+  "updated_at": "2025-10-06T12:08:33Z",
+  "pushed_at": "2025-10-07T02:04:11Z",
+  "homepage": "",
+  "default_branch": "develop",
+  "archived": false,
+  "recent_commits": [
+    {
+      "sha": "b7fdf48",
+      "message": "ci: Do not push latest tag on Docker images (#1744)",
+      "author": "P\u00e9ter Garamv\u00f6lgyi",
+      "date": "2025-09-30T06:40:49Z"
+    },
+    {
+      "sha": "ad0c918",
+      "message": "update prover image cuda version (#1741)",
+      "author": "johnsonjie",
+      "date": "2025-09-24T01:42:19Z"
+    },
+    {
+      "sha": "1098876",
+      "message": "[Feat] Update zkvm to 0.6 (use openvm 1.4) (#1736)",
+      "author": "Ho",
+      "date": "2025-09-19T01:29:13Z"
+    },
+    {
+      "sha": "9e520e7",
+      "message": "feat(tx sender): add multiple write clients for more reliable tx submission (#1740)",
+      "author": "Jonas Theis",
+      "date": "2025-09-19T00:56:01Z"
+    },
+    {
+      "sha": "de7f6e5",
+      "message": "refactor(rollup relayer): remove `max_block_num_per_chunk` configuration parameter (#1729)",
+      "author": "Jonas Theis",
+      "date": "2025-09-10T06:16:13Z"
+    }
+  ],
+  "top_contributors": [
+    {
+      "username": "colinlyguo",
+      "contributions": 197
+    },
+    {
+      "username": "0xmountaintop",
+      "contributions": 186
+    },
+    {
+      "username": "zimpha",
+      "contributions": 150
+    },
+    {
+      "username": "georgehao",
+      "contributions": 90
+    },
+    {
+      "username": "Thegaram",
+      "contributions": 89
+    },
+    {
+      "username": "mask-pp",
+      "contributions": 61
+    },
+    {
+      "username": "ChuhanJin",
+      "contributions": 51
+    },
+    {
+      "username": "silathdiir",
+      "contributions": 43
+    },
+    {
+      "username": "Lawliet-Chan",
+      "contributions": 34
+    },
+    {
+      "username": "yiweichi",
+      "contributions": 21
+    }
+  ],
+  "analyzed_at": "2025-10-08T10:12:05.928027",
+  "confidence": 1.0,
+  "data_source": "GitHub API v3"
+}

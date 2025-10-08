@@ -1,0 +1,108 @@
+{
+  "repository": "https://github.com/EYBlockchain/nightfall_3",
+  "full_name": "EYBlockchain/nightfall_3",
+  "description": "a mono-repo containing an optimistic version of nightfall",
+  "statistics": {
+    "stars": 272,
+    "forks": 56,
+    "watchers": 272,
+    "open_issues": 67,
+    "size_kb": 568143
+  },
+  "language_breakdown": {
+    "JavaScript": 83.0,
+    "Solidity": 10.22,
+    "Circom": 3.89,
+    "Shell": 2.16,
+    "Dockerfile": 0.46,
+    "CSS": 0.15,
+    "HTML": 0.08,
+    "TypeScript": 0.03
+  },
+  "primary_language": "JavaScript",
+  "license": "Creative Commons Zero v1.0 Universal",
+  "topics": [],
+  "created_at": "2021-04-29T08:17:32Z",
+  "updated_at": "2025-10-01T06:36:01Z",
+  "pushed_at": "2024-10-09T05:25:20Z",
+  "homepage": null,
+  "default_branch": "master",
+  "archived": false,
+  "recent_commits": [
+    {
+      "sha": "6571c59",
+      "message": "Merge pull request #1447 from EYBlockchain/westlad/hardhat",
+      "author": "Duncan Westland",
+      "date": "2024-04-17T17:03:17Z"
+    },
+    {
+      "sha": "b38ae4d",
+      "message": "fix: ping pong test",
+      "author": "westlad",
+      "date": "2024-04-17T15:53:22Z"
+    },
+    {
+      "sha": "3a8fe30",
+      "message": "fix: incorrect multisig addresses",
+      "author": "westlad",
+      "date": "2024-04-17T14:09:59Z"
+    },
+    {
+      "sha": "1a7a8b7",
+      "message": "fix: blockchain docker compose file",
+      "author": "westlad",
+      "date": "2024-04-17T12:20:48Z"
+    },
+    {
+      "sha": "d64e297",
+      "message": "feat: reissue expired certs",
+      "author": "westlad",
+      "date": "2024-04-17T12:14:50Z"
+    }
+  ],
+  "top_contributors": [
+    {
+      "username": "Westlad",
+      "contributions": 837
+    },
+    {
+      "username": "druiz0992",
+      "contributions": 663
+    },
+    {
+      "username": "daveroga",
+      "contributions": 368
+    },
+    {
+      "username": "LijuJoseJJ",
+      "contributions": 329
+    },
+    {
+      "username": "IlyasRidhuan",
+      "contributions": 267
+    },
+    {
+      "username": "RogerTaule",
+      "contributions": 239
+    },
+    {
+      "username": "ChaitanyaKonda",
+      "contributions": 179
+    },
+    {
+      "username": "signorecello",
+      "contributions": 161
+    },
+    {
+      "username": "eugypalu",
+      "contributions": 104
+    },
+    {
+      "username": "luizoamorim",
+      "contributions": 85
+    }
+  ],
+  "analyzed_at": "2025-10-08T10:12:04.820116",
+  "confidence": 1.0,
+  "data_source": "GitHub API v3"
+}
