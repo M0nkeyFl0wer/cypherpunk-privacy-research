@@ -2,180 +2,192 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-brand-bg">
+    <main className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900">
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-brand-accent-purple to-brand-accent-blue py-20">
-        <div className="max-w-6xl mx-auto px-8">
-          <h1 className="text-5xl font-bold text-white mb-6">
-            Web3 Privacy Ethereum Cypherpunks Research
+      <div className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-20"></div>
+        <div className="relative max-w-6xl mx-auto px-8 py-24 text-center">
+          <h1 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 mb-6">
+            Web3 Privacy Research
           </h1>
-          <p className="text-xl text-white/90 mb-8 max-w-3xl">
-            Comprehensive research on 114 Web3 privacy projects with 100% real data and zero fabrication.
-            Explore interactive visualizations, search through detailed research, and chat with AI about privacy technologies.
+          <p className="text-3xl text-gray-300 mb-4">
+            Ethereum Cypherpunks Edition
           </p>
-          <div className="flex gap-4">
-            <Link
-              href="/visualizations"
-              className="bg-white text-brand-accent-purple px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
-            >
-              Explore Visualizations
-            </Link>
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-12">
+            Comprehensive research on 114 Web3 privacy projects with 100% real data and zero fabrication.
+            Explore interactive visualizations, search detailed research, and discover privacy technologies.
+          </p>
+
+          <div className="flex gap-4 justify-center">
             <Link
               href="/search"
-              className="bg-brand-accent-purple/20 text-white px-6 py-3 rounded-lg font-semibold hover:bg-brand-accent-purple/30 transition-colors border border-white/20"
+              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all shadow-lg hover:shadow-xl"
             >
-              Search Projects
+              🔍 Search Projects
+            </Link>
+            <Link
+              href="/visualizations"
+              className="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all border border-white/20"
+            >
+              📊 View Visualizations
             </Link>
           </div>
         </div>
       </div>
 
       {/* Stats Section */}
-      <div className="max-w-6xl mx-auto px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
-          <div className="bg-brand-bg-darker rounded-lg p-6 border border-brand-border">
-            <div className="text-4xl font-bold text-brand-accent-purple mb-2">114</div>
-            <div className="text-brand-text-muted">Privacy Projects</div>
+      <div className="max-w-6xl mx-auto px-8 py-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+          <div className="bg-gray-800/50 backdrop-blur-lg rounded-xl p-6 border border-purple-500/30 text-center">
+            <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-2">114</div>
+            <div className="text-gray-400">Privacy Projects</div>
           </div>
-          <div className="bg-brand-bg-darker rounded-lg p-6 border border-brand-border">
-            <div className="text-4xl font-bold text-brand-accent-blue mb-2">85</div>
-            <div className="text-brand-text-muted">Project Cards</div>
+          <div className="bg-gray-800/50 backdrop-blur-lg rounded-xl p-6 border border-blue-500/30 text-center">
+            <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 mb-2">85</div>
+            <div className="text-gray-400">Project Cards</div>
           </div>
-          <div className="bg-brand-bg-darker rounded-lg p-6 border border-brand-border">
-            <div className="text-4xl font-bold text-brand-accent-green mb-2">113</div>
-            <div className="text-brand-text-muted">Full Reports</div>
+          <div className="bg-gray-800/50 backdrop-blur-lg rounded-xl p-6 border border-green-500/30 text-center">
+            <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-400 mb-2">113</div>
+            <div className="text-gray-400">Full Reports</div>
           </div>
-          <div className="bg-brand-bg-darker rounded-lg p-6 border border-brand-border">
-            <div className="text-4xl font-bold text-brand-accent-purple mb-2">30%</div>
-            <div className="text-brand-text-muted">Avg Completeness</div>
+          <div className="bg-gray-800/50 backdrop-blur-lg rounded-xl p-6 border border-pink-500/30 text-center">
+            <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-rose-400 mb-2">30%</div>
+            <div className="text-gray-400">Avg Completeness</div>
           </div>
         </div>
 
-        {/* Features Section */}
-        <h2 className="text-3xl font-bold text-brand-text mb-8">Explore the Research</h2>
+        {/* Features Grid */}
+        <h2 className="text-3xl font-bold text-white mb-8 text-center">Explore the Research</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-          {/* Visualizations Card */}
-          <Link
-            href="/visualizations"
-            className="bg-brand-bg-darker rounded-lg p-6 border border-brand-border hover:border-brand-accent-purple transition-colors group"
-          >
-            <div className="text-4xl mb-4">📊</div>
-            <h3 className="text-xl font-bold text-brand-text mb-3 group-hover:text-brand-accent-purple">
-              Interactive Visualizations
-            </h3>
-            <p className="text-brand-text-muted mb-4">
-              Explore projects through three interactive D3.js visualizations: Network Graph, Treemap, and Timeline.
-            </p>
-            <ul className="text-sm text-brand-text-muted space-y-1">
-              <li>• Hover for rich project details</li>
-              <li>• Click to navigate to full reports</li>
-              <li>• Discover project relationships</li>
-            </ul>
-          </Link>
-
           {/* Search Card */}
           <Link
             href="/search"
-            className="bg-brand-bg-darker rounded-lg p-6 border border-brand-border hover:border-brand-accent-blue transition-colors group"
+            className="bg-gray-800/50 backdrop-blur-lg rounded-xl p-8 border border-purple-500/30 hover:border-purple-500 transition-all group hover:shadow-xl hover:shadow-purple-500/20"
           >
-            <div className="text-4xl mb-4">🔍</div>
-            <h3 className="text-xl font-bold text-brand-text mb-3 group-hover:text-brand-accent-blue">
+            <div className="text-5xl mb-4">🔍</div>
+            <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">
               Smart Search
             </h3>
-            <p className="text-brand-text-muted mb-4">
-              Search across 114 projects by name, category, technology stack, or privacy techniques.
+            <p className="text-gray-400 mb-4">
+              AI-powered search across all project data. Find projects by technology, category, or privacy technique.
             </p>
-            <ul className="text-sm text-brand-text-muted space-y-1">
-              <li>• Full-text search</li>
-              <li>• Filter by category</li>
-              <li>• Real-time results</li>
+            <ul className="text-sm text-gray-500 space-y-2">
+              <li>• Search by tech stack (Rust, Arbitrum, etc.)</li>
+              <li>• Filter by privacy technique</li>
+              <li>• Bring your own Claude API key</li>
+            </ul>
+          </Link>
+
+          {/* Visualizations Card */}
+          <Link
+            href="/visualizations"
+            className="bg-gray-800/50 backdrop-blur-lg rounded-xl p-8 border border-blue-500/30 hover:border-blue-500 transition-all group hover:shadow-xl hover:shadow-blue-500/20"
+          >
+            <div className="text-5xl mb-4">📊</div>
+            <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
+              Interactive Visualizations
+            </h3>
+            <p className="text-gray-400 mb-4">
+              Explore projects through three interactive D3.js visualizations with rich tooltips.
+            </p>
+            <ul className="text-sm text-gray-500 space-y-2">
+              <li>• Network Graph - Project relationships</li>
+              <li>• Treemap - Technology categories</li>
+              <li>• Timeline - Development history</li>
             </ul>
           </Link>
 
           {/* Chat Card */}
           <Link
             href="/chat"
-            className="bg-brand-bg-darker rounded-lg p-6 border border-brand-border hover:border-brand-accent-green transition-colors group"
+            className="bg-gray-800/50 backdrop-blur-lg rounded-xl p-8 border border-green-500/30 hover:border-green-500 transition-all group hover:shadow-xl hover:shadow-green-500/20"
           >
-            <div className="text-4xl mb-4">💬</div>
-            <h3 className="text-xl font-bold text-brand-text mb-3 group-hover:text-brand-accent-green">
-              AI Chat Interface
+            <div className="text-5xl mb-4">💬</div>
+            <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-green-400 transition-colors">
+              AI Chat Assistant
             </h3>
-            <p className="text-brand-text-muted mb-4">
-              Ask questions about Web3 privacy projects using your own Claude API key (BYOK).
+            <p className="text-gray-400 mb-4">
+              Ask questions about privacy projects and get AI-powered answers from research data.
             </p>
-            <ul className="text-sm text-brand-text-muted space-y-1">
-              <li>• Secure client-side processing</li>
-              <li>• Your API key, your control</li>
-              <li>• Context-aware responses</li>
+            <ul className="text-sm text-gray-500 space-y-2">
+              <li>• Natural language queries</li>
+              <li>• Data retrieval only (no analysis)</li>
+              <li>• Direct quotes and citations</li>
             </ul>
           </Link>
         </div>
 
-        {/* Research Quality Section */}
-        <div className="bg-brand-accent-purple/10 rounded-lg p-8 border border-brand-accent-purple/20 mb-16">
-          <h2 className="text-2xl font-bold text-brand-text mb-4">
-            🎯 Research in Progress
-          </h2>
-          <p className="text-brand-text-muted mb-4">
-            This is an active research project documenting Web3 privacy technologies. Data collection is ongoing:
-          </p>
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-brand-text-muted">
-            <li className="flex items-start">
-              <span className="text-brand-accent-green mr-2">✓</span>
-              114 privacy projects identified
-            </li>
-            <li className="flex items-start">
-              <span className="text-brand-accent-yellow mr-2">⋯</span>
-              Technical details being researched
-            </li>
-            <li className="flex items-start">
-              <span className="text-brand-accent-green mr-2">✓</span>
-              Only verified information included
-            </li>
-            <li className="flex items-start">
-              <span className="text-brand-accent-yellow mr-2">⋯</span>
-              Data updated as research progresses
-            </li>
-          </ul>
-        </div>
-
-        {/* Project Categories */}
-        <h2 className="text-2xl font-bold text-brand-text mb-6">Project Categories</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {[
-            { name: 'DeFi', count: 12 },
-            { name: 'Infrastructure', count: 8 },
-            { name: 'Wallets', count: 10 },
-            { name: 'Computing', count: 9 },
-            { name: 'Messaging', count: 5 },
-            { name: 'Layer 2', count: 7 },
-            { name: 'Identity (DID)', count: 6 },
-            { name: 'Other', count: 57 },
-          ].map((cat) => (
-            <div key={cat.name} className="bg-brand-bg-darker rounded-lg p-4 border border-brand-border">
-              <div className="text-lg font-bold text-brand-text">{cat.name}</div>
-              <div className="text-brand-text-muted">{cat.count} projects</div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Footer CTA */}
-      <div className="bg-brand-bg-darker border-t border-brand-border py-12">
-        <div className="max-w-6xl mx-auto px-8 text-center">
-          <h2 className="text-2xl font-bold text-brand-text mb-4">
-            Start Exploring Privacy Projects
-          </h2>
-          <p className="text-brand-text-muted mb-6">
-            Discover the landscape of Web3 privacy technologies through data-driven research.
-          </p>
+        {/* Additional Features */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+          {/* Feedback Card */}
           <Link
-            href="/visualizations"
-            className="inline-block bg-brand-accent-purple text-white px-8 py-3 rounded-lg font-semibold hover:bg-brand-accent-purple-hover transition-colors"
+            href="/feedback"
+            className="bg-gray-800/50 backdrop-blur-lg rounded-xl p-6 border border-pink-500/30 hover:border-pink-500 transition-all group"
           >
-            View Visualizations →
+            <div className="flex items-start gap-4">
+              <div className="text-4xl">💡</div>
+              <div>
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-pink-400 transition-colors">
+                  Submit Feedback
+                </h3>
+                <p className="text-gray-400">
+                  Help improve this research by submitting corrections, updates, or suggesting new projects.
+                </p>
+              </div>
+            </div>
           </Link>
+
+          {/* GitHub Card */}
+          <a
+            href="https://github.com/M0nkeyFl0wer/web3-privacy-ethereum-cypherpunk-research"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gray-800/50 backdrop-blur-lg rounded-xl p-6 border border-cyan-500/30 hover:border-cyan-500 transition-all group"
+          >
+            <div className="flex items-start gap-4">
+              <div className="text-4xl">📁</div>
+              <div>
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+                  View on GitHub
+                </h3>
+                <p className="text-gray-400">
+                  Access all research data, project reports, and source code on GitHub.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        {/* Key Features */}
+        <div className="bg-gradient-to-r from-purple-900/30 to-blue-900/30 backdrop-blur-lg rounded-xl p-8 border border-purple-500/30 mb-16">
+          <h2 className="text-2xl font-bold text-white mb-6 text-center">Why This Research</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div>
+              <div className="text-3xl mb-2">✅</div>
+              <h4 className="text-lg font-semibold text-white mb-2">100% Real Data</h4>
+              <p className="text-sm text-gray-400">Zero synthetic data, placeholder text, or fabricated information</p>
+            </div>
+            <div>
+              <div className="text-3xl mb-2">🔒</div>
+              <h4 className="text-lg font-semibold text-white mb-2">Privacy Focused</h4>
+              <p className="text-sm text-gray-400">Comprehensive analysis of Web3 privacy technologies and protocols</p>
+            </div>
+            <div>
+              <div className="text-3xl mb-2">📚</div>
+              <h4 className="text-lg font-semibold text-white mb-2">Living Research</h4>
+              <p className="text-sm text-gray-400">Actively maintained with community contributions and updates</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Footer */}
+        <div className="text-center text-gray-500 text-sm space-y-2">
+          <p>
+            Research data updated October 2025 • Constitutional compliance enforced
+          </p>
+          <p>
+            Powered by Next.js 14 • D3.js • Claude AI • Deployed on GitHub Pages
+          </p>
         </div>
       </div>
     </main>
