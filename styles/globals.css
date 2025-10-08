@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Web3Privacy Now Brand Colors */
+  --brand-bg-dark: #0a0b0d;
+  --brand-bg-darker: #06070a;
+  --brand-bg-active: #151620;
+  --brand-bg-hover: #1e1f2e;
+
+  --brand-text-primary: #ffffff;
+  --brand-text-secondary: #b4b6c1;
+  --brand-text-muted: #6b6d7a;
+
+  --brand-accent-purple: #8b5cf6;
+  --brand-accent-purple-hover: #7c3aed;
+  --brand-accent-purple-active: #6d28d9;
+
+  --brand-accent-blue: #3b82f6;
+  --brand-accent-green: #10b981;
+  --brand-accent-yellow: #f59e0b;
+  --brand-accent-pink: #ec4899;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--brand-bg-dark);
+  color: var(--brand-text-primary);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--brand-bg-darker);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--brand-bg-active);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-bg-hover);
+}
+
+/* Markdown Styles */
+.prose {
+  max-width: none;
+}
+
+.prose p {
+  margin: 0.75em 0;
+  line-height: 1.7;
+}
+
+.prose ul,
+.prose ol {
+  margin: 0.75em 0;
+  padding-left: 1.5em;
+}
+
+.prose li {
+  margin: 0.25em 0;
+}
+
+.prose code {
+  background: var(--brand-bg-active);
+  padding: 0.125em 0.375em;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+}
+
+.prose pre {
+  background: var(--brand-bg-active);
+  padding: 1em;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin: 1em 0;
+}
+
+.prose strong {
+  font-weight: 600;
+  color: var(--brand-text-primary);
+}
+
+.prose a {
+  color: var(--brand-accent-purple);
+  text-decoration: underline;
+}
+
+.prose a:hover {
+  color: var(--brand-accent-purple-hover);
+}
