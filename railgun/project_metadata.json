@@ -1,0 +1,33 @@
+{
+  "project_name": "Railgun",
+  "category": "defi",
+  "status": "active",
+  "ecosystem": "ethereum",
+  "technology": "",
+  "description": "Privacy protocol for DeFi",
+  "website": "https://railgun.org",
+  "github": "https://github.com/Railgun-Privacy",
+  "discovery_date": "2025-09-29T14:06:45.268050",
+  "discovery_source": "web3privacy_github",
+  "research_progress": {
+    "status": "initial_discovery",
+    "completion_percent": 10,
+    "last_updated": "2025-09-29T14:06:45.268057"
+  },
+  "web3privacy_enriched": true,
+  "enriched_at": "2025-09-29T16:11:39.090513",
+  "mainnet_status": "live",
+  "is_mainnet": true,
+  "launch_date": "2021-07",
+  "audit_count": 5,
+  "audits": [
+    "5 audits (details in GitHub)"
+  ],
+  "supported_chains": [
+    "ethereum",
+    "polygon",
+    "arbitrum",
+    "bsc"
+  ],
+  "launch_status": "Live July 2021"
+}

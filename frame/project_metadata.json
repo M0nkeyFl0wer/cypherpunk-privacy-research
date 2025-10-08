@@ -1,0 +1,17 @@
+{
+  "project_name": "Frame",
+  "category": "wallet",
+  "status": "active",
+  "ecosystem": "Ethereum",
+  "technology": "",
+  "description": "Open-source, non-custodial Ethereum desktop wallet",
+  "website": "",
+  "github": "",
+  "discovery_date": "2025-09-29T14:06:45.270283",
+  "discovery_source": "web3privacy_github",
+  "research_progress": {
+    "status": "initial_discovery",
+    "completion_percent": 10,
+    "last_updated": "2025-09-29T14:06:45.270291"
+  }
+}

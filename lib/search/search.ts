@@ -4,15 +4,7 @@
  */
 
 import lunr from 'lunr';
-import type { SearchIndex, SearchableProject } from '@/lib/data/schema';
-
-export interface SearchFilters {
-  categories?: string[];
-  tech_stacks?: string[];
-  privacy_techniques?: string[];
-  platforms?: string[];
-  status?: string[];
-}
+import type { SearchIndex, SearchableProject, SearchFilters } from '@/lib/data/schema';
 
 export interface SearchResult extends SearchableProject {
   score: number; // Relevance score from Lunr

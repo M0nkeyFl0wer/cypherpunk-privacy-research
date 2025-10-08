@@ -1,0 +1,28 @@
+{
+  "project_name": "Nillion",
+  "category": "computing",
+  "status": "active",
+  "ecosystem": "ethereum",
+  "technology": "",
+  "description": "Decentralizes trust for sensitive data",
+  "website": "",
+  "github": "",
+  "discovery_date": "2025-09-29T14:06:45.274639",
+  "discovery_source": "web3privacy_github",
+  "research_progress": {
+    "status": "initial_discovery",
+    "completion_percent": 10,
+    "last_updated": "2025-09-29T14:06:45.274647"
+  },
+  "web3privacy_enriched": true,
+  "enriched_at": "2025-09-29T16:11:39.099335",
+  "mainnet_status": "mainnet_alpha",
+  "is_mainnet": true,
+  "launch_date": "2025-03-24",
+  "audit_count": 0,
+  "audits": [],
+  "supported_chains": [
+    "custom-l1"
+  ],
+  "launch_status": "Alpha Mainnet since March 24, 2025"
+}

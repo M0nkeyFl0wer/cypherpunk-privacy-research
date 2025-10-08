@@ -1,0 +1,30 @@
+{
+  "project_name": "Light Protocol",
+  "category": "defi",
+  "status": "active",
+  "ecosystem": "Solana",
+  "technology": "",
+  "description": "Privacy layer for Solana",
+  "website": "",
+  "github": "",
+  "discovery_date": "2025-09-29T14:06:45.268917",
+  "discovery_source": "web3privacy_github",
+  "research_progress": {
+    "status": "initial_discovery",
+    "completion_percent": 10,
+    "last_updated": "2025-09-29T14:06:45.268924"
+  },
+  "web3privacy_enriched": true,
+  "enriched_at": "2025-09-29T16:11:39.098695",
+  "mainnet_status": "mainnet_beta",
+  "is_mainnet": true,
+  "launch_date": "2025",
+  "audit_count": 1,
+  "audits": [
+    "Formal verification"
+  ],
+  "supported_chains": [
+    "solana"
+  ],
+  "launch_status": "Mainnet Beta 1.0.0"
+}
