@@ -115,27 +115,27 @@ export default function Home() {
         {/* Research Quality Section */}
         <div className="bg-brand-accent-purple/10 rounded-lg p-8 border border-brand-accent-purple/20 mb-16">
           <h2 className="text-2xl font-bold text-brand-text mb-4">
-            🎯 100% Real Data, Zero Fabrication
+            🎯 Research in Progress
           </h2>
           <p className="text-brand-text-muted mb-4">
-            This research follows strict constitutional requirements for data integrity:
+            This is an active research project documenting Web3 privacy technologies. Data collection is ongoing:
           </p>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-brand-text-muted">
             <li className="flex items-start">
               <span className="text-brand-accent-green mr-2">✓</span>
-              Multi-source verification for all facts
+              114 privacy projects identified
+            </li>
+            <li className="flex items-start">
+              <span className="text-brand-accent-yellow mr-2">⋯</span>
+              Technical details being researched
             </li>
             <li className="flex items-start">
               <span className="text-brand-accent-green mr-2">✓</span>
-              Confidence scoring (0.0-1.0) for all data
+              Only verified information included
             </li>
             <li className="flex items-start">
-              <span className="text-brand-accent-green mr-2">✓</span>
-              No synthetic data generation
-            </li>
-            <li className="flex items-start">
-              <span className="text-brand-accent-green mr-2">✓</span>
-              Transparent gap reporting
+              <span className="text-brand-accent-yellow mr-2">⋯</span>
+              Data updated as research progresses
             </li>
           </ul>
         </div>

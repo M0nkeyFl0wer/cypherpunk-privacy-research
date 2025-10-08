@@ -36,38 +36,35 @@ export default function NetworkGraph({ projects, width = 1000, height = 600 }: N
     // Clear previous content
     d3.select(svgRef.current).selectAll('*').remove();
 
-    // Create nodes from projects
+    // Create nodes from projects (show all projects, not just ones with tech data)
     const nodes: Node[] = projects
-      .filter(p => p.techStack?.length > 0 || p.privacyTechniques?.length > 0)
-      .slice(0, 50) // Limit to 50 nodes for performance
+      .slice(0, 80) // Limit to 80 nodes for performance
       .map(p => ({
         id: p.slug,
         name: p.name,
-        category: p.category || 'unknown',
+        category: p.category || 'Uncategorized',
         techStack: p.techStack || [],
         privacyTechniques: p.privacyTechniques || [],
-        size: (p.techStack?.length || 0) + (p.privacyTechniques?.length || 0),
+        size: Math.max(3, (p.techStack?.length || 0) + (p.privacyTechniques?.length || 0)),
         project: p, // Store full project for tooltip
       }));
 
-    // Create links based on shared technologies/techniques
+    // Create links based on shared category (connect projects in same category)
     const links: Link[] = [];
-    for (let i = 0; i < nodes.length; i++) {
-      for (let j = i + 1; j < nodes.length; j++) {
-        const shared = [
-          ...nodes[i].techStack.filter(t => nodes[j].techStack.includes(t)),
-          ...nodes[i].privacyTechniques.filter(t => nodes[j].privacyTechniques.includes(t)),
-        ];
+    const categoryGroups = d3.group(nodes, d => d.category);
 
-        if (shared.length > 0) {
+    categoryGroups.forEach((groupNodes, category) => {
+      // Connect projects within the same category (limit connections for performance)
+      for (let i = 0; i < Math.min(groupNodes.length, 6); i++) {
+        for (let j = i + 1; j < Math.min(groupNodes.length, 6); j++) {
           links.push({
-            source: nodes[i].id,
-            target: nodes[j].id,
-            strength: shared.length,
+            source: groupNodes[i].id,
+            target: groupNodes[j].id,
+            strength: 1,
           });
         }
       }
-    }
+    });
 
     // Set up SVG
     const svg = d3.select(svgRef.current)
@@ -93,15 +90,15 @@ export default function NetworkGraph({ projects, width = 1000, height = 600 }: N
       .domain(categories)
       .range(d3.schemeCategory10);
 
-    // Create force simulation
+    // Create force simulation with adjusted forces for category clustering
     const simulation = d3.forceSimulation<Node>(nodes)
       .force('link', d3.forceLink<Node, Link>(links)
         .id(d => d.id)
-        .distance(d => 100 / d.strength)
+        .distance(80)
       )
-      .force('charge', d3.forceManyBody().strength(-200))
+      .force('charge', d3.forceManyBody().strength(-150))
       .force('center', d3.forceCenter(width / 2, height / 2))
-      .force('collision', d3.forceCollide().radius(d => (d as Node).size * 3 + 5));
+      .force('collision', d3.forceCollide().radius(d => (d as Node).size * 3 + 8));
 
     // Create links
     const link = g.append('g')
@@ -110,8 +107,8 @@ export default function NetworkGraph({ projects, width = 1000, height = 600 }: N
       .data(links)
       .join('line')
       .attr('stroke', '#4a5568')
-      .attr('stroke-opacity', 0.3)
-      .attr('stroke-width', d => Math.sqrt(d.strength));
+      .attr('stroke-opacity', 0.2)
+      .attr('stroke-width', 1);
 
     // Create nodes
     const node = g.append('g')
@@ -127,20 +124,20 @@ export default function NetworkGraph({ projects, width = 1000, height = 600 }: N
 
     // Add circles to nodes
     node.append('circle')
-      .attr('r', d => Math.max(5, d.size * 2))
+      .attr('r', d => Math.max(6, d.size * 2.5))
       .attr('fill', d => colorScale(d.category))
       .attr('stroke', '#1a202c')
       .attr('stroke-width', 2)
       .style('cursor', 'pointer');
 
-    // Add labels to nodes
+    // Add labels to nodes (show for larger nodes)
     node.append('text')
-      .text(d => d.name)
+      .text(d => d.name.length > 15 ? d.name.slice(0, 12) + '...' : d.name)
       .attr('x', 0)
-      .attr('y', d => Math.max(5, d.size * 2) + 12)
+      .attr('y', d => Math.max(6, d.size * 2.5) + 14)
       .attr('text-anchor', 'middle')
       .attr('fill', '#cbd5e0')
-      .attr('font-size', '10px')
+      .attr('font-size', '9px')
       .attr('pointer-events', 'none');
 
     // Add tooltip
@@ -156,27 +153,30 @@ export default function NetworkGraph({ projects, width = 1000, height = 600 }: N
       .style('font-size', '12px')
       .style('pointer-events', 'none')
       .style('opacity', 0)
-      .style('z-index', 1000);
+      .style('z-index', 1000)
+      .style('max-width', '350px');
 
     node
       .on('mouseover', function(event, d) {
         d3.select(this).select('circle')
           .transition()
           .duration(200)
-          .attr('r', Math.max(5, d.size * 2) * 1.5)
+          .attr('r', Math.max(6, d.size * 2.5) * 1.4)
           .attr('stroke-width', 3);
 
         const p = d.project;
+        const hasRealDescription = p.description && p.description !== 'Privacy-focused Web3 project';
+
         tooltip
           .style('opacity', 1)
           .html(`
             <div style="font-weight: bold; font-size: 14px; margin-bottom: 4px;">${d.name}</div>
             <div style="color: #a0aec0; font-size: 10px; margin-bottom: 8px;">${d.category}</div>
-            ${p.description ? `
-              <div style="margin-bottom: 8px; color: #cbd5e0; font-size: 11px; max-width: 300px;">
-                ${p.description.slice(0, 150)}${p.description.length > 150 ? '...' : ''}
+            ${hasRealDescription ? `
+              <div style="margin-bottom: 8px; color: #cbd5e0; font-size: 11px;">
+                ${p.description.slice(0, 200)}${p.description.length > 200 ? '...' : ''}
               </div>
-            ` : ''}
+            ` : '<div style="margin-bottom: 8px; color: #718096; font-size: 11px; font-style: italic;">Technical details being researched...</div>'}
             ${p.website ? `
               <div style="margin-bottom: 4px; font-size: 10px;">
                 🌐 <a href="${p.website}" target="_blank" style="color: #8b5cf6;">${new URL(p.website).hostname}</a>
@@ -199,7 +199,7 @@ export default function NetworkGraph({ projects, width = 1000, height = 600 }: N
             ` : ''}
             <div style="color: #718096; font-size: 10px; margin-top: 8px; padding-top: 8px; border-top: 1px solid #4a5568;">
               ${links.filter(l => (l.source as Node).id === d.id || (l.target as Node).id === d.id).length} connections •
-              <span style="color: #8b5cf6; font-weight: bold;">Click for full details →</span>
+              <span style="color: #8b5cf6; font-weight: bold;">Click for details →</span>
             </div>
           `)
           .style('left', (event.pageX + 10) + 'px')
@@ -214,7 +214,7 @@ export default function NetworkGraph({ projects, width = 1000, height = 600 }: N
         d3.select(this).select('circle')
           .transition()
           .duration(200)
-          .attr('r', Math.max(5, d.size * 2))
+          .attr('r', Math.max(6, d.size * 2.5))
           .attr('stroke-width', 2);
 
         tooltip.style('opacity', 0);
@@ -263,8 +263,8 @@ export default function NetworkGraph({ projects, width = 1000, height = 600 }: N
   return (
     <div className="relative">
       <div className="mb-4 text-sm text-brand-text-muted">
-        <p>🔵 Nodes = Projects • 🔗 Links = Shared Technologies/Techniques</p>
-        <p className="mt-1">💡 Drag nodes to rearrange • Scroll to zoom • Hover for details</p>
+        <p>🔵 Nodes = Projects • 🔗 Links = Category Connections</p>
+        <p className="mt-1">💡 Drag nodes to rearrange • Scroll to zoom • Hover for details • Click to explore</p>
       </div>
       <svg ref={svgRef} className="bg-brand-bg-darker rounded-lg" />
       {projects.length === 0 && (
