@@ -1,42 +1,7 @@
+<img src="media/semaphore-logo.svg" alt="semaphore" width="100" height="100"/>
 # semaphore
+**Privacy**
 
-<div align="center">
 
-## Privacy-Focused Web3 Project
-
-🌐 **Website**: Pending verification
-
-**Status**: ✅ Full Research Complete
-
-</div>
 
 ---
-
-## Quick Facts
-
-| Metric | Value |
-|--------|-------|
-| 🔗 **Blockchain** | Pending verification |
-| 📊 **Research Quality** | .97 |
-| ✅ **Completeness** | Full research complete |
-| 🔍 **GitHub** | https://github.com/semaphore-protocol/semaphore |
-
----
-
-## Description
-
-Pending verification
-
----
-
-## Research Status
-
-✅ Full Research Complete
-
----
-
-<div align="center">
-
-**[View Full Details](./README.md)** | **[Research Data](./constitutional_research.json)**
-
-</div>

@@ -1,42 +1,7 @@
+<img src="media/mask-logo-blue.svg" alt="Mask Network" width="100" height="100"/>
 # Mask Network
+**Privacy**
 
-<div align="center">
 
-## Privacy-Focused Web3 Project
-
-🌐 **Website**: Pending verification
-
-**Status**: ✅ Full Research Complete
-
-</div>
 
 ---
-
-## Quick Facts
-
-| Metric | Value |
-|--------|-------|
-| 🔗 **Blockchain** | Pending verification |
-| 📊 **Research Quality** | 1.00 |
-| ✅ **Completeness** | Full research complete |
-| 🔍 **GitHub** | https://github.com/DimensionDev/Maskbook |
-
----
-
-## Description
-
-Pending verification
-
----
-
-## Research Status
-
-✅ Full Research Complete
-
----
-
-<div align="center">
-
-**[View Full Details](./README.md)** | **[Research Data](./constitutional_research.json)**
-
-</div>

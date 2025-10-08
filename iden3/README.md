@@ -1,36 +1,33 @@
 # iden3
+![iden3 Logo](media/iden3-logo.svg)
 
-Privacy-focused Web3 project in the Web3Privacy ecosystem.
+## Overview
 
+**Category:** Privacy  
+**Website:** Not Available  
+**GitHub:** Not Available  
 
----
-
-## 📋 Project Information
-
-**Website**: Pending verification
-**GitHub**: https://github.com/iden3/iden3-docs
-**Blockchain**: Pending verification
-
-## 📝 Description
-
-Pending verification
-
----
-
-
-## 📂 Available Files
-
-- ✅ constitutional_research.json - Complete research data
-- ✅ project_metadata.json - Basic metadata
-- ✅ README.md - This file
-- ✅ CARD.md - Visual project card
-
----
-
-## 🔗 Related Reports
 
 
 ---
 
-**Research Date**: 2025-10-07
-**Source**: Web3Privacy Research Project
+## 🔑 Key Information
+
+---
+
+## 📊 Research Metadata
+
+- **Research Date:** 2025-10-07T21:36:00Z
+- **Data Sources:** 0 verified sources
+- **Confidence Score:** N/A
+- **Constitutional Compliance:** v2.0.0
+
+### Supporting Documents
+
+- [Verified Data (JSON)](sources/verified_data.json)
+- [Research Summary](sources/research_summary.md)
+- [Source Citations](sources/source_citations.md)
+
+---
+
+*Constitutional research with zero fabrication guarantee*
