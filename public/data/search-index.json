@@ -1,0 +1,793 @@
+[
+  {
+    "slug": "0xbow",
+    "name": "0xbow",
+    "category": "unknown",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "0xbow unknown privacy-focused web3 project"
+  },
+  {
+    "slug": "1inch-privacy",
+    "name": "1inch Privacy",
+    "category": "Uncategorized",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "1inch privacy uncategorized privacy-focused web3 project"
+  },
+  {
+    "slug": "ai-discovered",
+    "name": "Ai Discovered",
+    "category": "Uncategorized",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "ai discovered uncategorized privacy-focused web3 project"
+  },
+  {
+    "slug": "aleo",
+    "name": "Aleo",
+    "category": "Uncategorized",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "aleo uncategorized privacy-focused web3 project"
+  },
+  {
+    "slug": "alephim",
+    "name": "Alephim",
+    "category": "computing",
+    "description": "Open source DePIN confidential VMs",
+    "searchableText": "alephim computing open source depin confidential vms"
+  },
+  {
+    "slug": "anoma",
+    "name": "Anoma",
+    "category": "Uncategorized",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "anoma uncategorized privacy-focused web3 project"
+  },
+  {
+    "slug": "arpa",
+    "name": "Arpa",
+    "category": "computing",
+    "description": "Threshold BLS network for verifiable random number generation",
+    "searchableText": "arpa computing threshold bls network for verifiable random number generation"
+  },
+  {
+    "slug": "aztec",
+    "name": "Aztec",
+    "category": "unknown",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "aztec unknown privacy-focused web3 project"
+  },
+  {
+    "slug": "aztec-network",
+    "name": "Aztec Network",
+    "category": "defi",
+    "description": "Privacy-first ZK rollup",
+    "searchableText": "aztec network defi privacy-first zk rollup"
+  },
+  {
+    "slug": "aztec-protocol",
+    "name": "Aztec Protocol",
+    "category": "unknown",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "aztec protocol unknown privacy-focused web3 project"
+  },
+  {
+    "slug": "beam",
+    "name": "Beam",
+    "category": "currency",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "beam currency privacy-focused web3 project"
+  },
+  {
+    "slug": "brave-browser",
+    "name": "Brave Browser",
+    "category": "Uncategorized",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "brave browser uncategorized privacy-focused web3 project"
+  },
+  {
+    "slug": "brume-wallet",
+    "name": "Brume Wallet",
+    "category": "wallet",
+    "description": "Privacy-native Ethereum wallet with TOR integration",
+    "searchableText": "brume wallet wallet privacy-native ethereum wallet with tor integration"
+  },
+  {
+    "slug": "cake-wallet",
+    "name": "Cake Wallet",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "cake wallet other privacy-focused web3 project"
+  },
+  {
+    "slug": "chainport",
+    "name": "Chainport",
+    "category": "bridges",
+    "description": "Cross-chain bridge with privacy options",
+    "searchableText": "chainport bridges cross-chain bridge with privacy options"
+  },
+  {
+    "slug": "circom",
+    "name": "Circom",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "circom other privacy-focused web3 project"
+  },
+  {
+    "slug": "concordium",
+    "name": "Concordium",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "concordium other privacy-focused web3 project"
+  },
+  {
+    "slug": "curve-privacy",
+    "name": "Curve Privacy",
+    "category": "Uncategorized",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "curve privacy uncategorized privacy-focused web3 project"
+  },
+  {
+    "slug": "cyclone-protocol",
+    "name": "Cyclone Protocol",
+    "category": "mixing",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "cyclone protocol mixing privacy-focused web3 project"
+  },
+  {
+    "slug": "dark-forest",
+    "name": "Dark Forest",
+    "category": "Uncategorized",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "dark forest uncategorized privacy-focused web3 project"
+  },
+  {
+    "slug": "darkfi",
+    "name": "darkfi",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "darkfi other privacy-focused web3 project"
+  },
+  {
+    "slug": "dash",
+    "name": "Dash",
+    "category": "Uncategorized",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "dash uncategorized privacy-focused web3 project"
+  },
+  {
+    "slug": "deeper-network",
+    "name": "Deeper Network",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "deeper network other privacy-focused web3 project"
+  },
+  {
+    "slug": "dusk-network",
+    "name": "Dusk Network",
+    "category": "Uncategorized",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "dusk network uncategorized privacy-focused web3 project"
+  },
+  {
+    "slug": "edge-wallet",
+    "name": "Edge Wallet",
+    "category": "wallet",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "edge wallet wallet privacy-focused web3 project"
+  },
+  {
+    "slug": "elusiv",
+    "name": "Elusiv",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "elusiv other privacy-focused web3 project"
+  },
+  {
+    "slug": "eth2-deposit-cli",
+    "name": "Eth2 Deposit Cli",
+    "category": "Uncategorized",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "eth2 deposit cli uncategorized privacy-focused web3 project"
+  },
+  {
+    "slug": "farcaster",
+    "name": "Farcaster",
+    "category": "Uncategorized",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "farcaster uncategorized privacy-focused web3 project"
+  },
+  {
+    "slug": "fileverse",
+    "name": "fileverse",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "fileverse other privacy-focused web3 project"
+  },
+  {
+    "slug": "findora",
+    "name": "Findora",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "findora other privacy-focused web3 project"
+  },
+  {
+    "slug": "firn-protocol",
+    "name": "Firn Protocol",
+    "category": "defi",
+    "description": "First zero-knowledge privacy platform in account-based model",
+    "searchableText": "firn protocol defi first zero-knowledge privacy platform in account-based model"
+  },
+  {
+    "slug": "firo",
+    "name": "Firo",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "firo other privacy-focused web3 project"
+  },
+  {
+    "slug": "fluidkey",
+    "name": "Fluidkey",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "fluidkey other privacy-focused web3 project"
+  },
+  {
+    "slug": "frame",
+    "name": "Frame",
+    "category": "wallet",
+    "description": "Open-source, non-custodial Ethereum desktop wallet",
+    "searchableText": "frame wallet open-source, non-custodial ethereum desktop wallet"
+  },
+  {
+    "slug": "gitcoin-grants",
+    "name": "Gitcoin Grants",
+    "category": "Uncategorized",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "gitcoin grants uncategorized privacy-focused web3 project"
+  },
+  {
+    "slug": "grin",
+    "name": "Grin",
+    "category": "currency",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "grin currency privacy-focused web3 project"
+  },
+  {
+    "slug": "hopr",
+    "name": "HOPR",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "hopr other privacy-focused web3 project"
+  },
+  {
+    "slug": "horizen",
+    "name": "Horizen",
+    "category": "Uncategorized",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "horizen uncategorized privacy-focused web3 project"
+  },
+  {
+    "slug": "iden3",
+    "name": "iden3",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "iden3 other privacy-focused web3 project"
+  },
+  {
+    "slug": "iexec",
+    "name": "Iexec",
+    "category": "computing",
+    "description": "Decentralized cloud computing with TEE",
+    "searchableText": "iexec computing decentralized cloud computing with tee"
+  },
+  {
+    "slug": "incognito",
+    "name": "Incognito",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "incognito other privacy-focused web3 project"
+  },
+  {
+    "slug": "iron-fish",
+    "name": "Iron Fish",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "iron fish other privacy-focused web3 project"
+  },
+  {
+    "slug": "keep-network",
+    "name": "Keep Network",
+    "category": "Uncategorized",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "keep network uncategorized privacy-focused web3 project"
+  },
+  {
+    "slug": "labyrinth",
+    "name": "Labyrinth",
+    "category": "defi",
+    "description": "Multichain Modular Privacy Framework with a Decentralized Compliance Network",
+    "searchableText": "labyrinth defi multichain modular privacy framework with a decentralized compliance network"
+  },
+  {
+    "slug": "lens-protocol",
+    "name": "Lens Protocol",
+    "category": "Uncategorized",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "lens protocol uncategorized privacy-focused web3 project"
+  },
+  {
+    "slug": "light-protocol",
+    "name": "Light Protocol",
+    "category": "defi",
+    "description": "Privacy layer for Solana",
+    "searchableText": "light protocol defi privacy layer for solana"
+  },
+  {
+    "slug": "litentry",
+    "name": "Litentry",
+    "category": "did",
+    "description": "Decentralized identity aggregation protocol",
+    "searchableText": "litentry did decentralized identity aggregation protocol"
+  },
+  {
+    "slug": "maci",
+    "name": "Maci",
+    "category": "Uncategorized",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "maci uncategorized privacy-focused web3 project"
+  },
+  {
+    "slug": "manta-network",
+    "name": "Manta Network",
+    "category": "infrastructure",
+    "description": "On-Chain Privacy for Web 3, DeFi and more",
+    "searchableText": "manta network infrastructure on-chain privacy for web 3, defi and more"
+  },
+  {
+    "slug": "mask",
+    "name": "Mask",
+    "category": "Uncategorized",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "mask uncategorized privacy-focused web3 project"
+  },
+  {
+    "slug": "mask-network",
+    "name": "Mask Network",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "mask network other privacy-focused web3 project"
+  },
+  {
+    "slug": "metamask-snaps",
+    "name": "Metamask Snaps",
+    "category": "Uncategorized",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "metamask snaps uncategorized privacy-focused web3 project"
+  },
+  {
+    "slug": "mina-protocol",
+    "name": "Mina Protocol",
+    "category": "Uncategorized",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "mina protocol uncategorized privacy-focused web3 project"
+  },
+  {
+    "slug": "mobilecoin",
+    "name": "MobileCoin",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "mobilecoin other privacy-focused web3 project"
+  },
+  {
+    "slug": "monero",
+    "name": "monero",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "monero other privacy-focused web3 project"
+  },
+  {
+    "slug": "mysterium-network",
+    "name": "mysterium-network",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "mysterium-network other privacy-focused web3 project"
+  },
+  {
+    "slug": "nighthawk-wallet",
+    "name": "Nighthawk Wallet",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "nighthawk wallet other privacy-focused web3 project"
+  },
+  {
+    "slug": "nillion",
+    "name": "Nillion",
+    "category": "computing",
+    "description": "Decentralizes trust for sensitive data",
+    "searchableText": "nillion computing decentralizes trust for sensitive data"
+  },
+  {
+    "slug": "nucypher",
+    "name": "Nucypher",
+    "category": "Uncategorized",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "nucypher uncategorized privacy-focused web3 project"
+  },
+  {
+    "slug": "nym",
+    "name": "Nym",
+    "category": "infrastructure",
+    "description": "Infrastructure to prevent data leakage by protecting metadata",
+    "searchableText": "nym infrastructure infrastructure to prevent data leakage by protecting metadata"
+  },
+  {
+    "slug": "oasis-network",
+    "name": "oasis-network",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "oasis-network other privacy-focused web3 project"
+  },
+  {
+    "slug": "orchid",
+    "name": "Orchid",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "orchid other privacy-focused web3 project"
+  },
+  {
+    "slug": "oxen",
+    "name": "oxen",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "oxen other privacy-focused web3 project"
+  },
+  {
+    "slug": "panther-protocol",
+    "name": "Panther Protocol",
+    "category": "defi",
+    "description": "Decentralized privacy metaprotocol",
+    "searchableText": "panther protocol defi decentralized privacy metaprotocol"
+  },
+  {
+    "slug": "penumbra",
+    "name": "Penumbra",
+    "category": "infrastructure",
+    "description": "Shielded pool protocol with cross-chain privacy",
+    "searchableText": "penumbra infrastructure shielded pool protocol with cross-chain privacy"
+  },
+  {
+    "slug": "phala-network",
+    "name": "Phala Network",
+    "category": "computing",
+    "description": "TEE-based Permissionless Computing Protocol",
+    "searchableText": "phala network computing tee-based permissionless computing protocol"
+  },
+  {
+    "slug": "pirate-chain",
+    "name": "Pirate Chain",
+    "category": "currency",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "pirate chain currency privacy-focused web3 project"
+  },
+  {
+    "slug": "platon-network",
+    "name": "Platon Network",
+    "category": "computing",
+    "description": "Blockchain and privacy-preserving computation technologies",
+    "searchableText": "platon network computing blockchain and privacy-preserving computation technologies"
+  },
+  {
+    "slug": "polygon-hermez",
+    "name": "polygon-hermez",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "polygon-hermez other privacy-focused web3 project"
+  },
+  {
+    "slug": "polygon-id",
+    "name": "Polygon Id",
+    "category": "did",
+    "description": "Privacy-preserving identity protocol",
+    "searchableText": "polygon id did privacy-preserving identity protocol"
+  },
+  {
+    "slug": "polygon-nightfall",
+    "name": "Polygon Nightfall",
+    "category": "layer2",
+    "description": "Privacy-Focused Rollup for Enterprises",
+    "searchableText": "polygon nightfall layer2 privacy-focused rollup for enterprises"
+  },
+  {
+    "slug": "polygon-zero",
+    "name": "polygon-zero",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "polygon-zero other privacy-focused web3 project"
+  },
+  {
+    "slug": "privatepool",
+    "name": "privatepool",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "privatepool other privacy-focused web3 project"
+  },
+  {
+    "slug": "pse--privacy---scaling-explorations-",
+    "name": "Pse  Privacy   Scaling Explorations ",
+    "category": "Uncategorized",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "pse  privacy   scaling explorations  uncategorized privacy-focused web3 project"
+  },
+  {
+    "slug": "railgun",
+    "name": "Railgun",
+    "category": "defi",
+    "description": "Privacy protocol for DeFi",
+    "searchableText": "railgun defi privacy protocol for defi"
+  },
+  {
+    "slug": "railgun-relay-adapt",
+    "name": "Railgun Relay Adapt",
+    "category": "bridges",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "railgun relay adapt bridges privacy-focused web3 project"
+  },
+  {
+    "slug": "railway-wallet",
+    "name": "Railway Wallet",
+    "category": "wallet",
+    "description": "Privacy-focused DeFi wallet",
+    "searchableText": "railway wallet wallet privacy-focused defi wallet"
+  },
+  {
+    "slug": "ronin",
+    "name": "Ronin",
+    "category": "Uncategorized",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "ronin uncategorized privacy-focused web3 project"
+  },
+  {
+    "slug": "rotki",
+    "name": "rotki",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "rotki other privacy-focused web3 project"
+  },
+  {
+    "slug": "samourai-wallet",
+    "name": "Samourai Wallet",
+    "category": "Uncategorized",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "samourai wallet uncategorized privacy-focused web3 project"
+  },
+  {
+    "slug": "scroll",
+    "name": "Scroll",
+    "category": "layer2",
+    "description": "zkEVM-based zkRollup",
+    "searchableText": "scroll layer2 zkevm-based zkrollup"
+  },
+  {
+    "slug": "secret-network",
+    "name": "Secret Network",
+    "category": "infrastructure",
+    "description": "First blockchain with customizable privacy",
+    "searchableText": "secret network infrastructure first blockchain with customizable privacy"
+  },
+  {
+    "slug": "semaphore",
+    "name": "semaphore",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "semaphore other privacy-focused web3 project"
+  },
+  {
+    "slug": "sentinel",
+    "name": "Sentinel",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "sentinel other privacy-focused web3 project"
+  },
+  {
+    "slug": "session",
+    "name": "Session",
+    "category": "messaging",
+    "description": "Private messenger",
+    "searchableText": "session messaging private messenger"
+  },
+  {
+    "slug": "sienna-network",
+    "name": "sienna-network",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "sienna-network other privacy-focused web3 project"
+  },
+  {
+    "slug": "silent-protocol",
+    "name": "Silent Protocol",
+    "category": "defi",
+    "description": "First protocol enabling compliant full-stack privacy for smart contract assets",
+    "searchableText": "silent protocol defi first protocol enabling compliant full-stack privacy for smart contract assets"
+  },
+  {
+    "slug": "sismo",
+    "name": "Sismo",
+    "category": "did",
+    "description": "Privacy-preserving reputation protocol",
+    "searchableText": "sismo did privacy-preserving reputation protocol"
+  },
+  {
+    "slug": "snapshot-x",
+    "name": "Snapshot X",
+    "category": "Uncategorized",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "snapshot x uncategorized privacy-focused web3 project"
+  },
+  {
+    "slug": "snarkjs",
+    "name": "snarkjs",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "snarkjs other privacy-focused web3 project"
+  },
+  {
+    "slug": "starkex",
+    "name": "StarkEX",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "starkex other privacy-focused web3 project"
+  },
+  {
+    "slug": "starknet",
+    "name": "Starknet",
+    "category": "Uncategorized",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "starknet uncategorized privacy-focused web3 project"
+  },
+  {
+    "slug": "status",
+    "name": "Status",
+    "category": "messaging",
+    "description": "Secure messaging and crypto wallet",
+    "searchableText": "status messaging secure messaging and crypto wallet"
+  },
+  {
+    "slug": "suterusu",
+    "name": "Suterusu",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "suterusu other privacy-focused web3 project"
+  },
+  {
+    "slug": "taiko",
+    "name": "Taiko",
+    "category": "layer2",
+    "description": "Type 1 zkEVM",
+    "searchableText": "taiko layer2 type 1 zkevm"
+  },
+  {
+    "slug": "ten",
+    "name": "Ten",
+    "category": "layer2",
+    "description": "Layer 2 solution extending Web3 Scalability with Encryption",
+    "searchableText": "ten layer2 layer 2 solution extending web3 scalability with encryption"
+  },
+  {
+    "slug": "tornado-cash",
+    "name": "Tornado Cash",
+    "category": "privacy_mixer",
+    "description": "Fully decentralized, non-custodial cryptocurrency mixer protocol that runs on Ethereum Virtual Machine-compatible networks, enabling private transactions using zero-knowledge proof technology. Tornado Cash was sanctioned by OFAC in August 2022 but had sanctions lifted in March 2025 following a Fifth Circuit court ruling.",
+    "searchableText": "tornado cash privacy_mixer fully decentralized, non-custodial cryptocurrency mixer protocol that runs on ethereum virtual machine-compatible networks, enabling private transactions using zero-knowledge proof technology. tornado cash was sanctioned by ofac in august 2022 but had sanctions lifted in march 2025 following a fifth circuit court ruling. zk-snarks multi-party computation (mpc) circom websnark solidity javascript"
+  },
+  {
+    "slug": "typhoon-network",
+    "name": "typhoon-network",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "typhoon-network other privacy-focused web3 project"
+  },
+  {
+    "slug": "umbra-cash",
+    "name": "Umbra Cash",
+    "category": "Uncategorized",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "umbra cash uncategorized privacy-focused web3 project"
+  },
+  {
+    "slug": "veramo",
+    "name": "Veramo",
+    "category": "did",
+    "description": "JavaScript framework for verifiable data",
+    "searchableText": "veramo did javascript framework for verifiable data"
+  },
+  {
+    "slug": "wasabi-wallet",
+    "name": "Wasabi Wallet",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "wasabi wallet other privacy-focused web3 project"
+  },
+  {
+    "slug": "webb-protocol",
+    "name": "Webb Protocol",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "webb protocol other privacy-focused web3 project"
+  },
+  {
+    "slug": "xx-network",
+    "name": "xx-network",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "xx-network other privacy-focused web3 project"
+  },
+  {
+    "slug": "zano",
+    "name": "zano",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "zano other privacy-focused web3 project"
+  },
+  {
+    "slug": "zcash",
+    "name": "zcash",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "zcash other privacy-focused web3 project"
+  },
+  {
+    "slug": "zeal",
+    "name": "Zeal",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "zeal other privacy-focused web3 project"
+  },
+  {
+    "slug": "zecrey",
+    "name": "Zecrey",
+    "category": "Uncategorized",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "zecrey uncategorized privacy-focused web3 project"
+  },
+  {
+    "slug": "zion",
+    "name": "Zion",
+    "category": "messaging",
+    "description": "Decentralized social network",
+    "searchableText": "zion messaging decentralized social network"
+  },
+  {
+    "slug": "zk-money",
+    "name": "zk.money",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "zk.money other privacy-focused web3 project"
+  },
+  {
+    "slug": "zkbob",
+    "name": "Zkbob",
+    "category": "Uncategorized",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "zkbob uncategorized privacy-focused web3 project"
+  },
+  {
+    "slug": "zkp2p",
+    "name": "Zkp2p",
+    "category": "Uncategorized",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "zkp2p uncategorized privacy-focused web3 project"
+  },
+  {
+    "slug": "zksync",
+    "name": "zkSync",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "zksync other privacy-focused web3 project"
+  },
+  {
+    "slug": "zkvote",
+    "name": "zkVote",
+    "category": "other",
+    "description": "Privacy-focused Web3 project",
+    "searchableText": "zkvote other privacy-focused web3 project"
+  }
+]
