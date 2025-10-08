@@ -1,0 +1,93 @@
+{
+  "github_url": "https://github.com/darkrenaissance/darkfi",
+  "repository_path": "darkrenaissance/darkfi",
+  "owner": "darkrenaissance",
+  "repo_name": "darkfi",
+  "description": "Anonymous. Uncensored. Sovereign.",
+  "stars": 1276,
+  "forks": 137,
+  "watchers": 1276,
+  "contributors": 53,
+  "languages": [
+    "Rust",
+    "Jupyter Notebook",
+    "Python",
+    "Sage",
+    "Makefile",
+    "Shell",
+    "Java",
+    "HTML",
+    "CSS",
+    "TeX",
+    "Dockerfile",
+    "Nix",
+    "Lua",
+    "Vim Script",
+    "RenderScript",
+    "Fluent"
+  ],
+  "primary_language": "Rust",
+  "created_at": "2020-08-17T15:06:53Z",
+  "updated_at": "2025-10-02T08:50:51Z",
+  "pushed_at": "2025-10-01T15:23:15Z",
+  "last_commit_date": "2025-10-01T15:17:48Z",
+  "open_issues": 16,
+  "license": "GNU Affero General Public License v3.0",
+  "topics": [
+    "crypto",
+    "cryptocurrency",
+    "halo2",
+    "rust",
+    "zero-knowledge",
+    "zk",
+    "zk-snarks",
+    "zkvm"
+  ],
+  "homepage": "https://dark.fi",
+  "default_branch": "master",
+  "size_kb": 153100,
+  "activity_level": "very_active",
+  "days_since_update": 2,
+  "archived": false,
+  "disabled": false,
+  "has_wiki": false,
+  "has_issues": true,
+  "has_discussions": false,
+  "recent_commits": [
+    {
+      "sha": "6c2d3f6",
+      "message": "app: fix panic in video when exiting before video is loaded",
+      "date": "2025-10-01T15:17:48Z",
+      "author": "darkfi"
+    },
+    {
+      "sha": "a25698c",
+      "message": "app: remove content_height and scroll property from edit widget, make them internal values. make min",
+      "date": "2025-10-01T11:35:51Z",
+      "author": "darkfi"
+    },
+    {
+      "sha": "862288f",
+      "message": "app: enable proper scrolling while selecting text",
+      "date": "2025-09-30T10:41:23Z",
+      "author": "darkfi"
+    },
+    {
+      "sha": "01a062e",
+      "message": "app: remove obsolete editbox, chatedit, and baseedit",
+      "date": "2025-09-30T07:12:55Z",
+      "author": "darkfi"
+    },
+    {
+      "sha": "98a381e",
+      "message": "app: apply cursor scroll working for selections",
+      "date": "2025-09-29T15:33:45Z",
+      "author": "darkfi"
+    }
+  ],
+  "analyzed_at": "2025-10-03T18:22:11.307506Z",
+  "confidence": 0.95,
+  "data_source": "github_api_v3",
+  "api_authenticated": false,
+  "raw_api_response_stored": true
+}

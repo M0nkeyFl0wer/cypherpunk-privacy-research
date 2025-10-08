@@ -1,0 +1,69 @@
+{
+  "github_url": "https://github.com/fluidkey/fluidkey-stealth-account-kit",
+  "repository_path": "fluidkey/fluidkey-stealth-account-kit",
+  "owner": "fluidkey",
+  "repo_name": "fluidkey-stealth-account-kit",
+  "description": "An open source repository of the core cryptographic functions used by Fluidkey\u2019s interface and SDK.",
+  "stars": 41,
+  "forks": 7,
+  "watchers": 41,
+  "contributors": 2,
+  "languages": [
+    "TypeScript"
+  ],
+  "primary_language": "TypeScript",
+  "created_at": "2024-01-04T08:24:15Z",
+  "updated_at": "2025-09-11T17:12:39Z",
+  "pushed_at": "2025-05-13T08:32:00Z",
+  "last_commit_date": "2025-05-13T08:31:55Z",
+  "open_issues": 0,
+  "license": "MIT License",
+  "topics": [],
+  "homepage": "",
+  "default_branch": "main",
+  "size_kb": 1572,
+  "activity_level": "low",
+  "days_since_update": 143,
+  "archived": false,
+  "disabled": false,
+  "has_wiki": false,
+  "has_issues": true,
+  "has_discussions": false,
+  "recent_commits": [
+    {
+      "sha": "3bab3b1",
+      "message": "update init data auto earn",
+      "date": "2025-05-13T08:31:55Z",
+      "author": "moritz"
+    },
+    {
+      "sha": "eacab57",
+      "message": "add auto-earn initdata",
+      "date": "2025-04-11T11:32:12Z",
+      "author": "moritz"
+    },
+    {
+      "sha": "0b339ae",
+      "message": "Merge pull request #3 from fluidkey/feature/enable-module-install",
+      "date": "2025-01-08T23:33:02Z",
+      "author": "moritz"
+    },
+    {
+      "sha": "a535d23",
+      "message": "fix: correct licence and export of InitializerExtraFields",
+      "date": "2025-01-08T16:48:10Z",
+      "author": "Antonio"
+    },
+    {
+      "sha": "2a095da",
+      "message": "feat: added core logic to extend initialized",
+      "date": "2025-01-08T15:54:13Z",
+      "author": "Antonio"
+    }
+  ],
+  "analyzed_at": "2025-10-03T18:22:45.116365Z",
+  "confidence": 0.95,
+  "data_source": "github_api_v3",
+  "api_authenticated": false,
+  "raw_api_response_stored": true
+}

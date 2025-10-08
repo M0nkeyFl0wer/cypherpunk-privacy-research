@@ -1,0 +1,101 @@
+{
+  "github_url": "https://github.com/firoorg/firo",
+  "repository_path": "firoorg/firo",
+  "owner": "firoorg",
+  "repo_name": "firo",
+  "description": "The privacy-focused cryptocurrency",
+  "stars": 755,
+  "forks": 364,
+  "watchers": 755,
+  "contributors": 100,
+  "languages": [
+    "C++",
+    "C",
+    "Python",
+    "CMake",
+    "M4",
+    "Makefile",
+    "Shell",
+    "CSS",
+    "HTML",
+    "Java",
+    "Sage",
+    "Assembly",
+    "Scheme",
+    "Objective-C++",
+    "Dockerfile",
+    "Roff",
+    "QMake"
+  ],
+  "primary_language": "C++",
+  "created_at": "2016-09-09T22:50:27Z",
+  "updated_at": "2025-10-02T14:23:52Z",
+  "pushed_at": "2025-10-02T14:23:47Z",
+  "last_commit_date": "2025-10-02T14:23:47Z",
+  "open_issues": 40,
+  "license": "MIT License",
+  "topics": [
+    "asic-resistant",
+    "blockchain",
+    "cryptocurrency",
+    "cryptography",
+    "lelantus",
+    "merkle-tree",
+    "merkle-tree-proof-of-work",
+    "p2p",
+    "privacy",
+    "sigma",
+    "zcoin",
+    "zero-knowledge",
+    "zero-knowledge-proofs",
+    "zerocoin",
+    "zkp"
+  ],
+  "homepage": "https://firo.org",
+  "default_branch": "master",
+  "size_kb": 218434,
+  "activity_level": "very_active",
+  "days_since_update": 1,
+  "archived": false,
+  "disabled": false,
+  "has_wiki": true,
+  "has_issues": true,
+  "has_discussions": false,
+  "recent_commits": [
+    {
+      "sha": "ae116e5",
+      "message": "add CI artifact names (#1671)",
+      "date": "2025-10-02T14:23:47Z",
+      "author": "aleflm"
+    },
+    {
+      "sha": "dfeb191",
+      "message": "fix app icon for macOS (#1687)",
+      "date": "2025-10-02T14:22:16Z",
+      "author": "aleflm"
+    },
+    {
+      "sha": "256d787",
+      "message": "Add progress text and rotating spinner to splash screen (#1654)",
+      "date": "2025-10-02T14:11:49Z",
+      "author": "levoncrypto"
+    },
+    {
+      "sha": "055a67f",
+      "message": "bump release version to v0.14.14.3 (#1683)",
+      "date": "2025-09-27T09:23:27Z",
+      "author": "aleflm"
+    },
+    {
+      "sha": "c2dc776",
+      "message": "switch to glibc-2.31 (#1682)",
+      "date": "2025-09-27T03:59:26Z",
+      "author": "aleflm"
+    }
+  ],
+  "analyzed_at": "2025-10-03T18:22:41.678725Z",
+  "confidence": 0.95,
+  "data_source": "github_api_v3",
+  "api_authenticated": false,
+  "raw_api_response_stored": true
+}

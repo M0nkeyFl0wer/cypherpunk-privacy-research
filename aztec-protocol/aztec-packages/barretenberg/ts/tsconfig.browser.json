@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.esm.json",
+  "compilerOptions": {
+    "outDir": "dest/browser",
+  },
+  "include": ["src"],
+  "exclude": ["src/main.ts", "src/**/*.test.ts", "src/bindgen", "src/benchmark"]
+}

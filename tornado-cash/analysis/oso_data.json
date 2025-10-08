@@ -1,0 +1,19 @@
+{
+  "source": "Open Source Observer",
+  "discovered_at": "2025-09-29T14:42:57.333468",
+  "oso_name": "Tornado Cash",
+  "github_repos": [
+    "https://github.com/tornadocash"
+  ],
+  "blockchain_addresses": [],
+  "websites": [
+    "https://tornado.cash"
+  ],
+  "npm_packages": [],
+  "defillama_urls": [
+    "https://defillama.com/protocol/tornado-cash"
+  ],
+  "description": "Privacy Solution for Ethereum",
+  "social": {},
+  "confidence": "high"
+}

@@ -1,0 +1,22 @@
+{
+  "scan_id": "AC337F9F",
+  "project": "railgun",
+  "target": "railgun.org",
+  "total_events": 5,
+  "modules_used": 3,
+  "event_types": {
+    "DOMAIN_WHOIS": 1,
+    "DOMAIN_REGISTRAR": 1,
+    "ROOT": 1,
+    "INTERNET_NAME": 1,
+    "DOMAIN_NAME": 1
+  },
+  "risk_distribution": {
+    "0": 5
+  },
+  "date_range": {
+    "start": "2025-09-29 20:18:23",
+    "end": "2025-09-29 20:18:25"
+  },
+  "processed_at": "2025-09-30 00:10:26"
+}

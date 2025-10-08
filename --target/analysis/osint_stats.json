@@ -1,0 +1,26 @@
+{
+  "scan_id": "75926758",
+  "project": "--target",
+  "target": "privatepool.xyz",
+  "total_events": 13,
+  "modules_used": 6,
+  "event_types": {
+    "TCP_PORT_OPEN": 3,
+    "COMPANY_NAME": 2,
+    "DOMAIN_NAME": 2,
+    "IPV6_ADDRESS": 1,
+    "IP_ADDRESS": 1,
+    "DOMAIN_REGISTRAR": 1,
+    "DOMAIN_WHOIS": 1,
+    "ROOT": 1,
+    "INTERNET_NAME": 1
+  },
+  "risk_distribution": {
+    "0": 13
+  },
+  "date_range": {
+    "start": "2025-09-30 10:35:11",
+    "end": "2025-09-30 10:36:31"
+  },
+  "processed_at": "2025-09-30 10:36:51"
+}

@@ -1,0 +1,76 @@
+{
+  "github_url": "https://github.com/elusiv-privacy/elusiv",
+  "repository_path": "elusiv-privacy/elusiv",
+  "owner": "elusiv-privacy",
+  "repo_name": "elusiv",
+  "description": "Elusiv Solana program library",
+  "stars": 64,
+  "forks": 19,
+  "watchers": 64,
+  "contributors": 11,
+  "languages": [
+    "Rust",
+    "Shell",
+    "Dockerfile"
+  ],
+  "primary_language": "Rust",
+  "created_at": "2021-12-31T19:52:15Z",
+  "updated_at": "2025-08-31T20:46:18Z",
+  "pushed_at": "2023-12-09T12:32:57Z",
+  "last_commit_date": "2023-12-09T10:43:25Z",
+  "open_issues": 3,
+  "license": "GNU General Public License v3.0",
+  "topics": [
+    "privacy",
+    "solana",
+    "zero-knowledge",
+    "zk-snarks"
+  ],
+  "homepage": "",
+  "default_branch": "master",
+  "size_kb": 44185,
+  "activity_level": "inactive",
+  "days_since_update": 664,
+  "archived": false,
+  "disabled": false,
+  "has_wiki": true,
+  "has_issues": true,
+  "has_discussions": false,
+  "recent_commits": [
+    {
+      "sha": "53fdd59",
+      "message": "Merge pull request #95 from elusiv-privacy/add-jito",
+      "date": "2023-12-09T10:43:25Z",
+      "author": "Yannik Schrade"
+    },
+    {
+      "sha": "fa9e2d1",
+      "message": "Update JTO max, JTO and JitoSOL devnet-mints",
+      "date": "2023-12-09T10:33:48Z",
+      "author": "Yannik S"
+    },
+    {
+      "sha": "13d9724",
+      "message": "Update Token.toml",
+      "date": "2023-12-09T04:56:10Z",
+      "author": "Nico"
+    },
+    {
+      "sha": "2555e24",
+      "message": "Merge pull request #94 from elusiv-privacy/fix-CI",
+      "date": "2023-12-08T02:05:13Z",
+      "author": "Nico"
+    },
+    {
+      "sha": "15e8fef",
+      "message": "Update vkey.yaml",
+      "date": "2023-12-06T12:20:52Z",
+      "author": "Nico Schapeler"
+    }
+  ],
+  "analyzed_at": "2025-10-03T18:22:19.033531Z",
+  "confidence": 0.95,
+  "data_source": "github_api_v3",
+  "api_authenticated": false,
+  "raw_api_response_stored": true
+}

@@ -1,0 +1,27 @@
+{
+  "source": "Open Source Observer",
+  "discovered_at": "2025-09-29T14:42:57.308831",
+  "oso_name": "Semaphore",
+  "github_repos": [
+    "https://github.com/semaphore-protocol"
+  ],
+  "blockchain_addresses": [],
+  "websites": [
+    "https://semaphore.pse.dev/"
+  ],
+  "npm_packages": [
+    "https://www.npmjs.com/package/@semaphore-protocol/group",
+    "https://www.npmjs.com/package/@semaphore-protocol/identity",
+    "https://www.npmjs.com/package/@semaphore-protocol/proof"
+  ],
+  "defillama_urls": [],
+  "description": "A zero-knowledge protocol for anonymous interactions",
+  "social": {
+    "twitter": [
+      {
+        "url": "https://twitter.com/SemaphoreDevs/"
+      }
+    ]
+  },
+  "confidence": "high"
+}

@@ -1,0 +1,99 @@
+{
+  "owner": "suterusu-team",
+  "repo_name": "suter-proofs",
+  "full_name": "suterusu-team/suter-proofs",
+  "github_url": "https://github.com/suterusu-team/suter-proofs",
+  "html_url": "https://github.com/suterusu-team/suter-proofs",
+  "stars": 8,
+  "forks": 15,
+  "watchers": 8,
+  "open_issues": 0,
+  "contributors": 3,
+  "created_at": "2020-01-06T10:44:25Z",
+  "updated_at": "2022-07-25T06:57:16Z",
+  "pushed_at": "2020-03-26T13:54:46Z",
+  "size_kb": 112,
+  "default_branch": "master",
+  "primary_language": "Rust",
+  "languages": [
+    {
+      "name": "Rust",
+      "bytes": 71822,
+      "percentage": 100.0
+    }
+  ],
+  "total_languages": 1,
+  "top_contributors": [
+    {
+      "username": "contrun",
+      "contributions": 47,
+      "avatar_url": "https://avatars.githubusercontent.com/u/32609395?v=4",
+      "profile_url": "https://github.com/contrun"
+    },
+    {
+      "username": "rocksuter",
+      "contributions": 7,
+      "avatar_url": "https://avatars.githubusercontent.com/u/60725490?v=4",
+      "profile_url": "https://github.com/rocksuter"
+    },
+    {
+      "username": "michealsuter",
+      "contributions": 4,
+      "avatar_url": "https://avatars.githubusercontent.com/u/60725985?v=4",
+      "profile_url": "https://github.com/michealsuter"
+    }
+  ],
+  "recent_commits": [
+    {
+      "sha": "1ecfd9c",
+      "message": "use original value for anything that Copies",
+      "author": "YI",
+      "date": "2020-03-26T12:41:15Z",
+      "url": "https://github.com/suterusu-team/suter-proofs/commit/1ecfd9cc9afc412a51c7090f415552f8600f0683"
+    },
+    {
+      "sha": "e70c80d",
+      "message": "get rid of utils.rs",
+      "author": "YI",
+      "date": "2020-03-26T12:14:21Z",
+      "url": "https://github.com/suterusu-team/suter-proofs/commit/e70c80d4420dc71bfda0fdbbde6fc5cf5fac7f68"
+    },
+    {
+      "sha": "2abcde5",
+      "message": "add mint encrypted balance from amount",
+      "author": "YI",
+      "date": "2020-03-26T12:08:25Z",
+      "url": "https://github.com/suterusu-team/suter-proofs/commit/2abcde50b0ef05d958956ef533462fb6c3018471"
+    },
+    {
+      "sha": "d039f49",
+      "message": "update documentation for balance burning and transfer fee",
+      "author": "YI",
+      "date": "2020-03-25T02:59:09Z",
+      "url": "https://github.com/suterusu-team/suter-proofs/commit/d039f49d4beb72c01ca20ffb35213b7271a3ea66"
+    },
+    {
+      "sha": "390d040",
+      "message": "add burn_balance",
+      "author": "YI",
+      "date": "2020-03-25T02:40:04Z",
+      "url": "https://github.com/suterusu-team/suter-proofs/commit/390d040be636683cc251dd0b7f7baf95e1bb9dbf"
+    }
+  ],
+  "total_commits_sample": 10,
+  "description": "zk-ConSNARK rust implementation",
+  "homepage": "https://www.suterusu.io",
+  "topics": [],
+  "license": null,
+  "is_fork": false,
+  "is_archived": false,
+  "is_disabled": false,
+  "is_private": false,
+  "has_wiki": true,
+  "has_issues": true,
+  "has_projects": true,
+  "analyzed_at": "2025-10-07T23:23:22.444099",
+  "data_source": "github-api-v3",
+  "confidence": 1.0,
+  "verified": true
+}

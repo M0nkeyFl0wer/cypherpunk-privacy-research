@@ -1,0 +1,161 @@
+{
+  "owner": "hermeznetwork",
+  "repo_name": "hermez-node",
+  "full_name": "hermeznetwork/hermez-node",
+  "github_url": "https://github.com/hermeznetwork/hermez-node",
+  "html_url": "https://github.com/hermeznetwork/hermez-node",
+  "stars": 60,
+  "forks": 30,
+  "watchers": 60,
+  "open_issues": 60,
+  "contributors": 21,
+  "created_at": "2020-07-24T10:13:10Z",
+  "updated_at": "2025-04-13T12:39:22Z",
+  "pushed_at": "2024-04-07T18:05:58Z",
+  "size_kb": 4255,
+  "default_branch": "develop",
+  "primary_language": "Go",
+  "languages": [
+    {
+      "name": "Go",
+      "bytes": 2669708,
+      "percentage": 98.56
+    },
+    {
+      "name": "PLpgSQL",
+      "bytes": 27620,
+      "percentage": 1.02
+    },
+    {
+      "name": "Makefile",
+      "bytes": 8887,
+      "percentage": 0.33
+    },
+    {
+      "name": "Shell",
+      "bytes": 2349,
+      "percentage": 0.09
+    },
+    {
+      "name": "Dockerfile",
+      "bytes": 193,
+      "percentage": 0.01
+    }
+  ],
+  "total_languages": 5,
+  "top_contributors": [
+    {
+      "username": "ed255",
+      "contributions": 300,
+      "avatar_url": "https://avatars.githubusercontent.com/u/24987329?v=4",
+      "profile_url": "https://github.com/ed255"
+    },
+    {
+      "username": "arnaucube",
+      "contributions": 255,
+      "avatar_url": "https://avatars.githubusercontent.com/u/17317030?v=4",
+      "profile_url": "https://github.com/arnaucube"
+    },
+    {
+      "username": "arnaubennassar",
+      "contributions": 222,
+      "avatar_url": "https://avatars.githubusercontent.com/u/9336548?v=4",
+      "profile_url": "https://github.com/arnaubennassar"
+    },
+    {
+      "username": "mfcastellani",
+      "contributions": 88,
+      "avatar_url": "https://avatars.githubusercontent.com/u/21969?v=4",
+      "profile_url": "https://github.com/mfcastellani"
+    },
+    {
+      "username": "ARR552",
+      "contributions": 56,
+      "avatar_url": "https://avatars.githubusercontent.com/u/11256256?v=4",
+      "profile_url": "https://github.com/ARR552"
+    },
+    {
+      "username": "laisolizq",
+      "contributions": 43,
+      "avatar_url": "https://avatars.githubusercontent.com/u/37299818?v=4",
+      "profile_url": "https://github.com/laisolizq"
+    },
+    {
+      "username": "Pantani",
+      "contributions": 43,
+      "avatar_url": "https://avatars.githubusercontent.com/u/2406457?v=4",
+      "profile_url": "https://github.com/Pantani"
+    },
+    {
+      "username": "Mikelle",
+      "contributions": 42,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5672938?v=4",
+      "profile_url": "https://github.com/Mikelle"
+    },
+    {
+      "username": "ToniRamirezM",
+      "contributions": 22,
+      "avatar_url": "https://avatars.githubusercontent.com/u/58293609?v=4",
+      "profile_url": "https://github.com/ToniRamirezM"
+    },
+    {
+      "username": "marioidival",
+      "contributions": 20,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1129263?v=4",
+      "profile_url": "https://github.com/marioidival"
+    }
+  ],
+  "recent_commits": [
+    {
+      "sha": "5d8f16a",
+      "message": "Feature/request multiple proofs in parallel (#1156)",
+      "author": "Alonso Rodriguez",
+      "date": "2021-11-08T11:21:29Z",
+      "url": "https://github.com/hermeznetwork/hermez-node/commit/5d8f16ab93a52af50b091c92be3d6afdc3b801ff"
+    },
+    {
+      "sha": "c057926",
+      "message": "Feature/conf (#1154)",
+      "author": "Alonso Rodriguez",
+      "date": "2021-10-18T12:54:07Z",
+      "url": "https://github.com/hermeznetwork/hermez-node/commit/c05792612f0517465081ee962b7184847c620ddb"
+    },
+    {
+      "sha": "b31086b",
+      "message": "Avoid non-selected txs to have info field update when the batch is full (#1155)",
+      "author": "Thiago Coimbra Lemos",
+      "date": "2021-10-18T12:47:57Z",
+      "url": "https://github.com/hermeznetwork/hermez-node/commit/b31086b83868e9242a033da023b5607baa2a1f2c"
+    },
+    {
+      "sha": "b52d699",
+      "message": "Revert \"Revert \"Revert sync by events to sync every block\" (#1151)\" (#1152)",
+      "author": "Marcelo Castellani",
+      "date": "2021-10-07T19:23:26Z",
+      "url": "https://github.com/hermeznetwork/hermez-node/commit/b52d6995d4b0171c0ed9e82e47ad1a2d708b8374"
+    },
+    {
+      "sha": "fd1e467",
+      "message": "Revert \"Revert sync by events to sync every block\" (#1151)",
+      "author": "Marcelo Castellani",
+      "date": "2021-10-07T19:17:39Z",
+      "url": "https://github.com/hermeznetwork/hermez-node/commit/fd1e467b8dde2637eccecc2b101ede8a18e77539"
+    }
+  ],
+  "total_commits_sample": 10,
+  "description": "Hermez node Go implementation",
+  "homepage": null,
+  "topics": [],
+  "license": "GNU Affero General Public License v3.0",
+  "is_fork": false,
+  "is_archived": true,
+  "is_disabled": false,
+  "is_private": false,
+  "has_wiki": true,
+  "has_issues": true,
+  "has_projects": true,
+  "analyzed_at": "2025-10-07T23:22:24.288149",
+  "data_source": "github-api-v3",
+  "confidence": 1.0,
+  "verified": true
+}

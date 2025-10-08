@@ -1,0 +1,184 @@
+{
+  "project": "polygon-hermez",
+  "articles": [
+    {
+      "title": "What is Polygon (MATIC)? - Messari",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFA4d3JuSjZvNURjdm9JSXRPRjk3OTZxOFk1RkdjQldiY2pYc2ZHTWVoTXUwcjVmVTg2SUR1Qm10aThTLXhKRHc4MV9yYmhHaHZ1ZXZ3dUZUZVVQU0Rm?oc=5",
+      "publication": "Messari",
+      "date": "2024-09-12",
+      "summary": "What is Polygon (MATIC)?&nbsp;&nbsp;Messari",
+      "source": "google_news_rss",
+      "confidence": 0.95,
+      "category": "general"
+    },
+    {
+      "title": "Kaleido to leverage Polygon Edge to accelerate enterprise blockchain projects - CryptoNinjas",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQbllQZFlMS1VsS0xIc05VdE9Za1VYd0VTdEtHSkQzTW5iSmtwNUFwcFdvSkwtUXpBZDlOeG1Sa2VMcE9aeHNxbDYtQTU4Y0JJMkZWNlpBTlFDQS1fS0JSc2dUVko5U1dobUYwMEdrVFNsRWpnb2dlTF90dTkyYmxNYWp2MGZUd0pydVR1Mkd4YW5mT1lDN0tmbUxUM1MzOG4yUmlsdTlwYURRXzc0NEwzYVd5M1B0NFZXNHc?oc=5",
+      "publication": "CryptoNinjas",
+      "date": "2022-07-21",
+      "summary": "Kaleido to leverage Polygon Edge to accelerate enterprise blockchain projects&nbsp;&nbsp;CryptoNinjas",
+      "source": "google_news_rss",
+      "confidence": 0.95,
+      "category": "general"
+    },
+    {
+      "title": "Polygon: A Multi-Sided Approach to ZK Scaling - Messari",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE52a2tjTW1SY3Myd19MZTY2cVBZRWxfOEQyal82MVNtcFdGOGR4U2tNLWUtem8yYTB2S05KblJmNE1ubnlUNkhvSjZJMENvaV9DTlpIMTU5QUxCcFJQNUMza2lXOWxBc1FxZk1TNUVDaVh2VUZ4TUl5emRB?oc=5",
+      "publication": "Messari",
+      "date": "2022-03-23",
+      "summary": "Polygon: A Multi-Sided Approach to ZK Scaling&nbsp;&nbsp;Messari",
+      "source": "google_news_rss",
+      "confidence": 0.95,
+      "category": "general"
+    },
+    {
+      "title": "Polygon\u2019s Zero Knowledge Strategy Explained - Polygon Labs",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBvTGxKTUpzOHpwU19ZRjBrZHBuSTE4eWJ0MGNQbGlZbGVBQUlnUElHOXRtaDh2RmR6WVRObWZNTklZYmpBWGxta0ozTUttTzhDUGJDdGNrUWx2azkyaktqZl8wQmRBMnJ5MHM3dmNGWFdNT1pQLWRzNUR2MGs5djg?oc=5",
+      "publication": "Polygon Labs",
+      "date": "2022-01-26",
+      "summary": "Polygon\u2019s Zero Knowledge Strategy Explained&nbsp;&nbsp;Polygon Labs",
+      "source": "google_news_rss",
+      "confidence": 0.95,
+      "category": "general"
+    },
+    {
+      "title": "Crypto Firm Polygon Makes $500 Million Buy for Ethereum Push - Bloomberg.com",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZ013c3puLURKUjF1WjRucUN3dk9DNThfcjN2N2FuX1NLeTZsZ3RBNWVqRzE2TDZWTUozV3lBQ0l3WnUzS19Ja1BoanRaODZoWDFTbG14MUVBV2hDZkVCRzY4czNXZVprZzE2QkxUeUQ1ME1xUVNGaTFLVjd0MEI1LW9Jd09GbTRfWDBoamIxdXhWSl90enUyZzBZaU1IWHNBWExrU2F0YjhSelhYLUFj?oc=5",
+      "publication": "Bloomberg.com",
+      "date": "2021-12-09",
+      "summary": "Crypto Firm Polygon Makes $500 Million Buy for Ethereum Push&nbsp;&nbsp;Bloomberg.com",
+      "source": "google_news_rss",
+      "confidence": 0.95,
+      "category": "funding"
+    },
+    {
+      "title": "Polygon launches Miden for Ethereum scaling - Forkast News",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5QcTJ1clZMd2hOUWRZMHVoZHdhMTE0UFY3Rmx5ajIydENVTUpVZm1CM1BYUk00WlluODBhdkdBMDBPbGlkNHJjeTdBamZvRl93WG02c3Z4SHpvMENiOTE0dHQ3clh2d2Q1WlpwUVMtYTFWOVXSAXhBVV95cUxQVmR0cmdDOVFRSkpHRWZReWNNdWRmUF9Mb2pqUWpLTXBMd25VSWVkc3Q1eWJuZHFnSmRjQ1dlM05DaEFJVVlwNmVULWZtSkNad2pRcHJUQy1waV9yUzN6OUg4enhqN1ZUTmtGeGUxdHhfTzZJeFF3LWE?oc=5",
+      "publication": "Forkast News",
+      "date": "2021-11-16",
+      "summary": "Polygon launches Miden for Ethereum scaling&nbsp;&nbsp;Forkast News",
+      "source": "google_news_rss",
+      "confidence": 0.95,
+      "category": "product"
+    },
+    {
+      "title": "Polygon acquires Hermez; the projects are merging their tokens - theblock.co",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQRWk0LVRzNFBreGlremNZX0RrbFg5Skdfdy1jajRsOUhSanlXT09QM0dQVmgyXzFNUlhRMDJELW9GU3dlRUs5bGNHekh0bmg2UXBoeXZHdUhmMEZ1LVRXeVhuQk1YbkQwSGxqZ0J2b21HWkxRZHo1M2hXMXV4dTJlem1mckRyQWc3Y2NRQ1ozd0dleHQtRmpr0gGcAUFVX3lxTE5WTWthQ3lxLUNQT3o3VFZZeDNHdnQwaHN5WlVLOV92N2RENm11VjE2SjZpU2JEbHoyaV9ta0xCcl9iMDY0cmFQal9HREFDTVAzeFgxNWFGc1RPb2FjR0JFU1UxWC14MzctZW12U2Q3WGNNUWMzOU9FdmpZeWxNR2JRTU9SR29VcjB4TzgxM2otU25hSmZKd1RYakdybg?oc=5",
+      "publication": "theblock.co",
+      "date": "2021-08-14",
+      "summary": "Polygon acquires Hermez; the projects are merging their tokens&nbsp;&nbsp;theblock.co",
+      "source": "google_news_rss",
+      "confidence": 0.95,
+      "category": "general"
+    },
+    {
+      "title": "Polygon Merges With Hermez Network in $250M Deal - CoinDesk",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPOXNSeVA2Z0VrNWZVdHJtMmZoam9vMXNicUVHWjJTZHBPVk1KaW94OTNMeDFEbjk5azhnaUkyYy0tV21YaWRVVzJWYlRiUFV1ZkptZWFFYlNiNnRoanR1Umxja1BmSV9EY3RLaFRHaS1ZRnZvSk9YUFhMUzdXT09DY2tnUXAwTzJWLWF5S2ZIUzkzOUpjM3VJ?oc=5",
+      "publication": "CoinDesk",
+      "date": "2021-08-13",
+      "summary": "Polygon Merges With Hermez Network in $250M Deal&nbsp;&nbsp;CoinDesk",
+      "source": "google_news_rss",
+      "confidence": 0.95,
+      "category": "general"
+    }
+  ],
+  "total_articles": 8,
+  "sources": [
+    "google_news_rss"
+  ],
+  "categories": {
+    "general": [
+      {
+        "title": "What is Polygon (MATIC)? - Messari",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFA4d3JuSjZvNURjdm9JSXRPRjk3OTZxOFk1RkdjQldiY2pYc2ZHTWVoTXUwcjVmVTg2SUR1Qm10aThTLXhKRHc4MV9yYmhHaHZ1ZXZ3dUZUZVVQU0Rm?oc=5",
+        "publication": "Messari",
+        "date": "2024-09-12",
+        "summary": "What is Polygon (MATIC)?&nbsp;&nbsp;Messari",
+        "source": "google_news_rss",
+        "confidence": 0.95,
+        "category": "general"
+      },
+      {
+        "title": "Kaleido to leverage Polygon Edge to accelerate enterprise blockchain projects - CryptoNinjas",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQbllQZFlMS1VsS0xIc05VdE9Za1VYd0VTdEtHSkQzTW5iSmtwNUFwcFdvSkwtUXpBZDlOeG1Sa2VMcE9aeHNxbDYtQTU4Y0JJMkZWNlpBTlFDQS1fS0JSc2dUVko5U1dobUYwMEdrVFNsRWpnb2dlTF90dTkyYmxNYWp2MGZUd0pydVR1Mkd4YW5mT1lDN0tmbUxUM1MzOG4yUmlsdTlwYURRXzc0NEwzYVd5M1B0NFZXNHc?oc=5",
+        "publication": "CryptoNinjas",
+        "date": "2022-07-21",
+        "summary": "Kaleido to leverage Polygon Edge to accelerate enterprise blockchain projects&nbsp;&nbsp;CryptoNinjas",
+        "source": "google_news_rss",
+        "confidence": 0.95,
+        "category": "general"
+      },
+      {
+        "title": "Polygon: A Multi-Sided Approach to ZK Scaling - Messari",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE52a2tjTW1SY3Myd19MZTY2cVBZRWxfOEQyal82MVNtcFdGOGR4U2tNLWUtem8yYTB2S05KblJmNE1ubnlUNkhvSjZJMENvaV9DTlpIMTU5QUxCcFJQNUMza2lXOWxBc1FxZk1TNUVDaVh2VUZ4TUl5emRB?oc=5",
+        "publication": "Messari",
+        "date": "2022-03-23",
+        "summary": "Polygon: A Multi-Sided Approach to ZK Scaling&nbsp;&nbsp;Messari",
+        "source": "google_news_rss",
+        "confidence": 0.95,
+        "category": "general"
+      },
+      {
+        "title": "Polygon\u2019s Zero Knowledge Strategy Explained - Polygon Labs",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBvTGxKTUpzOHpwU19ZRjBrZHBuSTE4eWJ0MGNQbGlZbGVBQUlnUElHOXRtaDh2RmR6WVRObWZNTklZYmpBWGxta0ozTUttTzhDUGJDdGNrUWx2azkyaktqZl8wQmRBMnJ5MHM3dmNGWFdNT1pQLWRzNUR2MGs5djg?oc=5",
+        "publication": "Polygon Labs",
+        "date": "2022-01-26",
+        "summary": "Polygon\u2019s Zero Knowledge Strategy Explained&nbsp;&nbsp;Polygon Labs",
+        "source": "google_news_rss",
+        "confidence": 0.95,
+        "category": "general"
+      },
+      {
+        "title": "Polygon acquires Hermez; the projects are merging their tokens - theblock.co",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQRWk0LVRzNFBreGlremNZX0RrbFg5Skdfdy1jajRsOUhSanlXT09QM0dQVmgyXzFNUlhRMDJELW9GU3dlRUs5bGNHekh0bmg2UXBoeXZHdUhmMEZ1LVRXeVhuQk1YbkQwSGxqZ0J2b21HWkxRZHo1M2hXMXV4dTJlem1mckRyQWc3Y2NRQ1ozd0dleHQtRmpr0gGcAUFVX3lxTE5WTWthQ3lxLUNQT3o3VFZZeDNHdnQwaHN5WlVLOV92N2RENm11VjE2SjZpU2JEbHoyaV9ta0xCcl9iMDY0cmFQal9HREFDTVAzeFgxNWFGc1RPb2FjR0JFU1UxWC14MzctZW12U2Q3WGNNUWMzOU9FdmpZeWxNR2JRTU9SR29VcjB4TzgxM2otU25hSmZKd1RYakdybg?oc=5",
+        "publication": "theblock.co",
+        "date": "2021-08-14",
+        "summary": "Polygon acquires Hermez; the projects are merging their tokens&nbsp;&nbsp;theblock.co",
+        "source": "google_news_rss",
+        "confidence": 0.95,
+        "category": "general"
+      },
+      {
+        "title": "Polygon Merges With Hermez Network in $250M Deal - CoinDesk",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPOXNSeVA2Z0VrNWZVdHJtMmZoam9vMXNicUVHWjJTZHBPVk1KaW94OTNMeDFEbjk5azhnaUkyYy0tV21YaWRVVzJWYlRiUFV1ZkptZWFFYlNiNnRoanR1Umxja1BmSV9EY3RLaFRHaS1ZRnZvSk9YUFhMUzdXT09DY2tnUXAwTzJWLWF5S2ZIUzkzOUpjM3VJ?oc=5",
+        "publication": "CoinDesk",
+        "date": "2021-08-13",
+        "summary": "Polygon Merges With Hermez Network in $250M Deal&nbsp;&nbsp;CoinDesk",
+        "source": "google_news_rss",
+        "confidence": 0.95,
+        "category": "general"
+      }
+    ],
+    "funding": [
+      {
+        "title": "Crypto Firm Polygon Makes $500 Million Buy for Ethereum Push - Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZ013c3puLURKUjF1WjRucUN3dk9DNThfcjN2N2FuX1NLeTZsZ3RBNWVqRzE2TDZWTUozV3lBQ0l3WnUzS19Ja1BoanRaODZoWDFTbG14MUVBV2hDZkVCRzY4czNXZVprZzE2QkxUeUQ1ME1xUVNGaTFLVjd0MEI1LW9Jd09GbTRfWDBoamIxdXhWSl90enUyZzBZaU1IWHNBWExrU2F0YjhSelhYLUFj?oc=5",
+        "publication": "Bloomberg.com",
+        "date": "2021-12-09",
+        "summary": "Crypto Firm Polygon Makes $500 Million Buy for Ethereum Push&nbsp;&nbsp;Bloomberg.com",
+        "source": "google_news_rss",
+        "confidence": 0.95,
+        "category": "funding"
+      }
+    ],
+    "product": [
+      {
+        "title": "Polygon launches Miden for Ethereum scaling - Forkast News",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5QcTJ1clZMd2hOUWRZMHVoZHdhMTE0UFY3Rmx5ajIydENVTUpVZm1CM1BYUk00WlluODBhdkdBMDBPbGlkNHJjeTdBamZvRl93WG02c3Z4SHpvMENiOTE0dHQ3clh2d2Q1WlpwUVMtYTFWOVXSAXhBVV95cUxQVmR0cmdDOVFRSkpHRWZReWNNdWRmUF9Mb2pqUWpLTXBMd25VSWVkc3Q1eWJuZHFnSmRjQ1dlM05DaEFJVVlwNmVULWZtSkNad2pRcHJUQy1waV9yUzN6OUg4enhqN1ZUTmtGeGUxdHhfTzZJeFF3LWE?oc=5",
+        "publication": "Forkast News",
+        "date": "2021-11-16",
+        "summary": "Polygon launches Miden for Ethereum scaling&nbsp;&nbsp;Forkast News",
+        "source": "google_news_rss",
+        "confidence": 0.95,
+        "category": "product"
+      }
+    ]
+  },
+  "last_updated": "2025-10-07T20:04:14.126294",
+  "constitutional_compliance": {
+    "real_data_only": true,
+    "sources_cited": true,
+    "no_fabrication": true,
+    "confidence_score": 0.95
+  }
+}

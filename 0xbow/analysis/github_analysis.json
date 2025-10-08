@@ -1,0 +1,75 @@
+{
+  "github_url": "https://github.com/0xbow-io/privacy-pools-core",
+  "repository_path": "0xbow-io/privacy-pools-core",
+  "owner": "0xbow-io",
+  "repo_name": "privacy-pools-core",
+  "description": "Privacy Pools by 0xbow is a compliant way to anonymously transact on Ethereum. 0xbow blocks illicit actors to ensure pool integrity.",
+  "stars": 80,
+  "forks": 21,
+  "watchers": 80,
+  "contributors": 17,
+  "languages": [
+    "TypeScript",
+    "Solidity",
+    "JavaScript",
+    "Circom",
+    "Mustache",
+    "Shell",
+    "Dockerfile"
+  ],
+  "primary_language": "TypeScript",
+  "created_at": "2025-02-17T18:14:43Z",
+  "updated_at": "2025-09-29T04:57:07Z",
+  "pushed_at": "2025-09-04T13:17:19Z",
+  "last_commit_date": "2025-09-02T15:00:23Z",
+  "open_issues": 13,
+  "license": "Apache License 2.0",
+  "topics": [],
+  "homepage": "https://privacypools.com",
+  "default_branch": "main",
+  "size_kb": 72992,
+  "activity_level": "active",
+  "days_since_update": 29,
+  "archived": false,
+  "disabled": false,
+  "has_wiki": false,
+  "has_issues": true,
+  "has_discussions": false,
+  "recent_commits": [
+    {
+      "sha": "7bc392d",
+      "message": "Release v1.1.1 (#107)",
+      "date": "2025-09-02T15:00:23Z",
+      "author": "Patrick Aljord"
+    },
+    {
+      "sha": "318aaf8",
+      "message": "modified sdk release script, changelog and version bump,",
+      "date": "2025-09-02T10:55:10Z",
+      "author": "Artem"
+    },
+    {
+      "sha": "4f93cf1",
+      "message": "Merge remote-tracking branch 'origin/main' into release/v1.1.1",
+      "date": "2025-09-02T10:08:05Z",
+      "author": "Artem"
+    },
+    {
+      "sha": "cbd962b",
+      "message": "fix(sdk): fix for duplicated precommitments (#106)",
+      "date": "2025-09-01T20:18:38Z",
+      "author": "attemka"
+    },
+    {
+      "sha": "ae6f617",
+      "message": "fix(sdk): fix for missing deposits (#105)",
+      "date": "2025-09-01T20:18:21Z",
+      "author": "attemka"
+    }
+  ],
+  "analyzed_at": "2025-10-03T18:21:46.574977Z",
+  "confidence": 0.95,
+  "data_source": "github_api_v3",
+  "api_authenticated": false,
+  "raw_api_response_stored": true
+}

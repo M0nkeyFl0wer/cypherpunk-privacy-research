@@ -1,0 +1,25 @@
+{
+  "source": "Open Source Observer",
+  "discovered_at": "2025-09-29T14:42:57.268068",
+  "contracts": [
+    {
+      "address": "0xa8a4367eeff6b4986f42b4d750be58bba87973fe",
+      "tags": [
+        "eoa",
+        "deployer"
+      ],
+      "networks": [
+        "base"
+      ]
+    },
+    {
+      "address": "0x59c2f99429fb7178ee8ce9bdb1d2bab730601ea4",
+      "tags": [
+        "contract"
+      ],
+      "networks": [
+        "base"
+      ]
+    }
+  ]
+}

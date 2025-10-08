@@ -1,0 +1,42 @@
+{
+  "project_id": "zano",
+  "research_date": "2025-10-07T21:59:00Z",
+  "constitutional_version": "2.0.0",
+  "compliance_status": "VERIFIED",
+  "basic_information": {
+    "name": "Zano",
+    "symbol": "ZANO",
+    "tagline": "Blockchain privacy for mass adoption",
+    "description": "Zano is an open-source cryptocurrency and ecosystem with enterprise-grade privacy, security, and scalability",
+    "full_description": "Zano is an open-source cryptocurrency (layer-1) and ecosystem with enterprise-grade privacy, security, and scalability that operates as a robust platform for confidential assets and decentralized applications (dApps).",
+    "confidence": 0.95,
+    "sources": [
+      {
+        "url": "https://zano.org",
+        "method": "curl + meta tag extraction",
+        "timestamp": "2025-10-07T21:58:57Z",
+        "data_extracted": "website tagline and description"
+      },
+      {
+        "url": "https://api.coingecko.com/api/v3/coins/zano",
+        "method": "CoinGecko API",
+        "timestamp": "2025-10-07T21:59:00Z",
+        "data_extracted": "name, symbol, description, verified metadata"
+      }
+    ]
+  },
+  "website": {
+    "primary_url": "https://zano.org",
+    "blog_url": "https://blog.zano.org/",
+    "explorer_url": "https://explorer.zano.org/",
+    "confidence": 0.95,
+    "sources": [
+      {
+        "url": "https://zano.org",
+        "method": "direct HTTP curl",
+        "status_code": 200,
+        "verification": "HTTPS verified, Cloudflare-secured"
+      }
+    ]
+  }
+}

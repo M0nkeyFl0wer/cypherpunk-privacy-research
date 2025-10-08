@@ -1,0 +1,37 @@
+{
+  "github_url": "https://github.com/semaphore-protocol/semaphore",
+  "description": "A zero-knowledge protocol for anonymous interactions.",
+  "stars": 1013,
+  "forks": 278,
+  "languages": [
+    "TypeScript",
+    "MDX",
+    "Solidity",
+    "SCSS",
+    "CSS",
+    "JavaScript",
+    "Circom",
+    "Shell"
+  ],
+  "primary_language": "TypeScript",
+  "created_at": "2019-04-05T14:42:26Z",
+  "updated_at": "2025-09-20T21:22:04Z",
+  "open_issues": 56,
+  "license": "MIT License",
+  "topics": [
+    "circom",
+    "ethereum",
+    "hacktoberfest",
+    "javascript",
+    "monorepo",
+    "proof-of-membership",
+    "semaphore",
+    "solidity",
+    "typescript",
+    "zero-knowledge",
+    "zero-knowledge-proofs",
+    "zk-snarks"
+  ],
+  "homepage": "https://semaphore.pse.dev",
+  "analyzed_at": "2025-09-29T14:12:15.605007"
+}

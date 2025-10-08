@@ -1,0 +1,177 @@
+{
+  "owner": "webb-tools",
+  "repo_name": "webb-dapp",
+  "full_name": "tangle-network/dapp",
+  "github_url": "https://github.com/webb-tools/webb-dapp",
+  "html_url": "https://github.com/tangle-network/dapp",
+  "stars": 35,
+  "forks": 20,
+  "watchers": 35,
+  "open_issues": 22,
+  "contributors": 18,
+  "created_at": "2021-01-20T17:45:42Z",
+  "updated_at": "2025-10-06T17:41:41Z",
+  "pushed_at": "2025-09-15T18:28:31Z",
+  "size_kb": 268174,
+  "default_branch": "develop",
+  "primary_language": "TypeScript",
+  "languages": [
+    {
+      "name": "TypeScript",
+      "bytes": 3301992,
+      "percentage": 97.67
+    },
+    {
+      "name": "JavaScript",
+      "bytes": 60592,
+      "percentage": 1.79
+    },
+    {
+      "name": "CSS",
+      "bytes": 8193,
+      "percentage": 0.24
+    },
+    {
+      "name": "MDX",
+      "bytes": 4948,
+      "percentage": 0.15
+    },
+    {
+      "name": "HTML",
+      "bytes": 4120,
+      "percentage": 0.12
+    },
+    {
+      "name": "Nix",
+      "bytes": 738,
+      "percentage": 0.02
+    },
+    {
+      "name": "Shell",
+      "bytes": 234,
+      "percentage": 0.01
+    }
+  ],
+  "total_languages": 7,
+  "top_contributors": [
+    {
+      "username": "AtelyPham",
+      "contributions": 453,
+      "avatar_url": "https://avatars.githubusercontent.com/u/60747384?v=4",
+      "profile_url": "https://github.com/AtelyPham"
+    },
+    {
+      "username": "vutuanlinh2k2",
+      "contributions": 242,
+      "avatar_url": "https://avatars.githubusercontent.com/u/69841784?v=4",
+      "profile_url": "https://github.com/vutuanlinh2k2"
+    },
+    {
+      "username": "yuri-xyz",
+      "contributions": 222,
+      "avatar_url": "https://avatars.githubusercontent.com/u/101931215?v=4",
+      "profile_url": "https://github.com/yuri-xyz"
+    },
+    {
+      "username": "devpavan04",
+      "contributions": 219,
+      "avatar_url": "https://avatars.githubusercontent.com/u/53374218?v=4",
+      "profile_url": "https://github.com/devpavan04"
+    },
+    {
+      "username": "nepoche",
+      "contributions": 186,
+      "avatar_url": "https://avatars.githubusercontent.com/u/16654909?v=4",
+      "profile_url": "https://github.com/nepoche"
+    },
+    {
+      "username": "AhmedKorim",
+      "contributions": 165,
+      "avatar_url": "https://avatars.githubusercontent.com/u/35463181?v=4",
+      "profile_url": "https://github.com/AhmedKorim"
+    },
+    {
+      "username": "dependabot[bot]",
+      "contributions": 161,
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "profile_url": "https://github.com/apps/dependabot"
+    },
+    {
+      "username": "dutterbutter",
+      "contributions": 108,
+      "avatar_url": "https://avatars.githubusercontent.com/u/29983536?v=4",
+      "profile_url": "https://github.com/dutterbutter"
+    },
+    {
+      "username": "drewstone",
+      "contributions": 76,
+      "avatar_url": "https://avatars.githubusercontent.com/u/13153687?v=4",
+      "profile_url": "https://github.com/drewstone"
+    },
+    {
+      "username": "danielbui12",
+      "contributions": 21,
+      "avatar_url": "https://avatars.githubusercontent.com/u/79790753?v=4",
+      "profile_url": "https://github.com/danielbui12"
+    }
+  ],
+  "recent_commits": [
+    {
+      "sha": "4197fea",
+      "message": "[RELEASE] leaderboard v0.0.5 (#3064)",
+      "author": "Pavan Soratur",
+      "date": "2025-09-10T07:24:36Z",
+      "url": "https://github.com/tangle-network/dapp/commit/4197fea31383643a5ae18ee1e206bd00c48843f6"
+    },
+    {
+      "sha": "03d756b",
+      "message": "fix: enhance leaderboard search with hybrid filtering (#3062)",
+      "author": "Pavan Soratur",
+      "date": "2025-09-09T08:10:34Z",
+      "url": "https://github.com/tangle-network/dapp/commit/03d756bb77aabe60ffbdf50f79020069daaed7f3"
+    },
+    {
+      "sha": "3f2a8b0",
+      "message": "[RELEASE] tangle-dapp v0.1.7 and leaderboard v0.0.4 (#3057)",
+      "author": "Pavan Soratur",
+      "date": "2025-08-25T16:01:59Z",
+      "url": "https://github.com/tangle-network/dapp/commit/3f2a8b0f30c6a309dab62c547fdf790524d40e3a"
+    },
+    {
+      "sha": "619529f",
+      "message": "chore: Tangle dapp & cloud fixes (#3053)",
+      "author": "Pavan Soratur",
+      "date": "2025-08-25T14:00:10Z",
+      "url": "https://github.com/tangle-network/dapp/commit/619529f998a133b8ea1551341bebb6a3f83147ef"
+    },
+    {
+      "sha": "533e9fc",
+      "message": "feat: add mainnet support to leaderboard with network toggle (#3052)",
+      "author": "Trung-Tin Pham",
+      "date": "2025-08-14T14:45:32Z",
+      "url": "https://github.com/tangle-network/dapp/commit/533e9fc672a605fdc26a7cde9813c286e9a9f595"
+    }
+  ],
+  "total_commits_sample": 10,
+  "description": "Monorepo for the Tangle ecosystem.",
+  "homepage": "https://app.tangle.tools",
+  "topics": [
+    "blockchain",
+    "cryptocurrency",
+    "dapp",
+    "frontend",
+    "monorepo"
+  ],
+  "license": "Apache License 2.0",
+  "is_fork": false,
+  "is_archived": false,
+  "is_disabled": false,
+  "is_private": false,
+  "has_wiki": true,
+  "has_issues": true,
+  "has_projects": true,
+  "analyzed_at": "2025-10-07T23:23:43.555633",
+  "data_source": "github-api-v3",
+  "confidence": 1.0,
+  "verified": true
+}

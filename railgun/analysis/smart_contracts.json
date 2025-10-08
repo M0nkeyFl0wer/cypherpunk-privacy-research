@@ -1,0 +1,48 @@
+{
+  "contracts": [
+    {
+      "name": "Railgun Relay",
+      "address": "0xfa7093cdd9ee6932b4eb2c9e1cde7ce00b1fa4b9",
+      "network": "ethereum",
+      "type": "relay",
+      "source": "etherscan.io",
+      "verified": true
+    },
+    {
+      "name": "RelayAdapt",
+      "address": "0xc3f2c8f9d5f0705de706b1302b7a039e1e11ac88",
+      "network": "ethereum",
+      "type": "core",
+      "source": "etherscan.io",
+      "verified": true
+    },
+    {
+      "name": "RAIL Token",
+      "address": "0xe76C6c83af64e4C60245D8C7dE953DF673a7A33D",
+      "network": "ethereum",
+      "type": "token",
+      "source": "etherscan.io",
+      "verified": true
+    },
+    {
+      "name": "Railgun Treasury",
+      "address": "0xe8a8b458bcd1ececc6b6b58f80929b29ccecff40",
+      "network": "ethereum",
+      "type": "treasury",
+      "source": "etherscan.io",
+      "verified": true
+    },
+    {
+      "name": "Railgun WETH Helper",
+      "address": "0x4025ee6512dbbda97049bcf5aa5d38c54af6be8a",
+      "network": "ethereum",
+      "type": "helper",
+      "source": "etherscan.io",
+      "verified": true
+    }
+  ],
+  "search_attempted": true,
+  "note": "Manual verification needed - check website and docs",
+  "analyzed_at": "2025-09-29T14:12:13.033811",
+  "last_updated": "2025-09-29T15:45:58.236150"
+}

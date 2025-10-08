@@ -34,7 +34,9 @@
         "Gitcoin grants data",
         "Social media verification"
       ]
-    }
+    },
+    "batch3_seshat_processed": true,
+    "seshat_website_found": true
   },
   "project_overview": {
     "name": "Rotki",
@@ -208,7 +210,9 @@
         "name": "Celina",
         "role": "First non-tech hire",
         "confidence": 0.75,
-        "sources": ["https://blog.rotki.com/2022/12/31/year-in-review/"],
+        "sources": [
+          "https://blog.rotki.com/2022/12/31/year-in-review/"
+        ],
         "verification_tier": "Tier 4 - Social/Community",
         "notes": "No GitHub username or LinkedIn profile found"
       },
@@ -216,7 +220,9 @@
         "name": "Alexey",
         "role": "Developer",
         "confidence": 0.75,
-        "sources": ["https://blog.rotki.com/2022/12/31/year-in-review/"],
+        "sources": [
+          "https://blog.rotki.com/2022/12/31/year-in-review/"
+        ],
         "verification_tier": "Tier 4 - Social/Community",
         "notes": "Worked remotely ~5 months before meeting team in person; no GitHub username identified"
       },
@@ -226,7 +232,9 @@
         "role": "Contributor",
         "contributions": 424,
         "confidence": 0.85,
-        "sources": ["https://api.github.com/repos/rotki/rotki/contributors"],
+        "sources": [
+          "https://api.github.com/repos/rotki/rotki/contributors"
+        ],
         "verification_tier": "Tier 1 - Primary Sources"
       },
       {
@@ -235,14 +243,15 @@
         "role": "Contributor",
         "contributions": 340,
         "confidence": 0.85,
-        "sources": ["https://api.github.com/repos/rotki/rotki/contributors"],
+        "sources": [
+          "https://api.github.com/repos/rotki/rotki/contributors"
+        ],
         "verification_tier": "Tier 1 - Primary Sources"
       }
     ],
     "team_size": "2-10 employees",
     "headquarters": "Berlin, Germany",
     "total_contributors": 189,
-    "confidence": 0.89,
     "sources": [
       "https://www.linkedin.com/company/rotki/",
       "https://blog.rotki.com/2022/12/31/year-in-review/",
@@ -298,7 +307,9 @@
         "Perl": 988
       },
       "confidence": 0.95,
-      "sources": ["https://api.github.com/repos/rotki/rotki/languages"],
+      "sources": [
+        "https://api.github.com/repos/rotki/rotki/languages"
+      ],
       "verification_tier": "Tier 1 - Primary Sources (GitHub API)",
       "timestamp": "2025-10-04"
     },
@@ -306,7 +317,9 @@
       "backend": {
         "primary_language": "Python 3.11+",
         "confidence": 0.90,
-        "sources": ["https://github.com/rotki/rotki"]
+        "sources": [
+          "https://github.com/rotki/rotki"
+        ]
       },
       "frontend": {
         "framework": "Vue.js",
@@ -320,12 +333,16 @@
       "containerization": {
         "technology": "Docker",
         "confidence": 0.90,
-        "sources": ["https://github.com/rotki/rotki"]
+        "sources": [
+          "https://github.com/rotki/rotki"
+        ]
       },
       "build_tools": {
         "nodejs": "Required for build",
         "confidence": 0.85,
-        "sources": ["https://github.com/rotki/rotki"]
+        "sources": [
+          "https://github.com/rotki/rotki"
+        ]
       }
     },
     "deployment_options": [
@@ -471,7 +488,9 @@
       "features": "Track staking activities, total gains, performance, rewards breakdown, individual staking events",
       "availability": "Premium feature",
       "confidence": 0.85,
-      "sources": ["https://rotki.com/products"]
+      "sources": [
+        "https://rotki.com/products"
+      ]
     },
     "gaps": [
       {
@@ -566,9 +585,15 @@
         "total_gitcoin_funding_usd": 24857
       },
       "other_grants": {
-        "programs": ["CLR Fund", "Optimism Governance Fund", "RPGF"],
+        "programs": [
+          "CLR Fund",
+          "Optimism Governance Fund",
+          "RPGF"
+        ],
         "confidence": 0.75,
-        "sources": ["https://www.superchain.eco/projects/rotki"],
+        "sources": [
+          "https://www.superchain.eco/projects/rotki"
+        ],
         "verification_tier": "Tier 2 - Verified Aggregators",
         "notes": "Grant programs confirmed but specific amounts not publicly disclosed"
       },
@@ -597,7 +622,10 @@
           "Open source codebase"
         ],
         "confidence": 0.90,
-        "sources": ["https://rotki.com/products", "https://github.com/rotki/rotki"]
+        "sources": [
+          "https://rotki.com/products",
+          "https://github.com/rotki/rotki"
+        ]
       },
       "premium_subscription": {
         "available": true,
@@ -611,7 +639,9 @@
         ],
         "pricing": "Not publicly disclosed",
         "confidence": 0.90,
-        "sources": ["https://rotki.com/products"],
+        "sources": [
+          "https://rotki.com/products"
+        ],
         "verification_tier": "Tier 1 - Primary Sources",
         "notes": "Premium features support team of developers who care about financial privacy and open-source software"
       }
@@ -633,7 +663,9 @@
         "handle": "@rotkiapp",
         "url": "https://twitter.com/rotkiapp",
         "confidence": 0.90,
-        "sources": ["https://twitter.com/rotkiapp"],
+        "sources": [
+          "https://twitter.com/rotkiapp"
+        ],
         "verification_tier": "Tier 1 - Primary Sources"
       }
     },
@@ -649,7 +681,10 @@
           "Feature announcements and releases"
         ],
         "confidence": 0.95,
-        "sources": ["https://discord.rotki.com", "https://rotki.com"],
+        "sources": [
+          "https://discord.rotki.com",
+          "https://rotki.com"
+        ],
         "verification_tier": "Tier 1 - Primary Sources"
       },
       "blog": {
@@ -657,7 +692,9 @@
         "title": "Robin's Blog - the accounting bird",
         "content_type": "Project updates, year in review posts, feature announcements, technical articles",
         "confidence": 0.95,
-        "sources": ["https://blog.rotki.com"],
+        "sources": [
+          "https://blog.rotki.com"
+        ],
         "verification_tier": "Tier 1 - Primary Sources"
       },
       "github": {
@@ -668,14 +705,19 @@
         "stars": 3280,
         "forks": 640,
         "confidence": 0.95,
-        "sources": ["https://github.com/rotki", "https://api.github.com/repos/rotki/rotki"],
+        "sources": [
+          "https://github.com/rotki",
+          "https://api.github.com/repos/rotki/rotki"
+        ],
         "verification_tier": "Tier 1 - Primary Sources"
       },
       "documentation": {
         "url": "https://docs.rotki.com",
         "alternative_url": "https://rotki.readthedocs.io",
         "confidence": 0.95,
-        "sources": ["https://docs.rotki.com"],
+        "sources": [
+          "https://docs.rotki.com"
+        ],
         "verification_tier": "Tier 1 - Primary Sources"
       }
     },
@@ -695,7 +737,9 @@
         "subcategory": "privacy_tooling",
         "verification_status": "verified",
         "confidence": 0.95,
-        "sources": ["web3privacy_official_list"]
+        "sources": [
+          "web3privacy_official_list"
+        ]
       },
       "platform_listings": [
         "Octant (public good projects)",
@@ -722,60 +766,83 @@
       "description": "Track balances across multiple platforms, blockchains, and exchanges with comprehensive aggregation",
       "supported_sources": "EVM/Bitcoin accounts (with ENS support), major centralized exchanges, 80+ DeFi protocols",
       "confidence": 0.95,
-      "sources": ["https://rotki.com", "https://github.com/rotki/rotki"]
+      "sources": [
+        "https://rotki.com",
+        "https://github.com/rotki/rotki"
+      ]
     },
     "transaction_decoding": {
       "value": true,
       "description": "Readable breakdown of blockchain transactions, exchange events, and other history",
       "confidence": 0.90,
-      "sources": ["https://rotki.com"]
+      "sources": [
+        "https://rotki.com"
+      ]
     },
     "analytics_and_reporting": {
       "value": true,
       "description": "Historical data visualization, PnL reports, net value over time, asset distribution charts",
       "graphical_insights": "Historical data visualization for financial decision-making",
       "confidence": 0.90,
-      "sources": ["https://rotki.com", "https://github.com/rotki/rotki"]
+      "sources": [
+        "https://rotki.com",
+        "https://github.com/rotki/rotki"
+      ]
     },
     "accounting_and_tax": {
       "value": true,
       "description": "Accounting and tax report generation for cryptocurrency activities",
       "disclaimer": "Not a substitute for professional tax or legal advice; users responsible for data accuracy",
       "confidence": 0.85,
-      "sources": ["https://docs.rotki.com", "https://rotki.com"]
+      "sources": [
+        "https://docs.rotki.com",
+        "https://rotki.com"
+      ]
     },
     "staking_tracking": {
       "value": true,
       "availability": "Premium feature",
       "description": "Track staking across ETH, Liquity, Kraken, and more with detailed gains, performance, and rewards breakdown",
       "confidence": 0.85,
-      "sources": ["https://rotki.com/products"]
+      "sources": [
+        "https://rotki.com/products"
+      ]
     },
     "multi_device_sync": {
       "value": true,
       "availability": "Premium feature",
       "description": "Encrypted cloud backup with multi-device sync; data encrypted with user password for complete privacy",
       "confidence": 0.85,
-      "sources": ["https://rotki.com/products"]
+      "sources": [
+        "https://rotki.com/products"
+      ]
     },
     "customizable_ui": {
       "value": true,
       "description": "Customizable user interface and reporting built with Vue.js",
       "confidence": 0.80,
-      "sources": ["https://github.com/rotki/rotki"]
+      "sources": [
+        "https://github.com/rotki/rotki"
+      ]
     },
     "self_hosted_privacy": {
       "value": true,
       "description": "Complete user control over data with no cloud dependency for core features; local-first architecture",
       "confidence": 0.95,
-      "sources": ["https://rotki.com", "https://docs.rotki.com"]
+      "sources": [
+        "https://rotki.com",
+        "https://docs.rotki.com"
+      ]
     }
   },
   "mission_and_values": {
     "mission_statement": {
       "value": "Bring transparency to the crypto and financial sectors through opensource software, empowering users with a secure, self-sovereign alternative to cloud-based tracking services",
       "confidence": 0.90,
-      "sources": ["https://rotki.com", "https://github.com/rotki/rotki"],
+      "sources": [
+        "https://rotki.com",
+        "https://github.com/rotki/rotki"
+      ],
       "verification_tier": "Tier 1 - Primary Sources"
     },
     "core_values": [
@@ -975,5 +1042,11 @@
     "api_calls_made": 15,
     "sources_verified": 15,
     "confidence_checks_performed": 42
-  }
+  },
+  "website": "https://rotki.com",
+  "website_confidence": 0.85,
+  "website_sources": [
+    "https://rotki.com",
+    "seshat domain discovery"
+  ]
 }

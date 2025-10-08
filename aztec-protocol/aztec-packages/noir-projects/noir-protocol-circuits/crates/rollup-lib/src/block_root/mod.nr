@@ -1,0 +1,15 @@
+pub(crate) mod components;
+pub(crate) mod block_root_first_rollup_private_inputs;
+pub(crate) mod block_root_single_tx_first_rollup_private_inputs;
+pub(crate) mod block_root_empty_tx_first_rollup_private_inputs;
+pub(crate) mod block_root_rollup_private_inputs;
+pub(crate) mod block_root_single_tx_rollup_private_inputs;
+mod tests;
+
+// Re-exports
+pub use crate::abis::BlockRollupPublicInputs;
+pub use block_root_empty_tx_first_rollup_private_inputs::BlockRootEmptyTxFirstRollupPrivateInputs;
+pub use block_root_first_rollup_private_inputs::BlockRootFirstRollupPrivateInputs;
+pub use block_root_rollup_private_inputs::BlockRootRollupPrivateInputs;
+pub use block_root_single_tx_first_rollup_private_inputs::BlockRootSingleTxFirstRollupPrivateInputs;
+pub use block_root_single_tx_rollup_private_inputs::BlockRootSingleTxRollupPrivateInputs;

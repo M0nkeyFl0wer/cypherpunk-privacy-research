@@ -1,0 +1,17 @@
+{
+  "source": "Open Source Observer",
+  "discovered_at": "2025-09-29T14:42:57.338172",
+  "oso_name": "Starmaker",
+  "github_repos": [
+    "https://github.com/starmakerzksync"
+  ],
+  "blockchain_addresses": [],
+  "websites": [
+    "https://starmaker.exchange/"
+  ],
+  "npm_packages": [],
+  "defillama_urls": [],
+  "description": "Starmaker is a decentralized fundraising platform and exchange that empowers Web3 projects to raise funds and facilitate trading. Operating on zkSync and Mantle networks, it offers a secure environment for token swaps and liquidity provision. The platform's native token, STAR, is used for governance and utility within the ecosystem.",
+  "social": {},
+  "confidence": "medium"
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "timestamp":"2025-09-29T20:18:25.000",
+    "data":"Domain Name: railgun.org\r\nRegistry Domain ID: REDACTED\r\nRegistrar WHOIS Server: whois.tucows.com\r\nRegistrar URL: http:\/\/www.tucows.com\r\nUpdated Date: 2025-07-04T14:42:28Z\r\nCreation Date: 2000-04-14T17:16:33Z\r\nRegistry Expiry Date: 2026-04-14T17:16:33Z\r\nRegistrar: Tucows Domains Inc.\r\nRegistrar IANA ID: 69\r\nRegistrar Abuse Contact Email: domainabuse@tucows.com\r\nRegistrar Abuse Contact Phone: +1.4165350123\r\nDomain Status: clientTransferProhibited https:\/\/icann.org\/epp#clientTransferProhibited\r\nDomain Status: clientUpdateProhibited https:\/\/icann.org\/epp#clientUpdateProhibited\r\nName Server: liberty.ns.cloudflare.com\r\nName Server: merlin.ns.cloudflare.com\r\nDNSSEC: signedDelegation\r\nURL of the ICANN Whois Inaccuracy Complaint Form: https:\/\/icann.org\/wicf\/\r\n&gt;&gt;&gt; Last update of WHOIS database: 2025-09-30T00:18:24Z &lt;&lt;&lt;\r\n\r\nFor more information on Whois status codes, please visit https:\/\/icann.org\/epp\r\n\r\nTerms of Use: Access to Public Interest Registry WHOIS information is provided to assist persons in determining the co",
+    "module":"sfp_whois",
+    "event_type":"DOMAIN_WHOIS",
+    "confidence":100,
+    "visibility":100,
+    "risk":0,
+    "hash":"5089755a08c300c93677d0f10d87011af5fb237e485620e611313d9b28882f8b",
+    "project":"railgun",
+    "date":"2025-09-29T00:00:00.000"
+  },
+  {
+    "timestamp":"2025-09-29T20:18:25.000",
+    "data":"TUCOWS DOMAINS, INC.",
+    "module":"sfp_whois",
+    "event_type":"DOMAIN_REGISTRAR",
+    "confidence":100,
+    "visibility":100,
+    "risk":0,
+    "hash":"5d8b4c26c7858ef94e39de2432729346bfc4f8306af29e29430bd40968ea446e",
+    "project":"railgun",
+    "date":"2025-09-29T00:00:00.000"
+  },
+  {
+    "timestamp":"2025-09-29T20:18:23.000",
+    "data":"railgun.org",
+    "module":"",
+    "event_type":"ROOT",
+    "confidence":100,
+    "visibility":100,
+    "risk":0,
+    "hash":"ROOT",
+    "project":"railgun",
+    "date":"2025-09-29T00:00:00.000"
+  },
+  {
+    "timestamp":"2025-09-29T20:18:23.000",
+    "data":"railgun.org",
+    "module":"SpiderFoot UI",
+    "event_type":"INTERNET_NAME",
+    "confidence":100,
+    "visibility":100,
+    "risk":0,
+    "hash":"6eae75709c9f1d3192c872843e0456becaf680ea5a8dbcca8e459c444c87772b",
+    "project":"railgun",
+    "date":"2025-09-29T00:00:00.000"
+  },
+  {
+    "timestamp":"2025-09-29T20:18:23.000",
+    "data":"railgun.org",
+    "module":"SpiderFoot UI",
+    "event_type":"DOMAIN_NAME",
+    "confidence":100,
+    "visibility":100,
+    "risk":0,
+    "hash":"05771c43a03b5d10c316741f91230c66d51e41d97ce9c0bfd77b72b6dc9609fb",
+    "project":"railgun",
+    "date":"2025-09-29T00:00:00.000"
+  }
+]

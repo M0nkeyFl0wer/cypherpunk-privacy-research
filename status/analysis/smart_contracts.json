@@ -1,0 +1,16 @@
+{
+  "source": "Open Source Observer",
+  "discovered_at": "2025-09-29T14:42:57.312472",
+  "contracts": [
+    {
+      "address": "0x4f0e571c956d54658fd9ebee5e5b4279eb5e765a",
+      "networks": [
+        "optimism"
+      ],
+      "tags": [
+        "safe",
+        "wallet"
+      ]
+    }
+  ]
+}

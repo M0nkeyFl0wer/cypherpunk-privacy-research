@@ -1,0 +1,108 @@
+{
+  "owner": "xx-labs",
+  "repo_name": "xxchain",
+  "full_name": "xxfoundation/xxchain",
+  "github_url": "https://github.com/xx-labs/xxchain",
+  "html_url": "https://github.com/xxfoundation/xxchain",
+  "stars": 20,
+  "forks": 11,
+  "watchers": 20,
+  "open_issues": 0,
+  "contributors": 2,
+  "created_at": "2021-09-23T21:21:16Z",
+  "updated_at": "2025-09-06T16:32:01Z",
+  "pushed_at": "2024-06-28T17:57:11Z",
+  "size_kb": 6996,
+  "default_branch": "master",
+  "primary_language": "Rust",
+  "languages": [
+    {
+      "name": "Rust",
+      "bytes": 1137727,
+      "percentage": 99.61
+    },
+    {
+      "name": "Makefile",
+      "bytes": 2438,
+      "percentage": 0.21
+    },
+    {
+      "name": "Shell",
+      "bytes": 1659,
+      "percentage": 0.15
+    },
+    {
+      "name": "Dockerfile",
+      "bytes": 370,
+      "percentage": 0.03
+    }
+  ],
+  "total_languages": 4,
+  "top_contributors": [
+    {
+      "username": "bernardo-xxnet",
+      "contributions": 131,
+      "avatar_url": "https://avatars.githubusercontent.com/u/87203423?v=4",
+      "profile_url": "https://github.com/bernardo-xxnet"
+    },
+    {
+      "username": "baltasar-xxlabs",
+      "contributions": 3,
+      "avatar_url": "https://avatars.githubusercontent.com/u/99216601?v=4",
+      "profile_url": "https://github.com/baltasar-xxlabs"
+    }
+  ],
+  "recent_commits": [
+    {
+      "sha": "617b35d",
+      "message": "Merge pull request #8 from xx-labs/xxnetwork-runtime-206",
+      "author": "Bernardo Cardoso",
+      "date": "2024-06-28T17:24:44Z",
+      "url": "https://github.com/xxfoundation/xxchain/commit/617b35d134cf0fa568d37576204c0ca126e461e6"
+    },
+    {
+      "sha": "43cb5e9",
+      "message": "Delete old vesting migration. Add Bridge adjustment migration",
+      "author": "Bernardo Cardoso",
+      "date": "2024-06-27T03:38:02Z",
+      "url": "https://github.com/xxfoundation/xxchain/commit/43cb5e9ed14481dff50ccc8a60bb979c970bbb43"
+    },
+    {
+      "sha": "1dfc0a9",
+      "message": "Enable bridge \ud83c\udf09\ud83c\udf89",
+      "author": "Bernardo Cardoso",
+      "date": "2024-06-26T22:05:21Z",
+      "url": "https://github.com/xxfoundation/xxchain/commit/1dfc0a9d2d930f960ea30d33bd127159620632e9"
+    },
+    {
+      "sha": "85a8173",
+      "message": "Update Substrate dep to include new commit",
+      "author": "Bernardo Cardoso",
+      "date": "2024-06-12T22:34:26Z",
+      "url": "https://github.com/xxfoundation/xxchain/commit/85a8173b8dd6ef61120596d86387f2d5d4596ef3"
+    },
+    {
+      "sha": "af8d7fa",
+      "message": "Add TLS enabled bootnode addresses to genesis spec",
+      "author": "Bernardo Cardoso",
+      "date": "2024-05-09T21:17:51Z",
+      "url": "https://github.com/xxfoundation/xxchain/commit/af8d7fa3a0f03c16fc632e7b498fedb629b0d5d6"
+    }
+  ],
+  "total_commits_sample": 10,
+  "description": "xx network Substrate based blockchain node",
+  "homepage": null,
+  "topics": [],
+  "license": "GNU General Public License v3.0",
+  "is_fork": false,
+  "is_archived": false,
+  "is_disabled": false,
+  "is_private": false,
+  "has_wiki": true,
+  "has_issues": true,
+  "has_projects": true,
+  "analyzed_at": "2025-10-07T23:23:50.420064",
+  "data_source": "github-api-v3",
+  "confidence": 1.0,
+  "verified": true
+}

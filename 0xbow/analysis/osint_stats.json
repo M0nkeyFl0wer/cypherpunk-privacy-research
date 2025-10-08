@@ -1,0 +1,35 @@
+{
+  "scan_id": "878F9CE8",
+  "project": "0xbow",
+  "target": "0xbow.io",
+  "total_events": 149,
+  "modules_used": 9,
+  "event_types": {
+    "AFFILIATE_INTERNET_NAME": 27,
+    "AFFILIATE_IPADDR": 27,
+    "TCP_PORT_OPEN": 19,
+    "INTERNET_NAME": 9,
+    "CO_HOSTED_SITE_DOMAIN": 9,
+    "SSL_CERTIFICATE_ISSUED": 8,
+    "CO_HOSTED_SITE": 8,
+    "SSL_CERTIFICATE_ISSUER": 8,
+    "SSL_CERTIFICATE_RAW": 8,
+    "COMPANY_NAME": 6,
+    "IP_ADDRESS": 6,
+    "SSL_CERTIFICATE_MISMATCH": 3,
+    "DOMAIN_WHOIS": 2,
+    "DOMAIN_NAME": 2,
+    "DOMAIN_REGISTRAR": 2,
+    "IPV6_ADDRESS": 2,
+    "DOMAIN_NAME_PARENT": 2,
+    "ROOT": 1
+  },
+  "risk_distribution": {
+    "0": 149
+  },
+  "date_range": {
+    "start": "2025-09-30 00:19:27",
+    "end": "2025-09-30 00:25:14"
+  },
+  "processed_at": "2025-09-30 00:26:31"
+}

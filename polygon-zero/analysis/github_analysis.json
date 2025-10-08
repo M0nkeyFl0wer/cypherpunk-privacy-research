@@ -1,0 +1,161 @@
+{
+  "owner": "0xPolygonZero",
+  "repo_name": "plonky2",
+  "full_name": "0xPolygonZero/plonky2",
+  "github_url": "https://github.com/0xPolygonZero/plonky2",
+  "html_url": "https://github.com/0xPolygonZero/plonky2",
+  "stars": 833,
+  "forks": 339,
+  "watchers": 833,
+  "open_issues": 26,
+  "contributors": 58,
+  "created_at": "2021-02-17T22:36:59Z",
+  "updated_at": "2025-10-03T18:13:54Z",
+  "pushed_at": "2025-07-01T15:45:09Z",
+  "size_kb": 18064,
+  "default_branch": "main",
+  "primary_language": "Rust",
+  "languages": [
+    {
+      "name": "Rust",
+      "bytes": 1668343,
+      "percentage": 99.29
+    },
+    {
+      "name": "Python",
+      "bytes": 9329,
+      "percentage": 0.56
+    },
+    {
+      "name": "HTML",
+      "bytes": 1563,
+      "percentage": 0.09
+    },
+    {
+      "name": "Shell",
+      "bytes": 1002,
+      "percentage": 0.06
+    },
+    {
+      "name": "RenderScript",
+      "bytes": 1,
+      "percentage": 0.0
+    }
+  ],
+  "total_languages": 5,
+  "top_contributors": [
+    {
+      "username": "wborgeaud",
+      "contributions": 1359,
+      "avatar_url": "https://avatars.githubusercontent.com/u/22958988?v=4",
+      "profile_url": "https://github.com/wborgeaud"
+    },
+    {
+      "username": "npwardberkeley",
+      "contributions": 1107,
+      "avatar_url": "https://avatars.githubusercontent.com/u/8209319?v=4",
+      "profile_url": "https://github.com/npwardberkeley"
+    },
+    {
+      "username": "dlubarov",
+      "contributions": 961,
+      "avatar_url": "https://avatars.githubusercontent.com/u/828366?v=4",
+      "profile_url": "https://github.com/dlubarov"
+    },
+    {
+      "username": "typ3c4t",
+      "contributions": 410,
+      "avatar_url": "https://avatars.githubusercontent.com/u/50062893?v=4",
+      "profile_url": "https://github.com/typ3c4t"
+    },
+    {
+      "username": "Nashtare",
+      "contributions": 306,
+      "avatar_url": "https://avatars.githubusercontent.com/u/30937548?v=4",
+      "profile_url": "https://github.com/Nashtare"
+    },
+    {
+      "username": "nbgl",
+      "contributions": 161,
+      "avatar_url": "https://avatars.githubusercontent.com/u/12507513?v=4",
+      "profile_url": "https://github.com/nbgl"
+    },
+    {
+      "username": "LindaGuiga",
+      "contributions": 99,
+      "avatar_url": "https://avatars.githubusercontent.com/u/101227802?v=4",
+      "profile_url": "https://github.com/LindaGuiga"
+    },
+    {
+      "username": "4l0n50",
+      "contributions": 74,
+      "avatar_url": "https://avatars.githubusercontent.com/u/17023377?v=4",
+      "profile_url": "https://github.com/4l0n50"
+    },
+    {
+      "username": "hratoanina",
+      "contributions": 60,
+      "avatar_url": "https://avatars.githubusercontent.com/u/28577001?v=4",
+      "profile_url": "https://github.com/hratoanina"
+    },
+    {
+      "username": "BGluth",
+      "contributions": 57,
+      "avatar_url": "https://avatars.githubusercontent.com/u/7939279?v=4",
+      "profile_url": "https://github.com/BGluth"
+    }
+  ],
+  "recent_commits": [
+    {
+      "sha": "5d9da5a",
+      "message": "Add deprecation notice",
+      "author": "Robin Salen",
+      "date": "2025-07-01T15:45:06Z",
+      "url": "https://github.com/0xPolygonZero/plonky2/commit/5d9da5a65bbcba2c66eb29c035090eb2e9ccb05f"
+    },
+    {
+      "sha": "82791c4",
+      "message": "Bump version",
+      "author": "Robin Salen",
+      "date": "2025-05-12T19:09:58Z",
+      "url": "https://github.com/0xPolygonZero/plonky2/commit/82791c4809d6275682c34b926390ecdbdc2a5297"
+    },
+    {
+      "sha": "c671e2d",
+      "message": "Add constraints binding (#1679)",
+      "author": "Linda Guiga",
+      "date": "2025-05-12T13:54:58Z",
+      "url": "https://github.com/0xPolygonZero/plonky2/commit/c671e2d803d8f6a4af593593ec4c2ad5b83ad0c4"
+    },
+    {
+      "sha": "cd907f6",
+      "message": "Observe config parameters in challenger (#1678)",
+      "author": "Robin Salen",
+      "date": "2025-05-06T13:19:45Z",
+      "url": "https://github.com/0xPolygonZero/plonky2/commit/cd907f68e1d6580154983414c6c0a855b4507dd2"
+    },
+    {
+      "sha": "6a2c1b4",
+      "message": "chore: update broken links `LICENSE` (#1675)",
+      "author": "Gigabuidl",
+      "date": "2025-03-24T15:42:14Z",
+      "url": "https://github.com/0xPolygonZero/plonky2/commit/6a2c1b47b7b00864c2b65a44c18099b0152f550e"
+    }
+  ],
+  "total_commits_sample": 10,
+  "description": null,
+  "homepage": null,
+  "topics": [],
+  "license": "Apache License 2.0",
+  "is_fork": false,
+  "is_archived": false,
+  "is_disabled": false,
+  "is_private": false,
+  "has_wiki": true,
+  "has_issues": true,
+  "has_projects": true,
+  "analyzed_at": "2025-10-07T23:22:30.766371",
+  "data_source": "github-api-v3",
+  "confidence": 1.0,
+  "verified": true
+}

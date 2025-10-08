@@ -1,0 +1,196 @@
+{
+  "owner": "zcash",
+  "repo_name": "zcash",
+  "full_name": "zcash/zcash",
+  "github_url": "https://github.com/zcash/zcash",
+  "html_url": "https://github.com/zcash/zcash",
+  "stars": 5080,
+  "forks": 2104,
+  "watchers": 5080,
+  "open_issues": 1095,
+  "contributors": 100,
+  "created_at": "2014-11-22T03:13:10Z",
+  "updated_at": "2025-10-07T23:13:09Z",
+  "pushed_at": "2025-10-03T22:29:34Z",
+  "size_kb": 118085,
+  "default_branch": "master",
+  "primary_language": "C++",
+  "languages": [
+    {
+      "name": "C++",
+      "bytes": 7556539,
+      "percentage": 58.71
+    },
+    {
+      "name": "Python",
+      "bytes": 2448478,
+      "percentage": 19.02
+    },
+    {
+      "name": "C",
+      "bytes": 1789789,
+      "percentage": 13.9
+    },
+    {
+      "name": "Rust",
+      "bytes": 437840,
+      "percentage": 3.4
+    },
+    {
+      "name": "Shell",
+      "bytes": 196764,
+      "percentage": 1.53
+    },
+    {
+      "name": "M4",
+      "bytes": 179019,
+      "percentage": 1.39
+    },
+    {
+      "name": "Makefile",
+      "bytes": 110647,
+      "percentage": 0.86
+    },
+    {
+      "name": "CMake",
+      "bytes": 55520,
+      "percentage": 0.43
+    },
+    {
+      "name": "Sage",
+      "bytes": 42344,
+      "percentage": 0.33
+    },
+    {
+      "name": "Assembly",
+      "bytes": 28405,
+      "percentage": 0.22
+    },
+    {
+      "name": "HTML",
+      "bytes": 20943,
+      "percentage": 0.16
+    },
+    {
+      "name": "Dockerfile",
+      "bytes": 5308,
+      "percentage": 0.04
+    }
+  ],
+  "total_languages": 12,
+  "top_contributors": [
+    {
+      "username": "laanwj",
+      "contributions": 2899,
+      "avatar_url": "https://avatars.githubusercontent.com/u/126646?v=4",
+      "profile_url": "https://github.com/laanwj"
+    },
+    {
+      "username": "str4d",
+      "contributions": 2616,
+      "avatar_url": "https://avatars.githubusercontent.com/u/4993799?v=4",
+      "profile_url": "https://github.com/str4d"
+    },
+    {
+      "username": "nuttycom",
+      "contributions": 1133,
+      "avatar_url": "https://avatars.githubusercontent.com/u/27591?v=4",
+      "profile_url": "https://github.com/nuttycom"
+    },
+    {
+      "username": "gavinandresen",
+      "contributions": 1100,
+      "avatar_url": "https://avatars.githubusercontent.com/u/331997?v=4",
+      "profile_url": "https://github.com/gavinandresen"
+    },
+    {
+      "username": "sipa",
+      "contributions": 1087,
+      "avatar_url": "https://avatars.githubusercontent.com/u/548488?v=4",
+      "profile_url": "https://github.com/sipa"
+    },
+    {
+      "username": "zkbot",
+      "contributions": 1053,
+      "avatar_url": "https://avatars.githubusercontent.com/u/17032253?v=4",
+      "profile_url": "https://github.com/zkbot"
+    },
+    {
+      "username": "daira",
+      "contributions": 630,
+      "avatar_url": "https://avatars.githubusercontent.com/u/643204?v=4",
+      "profile_url": "https://github.com/daira"
+    },
+    {
+      "username": "ebfull",
+      "contributions": 511,
+      "avatar_url": "https://avatars.githubusercontent.com/u/3794471?v=4",
+      "profile_url": "https://github.com/ebfull"
+    },
+    {
+      "username": "bitcartel",
+      "contributions": 487,
+      "avatar_url": "https://avatars.githubusercontent.com/u/194979?v=4",
+      "profile_url": "https://github.com/bitcartel"
+    },
+    {
+      "username": "theuni",
+      "contributions": 368,
+      "avatar_url": "https://avatars.githubusercontent.com/u/417043?v=4",
+      "profile_url": "https://github.com/theuni"
+    }
+  ],
+  "recent_commits": [
+    {
+      "sha": "16ac743",
+      "message": "Merge pull request #7059 from zcash/release-v6.10.0",
+      "author": "Kris Nuttycombe",
+      "date": "2025-10-03T12:34:08Z",
+      "url": "https://github.com/zcash/zcash/commit/16ac743764a513e41dafb2cd79c2417c5bb41e81"
+    },
+    {
+      "sha": "385c6d9",
+      "message": "Update release notes for NU6.1 upgrade",
+      "author": "Kris Nuttycombe",
+      "date": "2025-10-02T19:18:58Z",
+      "url": "https://github.com/zcash/zcash/commit/385c6d907cc09e4f21e2d5ad2d1ce4ce14d05aa0"
+    },
+    {
+      "sha": "002eaee",
+      "message": "Set the NU6.1 mainnet consensus rules and activation height.",
+      "author": "Kris Nuttycombe",
+      "date": "2025-10-01T17:31:27Z",
+      "url": "https://github.com/zcash/zcash/commit/002eaeed9cc07dfafbf93942eeeaf125c02cfb43"
+    },
+    {
+      "sha": "1197cfc",
+      "message": "make-release.py: Updated book for 6.10.0.",
+      "author": "Kris Nuttycombe",
+      "date": "2025-10-01T16:44:24Z",
+      "url": "https://github.com/zcash/zcash/commit/1197cfc5eba42e4d9ca7353b24bb8e87deb75200"
+    },
+    {
+      "sha": "21764d7",
+      "message": "make-release.py: Updated release notes and changelog for 6.10.0.",
+      "author": "Kris Nuttycombe",
+      "date": "2025-10-01T16:44:24Z",
+      "url": "https://github.com/zcash/zcash/commit/21764d764ed72a022dbed037d266db1ac85ad313"
+    }
+  ],
+  "total_commits_sample": 10,
+  "description": "Zcash - Internet Money",
+  "homepage": "https://z.cash/",
+  "topics": [],
+  "license": "Other",
+  "is_fork": false,
+  "is_archived": false,
+  "is_disabled": false,
+  "is_private": false,
+  "has_wiki": true,
+  "has_issues": true,
+  "has_projects": true,
+  "analyzed_at": "2025-10-07T23:24:03.635062",
+  "data_source": "github-api-v3",
+  "confidence": 1.0,
+  "verified": true
+}

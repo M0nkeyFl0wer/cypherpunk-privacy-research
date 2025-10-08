@@ -1,0 +1,108 @@
+// === AUDIT STATUS ===
+// internal:    { status: not started, auditors: [], date: YYYY-MM-DD }
+// external_1:  { status: not started, auditors: [], date: YYYY-MM-DD }
+// external_2:  { status: not started, auditors: [], date: YYYY-MM-DD }
+// =====================
+
+#include "logic.hpp"
+#include "../circuit_builders/circuit_builders.hpp"
+#include "../plookup/plookup.hpp"
+#include "barretenberg/common/assert.hpp"
+#include "barretenberg/numeric/uint256/uint256.hpp"
+#include "barretenberg/stdlib/primitives/field/field.hpp"
+#include <cstddef>
+
+namespace bb::stdlib {
+
+/**
+ * @brief A logical AND or XOR over a variable number of bits.
+ *
+ * @details If the left and right operands are larger than num_bits, the result will be truncated to num_bits.
+ * However, the two operands could be range-constrained to num_bits before the call, which would remove the need to
+ * range constrain inside this function.
+ *
+ * @tparam Builder
+ * @param a
+ * @param b
+ * @param num_bits
+ * @param is_xor_gate
+ * @return field_t<Builder>
+ */
+template <typename Builder>
+field_t<Builder> logic<Builder>::create_logic_constraint(
+    field_pt& a,
+    field_pt& b,
+    size_t num_bits,
+    bool is_xor_gate,
+    const std::function<std::pair<uint256_t, uint256_t>(uint256_t, uint256_t, size_t)>& get_chunk)
+{
+    // ensure the number of bits doesn't exceed field size and is not negative
+    BB_ASSERT_LTE(num_bits, grumpkin::MAX_NO_WRAP_INTEGER_BIT_LENGTH);
+    BB_ASSERT_GT(num_bits, 0U);
+
+    if (a.is_constant() && !b.is_constant()) {
+        Builder* ctx = b.get_context();
+        uint256_t a_native(a.get_value());
+        field_pt a_witness = field_pt::from_witness_index(ctx, ctx->put_constant_variable(a_native));
+        return create_logic_constraint(a_witness, b, num_bits, is_xor_gate, get_chunk);
+    }
+
+    if (!a.is_constant() && b.is_constant()) {
+        Builder* ctx = a.get_context();
+        uint256_t b_native(b.get_value());
+        field_pt b_witness = field_pt::from_witness_index(ctx, ctx->put_constant_variable(b_native));
+        return create_logic_constraint(a, b_witness, num_bits, is_xor_gate, get_chunk);
+    }
+
+    Builder* ctx = a.get_context();
+
+    // We slice the input values into 32-bit chunks, and then use a multi-table lookup to compute the AND or XOR
+    // of each chunk. Since we perform the lookup from 32-bit multi-tables, the lookup operation implicitly enforces a
+    // 32-bit range constraint on each chunk. However, if `num_bits` is not a multiple of 32, the last chunk will be
+    // smaller than 32 bits. Therefore, the last chunk needs to be explicitly range-constrained to ensure it is in the
+    // correct range. The result is then reconstructed from the chunks, and checked against the original value.
+    const size_t num_chunks = (num_bits / 32) + ((num_bits % 32 == 0) ? 0 : 1);
+    auto left((uint256_t)a.get_value());
+    auto right((uint256_t)b.get_value());
+
+    field_pt a_accumulator(bb::fr::zero());
+    field_pt b_accumulator(bb::fr::zero());
+
+    field_pt res(ctx, 0);
+    for (size_t i = 0; i < num_chunks; ++i) {
+        size_t chunk_size = (i != num_chunks - 1) ? 32 : num_bits - i * 32;
+        auto [left_chunk, right_chunk] = get_chunk(left, right, chunk_size);
+
+        field_pt a_chunk = witness_pt(ctx, left_chunk);
+        field_pt b_chunk = witness_pt(ctx, right_chunk);
+        const auto multi_table_id = is_xor_gate ? plookup::MultiTableId::UINT32_XOR : plookup::MultiTableId::UINT32_AND;
+        field_pt result_chunk = stdlib::plookup_read<Builder>::read_from_2_to_1_table(multi_table_id, a_chunk, b_chunk);
+
+        auto scaling_factor = uint256_t(1) << (32 * i);
+        a_accumulator += a_chunk * scaling_factor;
+        b_accumulator += b_chunk * scaling_factor;
+
+        if (chunk_size != 32) {
+            // If the chunk is smaller than 32 bits, we need to explicitly range constrain it.
+            ctx->create_range_constraint(
+                a_chunk.witness_index, chunk_size, "stdlib logic: bad range on final chunk of left operand");
+            ctx->create_range_constraint(
+                b_chunk.witness_index, chunk_size, "stdlib logic: bad range on final chunk of right operand");
+        }
+
+        res += result_chunk * scaling_factor;
+
+        left = left >> 32;
+        right = right >> 32;
+    }
+
+    field_pt a_slice_other = a.no_wrap_split_at(num_bits).first;
+    field_pt b_slice_other = b.no_wrap_split_at(num_bits).first;
+    a_slice_other.assert_equal(a_accumulator, "stdlib logic: failed to reconstruct left operand");
+    b_slice_other.assert_equal(b_accumulator, "stdlib logic: failed to reconstruct right operand");
+
+    return res;
+}
+template class logic<bb::UltraCircuitBuilder>;
+template class logic<bb::MegaCircuitBuilder>;
+} // namespace bb::stdlib

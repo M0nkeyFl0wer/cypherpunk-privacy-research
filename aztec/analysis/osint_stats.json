@@ -1,0 +1,25 @@
+{
+  "scan_id": "AE8C447A",
+  "project": "aztec",
+  "target": "aztec.network",
+  "total_events": 132,
+  "modules_used": 5,
+  "event_types": {
+    "INTERNET_NAME": 64,
+    "IP_ADDRESS": 41,
+    "IPV6_ADDRESS": 14,
+    "DOMAIN_NAME_PARENT": 4,
+    "DOMAIN_REGISTRAR": 3,
+    "DOMAIN_WHOIS": 3,
+    "DOMAIN_NAME": 2,
+    "ROOT": 1
+  },
+  "risk_distribution": {
+    "0": 132
+  },
+  "date_range": {
+    "start": "2025-09-29 21:58:10",
+    "end": "2025-09-29 21:58:55"
+  },
+  "processed_at": "2025-09-30 00:10:26"
+}

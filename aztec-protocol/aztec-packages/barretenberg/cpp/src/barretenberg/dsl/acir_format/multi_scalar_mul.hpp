@@ -1,0 +1,39 @@
+// === AUDIT STATUS ===
+// internal:    { status: not started, auditors: [], date: YYYY-MM-DD }
+// external_1:  { status: not started, auditors: [], date: YYYY-MM-DD }
+// external_2:  { status: not started, auditors: [], date: YYYY-MM-DD }
+// =====================
+
+#pragma once
+#include "barretenberg/serialize/msgpack.hpp"
+#include "barretenberg/stdlib/primitives/field/field.hpp"
+#include "serde/index.hpp"
+#include "witness_constant.hpp"
+#include <cstdint>
+#include <vector>
+
+namespace acir_format {
+
+struct MultiScalarMul {
+    std::vector<WitnessOrConstant<bb::fr>> points;
+    std::vector<WitnessOrConstant<bb::fr>> scalars;
+    // Predicate indicating whether the constraint should be disabled:
+    // - true: the constraint is valid
+    // - false: the constraint is disabled, i.e it must not fail and can return whatever.
+    WitnessOrConstant<bb::fr> predicate;
+
+    uint32_t out_point_x;
+    uint32_t out_point_y;
+    uint32_t out_point_is_infinite;
+
+    // for serialization, update with any new fields
+    MSGPACK_FIELDS(points, scalars, predicate, out_point_x, out_point_y, out_point_is_infinite);
+    friend bool operator==(MultiScalarMul const& lhs, MultiScalarMul const& rhs) = default;
+};
+
+template <typename Builder>
+void create_multi_scalar_mul_constraint(Builder& builder,
+                                        const MultiScalarMul& input,
+                                        bool has_valid_witness_assignments);
+
+} // namespace acir_format

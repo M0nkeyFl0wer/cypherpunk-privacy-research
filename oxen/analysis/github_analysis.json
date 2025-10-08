@@ -1,0 +1,202 @@
+{
+  "owner": "oxen-io",
+  "repo_name": "oxen-core",
+  "full_name": "oxen-io/oxen-core",
+  "github_url": "https://github.com/oxen-io/oxen-core",
+  "html_url": "https://github.com/oxen-io/oxen-core",
+  "stars": 328,
+  "forks": 131,
+  "watchers": 328,
+  "open_issues": 125,
+  "contributors": 100,
+  "created_at": "2018-01-15T22:50:09Z",
+  "updated_at": "2025-09-30T02:56:18Z",
+  "pushed_at": "2025-08-27T17:52:48Z",
+  "size_kb": 217372,
+  "default_branch": "dev",
+  "primary_language": "C++",
+  "languages": [
+    {
+      "name": "C++",
+      "bytes": 11697543,
+      "percentage": 81.24
+    },
+    {
+      "name": "C",
+      "bytes": 1788645,
+      "percentage": 12.42
+    },
+    {
+      "name": "Python",
+      "bytes": 502811,
+      "percentage": 3.49
+    },
+    {
+      "name": "CMake",
+      "bytes": 285642,
+      "percentage": 1.98
+    },
+    {
+      "name": "Shell",
+      "bytes": 52671,
+      "percentage": 0.37
+    },
+    {
+      "name": "Jsonnet",
+      "bytes": 19049,
+      "percentage": 0.13
+    },
+    {
+      "name": "Dockerfile",
+      "bytes": 17531,
+      "percentage": 0.12
+    },
+    {
+      "name": "Perl",
+      "bytes": 12143,
+      "percentage": 0.08
+    },
+    {
+      "name": "Makefile",
+      "bytes": 11581,
+      "percentage": 0.08
+    },
+    {
+      "name": "q",
+      "bytes": 11168,
+      "percentage": 0.08
+    },
+    {
+      "name": "Ruby",
+      "bytes": 736,
+      "percentage": 0.01
+    },
+    {
+      "name": "Batchfile",
+      "bytes": 105,
+      "percentage": 0.0
+    }
+  ],
+  "total_languages": 12,
+  "top_contributors": [
+    {
+      "username": "fluffypony",
+      "contributions": 3088,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1944293?v=4",
+      "profile_url": "https://github.com/fluffypony"
+    },
+    {
+      "username": "moneromooo-monero",
+      "contributions": 2898,
+      "avatar_url": "https://avatars.githubusercontent.com/u/8851073?v=4",
+      "profile_url": "https://github.com/moneromooo-monero"
+    },
+    {
+      "username": "Doy-lee",
+      "contributions": 2511,
+      "avatar_url": "https://avatars.githubusercontent.com/u/12163539?v=4",
+      "profile_url": "https://github.com/Doy-lee"
+    },
+    {
+      "username": "jagerman",
+      "contributions": 2285,
+      "avatar_url": "https://avatars.githubusercontent.com/u/4459524?v=4",
+      "profile_url": "https://github.com/jagerman"
+    },
+    {
+      "username": "luigi1111",
+      "contributions": 688,
+      "avatar_url": "https://avatars.githubusercontent.com/u/11213361?v=4",
+      "profile_url": "https://github.com/luigi1111"
+    },
+    {
+      "username": "darcys22",
+      "contributions": 389,
+      "avatar_url": "https://avatars.githubusercontent.com/u/2188604?v=4",
+      "profile_url": "https://github.com/darcys22"
+    },
+    {
+      "username": "tewinget",
+      "contributions": 356,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5104870?v=4",
+      "profile_url": "https://github.com/tewinget"
+    },
+    {
+      "username": "hyc",
+      "contributions": 232,
+      "avatar_url": "https://avatars.githubusercontent.com/u/306354?v=4",
+      "profile_url": "https://github.com/hyc"
+    },
+    {
+      "username": "stoffu",
+      "contributions": 216,
+      "avatar_url": "https://avatars.githubusercontent.com/u/26077532?v=4",
+      "profile_url": "https://github.com/stoffu"
+    },
+    {
+      "username": "warptangent",
+      "contributions": 168,
+      "avatar_url": "https://avatars.githubusercontent.com/u/9564330?v=4",
+      "profile_url": "https://github.com/warptangent"
+    }
+  ],
+  "recent_commits": [
+    {
+      "sha": "a99e598",
+      "message": "11.5.0",
+      "author": "Jason Rhinelander",
+      "date": "2025-07-14T17:22:08Z",
+      "url": "https://github.com/oxen-io/oxen-core/commit/a99e5980077753a53b7f8178c2df1f1c0511431d"
+    },
+    {
+      "sha": "33e70fd",
+      "message": "Schedule mandatory SN update to fix reward calcs",
+      "author": "Jason Rhinelander",
+      "date": "2025-07-15T00:17:28Z",
+      "url": "https://github.com/oxen-io/oxen-core/commit/33e70fd4d7f12b978b206512f386ee6ebebc8fa8"
+    },
+    {
+      "sha": "b051601",
+      "message": "Merge remote-tracking branches 'Doy-lee/doyle-fix-deadlock-on-write-txn-conflict', 'Doy-lee/doyle-cl",
+      "author": "Jason Rhinelander",
+      "date": "2025-07-18T19:32:30Z",
+      "url": "https://github.com/oxen-io/oxen-core/commit/b0516019ed9fe419d32ec4eab5a0ac054e3bc477"
+    },
+    {
+      "sha": "e46d488",
+      "message": "Deeper checks, rescans, and add rescan snapshot",
+      "author": "Jason Rhinelander",
+      "date": "2025-07-16T16:07:18Z",
+      "url": "https://github.com/oxen-io/oxen-core/commit/e46d488bb9b7daf604ef2e5a2618689ee62081a5"
+    },
+    {
+      "sha": "8453a88",
+      "message": "Reverse the fixup order, add some post-failure checks, merge rescan checks",
+      "author": "doylet",
+      "date": "2025-07-16T01:21:23Z",
+      "url": "https://github.com/oxen-io/oxen-core/commit/8453a88941954ba606952d26fee4b40c41b16c18"
+    }
+  ],
+  "total_commits_sample": 10,
+  "description": "Oxen core repository, containing oxend and oxen cli wallets ",
+  "homepage": "https://oxen.io",
+  "topics": [
+    "blockchain",
+    "cryptocurrency",
+    "masternode",
+    "privacy",
+    "ring-signatures"
+  ],
+  "license": "Other",
+  "is_fork": true,
+  "is_archived": false,
+  "is_disabled": false,
+  "is_private": false,
+  "has_wiki": true,
+  "has_issues": true,
+  "has_projects": true,
+  "analyzed_at": "2025-10-07T23:22:17.987511",
+  "data_source": "github-api-v3",
+  "confidence": 1.0,
+  "verified": true
+}
