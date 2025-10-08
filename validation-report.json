@@ -1,0 +1,272 @@
+{
+  "timestamp": "2025-10-08T01:31:20.157Z",
+  "projects_checked": 88,
+  "files_checked": 123,
+  "violations_count": 6,
+  "warnings_count": 36,
+  "violations": [
+    {
+      "project": "ai-discovered",
+      "file": "constitutional_research.json",
+      "type": "SYNTHETIC_DATA",
+      "pattern": "PLACEHOLDER marker",
+      "matches": 6,
+      "message": "Found 6 instance(s) of synthetic pattern: PLACEHOLDER marker"
+    },
+    {
+      "project": "alephim",
+      "file": "constitutional_research.json",
+      "type": "SYNTHETIC_DATA",
+      "pattern": "PLACEHOLDER marker",
+      "matches": 2,
+      "message": "Found 2 instance(s) of synthetic pattern: PLACEHOLDER marker"
+    },
+    {
+      "project": "aztec",
+      "file": "constitutional_research.json",
+      "type": "PARSE_ERROR",
+      "message": "Failed to parse JSON: Expected ',' or ']' after array element in JSON at position 18181 (line 554 column 3)"
+    },
+    {
+      "project": "nym",
+      "file": "constitutional_research.json",
+      "type": "SYNTHETIC_DATA",
+      "pattern": "PLACEHOLDER marker",
+      "matches": 1,
+      "message": "Found 1 instance(s) of synthetic pattern: PLACEHOLDER marker"
+    },
+    {
+      "project": "railway-wallet",
+      "file": "constitutional_research.json",
+      "type": "PARSE_ERROR",
+      "message": "Failed to parse JSON: Expected ',' or ']' after array element in JSON at position 22473 (line 639 column 3)"
+    },
+    {
+      "project": "rotki",
+      "file": "constitutional_research.json",
+      "type": "SYNTHETIC_DATA",
+      "pattern": "PLACEHOLDER marker",
+      "matches": 2,
+      "message": "Found 2 instance(s) of synthetic pattern: PLACEHOLDER marker"
+    }
+  ],
+  "warnings": [
+    {
+      "project": "0xbow",
+      "file": "project_metadata.json",
+      "type": "MISSING_CONFIDENCE",
+      "message": "Missing confidence score (0.0-1.0 required per CONSTITUTION.md)"
+    },
+    {
+      "project": "0xbow",
+      "file": "project_metadata.json",
+      "type": "MISSING_SOURCES",
+      "message": "Missing sources array (multi-source verification required)"
+    },
+    {
+      "project": "alephim",
+      "file": "project_metadata.json",
+      "type": "MISSING_CONFIDENCE",
+      "message": "Missing confidence score (0.0-1.0 required per CONSTITUTION.md)"
+    },
+    {
+      "project": "alephim",
+      "file": "project_metadata.json",
+      "type": "MISSING_SOURCES",
+      "message": "Missing sources array (multi-source verification required)"
+    },
+    {
+      "project": "arpa",
+      "file": "project_metadata.json",
+      "type": "MISSING_CONFIDENCE",
+      "message": "Missing confidence score (0.0-1.0 required per CONSTITUTION.md)"
+    },
+    {
+      "project": "arpa",
+      "file": "project_metadata.json",
+      "type": "MISSING_SOURCES",
+      "message": "Missing sources array (multi-source verification required)"
+    },
+    {
+      "project": "aztec",
+      "file": "project_metadata.json",
+      "type": "MISSING_CONFIDENCE",
+      "message": "Missing confidence score (0.0-1.0 required per CONSTITUTION.md)"
+    },
+    {
+      "project": "aztec",
+      "file": "project_metadata.json",
+      "type": "MISSING_SOURCES",
+      "message": "Missing sources array (multi-source verification required)"
+    },
+    {
+      "project": "beam",
+      "file": "project_metadata.json",
+      "type": "MISSING_CONFIDENCE",
+      "message": "Missing confidence score (0.0-1.0 required per CONSTITUTION.md)"
+    },
+    {
+      "project": "beam",
+      "file": "project_metadata.json",
+      "type": "MISSING_SOURCES",
+      "message": "Missing sources array (multi-source verification required)"
+    },
+    {
+      "project": "grin",
+      "file": "project_metadata.json",
+      "type": "MISSING_CONFIDENCE",
+      "message": "Missing confidence score (0.0-1.0 required per CONSTITUTION.md)"
+    },
+    {
+      "project": "grin",
+      "file": "project_metadata.json",
+      "type": "MISSING_SOURCES",
+      "message": "Missing sources array (multi-source verification required)"
+    },
+    {
+      "project": "mask-network",
+      "file": "project_metadata.json",
+      "type": "MISSING_CONFIDENCE",
+      "message": "Missing confidence score (0.0-1.0 required per CONSTITUTION.md)"
+    },
+    {
+      "project": "mask-network",
+      "file": "project_metadata.json",
+      "type": "MISSING_SOURCES",
+      "message": "Missing sources array (multi-source verification required)"
+    },
+    {
+      "project": "nym",
+      "file": "project_metadata.json",
+      "type": "MISSING_CONFIDENCE",
+      "message": "Missing confidence score (0.0-1.0 required per CONSTITUTION.md)"
+    },
+    {
+      "project": "nym",
+      "file": "project_metadata.json",
+      "type": "MISSING_SOURCES",
+      "message": "Missing sources array (multi-source verification required)"
+    },
+    {
+      "project": "pirate-chain",
+      "file": "project_metadata.json",
+      "type": "MISSING_CONFIDENCE",
+      "message": "Missing confidence score (0.0-1.0 required per CONSTITUTION.md)"
+    },
+    {
+      "project": "pirate-chain",
+      "file": "project_metadata.json",
+      "type": "MISSING_SOURCES",
+      "message": "Missing sources array (multi-source verification required)"
+    },
+    {
+      "project": "privatepool",
+      "file": "project_metadata.json",
+      "type": "MISSING_CONFIDENCE",
+      "message": "Missing confidence score (0.0-1.0 required per CONSTITUTION.md)"
+    },
+    {
+      "project": "privatepool",
+      "file": "project_metadata.json",
+      "type": "MISSING_SOURCES",
+      "message": "Missing sources array (multi-source verification required)"
+    },
+    {
+      "project": "railgun-relay-adapt",
+      "file": "project_metadata.json",
+      "type": "MISSING_CONFIDENCE",
+      "message": "Missing confidence score (0.0-1.0 required per CONSTITUTION.md)"
+    },
+    {
+      "project": "railgun-relay-adapt",
+      "file": "project_metadata.json",
+      "type": "MISSING_SOURCES",
+      "message": "Missing sources array (multi-source verification required)"
+    },
+    {
+      "project": "railway-wallet",
+      "file": "project_metadata.json",
+      "type": "MISSING_CONFIDENCE",
+      "message": "Missing confidence score (0.0-1.0 required per CONSTITUTION.md)"
+    },
+    {
+      "project": "railway-wallet",
+      "file": "project_metadata.json",
+      "type": "MISSING_SOURCES",
+      "message": "Missing sources array (multi-source verification required)"
+    },
+    {
+      "project": "rotki",
+      "file": "project_metadata.json",
+      "type": "MISSING_CONFIDENCE",
+      "message": "Missing confidence score (0.0-1.0 required per CONSTITUTION.md)"
+    },
+    {
+      "project": "rotki",
+      "file": "project_metadata.json",
+      "type": "MISSING_SOURCES",
+      "message": "Missing sources array (multi-source verification required)"
+    },
+    {
+      "project": "session",
+      "file": "project_metadata.json",
+      "type": "MISSING_CONFIDENCE",
+      "message": "Missing confidence score (0.0-1.0 required per CONSTITUTION.md)"
+    },
+    {
+      "project": "session",
+      "file": "project_metadata.json",
+      "type": "MISSING_SOURCES",
+      "message": "Missing sources array (multi-source verification required)"
+    },
+    {
+      "project": "sismo",
+      "file": "project_metadata.json",
+      "type": "MISSING_CONFIDENCE",
+      "message": "Missing confidence score (0.0-1.0 required per CONSTITUTION.md)"
+    },
+    {
+      "project": "sismo",
+      "file": "project_metadata.json",
+      "type": "MISSING_SOURCES",
+      "message": "Missing sources array (multi-source verification required)"
+    },
+    {
+      "project": "status",
+      "file": "project_metadata.json",
+      "type": "MISSING_CONFIDENCE",
+      "message": "Missing confidence score (0.0-1.0 required per CONSTITUTION.md)"
+    },
+    {
+      "project": "status",
+      "file": "project_metadata.json",
+      "type": "MISSING_SOURCES",
+      "message": "Missing sources array (multi-source verification required)"
+    },
+    {
+      "project": "taiko",
+      "file": "project_metadata.json",
+      "type": "MISSING_CONFIDENCE",
+      "message": "Missing confidence score (0.0-1.0 required per CONSTITUTION.md)"
+    },
+    {
+      "project": "taiko",
+      "file": "project_metadata.json",
+      "type": "MISSING_SOURCES",
+      "message": "Missing sources array (multi-source verification required)"
+    },
+    {
+      "project": "zion",
+      "file": "project_metadata.json",
+      "type": "MISSING_CONFIDENCE",
+      "message": "Missing confidence score (0.0-1.0 required per CONSTITUTION.md)"
+    },
+    {
+      "project": "zion",
+      "file": "project_metadata.json",
+      "type": "MISSING_SOURCES",
+      "message": "Missing sources array (multi-source verification required)"
+    }
+  ],
+  "passed": false
+}
