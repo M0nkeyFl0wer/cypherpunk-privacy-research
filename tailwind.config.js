@@ -8,27 +8,27 @@ module.exports = {
   theme: {
     extend: {
       // Web3Privacy Now Brand Colors
-      // Source: web3privacy.info and github.com/web3privacy/brand
+      // Source: Brand Posters 2025 - Stark cyberpunk/surveillance aesthetic
       colors: {
         brand: {
-          // Background colors (dark theme)
-          'bg-dark': '#171717',
-          'bg-darker': '#0a0a0a',
-          'bg-hover': '#27272a',
-          'bg-active': '#3f3f46',
+          // Background colors (stark black theme)
+          'bg-dark': '#000000',
+          'bg-darker': '#000000',
+          'bg-hover': '#1a1a1a',
+          'bg-active': '#2a2a2a',
 
-          // Text colors
+          // Text colors (high contrast)
           'text-primary': '#ffffff',
-          'text-secondary': '#a1a1aa',
-          'text-muted': '#71717a',
+          'text-secondary': '#cccccc',
+          'text-muted': '#999999',
 
-          // Accent colors
-          'accent-red': '#ef4444',
-          'accent-blue': '#3b82f6',
-          'accent-green': '#22c55e',
-          'accent-yellow': '#eab308',
-          'accent-purple': '#a855f7',
-          'accent-pink': '#ec4899',
+          // Accent colors (cyberpunk palette)
+          'accent-red': '#ff0000',
+          'accent-blue': '#00bfff',
+          'accent-green': '#00ff00',
+          'accent-yellow': '#ffff00',
+          'accent-purple': '#bf00ff',
+          'accent-pink': '#ff00bf',
         },
       },
       fontFamily: {

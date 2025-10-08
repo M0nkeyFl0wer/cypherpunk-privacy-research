@@ -1,7 +1,9 @@
 /**
  * Web3Privacy Now Brand Configuration
- * Sourced from web3privacy.info and brand repository
+ * Sourced from Brand Posters 2025 Figma design
  *
+ * Design: Stark cyberpunk/surveillance aesthetic
+ * Background: Pure black (#000000) from Academy-3 poster
  * Brand Assets: https://github.com/web3privacy/brand
  * Website: https://web3privacy.info
  */
@@ -11,31 +13,31 @@ export const web3PrivacyBrand = {
   name: 'Web3Privacy Now',
   tagline: 'Building a culture of privacy in Web3',
 
-  // Colors (from website analysis)
+  // Colors (from Brand Posters 2025 - stark cyberpunk aesthetic)
   colors: {
-    // Primary colors
+    // Primary colors (pure black for high contrast)
     background: {
-      dark: '#171717',      // Main dark background
-      darker: '#0a0a0a',    // Deeper black
+      dark: '#000000',      // Stark black (Academy-3 poster)
+      darker: '#000000',    // Pure black
     },
     text: {
-      primary: '#ffffff',   // White text on dark
-      secondary: '#a1a1aa', // Gray text
-      muted: '#71717a',     // Muted gray
+      primary: '#ffffff',   // Pure white for high contrast
+      secondary: '#cccccc', // Light gray
+      muted: '#999999',     // Muted gray
     },
-    // Accent colors (from website's designation colors)
+    // Accent colors (cyberpunk palette)
     accents: {
-      red: '#ef4444',       // text-red-500
-      blue: '#3b82f6',      // text-blue-500
-      green: '#22c55e',     // text-green-500
-      yellow: '#eab308',    // text-yellow-500
-      purple: '#a855f7',    // text-purple-500
-      pink: '#ec4899',      // text-pink-500
+      red: '#ff0000',       // Pure red (cyberpunk)
+      blue: '#00bfff',      // Bright cyan blue
+      green: '#00ff00',     // Electric green
+      yellow: '#ffff00',    // Bright yellow
+      purple: '#bf00ff',    // Vivid purple
+      pink: '#ff00bf',      // Hot pink
     },
     // Interactive states
     interactive: {
-      hover: '#27272a',     // Subtle hover state
-      active: '#3f3f46',    // Active state
+      hover: '#1a1a1a',     // Subtle hover on black
+      active: '#2a2a2a',    // Active state
     },
   },
 
