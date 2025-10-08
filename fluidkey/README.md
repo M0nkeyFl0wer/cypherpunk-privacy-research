@@ -1,12 +1,24 @@
 # Fluidkey
 
-## Overview
+## 🔗 Links
 
-**Website:** https://fluidkey.com
+- **Website**: https://fluidkey.com
+
+## 📊 GitHub Statistics
+
+- ⭐ **Stars**: 41
+- 🔀 **Forks**: 7
+- 👥 **Contributors**: 2
+
+**Primary Language**: TypeScript
+**Total Languages**: 1
+
+**Language Distribution:**
+
 ## 🔒 Security Scan
 
-**Events Found:** 1072
-**Modules:** 7
+- **Events**: 1072
+- **Modules**: 7
 
 ---
 

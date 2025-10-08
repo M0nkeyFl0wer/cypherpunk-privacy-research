@@ -1,8 +1,10 @@
 # Pirate Chain
 
-## Overview
+## 🔗 Links
 
-**Website:** https://pirate-chain.com
+- **Website**: https://pirate-chain.com
+
+## 📝 Description
 
 Pirate Chain (ARRR) - Untraceable, Anonymous, Private Cryptocurrency
 

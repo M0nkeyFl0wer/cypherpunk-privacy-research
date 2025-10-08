@@ -2,8 +2,8 @@
 
 ## 🔒 Security Scan
 
-**Events Found:** 1436
-**Modules:** 10
+- **Events**: 1436
+- **Modules**: 10
 
 ---
 

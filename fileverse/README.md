@@ -1,12 +1,24 @@
 # Fileverse
 
-## Overview
+## 🔗 Links
 
-**Website:** https://fileverse.io
+- **Website**: https://fileverse.io
+
+## 📊 GitHub Statistics
+
+- ⭐ **Stars**: 100
+- 🔀 **Forks**: 12
+- 👥 **Contributors**: 10
+
+**Primary Language**: TypeScript
+**Total Languages**: 5
+
+**Language Distribution:**
+
 ## 🔒 Security Scan
 
-**Events Found:** 319
-**Modules:** 10
+- **Events**: 319
+- **Modules**: 10
 
 ---
 

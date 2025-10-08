@@ -1,14 +1,16 @@
 # Grin
 
-## Overview
+## 🔗 Links
 
-**Website:** https://grin.io
+- **Website**: https://grin.io
+
+## 📝 Description
 
 Minimal implementation of the Mimblewimble protocol.
 
 ## 📜 Smart Contracts
 
-- **Unknown**: `0x7aaf799516404a8d69ef3f0b55746d15613ae04e` (unknown)
+- **Contract**: `0x7aaf799516404a8d69ef3f0b55746d15613ae04e` (unknown)
 
 ---
 

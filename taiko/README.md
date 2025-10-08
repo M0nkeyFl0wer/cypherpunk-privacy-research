@@ -1,8 +1,10 @@
 # Taiko
 
-## Overview
+## 🔗 Links
 
-**Website:** https://taiko.io
+- **Website**: https://taiko.io
+
+## 📝 Description
 
 Taiko Alethia based rollup protocol 🥁 
 

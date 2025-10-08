@@ -81,8 +81,8 @@ export default function SearchResults({
     return (
       <div className={`flex items-center justify-center py-16 ${className}`}>
         <div className="text-center">
-          <div className="w-12 h-12 border-4 border-indigo-500 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
-          <p className="text-gray-600">Searching projects...</p>
+          <div className="w-12 h-12 border-4 border-brand-accent-purple border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+          <p className="text-brand-text-secondary">Searching projects...</p>
         </div>
       </div>
     );
@@ -92,7 +92,7 @@ export default function SearchResults({
     return (
       <div className={`text-center py-16 ${className}`}>
         <svg
-          className="w-16 h-16 text-gray-400 mx-auto mb-4"
+          className="w-16 h-16 text-brand-text-muted mx-auto mb-4"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -105,8 +105,8 @@ export default function SearchResults({
             d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
           />
         </svg>
-        <h3 className="text-lg font-semibold text-gray-900 mb-2">No projects found</h3>
-        <p className="text-gray-600 mb-4">
+        <h3 className="text-lg font-semibold text-brand-text-primary mb-2">No projects found</h3>
+        <p className="text-brand-text-secondary mb-4">
           No results for &quot;{query}&quot;. Try different keywords or check filters.
         </p>
       </div>
@@ -117,28 +117,28 @@ export default function SearchResults({
     <div className={className}>
       {/* Results header */}
       <div className="flex items-center justify-between mb-6 flex-wrap gap-4">
-        <div className="text-sm text-gray-700">
-          Showing <span className="font-semibold">{startIndex + 1}</span> to{' '}
-          <span className="font-semibold">{Math.min(endIndex, sortedResults.length)}</span> of{' '}
-          <span className="font-semibold">{sortedResults.length}</span>{' '}
+        <div className="text-sm text-brand-text-secondary">
+          Showing <span className="font-semibold text-brand-text-primary">{startIndex + 1}</span> to{' '}
+          <span className="font-semibold text-brand-text-primary">{Math.min(endIndex, sortedResults.length)}</span> of{' '}
+          <span className="font-semibold text-brand-text-primary">{sortedResults.length}</span>{' '}
           {sortedResults.length === 1 ? 'result' : 'results'}
           {query && (
             <>
-              {' '}for &quot;<span className="font-semibold">{query}</span>&quot;
+              {' '}for &quot;<span className="font-semibold text-brand-text-primary">{query}</span>&quot;
             </>
           )}
         </div>
 
         {/* Sort dropdown */}
         <div className="flex items-center gap-2">
-          <label htmlFor="sort-by" className="text-sm text-gray-700 font-medium">
+          <label htmlFor="sort-by" className="text-sm text-brand-text-secondary font-medium">
             Sort by:
           </label>
           <select
             id="sort-by"
             value={sortBy}
             onChange={e => setSortBy(e.target.value as typeof sortBy)}
-            className="px-3 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+            className="px-3 py-2 text-sm bg-brand-bg-darker border border-brand-bg-active text-brand-text-primary rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-accent-purple focus:border-transparent"
           >
             <option value="relevance">Relevance</option>
             <option value="name">Name (A-Z)</option>
@@ -156,12 +156,12 @@ export default function SearchResults({
             <Link
               key={project.id}
               href={`/project/${project.id}`}
-              className="group block bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden"
+              className="group block bg-brand-bg-darker border border-brand-bg-active rounded-lg shadow-sm hover:border-brand-accent-purple transition-all duration-200 overflow-hidden"
             >
               <div className="p-6">
                 {/* Project name */}
                 <div className="flex items-start justify-between gap-3 mb-3">
-                  <h3 className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 transition-colors line-clamp-2">
+                  <h3 className="text-lg font-semibold text-brand-text-primary group-hover:text-brand-accent-purple transition-colors line-clamp-2">
                     {highlightMatch(project.name, query)}
                   </h3>
 
@@ -177,13 +177,13 @@ export default function SearchResults({
 
                 {/* Project excerpt */}
                 {project.excerpt && (
-                  <p className="text-sm text-gray-600 line-clamp-3 mb-4">
+                  <p className="text-sm text-brand-text-secondary line-clamp-3 mb-4">
                     {highlightMatch(project.excerpt, query)}
                   </p>
                 )}
 
                 {/* Project metadata */}
-                <div className="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-gray-100">
+                <div className="flex items-center justify-between text-xs text-brand-text-muted pt-4 border-t border-brand-bg-active">
                   <span className="flex items-center gap-1">
                     <svg
                       className="w-4 h-4"
@@ -202,7 +202,7 @@ export default function SearchResults({
                     {project.id}
                   </span>
 
-                  <span className="text-indigo-600 group-hover:text-indigo-700 font-medium">
+                  <span className="text-brand-accent-purple group-hover:text-brand-accent-pink font-medium">
                     View details →
                   </span>
                 </div>
@@ -222,7 +222,7 @@ export default function SearchResults({
           <button
             onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
             disabled={currentPage === 1}
-            className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            className="px-4 py-2 text-sm font-medium text-brand-text-primary bg-brand-bg-darker border border-brand-bg-active rounded-lg hover:border-brand-accent-purple disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
             aria-label="Previous page"
           >
             Previous
@@ -243,7 +243,7 @@ export default function SearchResults({
 
               if (showEllipsisBefore || showEllipsisAfter) {
                 return (
-                  <span key={page} className="px-2 text-gray-500">
+                  <span key={page} className="px-2 text-brand-text-muted">
                     ...
                   </span>
                 );
@@ -257,8 +257,8 @@ export default function SearchResults({
                   onClick={() => setCurrentPage(page)}
                   className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
                     currentPage === page
-                      ? 'bg-indigo-600 text-white'
-                      : 'text-gray-700 bg-white border border-gray-300 hover:bg-gray-50'
+                      ? 'bg-brand-accent-purple text-white'
+                      : 'text-brand-text-primary bg-brand-bg-darker border border-brand-bg-active hover:border-brand-accent-purple'
                   }`}
                   aria-label={`Page ${page}`}
                   aria-current={currentPage === page ? 'page' : undefined}
@@ -273,7 +273,7 @@ export default function SearchResults({
           <button
             onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
             disabled={currentPage === totalPages}
-            className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            className="px-4 py-2 text-sm font-medium text-brand-text-primary bg-brand-bg-darker border border-brand-bg-active rounded-lg hover:border-brand-accent-purple disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
             aria-label="Next page"
           >
             Next

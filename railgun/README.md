@@ -1,8 +1,15 @@
 # Railgun
 
-## Overview
+## 🔗 Links
 
-**Website:** https://railgun.io
+- **Website**: https://railgun.io
+
+## 📊 GitHub Statistics
+
+- ⭐ **Stars**: 0
+- 🔀 **Forks**: 0
+- 👥 **Contributors**: 0
+
 ## 📜 Smart Contracts
 
 - **Railgun Relay**: `0xfa7093cdd9ee6932b4eb2c9e1cde7ce00b1fa4b9` (ethereum)
@@ -13,8 +20,8 @@
 
 ## 🔒 Security Scan
 
-**Events Found:** 5
-**Modules:** 3
+- **Events**: 5
+- **Modules**: 3
 
 ---
 

@@ -1,10 +1,18 @@
 # Aztec Network
 
-## Overview
+## 🔗 Links
 
-**Website:** https://aztec-network.com
+- **Website**: https://aztec-network.com
+
+## 📝 Description
 
 Aztec Network is the privacy-first Layer 2 blockchain on Ethereum (same as 'aztec' entry - this appears to be a duplicate project name referring to the same protocol).
+
+## 📊 GitHub Statistics
+
+- ⭐ **Stars**: 0
+- 🔀 **Forks**: 0
+- 👥 **Contributors**: 0
 
 ## 📜 Smart Contracts
 
@@ -12,8 +20,8 @@ Aztec Network is the privacy-first Layer 2 blockchain on Ethereum (same as 'azte
 
 ## 🔒 Security Scan
 
-**Events Found:** 101
-**Modules:** 5
+- **Events**: 101
+- **Modules**: 5
 
 ---
 

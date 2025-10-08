@@ -1,8 +1,9 @@
 # Sismo
 
-## Overview
+## 🔗 Links
 
-**Website:** https://sismo.io
+- **Website**: https://sismo.io
+
 ---
 
 *Constitutional Research v2.0.0 - Real data only*

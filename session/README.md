@@ -1,8 +1,10 @@
 # Session
 
-## Overview
+## 🔗 Links
 
-**Website:** https://session.com
+- **Website**: https://session.com
+
+## 📝 Description
 
 Session Android - A Decentralized, Onion Routed, Private Messenger
 

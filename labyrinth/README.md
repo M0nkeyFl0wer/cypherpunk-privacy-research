@@ -1,12 +1,13 @@
 # Labyrinth
 
-## Overview
+## 🔗 Links
 
-**Website:** https://labyrinth.xyz
+- **Website**: https://labyrinth.xyz
+
 ## 📜 Smart Contracts
 
-- **Unknown**: `0xa8a4367eeff6b4986f42b4d750be58bba87973fe` (unknown)
-- **Unknown**: `0x59c2f99429fb7178ee8ce9bdb1d2bab730601ea4` (unknown)
+- **Contract**: `0xa8a4367eeff6b4986f42b4d750be58bba87973fe` (unknown)
+- **Contract**: `0x59c2f99429fb7178ee8ce9bdb1d2bab730601ea4` (unknown)
 
 ---
 

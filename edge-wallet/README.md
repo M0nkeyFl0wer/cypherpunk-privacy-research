@@ -1,11 +1,12 @@
 # Edge Wallet
 
-## Overview
+## 🔗 Links
 
-**Website:** https://edge-wallet.com
+- **Website**: https://edge-wallet.com
+
 ## 📜 Smart Contracts
 
-- **Unknown**: `0xf473edfaaef8cb2e5cdd246b7d5b285e4f56f721` (unknown)
+- **Contract**: `0xf473edfaaef8cb2e5cdd246b7d5b285e4f56f721` (unknown)
 
 ---
 

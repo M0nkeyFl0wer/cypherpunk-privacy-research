@@ -1,8 +1,9 @@
 # Frame
 
-## Overview
+## 🔗 Links
 
-**Website:** https://frame.io
+- **Website**: https://frame.io
+
 ## 📜 Smart Contracts
 
 - **MintFactory**: `0x0000000000003d61b3d0a96b70b9c9006947759c` (unknown)

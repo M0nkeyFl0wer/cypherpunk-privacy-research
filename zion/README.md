@@ -1,8 +1,9 @@
 # Zion
 
-## Overview
+## 🔗 Links
 
-**Website:** https://zion.network
+- **Website**: https://zion.network
+
 ---
 
 *Constitutional Research v2.0.0 - Real data only*

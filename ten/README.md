@@ -1,11 +1,12 @@
 # Ten
 
-## Overview
+## 🔗 Links
 
-**Website:** https://ten.network
+- **Website**: https://ten.network
+
 ## 📜 Smart Contracts
 
-- **Unknown**: `0xf43350d7f1e6b8e0a6605145da043f7326e10142` (unknown)
+- **Contract**: `0xf43350d7f1e6b8e0a6605145da043f7326e10142` (unknown)
 
 ---
 
