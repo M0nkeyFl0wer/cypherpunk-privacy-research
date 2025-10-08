@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import { useRouter } from 'next/navigation';
 import * as d3 from 'd3';
 
 interface NetworkGraphProps {
@@ -16,6 +17,7 @@ interface Node extends d3.SimulationNodeDatum {
   techStack: string[];
   privacyTechniques: string[];
   size: number;
+  project: any; // Full project object for tooltip
 }
 
 interface Link extends d3.SimulationLinkDatum<Node> {
@@ -26,6 +28,7 @@ interface Link extends d3.SimulationLinkDatum<Node> {
 
 export default function NetworkGraph({ projects, width = 1000, height = 600 }: NetworkGraphProps) {
   const svgRef = useRef<SVGSVGElement>(null);
+  const router = useRouter();
 
   useEffect(() => {
     if (!svgRef.current || projects.length === 0) return;
@@ -44,6 +47,7 @@ export default function NetworkGraph({ projects, width = 1000, height = 600 }: N
         techStack: p.techStack || [],
         privacyTechniques: p.privacyTechniques || [],
         size: (p.techStack?.length || 0) + (p.privacyTechniques?.length || 0),
+        project: p, // Store full project for tooltip
       }));
 
     // Create links based on shared technologies/techniques
@@ -162,25 +166,40 @@ export default function NetworkGraph({ projects, width = 1000, height = 600 }: N
           .attr('r', Math.max(5, d.size * 2) * 1.5)
           .attr('stroke-width', 3);
 
+        const p = d.project;
         tooltip
           .style('opacity', 1)
           .html(`
-            <div style="font-weight: bold; margin-bottom: 4px;">${d.name}</div>
+            <div style="font-weight: bold; font-size: 14px; margin-bottom: 4px;">${d.name}</div>
             <div style="color: #a0aec0; font-size: 10px; margin-bottom: 8px;">${d.category}</div>
+            ${p.description ? `
+              <div style="margin-bottom: 8px; color: #cbd5e0; font-size: 11px; max-width: 300px;">
+                ${p.description.slice(0, 150)}${p.description.length > 150 ? '...' : ''}
+              </div>
+            ` : ''}
+            ${p.website ? `
+              <div style="margin-bottom: 4px; font-size: 10px;">
+                🌐 <a href="${p.website}" target="_blank" style="color: #8b5cf6;">${new URL(p.website).hostname}</a>
+              </div>
+            ` : ''}
+            ${p.github ? `
+              <div style="margin-bottom: 4px; font-size: 10px;">
+                💻 <a href="${p.github}" target="_blank" style="color: #8b5cf6;">${p.github.replace('https://github.com/', '')}</a>
+              </div>
+            ` : ''}
             ${d.techStack.length > 0 ? `
-              <div style="margin-bottom: 4px;">
-                <strong>Tech:</strong> ${d.techStack.slice(0, 3).join(', ')}
+              <div style="margin-bottom: 4px; font-size: 10px;">
+                <strong>Tech:</strong> ${d.techStack.slice(0, 4).join(', ')}${d.techStack.length > 4 ? '...' : ''}
               </div>
             ` : ''}
             ${d.privacyTechniques.length > 0 ? `
-              <div>
-                <strong>Privacy:</strong> ${d.privacyTechniques.slice(0, 3).join(', ')}
+              <div style="margin-bottom: 4px; font-size: 10px;">
+                <strong>Privacy:</strong> ${d.privacyTechniques.slice(0, 4).join(', ')}${d.privacyTechniques.length > 4 ? '...' : ''}
               </div>
             ` : ''}
-            <div style="color: #718096; font-size: 10px; margin-top: 8px;">
-              Connections: ${links.filter(l =>
-                (l.source as Node).id === d.id || (l.target as Node).id === d.id
-              ).length}
+            <div style="color: #718096; font-size: 10px; margin-top: 8px; padding-top: 8px; border-top: 1px solid #4a5568;">
+              ${links.filter(l => (l.source as Node).id === d.id || (l.target as Node).id === d.id).length} connections •
+              <span style="color: #8b5cf6; font-weight: bold;">Click for full details →</span>
             </div>
           `)
           .style('left', (event.pageX + 10) + 'px')
@@ -199,6 +218,10 @@ export default function NetworkGraph({ projects, width = 1000, height = 600 }: N
           .attr('stroke-width', 2);
 
         tooltip.style('opacity', 0);
+      })
+      .on('click', function(event, d) {
+        event.stopPropagation();
+        router.push(`/project/${d.id}`);
       });
 
     // Update positions on simulation tick

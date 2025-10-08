@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import { useRouter } from 'next/navigation';
 import * as d3 from 'd3';
 
 interface TimelineProps {
@@ -15,10 +16,12 @@ interface TimelineEvent {
   category: string;
   techStack: string[];
   privacyTechniques: string[];
+  project: any; // Full project for tooltip
 }
 
 export default function Timeline({ projects, width = 1000, height = 400 }: TimelineProps) {
   const svgRef = useRef<SVGSVGElement>(null);
+  const router = useRouter();
 
   useEffect(() => {
     if (!svgRef.current || projects.length === 0) return;
@@ -35,6 +38,7 @@ export default function Timeline({ projects, width = 1000, height = 400 }: Timel
         category: p.category || 'Uncategorized',
         techStack: p.techStack || [],
         privacyTechniques: p.privacyTechniques || [],
+        project: p, // Store full project for tooltip
       }))
       .sort((a, b) => a.year - b.year);
 
@@ -210,16 +214,13 @@ export default function Timeline({ projects, width = 1000, height = 400 }: Timel
           d => d.category
         );
 
-        const topProjects = d.events.slice(0, 5).map(e => e.name);
+        const topProjects = d.events.slice(0, 5);
 
         tooltip
           .style('opacity', 1)
           .html(`
             <div style="font-weight: bold; font-size: 14px; margin-bottom: 8px;">
-              ${d.year}
-            </div>
-            <div style="margin-bottom: 8px;">
-              <strong>${d.count} projects</strong> launched
+              ${d.year} - ${d.count} Project${d.count > 1 ? 's' : ''} Launched
             </div>
             ${categoryCount.size > 0 ? `
               <div style="margin-bottom: 8px; font-size: 11px;">
@@ -230,10 +231,33 @@ export default function Timeline({ projects, width = 1000, height = 400 }: Timel
               </div>
             ` : ''}
             ${topProjects.length > 0 ? `
-              <div style="font-size: 10px; color: #a0aec0;">
-                ${topProjects.join(', ')}${d.events.length > 5 ? `, +${d.events.length - 5} more` : ''}
+              <div style="margin-bottom: 8px;">
+                <strong style="font-size: 11px;">Projects:</strong>
+                ${topProjects.map(e => `
+                  <div style="margin-top: 4px; padding: 4px; background: #2d3748; border-radius: 4px;">
+                    <div style="font-weight: bold; font-size: 11px; color: #8b5cf6; margin-bottom: 2px;">${e.name}</div>
+                    ${e.project?.description ? `
+                      <div style="font-size: 9px; color: #cbd5e0; margin-bottom: 2px;">
+                        ${e.project.description.slice(0, 80)}${e.project.description.length > 80 ? '...' : ''}
+                      </div>
+                    ` : ''}
+                    ${e.techStack?.length > 0 ? `
+                      <div style="font-size: 9px; color: #a0aec0;">
+                        🔧 ${e.techStack.slice(0, 3).join(', ')}
+                      </div>
+                    ` : ''}
+                  </div>
+                `).join('')}
+                ${d.events.length > 5 ? `
+                  <div style="font-size: 10px; color: #718096; margin-top: 4px;">
+                    +${d.events.length - 5} more projects
+                  </div>
+                ` : ''}
               </div>
             ` : ''}
+            <div style="color: #718096; font-size: 10px; margin-top: 8px; padding-top: 8px; border-top: 1px solid #4a5568;">
+              <span style="color: #8b5cf6; font-weight: bold;">Click dot to view year • Click project names below →</span>
+            </div>
           `)
           .style('left', (event.pageX + 10) + 'px')
           .style('top', (event.pageY - 10) + 'px');
@@ -251,6 +275,15 @@ export default function Timeline({ projects, width = 1000, height = 400 }: Timel
           .attr('stroke-width', 2);
 
         tooltip.style('opacity', 0);
+      })
+      .on('click', function(event, d) {
+        event.stopPropagation();
+        // If only one project, navigate to it directly
+        if (d.events.length === 1 && d.events[0].project) {
+          router.push(`/project/${d.events[0].project.slug}`);
+        }
+        // For multiple projects, the tooltip shows clickable project names
+        // Users can click individual project cards in the tooltip
       });
 
     // Labels
