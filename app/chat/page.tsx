@@ -5,7 +5,9 @@ import Link from 'next/link';
 import ChatMessage from '@/components/Chat/ChatMessage';
 import ChatInput from '@/components/Chat/ChatInput';
 import QuickActions from '@/components/Chat/QuickActions';
-import { processQuery, getExampleQueries } from '@/lib/ai/queryProcessor';
+import { getExampleQueries } from '@/lib/ai/queryProcessor';
+import { chatWithOllama, type OllamaMessage } from '@/lib/ai/ollamaClient';
+import { getAllProjectSummaries } from '@/lib/data/client-data';
 
 interface Message {
   id: string;
@@ -13,6 +15,10 @@ interface Message {
   content: string;
   projects?: any[];
   timestamp: Date;
+}
+
+interface ConversationMessage extends OllamaMessage {
+  timestamp?: Date;
 }
 
 export default function ChatPage() {
@@ -34,6 +40,8 @@ How can I help you today?`,
     },
   ]);
   const [isProcessing, setIsProcessing] = useState(false);
+  const [streamingMessage, setStreamingMessage] = useState('');
+  const [conversationHistory, setConversationHistory] = useState<ConversationMessage[]>([]);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = () => {
@@ -55,34 +63,104 @@ How can I help you today?`,
 
     setMessages(prev => [...prev, userMessage]);
     setIsProcessing(true);
+    setStreamingMessage('');
 
-    // Process query asynchronously
-    setTimeout(async () => {
-      try {
-        const result = await processQuery(input);
+    try {
+      // Get project data for context
+      const projects = await getAllProjectSummaries();
 
-        const assistantMessage: Message = {
-          id: (Date.now() + 1).toString(),
-          role: 'assistant',
-          content: result.message,
-          projects: result.projects,
-          timestamp: new Date(),
-        };
+      // Build context for Ollama (limit to 30 projects to avoid token limits)
+      const projectContext = projects
+        .slice(0, 30)
+        .map(p => `${p.name}: ${p.category}, Privacy: ${p.privacyTechniques.join(', ')}`)
+        .join('\n');
 
-        setMessages(prev => [...prev, assistantMessage]);
-      } catch (error) {
-        console.error('Query processing error:', error);
-        const errorMessage: Message = {
-          id: (Date.now() + 1).toString(),
-          role: 'assistant',
-          content: 'Sorry, I encountered an error processing your query. Please try again.',
-          timestamp: new Date(),
-        };
-        setMessages(prev => [...prev, errorMessage]);
-      } finally {
-        setIsProcessing(false);
-      }
-    }, 500);
+      // Build conversation history
+      const systemPrompt: OllamaMessage = {
+        role: 'system',
+        content: `You are an AI assistant helping users explore Web3 privacy projects. You have access to research data on 134 projects focused on privacy, security, and anonymity.
+
+Available Projects (sample):
+${projectContext}
+
+When users ask about privacy projects:
+- Search through available data and provide relevant recommendations
+- Include specific project names and their key privacy features
+- Explain privacy techniques (Zero-Knowledge Proofs, mixing, encryption, etc.)
+- Suggest projects based on their needs (DeFi privacy, private messaging, etc.)
+- Keep responses concise and focused on actionable insights
+- If asked about specific projects not in the sample, acknowledge you may have incomplete data
+
+Be helpful, accurate, and privacy-focused.`,
+      };
+
+      // Add user message to conversation history
+      const userPrompt: OllamaMessage = {
+        role: 'user',
+        content: input,
+      };
+
+      // Include recent conversation history (last 4 messages)
+      const recentHistory = conversationHistory.slice(-4);
+      const messages: OllamaMessage[] = [
+        systemPrompt,
+        ...recentHistory,
+        userPrompt,
+      ];
+
+      // Call Ollama with streaming
+      let responseText = '';
+      await chatWithOllama(
+        messages,
+        (chunk) => {
+          responseText += chunk;
+          setStreamingMessage(responseText);
+        }
+      );
+
+      // Find relevant projects based on response
+      const lowerResponse = responseText.toLowerCase();
+      const relevantProjects = projects.filter(p =>
+        lowerResponse.includes(p.name.toLowerCase()) ||
+        p.privacyTechniques.some(tech =>
+          lowerResponse.includes(tech.toLowerCase())
+        ) ||
+        (p.category && lowerResponse.includes(p.category.toLowerCase()))
+      );
+
+      // Create assistant message
+      const assistantMessage: Message = {
+        id: (Date.now() + 1).toString(),
+        role: 'assistant',
+        content: responseText,
+        projects: relevantProjects.slice(0, 6),
+        timestamp: new Date(),
+      };
+
+      setMessages(prev => [...prev, assistantMessage]);
+
+      // Update conversation history
+      setConversationHistory(prev => [
+        ...prev,
+        { role: 'user', content: input },
+        { role: 'assistant', content: responseText },
+      ]);
+
+    } catch (error) {
+      console.error('Chat error:', error);
+
+      const errorMessage: Message = {
+        id: (Date.now() + 1).toString(),
+        role: 'assistant',
+        content: 'Sorry, I encountered an error connecting to the AI. Please check that the Ollama server is running on Seshat and try again.\n\nError details: ' + (error as Error).message,
+        timestamp: new Date(),
+      };
+
+      setMessages(prev => [...prev, errorMessage]);
+    } finally {
+      setIsProcessing(false);
+      setStreamingMessage('');
+    }
   };
 
   const exampleQueries = getExampleQueries();
@@ -161,14 +239,23 @@ How can I help you today?`,
                   </svg>
                 </div>
                 <div className="flex-1 max-w-3xl">
-                  <div className="inline-block px-6 py-4 rounded-lg bg-brand-bg-darker border border-brand-bg-active">
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-brand-accent-purple rounded-full animate-pulse"></div>
-                      <div className="w-2 h-2 bg-brand-accent-purple rounded-full animate-pulse" style={{ animationDelay: '0.2s' }}></div>
-                      <div className="w-2 h-2 bg-brand-accent-purple rounded-full animate-pulse" style={{ animationDelay: '0.4s' }}></div>
-                      <span className="text-sm text-brand-text-muted ml-2">Thinking...</span>
+                  {streamingMessage ? (
+                    <div className="px-6 py-4 rounded-lg bg-brand-bg-darker border border-brand-bg-active">
+                      <div className="text-brand-text-primary whitespace-pre-wrap">
+                        {streamingMessage}
+                        <span className="inline-block w-2 h-4 ml-1 bg-brand-accent-purple animate-pulse"></span>
+                      </div>
                     </div>
-                  </div>
+                  ) : (
+                    <div className="inline-block px-6 py-4 rounded-lg bg-brand-bg-darker border border-brand-bg-active">
+                      <div className="flex items-center gap-2">
+                        <div className="w-2 h-2 bg-brand-accent-purple rounded-full animate-pulse"></div>
+                        <div className="w-2 h-2 bg-brand-accent-purple rounded-full animate-pulse" style={{ animationDelay: '0.2s' }}></div>
+                        <div className="w-2 h-2 bg-brand-accent-purple rounded-full animate-pulse" style={{ animationDelay: '0.4s' }}></div>
+                        <span className="text-sm text-brand-text-muted ml-2">Connecting to AI...</span>
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
             )}
@@ -192,7 +279,7 @@ How can I help you today?`,
       <div className="bg-brand-bg-darker border-t border-brand-bg-active">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
           <p className="text-xs text-brand-text-muted text-center">
-            ⚠️ This is a demonstration AI assistant using rule-based queries. All data sourced from constitutional research with verified confidence scores.
+            🤖 Powered by <strong>Ollama</strong> (self-hosted AI on Seshat) • Free, private, and aligned with Web3 privacy values
           </p>
         </div>
       </div>
