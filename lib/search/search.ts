@@ -17,10 +17,8 @@ let cachedProjects: SearchableProject[] = [];
  * Load search index from JSON
  */
 export async function loadSearchIndex(): Promise<SearchIndex> {
-  // Detect GitHub Pages deployment at runtime
-  const isGitHubPages = typeof window !== 'undefined' && window.location.hostname.includes('github.io');
-  const basePath = isGitHubPages ? '/web3-privacy-ethereum-cypherpunk-research' : '';
-  const response = await fetch(`${basePath}/data/search-index.json`);
+  // Always use full GitHub Pages path - site is only deployed there
+  const response = await fetch('/web3-privacy-ethereum-cypherpunk-research/data/search-index.json');
   if (!response.ok) {
     throw new Error('Failed to load search index');
   }

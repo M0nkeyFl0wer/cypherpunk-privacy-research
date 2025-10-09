@@ -26,5 +26,96 @@
   "supported_chains": [
     "solana"
   ],
-  "launch_status": "Mainnet Beta 1.0.0"
+  "launch_status": "Mainnet Beta 1.0.0",
+  "tech_stack": {
+    "primary_languages": [
+      "Rust (78.5%)",
+      "TypeScript (12.5%)",
+      "Go (5.9%)",
+      "Shell"
+    ],
+    "blockchain_platform": "Solana",
+    "frameworks": [
+      "Anchor (v0.29.0)",
+      "Solana SDK"
+    ],
+    "node_runtime": "NodeJS v20.9.0 LTS",
+    "package_managers": [
+      "pnpm",
+      "Cargo"
+    ],
+    "development_tools": [
+      "Solana CLI",
+      "solana-test-validator",
+      "solana-keygen",
+      "solana-verify",
+      "Docker",
+      "LLVM (clang, lld)"
+    ],
+    "confidence_score": 0.98
+  },
+  "privacy_techniques": {
+    "primary_technique": "ZK Compression",
+    "cryptographic_primitives": [
+      {
+        "name": "Groth16 SNARK",
+        "purpose": "Zero-knowledge proofs for compressed account integrity verification",
+        "proof_size": "128 bytes (constant)",
+        "confidence_score": 0.95
+      },
+      {
+        "name": "Poseidon Hash",
+        "purpose": "Arithmetic-friendly hash function for Merkle tree construction",
+        "description": "Hash-based concurrent Merkle tree (sparse binary)",
+        "confidence_score": 0.95
+      },
+      {
+        "name": "Sparse Binary Merkle Tree",
+        "purpose": "State tree for compressed account storage",
+        "capacity": "67 million compressed account state transitions per tree",
+        "confidence_score": 0.93
+      }
+    ],
+    "architecture": {
+      "data_structure": "Forest of multiple binary Merkle trees",
+      "state_storage": "Compressed account data hashed and stored as Merkle tree leaves",
+      "on_chain_footprint": "Small fingerprint (state root) stored on-chain",
+      "verification": "Small validity proofs verify multiple compressed accounts",
+      "compressed_account_hash_components": [
+        "DataHash",
+        "Lamports",
+        "OwnerHash",
+        "Address",
+        "Discriminator",
+        "State tree hash",
+        "Leaf Index"
+      ],
+      "confidence_score": 0.92
+    },
+    "v1_privacy_features": {
+      "technique": "zkSNARK-based anonymous transactions",
+      "description": "Shielded pools similar to Zcash/Tornado Cash",
+      "features": [
+        "Shield tokens to liquidity pool",
+        "Break on-chain link between sender and recipient",
+        "Shielded internal transactions (conceals amount and recipient)",
+        "Optional compliance proofs to re-establish fund origin",
+        "Trustless zero-knowledge proof verification"
+      ],
+      "circuit_implementation": "Based on tornado_nova circuit",
+      "libraries": [
+        "arkworks (ark_bn254, ark_ec, ark_ff)",
+        "arkworks_gadgets"
+      ],
+      "status": "Legacy version (v1), current focus is ZK Compression",
+      "confidence_score": 0.90
+    },
+    "protocol_evolution": {
+      "original_purpose": "Privacy solution for Solana (anonymous transactions)",
+      "pivot": "Shifted focus to data compression through zero-knowledge proofs",
+      "current_focus": "ZK Compression Protocol for state reduction and cost optimization",
+      "confidence_score": 0.93
+    }
+  },
+  "github_url": "https://github.com/Lightprotocol/light-protocol"
 }
