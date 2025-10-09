@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 Privacy Network - Interactive Visualization</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e4e4e7;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        .container { max-width: 1600px; margin: 0 auto; }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to right, #a78bfa, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .nav a {
+            color: #9ca3af;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+        .nav a:hover {
+            background: #27272a;
+            color: #a78bfa;
+        }
+        .brand-logo {
+            display: inline-block;
+            margin-bottom: 1rem;
+            opacity: 0.7;
+            transition: opacity 0.2s;
+        }
+        .brand-logo:hover {
+            opacity: 1;
+        }
+        #network-container {
+            background: #1a1a2e;
+            border: 1px solid #3f3f46;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+        }
+        .node {
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .node:hover {
+            stroke-width: 3px;
+        }
+        .link {
+            stroke: #3f3f46;
+            stroke-opacity: 0.3;
+        }
+        .card {
+            position: absolute;
+            background: #27272a;
+            border: 1px solid #a78bfa;
+            border-radius: 8px;
+            padding: 1rem;
+            max-width: 300px;
+            pointer-events: none;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        .card-title {
+            color: #a78bfa;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        .card-category {
+            color: #9ca3af;
+            font-size: 0.85rem;
+            margin-bottom: 0.5rem;
+        }
+        .card-description {
+            color: #d1d5db;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            margin-bottom: 0.75rem;
+        }
+        .card-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.25rem;
+        }
+        .card-tag {
+            background: #3f3f46;
+            color: #a78bfa;
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+        }
+        .legend {
+            background: #27272a;
+            border: 1px solid #3f3f46;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        .legend-title {
+            color: #a78bfa;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .legend-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+        }
+        .controls {
+            background: #27272a;
+            border: 1px solid #3f3f46;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+        .control-label {
+            color: #9ca3af;
+            font-size: 0.9rem;
+        }
+        .control-input {
+            padding: 0.5rem;
+            background: #18181b;
+            border: 1px solid #3f3f46;
+            border-radius: 4px;
+            color: #e4e4e7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <a href="/">← Home</a>
+            <a href="simple-search.html">🔍 Search</a>
+            <a href="simple-viz.html">📊 Visualizations</a>
+        </div>
+
+        <a href="https://web3privacy.info" target="_blank" class="brand-logo">
+            <img src="assets/logo-white.svg" alt="Web3Privacy Now" style="height: 35px;">
+        </a>
+
+        <h1>🌐 Web3 Privacy Network</h1>
+        <p style="color: #9ca3af; margin-bottom: 2rem;">
+            Interactive network map of 114 privacy projects. Hover over nodes to see details, click to visit project page.
+        </p>
+
+        <div class="controls">
+            <span class="control-label">Filter by category:</span>
+            <select id="categoryFilter" class="control-input">
+                <option value="all">All Categories</option>
+            </select>
+            <span class="control-label">Node size:</span>
+            <input type="range" id="nodeSizeSlider" class="control-input" min="5" max="20" value="10">
+        </div>
+
+        <div class="legend">
+            <div class="legend-title">Categories</div>
+            <div class="legend-items" id="legend"></div>
+        </div>
+
+        <div id="network-container"></div>
+    </div>
+
+    <script>
+        const basePath = '/web3-privacy-ethereum-cypherpunk-research';
+
+        // Network colors (node fill)
+        const networkColors = {
+            'ethereum': '#a78bfa',      // Purple
+            'solana': '#ec4899',        // Pink
+            'polygon': '#3b82f6',       // Blue
+            'cosmos': '#10b981',        // Green
+            'polkadot': '#f59e0b',      // Orange
+            'multi-chain': '#8b5cf6',   // Violet
+            'unknown': '#6b7280'        // Gray
+        };
+
+        // Language colors (node border)
+        const languageColors = {
+            'rust': '#f59e0b',          // Orange
+            'typescript': '#3b82f6',    // Blue
+            'solidity': '#a78bfa',      // Purple
+            'go': '#06b6d4',            // Cyan
+            'python': '#10b981',        // Green
+            'javascript': '#fbbf24',    // Yellow
+            'c++': '#ec4899',           // Pink
+            'kotlin': '#7c3aed',        // Violet
+            'dart': '#0891b2',          // Teal
+            'c#': '#14b8a6',            // Teal-green
+            'unknown': '#e4e4e7'        // Light gray
+        };
+
+        let currentData = null;
+        let svg, simulation, link, node;
+
+        async function loadData() {
+            const response = await fetch(`${basePath}/data/search-index.json`);
+            const data = await response.json();
+            currentData = data.projects || [];
+
+            // Populate category filter
+            const categories = [...new Set(currentData.map(p => p.category))];
+            const categoryFilter = document.getElementById('categoryFilter');
+            categories.forEach(cat => {
+                const option = document.createElement('option');
+                option.value = cat;
+                option.textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
+                categoryFilter.appendChild(option);
+            });
+
+            // Create legend for networks
+            const legend = document.getElementById('legend');
+            legend.innerHTML = '<strong style="color: #a78bfa; margin-right: 1rem;">Networks (fill):</strong>';
+            const networks = [...new Set(currentData.map(p => p.blockchain_network || 'unknown'))];
+            networks.forEach(net => {
+                const item = document.createElement('span');
+                item.className = 'legend-item';
+                item.innerHTML = `
+                    <div class="legend-color" style="background: ${networkColors[net] || networkColors.unknown}"></div>
+                    <span>${net.charAt(0).toUpperCase() + net.slice(1)}</span>
+                `;
+                legend.appendChild(item);
+            });
+
+            legend.innerHTML += '<br><strong style="color: #a78bfa; margin-right: 1rem; margin-top: 0.5rem; display: inline-block;">Languages (border):</strong>';
+            const languages = [...new Set(currentData.map(p => p.primary_language || 'unknown'))];
+            languages.forEach(lang => {
+                const item = document.createElement('span');
+                item.className = 'legend-item';
+                item.innerHTML = `
+                    <div class="legend-color" style="background: ${languageColors[lang] || languageColors.unknown}; border: 2px solid ${languageColors[lang] || languageColors.unknown}"></div>
+                    <span>${lang.charAt(0).toUpperCase() + lang.slice(1)}</span>
+                `;
+                legend.appendChild(item);
+            });
+
+            renderNetwork(currentData);
+        }
+
+        function renderNetwork(projects) {
+            const container = document.getElementById('network-container');
+            container.innerHTML = '';
+
+            const width = container.offsetWidth || 1600;
+            const height = Math.max(800, projects.length * 10);
+            container.style.height = height + 'px';
+
+            // Create links based on shared technologies
+            const links = [];
+            for (let i = 0; i < projects.length; i++) {
+                for (let j = i + 1; j < projects.length; j++) {
+                    const p1 = projects[i];
+                    const p2 = projects[j];
+
+                    // Check for shared tech or privacy techniques
+                    const sharedTech = p1.tech_stack?.filter(t =>
+                        p2.tech_stack?.includes(t)
+                    ).length || 0;
+
+                    const sharedPrivacy = p1.privacy_techniques?.filter(t =>
+                        p2.privacy_techniques?.includes(t)
+                    ).length || 0;
+
+                    if (sharedTech > 0 || sharedPrivacy > 0) {
+                        links.push({
+                            source: p1.id,
+                            target: p2.id,
+                            strength: sharedTech + sharedPrivacy
+                        });
+                    }
+                }
+            }
+
+            svg = d3.select('#network-container')
+                .append('svg')
+                .attr('width', width)
+                .attr('height', height);
+
+            simulation = d3.forceSimulation(projects)
+                .force('link', d3.forceLink(links).id(d => d.id).distance(100))
+                .force('charge', d3.forceManyBody().strength(-200))
+                .force('center', d3.forceCenter(width / 2, height / 2))
+                .force('collision', d3.forceCollide().radius(30));
+
+            link = svg.append('g')
+                .selectAll('line')
+                .data(links)
+                .join('line')
+                .attr('class', 'link')
+                .attr('stroke-width', d => Math.sqrt(d.strength));
+
+            node = svg.append('g')
+                .selectAll('circle')
+                .data(projects)
+                .join('circle')
+                .attr('class', 'node')
+                .attr('r', 10)
+                .attr('fill', d => networkColors[d.blockchain_network] || networkColors.unknown)
+                .attr('stroke', d => languageColors[d.primary_language] || languageColors.unknown)
+                .attr('stroke-width', 3)
+                .on('mouseover', showCard)
+                .on('mouseout', hideCard)
+                .on('click', (event, d) => {
+                    window.location.href = `project/${d.id}`;
+                })
+                .call(d3.drag()
+                    .on('start', dragStarted)
+                    .on('drag', dragged)
+                    .on('end', dragEnded));
+
+            simulation.on('tick', () => {
+                link
+                    .attr('x1', d => d.source.x)
+                    .attr('y1', d => d.source.y)
+                    .attr('x2', d => d.target.x)
+                    .attr('y2', d => d.target.y);
+
+                node
+                    .attr('cx', d => d.x)
+                    .attr('cy', d => d.y);
+            });
+        }
+
+        function showCard(event, d) {
+            const card = document.createElement('div');
+            card.className = 'card';
+            card.id = 'hover-card';
+
+            const network = d.blockchain_network || 'Unknown';
+            const language = d.primary_language || 'Unknown';
+            const valueProp = d.value_proposition || d.description || 'No description available';
+
+            card.innerHTML = `
+                <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
+                    ${d.logo ? `<img src="${d.logo}" alt="${d.name}" style="width: 40px; height: 40px; border-radius: 4px;">` : ''}
+                    <div>
+                        <div class="card-title">${d.name || d.id}</div>
+                        <div class="card-category">
+                            <span style="color: ${networkColors[d.blockchain_network] || networkColors.unknown}">⛓️ ${network.charAt(0).toUpperCase() + network.slice(1)}</span>
+                            &nbsp;•&nbsp;
+                            <span style="color: ${languageColors[d.primary_language] || languageColors.unknown}">💻 ${language.charAt(0).toUpperCase() + language.slice(1)}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-description">${valueProp.substring(0, 150)}${valueProp.length > 150 ? '...' : ''}</div>
+            `;
+
+            card.style.left = (event.pageX + 20) + 'px';
+            card.style.top = (event.pageY - 50) + 'px';
+
+            document.body.appendChild(card);
+        }
+
+        function hideCard() {
+            const card = document.getElementById('hover-card');
+            if (card) card.remove();
+        }
+
+        function dragStarted(event, d) {
+            if (!event.active) simulation.alphaTarget(0.3).restart();
+            d.fx = d.x;
+            d.fy = d.y;
+        }
+
+        function dragged(event, d) {
+            d.fx = event.x;
+            d.fy = event.y;
+        }
+
+        function dragEnded(event, d) {
+            if (!event.active) simulation.alphaTarget(0);
+            d.fx = null;
+            d.fy = null;
+        }
+
+        // Category filter
+        document.getElementById('categoryFilter').addEventListener('change', (e) => {
+            const category = e.target.value;
+            const filtered = category === 'all'
+                ? currentData
+                : currentData.filter(p => p.category === category);
+            renderNetwork(filtered);
+        });
+
+        // Node size slider
+        document.getElementById('nodeSizeSlider').addEventListener('input', (e) => {
+            const size = +e.target.value;
+            d3.selectAll('.node').attr('r', size);
+            simulation.force('collision', d3.forceCollide().radius(size + 20)).restart();
+        });
+
+        loadData();
+    </script>
+</body>
+</html>
