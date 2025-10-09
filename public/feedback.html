@@ -149,7 +149,7 @@
 
         <h1>💬 Feedback & Contributions</h1>
         <p class="subtitle">
-            Help us improve this research! Report bugs, suggest changes, or contribute new data.
+            Contribute your ideas, feedback, bug reports and suggestions for additions or alterations.
         </p>
 
         <div id="successMessage" style="display: none;" class="success">
@@ -157,100 +157,32 @@
         </div>
 
         <form id="feedbackForm">
-            <!-- Type of Feedback -->
             <div class="form-section">
-                <div class="section-title">
-                    📋 What type of feedback do you have?
-                </div>
                 <div class="form-group">
-                    <div class="radio-group">
-                        <label class="radio-option">
-                            <input type="radio" name="type" value="bug" required>
-                            <span>🐛 Bug Report</span>
-                        </label>
-                        <label class="radio-option">
-                            <input type="radio" name="type" value="data">
-                            <span>📊 Data Correction/Addition</span>
-                        </label>
-                        <label class="radio-option">
-                            <input type="radio" name="type" value="feature">
-                            <span>💡 Feature Suggestion</span>
-                        </label>
-                        <label class="radio-option">
-                            <input type="radio" name="type" value="other">
-                            <span>💬 Other</span>
-                        </label>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bug Report Section -->
-            <div class="form-section" id="bugSection" style="display: none;">
-                <div class="section-title">🐛 Bug Details</div>
-                <div class="form-group">
-                    <label>What's broken?</label>
-                    <input type="text" id="bugTitle" placeholder="e.g., Search not working for Tornado Cash">
-                </div>
-                <div class="form-group">
-                    <label>Steps to reproduce</label>
-                    <textarea id="bugSteps" placeholder="1. Go to search page&#10;2. Type 'tornado'&#10;3. No results appear"></textarea>
-                </div>
-                <div class="form-group">
-                    <label>Expected behavior</label>
-                    <textarea id="bugExpected" placeholder="Should show Tornado Cash project"></textarea>
-                </div>
-            </div>
-
-            <!-- Data Section -->
-            <div class="form-section" id="dataSection" style="display: none;">
-                <div class="section-title">📊 Data Feedback</div>
-                <div class="form-group">
-                    <label>Which project?</label>
-                    <input type="text" id="dataProject" placeholder="e.g., Tornado Cash, Aztec, etc.">
-                </div>
-                <div class="form-group">
-                    <label>What's wrong or missing?</label>
-                    <textarea id="dataIssue" placeholder="Describe the data issue or what needs to be added"></textarea>
-                </div>
-                <div class="form-group">
-                    <label>Source/Reference (optional)</label>
-                    <input type="url" id="dataSource" placeholder="https://... (link to correct information)">
-                </div>
-            </div>
-
-            <!-- Feature Section -->
-            <div class="form-section" id="featureSection" style="display: none;">
-                <div class="section-title">💡 Feature Suggestion</div>
-                <div class="form-group">
-                    <label>Feature title</label>
-                    <input type="text" id="featureTitle" placeholder="e.g., Add privacy score comparison">
-                </div>
-                <div class="form-group">
-                    <label>Description</label>
-                    <textarea id="featureDesc" placeholder="Describe your feature idea and why it would be useful"></textarea>
-                </div>
-            </div>
-
-            <!-- Other Section -->
-            <div class="form-section" id="otherSection" style="display: none;">
-                <div class="section-title">💬 General Feedback</div>
-                <div class="form-group">
-                    <label>Subject</label>
-                    <input type="text" id="otherTitle" placeholder="Brief summary">
-                </div>
-                <div class="form-group">
-                    <label>Details</label>
-                    <textarea id="otherDesc" placeholder="Tell us what's on your mind"></textarea>
-                </div>
-            </div>
-
-            <!-- Contact (Optional) -->
-            <div class="form-section">
-                <div class="section-title">📧 Contact (Optional)</div>
-                <div class="form-group">
-                    <label>GitHub username or email</label>
-                    <input type="text" id="contact" placeholder="So we can follow up if needed (optional)">
+                    <label>What should we call you?</label>
+                    <input type="text" id="userName" placeholder="Your name or GitHub username (optional)">
                     <div class="hint">Leave blank to submit anonymously</div>
+                </div>
+                <div class="form-group">
+                    <label>Email (optional)</label>
+                    <input type="email" id="userEmail" placeholder="your.email@example.com">
+                    <div class="hint">So we can follow up with you if needed</div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <div class="form-group">
+                    <label>What would you like to share or suggest?</label>
+                    <textarea id="suggestions" placeholder="Share your ideas, suggestions, or additions..." rows="5"></textarea>
+                    <div class="hint">Ideas, new projects, data additions, feature requests, etc.</div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <div class="form-group">
+                    <label>What do you wish was better?</label>
+                    <textarea id="improvements" placeholder="Tell us what could be improved..." rows="5"></textarea>
+                    <div class="hint">Bug reports, issues, things that aren't working, etc.</div>
                 </div>
             </div>
 
@@ -260,48 +192,40 @@
 
     <script>
         const form = document.getElementById('feedbackForm');
-        const sections = {
-            bug: document.getElementById('bugSection'),
-            data: document.getElementById('dataSection'),
-            feature: document.getElementById('featureSection'),
-            other: document.getElementById('otherSection')
-        };
-
-        // Show/hide sections based on type
-        document.querySelectorAll('input[name="type"]').forEach(radio => {
-            radio.addEventListener('change', (e) => {
-                Object.values(sections).forEach(s => s.style.display = 'none');
-                if (sections[e.target.value]) {
-                    sections[e.target.value].style.display = 'block';
-                }
-            });
-        });
 
         form.addEventListener('submit', (e) => {
             e.preventDefault();
 
-            const type = document.querySelector('input[name="type"]:checked').value;
-            let title = '';
+            const userName = document.getElementById('userName').value;
+            const userEmail = document.getElementById('userEmail').value;
+            const suggestions = document.getElementById('suggestions').value;
+            const improvements = document.getElementById('improvements').value;
+
+            // Build title
+            const title = '[Feedback] Community Input';
+
+            // Build body
             let body = '';
 
-            if (type === 'bug') {
-                title = `[Bug] ${document.getElementById('bugTitle').value}`;
-                body = `**Steps to reproduce:**\n${document.getElementById('bugSteps').value}\n\n**Expected behavior:**\n${document.getElementById('bugExpected').value}`;
-            } else if (type === 'data') {
-                title = `[Data] ${document.getElementById('dataProject').value}`;
-                body = `**Project:** ${document.getElementById('dataProject').value}\n\n**Issue:**\n${document.getElementById('dataIssue').value}\n\n**Source:** ${document.getElementById('dataSource').value || 'N/A'}`;
-            } else if (type === 'feature') {
-                title = `[Feature] ${document.getElementById('featureTitle').value}`;
-                body = document.getElementById('featureDesc').value;
-            } else {
-                title = document.getElementById('otherTitle').value;
-                body = document.getElementById('otherDesc').value;
+            if (userName || userEmail) {
+                body += '## Submitted by\n';
+                if (userName) body += `**Name:** ${userName}\n`;
+                if (userEmail) body += `**Email:** ${userEmail}\n`;
+                body += '\n';
             }
 
-            const contact = document.getElementById('contact').value;
-            if (contact) {
-                body += `\n\n---\n**Contact:** ${contact}`;
+            if (suggestions) {
+                body += '## What would you like to share or suggest?\n';
+                body += suggestions + '\n\n';
             }
+
+            if (improvements) {
+                body += '## What do you wish was better?\n';
+                body += improvements + '\n\n';
+            }
+
+            // Tag @M0nkeyFl0wer
+            body += '---\n@M0nkeyFl0wer';
 
             // GitHub issue URL
             const issueUrl = `https://github.com/M0nkeyFl0wer/web3-privacy-ethereum-cypherpunk-research/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
@@ -315,7 +239,6 @@
             // Reset form after 2 seconds
             setTimeout(() => {
                 form.reset();
-                Object.values(sections).forEach(s => s.style.display = 'none');
                 document.getElementById('successMessage').style.display = 'none';
             }, 2000);
         });
