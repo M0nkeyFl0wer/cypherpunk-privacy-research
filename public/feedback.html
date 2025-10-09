@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback & Contributions - Web3 Privacy Research</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e4e4e7;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        .container { max-width: 800px; margin: 0 auto; }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to right, #a78bfa, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subtitle { color: #9ca3af; margin-bottom: 2rem; }
+        .nav {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .nav a {
+            color: #9ca3af;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+        .nav a:hover {
+            background: #27272a;
+            color: #a78bfa;
+        }
+        .form-section {
+            background: #27272a;
+            border: 1px solid #3f3f46;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .section-title {
+            color: #a78bfa;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        label {
+            display: block;
+            color: #e4e4e7;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        .hint {
+            font-size: 0.85rem;
+            color: #9ca3af;
+            margin-top: 0.25rem;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 0.75rem;
+            background: #18181b;
+            border: 1px solid #3f3f46;
+            border-radius: 6px;
+            color: #e4e4e7;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #a78bfa;
+        }
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        .radio-group {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .radio-option {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .radio-option input[type="radio"] {
+            width: auto;
+        }
+        .submit-btn {
+            background: linear-gradient(to right, #a78bfa, #ec4899);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: opacity 0.2s;
+        }
+        .submit-btn:hover {
+            opacity: 0.9;
+        }
+        .submit-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .success {
+            background: #065f46;
+            color: #d1fae5;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <a href="/">← Home</a>
+            <a href="simple-search.html">🔍 Search</a>
+            <a href="simple-viz.html">📊 Visualizations</a>
+        </div>
+
+        <h1>💬 Feedback & Contributions</h1>
+        <p class="subtitle">
+            Help us improve this research! Report bugs, suggest changes, or contribute new data.
+        </p>
+
+        <div id="successMessage" style="display: none;" class="success">
+            ✅ Thank you! Opening GitHub issue form with your feedback...
+        </div>
+
+        <form id="feedbackForm">
+            <!-- Type of Feedback -->
+            <div class="form-section">
+                <div class="section-title">
+                    📋 What type of feedback do you have?
+                </div>
+                <div class="form-group">
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="type" value="bug" required>
+                            <span>🐛 Bug Report</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="type" value="data">
+                            <span>📊 Data Correction/Addition</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="type" value="feature">
+                            <span>💡 Feature Suggestion</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="type" value="other">
+                            <span>💬 Other</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bug Report Section -->
+            <div class="form-section" id="bugSection" style="display: none;">
+                <div class="section-title">🐛 Bug Details</div>
+                <div class="form-group">
+                    <label>What's broken?</label>
+                    <input type="text" id="bugTitle" placeholder="e.g., Search not working for Tornado Cash">
+                </div>
+                <div class="form-group">
+                    <label>Steps to reproduce</label>
+                    <textarea id="bugSteps" placeholder="1. Go to search page&#10;2. Type 'tornado'&#10;3. No results appear"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Expected behavior</label>
+                    <textarea id="bugExpected" placeholder="Should show Tornado Cash project"></textarea>
+                </div>
+            </div>
+
+            <!-- Data Section -->
+            <div class="form-section" id="dataSection" style="display: none;">
+                <div class="section-title">📊 Data Feedback</div>
+                <div class="form-group">
+                    <label>Which project?</label>
+                    <input type="text" id="dataProject" placeholder="e.g., Tornado Cash, Aztec, etc.">
+                </div>
+                <div class="form-group">
+                    <label>What's wrong or missing?</label>
+                    <textarea id="dataIssue" placeholder="Describe the data issue or what needs to be added"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Source/Reference (optional)</label>
+                    <input type="url" id="dataSource" placeholder="https://... (link to correct information)">
+                </div>
+            </div>
+
+            <!-- Feature Section -->
+            <div class="form-section" id="featureSection" style="display: none;">
+                <div class="section-title">💡 Feature Suggestion</div>
+                <div class="form-group">
+                    <label>Feature title</label>
+                    <input type="text" id="featureTitle" placeholder="e.g., Add privacy score comparison">
+                </div>
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea id="featureDesc" placeholder="Describe your feature idea and why it would be useful"></textarea>
+                </div>
+            </div>
+
+            <!-- Other Section -->
+            <div class="form-section" id="otherSection" style="display: none;">
+                <div class="section-title">💬 General Feedback</div>
+                <div class="form-group">
+                    <label>Subject</label>
+                    <input type="text" id="otherTitle" placeholder="Brief summary">
+                </div>
+                <div class="form-group">
+                    <label>Details</label>
+                    <textarea id="otherDesc" placeholder="Tell us what's on your mind"></textarea>
+                </div>
+            </div>
+
+            <!-- Contact (Optional) -->
+            <div class="form-section">
+                <div class="section-title">📧 Contact (Optional)</div>
+                <div class="form-group">
+                    <label>GitHub username or email</label>
+                    <input type="text" id="contact" placeholder="So we can follow up if needed (optional)">
+                    <div class="hint">Leave blank to submit anonymously</div>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Feedback</button>
+        </form>
+    </div>
+
+    <script>
+        const form = document.getElementById('feedbackForm');
+        const sections = {
+            bug: document.getElementById('bugSection'),
+            data: document.getElementById('dataSection'),
+            feature: document.getElementById('featureSection'),
+            other: document.getElementById('otherSection')
+        };
+
+        // Show/hide sections based on type
+        document.querySelectorAll('input[name="type"]').forEach(radio => {
+            radio.addEventListener('change', (e) => {
+                Object.values(sections).forEach(s => s.style.display = 'none');
+                if (sections[e.target.value]) {
+                    sections[e.target.value].style.display = 'block';
+                }
+            });
+        });
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const type = document.querySelector('input[name="type"]:checked').value;
+            let title = '';
+            let body = '';
+
+            if (type === 'bug') {
+                title = `[Bug] ${document.getElementById('bugTitle').value}`;
+                body = `**Steps to reproduce:**\n${document.getElementById('bugSteps').value}\n\n**Expected behavior:**\n${document.getElementById('bugExpected').value}`;
+            } else if (type === 'data') {
+                title = `[Data] ${document.getElementById('dataProject').value}`;
+                body = `**Project:** ${document.getElementById('dataProject').value}\n\n**Issue:**\n${document.getElementById('dataIssue').value}\n\n**Source:** ${document.getElementById('dataSource').value || 'N/A'}`;
+            } else if (type === 'feature') {
+                title = `[Feature] ${document.getElementById('featureTitle').value}`;
+                body = document.getElementById('featureDesc').value;
+            } else {
+                title = document.getElementById('otherTitle').value;
+                body = document.getElementById('otherDesc').value;
+            }
+
+            const contact = document.getElementById('contact').value;
+            if (contact) {
+                body += `\n\n---\n**Contact:** ${contact}`;
+            }
+
+            // GitHub issue URL
+            const issueUrl = `https://github.com/M0nkeyFl0wer/web3-privacy-ethereum-cypherpunk-research/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
+
+            // Show success message
+            document.getElementById('successMessage').style.display = 'block';
+
+            // Open GitHub issue in new tab
+            window.open(issueUrl, '_blank');
+
+            // Reset form after 2 seconds
+            setTimeout(() => {
+                form.reset();
+                Object.values(sections).forEach(s => s.style.display = 'none');
+                document.getElementById('successMessage').style.display = 'none';
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
