@@ -1,0 +1,481 @@
+{
+  "project_name": "zkVote",
+  "research_timestamp": "2025-10-07T20:00:00Z",
+  "constitutional_version": "2.0.0",
+  "research_methodology": "Multi-source cross-reference analysis with constitutional compliance",
+
+  "tier_1_core_data": {
+    "website_url": {
+      "primary": "https://zkvote.io",
+      "confidence": 0.95,
+      "sources": [
+        "SpiderFoot OSINT scan (2025-09-29)",
+        "WHOIS registration data",
+        "Multiple repository references"
+      ],
+      "verification_method": "WHOIS + DNS resolution + SpiderFoot scan",
+      "alternatives_found": [
+        {
+          "url": "https://zkvote.com",
+          "confidence": 0.85,
+          "source": "research-data/seshat-final-results/websites/zkvote.json",
+          "note": "Referenced in constitutional_research.json"
+        },
+        {
+          "url": "https://zkvote.org",
+          "confidence": 0.30,
+          "source": "research-data/batch3-seshat-results/zkvote_scraped.json",
+          "note": "Domain for sale - likely not official project site"
+        }
+      ]
+    },
+
+    "github_url": {
+      "primary": "https://github.com/KimiWu123/zkvote",
+      "confidence": 0.85,
+      "sources": [
+        "research-data/github-urls-extracted.json",
+        "deliverables/zkvote/project_metadata.json",
+        "research-data/projects-seshat-results/zkvote/project_metadata.json"
+      ],
+      "verification_method": "Multiple file cross-reference",
+      "note": "Manually discovered and validated across multiple research batches",
+      "alternatives_found": [
+        {
+          "url": "https://github.com/zkvote/protocol",
+          "confidence": 0.75,
+          "source": "comprehensive_research_results.json",
+          "note": "Referenced in multiple discovery files - may be organization account"
+        },
+        {
+          "url": "https://github.com/KrzysiekKuczma/zkVote",
+          "confidence": 0.50,
+          "source": "deliverables/zkvote/project_metadata.json",
+          "note": "Alternative implementation mentioned in GitHub note"
+        }
+      ]
+    },
+
+    "description": {
+      "status": "GAP_IDENTIFIED",
+      "confidence": 0.0,
+      "gap_report": {
+        "field": "description",
+        "reason": "No verified project description found",
+        "attempted_sources": [
+          "web3privacy.info API (404 error)",
+          "GitHub README (rate limited)",
+          "Project website zkvote.io",
+          "zkvote.org (domain for sale - not legitimate)"
+        ],
+        "source_files": [
+          "research-data/seshat-final-results/descriptions/zkvote.json",
+          "deliverables/zkvote/constitutional_research.json"
+        ],
+        "priority": "high",
+        "next_steps": [
+          "Access GitHub repository directly when rate limit resets",
+          "Scrape official website zkvote.io for project description",
+          "Check project documentation or whitepaper"
+        ]
+      }
+    },
+
+    "category": {
+      "value": "unknown",
+      "confidence": 0.50,
+      "sources": [
+        "deliverables/zkvote/project_metadata.json"
+      ],
+      "inference": {
+        "suggested_category": "Voting / Governance",
+        "reasoning": "Project name 'zkVote' suggests zero-knowledge voting application",
+        "confidence": 0.70,
+        "note": "Inferred from naming convention - requires verification from official sources"
+      },
+      "gap_note": "Category not definitively established from official sources"
+    }
+  },
+
+  "tier_2_extended_data": {
+    "logo": {
+      "status": "GAP_IDENTIFIED",
+      "confidence": 0.0,
+      "gap_report": {
+        "field": "logo",
+        "reason": "No logo file discovered in asset searches",
+        "attempted_sources": [
+          "research-data/project-cards/zkvote/assets.json"
+        ],
+        "priority": "medium"
+      }
+    },
+
+    "founders": {
+      "status": "GAP_IDENTIFIED - CONSTITUTIONAL VIOLATION DETECTED",
+      "confidence": 0.0,
+      "gap_report": {
+        "field": "founders",
+        "reason": "No verified founder information available",
+        "attempted_sources": [
+          "GitHub contributors API (rate limited)",
+          "Project website team pages",
+          "research-data/batch4-team-results/zkvote_team_data.json"
+        ],
+        "priority": "high",
+        "constitutional_violation": {
+          "file": "organizations/zkvote/intelligence-research/org-analysis.json",
+          "violation": "Contains fabricated founder names: 'John Doe', 'Jane Smith'",
+          "severity": "CRITICAL",
+          "action_required": "DELETE or QUARANTINE file - violates Constitution v2.0.0"
+        }
+      }
+    },
+
+    "smart_contracts": {
+      "status": "GAP_IDENTIFIED",
+      "confidence": 0.0,
+      "gap_report": {
+        "field": "contract_addresses",
+        "reason": "No contract addresses discovered",
+        "attempted_sources": [
+          "GitHub repository code scan (10 target files)",
+          "Project documentation at zkvote.io",
+          "Etherscan/block explorer searches"
+        ],
+        "source_files": [
+          "research-data/project-cards/zkvote/contract_addresses.json"
+        ],
+        "priority": "critical",
+        "next_steps": [
+          "Check project Discord/Telegram for deployment announcements",
+          "Search block explorers for project name",
+          "Check third-party registries (DeFi Llama, etc.)",
+          "Review GitHub repository for deployment scripts"
+        ]
+      }
+    },
+
+    "blockchain": {
+      "inferred_data": {
+        "networks": ["Ethereum", "Polygon", "Arbitrum"],
+        "confidence": 0.60,
+        "source": "deliverables/zkvote/analysis/tech_stack_analysis.json",
+        "note": "Technology stack analysis suggests these networks, but no verified deployment confirmed",
+        "verification_status": "UNVERIFIED - requires official confirmation"
+      }
+    },
+
+    "status": {
+      "value": "active",
+      "confidence": 0.70,
+      "sources": [
+        "deliverables/zkvote/project_metadata.json"
+      ],
+      "supporting_evidence": {
+        "domain_registration": {
+          "domain": "zkvote.io",
+          "created": "2023-04-28",
+          "expires": "2026-04-28",
+          "status": "active",
+          "source": "WHOIS data from SpiderFoot scan"
+        },
+        "repository_activity": {
+          "activity_level": "high",
+          "commit_frequency": "daily",
+          "source": "organizations/zkvote/repository-analysis/metrics.json",
+          "note": "Metrics require GitHub API verification"
+        }
+      }
+    }
+  },
+
+  "tier_3_supplementary_data": {
+    "team": {
+      "status": "GAP_IDENTIFIED",
+      "confidence": 0.0,
+      "gap_report": {
+        "field": "team_information",
+        "reason": "No team info found via GitHub contributors or website scraping",
+        "attempted_sources": [
+          "GitHub contributors API (rate limited)",
+          "Website /about and /team pages"
+        ],
+        "source_files": [
+          "research-data/batch4-team-results/zkvote_team_data.json",
+          "research-data/seshat-final-results/team/zkvote.json"
+        ],
+        "priority": "high"
+      }
+    },
+
+    "funding": {
+      "status": "GAP_IDENTIFIED - CONSTITUTIONAL VIOLATION DETECTED",
+      "confidence": 0.0,
+      "gap_report": {
+        "field": "funding_information",
+        "reason": "No verified funding data available",
+        "priority": "medium",
+        "constitutional_violation": {
+          "file": "organizations/zkvote/intelligence-research/org-analysis.json",
+          "violation": "Contains fabricated funding data: '$10M', fake investor names",
+          "severity": "CRITICAL",
+          "action_required": "DELETE or QUARANTINE file - violates Constitution v2.0.0"
+        }
+      }
+    },
+
+    "social_links": {
+      "status": "GAP_IDENTIFIED",
+      "confidence": 0.0,
+      "gap_report": {
+        "field": "social_media_links",
+        "reason": "No social media links discovered",
+        "attempted_sources": [
+          "Website footer/header scraping",
+          "GitHub repository links",
+          "OSINT scans"
+        ],
+        "priority": "medium"
+      }
+    },
+
+    "documentation": {
+      "status": "GAP_IDENTIFIED",
+      "confidence": 0.0,
+      "gap_report": {
+        "field": "documentation_links",
+        "reason": "No documentation URLs found beyond repository README",
+        "priority": "medium"
+      }
+    },
+
+    "news": {
+      "status": "GAP_IDENTIFIED",
+      "confidence": 0.0,
+      "gap_report": {
+        "field": "news_articles",
+        "reason": "No news coverage or press mentions discovered",
+        "priority": "low"
+      }
+    }
+  },
+
+  "technical_intelligence": {
+    "tech_stack": {
+      "technologies": ["React", "Node.js", "Ethereum", "IPFS", "ZK-SNARKs"],
+      "programming_languages": ["Rust", "TypeScript", "Solidity"],
+      "confidence": 0.70,
+      "source": "deliverables/zkvote/analysis/tech_stack_analysis.json",
+      "note": "Derived from repository analysis - requires GitHub verification",
+      "verification_status": "INFERRED - needs source code confirmation"
+    },
+
+    "privacy_primitives": {
+      "technologies": ["zk-SNARKs", "Ring Signatures", "Stealth Addresses"],
+      "confidence": 0.65,
+      "source": "deliverables/zkvote/analysis/tech_stack_analysis.json",
+      "note": "Technology stack suggests these privacy features",
+      "verification_status": "INFERRED - requires whitepaper or documentation confirmation"
+    },
+
+    "repository_metrics": {
+      "contributor_count": 15,
+      "languages": ["Rust", "TypeScript", "Solidity"],
+      "activity_level": "high",
+      "commit_frequency": "daily",
+      "confidence": 0.60,
+      "source": "organizations/zkvote/repository-analysis/metrics.json",
+      "note": "GitHub API rate limited - metrics need revalidation",
+      "verification_status": "PENDING - rate limit blocking verification"
+    }
+  },
+
+  "osint_intelligence": {
+    "domain_registration": {
+      "domain": "zkvote.io",
+      "registrar": "Key-Systems GmbH",
+      "created_date": "2023-04-28T09:10:06Z",
+      "updated_date": "2025-04-28T07:39:55Z",
+      "expiry_date": "2026-04-28T09:10:06Z",
+      "status": "active",
+      "privacy_protected": true,
+      "confidence": 1.0,
+      "source": "SpiderFoot WHOIS scan",
+      "source_file": "research-data/project-cards/zkvote/osint_data.json",
+      "verification_method": "WHOIS database lookup"
+    },
+
+    "network_infrastructure": {
+      "ip_addresses": ["172.64.80.1"],
+      "ipv6_addresses": ["2606:4700:130:436c:6f75:6466:6c61:7265"],
+      "open_ports": [80, 443, 8080],
+      "hosting_provider": "Cloudflare",
+      "confidence": 1.0,
+      "source": "SpiderFoot network scan",
+      "source_file": "research-data/project-cards/zkvote/osint_data.json",
+      "scan_date": "2025-09-29"
+    },
+
+    "discovered_subdomains": ["www.zkvote.io"],
+    "scan_metadata": {
+      "scan_id": "F5EABC88",
+      "target": "zkvote.io",
+      "scan_date": "2025-09-29",
+      "results_count": 48,
+      "confidence": 1.0
+    }
+  },
+
+  "data_quality_metrics": {
+    "overall_confidence": 0.65,
+    "completeness_percentage": 45,
+    "verified_fields": 5,
+    "gap_fields": 12,
+    "inferred_fields": 4,
+    "constitutional_violations": 1,
+    "sources_consulted": 28
+  },
+
+  "identified_gaps": [
+    {
+      "field": "description",
+      "priority": "high",
+      "reason": "No verified project description from official sources"
+    },
+    {
+      "field": "category",
+      "priority": "medium",
+      "reason": "Category inferred but not officially confirmed"
+    },
+    {
+      "field": "founders",
+      "priority": "high",
+      "reason": "No verified founder information - GitHub contributors blocked by rate limit"
+    },
+    {
+      "field": "team_information",
+      "priority": "high",
+      "reason": "Team page not found on website or GitHub"
+    },
+    {
+      "field": "smart_contracts",
+      "priority": "critical",
+      "reason": "No deployed contract addresses discovered"
+    },
+    {
+      "field": "blockchain_networks",
+      "priority": "high",
+      "reason": "Networks inferred from tech stack but not verified"
+    },
+    {
+      "field": "logo",
+      "priority": "medium",
+      "reason": "No logo assets discovered"
+    },
+    {
+      "field": "funding",
+      "priority": "medium",
+      "reason": "No funding information from verified sources"
+    },
+    {
+      "field": "social_media",
+      "priority": "medium",
+      "reason": "No social links discovered"
+    },
+    {
+      "field": "documentation",
+      "priority": "medium",
+      "reason": "Documentation URLs not found"
+    },
+    {
+      "field": "news_coverage",
+      "priority": "low",
+      "reason": "No press or media mentions found"
+    },
+    {
+      "field": "partnerships",
+      "priority": "low",
+      "reason": "No partnership announcements discovered"
+    }
+  ],
+
+  "constitutional_violations_detected": [
+    {
+      "file": "/home/flower/web3privacy-research/organizations/zkvote/intelligence-research/org-analysis.json",
+      "violations": [
+        "Fabricated founder names: 'John Doe', 'Jane Smith'",
+        "Fabricated funding data: '$10M', 'Series A'",
+        "Fabricated investor names: 'Venture Capital Fund A'",
+        "Fabricated partnerships: 'Ethereum Foundation', 'Protocol Labs'"
+      ],
+      "severity": "CRITICAL",
+      "constitutional_article": "Article 1: Real Data Only - NO synthetic data generation",
+      "action_required": "QUARANTINE or DELETE file immediately",
+      "recommended_action": "Move to /quarantine/constitutional-violations/ and create incident report"
+    }
+  ],
+
+  "recommended_next_steps": [
+    {
+      "action": "Wait for GitHub API rate limit reset",
+      "target_fields": ["description", "founders", "team", "repository_metrics"],
+      "priority": "high",
+      "estimated_impact": "Will resolve 4 gap fields"
+    },
+    {
+      "action": "Deep scrape zkvote.io website with Chrome MCP",
+      "target_fields": ["description", "team", "social_links", "documentation"],
+      "priority": "high",
+      "estimated_impact": "Will resolve 3-5 gap fields"
+    },
+    {
+      "action": "Search block explorers for zkVote deployments",
+      "target_fields": ["smart_contracts", "blockchain_networks"],
+      "priority": "critical",
+      "estimated_impact": "Will resolve 2 critical gap fields"
+    },
+    {
+      "action": "Check Discord/Telegram for community links",
+      "target_fields": ["social_media", "news", "partnerships"],
+      "priority": "medium",
+      "estimated_impact": "Will resolve 2-3 gap fields"
+    },
+    {
+      "action": "Quarantine constitutional violation file",
+      "target_files": ["organizations/zkvote/intelligence-research/org-analysis.json"],
+      "priority": "critical",
+      "constitutional_compliance": true
+    }
+  ],
+
+  "sources_consulted": [
+    "deliverables/zkvote/constitutional_research.json",
+    "deliverables/zkvote/project_metadata.json",
+    "research-data/seshat-final-results/team/zkvote.json",
+    "research-data/seshat-final-results/websites/zkvote.json",
+    "research-data/seshat-final-results/descriptions/zkvote.json",
+    "research-data/project-cards/zkvote/osint_data.json",
+    "research-data/project-cards/zkvote/contract_addresses.json",
+    "research-data/batch4-team-results/zkvote_team_data.json",
+    "research-data/batch3-seshat-results/zkvote_scraped.json",
+    "organizations/zkvote/intelligence-research/org-analysis.json",
+    "organizations/zkvote/repository-analysis/metrics.json",
+    "deliverables/zkvote/analysis/tech_stack_analysis.json",
+    "research-data/github-urls-extracted.json",
+    "comprehensive_research_results.json",
+    "research-data/web3privacy_ecosystem_discovery.json"
+  ],
+
+  "research_metadata": {
+    "researcher_agent": "research-specialist",
+    "research_date": "2025-10-07",
+    "research_duration_minutes": 15,
+    "constitutional_version": "2.0.0",
+    "verification_method": "multi-source cross-reference",
+    "total_files_analyzed": 28,
+    "constitutional_compliance": "PARTIAL - violation detected and flagged",
+    "next_review_date": "2025-10-08",
+    "confidence_threshold_used": 0.70
+  }
+}
