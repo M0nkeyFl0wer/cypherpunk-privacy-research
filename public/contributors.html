@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contributors Guide - Ethereum Cypherpunk Research</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e4e4e7;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to right, #a78bfa, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subtitle { color: #9ca3af; margin-bottom: 2rem; }
+        .nav {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .nav a {
+            color: #9ca3af;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+        .nav a:hover {
+            background: #27272a;
+            color: #a78bfa;
+        }
+        .brand-logo {
+            display: inline-block;
+            margin-bottom: 1rem;
+            opacity: 0.7;
+            transition: opacity 0.2s;
+        }
+        .brand-logo:hover {
+            opacity: 1;
+        }
+        .section {
+            background: #27272a;
+            border: 1px solid #3f3f46;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .section h2 {
+            color: #a78bfa;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .section p, .section li {
+            color: #d1d5db;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        .section ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .section code {
+            background: #18181b;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: #a78bfa;
+        }
+        .section pre {
+            background: #18181b;
+            padding: 1rem;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin-bottom: 1rem;
+        }
+        .section pre code {
+            background: none;
+            padding: 0;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        label {
+            display: block;
+            color: #e4e4e7;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        .hint {
+            font-size: 0.85rem;
+            color: #9ca3af;
+            margin-top: 0.25rem;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.75rem;
+            background: #18181b;
+            border: 1px solid #3f3f46;
+            border-radius: 6px;
+            color: #e4e4e7;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #a78bfa;
+        }
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        .submit-btn {
+            background: linear-gradient(to right, #a78bfa, #ec4899);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: opacity 0.2s;
+        }
+        .submit-btn:hover {
+            opacity: 0.9;
+        }
+        .success {
+            background: #065f46;
+            color: #d1fae5;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <a href="/">← Home</a>
+            <a href="simple-search.html">🔍 Search</a>
+            <a href="feedback.html">💬 Feedback</a>
+        </div>
+
+        <a href="https://web3privacy.info" target="_blank" class="brand-logo">
+            <img src="assets/logo-white.svg" alt="Web3Privacy Now" style="height: 35px;">
+        </a>
+
+        <div style="display: flex; align-items: center; gap: 2rem; margin-bottom: 2rem;">
+            <div style="flex: 1;">
+                <h1>🤝 Contributors Guide</h1>
+                <p class="subtitle">
+                    How to contribute to the Ethereum Cypherpunk Research Project
+                </p>
+            </div>
+            <img src="assets/sticker-eye-5x5cm.png" alt="Web3Privacy" style="height: 120px; opacity: 0.8;">
+        </div>
+
+        <!-- Pull Request Guide -->
+        <div class="section">
+            <h2>📝 Making Pull Requests</h2>
+            <p>We welcome contributions! Here's how to submit a pull request:</p>
+
+            <h3 style="color: #e4e4e7; margin-top: 1.5rem; margin-bottom: 0.5rem;">1. Fork & Clone</h3>
+            <pre><code>git clone https://github.com/YOUR-USERNAME/web3-privacy-ethereum-cypherpunk-research.git
+cd web3-privacy-ethereum-cypherpunk-research</code></pre>
+
+            <h3 style="color: #e4e4e7; margin-top: 1.5rem; margin-bottom: 0.5rem;">2. Create a Branch</h3>
+            <pre><code>git checkout -b feature/your-feature-name</code></pre>
+
+            <h3 style="color: #e4e4e7; margin-top: 1.5rem; margin-bottom: 0.5rem;">3. Make Your Changes</h3>
+            <ul>
+                <li>Add new project data to <code>deliverables/[project-name]/</code></li>
+                <li>Update documentation if needed</li>
+                <li>Follow the existing file structure and naming conventions</li>
+                <li>Ensure all data follows our <a href="CONSTITUTION.md" style="color: #a78bfa;">constitutional requirements</a> (100% real data, no fabrication)</li>
+            </ul>
+
+            <h3 style="color: #e4e4e7; margin-top: 1.5rem; margin-bottom: 0.5rem;">4. Commit & Push</h3>
+            <pre><code>git add .
+git commit -m "Add [project-name] research data"
+git push origin feature/your-feature-name</code></pre>
+
+            <h3 style="color: #e4e4e7; margin-top: 1.5rem; margin-bottom: 0.5rem;">5. Open Pull Request</h3>
+            <p>Go to GitHub and click "New Pull Request". Our team will review your contribution!</p>
+        </div>
+
+        <!-- Contribution Types -->
+        <div class="section">
+            <h2>🎯 Types of Contributions</h2>
+            <ul>
+                <li><strong>New Project Data:</strong> Research and add privacy projects we're missing</li>
+                <li><strong>Data Corrections:</strong> Fix inaccurate or outdated information</li>
+                <li><strong>Documentation:</strong> Improve guides, README files, or explanations</li>
+                <li><strong>Visualizations:</strong> Create new data visualizations or charts</li>
+                <li><strong>Code Improvements:</strong> Enhance search, UI, or backend functionality</li>
+                <li><strong>Bug Fixes:</strong> Identify and fix issues in the codebase</li>
+            </ul>
+        </div>
+
+        <!-- Data Quality Standards -->
+        <div class="section">
+            <h2>✅ Data Quality Standards</h2>
+            <p>All contributions must follow these rules:</p>
+            <ul>
+                <li><strong>Real Data Only:</strong> No synthetic or fabricated information</li>
+                <li><strong>Source Verification:</strong> Provide sources for all claims</li>
+                <li><strong>Multi-source Confirmation:</strong> Critical facts need 2+ sources</li>
+                <li><strong>Confidence Scoring:</strong> Rate data confidence 0.0-1.0</li>
+                <li><strong>Report Gaps:</strong> If data is missing, report it - don't make it up</li>
+            </ul>
+            <p>See our <a href="CONSTITUTION.md" style="color: #a78bfa;">Constitution (v2.0.0)</a> for complete details.</p>
+        </div>
+
+        <!-- Contact Form -->
+        <div style="text-align: center; margin: 3rem 0;">
+            <img src="assets/sticker-labyrinth-5x5cm.png" alt="Privacy Labyrinth" style="height: 80px; opacity: 0.5;">
+        </div>
+
+        <div class="section">
+            <h2>📧 Contact the Team</h2>
+            <p>Have questions about contributing? Send us a message:</p>
+
+            <div id="successMessage" style="display: none;" class="success">
+                ✅ Message sent! Opening GitHub issue...
+            </div>
+
+            <form id="contactForm">
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" id="contactName" placeholder="Name or GitHub username" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="contactEmail" placeholder="your.email@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Subject</label>
+                    <input type="text" id="contactSubject" placeholder="What's this about?" required>
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea id="contactMessage" placeholder="Your question or message..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="section">
+            <h2>🔗 Quick Links</h2>
+            <ul>
+                <li><a href="https://github.com/M0nkeyFl0wer/web3-privacy-ethereum-cypherpunk-research" style="color: #a78bfa;">GitHub Repository</a></li>
+                <li><a href="https://github.com/M0nkeyFl0wer/web3-privacy-ethereum-cypherpunk-research/issues" style="color: #a78bfa;">Report Issues</a></li>
+                <li><a href="https://github.com/M0nkeyFl0wer/web3-privacy-ethereum-cypherpunk-research/pulls" style="color: #a78bfa;">View Pull Requests</a></li>
+                <li><a href="CONSTITUTION.md" style="color: #a78bfa;">Data Constitution v2.0.0</a></li>
+                <li><a href="https://web3privacy.info" style="color: #a78bfa;">Web3Privacy.info</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('contactForm');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById('contactName').value;
+            const email = document.getElementById('contactEmail').value;
+            const subject = document.getElementById('contactSubject').value;
+            const message = document.getElementById('contactMessage').value;
+
+            // Build GitHub issue
+            const title = `[Contact] ${subject}`;
+            const body = `## Contact Request\n\n**From:** ${name}\n**Email:** ${email}\n\n## Message\n${message}\n\n---\n@M0nkeyFl0wer`;
+
+            const issueUrl = `https://github.com/M0nkeyFl0wer/web3-privacy-ethereum-cypherpunk-research/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
+
+            // Show success message
+            document.getElementById('successMessage').style.display = 'block';
+
+            // Open GitHub issue
+            window.open(issueUrl, '_blank');
+
+            // Reset form
+            setTimeout(() => {
+                form.reset();
+                document.getElementById('successMessage').style.display = 'none';
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
