@@ -1,0 +1,24 @@
+{
+  "contracts": [
+    {
+      "name": "TORN Governance Token",
+      "address": "0x77777feddddffc19ff86db637967013e6c6a116c",
+      "network": "ethereum",
+      "type": "token",
+      "source": "etherscan.io",
+      "verified": true
+    },
+    {
+      "name": "Tornado Cash Pool",
+      "address": "0x910Cbd523D972eb0a6f4cAe4618aD62622b39DbF",
+      "network": "ethereum",
+      "type": "pool",
+      "source": "etherscan.io",
+      "verified": true
+    }
+  ],
+  "search_attempted": true,
+  "note": "Protocol sanctioned by US Treasury - development ceased",
+  "analyzed_at": "2025-09-29T14:12:14.639831",
+  "last_updated": "2025-09-29T15:45:58.233677"
+}

@@ -1,0 +1,30 @@
+{
+  "project_name": "Panther Protocol",
+  "category": "defi",
+  "status": "active",
+  "ecosystem": "Multi-chain",
+  "technology": "",
+  "description": "Decentralized privacy metaprotocol",
+  "website": "",
+  "github": "",
+  "discovery_date": "2025-09-29T14:06:45.267772",
+  "discovery_source": "web3privacy_github",
+  "research_progress": {
+    "status": "initial_discovery",
+    "completion_percent": 10,
+    "last_updated": "2025-09-29T14:06:45.267778"
+  },
+  "web3privacy_enriched": true,
+  "enriched_at": "2025-09-29T16:11:39.092562",
+  "mainnet_status": "mainnet",
+  "is_mainnet": true,
+  "launch_date": "2023-Q3",
+  "audit_count": 3,
+  "audits": [
+    "3 audits"
+  ],
+  "supported_chains": [
+    "polygon"
+  ],
+  "launch_status": "Testnet Q2 2023, Mainnet Q3 2023"
+}

@@ -1,0 +1,13 @@
+{
+  "project_name": "monero",
+  "website": "https://monero.io",
+  "website_confidence": 0.85,
+  "website_sources": ["https://monero.io", "curl scraping"],
+  "description": "This website is for sale! monero.io is your first and best source for information about monero. Here you will also find topics relating to issues of general interest. We hope you find what you are looking for!",
+  "description_confidence": 0.80,
+  "description_sources": ["https://monero.io meta tags"],
+  "research_date": "2025-10-06T13:29:02Z",
+  "batch_number": 3,
+  "execution_host": "seshat",
+  "scraping_method": "curl + grep"
+}

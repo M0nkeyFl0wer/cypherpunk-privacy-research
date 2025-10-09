@@ -1,0 +1,192 @@
+{
+  "owner": "SiennaNetwork",
+  "repo_name": "SiennaNetwork",
+  "full_name": "SiennaNetwork/SiennaNetwork",
+  "github_url": "https://github.com/SiennaNetwork/SiennaNetwork",
+  "html_url": "https://github.com/SiennaNetwork/SiennaNetwork",
+  "stars": 12,
+  "forks": 13,
+  "watchers": 12,
+  "open_issues": 3,
+  "contributors": 15,
+  "created_at": "2021-10-09T15:00:39Z",
+  "updated_at": "2024-12-23T06:35:56Z",
+  "pushed_at": "2022-04-29T18:34:43Z",
+  "size_kb": 28610,
+  "default_branch": "main",
+  "primary_language": "Rust",
+  "languages": [
+    {
+      "name": "Rust",
+      "bytes": 1027788,
+      "percentage": 64.33
+    },
+    {
+      "name": "TypeScript",
+      "bytes": 243693,
+      "percentage": 15.25
+    },
+    {
+      "name": "JavaScript",
+      "bytes": 205570,
+      "percentage": 12.87
+    },
+    {
+      "name": "HTML",
+      "bytes": 82932,
+      "percentage": 5.19
+    },
+    {
+      "name": "CSS",
+      "bytes": 16880,
+      "percentage": 1.06
+    },
+    {
+      "name": "Solidity",
+      "bytes": 7549,
+      "percentage": 0.47
+    },
+    {
+      "name": "Shell",
+      "bytes": 4654,
+      "percentage": 0.29
+    },
+    {
+      "name": "Makefile",
+      "bytes": 3292,
+      "percentage": 0.21
+    },
+    {
+      "name": "Nix",
+      "bytes": 2762,
+      "percentage": 0.17
+    },
+    {
+      "name": "Pug",
+      "bytes": 2624,
+      "percentage": 0.16
+    }
+  ],
+  "total_languages": 10,
+  "top_contributors": [
+    {
+      "username": "egasimus",
+      "contributions": 1635,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1656054?v=4",
+      "profile_url": "https://github.com/egasimus"
+    },
+    {
+      "username": "denismaxim0v",
+      "contributions": 153,
+      "avatar_url": "https://avatars.githubusercontent.com/u/11789381?v=4",
+      "profile_url": "https://github.com/denismaxim0v"
+    },
+    {
+      "username": "Wiz1991",
+      "contributions": 131,
+      "avatar_url": "https://avatars.githubusercontent.com/u/45233935?v=4",
+      "profile_url": "https://github.com/Wiz1991"
+    },
+    {
+      "username": "reuvenpo",
+      "contributions": 115,
+      "avatar_url": "https://avatars.githubusercontent.com/u/35386347?v=4",
+      "profile_url": "https://github.com/reuvenpo"
+    },
+    {
+      "username": "mradkov",
+      "contributions": 70,
+      "avatar_url": "https://avatars.githubusercontent.com/u/13139371?v=4",
+      "profile_url": "https://github.com/mradkov"
+    },
+    {
+      "username": "toml01",
+      "contributions": 66,
+      "avatar_url": "https://avatars.githubusercontent.com/u/7473870?v=4",
+      "profile_url": "https://github.com/toml01"
+    },
+    {
+      "username": "ivanpetkovic",
+      "contributions": 65,
+      "avatar_url": "https://avatars.githubusercontent.com/u/7317125?v=4",
+      "profile_url": "https://github.com/ivanpetkovic"
+    },
+    {
+      "username": "Cashmaney",
+      "contributions": 18,
+      "avatar_url": "https://avatars.githubusercontent.com/u/16579705?v=4",
+      "profile_url": "https://github.com/Cashmaney"
+    },
+    {
+      "username": "aakamenov",
+      "contributions": 17,
+      "avatar_url": "https://avatars.githubusercontent.com/u/29430447?v=4",
+      "profile_url": "https://github.com/aakamenov"
+    },
+    {
+      "username": "IntegralTeam",
+      "contributions": 14,
+      "avatar_url": "https://avatars.githubusercontent.com/u/35330335?v=4",
+      "profile_url": "https://github.com/IntegralTeam"
+    }
+  ],
+  "recent_commits": [
+    {
+      "sha": "7174971",
+      "message": "Merge pull request 'fix(docs): wrong lend link on readme' (#167) from docs/update-readme into dev",
+      "author": "mrrobot",
+      "date": "2022-04-29T18:32:48Z",
+      "url": "https://github.com/SiennaNetwork/SiennaNetwork/commit/71749715267f6881d64b9047e1a0c222a6a3167e"
+    },
+    {
+      "sha": "a6da773",
+      "message": "fix(docs): wrong lend link on readme",
+      "author": "Milen Radkov",
+      "date": "2022-04-29T18:30:14Z",
+      "url": "https://github.com/SiennaNetwork/SiennaNetwork/commit/a6da77395742f22a9aae977edd48045c10457618"
+    },
+    {
+      "sha": "d823c20",
+      "message": "Merge pull request 'chore(deploy-receipts): new lend rewards' (#166) from chore/new-lend-rewards int",
+      "author": "mrrobot",
+      "date": "2022-04-29T18:23:54Z",
+      "url": "https://github.com/SiennaNetwork/SiennaNetwork/commit/d823c2005fd1ccba9599b01ab8cbf9a630859843"
+    },
+    {
+      "sha": "aa8b930",
+      "message": "chore(deploy-receipts): new lend rewards",
+      "author": "Milen Radkov",
+      "date": "2022-04-29T18:09:48Z",
+      "url": "https://github.com/SiennaNetwork/SiennaNetwork/commit/aa8b930106e46f5e9a1b41b017d6ec7727af45aa"
+    },
+    {
+      "sha": "0ec3a4c",
+      "message": "Merge pull request 'feature/seize-sim' (#165) from feature/seize-sim into dev",
+      "author": "mrrobot",
+      "date": "2022-04-29T15:49:27Z",
+      "url": "https://github.com/SiennaNetwork/SiennaNetwork/commit/0ec3a4cb47b18943aa589922f9b55398f97294f8"
+    }
+  ],
+  "total_commits_sample": 10,
+  "description": "Sienna Network Monorepo",
+  "homepage": "https://app.sienna.network",
+  "topics": [
+    "amm",
+    "blockchain",
+    "defi",
+    "lending",
+    "privacy"
+  ],
+  "license": "GNU Affero General Public License v3.0",
+  "is_fork": false,
+  "is_archived": false,
+  "is_disabled": false,
+  "is_private": false,
+  "has_wiki": true,
+  "has_issues": true,
+  "has_projects": true,
+  "analyzed_at": "2025-10-07T23:23:03.602730",
+  "data_source": "github-api-v3",
+  "confidence": 1.0,
+  "verified": true
+}

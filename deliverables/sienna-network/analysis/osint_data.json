@@ -1,0 +1,304 @@
+{
+  "project": "sienna-network",
+  "timestamp": "2025-10-08T08:38:01-07:00",
+  "osint_version": "v3_github_homepage",
+  "osint_sources": {
+    "shodan": {
+      "domain": "sienna.network",
+      "tags": [
+        "dmarc",
+        "ipv6",
+        "spf"
+      ],
+      "subdomains": [
+        "_dmarc",
+        "claim",
+        "discord",
+        "docs",
+        "staging-mainnet",
+        "vest",
+        "www"
+      ],
+      "data": [
+        {
+          "subdomain": "",
+          "type": "A",
+          "value": "104.26.4.19",
+          "last_seen": "2025-10-07T19:25:21.599000"
+        },
+        {
+          "subdomain": "",
+          "type": "A",
+          "value": "104.26.5.19",
+          "last_seen": "2025-10-07T19:25:21.599000"
+        },
+        {
+          "subdomain": "",
+          "type": "A",
+          "value": "172.67.69.76",
+          "last_seen": "2025-10-07T19:25:21.599000"
+        },
+        {
+          "subdomain": "",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:413",
+          "last_seen": "2025-10-07T19:27:35.563000"
+        },
+        {
+          "subdomain": "",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:513",
+          "last_seen": "2025-10-07T19:27:35.563000"
+        },
+        {
+          "subdomain": "",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:454c",
+          "last_seen": "2025-10-07T19:27:35.563000"
+        },
+        {
+          "subdomain": "",
+          "type": "MX",
+          "value": "mail.protonmail.ch",
+          "last_seen": "2025-10-07T19:27:19.057000"
+        },
+        {
+          "subdomain": "",
+          "type": "MX",
+          "value": "mailsec.protonmail.ch",
+          "last_seen": "2025-10-07T19:27:19.057000"
+        },
+        {
+          "subdomain": "",
+          "type": "NS",
+          "value": "cortney.ns.cloudflare.com",
+          "last_seen": "2025-10-07T19:28:32.904000"
+        },
+        {
+          "subdomain": "",
+          "type": "NS",
+          "value": "jaziel.ns.cloudflare.com",
+          "last_seen": "2025-10-07T19:28:32.904000"
+        },
+        {
+          "subdomain": "",
+          "type": "SOA",
+          "value": "cortney.ns.cloudflare.com",
+          "last_seen": "2025-10-07T19:29:34.386000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "protonmail-verification=6985a0936540132a39af8cd2ef86d7aba4e8f369",
+          "last_seen": "2025-10-07T19:31:08.547000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "v=spf1 include:_spf.protonmail.ch mx -all",
+          "last_seen": "2025-10-07T19:31:08.547000"
+        },
+        {
+          "subdomain": "_dmarc",
+          "type": "TXT",
+          "value": "v=DMARC1; p=quarantine; rua=mailto:dmarc-reports@sienna.network",
+          "last_seen": "2025-10-07T19:31:08.546000"
+        },
+        {
+          "subdomain": "claim",
+          "type": "A",
+          "value": "104.26.4.19",
+          "last_seen": "2025-10-07T19:25:22.411000"
+        },
+        {
+          "subdomain": "claim",
+          "type": "A",
+          "value": "104.26.5.19",
+          "last_seen": "2025-10-07T19:25:22.411000"
+        },
+        {
+          "subdomain": "claim",
+          "type": "A",
+          "value": "172.67.69.76",
+          "last_seen": "2025-10-07T19:25:22.412000"
+        },
+        {
+          "subdomain": "claim",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:413",
+          "last_seen": "2025-10-07T19:27:34.570000"
+        },
+        {
+          "subdomain": "claim",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:513",
+          "last_seen": "2025-10-07T19:27:34.570000"
+        },
+        {
+          "subdomain": "claim",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:454c",
+          "last_seen": "2025-10-07T19:27:34.570000"
+        },
+        {
+          "subdomain": "discord",
+          "type": "A",
+          "value": "104.26.4.19",
+          "last_seen": "2025-10-07T19:25:24.389000"
+        },
+        {
+          "subdomain": "discord",
+          "type": "A",
+          "value": "104.26.5.19",
+          "last_seen": "2025-10-07T19:25:24.389000"
+        },
+        {
+          "subdomain": "discord",
+          "type": "A",
+          "value": "172.67.69.76",
+          "last_seen": "2025-10-07T19:25:24.389000"
+        },
+        {
+          "subdomain": "discord",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:413",
+          "last_seen": "2025-10-07T19:27:34.395000"
+        },
+        {
+          "subdomain": "discord",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:513",
+          "last_seen": "2025-10-07T19:27:34.395000"
+        },
+        {
+          "subdomain": "discord",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:454c",
+          "last_seen": "2025-10-07T19:27:34.395000"
+        },
+        {
+          "subdomain": "docs",
+          "type": "CNAME",
+          "value": "hosting.gitbook.io",
+          "last_seen": "2025-10-07T19:25:22.727000"
+        },
+        {
+          "subdomain": "staging-mainnet",
+          "type": "A",
+          "value": "104.26.4.19",
+          "last_seen": "2025-10-07T19:25:22.376000"
+        },
+        {
+          "subdomain": "staging-mainnet",
+          "type": "A",
+          "value": "104.26.5.19",
+          "last_seen": "2025-10-07T19:25:22.376000"
+        },
+        {
+          "subdomain": "staging-mainnet",
+          "type": "A",
+          "value": "172.67.69.76",
+          "last_seen": "2025-10-07T19:25:22.376000"
+        },
+        {
+          "subdomain": "staging-mainnet",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:413",
+          "last_seen": "2025-10-07T19:27:29.729000"
+        },
+        {
+          "subdomain": "staging-mainnet",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:513",
+          "last_seen": "2025-10-07T19:27:29.729000"
+        },
+        {
+          "subdomain": "staging-mainnet",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:454c",
+          "last_seen": "2025-10-07T19:27:29.729000"
+        },
+        {
+          "subdomain": "vest",
+          "type": "A",
+          "value": "104.26.4.19",
+          "last_seen": "2025-10-07T19:25:21.904000"
+        },
+        {
+          "subdomain": "vest",
+          "type": "A",
+          "value": "104.26.5.19",
+          "last_seen": "2025-10-07T19:25:21.904000"
+        },
+        {
+          "subdomain": "vest",
+          "type": "A",
+          "value": "172.67.69.76",
+          "last_seen": "2025-10-07T19:25:21.904000"
+        },
+        {
+          "subdomain": "vest",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:413",
+          "last_seen": "2025-10-07T19:27:33"
+        },
+        {
+          "subdomain": "vest",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:513",
+          "last_seen": "2025-10-07T19:27:33"
+        },
+        {
+          "subdomain": "vest",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:454c",
+          "last_seen": "2025-10-07T19:27:33"
+        },
+        {
+          "subdomain": "www",
+          "type": "A",
+          "value": "104.26.4.19",
+          "last_seen": "2025-10-07T19:25:25.530000"
+        },
+        {
+          "subdomain": "www",
+          "type": "A",
+          "value": "104.26.5.19",
+          "last_seen": "2025-10-07T19:25:25.529000"
+        },
+        {
+          "subdomain": "www",
+          "type": "A",
+          "value": "172.67.69.76",
+          "last_seen": "2025-10-07T19:25:25.530000"
+        },
+        {
+          "subdomain": "www",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:413",
+          "last_seen": "2025-10-07T19:27:32.281000"
+        },
+        {
+          "subdomain": "www",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:513",
+          "last_seen": "2025-10-07T19:27:32.281000"
+        },
+        {
+          "subdomain": "www",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:454c",
+          "last_seen": "2025-10-07T19:27:32.281000"
+        }
+      ],
+      "more": false
+    },
+    "virustotal": {},
+    "hunter": {},
+    "hibp": {}
+  },
+  "extracted_targets": {
+    "domain": "app.sienna.network",
+    "website": "https://app.sienna.network"
+  }
+}

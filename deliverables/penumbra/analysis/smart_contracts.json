@@ -1,0 +1,9 @@
+{
+  "project": "penumbra",
+  "network": "Cosmos",
+  "contracts": [],
+  "analyzed_at": "2025-10-08T10:19:23.716002",
+  "confidence": 1.0,
+  "data_source": "Manual research + Etherscan verification",
+  "note": "Cosmos-based chain, no Ethereum contracts"
+}

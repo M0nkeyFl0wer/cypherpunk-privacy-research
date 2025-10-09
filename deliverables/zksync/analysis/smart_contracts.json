@@ -1,0 +1,16 @@
+{
+  "contracts": [
+    {
+      "name": "zkSync Era Bridge L1",
+      "address": "0x57891966931eb4bb6fb81430e6ce0a03aabde063",
+      "network": "ethereum",
+      "type": "bridge",
+      "source": "etherscan.io",
+      "verified": true
+    }
+  ],
+  "search_attempted": true,
+  "note": "Manual verification needed - check website and docs",
+  "analyzed_at": "2025-09-29T14:12:14.419305",
+  "last_updated": "2025-09-29T15:47:14.212197"
+}

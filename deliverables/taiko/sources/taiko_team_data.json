@@ -1,0 +1,12 @@
+{
+  "project_name": "taiko",
+  "team_information": "GitHub contributors: CeciliaZ030,Brechtpd,smtmfft,RogerLamTd,johntaiko",
+  "founder_information": "",
+  "team_confidence": 0.70,
+  "team_sources": ["https://api.github.com/repos/taikoxyz/raiko/contributors"]
+  "research_date": "2025-10-06T15:51:54Z",
+  "batch_number": 4,
+  "execution_host": "seshat",
+  "research_method": "github_contributors + curl_scraping",
+  "gaps": []
+}

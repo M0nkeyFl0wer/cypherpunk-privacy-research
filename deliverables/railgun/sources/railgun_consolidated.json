@@ -1,0 +1,366 @@
+{
+  "project_id": "railgun",
+  "consolidated_at": "2025-09-30T13:14:26.398775",
+  "constitutional_compliance": "Consolidated from real data sources only",
+  "data_sources": [
+    "research-data/project-cards/railgun/deep_research_claude.json"
+  ],
+  "deep_research": {
+    "project_id": "railgun",
+    "project_name": "RAILGUN",
+    "research_date": "2025-09-30",
+    "website": "https://railgun.org",
+    "github_org": "https://github.com/Railgun-Privacy",
+    "governance": {
+      "type": "DAO",
+      "model": "Decentralized Autonomous Organization",
+      "description": "Fully decentralized governance through RAILGUN DAO - no central company structure",
+      "token": "RAIL",
+      "voting_power": "1 RAIL = 1 vote",
+      "sources": [
+        "https://www.railgun.org/",
+        "https://governance.railgun.org/"
+      ]
+    },
+    "team_members": [
+      {
+        "name": "Emmanuel Goldstein",
+        "role": "Founder & Development Leader",
+        "background": "DeFi Scientist with Master's degree in Economics, 10+ years experience in mobile gaming and in-game currency economics, former government cyber security contractor",
+        "note": "Likely a pseudonym (reference to George Orwell's 1984 character)",
+        "social": {
+          "twitter": "https://x.com/emmgoldstein_"
+        },
+        "sources": [
+          "https://crypto.news/exclusive-interview-emmanuel-goldstein-defi-scientist-founder-railgun/",
+          "https://revocrypto.com/2021/06/29/railgun-with-emmanuel-goldstein-andrey-kravchenko-and-hisham-galal/"
+        ],
+        "confidence": 0.85
+      },
+      {
+        "name": "Alan Scott",
+        "role": "Co-Founder & Research Lead",
+        "background": "Cryptocurrency researcher, studied Interdisciplinary Asian Studies at East Carolina University (Japanese language, culture, history), co-founded DEFICON conference",
+        "responsibilities": "Research, communication, collaboration, partnerships, adoption, advocacy",
+        "social": {
+          "linkedin": "Not found in search results"
+        },
+        "sources": [
+          "https://www.dlnews.com/articles/defi/railgun-co-founder-talks-crypto-privacy-and-tornado-cash/",
+          "https://usethebitcoin.com/crypto-personalities/all-you-need-to-know-about-alan-scott-the-co-founder-of-railgun/",
+          "https://iq.wiki/wiki/alan-scott"
+        ],
+        "confidence": 0.95
+      },
+      {
+        "name": "Hisham Galal",
+        "role": "Lead Cryptographer & Protocol Engineer",
+        "background": "Ph.D. in Cryptography and Privacy-Preserving Protocols from Concordia University, entered crypto space in 2017",
+        "responsibilities": "zkSNARK proof design and development, protocol engineering",
+        "location": "Mississauga, Ontario, Canada",
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/hishamgalal88/",
+          "github": "https://github.com/HSG88"
+        },
+        "sources": [
+          "https://hackernoon.com/the-future-of-crypto-privacy-with-railgun-lead-cryptographer-hisham-galal",
+          "https://revocrypto.com/2021/06/29/railgun-with-emmanuel-goldstein-andrey-kravchenko-and-hisham-galal/"
+        ],
+        "confidence": 0.95
+      },
+      {
+        "name": "Andrey Kravchenko",
+        "role": "Core Contributor & Project Manager",
+        "background": "Stipendiary Lecturer at Christ Church, Oxford, Business Development and Product Innovation Manager at DeepReason.ai, Founder at Vitruvian Apps, researcher in Deep Learning, former CTO for 2 startups",
+        "responsibilities": "Project management, research, development coordination",
+        "social": {
+          "linkedin": "https://uk.linkedin.com/in/andrey-kravchenko-5128a140"
+        },
+        "sources": [
+          "https://revocrypto.com/2021/06/29/railgun-with-emmanuel-goldstein-andrey-kravchenko-and-hisham-galal/",
+          "https://www.imperial.ac.uk/business-school/events/imperial-blockchain-x-railgun-privacy-defi-the-why-and-how/"
+        ],
+        "confidence": 0.9
+      },
+      {
+        "name": "Kieran Mesquita",
+        "github_username": "mesquka",
+        "role": "Core Developer",
+        "responsibilities": "Wallet SDK development, cryptographic proving systems, deployment infrastructure",
+        "github_contributions": {
+          "contract_repo": 463,
+          "circuits_v2_repo": 16
+        },
+        "social": {
+          "github": "https://github.com/mesquka",
+          "twitter": "https://twitter.com/mesquka",
+          "ens": "mesquka.eth"
+        },
+        "sources": [
+          "https://github.com/Railgun-Privacy/contract/graphs/contributors",
+          "https://github.com/Railgun-Community/wallet"
+        ],
+        "confidence": 0.9
+      }
+    ],
+    "community_contributors": [
+      {
+        "name": "Dino",
+        "role": "Design Contributor",
+        "responsibilities": "Several design contributions to the project",
+        "sources": [
+          "https://medium.com/@Railgun_Project/celebrating-the-railgun-dao-a-supercharged-hive-of-activity-bac6f17782a4"
+        ],
+        "confidence": 0.75
+      },
+      {
+        "name": "Railelujah",
+        "role": "Creative Coordinator",
+        "responsibilities": "Coordinates creative members to produce art and articles",
+        "sources": [
+          "https://medium.com/@Railgun_Project/celebrating-the-railgun-dao-a-supercharged-hive-of-activity-bac6f17782a4"
+        ],
+        "confidence": 0.75
+      }
+    ],
+    "github_contributors": [
+      {
+        "username": "mesquka",
+        "contributions": 463,
+        "profile": "https://github.com/mesquka",
+        "primary_repo": "contract"
+      },
+      {
+        "username": "HSG88",
+        "contributions": 38,
+        "profile": "https://github.com/HSG88",
+        "note": "Hisham Galal - Lead Cryptographer",
+        "primary_repo": "circuits-v2"
+      },
+      {
+        "username": "therealjmj",
+        "contributions": 15,
+        "profile": "https://github.com/therealjmj",
+        "primary_repo": "contract"
+      },
+      {
+        "username": "emilbayes",
+        "contributions": 9,
+        "profile": "https://github.com/emilbayes",
+        "primary_repo": "circuits-v2"
+      },
+      {
+        "username": "matt-metivier",
+        "contributions": 8,
+        "profile": "https://github.com/matt-metivier",
+        "primary_repo": "contract"
+      }
+    ],
+    "tech_stack": {
+      "core_technology": "Zero-Knowledge SNARKs (zk-SNARKs)",
+      "blockchain_platforms": [
+        "Ethereum",
+        "Polygon",
+        "Arbitrum",
+        "Binance Smart Chain (BSC)"
+      ],
+      "smart_contracts": {
+        "type": "Privacy-preserving smart contract system",
+        "features": [
+          "On-chain privacy",
+          "Non-custodial",
+          "Encrypted token/NFT transactions"
+        ]
+      },
+      "programming_languages": {
+        "contract_repo": {
+          "TypeScript": 421802,
+          "Solidity": 173998,
+          "JavaScript": 2278,
+          "Shell": 211
+        },
+        "circuits_repo": {
+          "primary": "JavaScript",
+          "secondary": "Circom"
+        }
+      },
+      "key_repositories": [
+        {
+          "name": "contract",
+          "description": "RAILGUN smart contracts",
+          "language": "TypeScript/Solidity",
+          "url": "https://github.com/Railgun-Privacy/contract"
+        },
+        {
+          "name": "circuits-v2",
+          "description": "RAILGUN Circuits V2 - zkSNARK circuits",
+          "language": "JavaScript",
+          "url": "https://github.com/Railgun-Privacy/circuits-v2"
+        },
+        {
+          "name": "circuits-ppoi",
+          "description": "Private Proof of Innocence circuits",
+          "language": "Circom",
+          "url": "https://github.com/Railgun-Privacy/circuits-ppoi"
+        }
+      ],
+      "sources": [
+        "https://github.com/Railgun-Privacy",
+        "https://www.railgun.org/",
+        "https://docs.railgun.org/wiki/learn/privacy-system"
+      ]
+    },
+    "metrics": {
+      "github": {
+        "organization": {
+          "name": "Railgun",
+          "created_at": "2021-02-14T02:08:36Z",
+          "public_repos": 3,
+          "followers": 63
+        },
+        "repositories": [
+          {
+            "name": "contract",
+            "stars": 17,
+            "forks": 10,
+            "open_issues": 0,
+            "created": "2024-03-22T09:08:48Z",
+            "updated": "2025-09-12T14:01:15Z",
+            "language": "TypeScript",
+            "total_contributors": 8
+          },
+          {
+            "name": "circuits-v2",
+            "stars": 12,
+            "forks": 8,
+            "open_issues": 0,
+            "created": "2022-03-05T10:53:30Z",
+            "updated": "2025-08-22T15:55:19Z",
+            "language": "JavaScript",
+            "total_contributors": 5
+          },
+          {
+            "name": "circuits-ppoi",
+            "stars": 1,
+            "forks": 1,
+            "open_issues": 0,
+            "created": "2024-06-17T13:21:16Z",
+            "updated": "2025-03-06T11:22:41Z",
+            "language": "Circom",
+            "total_contributors": "Not queried"
+          }
+        ],
+        "total_stars": 30,
+        "total_forks": 19,
+        "activity_status": "Active - Recent commits in 2025"
+      },
+      "funding": {
+        "major_investment": {
+          "investor": "Digital Currency Group (DCG)",
+          "amount": "$10 million",
+          "date": "January 2022",
+          "structure": {
+            "dao_treasury": "$7.2 million in stablecoins",
+            "token_purchase": "$3 million in RAIL tokens from RAILPOLY and RAILBSC",
+            "staked_tokens": "Over $10 million worth of RAIL tokens staked"
+          },
+          "sources": [
+            "https://www.coindesk.com/business/2022/01/26/railgun-aims-for-private-defi-with-10m-backing-from-dcg",
+            "https://cryptoslate.com/press-releases/digital-currency-group-announces-10m-strategic-investment-with-privacy-preserving-project-railgun/"
+          ]
+        }
+      },
+      "project_timeline": {
+        "founded": "January 2021",
+        "github_org_created": "February 14, 2021",
+        "mainnet_launch": "July 2021",
+        "major_funding": "January 2022"
+      }
+    },
+    "key_features": [
+      "Zero-Knowledge privacy using zk-SNARKs",
+      "Multi-chain deployment (Ethereum, Polygon, Arbitrum, BSC)",
+      "Private DeFi interactions",
+      "Non-custodial wallet system",
+      "DAO governance model",
+      "Private Proof of Innocence (PPOI) system"
+    ],
+    "notable_endorsements": [
+      {
+        "person": "Vitalik Buterin",
+        "action": "Used RAILGUN for private transactions",
+        "dates": "Multiple instances including June 2025",
+        "sources": [
+          "https://www.coindesk.com/tech/2025/06/04/vitalik-buterin-uses-privacy-tool-railgun-again-signaling-ongoing-embrace-of-on-chain-anonymity"
+        ]
+      }
+    ],
+    "media_contact": {
+      "email": "julia@birchmedia.io",
+      "purpose": "Press and media inquiries",
+      "sources": [
+        "https://www.railgun.org/"
+      ]
+    },
+    "gaps": [
+      "Contributors page (https://www.railgun.org/contributors.html) returned 404 - unable to access complete contributor list",
+      "Limited LinkedIn profile access - could not verify full professional backgrounds for all team members",
+      "Emmanuel Goldstein appears to be a pseudonym - real identity unknown",
+      "No specific information about compensation structure or team size",
+      "Limited information about advisory board or external advisors",
+      "No detailed information about the full development roadmap",
+      "Cannot verify current employment status of all listed team members",
+      "Missing information about other community contributors beyond Dino and Railelujah"
+    ],
+    "data_quality_notes": [
+      "All team member information sourced from public interviews, GitHub profiles, and verified web sources",
+      "GitHub metrics collected directly from GitHub API on 2025-09-30",
+      "Financial information (DCG investment) verified through multiple reputable crypto news sources",
+      "Some team members use pseudonyms consistent with privacy-focused project ethos",
+      "LinkedIn profiles found but content not fully accessible through automated search",
+      "All repository statistics current as of September 2025"
+    ],
+    "overall_confidence": 0.88,
+    "confidence_breakdown": {
+      "team_identification": 0.87,
+      "technical_stack": 0.95,
+      "github_metrics": 0.98,
+      "funding_information": 0.92,
+      "governance_structure": 0.9
+    },
+    "research_methodology": [
+      "Direct website inspection (https://railgun.org)",
+      "GitHub API queries for organization and repository data",
+      "Web search for team member identification",
+      "LinkedIn profile searches",
+      "Crypto news article verification",
+      "GitHub contributor analysis",
+      "Multi-source cross-referencing"
+    ],
+    "all_sources": [
+      "https://www.railgun.org/",
+      "https://github.com/Railgun-Privacy",
+      "https://governance.railgun.org/",
+      "https://www.dlnews.com/articles/defi/railgun-co-founder-talks-crypto-privacy-and-tornado-cash/",
+      "https://crypto.news/exclusive-interview-emmanuel-goldstein-defi-scientist-founder-railgun/",
+      "https://revocrypto.com/2021/06/29/railgun-with-emmanuel-goldstein-andrey-kravchenko-and-hisham-galal/",
+      "https://hackernoon.com/the-future-of-crypto-privacy-with-railgun-lead-cryptographer-hisham-galal",
+      "https://usethebitcoin.com/crypto-personalities/all-you-need-to-know-about-alan-scott-the-co-founder-of-railgun/",
+      "https://iq.wiki/wiki/alan-scott",
+      "https://uk.linkedin.com/in/andrey-kravchenko-5128a140",
+      "https://www.linkedin.com/in/hishamgalal88/",
+      "https://github.com/mesquka",
+      "https://github.com/HSG88",
+      "https://www.coindesk.com/business/2022/01/26/railgun-aims-for-private-defi-with-10m-backing-from-dcg",
+      "https://cryptoslate.com/press-releases/digital-currency-group-announces-10m-strategic-investment-with-privacy-preserving-project-railgun/",
+      "https://medium.com/@Railgun_Project/celebrating-the-railgun-dao-a-supercharged-hive-of-activity-bac6f17782a4",
+      "https://www.coindesk.com/tech/2025/06/04/vitalik-buterin-uses-privacy-tool-railgun-again-signaling-ongoing-embrace-of-on-chain-anonymity",
+      "https://docs.railgun.org/wiki/learn/privacy-system",
+      "https://beincrypto.com/learn/railgun-defi-explainer/",
+      "https://messari.io/project/railgun/profile"
+    ]
+  },
+  "blockchain_analysis": null,
+  "ens_addresses": null,
+  "oso_metrics": null
+}

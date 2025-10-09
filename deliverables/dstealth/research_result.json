@@ -1,0 +1,99 @@
+{
+  "project_name": "dstealth",
+  "research_status": "DATA_GAP_IDENTIFIED",
+  "confidence_score": 0.95,
+  "findings": {
+    "github_url": null,
+    "tech_stack": [],
+    "privacy_techniques": [],
+    "data_quality": "INSUFFICIENT_DATA"
+  },
+  "research_notes": {
+    "summary": "No legitimate Web3 privacy project named 'dstealth' found focusing on decentralized stealth addresses",
+    "searches_performed": [
+      "GitHub API search for dstealth repositories",
+      "Web3Privacy explorer-data repository search",
+      "General web search for 'dstealth' privacy projects",
+      "Direct website inspection (dstealth.com)",
+      "Stealth address project searches"
+    ],
+    "findings_detail": {
+      "github_user": {
+        "username": "dstealth",
+        "url": "https://github.com/dstealth",
+        "repositories": "10 repositories (all PHP-related, not blockchain/privacy)",
+        "relevance": "LOW - No blockchain or privacy-related projects"
+      },
+      "website": {
+        "url": "https://dstealth.com",
+        "status": "Minimal content, no technical documentation",
+        "relevance": "LOW - No evidence of stealth address technology"
+      },
+      "web3privacy_database": {
+        "found": false,
+        "note": "No 'dstealth' project in web3privacy/explorer-data repository"
+      },
+      "related_projects_found": [
+        {
+          "name": "Stealth",
+          "url": "https://stealthai.org",
+          "type": "Digital privacy tools (not stealth addresses)",
+          "github": "None listed"
+        },
+        {
+          "name": "Umbra Protocol",
+          "url": "https://github.com/ScopeLift/umbra-protocol",
+          "type": "Actual stealth address implementation for Ethereum",
+          "github": "https://github.com/ScopeLift/umbra-protocol"
+        },
+        {
+          "name": "Stealth Address SDK",
+          "url": "https://github.com/ScopeLift/stealth-address-sdk",
+          "type": "TypeScript SDK for ERC-5564 Stealth Addresses",
+          "github": "https://github.com/ScopeLift/stealth-address-sdk"
+        }
+      ]
+    },
+    "gap_classification": {
+      "type": "NON_EXISTENT_PROJECT",
+      "severity": "HIGH",
+      "recommendation": "Verify project name and source. May be misnamed, deprecated, or fictional."
+    }
+  },
+  "constitutional_compliance": {
+    "real_data_only": true,
+    "no_synthetic_data": true,
+    "gap_reported": true,
+    "confidence_tagged": true,
+    "multi_source_verification": true
+  },
+  "sources": [
+    {
+      "type": "GitHub API",
+      "url": "https://api.github.com/users/dstealth/repos",
+      "date_accessed": "2025-10-08",
+      "reliability": "HIGH"
+    },
+    {
+      "type": "Web3Privacy Explorer Data",
+      "url": "https://github.com/web3privacy/explorer-data",
+      "date_accessed": "2025-10-08",
+      "reliability": "HIGH"
+    },
+    {
+      "type": "Website",
+      "url": "https://dstealth.com",
+      "date_accessed": "2025-10-08",
+      "reliability": "MEDIUM"
+    },
+    {
+      "type": "Web Search",
+      "query": "dstealth decentralized stealth addresses",
+      "date_accessed": "2025-10-08",
+      "reliability": "MEDIUM"
+    }
+  ],
+  "timestamp": "2025-10-08T14:56:00Z",
+  "researcher": "research-agent",
+  "version": "1.0.0"
+}

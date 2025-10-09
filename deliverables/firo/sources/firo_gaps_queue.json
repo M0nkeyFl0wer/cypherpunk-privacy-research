@@ -1,0 +1,461 @@
+{
+  "project_id": "firo",
+  "queue_created": "2025-09-30T18:45:00Z",
+  "created_by": "claude-sonnet-4-5",
+  "constitution_version": "2.0.0",
+  "queue_status": "ACTIVE",
+  "total_gaps": 16,
+
+  "gaps": [
+    {
+      "gap_id": "firo-overview-001",
+      "field": "overview.description",
+      "severity": "critical",
+      "status": "pending",
+      "reason": "Cannot access https://firo.org due to permission blocks",
+      "attempted_sources": [
+        "https://firo.org",
+        "https://github.com/firoorg/firo"
+      ],
+      "needed_data": [
+        "Official project description",
+        "Project tagline",
+        "Founded date",
+        "Headquarters location",
+        "Current status"
+      ],
+      "recommended_actions": [
+        "WebFetch https://firo.org with permissions",
+        "Scrape Firo about page",
+        "Check CoinGecko/CoinMarketCap descriptions"
+      ],
+      "assigned_agent": null,
+      "priority": 1,
+      "estimated_time_minutes": 15
+    },
+
+    {
+      "gap_id": "firo-github-001",
+      "field": "github_data.repositories",
+      "severity": "high",
+      "status": "pending",
+      "reason": "GitHub API and web access blocked",
+      "attempted_sources": [
+        "https://github.com/firoorg/firo",
+        "https://api.github.com/repos/firoorg/firo"
+      ],
+      "needed_data": [
+        "Repository stars, forks, contributors",
+        "Primary programming language",
+        "Language breakdown percentages",
+        "Latest release version",
+        "License type",
+        "Repository description",
+        "Last commit date"
+      ],
+      "recommended_actions": [
+        "Use GitHub API with authentication",
+        "Clone repository and analyze locally",
+        "Use gh CLI tool",
+        "WebFetch repository page"
+      ],
+      "assigned_agent": null,
+      "priority": 2,
+      "estimated_time_minutes": 10
+    },
+
+    {
+      "gap_id": "firo-lelantus-001",
+      "field": "technical_details.lelantus_protocol",
+      "severity": "high",
+      "status": "pending",
+      "reason": "Cannot access technical documentation",
+      "attempted_sources": [
+        "https://docs.firo.org",
+        "https://github.com/firoorg/firo"
+      ],
+      "needed_data": [
+        "Lelantus protocol version",
+        "Protocol specification details",
+        "Cryptographic primitives used",
+        "Privacy guarantees",
+        "Transaction anonymity set size",
+        "Burn and redeem mechanism",
+        "Comparison to Lelantus Spark"
+      ],
+      "recommended_actions": [
+        "Access https://docs.firo.org/guides/lelantus",
+        "Read Firo GitHub technical documentation",
+        "Review academic papers on Lelantus",
+        "Check Firo blog for technical explanations"
+      ],
+      "assigned_agent": null,
+      "priority": 3,
+      "estimated_time_minutes": 30
+    },
+
+    {
+      "gap_id": "firo-rap-001",
+      "field": "technical_details.rap_address_system",
+      "severity": "high",
+      "status": "pending",
+      "reason": "Cannot access technical documentation",
+      "attempted_sources": [
+        "https://docs.firo.org"
+      ],
+      "needed_data": [
+        "RAP protocol full specification",
+        "Address generation mechanism",
+        "Privacy features and guarantees",
+        "Implementation status",
+        "Comparison to stealth addresses",
+        "User experience benefits"
+      ],
+      "recommended_actions": [
+        "Access RAP documentation on docs.firo.org",
+        "Review GitHub RAP implementation code",
+        "Check Firo Medium articles on RAP"
+      ],
+      "assigned_agent": null,
+      "priority": 4,
+      "estimated_time_minutes": 25
+    },
+
+    {
+      "gap_id": "firo-masternode-001",
+      "field": "technical_details.masternode_network",
+      "severity": "high",
+      "status": "pending",
+      "reason": "Cannot access network documentation",
+      "attempted_sources": [],
+      "needed_data": [
+        "Masternode collateral requirement (amount in FIRO)",
+        "Current active masternode count",
+        "Masternode functions (governance, InstantSend, etc)",
+        "Reward structure and percentage",
+        "Setup requirements",
+        "Network governance role"
+      ],
+      "recommended_actions": [
+        "Access Firo masternode documentation",
+        "Check block explorer for masternode stats",
+        "Query Firo RPC for masternode count",
+        "Review masternode setup guides"
+      ],
+      "assigned_agent": null,
+      "priority": 5,
+      "estimated_time_minutes": 20
+    },
+
+    {
+      "gap_id": "firo-team-001",
+      "field": "team_and_governance.team_members",
+      "severity": "medium",
+      "status": "pending",
+      "reason": "Cannot access official website",
+      "attempted_sources": [
+        "https://firo.org"
+      ],
+      "needed_data": [
+        "Core team member names and roles",
+        "Founder: Poramin Insom (to verify)",
+        "Project lead: Reuben Yap (to verify)",
+        "Developer team size",
+        "Advisory board members"
+      ],
+      "recommended_actions": [
+        "Access https://firo.org/about/team",
+        "Check GitHub organization members",
+        "Search LinkedIn for Firo core team",
+        "Review Firo Twitter for team announcements",
+        "Check conference speaker lists"
+      ],
+      "assigned_agent": null,
+      "priority": 6,
+      "estimated_time_minutes": 20
+    },
+
+    {
+      "gap_id": "firo-governance-001",
+      "field": "team_and_governance.governance_model",
+      "severity": "medium",
+      "status": "pending",
+      "reason": "Cannot access governance documentation",
+      "attempted_sources": [],
+      "needed_data": [
+        "Governance structure (DAO, foundation, company)",
+        "Decision-making process",
+        "Community proposal system",
+        "Development funding mechanism",
+        "Treasury management"
+      ],
+      "recommended_actions": [
+        "Read Firo governance documentation",
+        "Check for Firo governance forum",
+        "Review GitHub governance proposals",
+        "Check masternode governance voting system"
+      ],
+      "assigned_agent": null,
+      "priority": 7,
+      "estimated_time_minutes": 25
+    },
+
+    {
+      "gap_id": "firo-regulatory-001",
+      "field": "regulatory_and_compliance",
+      "severity": "medium",
+      "status": "pending",
+      "reason": "Cannot access legal documentation",
+      "attempted_sources": [],
+      "needed_data": [
+        "Legal status in major jurisdictions",
+        "Regulatory compliance statements",
+        "Exchange delistings history (if any)",
+        "Privacy coin regulatory challenges",
+        "KYC/AML stance"
+      ],
+      "recommended_actions": [
+        "Check Firo website legal/compliance section",
+        "Review regulatory news about Firo",
+        "Check cryptocurrency regulatory databases",
+        "Review exchange listing status"
+      ],
+      "assigned_agent": null,
+      "priority": 8,
+      "estimated_time_minutes": 30
+    },
+
+    {
+      "gap_id": "firo-blockchain-001",
+      "field": "blockchain_data.metrics",
+      "severity": "medium",
+      "status": "pending",
+      "reason": "Cannot access block explorer",
+      "attempted_sources": [],
+      "needed_data": [
+        "Official block explorer URL",
+        "Current block height",
+        "Circulating supply",
+        "Total supply / max supply",
+        "Block time",
+        "Block size",
+        "Transaction count",
+        "Active addresses"
+      ],
+      "recommended_actions": [
+        "Access Firo block explorer (explorer.firo.org or similar)",
+        "Use CoinGecko API for supply data",
+        "Query Firo RPC node directly",
+        "Check CoinMarketCap for metrics"
+      ],
+      "assigned_agent": null,
+      "priority": 9,
+      "estimated_time_minutes": 15
+    },
+
+    {
+      "gap_id": "firo-tech-stack-001",
+      "field": "technical_details.technology_stack",
+      "severity": "medium",
+      "status": "pending",
+      "reason": "Cannot clone GitHub repository",
+      "attempted_sources": [
+        "https://github.com/firoorg/firo"
+      ],
+      "needed_data": [
+        "Primary programming language (likely C++)",
+        "Language percentages",
+        "Key dependencies",
+        "Build system",
+        "Codebase size"
+      ],
+      "recommended_actions": [
+        "Clone firoorg/firo repository",
+        "Use GitHub API languages endpoint",
+        "Analyze package.json or similar dependency files"
+      ],
+      "assigned_agent": null,
+      "priority": 10,
+      "estimated_time_minutes": 10
+    },
+
+    {
+      "gap_id": "firo-consensus-001",
+      "field": "technical_details.architecture.consensus_mechanism",
+      "severity": "high",
+      "status": "pending",
+      "reason": "Cannot access technical documentation",
+      "attempted_sources": [],
+      "needed_data": [
+        "Consensus algorithm (PoW, hybrid, etc)",
+        "Mining algorithm",
+        "Block reward",
+        "Difficulty adjustment",
+        "Chain security details"
+      ],
+      "recommended_actions": [
+        "Read Firo technical documentation",
+        "Check GitHub for consensus code",
+        "Review mining guides"
+      ],
+      "assigned_agent": null,
+      "priority": 11,
+      "estimated_time_minutes": 20
+    },
+
+    {
+      "gap_id": "firo-social-001",
+      "field": "community_and_ecosystem.social_media",
+      "severity": "low",
+      "status": "pending",
+      "reason": "Cannot access social media platforms",
+      "attempted_sources": [],
+      "needed_data": [
+        "Twitter/X handle and follower count",
+        "Discord server invite and member count",
+        "Telegram channel and subscriber count",
+        "Reddit subreddit and subscriber count",
+        "YouTube channel",
+        "Medium publication"
+      ],
+      "recommended_actions": [
+        "Check Firo website footer for social links",
+        "Search Twitter for @firoorg",
+        "Search Discord for Firo server",
+        "Check r/FiroProject on Reddit"
+      ],
+      "assigned_agent": null,
+      "priority": 12,
+      "estimated_time_minutes": 10
+    },
+
+    {
+      "gap_id": "firo-partnerships-001",
+      "field": "community_and_ecosystem.partnerships",
+      "severity": "low",
+      "status": "pending",
+      "reason": "Cannot access partnership information",
+      "attempted_sources": [],
+      "needed_data": [
+        "Exchange listings",
+        "Wallet integrations",
+        "Payment processor partnerships",
+        "Cross-chain bridges",
+        "Developer partnerships"
+      ],
+      "recommended_actions": [
+        "Check Firo website partnerships page",
+        "Review ecosystem page",
+        "Check CoinGecko for exchange listings",
+        "Search for integration announcements"
+      ],
+      "assigned_agent": null,
+      "priority": 13,
+      "estimated_time_minutes": 15
+    },
+
+    {
+      "gap_id": "firo-history-001",
+      "field": "overview.history",
+      "severity": "medium",
+      "status": "pending",
+      "reason": "Cannot access historical documentation",
+      "attempted_sources": [],
+      "needed_data": [
+        "Founded date (exact)",
+        "Original name: Zcoin",
+        "Rebrand to Firo date: October 2020 (verify)",
+        "Key milestones",
+        "Major protocol upgrades",
+        "Lelantus launch date",
+        "RAP launch date"
+      ],
+      "recommended_actions": [
+        "Read Firo about/history page",
+        "Check blog for historical posts",
+        "Review GitHub release history",
+        "Check cryptocurrency databases"
+      ],
+      "assigned_agent": null,
+      "priority": 14,
+      "estimated_time_minutes": 20
+    },
+
+    {
+      "gap_id": "firo-tokenomics-001",
+      "field": "blockchain_data.tokenomics",
+      "severity": "medium",
+      "status": "pending",
+      "reason": "Cannot access economic documentation",
+      "attempted_sources": [],
+      "needed_data": [
+        "Initial supply",
+        "Emission schedule",
+        "Block rewards distribution (miners/masternodes/dev fund)",
+        "Halving schedule",
+        "Max supply",
+        "Inflation rate"
+      ],
+      "recommended_actions": [
+        "Access Firo tokenomics documentation",
+        "Check block explorer for emission details",
+        "Review whitepaper or technical specifications"
+      ],
+      "assigned_agent": null,
+      "priority": 15,
+      "estimated_time_minutes": 20
+    },
+
+    {
+      "gap_id": "firo-contact-001",
+      "field": "overview.contact_information",
+      "severity": "low",
+      "status": "pending",
+      "reason": "Cannot access contact page",
+      "attempted_sources": [
+        "https://firo.org"
+      ],
+      "needed_data": [
+        "Official contact email",
+        "Support channels",
+        "Media contact",
+        "Business development contact"
+      ],
+      "recommended_actions": [
+        "Access Firo website contact page",
+        "Check about page footer",
+        "Look for contact form"
+      ],
+      "assigned_agent": null,
+      "priority": 16,
+      "estimated_time_minutes": 5
+    }
+  ],
+
+  "resolution_plan": {
+    "recommended_approach": "Deploy automated research swarm with web access",
+    "recommended_tools": [
+      "flow-nexus research swarm",
+      "WebFetch with granted permissions",
+      "GitHub API with authentication",
+      "CoinGecko/CoinMarketCap APIs",
+      "Custom web scraper"
+    ],
+    "estimated_total_time": "3-4 hours",
+    "estimated_cost": "$0 (using free APIs)",
+    "success_criteria": [
+      "All critical gaps filled with confidence ≥0.70",
+      "All high priority gaps filled with confidence ≥0.70",
+      "Multi-source verification for key facts",
+      "No synthetic data generation",
+      "Full constitutional compliance"
+    ]
+  },
+
+  "metadata": {
+    "created_at": "2025-09-30T18:45:00Z",
+    "last_updated": "2025-09-30T18:45:00Z",
+    "queue_version": "1.0.0",
+    "constitutional_compliance": true
+  }
+}

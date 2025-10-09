@@ -1,0 +1,142 @@
+{
+  "project": "panther-protocol",
+  "articles": [
+    {
+      "title": "CZ is right: There is a structural gap in Web3 trading - Cointelegraph",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9DbDY3QlpLbnpqOWJhak9jME9PSWlvbjhBY1N0NUdULW1SN1hUWEppS0plczM0eFlBeWJGMlpvZXlzM2Fka3FwQmxvR1dNMXN0VjJQekVOOWpJMGc?oc=5",
+      "publication": "Cointelegraph",
+      "date": "2025-07-18",
+      "summary": "CZ is right: There is a structural gap in Web3 trading&nbsp;&nbsp;Cointelegraph",
+      "source": "google_news_rss",
+      "confidence": 0.95,
+      "category": "market"
+    },
+    {
+      "title": "Panther Protocol: Advancing Privacy-Preserving DeFi - Messari",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPWFF1Z2pnZVRUOUpMd3VaX09hQUJmbDRSeVdJMnRRSVphVE9rOUJlMWFYdE9tQl9xamZrSVRZdzJROHNvYTJJem5JUnRycXJkMmQ0RjZDc1FRdHU3dTd3NEdzbVhXaENvODJ4MzNUd0lkVVNoZS1UT2djX18xZW5fS0hB?oc=5",
+      "publication": "Messari",
+      "date": "2025-05-28",
+      "summary": "Panther Protocol: Advancing Privacy-Preserving DeFi&nbsp;&nbsp;Messari",
+      "source": "google_news_rss",
+      "confidence": 0.95,
+      "category": "general"
+    },
+    {
+      "title": "Anish Mohammed - AI Business",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE90bll3cXRBbDBuaUJJQnRCZF9FOFhDSnQ0N1BieGNKQk5jUERJZ19zSk05WG9JYXB3aUZ3Nl8tOF9HUDdkNGVCOHJCSlhDV0JDbW9DdW9Vbw?oc=5",
+      "publication": "AI Business",
+      "date": "2024-12-24",
+      "summary": "Anish Mohammed&nbsp;&nbsp;AI Business",
+      "source": "google_news_rss",
+      "confidence": 0.95,
+      "category": "general"
+    },
+    {
+      "title": "The Implications of AI Access to Financial Information - AI Business",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMUtGVVZsdnVpSlVjaHpXWTVGRERTdWhrQm1CSVJEc0QxUk0tWXF1NEE5LTdTcURvYW5YRHBpNXdNbDVQb1lKdVNaS3hWajVOSnpfbkVDNmx0cEVRSWFNZ21LOVdRWDVkZjA3YkZGT3RQdkV0QlpUd0dudUcxLUl6NjlCTUhOVFZCaW9jcWZB?oc=5",
+      "publication": "AI Business",
+      "date": "2024-12-24",
+      "summary": "The Implications of AI Access to Financial Information&nbsp;&nbsp;AI Business",
+      "source": "google_news_rss",
+      "confidence": 0.95,
+      "category": "general"
+    },
+    {
+      "title": "Understanding Panther Protocol: A Comprehensive Overview - Messari",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOb3JQUm1BNGIxNmhoclpJbUNlb2hXaGExbmZCYWxMenJMcDk5M0NJN3REUGhMSEdQVkhiNnZlRm9YV3VjdUJ0V1EtaDBhcXZSUUU3MzE3UDFEREhlTmxFN3JDblRhUXFkenRBYk9PM1NuTm9kNUp3N0hHVmx5UnhUcFZzRFphV1JT?oc=5",
+      "publication": "Messari",
+      "date": "2024-12-23",
+      "summary": "Understanding Panther Protocol: A Comprehensive Overview&nbsp;&nbsp;Messari",
+      "source": "google_news_rss",
+      "confidence": 0.95,
+      "category": "general"
+    },
+    {
+      "title": "Panther Protocol Closes $22M Public Sale in Under 90 Minutes - Blockworks",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOQ2NPUHNJX2ZvTUtyYjI2M0dCclp3Q1Q3aVRMTzBIMzRiMV8tdFZWdmQyVWpxVXM1NERueHQySGVCaFkwdFJBNVhUV2JvemFUWnJwM3MyLTVzM0FZNTVFMUg4R0dmQUZmaGRXc1kyelVvNF93eXVWTzlMekpXampsVzU2em0zOXJWRWtSX1Q0bw?oc=5",
+      "publication": "Blockworks",
+      "date": "2022-11-18",
+      "summary": "Panther Protocol Closes $22M Public Sale in Under 90 Minutes&nbsp;&nbsp;Blockworks",
+      "source": "google_news_rss",
+      "confidence": 0.95,
+      "category": "general"
+    }
+  ],
+  "total_articles": 6,
+  "sources": [
+    "google_news_rss"
+  ],
+  "categories": {
+    "market": [
+      {
+        "title": "CZ is right: There is a structural gap in Web3 trading - Cointelegraph",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9DbDY3QlpLbnpqOWJhak9jME9PSWlvbjhBY1N0NUdULW1SN1hUWEppS0plczM0eFlBeWJGMlpvZXlzM2Fka3FwQmxvR1dNMXN0VjJQekVOOWpJMGc?oc=5",
+        "publication": "Cointelegraph",
+        "date": "2025-07-18",
+        "summary": "CZ is right: There is a structural gap in Web3 trading&nbsp;&nbsp;Cointelegraph",
+        "source": "google_news_rss",
+        "confidence": 0.95,
+        "category": "market"
+      }
+    ],
+    "general": [
+      {
+        "title": "Panther Protocol: Advancing Privacy-Preserving DeFi - Messari",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPWFF1Z2pnZVRUOUpMd3VaX09hQUJmbDRSeVdJMnRRSVphVE9rOUJlMWFYdE9tQl9xamZrSVRZdzJROHNvYTJJem5JUnRycXJkMmQ0RjZDc1FRdHU3dTd3NEdzbVhXaENvODJ4MzNUd0lkVVNoZS1UT2djX18xZW5fS0hB?oc=5",
+        "publication": "Messari",
+        "date": "2025-05-28",
+        "summary": "Panther Protocol: Advancing Privacy-Preserving DeFi&nbsp;&nbsp;Messari",
+        "source": "google_news_rss",
+        "confidence": 0.95,
+        "category": "general"
+      },
+      {
+        "title": "Anish Mohammed - AI Business",
+        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE90bll3cXRBbDBuaUJJQnRCZF9FOFhDSnQ0N1BieGNKQk5jUERJZ19zSk05WG9JYXB3aUZ3Nl8tOF9HUDdkNGVCOHJCSlhDV0JDbW9DdW9Vbw?oc=5",
+        "publication": "AI Business",
+        "date": "2024-12-24",
+        "summary": "Anish Mohammed&nbsp;&nbsp;AI Business",
+        "source": "google_news_rss",
+        "confidence": 0.95,
+        "category": "general"
+      },
+      {
+        "title": "The Implications of AI Access to Financial Information - AI Business",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMUtGVVZsdnVpSlVjaHpXWTVGRERTdWhrQm1CSVJEc0QxUk0tWXF1NEE5LTdTcURvYW5YRHBpNXdNbDVQb1lKdVNaS3hWajVOSnpfbkVDNmx0cEVRSWFNZ21LOVdRWDVkZjA3YkZGT3RQdkV0QlpUd0dudUcxLUl6NjlCTUhOVFZCaW9jcWZB?oc=5",
+        "publication": "AI Business",
+        "date": "2024-12-24",
+        "summary": "The Implications of AI Access to Financial Information&nbsp;&nbsp;AI Business",
+        "source": "google_news_rss",
+        "confidence": 0.95,
+        "category": "general"
+      },
+      {
+        "title": "Understanding Panther Protocol: A Comprehensive Overview - Messari",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOb3JQUm1BNGIxNmhoclpJbUNlb2hXaGExbmZCYWxMenJMcDk5M0NJN3REUGhMSEdQVkhiNnZlRm9YV3VjdUJ0V1EtaDBhcXZSUUU3MzE3UDFEREhlTmxFN3JDblRhUXFkenRBYk9PM1NuTm9kNUp3N0hHVmx5UnhUcFZzRFphV1JT?oc=5",
+        "publication": "Messari",
+        "date": "2024-12-23",
+        "summary": "Understanding Panther Protocol: A Comprehensive Overview&nbsp;&nbsp;Messari",
+        "source": "google_news_rss",
+        "confidence": 0.95,
+        "category": "general"
+      },
+      {
+        "title": "Panther Protocol Closes $22M Public Sale in Under 90 Minutes - Blockworks",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOQ2NPUHNJX2ZvTUtyYjI2M0dCclp3Q1Q3aVRMTzBIMzRiMV8tdFZWdmQyVWpxVXM1NERueHQySGVCaFkwdFJBNVhUV2JvemFUWnJwM3MyLTVzM0FZNTVFMUg4R0dmQUZmaGRXc1kyelVvNF93eXVWTzlMekpXampsVzU2em0zOXJWRWtSX1Q0bw?oc=5",
+        "publication": "Blockworks",
+        "date": "2022-11-18",
+        "summary": "Panther Protocol Closes $22M Public Sale in Under 90 Minutes&nbsp;&nbsp;Blockworks",
+        "source": "google_news_rss",
+        "confidence": 0.95,
+        "category": "general"
+      }
+    ]
+  },
+  "last_updated": "2025-10-07T20:04:20.543950",
+  "constitutional_compliance": {
+    "real_data_only": true,
+    "sources_cited": true,
+    "no_fabrication": true,
+    "confidence_score": 0.9499999999999998
+  }
+}

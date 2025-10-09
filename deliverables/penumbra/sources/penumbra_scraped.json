@@ -1,0 +1,13 @@
+{
+  "project_name": "penumbra",
+  "website": "https://penumbra.com",
+  "website_confidence": 0.85,
+  "website_sources": ["https://penumbra.com", "curl scraping"],
+  "description": "Services Emotional Intelligence Workshops We offer several half-day or full-day interactive programs designed to raise awareness and provide practical tools and takeaways for increasing the overall effectiveness of your employees. Learn More Leadership Coaching We work diligently with each coachee to identify unique areas of development and execute learning activities that leverage the person’s key [&hellip;]",
+  "description_confidence": 0.80,
+  "description_sources": ["https://penumbra.com meta tags"],
+  "research_date": "2025-10-06T13:29:02Z",
+  "batch_number": 3,
+  "execution_host": "seshat",
+  "scraping_method": "curl + grep"
+}

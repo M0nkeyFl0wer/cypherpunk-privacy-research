@@ -1,0 +1,13 @@
+{
+  "project_name": "zksync",
+  "website": "https://zksync.network",
+  "website_confidence": 0.85,
+  "website_sources": ["https://zksync.network", "curl scraping"],
+  "description": "ZKsync allows you to explore and search the blockchain for transactions, addresses, tokens, prices and other activities taking place on ZKsync",
+  "description_confidence": 0.80,
+  "description_sources": ["https://zksync.network meta tags"],
+  "research_date": "2025-10-06T13:29:09Z",
+  "batch_number": 3,
+  "execution_host": "seshat",
+  "scraping_method": "curl + grep"
+}

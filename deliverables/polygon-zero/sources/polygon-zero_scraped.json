@@ -1,0 +1,17 @@
+{
+  "project_name": "polygon-zero",
+  "research_date": "2025-10-06T13:29:02Z",
+  "batch_number": 3,
+  "execution_host": "seshat",
+  "gaps": [
+    {
+      "field": "website",
+      "reason": "No responsive domain found in common patterns",
+      "attempted_sources": [
+        "https://polygon-zero.io",
+        "https://polygon-zero.network",
+        "https://polygon-zero.com"
+      ]
+    }
+  ]
+}

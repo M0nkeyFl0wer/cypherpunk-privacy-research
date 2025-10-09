@@ -1,0 +1,100 @@
+{
+  "project": "semaphore",
+  "articles": [
+    {
+      "title": "What Is the Privacy Stewards of Ethereum (PSE) Initiative and Why It Matters - CCN.com",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQd2U4bEd5VFp6ODE3T09qc1ZiWVp2WFhLdVVRMnBYRTRubnExRE5UQms0cWU0QXEtQWZYcTNlbW93MXdjUjEtLUduM1ZDeHo2RlVhbFpBbE9DSUpRWUFFTnczMHdGeGhROEVNN2pOUk52b1VKNjB2dEVPZWpIUVhiMGQ4SmcwdVEx?oc=5",
+      "publication": "CCN.com",
+      "date": "2025-10-03",
+      "summary": "What Is the Privacy Stewards of Ethereum (PSE) Initiative and Why It Matters&nbsp;&nbsp;CCN.com",
+      "source": "google_news_rss",
+      "confidence": 0.95,
+      "category": "general"
+    },
+    {
+      "title": "Did crypto get unlikely help becoming a campaign kingmaker? - https-//www.semafor.com",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNNUlYcGxVdTE1WE1yb3lpdlVYZmprSmNqWDNueF9xWHVDTlQydkdyTTFqb0RjYmljWFJLNW1qcWtFTTNyZi01VEtKbEJpdWQ0cVEzbEhIaEpzV0lqbnNxZFlxSmEyX2dXWHMzdVVVbzBFajZ5MUt1RnBjQmtEZ1ZjVC14THh2SDBiS2ZRYnU1RjhKMlVadGtxVG5uYXZVcXlrQlc0?oc=5",
+      "publication": "https-//www.semafor.com",
+      "date": "2025-08-22",
+      "summary": "Did crypto get unlikely help becoming a campaign kingmaker?&nbsp;&nbsp;https-//www.semafor.com",
+      "source": "google_news_rss",
+      "confidence": 0.95,
+      "category": "general"
+    },
+    {
+      "title": "What is World? - Messari",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1TSU10YURjQ3BmaWU1OURXWFJzZm5tZnViMGo2T2Y0TThDM200NDA2VmE4ZDc5MFNNTDJLTUp5Um1RanpMekUydlNlWkZnOV92dXEyalhIeVZEU184?oc=5",
+      "publication": "Messari",
+      "date": "2024-10-18",
+      "summary": "What is World?&nbsp;&nbsp;Messari",
+      "source": "google_news_rss",
+      "confidence": 0.95,
+      "category": "general"
+    },
+    {
+      "title": "Chainlink Unveil Mixicles: a New Privacy Solution for Smart Contracts - Blockonomi",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1mc0Z2S0tIdnJLN0ExTFUwOGs5QWstZWFLWGpSWHNQZTljQkZab1NrS210QWs4dVNkR0VWYVhGV3hnTUU3U3FuVjJqdmJILXpTWEE5MWR6TUdmdlJsUUE?oc=5",
+      "publication": "Blockonomi",
+      "date": "2019-09-06",
+      "summary": "Chainlink Unveil Mixicles: a New Privacy Solution for Smart Contracts&nbsp;&nbsp;Blockonomi",
+      "source": "google_news_rss",
+      "confidence": 0.95,
+      "category": "general"
+    }
+  ],
+  "total_articles": 4,
+  "sources": [
+    "google_news_rss"
+  ],
+  "categories": {
+    "general": [
+      {
+        "title": "What Is the Privacy Stewards of Ethereum (PSE) Initiative and Why It Matters - CCN.com",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQd2U4bEd5VFp6ODE3T09qc1ZiWVp2WFhLdVVRMnBYRTRubnExRE5UQms0cWU0QXEtQWZYcTNlbW93MXdjUjEtLUduM1ZDeHo2RlVhbFpBbE9DSUpRWUFFTnczMHdGeGhROEVNN2pOUk52b1VKNjB2dEVPZWpIUVhiMGQ4SmcwdVEx?oc=5",
+        "publication": "CCN.com",
+        "date": "2025-10-03",
+        "summary": "What Is the Privacy Stewards of Ethereum (PSE) Initiative and Why It Matters&nbsp;&nbsp;CCN.com",
+        "source": "google_news_rss",
+        "confidence": 0.95,
+        "category": "general"
+      },
+      {
+        "title": "Did crypto get unlikely help becoming a campaign kingmaker? - https-//www.semafor.com",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNNUlYcGxVdTE1WE1yb3lpdlVYZmprSmNqWDNueF9xWHVDTlQydkdyTTFqb0RjYmljWFJLNW1qcWtFTTNyZi01VEtKbEJpdWQ0cVEzbEhIaEpzV0lqbnNxZFlxSmEyX2dXWHMzdVVVbzBFajZ5MUt1RnBjQmtEZ1ZjVC14THh2SDBiS2ZRYnU1RjhKMlVadGtxVG5uYXZVcXlrQlc0?oc=5",
+        "publication": "https-//www.semafor.com",
+        "date": "2025-08-22",
+        "summary": "Did crypto get unlikely help becoming a campaign kingmaker?&nbsp;&nbsp;https-//www.semafor.com",
+        "source": "google_news_rss",
+        "confidence": 0.95,
+        "category": "general"
+      },
+      {
+        "title": "What is World? - Messari",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1TSU10YURjQ3BmaWU1OURXWFJzZm5tZnViMGo2T2Y0TThDM200NDA2VmE4ZDc5MFNNTDJLTUp5Um1RanpMekUydlNlWkZnOV92dXEyalhIeVZEU184?oc=5",
+        "publication": "Messari",
+        "date": "2024-10-18",
+        "summary": "What is World?&nbsp;&nbsp;Messari",
+        "source": "google_news_rss",
+        "confidence": 0.95,
+        "category": "general"
+      },
+      {
+        "title": "Chainlink Unveil Mixicles: a New Privacy Solution for Smart Contracts - Blockonomi",
+        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1mc0Z2S0tIdnJLN0ExTFUwOGs5QWstZWFLWGpSWHNQZTljQkZab1NrS210QWs4dVNkR0VWYVhGV3hnTUU3U3FuVjJqdmJILXpTWEE5MWR6TUdmdlJsUUE?oc=5",
+        "publication": "Blockonomi",
+        "date": "2019-09-06",
+        "summary": "Chainlink Unveil Mixicles: a New Privacy Solution for Smart Contracts&nbsp;&nbsp;Blockonomi",
+        "source": "google_news_rss",
+        "confidence": 0.95,
+        "category": "general"
+      }
+    ]
+  },
+  "last_updated": "2025-10-07T20:04:17.455407",
+  "constitutional_compliance": {
+    "real_data_only": true,
+    "sources_cited": true,
+    "no_fabrication": true,
+    "confidence_score": 0.95
+  }
+}

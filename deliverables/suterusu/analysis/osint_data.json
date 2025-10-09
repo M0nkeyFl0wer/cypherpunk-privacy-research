@@ -1,0 +1,336 @@
+{
+  "project": "suterusu",
+  "timestamp": "2025-10-08T08:38:27-07:00",
+  "osint_version": "v3_github_homepage",
+  "osint_sources": {
+    "shodan": {
+      "domain": "suterusu.io",
+      "tags": [
+        "dmarc",
+        "google-verified",
+        "spf"
+      ],
+      "subdomains": [
+        "_dmarc",
+        "alice.cluster",
+        "apps",
+        "bchshield",
+        "bnbshield",
+        "bnbshield.staging",
+        "bob.cluster",
+        "bridge",
+        "bridge.staging",
+        "bscshield",
+        "bscshield.staging",
+        "charlie.cluster",
+        "data-platform",
+        "docs",
+        "documentation",
+        "ethshield",
+        "explorer",
+        "ftmshield",
+        "ftmshield.staging",
+        "node",
+        "polygonshield",
+        "polygonshield.staging",
+        "shield",
+        "shield.staging",
+        "shieldstats",
+        "v1.bscshield",
+        "v1.bscshield.staging",
+        "v1.ethshield",
+        "v1.ethshield.staging",
+        "v1.ftmshield",
+        "v3.bchshield.staging",
+        "www",
+        "xsuter"
+      ],
+      "data": [
+        {
+          "subdomain": "",
+          "type": "A",
+          "value": "3.33.254.152",
+          "last_seen": "2025-10-04T23:21:48.333000"
+        },
+        {
+          "subdomain": "",
+          "type": "A",
+          "value": "75.2.27.114",
+          "last_seen": "2025-10-04T23:21:48.333000"
+        },
+        {
+          "subdomain": "",
+          "type": "MX",
+          "value": "alt1.aspmx.l.google.com",
+          "last_seen": "2025-10-02T06:07:24.153000"
+        },
+        {
+          "subdomain": "",
+          "type": "MX",
+          "value": "alt2.aspmx.l.google.com",
+          "last_seen": "2025-10-02T06:07:24.153000"
+        },
+        {
+          "subdomain": "",
+          "type": "MX",
+          "value": "aspmx.l.google.com",
+          "last_seen": "2025-10-02T06:07:24.153000"
+        },
+        {
+          "subdomain": "",
+          "type": "MX",
+          "value": "aspmx2.googlemail.com",
+          "last_seen": "2025-10-02T06:07:24.153000"
+        },
+        {
+          "subdomain": "",
+          "type": "MX",
+          "value": "aspmx3.googlemail.com",
+          "last_seen": "2025-10-02T06:07:24.153000"
+        },
+        {
+          "subdomain": "",
+          "type": "NS",
+          "value": "boyd.ns.cloudflare.com",
+          "last_seen": "2025-10-02T06:06:38.284000"
+        },
+        {
+          "subdomain": "",
+          "type": "NS",
+          "value": "lia.ns.cloudflare.com",
+          "last_seen": "2025-10-02T06:06:38.285000"
+        },
+        {
+          "subdomain": "",
+          "type": "SOA",
+          "value": "boyd.ns.cloudflare.com",
+          "last_seen": "2025-10-02T06:09:05.176000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "gitbook-space-verification=0b911f8c8df470f4845c2cd069a56536a9b99b024842ac0dfe70d6dbb0f046b8",
+          "last_seen": "2025-10-02T06:04:12.407000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "google-site-verification=ikdtwfRak9rsfbNkGV0I6P0Qs0-fCW0uMowrcurJzf0",
+          "last_seen": "2025-10-02T06:04:12.407000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "v=spf1 include:_spf.google.com -all",
+          "last_seen": "2025-10-02T06:04:12.407000"
+        },
+        {
+          "subdomain": "_dmarc",
+          "type": "TXT",
+          "value": "v=DMARC1; p=quarantine; rua=mailto:dmarc-reports@suterusu.io; pct=90; sp=none",
+          "last_seen": "2025-10-02T06:04:12.510000"
+        },
+        {
+          "subdomain": "alice.cluster",
+          "type": "A",
+          "value": "52.193.160.23",
+          "last_seen": "2025-10-04T23:21:47.995000"
+        },
+        {
+          "subdomain": "apps",
+          "type": "CNAME",
+          "value": "peaceful-galileo-0af245.netlify.com",
+          "last_seen": "2025-10-04T23:21:48.897000"
+        },
+        {
+          "subdomain": "bchshield",
+          "type": "CNAME",
+          "value": "a778caa2d6b36927f.awsglobalaccelerator.com",
+          "last_seen": "2025-10-04T23:21:47.869000"
+        },
+        {
+          "subdomain": "bnbshield",
+          "type": "CNAME",
+          "value": "a778caa2d6b36927f.awsglobalaccelerator.com",
+          "last_seen": "2025-10-04T23:21:47.643000"
+        },
+        {
+          "subdomain": "bnbshield.staging",
+          "type": "CNAME",
+          "value": "a778caa2d6b36927f.awsglobalaccelerator.com",
+          "last_seen": "2025-10-04T23:21:47.995000"
+        },
+        {
+          "subdomain": "bob.cluster",
+          "type": "A",
+          "value": "18.176.55.135",
+          "last_seen": "2025-10-04T23:21:47.201000"
+        },
+        {
+          "subdomain": "bridge",
+          "type": "CNAME",
+          "value": "a778caa2d6b36927f.awsglobalaccelerator.com",
+          "last_seen": "2025-10-04T23:21:47.783000"
+        },
+        {
+          "subdomain": "bridge.staging",
+          "type": "CNAME",
+          "value": "a778caa2d6b36927f.awsglobalaccelerator.com",
+          "last_seen": "2025-10-04T23:21:47.645000"
+        },
+        {
+          "subdomain": "bscshield",
+          "type": "CNAME",
+          "value": "a778caa2d6b36927f.awsglobalaccelerator.com",
+          "last_seen": "2025-10-04T23:21:47.202000"
+        },
+        {
+          "subdomain": "bscshield.staging",
+          "type": "CNAME",
+          "value": "a778caa2d6b36927f.awsglobalaccelerator.com",
+          "last_seen": "2025-10-04T23:21:49.122000"
+        },
+        {
+          "subdomain": "charlie.cluster",
+          "type": "A",
+          "value": "52.195.11.254",
+          "last_seen": "2025-10-04T23:21:47.885000"
+        },
+        {
+          "subdomain": "data-platform",
+          "type": "CNAME",
+          "value": "a778caa2d6b36927f.awsglobalaccelerator.com",
+          "last_seen": "2025-10-04T23:21:47.246000"
+        },
+        {
+          "subdomain": "docs",
+          "type": "CNAME",
+          "value": "hosting.gitbook.io",
+          "last_seen": "2025-10-04T23:21:48.917000"
+        },
+        {
+          "subdomain": "documentation",
+          "type": "CNAME",
+          "value": "hosting.gitbook.io",
+          "last_seen": "2025-10-04T23:21:48.050000"
+        },
+        {
+          "subdomain": "ethshield",
+          "type": "CNAME",
+          "value": "a778caa2d6b36927f.awsglobalaccelerator.com",
+          "last_seen": "2025-10-04T23:21:47.382000"
+        },
+        {
+          "subdomain": "explorer",
+          "type": "CNAME",
+          "value": "affectionate-shannon-183386.netlify.com",
+          "last_seen": "2025-10-04T23:21:47.795000"
+        },
+        {
+          "subdomain": "ftmshield",
+          "type": "CNAME",
+          "value": "a778caa2d6b36927f.awsglobalaccelerator.com",
+          "last_seen": "2025-10-04T23:21:48.574000"
+        },
+        {
+          "subdomain": "ftmshield.staging",
+          "type": "CNAME",
+          "value": "a778caa2d6b36927f.awsglobalaccelerator.com",
+          "last_seen": "2025-10-04T23:21:48.430000"
+        },
+        {
+          "subdomain": "node",
+          "type": "CNAME",
+          "value": "a778caa2d6b36927f.awsglobalaccelerator.com",
+          "last_seen": "2025-10-04T23:21:48.834000"
+        },
+        {
+          "subdomain": "polygonshield",
+          "type": "CNAME",
+          "value": "a778caa2d6b36927f.awsglobalaccelerator.com",
+          "last_seen": "2025-10-04T23:21:47.811000"
+        },
+        {
+          "subdomain": "polygonshield.staging",
+          "type": "CNAME",
+          "value": "a778caa2d6b36927f.awsglobalaccelerator.com",
+          "last_seen": "2025-10-04T23:21:48.198000"
+        },
+        {
+          "subdomain": "shield",
+          "type": "CNAME",
+          "value": "a778caa2d6b36927f.awsglobalaccelerator.com",
+          "last_seen": "2025-10-04T23:21:48.014000"
+        },
+        {
+          "subdomain": "shield.staging",
+          "type": "CNAME",
+          "value": "a778caa2d6b36927f.awsglobalaccelerator.com",
+          "last_seen": "2025-10-04T23:21:47.390000"
+        },
+        {
+          "subdomain": "shieldstats",
+          "type": "CNAME",
+          "value": "a778caa2d6b36927f.awsglobalaccelerator.com",
+          "last_seen": "2025-10-04T23:21:47.341000"
+        },
+        {
+          "subdomain": "v1.bscshield",
+          "type": "CNAME",
+          "value": "a778caa2d6b36927f.awsglobalaccelerator.com",
+          "last_seen": "2025-10-04T23:21:48.476000"
+        },
+        {
+          "subdomain": "v1.bscshield.staging",
+          "type": "CNAME",
+          "value": "a778caa2d6b36927f.awsglobalaccelerator.com",
+          "last_seen": "2025-10-04T23:21:47.835000"
+        },
+        {
+          "subdomain": "v1.ethshield",
+          "type": "CNAME",
+          "value": "a778caa2d6b36927f.awsglobalaccelerator.com",
+          "last_seen": "2025-10-04T23:21:47.719000"
+        },
+        {
+          "subdomain": "v1.ethshield.staging",
+          "type": "CNAME",
+          "value": "a778caa2d6b36927f.awsglobalaccelerator.com",
+          "last_seen": "2025-10-04T23:21:48.815000"
+        },
+        {
+          "subdomain": "v1.ftmshield",
+          "type": "CNAME",
+          "value": "a778caa2d6b36927f.awsglobalaccelerator.com",
+          "last_seen": "2025-10-04T23:21:48.122000"
+        },
+        {
+          "subdomain": "v3.bchshield.staging",
+          "type": "CNAME",
+          "value": "a778caa2d6b36927f.awsglobalaccelerator.com",
+          "last_seen": "2025-10-04T23:21:47.300000"
+        },
+        {
+          "subdomain": "www",
+          "type": "CNAME",
+          "value": "a778caa2d6b36927f.awsglobalaccelerator.com",
+          "last_seen": "2025-10-04T23:21:48.956000"
+        },
+        {
+          "subdomain": "xsuter",
+          "type": "CNAME",
+          "value": "a778caa2d6b36927f.awsglobalaccelerator.com",
+          "last_seen": "2025-10-04T23:21:48.074000"
+        }
+      ],
+      "more": false
+    },
+    "virustotal": {},
+    "hunter": {},
+    "hibp": {}
+  },
+  "extracted_targets": {
+    "domain": "suterusu.io",
+    "website": "https://www.suterusu.io"
+  }
+}

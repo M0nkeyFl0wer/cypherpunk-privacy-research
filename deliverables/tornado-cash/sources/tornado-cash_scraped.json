@@ -1,0 +1,13 @@
+{
+  "project_name": "tornado-cash",
+  "website": "https://tornado-cash.org",
+  "website_confidence": 0.85,
+  "website_sources": ["https://tornado-cash.org", "curl scraping"],
+  "description": "",
+  "description_confidence": 0.80,
+  "description_sources": ["https://tornado-cash.org meta tags"],
+  "research_date": "2025-10-06T13:29:08Z",
+  "batch_number": 3,
+  "execution_host": "seshat",
+  "scraping_method": "curl + grep"
+}

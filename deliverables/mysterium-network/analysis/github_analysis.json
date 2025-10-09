@@ -1,0 +1,186 @@
+{
+  "owner": "mysteriumnetwork",
+  "repo_name": "node",
+  "full_name": "mysteriumnetwork/node",
+  "github_url": "https://github.com/mysteriumnetwork/node",
+  "html_url": "https://github.com/mysteriumnetwork/node",
+  "stars": 1164,
+  "forks": 326,
+  "watchers": 1164,
+  "open_issues": 82,
+  "contributors": 45,
+  "created_at": "2017-01-26T00:43:08Z",
+  "updated_at": "2025-09-23T13:36:22Z",
+  "pushed_at": "2025-09-27T04:39:22Z",
+  "size_kb": 24202,
+  "default_branch": "master",
+  "primary_language": "Go",
+  "languages": [
+    {
+      "name": "Go",
+      "bytes": 5654757,
+      "percentage": 98.98
+    },
+    {
+      "name": "Shell",
+      "bytes": 51464,
+      "percentage": 0.9
+    },
+    {
+      "name": "Dockerfile",
+      "bytes": 3480,
+      "percentage": 0.06
+    },
+    {
+      "name": "C",
+      "bytes": 1753,
+      "percentage": 0.03
+    },
+    {
+      "name": "HTML",
+      "bytes": 642,
+      "percentage": 0.01
+    },
+    {
+      "name": "Makefile",
+      "bytes": 349,
+      "percentage": 0.01
+    },
+    {
+      "name": "JavaScript",
+      "bytes": 253,
+      "percentage": 0.0
+    },
+    {
+      "name": "Assembly",
+      "bytes": 69,
+      "percentage": 0.0
+    }
+  ],
+  "total_languages": 8,
+  "top_contributors": [
+    {
+      "username": "Waldz",
+      "contributions": 1480,
+      "avatar_url": "https://avatars.githubusercontent.com/u/2713911?v=4",
+      "profile_url": "https://github.com/Waldz"
+    },
+    {
+      "username": "soffokl",
+      "contributions": 1342,
+      "avatar_url": "https://avatars.githubusercontent.com/u/8612618?v=4",
+      "profile_url": "https://github.com/soffokl"
+    },
+    {
+      "username": "vkuznecovas",
+      "contributions": 1010,
+      "avatar_url": "https://avatars.githubusercontent.com/u/18392269?v=4",
+      "profile_url": "https://github.com/vkuznecovas"
+    },
+    {
+      "username": "tadovas",
+      "contributions": 642,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1046590?v=4",
+      "profile_url": "https://github.com/tadovas"
+    },
+    {
+      "username": "tadaskay",
+      "contributions": 594,
+      "avatar_url": "https://avatars.githubusercontent.com/u/4745368?v=4",
+      "profile_url": "https://github.com/tadaskay"
+    },
+    {
+      "username": "zolia",
+      "contributions": 523,
+      "avatar_url": "https://avatars.githubusercontent.com/u/13434315?v=4",
+      "profile_url": "https://github.com/zolia"
+    },
+    {
+      "username": "mdomasevicius",
+      "contributions": 512,
+      "avatar_url": "https://avatars.githubusercontent.com/u/20511486?v=4",
+      "profile_url": "https://github.com/mdomasevicius"
+    },
+    {
+      "username": "donce",
+      "contributions": 347,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1409983?v=4",
+      "profile_url": "https://github.com/donce"
+    },
+    {
+      "username": "tomasmik",
+      "contributions": 289,
+      "avatar_url": "https://avatars.githubusercontent.com/u/40318863?v=4",
+      "profile_url": "https://github.com/tomasmik"
+    },
+    {
+      "username": "anjmao",
+      "contributions": 275,
+      "avatar_url": "https://avatars.githubusercontent.com/u/3028012?v=4",
+      "profile_url": "https://github.com/anjmao"
+    }
+  ],
+  "recent_commits": [
+    {
+      "sha": "6286c2f",
+      "message": "Merge pull request #6141 from mysteriumnetwork/fixes/micro-settlements",
+      "author": "Mantas Doma\u0161evi\u010dius",
+      "date": "2025-09-22T12:33:21Z",
+      "url": "https://github.com/mysteriumnetwork/node/commit/6286c2f1f8ac6302ac9b5d6e05d32ad2ba9c06e4"
+    },
+    {
+      "sha": "b2cbcc2",
+      "message": "Increase logging",
+      "author": "Mantas Domasevicius",
+      "date": "2025-09-22T11:41:14Z",
+      "url": "https://github.com/mysteriumnetwork/node/commit/b2cbcc26c36a93ff496fb8ab9805382548cd8fc5"
+    },
+    {
+      "sha": "5baa18a",
+      "message": "Merge pull request #6132 from mysteriumnetwork/disable-maven-push-github",
+      "author": "Dmitry Shihovtsev",
+      "date": "2025-07-09T11:03:41Z",
+      "url": "https://github.com/mysteriumnetwork/node/commit/5baa18a24f60e04422dcee75b4e014a02991fa34"
+    },
+    {
+      "sha": "e1906f5",
+      "message": "Temporarily comment out Android SDK release steps in CI configuration",
+      "author": "soffokl",
+      "date": "2025-07-09T11:03:16Z",
+      "url": "https://github.com/mysteriumnetwork/node/commit/e1906f5611cf1028175b770e49a3a8d44966d773"
+    },
+    {
+      "sha": "70b62f5",
+      "message": "Merge pull request #6131 from mysteriumnetwork/disable-maven-push",
+      "author": "Dmitry Shihovtsev",
+      "date": "2025-07-09T10:10:52Z",
+      "url": "https://github.com/mysteriumnetwork/node/commit/70b62f5e8e7a4f2cb01422f20303507ca35e2e4c"
+    }
+  ],
+  "total_commits_sample": 10,
+  "description": "Mysterium Network Node -  official implementation of distributed VPN network (dVPN) protocol",
+  "homepage": "https://mysterium.network",
+  "topics": [
+    "blockchain",
+    "distributed",
+    "distributed-systems",
+    "golang",
+    "networking",
+    "vpn",
+    "vpn-client",
+    "vpn-server",
+    "vpnfree"
+  ],
+  "license": "GNU General Public License v3.0",
+  "is_fork": false,
+  "is_archived": false,
+  "is_disabled": false,
+  "is_private": false,
+  "has_wiki": true,
+  "has_issues": true,
+  "has_projects": true,
+  "analyzed_at": "2025-10-07T23:21:52.310260",
+  "data_source": "github-api-v3",
+  "confidence": 1.0,
+  "verified": true
+}

@@ -1,0 +1,56 @@
+{
+  "github_url": "https://github.com/Hinkal-Protocol",
+  "tech_stack": [
+    "Solidity 0.8.20",
+    "TypeScript",
+    "JavaScript",
+    "React",
+    "Vite",
+    "OpenZeppelin",
+    "Circom",
+    "Groth16 zkSNARK",
+    "Windi CSS",
+    "ethers.js",
+    "wagmi",
+    "NPM (@hinkal/common)"
+  ],
+  "privacy_techniques": [
+    "Zero-Knowledge Proofs (zkSNARKs)",
+    "Groth16 proving system",
+    "Stealth addresses",
+    "Shared privacy pools",
+    "UTXO model with commitments",
+    "Nullifiers for double-spend prevention",
+    "Merkle tree membership proofs",
+    "Relayer network for transaction obfuscation",
+    "Poseidon hash functions",
+    "Cross-chain privacy via folded proofs",
+    "Selective privacy with KYC compliance",
+    "Zero-knowledge CEX account proofs",
+    "EIP-712 signature binding",
+    "Anti-replay protection"
+  ],
+  "confidence": 0.92,
+  "research_status": "COMPLETE",
+  "notes": {
+    "github_repositories": 4,
+    "public_repos": [
+      "Hinkal-Demo-App (TypeScript)",
+      "circomlibjs (JavaScript)",
+      "requestNetwork-integration (TypeScript)",
+      "origami-oracle-adapters (Solidity)"
+    ],
+    "core_contracts_status": "Closed-source (not publicly available on GitHub)",
+    "verified_contracts": {
+      "ethereum": {
+        "token": "0xf7f1c31f2c7d4190e7a15d9eac879e823558c6ea",
+        "protocol": "0x2E750eD7172dBA647D7DE0AAcb2c04066b312a77"
+      }
+    },
+    "supported_chains": 8,
+    "tvl": "$239,284",
+    "audits": 5,
+    "sdk_npm": "@hinkal/common v0.2.15",
+    "compliance": "FinCEN registered (U.S. Treasury)"
+  }
+}

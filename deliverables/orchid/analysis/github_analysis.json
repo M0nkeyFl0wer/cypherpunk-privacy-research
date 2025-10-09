@@ -1,0 +1,264 @@
+{
+  "owner": "OrchidTechnologies",
+  "repo_name": "orchid",
+  "full_name": "OrchidTechnologies/orchid",
+  "github_url": "https://github.com/OrchidTechnologies/orchid",
+  "html_url": "https://github.com/OrchidTechnologies/orchid",
+  "stars": 688,
+  "forks": 114,
+  "watchers": 688,
+  "open_issues": 11,
+  "contributors": 16,
+  "created_at": "2019-08-20T17:04:55Z",
+  "updated_at": "2025-09-23T09:17:02Z",
+  "pushed_at": "2025-08-28T16:29:10Z",
+  "size_kb": 44476,
+  "default_branch": "master",
+  "primary_language": "Dart",
+  "languages": [
+    {
+      "name": "Dart",
+      "bytes": 2273356,
+      "percentage": 43.73
+    },
+    {
+      "name": "C++",
+      "bytes": 1188625,
+      "percentage": 22.87
+    },
+    {
+      "name": "Python",
+      "bytes": 644983,
+      "percentage": 12.41
+    },
+    {
+      "name": "C",
+      "bytes": 326570,
+      "percentage": 6.28
+    },
+    {
+      "name": "HTML",
+      "bytes": 282079,
+      "percentage": 5.43
+    },
+    {
+      "name": "Makefile",
+      "bytes": 191309,
+      "percentage": 3.68
+    },
+    {
+      "name": "TypeScript",
+      "bytes": 67059,
+      "percentage": 1.29
+    },
+    {
+      "name": "Solidity",
+      "bytes": 53526,
+      "percentage": 1.03
+    },
+    {
+      "name": "Shell",
+      "bytes": 48652,
+      "percentage": 0.94
+    },
+    {
+      "name": "TeX",
+      "bytes": 35868,
+      "percentage": 0.69
+    },
+    {
+      "name": "Objective-C++",
+      "bytes": 29770,
+      "percentage": 0.57
+    },
+    {
+      "name": "CMake",
+      "bytes": 19494,
+      "percentage": 0.38
+    },
+    {
+      "name": "Rust",
+      "bytes": 7147,
+      "percentage": 0.14
+    },
+    {
+      "name": "Ruby",
+      "bytes": 6904,
+      "percentage": 0.13
+    },
+    {
+      "name": "Java",
+      "bytes": 5449,
+      "percentage": 0.1
+    },
+    {
+      "name": "Yul",
+      "bytes": 4436,
+      "percentage": 0.09
+    },
+    {
+      "name": "Kotlin",
+      "bytes": 3576,
+      "percentage": 0.07
+    },
+    {
+      "name": "Swift",
+      "bytes": 3390,
+      "percentage": 0.07
+    },
+    {
+      "name": "Dockerfile",
+      "bytes": 2416,
+      "percentage": 0.05
+    },
+    {
+      "name": "Mermaid",
+      "bytes": 1850,
+      "percentage": 0.04
+    },
+    {
+      "name": "Jinja",
+      "bytes": 1411,
+      "percentage": 0.03
+    },
+    {
+      "name": "JavaScript",
+      "bytes": 317,
+      "percentage": 0.01
+    },
+    {
+      "name": "CSS",
+      "bytes": 106,
+      "percentage": 0.0
+    },
+    {
+      "name": "Objective-C",
+      "bytes": 38,
+      "percentage": 0.0
+    }
+  ],
+  "total_languages": 24,
+  "top_contributors": [
+    {
+      "username": "saurik",
+      "contributions": 2394,
+      "avatar_url": "https://avatars.githubusercontent.com/u/36743?v=4",
+      "profile_url": "https://github.com/saurik"
+    },
+    {
+      "username": "patniemeyer",
+      "contributions": 996,
+      "avatar_url": "https://avatars.githubusercontent.com/u/852471?v=4",
+      "profile_url": "https://github.com/patniemeyer"
+    },
+    {
+      "username": "nhandler",
+      "contributions": 227,
+      "avatar_url": "https://avatars.githubusercontent.com/u/102499?v=4",
+      "profile_url": "https://github.com/nhandler"
+    },
+    {
+      "username": "jsbcannell",
+      "contributions": 214,
+      "avatar_url": "https://avatars.githubusercontent.com/u/41398165?v=4",
+      "profile_url": "https://github.com/jsbcannell"
+    },
+    {
+      "username": "ghazel",
+      "contributions": 146,
+      "avatar_url": "https://avatars.githubusercontent.com/u/31402?v=4",
+      "profile_url": "https://github.com/ghazel"
+    },
+    {
+      "username": "danopato",
+      "contributions": 55,
+      "avatar_url": "https://avatars.githubusercontent.com/u/169961?v=4",
+      "profile_url": "https://github.com/danopato"
+    },
+    {
+      "username": "diabeticpilot",
+      "contributions": 32,
+      "avatar_url": "https://avatars.githubusercontent.com/u/29378665?v=4",
+      "profile_url": "https://github.com/diabeticpilot"
+    },
+    {
+      "username": "dependabot[bot]",
+      "contributions": 14,
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "profile_url": "https://github.com/apps/dependabot"
+    },
+    {
+      "username": "Count042",
+      "contributions": 10,
+      "avatar_url": "https://avatars.githubusercontent.com/u/2539919?v=4",
+      "profile_url": "https://github.com/Count042"
+    },
+    {
+      "username": "CalebBabin",
+      "contributions": 6,
+      "avatar_url": "https://avatars.githubusercontent.com/u/12778272?v=4",
+      "profile_url": "https://github.com/CalebBabin"
+    }
+  ],
+  "recent_commits": [
+    {
+      "sha": "615da9e",
+      "message": "updated entrypoint script to take environment variables and logs python output",
+      "author": "Nick",
+      "date": "2025-08-28T16:28:24Z",
+      "url": "https://github.com/OrchidTechnologies/orchid/commit/615da9e27c9af69f62ba13224d56a7afc9d03077"
+    },
+    {
+      "sha": "79acd80",
+      "message": "dapp: Update price widget data source, detail, full-precision copyable values, sampled gas price his",
+      "author": "Patrick Niemeyer",
+      "date": "2025-08-25T19:15:07Z",
+      "url": "https://github.com/OrchidTechnologies/orchid/commit/79acd80640bcc270a5e17948674d815aaba9972f"
+    },
+    {
+      "sha": "bd44695",
+      "message": "dapp: tweak deploy script",
+      "author": "Patrick Niemeyer",
+      "date": "2025-08-22T15:48:13Z",
+      "url": "https://github.com/OrchidTechnologies/orchid/commit/bd44695012137b3ef807fe13c5b6c86fcfb87d82"
+    },
+    {
+      "sha": "64b9e01",
+      "message": "app,dapp: Support deep linking to the dapp during onboarding and from the account manager.",
+      "author": "Patrick Niemeyer",
+      "date": "2025-08-22T14:31:14Z",
+      "url": "https://github.com/OrchidTechnologies/orchid/commit/64b9e01f1607289eb702e808e60845ad2c61be60"
+    },
+    {
+      "sha": "e8e5ef8",
+      "message": "app, dapp: flutter_3_32_7 upgrade",
+      "author": "Patrick Niemeyer",
+      "date": "2025-08-07T18:55:16Z",
+      "url": "https://github.com/OrchidTechnologies/orchid/commit/e8e5ef81e362042928b8e2d7f640532727513451"
+    }
+  ],
+  "total_commits_sample": 10,
+  "description": "Orchid: VPN, Personal Firewall",
+  "homepage": "https://www.orchid.com/",
+  "topics": [
+    "firewall",
+    "packet-analyzer",
+    "packet-capture",
+    "personal-firewall",
+    "traffic-analyzer",
+    "traffic-sniffer",
+    "vpn"
+  ],
+  "license": "GNU Affero General Public License v3.0",
+  "is_fork": false,
+  "is_archived": false,
+  "is_disabled": false,
+  "is_private": false,
+  "has_wiki": true,
+  "has_issues": true,
+  "has_projects": false,
+  "analyzed_at": "2025-10-07T23:22:11.380391",
+  "data_source": "github-api-v3",
+  "confidence": 1.0,
+  "verified": true
+}

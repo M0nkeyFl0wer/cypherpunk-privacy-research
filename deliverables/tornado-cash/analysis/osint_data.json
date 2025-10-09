@@ -1,0 +1,136 @@
+{
+  "project": "tornado-cash",
+  "timestamp": "2025-10-08T08:37:55-07:00",
+  "osint_version": "v3_github_homepage",
+  "osint_sources": {
+    "shodan": {
+      "domain": "tornado.cash",
+      "tags": [
+        "dmarc",
+        "google-verified",
+        "spf"
+      ],
+      "subdomains": [
+        "_dmarc",
+        "app",
+        "ceremony",
+        "docs",
+        "mail",
+        "relayers-network",
+        "www"
+      ],
+      "data": [
+        {
+          "subdomain": "",
+          "type": "A",
+          "value": "101.99.75.124",
+          "last_seen": "2025-10-08T02:57:15.046000"
+        },
+        {
+          "subdomain": "",
+          "type": "MX",
+          "value": "mail.tornado.cash",
+          "last_seen": "2025-10-03T09:20:20.380000"
+        },
+        {
+          "subdomain": "",
+          "type": "NS",
+          "value": "ns1.he.net",
+          "last_seen": "2025-10-03T09:20:35.046000"
+        },
+        {
+          "subdomain": "",
+          "type": "NS",
+          "value": "ns2.he.net",
+          "last_seen": "2025-10-03T09:20:35.045000"
+        },
+        {
+          "subdomain": "",
+          "type": "NS",
+          "value": "ns3.he.net",
+          "last_seen": "2025-10-03T09:20:35.046000"
+        },
+        {
+          "subdomain": "",
+          "type": "NS",
+          "value": "ns4.he.net",
+          "last_seen": "2025-10-03T09:20:35.045000"
+        },
+        {
+          "subdomain": "",
+          "type": "NS",
+          "value": "ns5.he.net",
+          "last_seen": "2025-10-03T09:20:35.045000"
+        },
+        {
+          "subdomain": "",
+          "type": "SOA",
+          "value": "ns1.he.net",
+          "last_seen": "2025-10-03T09:22:51.199000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "google-site-verification=n7xyVwyDy6XFtDnam8qv8EEYj5xlHki2sPDfXqpb0M0",
+          "last_seen": "2025-10-03T09:16:20.070000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "v=spf1 +a +mx +ip4:101.99.75.124 -all",
+          "last_seen": "2025-10-03T09:16:20.070000"
+        },
+        {
+          "subdomain": "_dmarc",
+          "type": "TXT",
+          "value": "v=DMARC1; p=reject; sp=reject; ruf=mailto:dmarc-reports@tornado.cash; fo=1",
+          "last_seen": "2025-10-03T09:16:20.164000"
+        },
+        {
+          "subdomain": "app",
+          "type": "A",
+          "value": "101.99.75.124",
+          "last_seen": "2025-10-04T01:23:25.518000"
+        },
+        {
+          "subdomain": "ceremony",
+          "type": "A",
+          "value": "101.99.75.124",
+          "last_seen": "2025-10-04T01:23:24.557000"
+        },
+        {
+          "subdomain": "docs",
+          "type": "A",
+          "value": "101.99.75.124",
+          "last_seen": "2025-10-04T01:23:24.448000"
+        },
+        {
+          "subdomain": "mail",
+          "type": "A",
+          "value": "101.99.75.124",
+          "last_seen": "2025-10-04T01:23:25.914000"
+        },
+        {
+          "subdomain": "relayers-network",
+          "type": "A",
+          "value": "101.99.75.124",
+          "last_seen": "2025-10-04T01:23:24.788000"
+        },
+        {
+          "subdomain": "www",
+          "type": "CNAME",
+          "value": "tornado.cash",
+          "last_seen": "2025-10-04T01:23:24.714000"
+        }
+      ],
+      "more": false
+    },
+    "virustotal": {},
+    "hunter": {},
+    "hibp": {}
+  },
+  "extracted_targets": {
+    "domain": "tornado.cash",
+    "website": "https://tornado.cash"
+  }
+}

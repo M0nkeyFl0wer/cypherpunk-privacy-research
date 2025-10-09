@@ -1,0 +1,14 @@
+{
+  "project": "firn-protocol",
+  "timestamp": "2025-10-08T08:38:57-07:00",
+  "osint_version": "v3_github_homepage",
+  "osint_sources": {
+    "shodan": {},
+    "virustotal": {},
+    "hunter": {},
+    "hibp": {}
+  },
+  "extracted_targets": {
+    "error": "no_github_analysis"
+  }
+}

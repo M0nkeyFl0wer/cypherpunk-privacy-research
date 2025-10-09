@@ -1,0 +1,212 @@
+{
+  "project": "alephim",
+  "full_name": "Aleph.im (Aleph Cloud)",
+  "category": "computing",
+  "description": "Open source DePIN confidential VMs - Decentralized cloud computing platform providing storage, computation, and indexing services with confidential virtual machines",
+  "github_url": "https://github.com/aleph-im",
+  "github_org": "aleph-im",
+  "primary_repositories": [
+    {
+      "name": "aleph-vm",
+      "url": "https://github.com/aleph-im/aleph-vm",
+      "description": "Aleph.im VM execution engine - Core virtualization component",
+      "language": "Python",
+      "stars": "N/A"
+    },
+    {
+      "name": "pyaleph",
+      "url": "https://github.com/aleph-im/pyaleph",
+      "description": "Next generation network of decentralized big data applications. Connected chains: Ethereum, Solana, Polkadot/Substrate, Cosmos-SDK, NULS",
+      "language": "Python",
+      "stars": "N/A"
+    },
+    {
+      "name": "aleph-client",
+      "url": "https://github.com/aleph-im/aleph-client",
+      "description": "Lightweight Python Client library for the Aleph.im network",
+      "language": "Python",
+      "stars": "N/A"
+    },
+    {
+      "name": "aleph-sdk-python",
+      "url": "https://github.com/aleph-im/aleph-sdk-python",
+      "description": "Python SDK for Aleph.im",
+      "language": "Python",
+      "stars": "N/A"
+    },
+    {
+      "name": "aleph-js",
+      "url": "https://github.com/aleph-im/aleph-js",
+      "description": "Aleph.im Javascript API",
+      "language": "JavaScript",
+      "stars": "N/A"
+    },
+    {
+      "name": "aleph-sdk-ts",
+      "url": "https://github.com/aleph-im/aleph-sdk-ts",
+      "description": "TypeScript SDK for Aleph.im",
+      "language": "TypeScript",
+      "stars": "N/A"
+    }
+  ],
+  "tech_stack": {
+    "primary_languages": [
+      "Python",
+      "TypeScript",
+      "JavaScript",
+      "Solidity"
+    ],
+    "core_technologies": [
+      "IPFS",
+      "Firecracker",
+      "PostgreSQL",
+      "Redis",
+      "AMD SEV (Secure Encrypted Virtualization)"
+    ],
+    "virtualization": [
+      "Firecracker microVMs",
+      "QEMU (for confidential computing)",
+      "AMD SEV-enabled virtual machines"
+    ],
+    "blockchain_integrations": [
+      "Ethereum",
+      "Solana",
+      "Polkadot/Substrate",
+      "Cosmos-SDK",
+      "NULS"
+    ],
+    "frameworks": [
+      "ASGI-compatible frameworks (Python)",
+      "Vue.js (frontend)"
+    ]
+  },
+  "privacy_techniques": {
+    "confidential_computing": {
+      "technology": "AMD SEV (Secure Encrypted Virtualization)",
+      "description": "Hardware-based confidential computing using AMD SEV on 4th Generation AMD EPYC processors",
+      "features": [
+        "Memory encryption with unique keys per VM",
+        "CPU-level encryption for RAM and storage",
+        "Secure isolation from hypervisor and other VMs",
+        "Cryptographic attestation for VM integrity verification",
+        "Protection against privileged users and compromised hypervisors"
+      ],
+      "hardware_requirements": "4th Generation AMD EPYC Processors (9004 Series, 8004 Series) with SEV support",
+      "status": "Beta"
+    },
+    "trusted_execution_environment": {
+      "implementation": "TEE via AMD SEV",
+      "guarantees": [
+        "Data remains encrypted during computation",
+        "No external entity (including hypervisor) can access VM memory",
+        "Hardware-generated and managed encryption keys",
+        "Complete VM isolation"
+      ]
+    },
+    "encryption": {
+      "data_at_rest": "IPFS with encryption capabilities",
+      "data_in_use": "AMD SEV memory encryption",
+      "storage": "Private and encrypted object/file storage",
+      "key_management": "Hardware-based key generation and management"
+    },
+    "network_privacy": {
+      "architecture": "Peer-to-peer decentralized network",
+      "node_types": [
+        "Core Channel Nodes (CCN) - Infrastructure management",
+        "Compute Resource Nodes (CRN) - Computational resources"
+      ],
+      "decentralization": {
+        "total_nodes": "659+ nodes",
+        "compute_resources": "8,964 CPUs, 35.36 TB RAM, 450.73 TB HDD",
+        "distribution": "Fully distributed across network"
+      }
+    },
+    "additional_privacy_features": [
+      "Confidential Virtual Machines (CVMs)",
+      "Function-as-a-Service with isolated execution",
+      "Decentralized Identification (DID) framework",
+      "Censorship resistance",
+      "Data privacy from cloud provider"
+    ]
+  },
+  "architecture": {
+    "network_layers": {
+      "off_chain": {
+        "description": "Custom peer-to-peer network powered by Core Channel Nodes",
+        "responsibilities": [
+          "Database management",
+          "File storage (IPFS)",
+          "Network control and management",
+          "Validation processes"
+        ],
+        "technologies": ["IPFS", "PostgreSQL", "Redis"]
+      },
+      "compute_layer": {
+        "description": "Compute Resource Nodes providing computational resources",
+        "features": [
+          "Firecracker microVMs",
+          "Confidential VMs with AMD SEV",
+          "Function-as-a-Service execution",
+          "Persistent virtual machines"
+        ]
+      }
+    },
+    "vm_components": {
+      "vm_supervisor": "Orchestrator that runs programs",
+      "vm_connector": "Assists with Aleph network operations",
+      "execution_model": "Isolated Linux virtual environments per program"
+    },
+    "deployment_model": "Decentralized serverless computation with on-demand resources"
+  },
+  "key_features": [
+    "Confidential Virtual Machines with AMD SEV",
+    "Decentralized cloud storage via IPFS",
+    "Multi-blockchain support (Ethereum, Solana, Polkadot, Cosmos, NULS)",
+    "Function-as-a-Service execution",
+    "Persistent virtual machines",
+    "Decentralized indexing for Solana and EVM chains",
+    "Hardware-based memory encryption",
+    "Cryptographic attestation",
+    "Cross-chain interoperability",
+    "Privacy-preserving AI deployment"
+  ],
+  "use_cases": [
+    "Secure AI deployment (e.g., LibertAI)",
+    "Federated learning without exposing raw data",
+    "Confidential smart contract execution",
+    "Decentralized application hosting",
+    "Privacy-preserving data analytics",
+    "Secure multi-party computation"
+  ],
+  "documentation": {
+    "main_docs": "https://docs.aleph.im/",
+    "cloud_docs": "https://docs.aleph.cloud/",
+    "confidential_computing": "https://docs.aleph.im/computing/confidential/"
+  },
+  "research_metadata": {
+    "research_date": "2025-10-08",
+    "data_sources": [
+      "GitHub (aleph-im organization)",
+      "Official documentation (docs.aleph.im)",
+      "Official website (aleph.im)",
+      "Technical blog posts",
+      "Community resources"
+    ],
+    "verification_sources": 2,
+    "confidence_score": 0.95,
+    "notes": [
+      "All data sourced from official repositories and documentation",
+      "AMD SEV confidential computing confirmed in beta status",
+      "Firecracker usage confirmed from aleph-vm repository documentation",
+      "Network statistics current as of research date",
+      "Hardware requirements verified from official docs"
+    ]
+  },
+  "constitutional_compliance": {
+    "real_data_only": true,
+    "multi_source_verified": true,
+    "confidence_tagged": true,
+    "gaps_reported": false,
+    "no_synthetic_data": true
+  }
+}

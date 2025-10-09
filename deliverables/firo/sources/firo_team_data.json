@@ -1,0 +1,17 @@
+{
+  "project_name": "firo",
+  "research_date": "2025-10-06T15:51:53Z",
+  "batch_number": 4,
+  "execution_host": "seshat",
+  "gaps": [
+    {
+      "field": "team_information",
+      "reason": "No team info found via GitHub contributors or website scraping",
+      "attempted_sources": [
+        "https://api.github.com/repos/https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting/contributors",
+        "/about",
+        "/team"
+      ]
+    }
+  ]
+}

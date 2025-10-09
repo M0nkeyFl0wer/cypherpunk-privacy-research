@@ -1,0 +1,17 @@
+{
+  "project_name": "TEN",
+  "category": "layer2",
+  "status": "active",
+  "ecosystem": "Ethereum",
+  "technology": "",
+  "description": "Layer 2 solution extending Web3 Scalability with Encryption",
+  "website": "",
+  "github": "",
+  "discovery_date": "2025-09-29T14:06:45.277183",
+  "discovery_source": "web3privacy_github",
+  "research_progress": {
+    "status": "initial_discovery",
+    "completion_percent": 10,
+    "last_updated": "2025-09-29T14:06:45.277191"
+  }
+}

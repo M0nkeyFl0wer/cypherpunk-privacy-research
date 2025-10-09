@@ -1,0 +1,123 @@
+use crate::{
+    abis::{read_request::ScopedReadRequest, side_effect::{Ordered, OrderedValue, Readable, Scoped}},
+    address::AztecAddress,
+    constants::{NULLIFIER_LENGTH, SCOPED_NULLIFIER_LENGTH},
+    traits::{Deserialize, Empty, FromField, Serialize},
+};
+use std::meta::derive;
+
+#[derive(Deserialize, Eq, Serialize)]
+pub struct Nullifier {
+    pub value: Field,
+    pub counter: u32,
+    pub note_hash: Field, // Every nullifier tracks the note hash that it nullified, to enable squashing.
+    // This note_hash is discarded before the tx is sent to public-land.
+}
+
+impl Ordered for Nullifier {
+    fn counter(self) -> u32 {
+        self.counter
+    }
+}
+
+impl OrderedValue<Field> for Nullifier {
+    fn value(self) -> Field {
+        self.value
+    }
+}
+
+impl Empty for Nullifier {
+    fn empty() -> Self {
+        Nullifier { value: 0, counter: 0, note_hash: 0 }
+    }
+}
+
+impl Nullifier {
+    pub fn scope(self, contract_address: AztecAddress) -> ScopedNullifier {
+        ScopedNullifier { nullifier: self, contract_address }
+    }
+}
+
+#[derive(Deserialize, Eq, Serialize)]
+pub struct ScopedNullifier {
+    pub nullifier: Nullifier,
+    pub contract_address: AztecAddress,
+}
+
+impl Scoped<Nullifier> for ScopedNullifier {
+    fn inner(self) -> Nullifier {
+        self.nullifier
+    }
+    fn contract_address(self) -> AztecAddress {
+        self.contract_address
+    }
+}
+
+impl Ordered for ScopedNullifier {
+    fn counter(self) -> u32 {
+        self.nullifier.counter
+    }
+}
+
+impl OrderedValue<Field> for ScopedNullifier {
+    fn value(self) -> Field {
+        self.nullifier.value
+    }
+}
+
+impl Empty for ScopedNullifier {
+    fn empty() -> Self {
+        ScopedNullifier { nullifier: Nullifier::empty(), contract_address: AztecAddress::empty() }
+    }
+}
+
+impl Readable<ScopedReadRequest> for ScopedNullifier {
+    fn assert_match_read_request(self, read_request: ScopedReadRequest) {
+        assert_eq(
+            self.nullifier.value,
+            read_request.value(),
+            "Value of the nullifier does not match read request",
+        );
+        assert_eq(
+            self.contract_address,
+            read_request.contract_address,
+            "Contract address of the nullifier does not match read request",
+        );
+    }
+}
+
+impl ScopedNullifier {
+    pub fn nullified_note_hash(self) -> Field {
+        self.nullifier.note_hash
+    }
+
+    pub fn expose_to_public(self) -> Nullifier {
+        // Hide the actual counter and note hash when exposing it to the public kernel.
+        Nullifier { value: self.nullifier.value, counter: 0, note_hash: 0 }
+    }
+}
+
+#[test]
+fn test_nullifier_serialization() {
+    let item = Nullifier { value: 123, counter: 456, note_hash: 789 };
+
+    // We use the NULLIFIER_LENGTH constant to ensure that there is a match
+    // between the derived trait implementation and the constant
+    let serialized: [Field; NULLIFIER_LENGTH] = item.serialize();
+    let deserialized = Nullifier::deserialize(serialized);
+    assert(item.eq(deserialized));
+}
+
+#[test]
+fn test_scoped_nullifier_serialization() {
+    let item = ScopedNullifier {
+        nullifier: Nullifier { value: 123, counter: 456, note_hash: 789 },
+        contract_address: AztecAddress::from_field(321),
+    };
+
+    // We use the SCOPED_NULLIFIER_LENGTH constant to ensure that there is a match
+    // between the derived trait implementation and the constant
+    let serialized: [Field; SCOPED_NULLIFIER_LENGTH] = item.serialize();
+    let deserialized = ScopedNullifier::deserialize(serialized);
+    assert(item.eq(deserialized));
+}

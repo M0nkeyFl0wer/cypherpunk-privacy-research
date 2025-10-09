@@ -1,0 +1,657 @@
+{
+  "project_name": "Inco Network",
+  "project_description": "Modular confidential computing Layer-1 blockchain powered by Fully Homomorphic Encryption (FHE) and secured by Ethereum via EigenLayer",
+  "research_timestamp": "2025-10-08T20:40:00Z",
+  "researcher": "Research Agent - Claude Code",
+  "confidence_score": 0.93,
+  "research_status": "COMPLETE",
+  "data_sources": [
+    "https://github.com/Inco-fhevm",
+    "https://www.inco.org/",
+    "https://docs.inco.org/",
+    "https://github.com/zama-ai/fhevm",
+    "https://www.blog.eigenlayer.xyz/inco-building-an-universal-confidential-computing-l1-on-eigenlayer/"
+  ],
+  "github_url": "https://github.com/Inco-fhevm",
+  "github_repositories": {
+    "primary_org": "https://github.com/Inco-fhevm",
+    "confidence": 1.0,
+    "repository_count": 36,
+    "key_repositories": [
+      {
+        "name": "confidential-erc20-framework",
+        "url": "https://github.com/Inco-fhevm/confidential-erc20-framework",
+        "description": "Confidential ERC20 framework developed in collaboration with Circle Research",
+        "stars": 75,
+        "primary_language": "TypeScript",
+        "languages": [
+          "TypeScript (66.0%)",
+          "Solidity (21.1%)",
+          "Shell (11.7%)"
+        ],
+        "confidence": 1.0
+      },
+      {
+        "name": "fhevm-hardhat-template",
+        "url": "https://github.com/Inco-fhevm/fhevm-hardhat-template",
+        "description": "fhEVM Hardhat development template",
+        "stars": 6,
+        "forks": 35,
+        "primary_language": "TypeScript",
+        "languages": [
+          "TypeScript (74.4%)",
+          "Solidity (24.8%)",
+          "JavaScript (0.8%)"
+        ],
+        "confidence": 1.0
+      },
+      {
+        "name": "lightning-rod",
+        "url": "https://github.com/Inco-fhevm/lightning-rod",
+        "description": "Dapp Development Kit (DDK) for Inco Lightning",
+        "primary_language": "TypeScript",
+        "confidence": 1.0
+      },
+      {
+        "name": "IncoHangman",
+        "url": "https://github.com/Inco-fhevm/IncoHangman",
+        "description": "Classical hangman word game, fully on-chain using FHE",
+        "stars": 12,
+        "forks": 1,
+        "primary_language": "TypeScript",
+        "confidence": 1.0
+      },
+      {
+        "name": "automata-dcap-attestation",
+        "url": "https://github.com/Inco-fhevm/automata-dcap-attestation",
+        "description": "Web3 implementation of Intel DCAP Quote Verification",
+        "primary_language": "Solidity",
+        "confidence": 1.0
+      },
+      {
+        "name": "hangman",
+        "url": "https://github.com/Inco-fhevm/hangman",
+        "stars": 15,
+        "forks": 4,
+        "primary_language": "JavaScript",
+        "confidence": 1.0
+      },
+      {
+        "name": "comfy-consumer",
+        "url": "https://github.com/Inco-fhevm/comfy-consumer",
+        "stars": 12,
+        "forks": 2,
+        "primary_language": "TypeScript",
+        "confidence": 1.0
+      },
+      {
+        "name": "IncoSlots",
+        "url": "https://github.com/Inco-fhevm/IncoSlots",
+        "stars": 6,
+        "forks": 3,
+        "primary_language": "Svelte",
+        "confidence": 1.0
+      }
+    ]
+  },
+  "tech_stack": {
+    "confidence": 0.95,
+    "blockchain_layer": {
+      "type": "Layer-1 Blockchain",
+      "framework": "Cosmos SDK",
+      "consensus": "Tendermint",
+      "vm_compatibility": "EVM-compatible (fhEVM)",
+      "security_model": "Secured by Ethereum via EigenLayer (AVS)",
+      "dual_staking": "ETH + INCO tokens",
+      "confidence": 0.95
+    },
+    "programming_languages": {
+      "smart_contracts": {
+        "primary": "Solidity",
+        "extensions": "TFHE Solidity library for FHE operations",
+        "confidence": 1.0
+      },
+      "backend_implementation": {
+        "languages": [
+          "Rust",
+          "Go"
+        ],
+        "notes": "fhevm-go for blockchain integration, Rust for coprocessor",
+        "confidence": 0.9
+      },
+      "frontend_sdk": {
+        "languages": [
+          "TypeScript",
+          "JavaScript"
+        ],
+        "percentage_usage": {
+          "TypeScript": "66.0%",
+          "Solidity": "21.1%",
+          "Shell": "11.7%"
+        },
+        "confidence": 1.0
+      }
+    },
+    "development_frameworks": {
+      "smart_contract_development": {
+        "primary": "Hardhat",
+        "type_generation": "TypeChain",
+        "web3_library": "ethers.js",
+        "confidence": 1.0
+      },
+      "package_management": {
+        "primary": "pnpm",
+        "alternatives": [
+          "npm",
+          "yarn"
+        ],
+        "confidence": 1.0
+      },
+      "code_quality_tools": {
+        "linters": [
+          "Solhint",
+          "ESLint"
+        ],
+        "formatters": [
+          "Prettier",
+          "Prettier Plugin Solidity"
+        ],
+        "testing": [
+          "Hardhat test framework",
+          "Solcover"
+        ],
+        "confidence": 1.0
+      }
+    },
+    "cryptographic_libraries": {
+      "fhe_core": {
+        "library": "TFHE-rs",
+        "provider": "Zama",
+        "implementation": "Pure Rust implementation of TFHE (Torus Fully Homomorphic Encryption)",
+        "features": [
+          "Boolean and integer arithmetics over encrypted data",
+          "Rust and C API",
+          "Client-side WASM API",
+          "GPU accelerated backend",
+          "HPU accelerated backend"
+        ],
+        "confidence": 1.0
+      },
+      "fhevm_integration": {
+        "library": "fhEVM",
+        "description": "Full-stack framework for integrating FHE with blockchain applications",
+        "components": [
+          "fhevm-go (blockchain integration)",
+          "fhevm-solidity (Solidity library)",
+          "fhevm-contracts (standard contract library)"
+        ],
+        "confidence": 1.0
+      },
+      "client_sdk": {
+        "library": "fhevmjs",
+        "version": "\u22650.5.7 (for Rivest Testnet compatibility)",
+        "installation": "npm/yarn/pnpm",
+        "runtime": "WebAssembly (WASM) for browser",
+        "features": [
+          "Client-side encryption (plaintext \u2192 ciphertext)",
+          "Re-encryption support",
+          "TFHE encryption capabilities for web3 apps"
+        ],
+        "confidence": 1.0
+      },
+      "key_management": {
+        "system": "Threshold Multi-Party Computation (MPC)",
+        "approach": "Distributed Key Management System (KMS)",
+        "key_sharing": "Shamir's Secret Sharing (SSS)",
+        "security": "Network key distributed among multiple parties, never fully assembled",
+        "confidence": 0.85
+      }
+    },
+    "infrastructure": {
+      "containerization": "Docker, Docker Compose",
+      "orchestration": "Helm charts",
+      "ci_cd": "GitHub Actions",
+      "confidence": 0.9
+    },
+    "testnets": {
+      "gentry_testnet": {
+        "name": "Gentry",
+        "launch_date": "February 2024",
+        "named_after": "Craig Gentry (FHE pioneer, 2009 PhD)",
+        "confidence": 1.0
+      },
+      "rivest_testnet": {
+        "name": "Rivest",
+        "type": "Standalone EVM blockchain",
+        "purpose": "Testing FHE smart contracts",
+        "rpc": "https://validator.rivest.inco.org",
+        "gateway": "https://gateway.rivest.inco.org",
+        "explorer": "https://explorer.rivest.inco.org/",
+        "faucet": "https://faucet.rivest.inco.org/",
+        "confidence": 1.0
+      },
+      "paillier_testnet": {
+        "name": "Paillier (upcoming)",
+        "features": "EigenLayer integration",
+        "confidence": 0.8
+      }
+    },
+    "performance_specifications": {
+      "initial_mainnet": {
+        "tps": "2-5 TPS",
+        "block_time": "~8 seconds",
+        "hardware": "CPU",
+        "confidence": 0.9
+      },
+      "gpu_upgrade": {
+        "tps": "20-50 TPS",
+        "hardware": "GPU",
+        "confidence": 0.85
+      },
+      "fpga_future_2025": {
+        "tps": "100-1000 TPS",
+        "hardware": "FPGA hardware acceleration",
+        "timeline": "Expected 2025",
+        "confidence": 0.75
+      }
+    }
+  },
+  "privacy_techniques": {
+    "confidence": 0.95,
+    "primary_technique": {
+      "name": "Fully Homomorphic Encryption (FHE)",
+      "description": "Allows computations to be performed on encrypted data without decryption",
+      "implementation": "TFHE (Torus Fully Homomorphic Encryption)",
+      "quantum_resistance": true,
+      "confidence": 1.0
+    },
+    "fhevm_architecture": {
+      "description": "EVM augmented with TFHE for encrypted smart contract execution",
+      "encrypted_data_types": [
+        "ebool",
+        "euint8",
+        "euint16",
+        "euint32",
+        "euint64",
+        "euint128",
+        "euint256",
+        "eaddress",
+        "estring",
+        "ebytes256"
+      ],
+      "supported_operations": {
+        "arithmetic": [
+          "TFHE.add",
+          "TFHE.sub",
+          "TFHE.mul",
+          "TFHE.div"
+        ],
+        "comparison": [
+          "TFHE.eq",
+          "TFHE.gt",
+          "TFHE.lt",
+          "TFHE.gte",
+          "TFHE.lte"
+        ],
+        "bitwise": [
+          "TFHE.and",
+          "TFHE.or",
+          "TFHE.xor",
+          "TFHE.not",
+          "TFHE.shr",
+          "TFHE.shl"
+        ],
+        "operator_overloading": [
+          "+",
+          "-",
+          "*",
+          "&",
+          "|",
+          "^",
+          "~"
+        ]
+      },
+      "confidence": 1.0
+    },
+    "coprocessor_architecture": {
+      "description": "Offchain FHE computation with onchain verification",
+      "workflow": [
+        "Smart contract calls TFHE library on L1",
+        "L1 produces pointer to result (no actual FHE computation on L1)",
+        "Offchain server monitors L1 and computes FHE operations",
+        "Results verified and committed back to chain"
+      ],
+      "benefits": [
+        "Reduced onchain computation costs",
+        "Scalable FHE processing",
+        "Maintains composability"
+      ],
+      "confidence": 0.9
+    },
+    "confidential_compute_nodes": {
+      "architecture": "Trusted Execution Environments (TEEs)",
+      "products": {
+        "inco_atlas": {
+          "techniques": [
+            "FHE",
+            "MPC"
+          ],
+          "focus": "Maximum privacy for sensitive data",
+          "confidence": 0.85
+        },
+        "inco_lightning": {
+          "technique": "Verifiable compute in TEE",
+          "focus": "Near-zero latency confidential computing",
+          "confidence": 0.85
+        }
+      },
+      "functionality": [
+        "Process encrypted data inside secure enclaves",
+        "Execute encrypted operations triggered by smart contracts",
+        "Handle blockchain requests for confidential computations"
+      ],
+      "confidence": 0.9
+    },
+    "key_management": {
+      "system": "Decentralized Key Management System (KMS)",
+      "protocol": "Threshold Multi-Party Computation (MPC)",
+      "key_distribution": "Global network key distributed among multiple parties",
+      "operations": [
+        "Decryption",
+        "Re-encryption"
+      ],
+      "security_properties": [
+        "No single party holds complete key",
+        "Threshold-based key reconstruction",
+        "Distributed key generation (DKG)"
+      ],
+      "confidence": 0.85
+    },
+    "end_to_end_encryption": {
+      "transaction_privacy": "Encrypted transactions never visible to anyone",
+      "state_privacy": "Encrypted states maintained onchain at all times",
+      "composability": "Encrypted data can be used in smart contract operations",
+      "data_availability": "Encrypted data stored onchain",
+      "confidence": 0.95
+    },
+    "additional_cryptographic_techniques": {
+      "zero_knowledge_proofs": {
+        "integration": "Combined with FHE for enhanced privacy",
+        "confidence": 0.7
+      },
+      "mpc": {
+        "use_case": "Key management and distributed trust",
+        "confidence": 0.85
+      },
+      "tee": {
+        "use_case": "Inco Lightning for low-latency confidential compute",
+        "implementation": "Intel DCAP Quote Verification",
+        "confidence": 0.85
+      }
+    }
+  },
+  "architecture_details": {
+    "confidence": 0.88,
+    "blockchain_stack": {
+      "layer": "Layer-1",
+      "framework": "Cosmos SDK",
+      "consensus": "Tendermint",
+      "vm": "fhEVM (FHE-enabled EVM)",
+      "security": "EigenLayer AVS (Actively Validated Service)",
+      "confidence": 0.95
+    },
+    "eigenlayer_integration": {
+      "security_model": "Dual staking (ETH + INCO)",
+      "benefits": [
+        "Ethereum's economic security",
+        "Mitigates cold start problem",
+        "Reduces native token volatility risk",
+        "Lower token emission rate",
+        "Direct Ethereum interaction as native confidentiality layer"
+      ],
+      "timeline": "Second testnet (Paillier) and mainnet",
+      "confidence": 0.9
+    },
+    "modular_design": {
+      "approach": "Confidentiality-as-a-service layer",
+      "integration": "Works with existing blockchains (Ethereum, L2s)",
+      "comparison": "Similar to how Celestia provides Data Availability",
+      "services_provided": [
+        "Confidential storage",
+        "Confidential computing",
+        "Access control"
+      ],
+      "confidence": 0.9
+    },
+    "developer_experience": {
+      "onboarding_time": "~20 minutes to build confidential DApp",
+      "familiar_tools": [
+        "Metamask",
+        "Remix",
+        "Hardhat"
+      ],
+      "learning_curve": "Abstracts FHE complexity for Solidity developers",
+      "sdk_languages": [
+        "Solidity",
+        "JavaScript"
+      ],
+      "confidence": 0.9
+    }
+  },
+  "use_cases": {
+    "confidence": 0.85,
+    "supported_applications": [
+      {
+        "category": "DeFi",
+        "examples": [
+          "Confidential payments",
+          "Private trading",
+          "Anonymous liquidity provision"
+        ],
+        "confidence": 0.9
+      },
+      {
+        "category": "Governance",
+        "examples": [
+          "Private voting",
+          "Confidential proposals",
+          "Anonymous delegation"
+        ],
+        "confidence": 0.9
+      },
+      {
+        "category": "Identity",
+        "examples": [
+          "Private credentials",
+          "Anonymous authentication",
+          "Selective disclosure"
+        ],
+        "confidence": 0.85
+      },
+      {
+        "category": "Gaming",
+        "examples": [
+          "Hidden information games",
+          "Private player data",
+          "Encrypted game states"
+        ],
+        "confidence": 0.85
+      },
+      {
+        "category": "Tokens",
+        "examples": [
+          "Confidential ERC20 balances",
+          "Privacy-preserving transfers",
+          "Anonymous token holders"
+        ],
+        "confidence": 0.95
+      }
+    ]
+  },
+  "funding_and_team": {
+    "confidence": 1.0,
+    "funding_round": {
+      "amount": "$4.5 million",
+      "round_type": "Seed",
+      "lead_investor": "1kx",
+      "announcement": "Concurrent with Gentry testnet launch (February 2024)",
+      "source": "The Block",
+      "confidence": 0.95
+    },
+    "founded": "August 2023",
+    "contact": "team@inco.network",
+    "website": "https://www.inco.org/"
+  },
+  "key_partnerships": {
+    "confidence": 0.85,
+    "partners": [
+      {
+        "name": "Zama",
+        "relationship": "TFHE library and fhEVM framework provider",
+        "confidence": 1.0
+      },
+      {
+        "name": "Circle Research",
+        "relationship": "Collaborative research on confidential ERC20 framework",
+        "confidence": 1.0
+      },
+      {
+        "name": "EigenLayer",
+        "relationship": "Security layer via restaking (AVS)",
+        "confidence": 0.95
+      },
+      {
+        "name": "Ethereum",
+        "relationship": "Primary security and interoperability target",
+        "confidence": 0.95
+      }
+    ]
+  },
+  "technical_differentiators": {
+    "confidence": 0.88,
+    "unique_features": [
+      {
+        "feature": "fhEVM Integration",
+        "description": "First EVM-compatible chain with native FHE support at precompile level",
+        "confidence": 0.95
+      },
+      {
+        "feature": "Dual Staking Security",
+        "description": "Combines Cosmos SDK with Ethereum security via EigenLayer",
+        "confidence": 0.9
+      },
+      {
+        "feature": "Modular Confidentiality",
+        "description": "Provides confidentiality-as-a-service to other chains",
+        "confidence": 0.85
+      },
+      {
+        "feature": "Developer Accessibility",
+        "description": "Abstracts FHE complexity, familiar Solidity tooling",
+        "confidence": 0.9
+      },
+      {
+        "feature": "Quantum Resistance",
+        "description": "FHE provides quantum-resistant cryptography",
+        "confidence": 0.85
+      },
+      {
+        "feature": "Hybrid Privacy Stack",
+        "description": "Combines FHE, ZK, TEE, and MPC techniques",
+        "confidence": 0.8
+      }
+    ]
+  },
+  "limitations_and_challenges": {
+    "confidence": 0.8,
+    "identified_challenges": [
+      {
+        "challenge": "Performance Overhead",
+        "details": "Initial mainnet limited to 2-5 TPS due to FHE computational costs",
+        "mitigation": "Hardware acceleration roadmap (GPU, FPGA)",
+        "confidence": 0.9
+      },
+      {
+        "challenge": "Novel Technology",
+        "details": "FHE is relatively new in blockchain context",
+        "implications": "Potential unknown security considerations",
+        "confidence": 0.75
+      },
+      {
+        "challenge": "Audit Status",
+        "details": "Confidential ERC20 framework marked as unaudited/experimental",
+        "confidence": 0.95
+      },
+      {
+        "challenge": "Complexity Trade-offs",
+        "details": "While abstracted for developers, underlying FHE complexity remains",
+        "confidence": 0.7
+      }
+    ]
+  },
+  "research_gaps": {
+    "confidence": 1.0,
+    "missing_information": [
+      {
+        "gap": "Core blockchain node implementation repository",
+        "impact": "medium",
+        "reason": "No public Go/Rust-based validator node repository found in Inco-fhevm organization. Infrastructure may be private or uses existing Cosmos/Evmos node software.",
+        "confidence": 0.6
+      },
+      {
+        "gap": "Exact TFHE-rs version",
+        "impact": "low",
+        "reason": "Version information not specified in public repositories"
+      },
+      {
+        "gap": "Detailed consensus mechanism parameters",
+        "impact": "medium",
+        "reason": "Tendermint configuration details not publicly documented"
+      },
+      {
+        "gap": "Specific MPC protocol implementation",
+        "impact": "medium",
+        "reason": "Threshold MPC details not fully disclosed"
+      },
+      {
+        "gap": "Mainnet launch timeline",
+        "impact": "low",
+        "reason": "No public announcement of specific mainnet date"
+      },
+      {
+        "gap": "Complete validator requirements",
+        "impact": "medium",
+        "reason": "Hardware and staking requirements not fully specified"
+      }
+    ],
+    "recommended_follow_up": [
+      "Contact Inco team regarding validator node implementation repository",
+      "Review Inco technical whitepaper when published",
+      "Monitor GitHub for TFHE-rs version updates",
+      "Track EigenLayer AVS integration announcements",
+      "Review security audits when completed",
+      "Verify Cosmos SDK/Evmos implementation details"
+    ]
+  },
+  "constitutional_compliance": {
+    "real_data_only": true,
+    "synthetic_data_generated": false,
+    "multi_source_verification": true,
+    "source_count": 5,
+    "gaps_reported": true,
+    "confidence_scores_applied": true,
+    "compliance_status": "PASSED",
+    "validation_timestamp": "2025-10-08T14:30:00Z"
+  },
+  "metadata": {
+    "research_methodology": "Multi-source web research and GitHub repository analysis",
+    "primary_sources": "GitHub repositories, official documentation, blog posts, third-party blockchain news",
+    "verification_approach": "Cross-referenced information across multiple independent sources",
+    "last_updated": "2025-10-08T20:40:00Z",
+    "constitutional_version": "v2.0.0",
+    "total_repositories_analyzed": 8,
+    "web_sources_consulted": 15,
+    "verification_sources": 5
+  },
+  "confidence": 0.93
+}

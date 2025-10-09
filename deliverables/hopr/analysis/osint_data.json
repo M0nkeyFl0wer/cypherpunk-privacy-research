@@ -1,0 +1,1054 @@
+{
+  "project": "hopr",
+  "timestamp": "2025-10-08T08:37:58-07:00",
+  "osint_version": "v3_github_homepage",
+  "osint_sources": {
+    "shodan": {
+      "domain": "hoprnet.org",
+      "tags": [
+        "dmarc",
+        "google-verified",
+        "ipv6",
+        "spf"
+      ],
+      "subdomains": [
+        "_dmarc",
+        "api-guard",
+        "assets",
+        "bounties",
+        "defence",
+        "defense",
+        "derp",
+        "distributor",
+        "docs",
+        "education",
+        "farm",
+        "forum",
+        "forum-staging",
+        "genesis-dao",
+        "ground0",
+        "hub",
+        "mint",
+        "network",
+        "network-staging",
+        "non-private-nft",
+        "rfc",
+        "stake",
+        "status",
+        "webapi",
+        "webapi-staging",
+        "wrapper",
+        "www.api-guard",
+        "www.defence",
+        "www.defense",
+        "www.education"
+      ],
+      "data": [
+        {
+          "subdomain": "",
+          "type": "A",
+          "value": "104.26.8.171",
+          "last_seen": "2025-10-08T01:53:54.469000"
+        },
+        {
+          "subdomain": "",
+          "type": "A",
+          "value": "104.26.9.171",
+          "last_seen": "2025-10-08T01:53:54.469000"
+        },
+        {
+          "subdomain": "",
+          "type": "A",
+          "value": "172.67.71.174",
+          "last_seen": "2025-10-08T01:53:54.469000"
+        },
+        {
+          "subdomain": "",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:8ab",
+          "last_seen": "2025-10-08T01:53:54.469000"
+        },
+        {
+          "subdomain": "",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:9ab",
+          "last_seen": "2025-10-08T01:53:54.469000"
+        },
+        {
+          "subdomain": "",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:47ae",
+          "last_seen": "2025-10-08T01:53:54.469000"
+        },
+        {
+          "subdomain": "",
+          "type": "MX",
+          "value": "alt1.aspmx.l.google.com",
+          "last_seen": "2025-09-30T04:25:58.513000"
+        },
+        {
+          "subdomain": "",
+          "type": "MX",
+          "value": "alt2.aspmx.l.google.com",
+          "last_seen": "2025-09-30T04:25:58.513000"
+        },
+        {
+          "subdomain": "",
+          "type": "MX",
+          "value": "alt3.aspmx.l.google.com",
+          "last_seen": "2025-09-30T04:25:58.513000"
+        },
+        {
+          "subdomain": "",
+          "type": "MX",
+          "value": "alt4.aspmx.l.google.com",
+          "last_seen": "2025-09-30T04:25:58.514000"
+        },
+        {
+          "subdomain": "",
+          "type": "MX",
+          "value": "aspmx.l.google.com",
+          "last_seen": "2025-09-30T04:25:58.513000"
+        },
+        {
+          "subdomain": "",
+          "type": "NS",
+          "value": "norman.ns.cloudflare.com",
+          "last_seen": "2025-09-30T04:25:09.664000"
+        },
+        {
+          "subdomain": "",
+          "type": "NS",
+          "value": "zoe.ns.cloudflare.com",
+          "last_seen": "2025-09-30T04:25:09.664000"
+        },
+        {
+          "subdomain": "",
+          "type": "SOA",
+          "value": "norman.ns.cloudflare.com",
+          "last_seen": "2025-09-30T04:32:03.159000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "alias.zeit.co",
+          "last_seen": "2025-09-30T04:35:26.644000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "google-site-verification=405ljhcN7k00q6OPzYIlyGayTEaVhMJ-h_tkZ9jICaY",
+          "last_seen": "2025-09-30T04:35:26.644000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "google-site-verification=EJuEdHOAgFZ8_EsClVBJ3Q-2yj5uKedJGYW4vrbJS5U",
+          "last_seen": "2025-09-30T04:35:26.644000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "google-site-verification=RvmpTszSxD7xpRDZa97eYi4hBCVsxNqt_HAaAPO6Nac",
+          "last_seen": "2025-09-30T04:35:26.644000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "google-site-verification=UmZZ4aLF_96URBM19_qcqbVne36s4QjWPpU6aOh-dzk",
+          "last_seen": "2025-09-30T04:35:26.644000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "v=spf1 include:spf.mailjet.com include:_spf.google.com ~all",
+          "last_seen": "2025-09-30T04:35:26.644000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "wallet-connect-dns-verification=1553bb236689cdc7fc2f4d6558a1e4e2052740523cb53bf9ae63292bb49db68c",
+          "last_seen": "2025-09-30T04:35:26.644000"
+        },
+        {
+          "subdomain": "_dmarc",
+          "type": "TXT",
+          "value": "v=DMARC1; p=quarantine; pct=90; sp=none",
+          "last_seen": "2025-09-30T04:35:26.618000"
+        },
+        {
+          "subdomain": "api-guard",
+          "type": "A",
+          "value": "104.26.8.171",
+          "last_seen": "2025-10-07T16:57:48.861000"
+        },
+        {
+          "subdomain": "api-guard",
+          "type": "A",
+          "value": "104.26.9.171",
+          "last_seen": "2025-10-07T16:57:48.861000"
+        },
+        {
+          "subdomain": "api-guard",
+          "type": "A",
+          "value": "172.67.71.174",
+          "last_seen": "2025-10-07T16:57:48.861000"
+        },
+        {
+          "subdomain": "api-guard",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:8ab",
+          "last_seen": "2025-10-07T16:59:49.195000"
+        },
+        {
+          "subdomain": "api-guard",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:9ab",
+          "last_seen": "2025-10-07T16:59:49.195000"
+        },
+        {
+          "subdomain": "api-guard",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:47ae",
+          "last_seen": "2025-10-07T16:59:49.195000"
+        },
+        {
+          "subdomain": "assets",
+          "type": "A",
+          "value": "104.26.8.171",
+          "last_seen": "2025-10-07T16:57:48.141000"
+        },
+        {
+          "subdomain": "assets",
+          "type": "A",
+          "value": "104.26.9.171",
+          "last_seen": "2025-10-07T16:57:48.141000"
+        },
+        {
+          "subdomain": "assets",
+          "type": "A",
+          "value": "172.67.71.174",
+          "last_seen": "2025-10-07T16:57:48.141000"
+        },
+        {
+          "subdomain": "assets",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:8ab",
+          "last_seen": "2025-10-07T16:59:46.711000"
+        },
+        {
+          "subdomain": "assets",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:9ab",
+          "last_seen": "2025-10-07T16:59:46.711000"
+        },
+        {
+          "subdomain": "assets",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:47ae",
+          "last_seen": "2025-10-07T16:59:46.711000"
+        },
+        {
+          "subdomain": "bounties",
+          "type": "A",
+          "value": "104.26.8.171",
+          "last_seen": "2025-10-07T16:57:48.543000"
+        },
+        {
+          "subdomain": "bounties",
+          "type": "A",
+          "value": "104.26.9.171",
+          "last_seen": "2025-10-07T16:57:48.543000"
+        },
+        {
+          "subdomain": "bounties",
+          "type": "A",
+          "value": "172.67.71.174",
+          "last_seen": "2025-10-07T16:57:48.543000"
+        },
+        {
+          "subdomain": "bounties",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:8ab",
+          "last_seen": "2025-10-07T16:59:50.522000"
+        },
+        {
+          "subdomain": "bounties",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:9ab",
+          "last_seen": "2025-10-07T16:59:50.521000"
+        },
+        {
+          "subdomain": "bounties",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:47ae",
+          "last_seen": "2025-10-07T16:59:50.521000"
+        },
+        {
+          "subdomain": "defence",
+          "type": "CNAME",
+          "value": "defense.hoprnet.org",
+          "last_seen": "2025-10-07T16:57:48.457000"
+        },
+        {
+          "subdomain": "defense",
+          "type": "CNAME",
+          "value": "pointing.wixdns.net",
+          "last_seen": "2025-10-07T16:59:48.002000"
+        },
+        {
+          "subdomain": "derp",
+          "type": "A",
+          "value": "104.26.8.171",
+          "last_seen": "2025-10-07T16:57:47.805000"
+        },
+        {
+          "subdomain": "derp",
+          "type": "A",
+          "value": "104.26.9.171",
+          "last_seen": "2025-10-07T16:57:47.805000"
+        },
+        {
+          "subdomain": "derp",
+          "type": "A",
+          "value": "172.67.71.174",
+          "last_seen": "2025-10-07T16:57:47.805000"
+        },
+        {
+          "subdomain": "derp",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:8ab",
+          "last_seen": "2025-10-07T17:00:01.550000"
+        },
+        {
+          "subdomain": "derp",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:9ab",
+          "last_seen": "2025-10-07T17:00:01.550000"
+        },
+        {
+          "subdomain": "derp",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:47ae",
+          "last_seen": "2025-10-07T17:00:01.550000"
+        },
+        {
+          "subdomain": "distributor",
+          "type": "A",
+          "value": "104.26.8.171",
+          "last_seen": "2025-10-07T16:57:47.455000"
+        },
+        {
+          "subdomain": "distributor",
+          "type": "A",
+          "value": "104.26.9.171",
+          "last_seen": "2025-10-07T16:57:47.454000"
+        },
+        {
+          "subdomain": "distributor",
+          "type": "A",
+          "value": "172.67.71.174",
+          "last_seen": "2025-10-07T16:57:47.454000"
+        },
+        {
+          "subdomain": "distributor",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:8ab",
+          "last_seen": "2025-10-07T16:59:45.600000"
+        },
+        {
+          "subdomain": "distributor",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:9ab",
+          "last_seen": "2025-10-07T16:59:45.599000"
+        },
+        {
+          "subdomain": "distributor",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:47ae",
+          "last_seen": "2025-10-07T16:59:45.599000"
+        },
+        {
+          "subdomain": "docs",
+          "type": "A",
+          "value": "104.26.8.171",
+          "last_seen": "2025-10-07T16:57:47.795000"
+        },
+        {
+          "subdomain": "docs",
+          "type": "A",
+          "value": "104.26.9.171",
+          "last_seen": "2025-10-07T16:57:47.796000"
+        },
+        {
+          "subdomain": "docs",
+          "type": "A",
+          "value": "172.67.71.174",
+          "last_seen": "2025-10-07T16:57:47.796000"
+        },
+        {
+          "subdomain": "docs",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:8ab",
+          "last_seen": "2025-10-07T16:59:46.340000"
+        },
+        {
+          "subdomain": "docs",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:9ab",
+          "last_seen": "2025-10-07T16:59:46.340000"
+        },
+        {
+          "subdomain": "docs",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:47ae",
+          "last_seen": "2025-10-07T16:59:46.340000"
+        },
+        {
+          "subdomain": "education",
+          "type": "A",
+          "value": "104.26.8.171",
+          "last_seen": "2025-10-07T16:57:46.518000"
+        },
+        {
+          "subdomain": "education",
+          "type": "A",
+          "value": "104.26.9.171",
+          "last_seen": "2025-10-07T16:57:46.518000"
+        },
+        {
+          "subdomain": "education",
+          "type": "A",
+          "value": "172.67.71.174",
+          "last_seen": "2025-10-07T16:57:46.518000"
+        },
+        {
+          "subdomain": "education",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:8ab",
+          "last_seen": "2025-10-07T16:59:51.767000"
+        },
+        {
+          "subdomain": "education",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:9ab",
+          "last_seen": "2025-10-07T16:59:51.767000"
+        },
+        {
+          "subdomain": "education",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:47ae",
+          "last_seen": "2025-10-07T16:59:51.767000"
+        },
+        {
+          "subdomain": "farm",
+          "type": "A",
+          "value": "104.26.8.171",
+          "last_seen": "2025-10-07T16:57:46.961000"
+        },
+        {
+          "subdomain": "farm",
+          "type": "A",
+          "value": "104.26.9.171",
+          "last_seen": "2025-10-07T16:57:46.961000"
+        },
+        {
+          "subdomain": "farm",
+          "type": "A",
+          "value": "172.67.71.174",
+          "last_seen": "2025-10-07T16:57:46.961000"
+        },
+        {
+          "subdomain": "farm",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:8ab",
+          "last_seen": "2025-10-07T16:59:57.257000"
+        },
+        {
+          "subdomain": "farm",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:9ab",
+          "last_seen": "2025-10-07T16:59:57.258000"
+        },
+        {
+          "subdomain": "farm",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:47ae",
+          "last_seen": "2025-10-07T16:59:57.257000"
+        },
+        {
+          "subdomain": "forum",
+          "type": "A",
+          "value": "104.26.8.171",
+          "last_seen": "2025-10-07T16:57:47.027000"
+        },
+        {
+          "subdomain": "forum",
+          "type": "A",
+          "value": "104.26.9.171",
+          "last_seen": "2025-10-07T16:57:47.027000"
+        },
+        {
+          "subdomain": "forum",
+          "type": "A",
+          "value": "172.67.71.174",
+          "last_seen": "2025-10-07T16:57:47.027000"
+        },
+        {
+          "subdomain": "forum",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:8ab",
+          "last_seen": "2025-10-07T16:59:48.205000"
+        },
+        {
+          "subdomain": "forum",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:9ab",
+          "last_seen": "2025-10-07T16:59:48.206000"
+        },
+        {
+          "subdomain": "forum",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:47ae",
+          "last_seen": "2025-10-07T16:59:48.205000"
+        },
+        {
+          "subdomain": "forum-staging",
+          "type": "A",
+          "value": "104.26.8.171",
+          "last_seen": "2025-10-07T16:57:47.915000"
+        },
+        {
+          "subdomain": "forum-staging",
+          "type": "A",
+          "value": "104.26.9.171",
+          "last_seen": "2025-10-07T16:57:47.915000"
+        },
+        {
+          "subdomain": "forum-staging",
+          "type": "A",
+          "value": "172.67.71.174",
+          "last_seen": "2025-10-07T16:57:47.915000"
+        },
+        {
+          "subdomain": "forum-staging",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:8ab",
+          "last_seen": "2025-10-07T16:59:53.646000"
+        },
+        {
+          "subdomain": "forum-staging",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:9ab",
+          "last_seen": "2025-10-07T16:59:53.646000"
+        },
+        {
+          "subdomain": "forum-staging",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:47ae",
+          "last_seen": "2025-10-07T16:59:53.646000"
+        },
+        {
+          "subdomain": "genesis-dao",
+          "type": "A",
+          "value": "104.26.8.171",
+          "last_seen": "2025-10-07T16:57:46.581000"
+        },
+        {
+          "subdomain": "genesis-dao",
+          "type": "A",
+          "value": "104.26.9.171",
+          "last_seen": "2025-10-07T16:57:46.580000"
+        },
+        {
+          "subdomain": "genesis-dao",
+          "type": "A",
+          "value": "172.67.71.174",
+          "last_seen": "2025-10-07T16:57:46.581000"
+        },
+        {
+          "subdomain": "genesis-dao",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:8ab",
+          "last_seen": "2025-10-07T16:59:48.432000"
+        },
+        {
+          "subdomain": "genesis-dao",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:9ab",
+          "last_seen": "2025-10-07T16:59:48.432000"
+        },
+        {
+          "subdomain": "genesis-dao",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:47ae",
+          "last_seen": "2025-10-07T16:59:48.432000"
+        },
+        {
+          "subdomain": "ground0",
+          "type": "A",
+          "value": "104.26.8.171",
+          "last_seen": "2025-10-07T16:57:47.960000"
+        },
+        {
+          "subdomain": "ground0",
+          "type": "A",
+          "value": "104.26.9.171",
+          "last_seen": "2025-10-07T16:57:47.960000"
+        },
+        {
+          "subdomain": "ground0",
+          "type": "A",
+          "value": "172.67.71.174",
+          "last_seen": "2025-10-07T16:57:47.960000"
+        },
+        {
+          "subdomain": "ground0",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:8ab",
+          "last_seen": "2025-10-07T17:00:00.976000"
+        },
+        {
+          "subdomain": "ground0",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:9ab",
+          "last_seen": "2025-10-07T17:00:00.976000"
+        },
+        {
+          "subdomain": "ground0",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:47ae",
+          "last_seen": "2025-10-07T17:00:00.976000"
+        },
+        {
+          "subdomain": "hub",
+          "type": "A",
+          "value": "104.26.8.171",
+          "last_seen": "2025-10-07T16:57:48.446000"
+        },
+        {
+          "subdomain": "hub",
+          "type": "A",
+          "value": "104.26.9.171",
+          "last_seen": "2025-10-07T16:57:48.446000"
+        },
+        {
+          "subdomain": "hub",
+          "type": "A",
+          "value": "172.67.71.174",
+          "last_seen": "2025-10-07T16:57:48.446000"
+        },
+        {
+          "subdomain": "hub",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:8ab",
+          "last_seen": "2025-10-07T17:00:02.315000"
+        },
+        {
+          "subdomain": "hub",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:9ab",
+          "last_seen": "2025-10-07T17:00:02.315000"
+        },
+        {
+          "subdomain": "hub",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:47ae",
+          "last_seen": "2025-10-07T17:00:02.316000"
+        },
+        {
+          "subdomain": "mint",
+          "type": "A",
+          "value": "104.26.8.171",
+          "last_seen": "2025-10-07T16:57:47.097000"
+        },
+        {
+          "subdomain": "mint",
+          "type": "A",
+          "value": "104.26.9.171",
+          "last_seen": "2025-10-07T16:57:47.097000"
+        },
+        {
+          "subdomain": "mint",
+          "type": "A",
+          "value": "172.67.71.174",
+          "last_seen": "2025-10-07T16:57:47.097000"
+        },
+        {
+          "subdomain": "mint",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:8ab",
+          "last_seen": "2025-10-07T16:59:45.905000"
+        },
+        {
+          "subdomain": "mint",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:9ab",
+          "last_seen": "2025-10-07T16:59:45.905000"
+        },
+        {
+          "subdomain": "mint",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:47ae",
+          "last_seen": "2025-10-07T16:59:45.905000"
+        },
+        {
+          "subdomain": "network",
+          "type": "A",
+          "value": "104.26.8.171",
+          "last_seen": "2025-10-07T16:57:46.450000"
+        },
+        {
+          "subdomain": "network",
+          "type": "A",
+          "value": "104.26.9.171",
+          "last_seen": "2025-10-07T16:57:46.450000"
+        },
+        {
+          "subdomain": "network",
+          "type": "A",
+          "value": "172.67.71.174",
+          "last_seen": "2025-10-07T16:57:46.450000"
+        },
+        {
+          "subdomain": "network",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:8ab",
+          "last_seen": "2025-10-07T16:59:58.762000"
+        },
+        {
+          "subdomain": "network",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:9ab",
+          "last_seen": "2025-10-07T16:59:58.761000"
+        },
+        {
+          "subdomain": "network",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:47ae",
+          "last_seen": "2025-10-07T16:59:58.761000"
+        },
+        {
+          "subdomain": "network-staging",
+          "type": "A",
+          "value": "104.26.8.171",
+          "last_seen": "2025-10-07T16:57:47.093000"
+        },
+        {
+          "subdomain": "network-staging",
+          "type": "A",
+          "value": "104.26.9.171",
+          "last_seen": "2025-10-07T16:57:47.093000"
+        },
+        {
+          "subdomain": "network-staging",
+          "type": "A",
+          "value": "172.67.71.174",
+          "last_seen": "2025-10-07T16:57:47.093000"
+        },
+        {
+          "subdomain": "network-staging",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:8ab",
+          "last_seen": "2025-10-07T16:59:57.280000"
+        },
+        {
+          "subdomain": "network-staging",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:9ab",
+          "last_seen": "2025-10-07T16:59:57.280000"
+        },
+        {
+          "subdomain": "network-staging",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:47ae",
+          "last_seen": "2025-10-07T16:59:57.279000"
+        },
+        {
+          "subdomain": "non-private-nft",
+          "type": "CNAME",
+          "value": "cname.vercel-dns.com",
+          "last_seen": "2025-10-07T16:57:46.784000"
+        },
+        {
+          "subdomain": "rfc",
+          "type": "A",
+          "value": "104.26.8.171",
+          "last_seen": "2025-10-07T16:57:47.085000"
+        },
+        {
+          "subdomain": "rfc",
+          "type": "A",
+          "value": "104.26.9.171",
+          "last_seen": "2025-10-07T16:57:47.085000"
+        },
+        {
+          "subdomain": "rfc",
+          "type": "A",
+          "value": "172.67.71.174",
+          "last_seen": "2025-10-07T16:57:47.085000"
+        },
+        {
+          "subdomain": "rfc",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:8ab",
+          "last_seen": "2025-10-07T16:59:58.454000"
+        },
+        {
+          "subdomain": "rfc",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:9ab",
+          "last_seen": "2025-10-07T16:59:58.454000"
+        },
+        {
+          "subdomain": "rfc",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:47ae",
+          "last_seen": "2025-10-07T16:59:58.454000"
+        },
+        {
+          "subdomain": "stake",
+          "type": "A",
+          "value": "104.26.8.171",
+          "last_seen": "2025-10-07T16:57:47.110000"
+        },
+        {
+          "subdomain": "stake",
+          "type": "A",
+          "value": "104.26.9.171",
+          "last_seen": "2025-10-07T16:57:47.110000"
+        },
+        {
+          "subdomain": "stake",
+          "type": "A",
+          "value": "172.67.71.174",
+          "last_seen": "2025-10-07T16:57:47.110000"
+        },
+        {
+          "subdomain": "stake",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:8ab",
+          "last_seen": "2025-10-07T16:59:54.559000"
+        },
+        {
+          "subdomain": "stake",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:9ab",
+          "last_seen": "2025-10-07T16:59:54.559000"
+        },
+        {
+          "subdomain": "stake",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:47ae",
+          "last_seen": "2025-10-07T16:59:54.559000"
+        },
+        {
+          "subdomain": "status",
+          "type": "A",
+          "value": "104.26.8.171",
+          "last_seen": "2025-10-07T16:57:49.068000"
+        },
+        {
+          "subdomain": "status",
+          "type": "A",
+          "value": "104.26.9.171",
+          "last_seen": "2025-10-07T16:57:49.068000"
+        },
+        {
+          "subdomain": "status",
+          "type": "A",
+          "value": "172.67.71.174",
+          "last_seen": "2025-10-07T16:57:49.068000"
+        },
+        {
+          "subdomain": "status",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:8ab",
+          "last_seen": "2025-10-07T16:59:57.036000"
+        },
+        {
+          "subdomain": "status",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:9ab",
+          "last_seen": "2025-10-07T16:59:57.036000"
+        },
+        {
+          "subdomain": "status",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:47ae",
+          "last_seen": "2025-10-07T16:59:57.036000"
+        },
+        {
+          "subdomain": "webapi",
+          "type": "A",
+          "value": "104.26.8.171",
+          "last_seen": "2025-10-07T16:57:48.615000"
+        },
+        {
+          "subdomain": "webapi",
+          "type": "A",
+          "value": "104.26.9.171",
+          "last_seen": "2025-10-07T16:57:48.615000"
+        },
+        {
+          "subdomain": "webapi",
+          "type": "A",
+          "value": "172.67.71.174",
+          "last_seen": "2025-10-07T16:57:48.616000"
+        },
+        {
+          "subdomain": "webapi",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:8ab",
+          "last_seen": "2025-10-07T16:59:56.608000"
+        },
+        {
+          "subdomain": "webapi",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:9ab",
+          "last_seen": "2025-10-07T16:59:56.608000"
+        },
+        {
+          "subdomain": "webapi",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:47ae",
+          "last_seen": "2025-10-07T16:59:56.608000"
+        },
+        {
+          "subdomain": "webapi-staging",
+          "type": "A",
+          "value": "104.26.8.171",
+          "last_seen": "2025-10-07T16:57:47.489000"
+        },
+        {
+          "subdomain": "webapi-staging",
+          "type": "A",
+          "value": "104.26.9.171",
+          "last_seen": "2025-10-07T16:57:47.489000"
+        },
+        {
+          "subdomain": "webapi-staging",
+          "type": "A",
+          "value": "172.67.71.174",
+          "last_seen": "2025-10-07T16:57:47.489000"
+        },
+        {
+          "subdomain": "webapi-staging",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:8ab",
+          "last_seen": "2025-10-07T16:59:58.615000"
+        },
+        {
+          "subdomain": "webapi-staging",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:9ab",
+          "last_seen": "2025-10-07T16:59:58.615000"
+        },
+        {
+          "subdomain": "webapi-staging",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:47ae",
+          "last_seen": "2025-10-07T16:59:58.615000"
+        },
+        {
+          "subdomain": "wrapper",
+          "type": "A",
+          "value": "104.26.8.171",
+          "last_seen": "2025-10-07T16:57:47.111000"
+        },
+        {
+          "subdomain": "wrapper",
+          "type": "A",
+          "value": "104.26.9.171",
+          "last_seen": "2025-10-07T16:57:47.112000"
+        },
+        {
+          "subdomain": "wrapper",
+          "type": "A",
+          "value": "172.67.71.174",
+          "last_seen": "2025-10-07T16:57:47.111000"
+        },
+        {
+          "subdomain": "wrapper",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:8ab",
+          "last_seen": "2025-10-07T16:59:58.678000"
+        },
+        {
+          "subdomain": "wrapper",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:9ab",
+          "last_seen": "2025-10-07T16:59:58.678000"
+        },
+        {
+          "subdomain": "wrapper",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:47ae",
+          "last_seen": "2025-10-07T16:59:58.678000"
+        },
+        {
+          "subdomain": "www.api-guard",
+          "type": "CNAME",
+          "value": "pointing.wixdns.net",
+          "last_seen": "2025-10-07T16:57:47.804000"
+        },
+        {
+          "subdomain": "www.defence",
+          "type": "CNAME",
+          "value": "defense.hoprnet.org",
+          "last_seen": "2025-10-07T16:57:47.239000"
+        },
+        {
+          "subdomain": "www.defense",
+          "type": "CNAME",
+          "value": "pointing.wixdns.net",
+          "last_seen": "2025-10-07T16:57:47.112000"
+        },
+        {
+          "subdomain": "www.education",
+          "type": "A",
+          "value": "104.26.8.171",
+          "last_seen": "2025-10-07T16:57:46.912000"
+        },
+        {
+          "subdomain": "www.education",
+          "type": "A",
+          "value": "104.26.9.171",
+          "last_seen": "2025-10-07T16:57:46.912000"
+        },
+        {
+          "subdomain": "www.education",
+          "type": "A",
+          "value": "172.67.71.174",
+          "last_seen": "2025-10-07T16:57:46.912000"
+        },
+        {
+          "subdomain": "www.education",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:8ab",
+          "last_seen": "2025-10-07T16:59:59.877000"
+        },
+        {
+          "subdomain": "www.education",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:9ab",
+          "last_seen": "2025-10-07T16:59:59.877000"
+        },
+        {
+          "subdomain": "www.education",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:47ae",
+          "last_seen": "2025-10-07T16:59:59.877000"
+        }
+      ],
+      "more": false
+    },
+    "virustotal": {},
+    "hunter": {},
+    "hibp": {}
+  },
+  "extracted_targets": {
+    "domain": "hoprnet.org",
+    "website": "https://hoprnet.org"
+  }
+}

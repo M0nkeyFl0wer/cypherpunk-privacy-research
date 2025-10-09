@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Data generation for noir tests Computes contract info for defaultContract 1`] = `
+{
+  "address": "AztecAddress { inner: 0x2f1d8ebd0d3027294fedcc40e653ce386e2df3b88a826fc7ef382181d16ec5bf }",
+  "artifact_hash": "0x0000000000000000000000000000000000000000000000000000000000003039",
+  "contract_address_salt": "0x000000000000000000000000000000000000000000000000000000000000ddd5",
+  "contract_class_id": "ContractClassId { inner: 0x1c942bae6867bd984c3eecb4d6896713776e90e87659c005e9abd5065b9ac016 }",
+  "deployer": "AztecAddress { inner: 0x0000000000000000000000000000000000000000000000000000000000000000 }",
+  "partial_address": "PartialAddress { inner: 0x02d05ac83fa3df527d0642309de75d2363b9b8ac8fbb6ca430b172051099abc0 }",
+  "private_functions_root": "0x1829828a72cecb4177b5066ec1e891412ae2d1f155e637942ec18e263b8d2b3a",
+  "public_bytecode_commitment": "0x02b7e5d00c7db713d9bbca97fb00109acf3a5d6c017b61fe3760ef35a72c88ae",
+  "public_keys": "PublicKeys { inner: 0x01498945581e0eb9f8427ad6021184c700ef091d570892c437d12c7d90364bbd170ae506787c5c43d6ca9255d571c10fa9ffa9d141666e290c347c5c9ab7e34400c044b05b6ca83b9c2dbae79cc1135155956a64e136819136e9947fe5e5866c1c1f0ca244c7cd46b682552bff8ae77dea40b966a71de076ec3b7678f2bdb1511b00316144359e9a3ec8e49c1cdb7eeb0cedd190dfd9dc90eea5115aa779e287080ffc74d7a8b0bccb88ac11f45874172f3847eb8b92654aaa58a3d2b8dc7833019c111f36ad3fc1d9b7a7a14344314d2864b94f030594cd67f753ef774a1efb2039907fe37f08d10739255141bb066c506a12f7d1e8dfec21abc58494705b6f }",
+  "salted_initialization_hash": "SaltedInitializationHash { inner: 0x13a939daa511233e5446905ed2cadbee14948fa75df183b53b5c14b612bffe88 }",
+}
+`;
+
+exports[`Data generation for noir tests Computes contract info for parentContract 1`] = `
+{
+  "address": "AztecAddress { inner: 0x104f26ad3ee39757c027b690c9662b657e964665c3e914b8135e8aaa66d37ea9 }",
+  "artifact_hash": "0x00000000000000000000000000000000000000000000000000000000000004bc",
+  "contract_address_salt": "0x0000000000000000000000000000000000000000000000000000000000001618",
+  "contract_class_id": "ContractClassId { inner: 0x09d39c7c835c2326f8bc49249a1c607bf8a43f71560a60b2ca5b3df1447fc758 }",
+  "deployer": "AztecAddress { inner: 0x0000000000000000000000000000000000000000000000000000000000000000 }",
+  "partial_address": "PartialAddress { inner: 0x1e97dc9b4ed35ddc542b04eac5a174bc2856ecb8675ddc747d0ecef6b905b2f5 }",
+  "private_functions_root": "0x0d2b00bd4acf8cfbf862b1e319102bf511b5984666f978c27591986fce5d33fd",
+  "public_bytecode_commitment": "0x1fa970012bd11a88985f21a34cf26a285e696af1986c6348c6c46aedc6cc890b",
+  "public_keys": "PublicKeys { inner: 0x01498945581e0eb9f8427ad6021184c700ef091d570892c437d12c7d90364bbd170ae506787c5c43d6ca9255d571c10fa9ffa9d141666e290c347c5c9ab7e34400c044b05b6ca83b9c2dbae79cc1135155956a64e136819136e9947fe5e5866c1c1f0ca244c7cd46b682552bff8ae77dea40b966a71de076ec3b7678f2bdb1511b00316144359e9a3ec8e49c1cdb7eeb0cedd190dfd9dc90eea5115aa779e287080ffc74d7a8b0bccb88ac11f45874172f3847eb8b92654aaa58a3d2b8dc7833019c111f36ad3fc1d9b7a7a14344314d2864b94f030594cd67f753ef774a1efb2039907fe37f08d10739255141bb066c506a12f7d1e8dfec21abc58494705b6f }",
+  "salted_initialization_hash": "SaltedInitializationHash { inner: 0x24bd6ac7a182e2cf25e437c72f53544ef81dfd97d9afee23abb07a638e7be749 }",
+}
+`;
+
+exports[`Data generation for noir tests Computes function tree for the private functions 1`] = `
+{
+  "data": "FunctionData { selector: FunctionSelector { inner: 0x000f69b5 }, is_private: true }",
+  "membership_witness": "MembershipWitness {
+        leaf_index: 0,
+        sibling_path: [
+0x037939dcecffeec83a83cc58ede4b23e1494778484d3e92be639a5ea31bf4790,
+0x233d10e0c959338e062b1c76fb81e17fcf61643da568eac372bb7feac8bfa357,
+0x0e1ce4f11f4d51a7d3136abbd625315fff3876d322e46ad8401da96f8e43a614,
+0x1a0ca5eecb1430479902264f04e557160a4666fb42bb8b283c6397e3d17ac937,
+0x2a6595890719fef7967c209488728aa5342438ba52058a3c770202f55acf6854
+],
+    }",
+  "vk_hash": "0x000000000000000000000000000000000000000000000000000000000001e0f3",
+}
+`;

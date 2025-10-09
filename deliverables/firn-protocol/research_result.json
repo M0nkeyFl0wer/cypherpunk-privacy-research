@@ -1,0 +1,24 @@
+{
+  "tech_stack": [
+    "Solidity",
+    "JavaScript",
+    "TypeScript",
+    "Foundry",
+    "Circom",
+    "SnarkJS",
+    "MetaMask Snap",
+    "Rust (Foundry toolkit)"
+  ],
+  "privacy_techniques": [
+    "Zero-Knowledge Proofs (no trusted setup)",
+    "Anonymous Zether Protocol",
+    "ElGamal Encryption (with message in the exponent)",
+    "Sigma-Bullets (Bulletproofs + Σ-protocols)",
+    "Many-out-of-Many Proofs",
+    "Account-based privacy model",
+    "Homomorphic encryption",
+    "Decisional Diffie-Hellman (DDH) assumption",
+    "Inner Product Arguments"
+  ],
+  "github_url": "https://github.com/firnprotocol"
+}

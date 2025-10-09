@@ -1,0 +1,27 @@
+{
+  "tech_stack": [
+    "C++",
+    "TypeScript",
+    "Noir",
+    "Solidity",
+    "Rust",
+    "JavaScript",
+    "Node.js",
+    "Barretenberg",
+    "Aztec.js",
+    "Aztec.nr"
+  ],
+  "privacy_techniques": [
+    "Zero-Knowledge Proofs (ZK-SNARKs)",
+    "PLONK Proof System",
+    "ZK-ZK Rollup (ZK²)",
+    "Encrypted Transactions",
+    "Private State Management",
+    "Nullifier System",
+    "Private Execution Environment (PXE)",
+    "Note Encryption",
+    "Hybrid Public-Private Execution",
+    "Confidential Smart Contracts"
+  ],
+  "github_url": "https://github.com/AztecProtocol/aztec-packages"
+}

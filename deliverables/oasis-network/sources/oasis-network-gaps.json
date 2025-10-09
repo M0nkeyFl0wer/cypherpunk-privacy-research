@@ -1,0 +1,221 @@
+{
+  "project_id": "oasis-network",
+  "gaps_reported": "2025-09-30T18:40:00Z",
+  "constitution_version": "2.0.0",
+  "total_gaps": 8,
+  "status": "QUEUED_FOR_AGENT_DEPLOYMENT",
+  "gaps": [
+    {
+      "gap_id": "oasis-github-stats-001",
+      "project_id": "oasis-network",
+      "field": "github_statistics",
+      "attempted_sources": [
+        "GitHub API via WebFetch"
+      ],
+      "reason": "Web tools unavailable during research session",
+      "confidence": null,
+      "recommended_next_steps": [
+        "Deploy GitHub API agent to query oasisprotocol organization",
+        "Fetch star counts for core repositories",
+        "Check contributor counts and commit activity",
+        "Analyze repository health metrics"
+      ],
+      "priority": "high",
+      "assigned_agent": null,
+      "status": "queued",
+      "estimated_resolution_time": "15 minutes"
+    },
+    {
+      "gap_id": "oasis-token-supply-002",
+      "project_id": "oasis-network",
+      "field": "rose_token_supply",
+      "attempted_sources": [
+        "CoinGecko API",
+        "CoinMarketCap API"
+      ],
+      "reason": "Web tools unavailable - requires live cryptocurrency data",
+      "confidence": null,
+      "recommended_next_steps": [
+        "Query CoinGecko API for ROSE token data",
+        "Verify circulating supply vs total supply",
+        "Check token distribution from blockchain explorer",
+        "Validate tokenomics from official documentation"
+      ],
+      "priority": "high",
+      "assigned_agent": null,
+      "status": "queued",
+      "estimated_resolution_time": "10 minutes"
+    },
+    {
+      "gap_id": "oasis-token-price-003",
+      "project_id": "oasis-network",
+      "field": "current_rose_price",
+      "attempted_sources": [
+        "CoinGecko",
+        "CoinMarketCap"
+      ],
+      "reason": "Requires real-time market data",
+      "confidence": null,
+      "recommended_next_steps": [
+        "Query real-time pricing from CoinGecko/CoinMarketCap APIs",
+        "Check DEX pricing on Oasis Network",
+        "Verify CEX listings and volumes"
+      ],
+      "priority": "medium",
+      "assigned_agent": null,
+      "status": "queued",
+      "estimated_resolution_time": "5 minutes"
+    },
+    {
+      "gap_id": "oasis-staking-stats-004",
+      "project_id": "oasis-network",
+      "field": "staking_statistics",
+      "attempted_sources": [
+        "Oasis Network Explorer",
+        "Blockchain API"
+      ],
+      "reason": "Web tools unavailable - requires blockchain data query",
+      "confidence": null,
+      "recommended_next_steps": [
+        "Query Oasis Network explorer API",
+        "Check total ROSE staked amount",
+        "Verify validator count and distribution",
+        "Analyze staking rewards and APY"
+      ],
+      "priority": "high",
+      "assigned_agent": null,
+      "status": "queued",
+      "estimated_resolution_time": "15 minutes"
+    },
+    {
+      "gap_id": "oasis-foundation-details-005",
+      "project_id": "oasis-network",
+      "field": "foundation_governance",
+      "attempted_sources": [
+        "https://oasisprotocol.org",
+        "Foundation documentation page"
+      ],
+      "reason": "Web tools unavailable - foundation details not accessible",
+      "confidence": null,
+      "recommended_next_steps": [
+        "Access Oasis Protocol Foundation official page",
+        "Verify legal structure and jurisdiction",
+        "Check team and board member information",
+        "Review governance documentation and proposals"
+      ],
+      "priority": "medium",
+      "assigned_agent": null,
+      "status": "queued",
+      "estimated_resolution_time": "20 minutes"
+    },
+    {
+      "gap_id": "oasis-governance-params-006",
+      "project_id": "oasis-network",
+      "field": "on_chain_governance_parameters",
+      "attempted_sources": [
+        "Governance documentation",
+        "On-chain smart contracts"
+      ],
+      "reason": "Requires live blockchain query and documentation access",
+      "confidence": null,
+      "recommended_next_steps": [
+        "Query governance smart contracts on Oasis Network",
+        "Check proposal creation requirements and thresholds",
+        "Verify voting mechanisms and quorum rules",
+        "Review historical governance proposals"
+      ],
+      "priority": "medium",
+      "assigned_agent": null,
+      "status": "queued",
+      "estimated_resolution_time": "20 minutes"
+    },
+    {
+      "gap_id": "oasis-bridge-contracts-007",
+      "project_id": "oasis-network",
+      "field": "wormhole_bridge_contracts",
+      "attempted_sources": [
+        "Etherscan",
+        "Oasis Explorer",
+        "Wormhole documentation"
+      ],
+      "reason": "Web tools unavailable - contract addresses require verification",
+      "confidence": null,
+      "recommended_next_steps": [
+        "Query Etherscan for Wormhole Oasis bridge contracts",
+        "Verify contract addresses from Wormhole official documentation",
+        "Check bridge transaction volume and TVL",
+        "Analyze bridge security audits and implementation"
+      ],
+      "priority": "high",
+      "assigned_agent": null,
+      "status": "queued",
+      "estimated_resolution_time": "20 minutes"
+    },
+    {
+      "gap_id": "oasis-defi-ecosystem-008",
+      "project_id": "oasis-network",
+      "field": "defi_protocols_and_tvl",
+      "attempted_sources": [
+        "Oasis ecosystem page",
+        "DeFiLlama",
+        "Project documentation"
+      ],
+      "reason": "Web tools unavailable - requires live ecosystem scan",
+      "confidence": null,
+      "recommended_next_steps": [
+        "Scan Oasis ecosystem for active DeFi protocols",
+        "Query DeFiLlama for Oasis Network TVL data",
+        "Verify major protocols (DEX, lending, derivatives)",
+        "Analyze user adoption and transaction metrics",
+        "Check ParaTime-specific DeFi breakdown"
+      ],
+      "priority": "high",
+      "assigned_agent": null,
+      "status": "queued",
+      "estimated_resolution_time": "30 minutes"
+    }
+  ],
+  "agent_deployment_plan": {
+    "batch_1_high_priority": [
+      {
+        "agent_type": "github_researcher",
+        "gaps": ["oasis-github-stats-001"],
+        "estimated_time": "15 minutes"
+      },
+      {
+        "agent_type": "blockchain_analyst",
+        "gaps": ["oasis-token-supply-002", "oasis-staking-stats-004"],
+        "estimated_time": "25 minutes"
+      },
+      {
+        "agent_type": "bridge_analyst",
+        "gaps": ["oasis-bridge-contracts-007"],
+        "estimated_time": "20 minutes"
+      },
+      {
+        "agent_type": "defi_researcher",
+        "gaps": ["oasis-defi-ecosystem-008"],
+        "estimated_time": "30 minutes"
+      }
+    ],
+    "batch_2_medium_priority": [
+      {
+        "agent_type": "crypto_market_analyst",
+        "gaps": ["oasis-token-price-003"],
+        "estimated_time": "5 minutes"
+      },
+      {
+        "agent_type": "governance_researcher",
+        "gaps": ["oasis-foundation-details-005", "oasis-governance-params-006"],
+        "estimated_time": "40 minutes"
+      }
+    ]
+  },
+  "deployment_status": {
+    "total_agents_needed": 6,
+    "agents_deployed": 0,
+    "estimated_total_time": "135 minutes",
+    "estimated_cost": "$0.00 (free tier APIs)",
+    "next_action": "Deploy batch_1_high_priority agents in parallel"
+  }
+}

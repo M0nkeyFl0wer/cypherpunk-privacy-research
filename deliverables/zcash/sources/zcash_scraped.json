@@ -1,0 +1,13 @@
+{
+  "project_name": "zcash",
+  "website": "https://www.zcash.network",
+  "website_confidence": 0.85,
+  "website_sources": ["https://www.zcash.network", "curl scraping"],
+  "description": "zcash.network is your first and best source for all of the information you’re looking for. From general topics to more of what you would expect to find here, zcash.network has it all. We hope you find what you are searching for!",
+  "description_confidence": 0.80,
+  "description_sources": ["https://www.zcash.network meta tags"],
+  "research_date": "2025-10-06T13:29:12Z",
+  "batch_number": 3,
+  "execution_host": "seshat",
+  "scraping_method": "curl + grep"
+}
