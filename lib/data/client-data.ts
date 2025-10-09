@@ -46,8 +46,8 @@ export async function loadProjectIndex(): Promise<ProjectIndex> {
   if (cachedData) return cachedData;
 
   try {
-    // Always use full GitHub Pages path - site is only deployed there
-    const response = await fetch('/web3-privacy-ethereum-cypherpunk-research/data/projects.json');
+    // Use relative path from basePath root - Next.js handles basePath automatically
+    const response = await fetch('/data/projects.json');
     if (!response.ok) {
       throw new Error(`Failed to load project index: ${response.statusText}`);
     }

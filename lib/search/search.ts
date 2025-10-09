@@ -17,8 +17,8 @@ let cachedProjects: SearchableProject[] = [];
  * Load search index from JSON
  */
 export async function loadSearchIndex(): Promise<SearchIndex> {
-  // Always use full GitHub Pages path - site is only deployed there
-  const response = await fetch('/web3-privacy-ethereum-cypherpunk-research/data/search-index.json');
+  // Use relative path from basePath root - Next.js handles basePath automatically
+  const response = await fetch('/data/search-index.json');
   if (!response.ok) {
     throw new Error('Failed to load search index');
   }
