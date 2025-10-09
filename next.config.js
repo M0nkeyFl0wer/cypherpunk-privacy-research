@@ -1,12 +1,17 @@
 /** @type {import('next').NextConfig} */
+const basePath = process.env.NODE_ENV === 'production' ? '/web3-privacy-ethereum-cypherpunk-research' : '';
+
 const nextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
   },
   trailingSlash: true,
-  basePath: process.env.NODE_ENV === 'production' ? '/web3-privacy-ethereum-cypherpunk-research' : '',
+  basePath,
   assetPrefix: process.env.NODE_ENV === 'production' ? '/web3-privacy-ethereum-cypherpunk-research/' : '',
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
 
   // Security Headers
   async headers() {

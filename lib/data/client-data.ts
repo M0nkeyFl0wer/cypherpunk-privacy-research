@@ -46,8 +46,9 @@ export async function loadProjectIndex(): Promise<ProjectIndex> {
   if (cachedData) return cachedData;
 
   try {
-    // Use relative path from basePath root - Next.js handles basePath automatically
-    const response = await fetch('/data/projects.json');
+    // Use basePath from environment variable
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+    const response = await fetch(`${basePath}/data/projects.json`);
     if (!response.ok) {
       throw new Error(`Failed to load project index: ${response.statusText}`);
     }

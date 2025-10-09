@@ -17,8 +17,9 @@ let cachedProjects: SearchableProject[] = [];
  * Load search index from JSON
  */
 export async function loadSearchIndex(): Promise<SearchIndex> {
-  // Use relative path from basePath root - Next.js handles basePath automatically
-  const response = await fetch('/data/search-index.json');
+  // Use basePath from environment variable
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+  const response = await fetch(`${basePath}/data/search-index.json`);
   if (!response.ok) {
     throw new Error('Failed to load search index');
   }
