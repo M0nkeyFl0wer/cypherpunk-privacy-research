@@ -1,0 +1,16 @@
+{
+  "source": "Open Source Observer",
+  "discovered_at": "2025-09-29T14:42:57.249053",
+  "contracts": [
+    {
+      "address": "0xf473edfaaef8cb2e5cdd246b7d5b285e4f56f721",
+      "networks": [
+        "any_evm"
+      ],
+      "tags": [
+        "eoa",
+        "wallet"
+      ]
+    }
+  ]
+}

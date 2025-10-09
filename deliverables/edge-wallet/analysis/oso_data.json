@@ -1,0 +1,34 @@
+{
+  "source": "Open Source Observer",
+  "discovered_at": "2025-09-29T14:42:57.245374",
+  "oso_name": "Edge Wallet",
+  "github_repos": [
+    "https://github.com/edgeapp"
+  ],
+  "blockchain_addresses": [
+    {
+      "address": "0xf473edfaaef8cb2e5cdd246b7d5b285e4f56f721",
+      "networks": [
+        "any_evm"
+      ],
+      "tags": [
+        "eoa",
+        "wallet"
+      ]
+    }
+  ],
+  "websites": [
+    "https://edge.app"
+  ],
+  "npm_packages": [],
+  "defillama_urls": [],
+  "description": "Edge Mobile App & Security platform for Bitcoin and blockchain technologies",
+  "social": {
+    "twitter": [
+      {
+        "url": "https://twitter.com/edgewallet"
+      }
+    ]
+  },
+  "confidence": "high"
+}

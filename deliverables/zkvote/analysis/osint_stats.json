@@ -1,0 +1,26 @@
+{
+  "scan_id": "F5EABC88",
+  "project": "zkvote",
+  "target": "zkvote.io",
+  "total_events": 16,
+  "modules_used": 7,
+  "event_types": {
+    "TCP_PORT_OPEN": 3,
+    "IP_ADDRESS": 2,
+    "IPV6_ADDRESS": 2,
+    "COMPANY_NAME": 2,
+    "INTERNET_NAME": 2,
+    "DOMAIN_NAME": 2,
+    "DOMAIN_WHOIS": 1,
+    "DOMAIN_REGISTRAR": 1,
+    "ROOT": 1
+  },
+  "risk_distribution": {
+    "0": 16
+  },
+  "date_range": {
+    "start": "2025-09-29 22:34:39",
+    "end": "2025-09-29 22:35:45"
+  },
+  "processed_at": "2025-09-30 00:10:25"
+}
