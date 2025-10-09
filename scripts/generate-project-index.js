@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const lunr = require('lunr');
 
 const ROOT_DIR = path.join(__dirname, '..');
 const OUTPUT_FILE = path.join(ROOT_DIR, 'public', 'data', 'projects.json');
@@ -31,7 +32,7 @@ const PROJECT_DIRS = fs.readdirSync(ROOT_DIR).filter(name => {
 console.log(`📂 Found ${PROJECT_DIRS.length} potential project directories`);
 
 const projects = [];
-const searchIndex = [];
+const searchableProjects = [];
 
 for (const projectName of PROJECT_DIRS) {
   const projectPath = path.join(ROOT_DIR, projectName);
@@ -80,12 +81,14 @@ for (const projectName of PROJECT_DIRS) {
 
   projects.push(project);
 
-  // Add to search index
-  searchIndex.push({
-    slug: projectName,
+  // Add to searchable projects list for Lunr indexing
+  searchableProjects.push({
+    id: projectName,
     name: project.name,
     category: project.category,
     description: project.description,
+    privacy_techniques: project.privacyTechniques || [],
+    tech_stack: project.techStack || [],
     searchableText: [
       project.name,
       project.category,
@@ -95,6 +98,55 @@ for (const projectName of PROJECT_DIRS) {
     ].join(' ').toLowerCase(),
   });
 }
+
+// Build Lunr index
+console.log('🔍 Building Lunr search index...');
+const idx = lunr(function () {
+  this.ref('id');
+  this.field('name', { boost: 10 });
+  this.field('category', { boost: 5 });
+  this.field('description', { boost: 3 });
+  this.field('searchableText');
+
+  searchableProjects.forEach(project => {
+    this.add(project);
+  });
+});
+
+// Collect filter options
+const categories = new Set();
+const techStacks = new Set();
+const privacyTechniques = new Set();
+
+searchableProjects.forEach(project => {
+  if (project.category) categories.add(project.category);
+  (project.tech_stack || []).forEach(tech => techStacks.add(tech));
+  (project.privacy_techniques || []).forEach(tech => privacyTechniques.add(tech));
+});
+
+// Calculate statistics
+const avgCompleteness = Math.round(
+  projects.reduce((sum, p) => sum + p.completeness, 0) / projects.length
+);
+
+// Build final search index structure
+const searchIndex = {
+  projects: searchableProjects,
+  lunr_index: JSON.stringify(idx),
+  filters: {
+    categories: Array.from(categories).sort(),
+    tech_stacks: Array.from(techStacks).sort(),
+    privacy_techniques: Array.from(privacyTechniques).sort(),
+    platforms: [], // Add if needed
+  },
+  statistics: {
+    avg_confidence: 0, // Calculate if available
+    avg_completeness: avgCompleteness,
+    projects_by_category: {},
+    projects_by_status: {},
+  },
+  total_projects: searchableProjects.length,
+};
 
 function calculateCompleteness(metadata, hasReadme, hasCard) {
   if (!metadata) return 0;
@@ -126,7 +178,7 @@ console.log(`✅ Generated ${OUTPUT_FILE} with ${projects.length} projects`);
 
 // Write search-index.json
 fs.writeFileSync(OUTPUT_SEARCH, JSON.stringify(searchIndex, null, 2));
-console.log(`✅ Generated ${OUTPUT_SEARCH} with ${searchIndex.length} entries`);
+console.log(`✅ Generated ${OUTPUT_SEARCH} with ${searchIndex.total_projects} searchable projects`);
 
 // Generate stats
 const stats = {

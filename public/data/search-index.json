@@ -1,800 +1,1206 @@
-[
-  {
-    "slug": "0xbow",
-    "name": "0xbow",
-    "category": "unknown",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "0xbow unknown privacy-focused web3 project"
-  },
-  {
-    "slug": "1inch-privacy",
-    "name": "1inch Privacy",
-    "category": "Uncategorized",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "1inch privacy uncategorized privacy-focused web3 project"
-  },
-  {
-    "slug": "ai-discovered",
-    "name": "Ai Discovered",
-    "category": "Uncategorized",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "ai discovered uncategorized privacy-focused web3 project"
-  },
-  {
-    "slug": "aleo",
-    "name": "Aleo",
-    "category": "Uncategorized",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "aleo uncategorized privacy-focused web3 project"
-  },
-  {
-    "slug": "alephim",
-    "name": "Alephim",
-    "category": "computing",
-    "description": "Open source DePIN confidential VMs",
-    "searchableText": "alephim computing open source depin confidential vms"
-  },
-  {
-    "slug": "anoma",
-    "name": "Anoma",
-    "category": "Uncategorized",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "anoma uncategorized privacy-focused web3 project"
-  },
-  {
-    "slug": "arpa",
-    "name": "Arpa",
-    "category": "computing",
-    "description": "Threshold BLS network for verifiable random number generation",
-    "searchableText": "arpa computing threshold bls network for verifiable random number generation threshold bls signatures (bls-tss) distributed key generation (dkg) multi-party computation (mpc) verifiable random function (vrf) elliptic curve cryptography dynamic node grouping byzantine fault tolerance"
-  },
-  {
-    "slug": "aztec",
-    "name": "Aztec",
-    "category": "unknown",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "aztec unknown privacy-focused web3 project"
-  },
-  {
-    "slug": "aztec-network",
-    "name": "Aztec Network",
-    "category": "defi",
-    "description": "Privacy-first ZK rollup",
-    "searchableText": "aztec network defi privacy-first zk rollup zero-knowledge proofs (zk-snarks) plonk proof system zk-zk rollup (zk²) encrypted transactions private state management nullifier system private execution environment (pxe) note encryption hybrid public-private execution confidential smart contracts c++ typescript noir solidity rust javascript node.js barretenberg aztec.js aztec.nr"
-  },
-  {
-    "slug": "aztec-protocol",
-    "name": "Aztec Protocol",
-    "category": "unknown",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "aztec protocol unknown privacy-focused web3 project"
-  },
-  {
-    "slug": "beam",
-    "name": "Beam",
-    "category": "currency",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "beam currency privacy-focused web3 project"
-  },
-  {
-    "slug": "brave-browser",
-    "name": "Brave Browser",
-    "category": "Uncategorized",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "brave browser uncategorized privacy-focused web3 project"
-  },
-  {
-    "slug": "brume-wallet",
-    "name": "Brume Wallet",
-    "category": "wallet",
-    "description": "Privacy-native Ethereum wallet with TOR integration",
-    "searchableText": "brume wallet wallet privacy-native ethereum wallet with tor integration tor network integration built-in tor routing for all network requests unique ip address per wallet account ip address masking from third-parties eip-1193 provider with hardened phishing protections non-custodial architecture open-source and reproducible builds minimal dependencies (20x less than competitors) walletconnect with spoofed domain protection anonymous transaction routing through tor no ip/wallet address sharing with third parties typescript next.js react capacitor webassembly (wasm) solidity node.js swift kotlin html/css mdx javascript"
-  },
-  {
-    "slug": "cake-wallet",
-    "name": "Cake Wallet",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "cake wallet other privacy-focused web3 project"
-  },
-  {
-    "slug": "chainport",
-    "name": "Chainport",
-    "category": "bridges",
-    "description": "Cross-chain bridge with privacy options",
-    "searchableText": "chainport bridges cross-chain bridge with privacy options"
-  },
-  {
-    "slug": "circom",
-    "name": "Circom",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "circom other privacy-focused web3 project"
-  },
-  {
-    "slug": "concordium",
-    "name": "Concordium",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "concordium other privacy-focused web3 project"
-  },
-  {
-    "slug": "curve-privacy",
-    "name": "Curve Privacy",
-    "category": "Uncategorized",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "curve privacy uncategorized privacy-focused web3 project"
-  },
-  {
-    "slug": "cyclone-protocol",
-    "name": "Cyclone Protocol",
-    "category": "mixing",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "cyclone protocol mixing privacy-focused web3 project"
-  },
-  {
-    "slug": "dark-forest",
-    "name": "Dark Forest",
-    "category": "Uncategorized",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "dark forest uncategorized privacy-focused web3 project"
-  },
-  {
-    "slug": "darkfi",
-    "name": "darkfi",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "darkfi other privacy-focused web3 project"
-  },
-  {
-    "slug": "dash",
-    "name": "Dash",
-    "category": "Uncategorized",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "dash uncategorized privacy-focused web3 project"
-  },
-  {
-    "slug": "deeper-network",
-    "name": "Deeper Network",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "deeper network other privacy-focused web3 project"
-  },
-  {
-    "slug": "docs",
-    "name": "Docs",
-    "category": "Uncategorized",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "docs uncategorized privacy-focused web3 project"
-  },
-  {
-    "slug": "dusk-network",
-    "name": "Dusk Network",
-    "category": "Uncategorized",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "dusk network uncategorized privacy-focused web3 project"
-  },
-  {
-    "slug": "edge-wallet",
-    "name": "Edge Wallet",
-    "category": "wallet",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "edge wallet wallet privacy-focused web3 project"
-  },
-  {
-    "slug": "elusiv",
-    "name": "Elusiv",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "elusiv other privacy-focused web3 project"
-  },
-  {
-    "slug": "eth2-deposit-cli",
-    "name": "Eth2 Deposit Cli",
-    "category": "Uncategorized",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "eth2 deposit cli uncategorized privacy-focused web3 project"
-  },
-  {
-    "slug": "farcaster",
-    "name": "Farcaster",
-    "category": "Uncategorized",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "farcaster uncategorized privacy-focused web3 project"
-  },
-  {
-    "slug": "fileverse",
-    "name": "fileverse",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "fileverse other privacy-focused web3 project"
-  },
-  {
-    "slug": "findora",
-    "name": "Findora",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "findora other privacy-focused web3 project"
-  },
-  {
-    "slug": "firn-protocol",
-    "name": "Firn Protocol",
-    "category": "defi",
-    "description": "First zero-knowledge privacy platform in account-based model",
-    "searchableText": "firn protocol defi first zero-knowledge privacy platform in account-based model zero-knowledge proofs (no trusted setup) anonymous zether protocol elgamal encryption (with message in the exponent) sigma-bullets (bulletproofs + σ-protocols) many-out-of-many proofs account-based privacy model homomorphic encryption decisional diffie-hellman (ddh) assumption inner product arguments solidity javascript typescript foundry circom snarkjs metamask snap rust (foundry toolkit)"
-  },
-  {
-    "slug": "firo",
-    "name": "Firo",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "firo other privacy-focused web3 project"
-  },
-  {
-    "slug": "fluidkey",
-    "name": "Fluidkey",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "fluidkey other privacy-focused web3 project"
-  },
-  {
-    "slug": "frame",
-    "name": "Frame",
-    "category": "wallet",
-    "description": "Open-source, non-custodial Ethereum desktop wallet",
-    "searchableText": "frame wallet open-source, non-custodial ethereum desktop wallet"
-  },
-  {
-    "slug": "gitcoin-grants",
-    "name": "Gitcoin Grants",
-    "category": "Uncategorized",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "gitcoin grants uncategorized privacy-focused web3 project"
-  },
-  {
-    "slug": "grin",
-    "name": "Grin",
-    "category": "currency",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "grin currency privacy-focused web3 project"
-  },
-  {
-    "slug": "hopr",
-    "name": "HOPR",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "hopr other privacy-focused web3 project"
-  },
-  {
-    "slug": "horizen",
-    "name": "Horizen",
-    "category": "Uncategorized",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "horizen uncategorized privacy-focused web3 project"
-  },
-  {
-    "slug": "iden3",
-    "name": "iden3",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "iden3 other privacy-focused web3 project"
-  },
-  {
-    "slug": "iexec",
-    "name": "Iexec",
-    "category": "computing",
-    "description": "Decentralized cloud computing with TEE",
-    "searchableText": "iexec computing decentralized cloud computing with tee"
-  },
-  {
-    "slug": "incognito",
-    "name": "Incognito",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "incognito other privacy-focused web3 project"
-  },
-  {
-    "slug": "iron-fish",
-    "name": "Iron Fish",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "iron fish other privacy-focused web3 project"
-  },
-  {
-    "slug": "keep-network",
-    "name": "Keep Network",
-    "category": "Uncategorized",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "keep network uncategorized privacy-focused web3 project"
-  },
-  {
-    "slug": "labyrinth",
-    "name": "Labyrinth",
-    "category": "defi",
-    "description": "Multichain Modular Privacy Framework with a Decentralized Compliance Network",
-    "searchableText": "labyrinth defi multichain modular privacy framework with a decentralized compliance network"
-  },
-  {
-    "slug": "lens-protocol",
-    "name": "Lens Protocol",
-    "category": "Uncategorized",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "lens protocol uncategorized privacy-focused web3 project"
-  },
-  {
-    "slug": "light-protocol",
-    "name": "Light Protocol",
-    "category": "defi",
-    "description": "Privacy layer for Solana",
-    "searchableText": "light protocol defi privacy layer for solana"
-  },
-  {
-    "slug": "litentry",
-    "name": "Litentry",
-    "category": "did",
-    "description": "Decentralized identity aggregation protocol",
-    "searchableText": "litentry did decentralized identity aggregation protocol"
-  },
-  {
-    "slug": "maci",
-    "name": "Maci",
-    "category": "Uncategorized",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "maci uncategorized privacy-focused web3 project"
-  },
-  {
-    "slug": "manta-network",
-    "name": "Manta Network",
-    "category": "infrastructure",
-    "description": "On-Chain Privacy for Web 3, DeFi and more",
-    "searchableText": "manta network infrastructure on-chain privacy for web 3, defi and more"
-  },
-  {
-    "slug": "mask",
-    "name": "Mask",
-    "category": "Uncategorized",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "mask uncategorized privacy-focused web3 project"
-  },
-  {
-    "slug": "mask-network",
-    "name": "Mask Network",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "mask network other privacy-focused web3 project"
-  },
-  {
-    "slug": "metamask-snaps",
-    "name": "Metamask Snaps",
-    "category": "Uncategorized",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "metamask snaps uncategorized privacy-focused web3 project"
-  },
-  {
-    "slug": "mina-protocol",
-    "name": "Mina Protocol",
-    "category": "Uncategorized",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "mina protocol uncategorized privacy-focused web3 project"
-  },
-  {
-    "slug": "mobilecoin",
-    "name": "MobileCoin",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "mobilecoin other privacy-focused web3 project"
-  },
-  {
-    "slug": "monero",
-    "name": "monero",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "monero other privacy-focused web3 project"
-  },
-  {
-    "slug": "mysterium-network",
-    "name": "mysterium-network",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "mysterium-network other privacy-focused web3 project"
-  },
-  {
-    "slug": "nighthawk-wallet",
-    "name": "Nighthawk Wallet",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "nighthawk wallet other privacy-focused web3 project"
-  },
-  {
-    "slug": "nillion",
-    "name": "Nillion",
-    "category": "computing",
-    "description": "Decentralizes trust for sensitive data",
-    "searchableText": "nillion computing decentralizes trust for sensitive data"
-  },
-  {
-    "slug": "nucypher",
-    "name": "Nucypher",
-    "category": "Uncategorized",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "nucypher uncategorized privacy-focused web3 project"
-  },
-  {
-    "slug": "nym",
-    "name": "Nym",
-    "category": "infrastructure",
-    "description": "Infrastructure to prevent data leakage by protecting metadata",
-    "searchableText": "nym infrastructure infrastructure to prevent data leakage by protecting metadata"
-  },
-  {
-    "slug": "oasis-network",
-    "name": "oasis-network",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "oasis-network other privacy-focused web3 project"
-  },
-  {
-    "slug": "orchid",
-    "name": "Orchid",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "orchid other privacy-focused web3 project"
-  },
-  {
-    "slug": "oxen",
-    "name": "oxen",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "oxen other privacy-focused web3 project"
-  },
-  {
-    "slug": "panther-protocol",
-    "name": "Panther Protocol",
-    "category": "defi",
-    "description": "Decentralized privacy metaprotocol",
-    "searchableText": "panther protocol defi decentralized privacy metaprotocol"
-  },
-  {
-    "slug": "penumbra",
-    "name": "Penumbra",
-    "category": "infrastructure",
-    "description": "Shielded pool protocol with cross-chain privacy",
-    "searchableText": "penumbra infrastructure shielded pool protocol with cross-chain privacy"
-  },
-  {
-    "slug": "phala-network",
-    "name": "Phala Network",
-    "category": "computing",
-    "description": "TEE-based Permissionless Computing Protocol",
-    "searchableText": "phala network computing tee-based permissionless computing protocol"
-  },
-  {
-    "slug": "pirate-chain",
-    "name": "Pirate Chain",
-    "category": "currency",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "pirate chain currency privacy-focused web3 project"
-  },
-  {
-    "slug": "platon-network",
-    "name": "Platon Network",
-    "category": "computing",
-    "description": "Blockchain and privacy-preserving computation technologies",
-    "searchableText": "platon network computing blockchain and privacy-preserving computation technologies"
-  },
-  {
-    "slug": "polygon-hermez",
-    "name": "polygon-hermez",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "polygon-hermez other privacy-focused web3 project"
-  },
-  {
-    "slug": "polygon-id",
-    "name": "Polygon Id",
-    "category": "did",
-    "description": "Privacy-preserving identity protocol",
-    "searchableText": "polygon id did privacy-preserving identity protocol"
-  },
-  {
-    "slug": "polygon-nightfall",
-    "name": "Polygon Nightfall",
-    "category": "layer2",
-    "description": "Privacy-Focused Rollup for Enterprises",
-    "searchableText": "polygon nightfall layer2 privacy-focused rollup for enterprises"
-  },
-  {
-    "slug": "polygon-zero",
-    "name": "polygon-zero",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "polygon-zero other privacy-focused web3 project"
-  },
-  {
-    "slug": "privatepool",
-    "name": "privatepool",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "privatepool other privacy-focused web3 project"
-  },
-  {
-    "slug": "pse--privacy---scaling-explorations-",
-    "name": "Pse  Privacy   Scaling Explorations ",
-    "category": "Uncategorized",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "pse  privacy   scaling explorations  uncategorized privacy-focused web3 project"
-  },
-  {
-    "slug": "railgun",
-    "name": "Railgun",
-    "category": "defi",
-    "description": "Privacy protocol for DeFi",
-    "searchableText": "railgun defi privacy protocol for defi"
-  },
-  {
-    "slug": "railgun-relay-adapt",
-    "name": "Railgun Relay Adapt",
-    "category": "bridges",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "railgun relay adapt bridges privacy-focused web3 project"
-  },
-  {
-    "slug": "railway-wallet",
-    "name": "Railway Wallet",
-    "category": "wallet",
-    "description": "Privacy-focused DeFi wallet",
-    "searchableText": "railway wallet wallet privacy-focused defi wallet"
-  },
-  {
-    "slug": "ronin",
-    "name": "Ronin",
-    "category": "Uncategorized",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "ronin uncategorized privacy-focused web3 project"
-  },
-  {
-    "slug": "rotki",
-    "name": "rotki",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "rotki other privacy-focused web3 project"
-  },
-  {
-    "slug": "samourai-wallet",
-    "name": "Samourai Wallet",
-    "category": "Uncategorized",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "samourai wallet uncategorized privacy-focused web3 project"
-  },
-  {
-    "slug": "scroll",
-    "name": "Scroll",
-    "category": "layer2",
-    "description": "zkEVM-based zkRollup",
-    "searchableText": "scroll layer2 zkevm-based zkrollup"
-  },
-  {
-    "slug": "secret-network",
-    "name": "Secret Network",
-    "category": "infrastructure",
-    "description": "First blockchain with customizable privacy",
-    "searchableText": "secret network infrastructure first blockchain with customizable privacy"
-  },
-  {
-    "slug": "semaphore",
-    "name": "semaphore",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "semaphore other privacy-focused web3 project"
-  },
-  {
-    "slug": "sentinel",
-    "name": "Sentinel",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "sentinel other privacy-focused web3 project"
-  },
-  {
-    "slug": "session",
-    "name": "Session",
-    "category": "messaging",
-    "description": "Private messenger",
-    "searchableText": "session messaging private messenger"
-  },
-  {
-    "slug": "sienna-network",
-    "name": "sienna-network",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "sienna-network other privacy-focused web3 project"
-  },
-  {
-    "slug": "silent-protocol",
-    "name": "Silent Protocol",
-    "category": "defi",
-    "description": "First protocol enabling compliant full-stack privacy for smart contract assets",
-    "searchableText": "silent protocol defi first protocol enabling compliant full-stack privacy for smart contract assets"
-  },
-  {
-    "slug": "sismo",
-    "name": "Sismo",
-    "category": "did",
-    "description": "Privacy-preserving reputation protocol",
-    "searchableText": "sismo did privacy-preserving reputation protocol"
-  },
-  {
-    "slug": "snapshot-x",
-    "name": "Snapshot X",
-    "category": "Uncategorized",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "snapshot x uncategorized privacy-focused web3 project"
-  },
-  {
-    "slug": "snarkjs",
-    "name": "snarkjs",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "snarkjs other privacy-focused web3 project"
-  },
-  {
-    "slug": "starkex",
-    "name": "StarkEX",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "starkex other privacy-focused web3 project"
-  },
-  {
-    "slug": "starknet",
-    "name": "Starknet",
-    "category": "Uncategorized",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "starknet uncategorized privacy-focused web3 project"
-  },
-  {
-    "slug": "status",
-    "name": "Status",
-    "category": "messaging",
-    "description": "Secure messaging and crypto wallet",
-    "searchableText": "status messaging secure messaging and crypto wallet"
-  },
-  {
-    "slug": "suterusu",
-    "name": "Suterusu",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "suterusu other privacy-focused web3 project"
-  },
-  {
-    "slug": "taiko",
-    "name": "Taiko",
-    "category": "layer2",
-    "description": "Type 1 zkEVM",
-    "searchableText": "taiko layer2 type 1 zkevm"
-  },
-  {
-    "slug": "ten",
-    "name": "Ten",
-    "category": "layer2",
-    "description": "Layer 2 solution extending Web3 Scalability with Encryption",
-    "searchableText": "ten layer2 layer 2 solution extending web3 scalability with encryption"
-  },
-  {
-    "slug": "tornado-cash",
-    "name": "Tornado Cash",
-    "category": "privacy_mixer",
-    "description": "Fully decentralized, non-custodial cryptocurrency mixer protocol that runs on Ethereum Virtual Machine-compatible networks, enabling private transactions using zero-knowledge proof technology. Tornado Cash was sanctioned by OFAC in August 2022 but had sanctions lifted in March 2025 following a Fifth Circuit court ruling.",
-    "searchableText": "tornado cash privacy_mixer fully decentralized, non-custodial cryptocurrency mixer protocol that runs on ethereum virtual machine-compatible networks, enabling private transactions using zero-knowledge proof technology. tornado cash was sanctioned by ofac in august 2022 but had sanctions lifted in march 2025 following a fifth circuit court ruling. zk-snarks multi-party computation (mpc) circom websnark solidity javascript"
-  },
-  {
-    "slug": "typhoon-network",
-    "name": "typhoon-network",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "typhoon-network other privacy-focused web3 project"
-  },
-  {
-    "slug": "umbra-cash",
-    "name": "Umbra Cash",
-    "category": "Uncategorized",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "umbra cash uncategorized privacy-focused web3 project"
-  },
-  {
-    "slug": "veramo",
-    "name": "Veramo",
-    "category": "did",
-    "description": "JavaScript framework for verifiable data",
-    "searchableText": "veramo did javascript framework for verifiable data"
-  },
-  {
-    "slug": "wasabi-wallet",
-    "name": "Wasabi Wallet",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "wasabi wallet other privacy-focused web3 project"
-  },
-  {
-    "slug": "webb-protocol",
-    "name": "Webb Protocol",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "webb protocol other privacy-focused web3 project"
-  },
-  {
-    "slug": "xx-network",
-    "name": "xx-network",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "xx-network other privacy-focused web3 project"
-  },
-  {
-    "slug": "zano",
-    "name": "zano",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "zano other privacy-focused web3 project"
-  },
-  {
-    "slug": "zcash",
-    "name": "zcash",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "zcash other privacy-focused web3 project"
-  },
-  {
-    "slug": "zeal",
-    "name": "Zeal",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "zeal other privacy-focused web3 project"
-  },
-  {
-    "slug": "zecrey",
-    "name": "Zecrey",
-    "category": "Uncategorized",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "zecrey uncategorized privacy-focused web3 project"
-  },
-  {
-    "slug": "zion",
-    "name": "Zion",
-    "category": "messaging",
-    "description": "Decentralized social network",
-    "searchableText": "zion messaging decentralized social network"
-  },
-  {
-    "slug": "zk-money",
-    "name": "zk.money",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "zk.money other privacy-focused web3 project"
-  },
-  {
-    "slug": "zkbob",
-    "name": "Zkbob",
-    "category": "Uncategorized",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "zkbob uncategorized privacy-focused web3 project"
-  },
-  {
-    "slug": "zkp2p",
-    "name": "Zkp2p",
-    "category": "Uncategorized",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "zkp2p uncategorized privacy-focused web3 project"
-  },
-  {
-    "slug": "zksync",
-    "name": "zkSync",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "zksync other privacy-focused web3 project"
-  },
-  {
-    "slug": "zkvote",
-    "name": "zkVote",
-    "category": "other",
-    "description": "Privacy-focused Web3 project",
-    "searchableText": "zkvote other privacy-focused web3 project"
-  }
-]
+{
+  "projects": [
+    {
+      "id": "0xbow",
+      "name": "0xbow",
+      "category": "unknown",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "0xbow unknown privacy-focused web3 project"
+    },
+    {
+      "id": "1inch-privacy",
+      "name": "1inch Privacy",
+      "category": "Uncategorized",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "1inch privacy uncategorized privacy-focused web3 project"
+    },
+    {
+      "id": "ai-discovered",
+      "name": "Ai Discovered",
+      "category": "Uncategorized",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "ai discovered uncategorized privacy-focused web3 project"
+    },
+    {
+      "id": "aleo",
+      "name": "Aleo",
+      "category": "Uncategorized",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "aleo uncategorized privacy-focused web3 project"
+    },
+    {
+      "id": "alephim",
+      "name": "Alephim",
+      "category": "computing",
+      "description": "Open source DePIN confidential VMs",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "alephim computing open source depin confidential vms"
+    },
+    {
+      "id": "anoma",
+      "name": "Anoma",
+      "category": "Uncategorized",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "anoma uncategorized privacy-focused web3 project"
+    },
+    {
+      "id": "arpa",
+      "name": "Arpa",
+      "category": "computing",
+      "description": "Threshold BLS network for verifiable random number generation",
+      "privacy_techniques": [
+        "Threshold BLS Signatures (BLS-TSS)",
+        "Distributed Key Generation (DKG)",
+        "Multi-Party Computation (MPC)",
+        "Verifiable Random Function (VRF)",
+        "Elliptic Curve Cryptography",
+        "Dynamic Node Grouping",
+        "Byzantine Fault Tolerance"
+      ],
+      "tech_stack": [],
+      "searchableText": "arpa computing threshold bls network for verifiable random number generation threshold bls signatures (bls-tss) distributed key generation (dkg) multi-party computation (mpc) verifiable random function (vrf) elliptic curve cryptography dynamic node grouping byzantine fault tolerance"
+    },
+    {
+      "id": "aztec",
+      "name": "Aztec",
+      "category": "unknown",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "aztec unknown privacy-focused web3 project"
+    },
+    {
+      "id": "aztec-network",
+      "name": "Aztec Network",
+      "category": "defi",
+      "description": "Privacy-first ZK rollup",
+      "privacy_techniques": [
+        "Zero-Knowledge Proofs (ZK-SNARKs)",
+        "PLONK Proof System",
+        "ZK-ZK Rollup (ZK²)",
+        "Encrypted Transactions",
+        "Private State Management",
+        "Nullifier System",
+        "Private Execution Environment (PXE)",
+        "Note Encryption",
+        "Hybrid Public-Private Execution",
+        "Confidential Smart Contracts"
+      ],
+      "tech_stack": [
+        "C++",
+        "TypeScript",
+        "Noir",
+        "Solidity",
+        "Rust",
+        "JavaScript",
+        "Node.js",
+        "Barretenberg",
+        "Aztec.js",
+        "Aztec.nr"
+      ],
+      "searchableText": "aztec network defi privacy-first zk rollup zero-knowledge proofs (zk-snarks) plonk proof system zk-zk rollup (zk²) encrypted transactions private state management nullifier system private execution environment (pxe) note encryption hybrid public-private execution confidential smart contracts c++ typescript noir solidity rust javascript node.js barretenberg aztec.js aztec.nr"
+    },
+    {
+      "id": "aztec-protocol",
+      "name": "Aztec Protocol",
+      "category": "unknown",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "aztec protocol unknown privacy-focused web3 project"
+    },
+    {
+      "id": "beam",
+      "name": "Beam",
+      "category": "currency",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "beam currency privacy-focused web3 project"
+    },
+    {
+      "id": "brave-browser",
+      "name": "Brave Browser",
+      "category": "Uncategorized",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "brave browser uncategorized privacy-focused web3 project"
+    },
+    {
+      "id": "brume-wallet",
+      "name": "Brume Wallet",
+      "category": "wallet",
+      "description": "Privacy-native Ethereum wallet with TOR integration",
+      "privacy_techniques": [
+        "Tor Network Integration",
+        "Built-in Tor routing for all network requests",
+        "Unique IP address per wallet account",
+        "IP address masking from third-parties",
+        "EIP-1193 provider with hardened phishing protections",
+        "Non-custodial architecture",
+        "Open-source and reproducible builds",
+        "Minimal dependencies (20x less than competitors)",
+        "WalletConnect with spoofed domain protection",
+        "Anonymous transaction routing through Tor",
+        "No IP/wallet address sharing with third parties"
+      ],
+      "tech_stack": [
+        "TypeScript",
+        "Next.js",
+        "React",
+        "Capacitor",
+        "WebAssembly (WASM)",
+        "Solidity",
+        "Node.js",
+        "Swift",
+        "Kotlin",
+        "HTML/CSS",
+        "MDX",
+        "JavaScript"
+      ],
+      "searchableText": "brume wallet wallet privacy-native ethereum wallet with tor integration tor network integration built-in tor routing for all network requests unique ip address per wallet account ip address masking from third-parties eip-1193 provider with hardened phishing protections non-custodial architecture open-source and reproducible builds minimal dependencies (20x less than competitors) walletconnect with spoofed domain protection anonymous transaction routing through tor no ip/wallet address sharing with third parties typescript next.js react capacitor webassembly (wasm) solidity node.js swift kotlin html/css mdx javascript"
+    },
+    {
+      "id": "cake-wallet",
+      "name": "Cake Wallet",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "cake wallet other privacy-focused web3 project"
+    },
+    {
+      "id": "chainport",
+      "name": "Chainport",
+      "category": "bridges",
+      "description": "Cross-chain bridge with privacy options",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "chainport bridges cross-chain bridge with privacy options"
+    },
+    {
+      "id": "circom",
+      "name": "Circom",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "circom other privacy-focused web3 project"
+    },
+    {
+      "id": "concordium",
+      "name": "Concordium",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "concordium other privacy-focused web3 project"
+    },
+    {
+      "id": "curve-privacy",
+      "name": "Curve Privacy",
+      "category": "Uncategorized",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "curve privacy uncategorized privacy-focused web3 project"
+    },
+    {
+      "id": "cyclone-protocol",
+      "name": "Cyclone Protocol",
+      "category": "mixing",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "cyclone protocol mixing privacy-focused web3 project"
+    },
+    {
+      "id": "dark-forest",
+      "name": "Dark Forest",
+      "category": "Uncategorized",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "dark forest uncategorized privacy-focused web3 project"
+    },
+    {
+      "id": "darkfi",
+      "name": "darkfi",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "darkfi other privacy-focused web3 project"
+    },
+    {
+      "id": "dash",
+      "name": "Dash",
+      "category": "Uncategorized",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "dash uncategorized privacy-focused web3 project"
+    },
+    {
+      "id": "deeper-network",
+      "name": "Deeper Network",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "deeper network other privacy-focused web3 project"
+    },
+    {
+      "id": "docs",
+      "name": "Docs",
+      "category": "Uncategorized",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "docs uncategorized privacy-focused web3 project"
+    },
+    {
+      "id": "dusk-network",
+      "name": "Dusk Network",
+      "category": "Uncategorized",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "dusk network uncategorized privacy-focused web3 project"
+    },
+    {
+      "id": "edge-wallet",
+      "name": "Edge Wallet",
+      "category": "wallet",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "edge wallet wallet privacy-focused web3 project"
+    },
+    {
+      "id": "elusiv",
+      "name": "Elusiv",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "elusiv other privacy-focused web3 project"
+    },
+    {
+      "id": "eth2-deposit-cli",
+      "name": "Eth2 Deposit Cli",
+      "category": "Uncategorized",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "eth2 deposit cli uncategorized privacy-focused web3 project"
+    },
+    {
+      "id": "farcaster",
+      "name": "Farcaster",
+      "category": "Uncategorized",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "farcaster uncategorized privacy-focused web3 project"
+    },
+    {
+      "id": "fileverse",
+      "name": "fileverse",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "fileverse other privacy-focused web3 project"
+    },
+    {
+      "id": "findora",
+      "name": "Findora",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "findora other privacy-focused web3 project"
+    },
+    {
+      "id": "firn-protocol",
+      "name": "Firn Protocol",
+      "category": "defi",
+      "description": "First zero-knowledge privacy platform in account-based model",
+      "privacy_techniques": [
+        "Zero-Knowledge Proofs (no trusted setup)",
+        "Anonymous Zether Protocol",
+        "ElGamal Encryption (with message in the exponent)",
+        "Sigma-Bullets (Bulletproofs + Σ-protocols)",
+        "Many-out-of-Many Proofs",
+        "Account-based privacy model",
+        "Homomorphic encryption",
+        "Decisional Diffie-Hellman (DDH) assumption",
+        "Inner Product Arguments"
+      ],
+      "tech_stack": [
+        "Solidity",
+        "JavaScript",
+        "TypeScript",
+        "Foundry",
+        "Circom",
+        "SnarkJS",
+        "MetaMask Snap",
+        "Rust (Foundry toolkit)"
+      ],
+      "searchableText": "firn protocol defi first zero-knowledge privacy platform in account-based model zero-knowledge proofs (no trusted setup) anonymous zether protocol elgamal encryption (with message in the exponent) sigma-bullets (bulletproofs + σ-protocols) many-out-of-many proofs account-based privacy model homomorphic encryption decisional diffie-hellman (ddh) assumption inner product arguments solidity javascript typescript foundry circom snarkjs metamask snap rust (foundry toolkit)"
+    },
+    {
+      "id": "firo",
+      "name": "Firo",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "firo other privacy-focused web3 project"
+    },
+    {
+      "id": "fluidkey",
+      "name": "Fluidkey",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "fluidkey other privacy-focused web3 project"
+    },
+    {
+      "id": "frame",
+      "name": "Frame",
+      "category": "wallet",
+      "description": "Open-source, non-custodial Ethereum desktop wallet",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "frame wallet open-source, non-custodial ethereum desktop wallet"
+    },
+    {
+      "id": "gitcoin-grants",
+      "name": "Gitcoin Grants",
+      "category": "Uncategorized",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "gitcoin grants uncategorized privacy-focused web3 project"
+    },
+    {
+      "id": "grin",
+      "name": "Grin",
+      "category": "currency",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "grin currency privacy-focused web3 project"
+    },
+    {
+      "id": "hopr",
+      "name": "HOPR",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "hopr other privacy-focused web3 project"
+    },
+    {
+      "id": "horizen",
+      "name": "Horizen",
+      "category": "Uncategorized",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "horizen uncategorized privacy-focused web3 project"
+    },
+    {
+      "id": "iden3",
+      "name": "iden3",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "iden3 other privacy-focused web3 project"
+    },
+    {
+      "id": "iexec",
+      "name": "Iexec",
+      "category": "computing",
+      "description": "Decentralized cloud computing with TEE",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "iexec computing decentralized cloud computing with tee"
+    },
+    {
+      "id": "incognito",
+      "name": "Incognito",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "incognito other privacy-focused web3 project"
+    },
+    {
+      "id": "iron-fish",
+      "name": "Iron Fish",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "iron fish other privacy-focused web3 project"
+    },
+    {
+      "id": "keep-network",
+      "name": "Keep Network",
+      "category": "Uncategorized",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "keep network uncategorized privacy-focused web3 project"
+    },
+    {
+      "id": "labyrinth",
+      "name": "Labyrinth",
+      "category": "defi",
+      "description": "Multichain Modular Privacy Framework with a Decentralized Compliance Network",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "labyrinth defi multichain modular privacy framework with a decentralized compliance network"
+    },
+    {
+      "id": "lens-protocol",
+      "name": "Lens Protocol",
+      "category": "Uncategorized",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "lens protocol uncategorized privacy-focused web3 project"
+    },
+    {
+      "id": "light-protocol",
+      "name": "Light Protocol",
+      "category": "defi",
+      "description": "Privacy layer for Solana",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "light protocol defi privacy layer for solana"
+    },
+    {
+      "id": "litentry",
+      "name": "Litentry",
+      "category": "did",
+      "description": "Decentralized identity aggregation protocol",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "litentry did decentralized identity aggregation protocol"
+    },
+    {
+      "id": "maci",
+      "name": "Maci",
+      "category": "Uncategorized",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "maci uncategorized privacy-focused web3 project"
+    },
+    {
+      "id": "manta-network",
+      "name": "Manta Network",
+      "category": "infrastructure",
+      "description": "On-Chain Privacy for Web 3, DeFi and more",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "manta network infrastructure on-chain privacy for web 3, defi and more"
+    },
+    {
+      "id": "mask",
+      "name": "Mask",
+      "category": "Uncategorized",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "mask uncategorized privacy-focused web3 project"
+    },
+    {
+      "id": "mask-network",
+      "name": "Mask Network",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "mask network other privacy-focused web3 project"
+    },
+    {
+      "id": "metamask-snaps",
+      "name": "Metamask Snaps",
+      "category": "Uncategorized",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "metamask snaps uncategorized privacy-focused web3 project"
+    },
+    {
+      "id": "mina-protocol",
+      "name": "Mina Protocol",
+      "category": "Uncategorized",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "mina protocol uncategorized privacy-focused web3 project"
+    },
+    {
+      "id": "mobilecoin",
+      "name": "MobileCoin",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "mobilecoin other privacy-focused web3 project"
+    },
+    {
+      "id": "monero",
+      "name": "monero",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "monero other privacy-focused web3 project"
+    },
+    {
+      "id": "mysterium-network",
+      "name": "mysterium-network",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "mysterium-network other privacy-focused web3 project"
+    },
+    {
+      "id": "nighthawk-wallet",
+      "name": "Nighthawk Wallet",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "nighthawk wallet other privacy-focused web3 project"
+    },
+    {
+      "id": "nillion",
+      "name": "Nillion",
+      "category": "computing",
+      "description": "Decentralizes trust for sensitive data",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "nillion computing decentralizes trust for sensitive data"
+    },
+    {
+      "id": "nucypher",
+      "name": "Nucypher",
+      "category": "Uncategorized",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "nucypher uncategorized privacy-focused web3 project"
+    },
+    {
+      "id": "nym",
+      "name": "Nym",
+      "category": "infrastructure",
+      "description": "Infrastructure to prevent data leakage by protecting metadata",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "nym infrastructure infrastructure to prevent data leakage by protecting metadata"
+    },
+    {
+      "id": "oasis-network",
+      "name": "oasis-network",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "oasis-network other privacy-focused web3 project"
+    },
+    {
+      "id": "orchid",
+      "name": "Orchid",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "orchid other privacy-focused web3 project"
+    },
+    {
+      "id": "oxen",
+      "name": "oxen",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "oxen other privacy-focused web3 project"
+    },
+    {
+      "id": "panther-protocol",
+      "name": "Panther Protocol",
+      "category": "defi",
+      "description": "Decentralized privacy metaprotocol",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "panther protocol defi decentralized privacy metaprotocol"
+    },
+    {
+      "id": "penumbra",
+      "name": "Penumbra",
+      "category": "infrastructure",
+      "description": "Shielded pool protocol with cross-chain privacy",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "penumbra infrastructure shielded pool protocol with cross-chain privacy"
+    },
+    {
+      "id": "phala-network",
+      "name": "Phala Network",
+      "category": "computing",
+      "description": "TEE-based Permissionless Computing Protocol",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "phala network computing tee-based permissionless computing protocol"
+    },
+    {
+      "id": "pirate-chain",
+      "name": "Pirate Chain",
+      "category": "currency",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "pirate chain currency privacy-focused web3 project"
+    },
+    {
+      "id": "platon-network",
+      "name": "Platon Network",
+      "category": "computing",
+      "description": "Blockchain and privacy-preserving computation technologies",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "platon network computing blockchain and privacy-preserving computation technologies"
+    },
+    {
+      "id": "polygon-hermez",
+      "name": "polygon-hermez",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "polygon-hermez other privacy-focused web3 project"
+    },
+    {
+      "id": "polygon-id",
+      "name": "Polygon Id",
+      "category": "did",
+      "description": "Privacy-preserving identity protocol",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "polygon id did privacy-preserving identity protocol"
+    },
+    {
+      "id": "polygon-nightfall",
+      "name": "Polygon Nightfall",
+      "category": "layer2",
+      "description": "Privacy-Focused Rollup for Enterprises",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "polygon nightfall layer2 privacy-focused rollup for enterprises"
+    },
+    {
+      "id": "polygon-zero",
+      "name": "polygon-zero",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "polygon-zero other privacy-focused web3 project"
+    },
+    {
+      "id": "privatepool",
+      "name": "privatepool",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "privatepool other privacy-focused web3 project"
+    },
+    {
+      "id": "pse--privacy---scaling-explorations-",
+      "name": "Pse  Privacy   Scaling Explorations ",
+      "category": "Uncategorized",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "pse  privacy   scaling explorations  uncategorized privacy-focused web3 project"
+    },
+    {
+      "id": "railgun",
+      "name": "Railgun",
+      "category": "defi",
+      "description": "Privacy protocol for DeFi",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "railgun defi privacy protocol for defi"
+    },
+    {
+      "id": "railgun-relay-adapt",
+      "name": "Railgun Relay Adapt",
+      "category": "bridges",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "railgun relay adapt bridges privacy-focused web3 project"
+    },
+    {
+      "id": "railway-wallet",
+      "name": "Railway Wallet",
+      "category": "wallet",
+      "description": "Privacy-focused DeFi wallet",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "railway wallet wallet privacy-focused defi wallet"
+    },
+    {
+      "id": "ronin",
+      "name": "Ronin",
+      "category": "Uncategorized",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "ronin uncategorized privacy-focused web3 project"
+    },
+    {
+      "id": "rotki",
+      "name": "rotki",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "rotki other privacy-focused web3 project"
+    },
+    {
+      "id": "samourai-wallet",
+      "name": "Samourai Wallet",
+      "category": "Uncategorized",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "samourai wallet uncategorized privacy-focused web3 project"
+    },
+    {
+      "id": "scroll",
+      "name": "Scroll",
+      "category": "layer2",
+      "description": "zkEVM-based zkRollup",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "scroll layer2 zkevm-based zkrollup"
+    },
+    {
+      "id": "secret-network",
+      "name": "Secret Network",
+      "category": "infrastructure",
+      "description": "First blockchain with customizable privacy",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "secret network infrastructure first blockchain with customizable privacy"
+    },
+    {
+      "id": "semaphore",
+      "name": "semaphore",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "semaphore other privacy-focused web3 project"
+    },
+    {
+      "id": "sentinel",
+      "name": "Sentinel",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "sentinel other privacy-focused web3 project"
+    },
+    {
+      "id": "session",
+      "name": "Session",
+      "category": "messaging",
+      "description": "Private messenger",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "session messaging private messenger"
+    },
+    {
+      "id": "sienna-network",
+      "name": "sienna-network",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "sienna-network other privacy-focused web3 project"
+    },
+    {
+      "id": "silent-protocol",
+      "name": "Silent Protocol",
+      "category": "defi",
+      "description": "First protocol enabling compliant full-stack privacy for smart contract assets",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "silent protocol defi first protocol enabling compliant full-stack privacy for smart contract assets"
+    },
+    {
+      "id": "sismo",
+      "name": "Sismo",
+      "category": "did",
+      "description": "Privacy-preserving reputation protocol",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "sismo did privacy-preserving reputation protocol"
+    },
+    {
+      "id": "snapshot-x",
+      "name": "Snapshot X",
+      "category": "Uncategorized",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "snapshot x uncategorized privacy-focused web3 project"
+    },
+    {
+      "id": "snarkjs",
+      "name": "snarkjs",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "snarkjs other privacy-focused web3 project"
+    },
+    {
+      "id": "starkex",
+      "name": "StarkEX",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "starkex other privacy-focused web3 project"
+    },
+    {
+      "id": "starknet",
+      "name": "Starknet",
+      "category": "Uncategorized",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "starknet uncategorized privacy-focused web3 project"
+    },
+    {
+      "id": "status",
+      "name": "Status",
+      "category": "messaging",
+      "description": "Secure messaging and crypto wallet",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "status messaging secure messaging and crypto wallet"
+    },
+    {
+      "id": "suterusu",
+      "name": "Suterusu",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "suterusu other privacy-focused web3 project"
+    },
+    {
+      "id": "taiko",
+      "name": "Taiko",
+      "category": "layer2",
+      "description": "Type 1 zkEVM",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "taiko layer2 type 1 zkevm"
+    },
+    {
+      "id": "ten",
+      "name": "Ten",
+      "category": "layer2",
+      "description": "Layer 2 solution extending Web3 Scalability with Encryption",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "ten layer2 layer 2 solution extending web3 scalability with encryption"
+    },
+    {
+      "id": "tornado-cash",
+      "name": "Tornado Cash",
+      "category": "privacy_mixer",
+      "description": "Fully decentralized, non-custodial cryptocurrency mixer protocol that runs on Ethereum Virtual Machine-compatible networks, enabling private transactions using zero-knowledge proof technology. Tornado Cash was sanctioned by OFAC in August 2022 but had sanctions lifted in March 2025 following a Fifth Circuit court ruling.",
+      "privacy_techniques": [
+        "zk-SNARKs",
+        "multi-party computation (MPC)"
+      ],
+      "tech_stack": [
+        "Circom",
+        "Websnark",
+        "Solidity",
+        "JavaScript"
+      ],
+      "searchableText": "tornado cash privacy_mixer fully decentralized, non-custodial cryptocurrency mixer protocol that runs on ethereum virtual machine-compatible networks, enabling private transactions using zero-knowledge proof technology. tornado cash was sanctioned by ofac in august 2022 but had sanctions lifted in march 2025 following a fifth circuit court ruling. zk-snarks multi-party computation (mpc) circom websnark solidity javascript"
+    },
+    {
+      "id": "typhoon-network",
+      "name": "typhoon-network",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "typhoon-network other privacy-focused web3 project"
+    },
+    {
+      "id": "umbra-cash",
+      "name": "Umbra Cash",
+      "category": "Uncategorized",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "umbra cash uncategorized privacy-focused web3 project"
+    },
+    {
+      "id": "veramo",
+      "name": "Veramo",
+      "category": "did",
+      "description": "JavaScript framework for verifiable data",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "veramo did javascript framework for verifiable data"
+    },
+    {
+      "id": "wasabi-wallet",
+      "name": "Wasabi Wallet",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "wasabi wallet other privacy-focused web3 project"
+    },
+    {
+      "id": "webb-protocol",
+      "name": "Webb Protocol",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "webb protocol other privacy-focused web3 project"
+    },
+    {
+      "id": "xx-network",
+      "name": "xx-network",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "xx-network other privacy-focused web3 project"
+    },
+    {
+      "id": "zano",
+      "name": "zano",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "zano other privacy-focused web3 project"
+    },
+    {
+      "id": "zcash",
+      "name": "zcash",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "zcash other privacy-focused web3 project"
+    },
+    {
+      "id": "zeal",
+      "name": "Zeal",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "zeal other privacy-focused web3 project"
+    },
+    {
+      "id": "zecrey",
+      "name": "Zecrey",
+      "category": "Uncategorized",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "zecrey uncategorized privacy-focused web3 project"
+    },
+    {
+      "id": "zion",
+      "name": "Zion",
+      "category": "messaging",
+      "description": "Decentralized social network",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "zion messaging decentralized social network"
+    },
+    {
+      "id": "zk-money",
+      "name": "zk.money",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "zk.money other privacy-focused web3 project"
+    },
+    {
+      "id": "zkbob",
+      "name": "Zkbob",
+      "category": "Uncategorized",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "zkbob uncategorized privacy-focused web3 project"
+    },
+    {
+      "id": "zkp2p",
+      "name": "Zkp2p",
+      "category": "Uncategorized",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "zkp2p uncategorized privacy-focused web3 project"
+    },
+    {
+      "id": "zksync",
+      "name": "zkSync",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "zksync other privacy-focused web3 project"
+    },
+    {
+      "id": "zkvote",
+      "name": "zkVote",
+      "category": "other",
+      "description": "Privacy-focused Web3 project",
+      "privacy_techniques": [],
+      "tech_stack": [],
+      "searchableText": "zkvote other privacy-focused web3 project"
+    }
+  ],
+  "lunr_index": "{\"version\":\"2.3.9\",\"fields\":[\"name\",\"category\",\"description\",\"searchableText\"],\"fieldVectors\":[[\"name/0xbow\",[0,43.999]],[\"category/0xbow\",[1,11.252]],[\"description/0xbow\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/0xbow\",[0,4.306,1,3.231,2,0.397,3,0.303,4,0.296,5,0.288]],[\"name/1inch-privacy\",[2,3.072,6,33.309]],[\"category/1inch-privacy\",[7,2.515]],[\"description/1inch-privacy\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/1inch-privacy\",[2,0.507,3,0.287,4,0.28,5,0.273,6,4.078,7,0.684]],[\"name/ai-discovered\",[8,33.309,9,33.309]],[\"category/ai-discovered\",[7,2.515]],[\"description/ai-discovered\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/ai-discovered\",[2,0.376,3,0.287,4,0.28,5,0.273,7,0.684,8,4.078,9,4.078]],[\"name/aleo\",[10,43.999]],[\"category/aleo\",[7,2.515]],[\"description/aleo\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/aleo\",[2,0.397,3,0.303,4,0.296,5,0.288,7,0.722,10,4.306]],[\"name/alephim\",[11,43.999]],[\"category/alephim\",[12,7.604]],[\"description/alephim\",[13,8.731,14,8.731,15,10.996,16,10.029,17,10.996]],[\"searchableText/alephim\",[11,4.078,12,2.068,13,3.238,14,3.238,15,4.078,16,3.719,17,4.078]],[\"name/anoma\",[18,43.999]],[\"category/anoma\",[7,2.515]],[\"description/anoma\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/anoma\",[2,0.397,3,0.303,4,0.296,5,0.288,7,0.722,18,4.306]],[\"name/arpa\",[19,43.999]],[\"category/arpa\",[12,7.604]],[\"description/arpa\",[20,9.368,21,9.368,22,2.742,23,7.93,24,9.368,25,9.368,26,9.368]],[\"searchableText/arpa\",[12,1.394,19,1.642,20,2.749,21,3.545,22,0.481,23,2.327,24,2.749,25,1.642,26,2.749,27,1.862,28,1.862,29,1.862,30,1.862,31,1.862,32,1.642,33,1.498,34,1.642,35,1.862,36,1.862,37,1.862,38,1.498,39,1.862,40,1.862,41,1.862,42,1.862,43,1.862,44,1.862,45,1.862]],[\"name/aztec\",[46,33.018]],[\"category/aztec\",[1,11.252]],[\"description/aztec\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/aztec\",[1,3.231,2,0.397,3,0.303,4,0.296,5,0.288,46,3.231]],[\"name/aztec-network\",[22,9.749,46,24.996]],[\"category/aztec-network\",[47,6.949]],[\"description/aztec-network\",[2,1.111,48,8.193,49,10.984,50,10.193]],[\"searchableText/aztec-network\",[2,0.117,16,1.154,22,0.37,46,0.949,47,0.586,48,0.861,49,3.604,50,1.862,51,0.902,52,1.004,53,1.862,54,1.265,55,1.434,56,2.493,57,1.862,58,1.071,59,2.317,60,1.434,61,1.434,62,1.434,63,2.493,64,1.434,65,1.434,66,1.434,67,1.434,68,1.434,69,1.154,70,1.154,71,1.434,72,1.154,73,1.434,74,1.071,75,1.265,76,0.949,77,1.265,78,1.434,79,1.434,80,1.434]],[\"name/aztec-protocol\",[46,24.996,81,10.73]],[\"category/aztec-protocol\",[1,11.252]],[\"description/aztec-protocol\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/aztec-protocol\",[1,3.06,2,0.376,3,0.287,4,0.28,5,0.273,46,3.06,81,1.314]],[\"name/beam\",[82,43.999]],[\"category/beam\",[83,11.252]],[\"description/beam\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/beam\",[2,0.397,3,0.303,4,0.296,5,0.288,82,4.306,83,3.231]],[\"name/brave-browser\",[84,33.309,85,33.309]],[\"category/brave-browser\",[7,2.515]],[\"description/brave-browser\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/brave-browser\",[2,0.376,3,0.287,4,0.28,5,0.273,7,0.684,84,4.078,85,4.078]],[\"name/brume-wallet\",[86,33.309,87,13.452]],[\"category/brume-wallet\",[87,6.056]],[\"description/brume-wallet\",[2,0.933,87,4.086,88,10.117,89,7.592,90,10.117,91,10.117]],[\"searchableText/brume-wallet\",[2,0.084,13,0.72,14,0.72,22,0.479,33,1.494,58,0.768,72,0.827,74,0.768,76,0.681,77,0.907,86,0.907,87,1.108,88,0.907,89,0.681,90,2.743,91,1.638,92,1.028,93,1.856,94,1.028,95,1.028,96,1.856,97,2.538,98,1.028,99,0.827,100,0.72,101,1.856,102,1.028,103,1.028,104,1.028,105,1.028,106,1.028,107,1.494,108,0.72,109,0.72,110,1.028,111,1.028,112,1.028,113,1.028,114,1.028,115,1.028,116,1.028,117,1.028,118,1.028,119,1.028,120,1.028,121,0.907,122,1.028,123,1.028,124,1.028,125,1.028,126,1.028,127,1.028,128,1.028,129,1.028,130,1.028,131,1.028,132,1.028,133,1.028]],[\"name/cake-wallet\",[87,13.452,134,33.309]],[\"category/cake-wallet\",[]],[\"description/cake-wallet\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/cake-wallet\",[2,0.397,3,0.303,4,0.296,5,0.288,87,1.739,134,4.306]],[\"name/chainport\",[135,43.999]],[\"category/chainport\",[136,11.906]],[\"description/chainport\",[2,1.014,136,8.731,137,9.308,138,7.481,139,10.996]],[\"searchableText/chainport\",[2,0.376,135,4.078,136,4.363,137,3.452,138,2.774,139,4.078]],[\"name/circom\",[140,37.244]],[\"category/circom\",[]],[\"description/circom\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/circom\",[2,0.421,3,0.321,4,0.313,5,0.305,140,3.86]],[\"name/concordium\",[141,43.999]],[\"category/concordium\",[]],[\"description/concordium\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/concordium\",[2,0.421,3,0.321,4,0.313,5,0.305,141,4.561]],[\"name/curve-privacy\",[2,3.072,38,30.382]],[\"category/curve-privacy\",[7,2.515]],[\"description/curve-privacy\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/curve-privacy\",[2,0.507,3,0.287,4,0.28,5,0.273,7,0.684,38,3.719]],[\"name/cyclone-protocol\",[81,10.73,142,33.309]],[\"category/cyclone-protocol\",[143,14.994]],[\"description/cyclone-protocol\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/cyclone-protocol\",[2,0.376,3,0.287,4,0.28,5,0.273,81,1.314,142,4.078,143,4.078]],[\"name/dark-forest\",[144,33.309,145,33.309]],[\"category/dark-forest\",[7,2.515]],[\"description/dark-forest\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/dark-forest\",[2,0.376,3,0.287,4,0.28,5,0.273,7,0.684,144,4.078,145,4.078]],[\"name/darkfi\",[146,43.999]],[\"category/darkfi\",[]],[\"description/darkfi\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/darkfi\",[2,0.421,3,0.321,4,0.313,5,0.305,146,4.561]],[\"name/dash\",[147,43.999]],[\"category/dash\",[7,2.515]],[\"description/dash\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/dash\",[2,0.397,3,0.303,4,0.296,5,0.288,7,0.722,147,4.306]],[\"name/deeper-network\",[22,9.749,148,33.309]],[\"category/deeper-network\",[]],[\"description/deeper-network\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/deeper-network\",[2,0.397,3,0.303,4,0.296,5,0.288,22,1.26,148,4.306]],[\"name/docs\",[149,43.999]],[\"category/docs\",[7,2.515]],[\"description/docs\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/docs\",[2,0.397,3,0.303,4,0.296,5,0.288,7,0.722,149,4.306]],[\"name/dusk-network\",[22,9.749,150,33.309]],[\"category/dusk-network\",[7,2.515]],[\"description/dusk-network\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/dusk-network\",[2,0.376,3,0.287,4,0.28,5,0.273,7,0.684,22,1.193,150,4.078]],[\"name/edge-wallet\",[87,13.452,151,33.309]],[\"category/edge-wallet\",[87,6.056]],[\"description/edge-wallet\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/edge-wallet\",[2,0.376,3,0.287,4,0.28,5,0.273,87,2.219,151,4.078]],[\"name/elusiv\",[152,43.999]],[\"category/elusiv\",[]],[\"description/elusiv\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/elusiv\",[2,0.421,3,0.321,4,0.313,5,0.305,152,4.561]],[\"name/eth2-deposit-cli\",[153,26.798,154,26.798,155,26.798]],[\"category/eth2-deposit-cli\",[7,2.515]],[\"description/eth2-deposit-cli\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/eth2-deposit-cli\",[2,0.357,3,0.273,4,0.266,5,0.259,7,0.65,153,3.873,154,3.873,155,3.873]],[\"name/farcaster\",[156,43.999]],[\"category/farcaster\",[7,2.515]],[\"description/farcaster\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/farcaster\",[2,0.397,3,0.303,4,0.296,5,0.288,7,0.722,156,4.306]],[\"name/fileverse\",[157,43.999]],[\"category/fileverse\",[]],[\"description/fileverse\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/fileverse\",[2,0.421,3,0.321,4,0.313,5,0.305,157,4.561]],[\"name/findora\",[158,43.999]],[\"category/findora\",[]],[\"description/findora\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/findora\",[2,0.421,3,0.321,4,0.313,5,0.305,158,4.561]],[\"name/firn-protocol\",[81,10.73,159,33.309]],[\"category/firn-protocol\",[47,6.949]],[\"description/firn-protocol\",[2,0.805,48,5.935,51,6.22,52,6.926,99,7.956,160,8.723,161,6.546,162,8.723]],[\"searchableText/firn-protocol\",[2,0.18,47,0.511,48,0.75,51,1.39,52,1.548,53,1.65,57,1.65,72,1.005,74,0.933,75,1.102,76,0.827,81,0.844,99,1.778,121,1.102,140,0.933,159,1.102,160,1.102,161,1.462,162,1.949,163,1.005,164,1.249,165,1.249,166,1.249,167,0.75,168,1.249,169,1.249,170,1.249,171,1.249,172,2.209,173,2.209,174,1.249,175,1.249,176,1.249,177,1.249,178,1.249,179,1.249,180,1.249,181,1.249,182,1.249,183,1.249,184,2.209,185,1.005,186,1.005,187,1.005,188,1.249]],[\"name/firo\",[189,43.999]],[\"category/firo\",[]],[\"description/firo\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/firo\",[2,0.421,3,0.321,4,0.313,5,0.305,189,4.561]],[\"name/fluidkey\",[190,43.999]],[\"category/fluidkey\",[]],[\"description/fluidkey\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/fluidkey\",[2,0.421,3,0.321,4,0.313,5,0.305,190,4.561]],[\"name/frame\",[191,43.999]],[\"category/frame\",[87,6.056]],[\"description/frame\",[13,7.439,14,7.439,87,3.784,89,7.03,108,7.439,109,7.439,192,9.368]],[\"searchableText/frame\",[13,2.928,14,2.928,87,2.071,89,2.767,108,2.928,109,2.928,191,3.687,192,3.687]],[\"name/gitcoin-grants\",[193,33.309,194,33.309]],[\"category/gitcoin-grants\",[7,2.515]],[\"description/gitcoin-grants\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/gitcoin-grants\",[2,0.376,3,0.287,4,0.28,5,0.273,7,0.684,193,4.078,194,4.078]],[\"name/grin\",[195,43.999]],[\"category/grin\",[83,11.252]],[\"description/grin\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/grin\",[2,0.397,3,0.303,4,0.296,5,0.288,83,3.231,195,4.306]],[\"name/hopr\",[196,43.999]],[\"category/hopr\",[]],[\"description/hopr\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/hopr\",[2,0.421,3,0.321,4,0.313,5,0.305,196,4.561]],[\"name/horizen\",[197,43.999]],[\"category/horizen\",[7,2.515]],[\"description/horizen\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/horizen\",[2,0.397,3,0.303,4,0.296,5,0.288,7,0.722,197,4.306]],[\"name/iden3\",[198,43.999]],[\"category/iden3\",[]],[\"description/iden3\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/iden3\",[2,0.421,3,0.321,4,0.313,5,0.305,198,4.561]],[\"name/iexec\",[199,43.999]],[\"category/iexec\",[12,7.604]],[\"description/iexec\",[12,6.107,200,6.513,201,12.042,202,10.193]],[\"searchableText/iexec\",[12,2.89,199,4.306,200,2.329,201,4.306,202,3.645]],[\"name/incognito\",[203,43.999]],[\"category/incognito\",[]],[\"description/incognito\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/incognito\",[2,0.421,3,0.321,4,0.313,5,0.305,203,4.561]],[\"name/iron-fish\",[204,33.309,205,33.309]],[\"category/iron-fish\",[]],[\"description/iron-fish\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/iron-fish\",[2,0.397,3,0.303,4,0.296,5,0.288,204,4.306,205,4.306]],[\"name/keep-network\",[22,9.749,206,33.309]],[\"category/keep-network\",[7,2.515]],[\"description/keep-network\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/keep-network\",[2,0.376,3,0.287,4,0.28,5,0.273,7,0.684,22,1.193,206,4.078]],[\"name/labyrinth\",[207,43.999]],[\"category/labyrinth\",[47,6.949]],[\"description/labyrinth\",[2,0.864,22,2.742,200,5.067,208,9.368,209,9.368,210,7.93,211,9.368]],[\"searchableText/labyrinth\",[2,0.34,22,1.079,47,1.709,200,1.994,207,3.687,208,3.687,209,3.687,210,3.121,211,3.687]],[\"name/lens-protocol\",[81,10.73,212,33.309]],[\"category/lens-protocol\",[7,2.515]],[\"description/lens-protocol\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/lens-protocol\",[2,0.376,3,0.287,4,0.28,5,0.273,7,0.684,81,1.314,212,4.078]],[\"name/light-protocol\",[81,10.73,213,33.309]],[\"category/light-protocol\",[47,6.949]],[\"description/light-protocol\",[2,1.228,214,11.265,215,13.308]],[\"searchableText/light-protocol\",[2,0.397,47,1.996,81,1.387,213,4.306,214,3.645,215,4.306]],[\"name/litentry\",[216,43.999]],[\"category/litentry\",[]],[\"description/litentry\",[81,3.879,200,6.513,217,10.193,218,12.042]],[\"searchableText/litentry\",[81,1.469,200,2.467,216,4.561,217,3.86,218,4.561]],[\"name/maci\",[219,43.999]],[\"category/maci\",[7,2.515]],[\"description/maci\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/maci\",[2,0.397,3,0.303,4,0.296,5,0.288,7,0.722,219,4.306]],[\"name/manta-network\",[22,9.749,220,33.309]],[\"category/manta-network\",[221,9.766]],[\"description/manta-network\",[2,0.933,47,4.689,138,6.883,222,10.117,223,10.117,224,10.117]],[\"searchableText/manta-network\",[2,0.34,22,1.079,47,1.709,138,2.509,220,3.687,221,2.401,222,3.687,223,3.687,224,3.687]],[\"name/mask\",[100,34.938]],[\"category/mask\",[7,2.515]],[\"description/mask\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/mask\",[2,0.397,3,0.303,4,0.296,5,0.288,7,0.722,100,3.419]],[\"name/mask-network\",[22,9.749,100,26.45]],[\"category/mask-network\",[]],[\"description/mask-network\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/mask-network\",[2,0.397,3,0.303,4,0.296,5,0.288,22,1.26,100,3.419]],[\"name/metamask-snaps\",[186,30.382,187,30.382]],[\"category/metamask-snaps\",[7,2.515]],[\"description/metamask-snaps\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/metamask-snaps\",[2,0.376,3,0.287,4,0.28,5,0.273,7,0.684,186,3.719,187,3.719]],[\"name/mina-protocol\",[81,10.73,225,33.309]],[\"category/mina-protocol\",[7,2.515]],[\"description/mina-protocol\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/mina-protocol\",[2,0.376,3,0.287,4,0.28,5,0.273,7,0.684,81,1.314,225,4.078]],[\"name/mobilecoin\",[226,43.999]],[\"category/mobilecoin\",[]],[\"description/mobilecoin\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/mobilecoin\",[2,0.421,3,0.321,4,0.313,5,0.305,226,4.561]],[\"name/monero\",[227,43.999]],[\"category/monero\",[]],[\"description/monero\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/monero\",[2,0.421,3,0.321,4,0.313,5,0.305,227,4.561]],[\"name/mysterium-network\",[22,9.749,228,33.309]],[\"category/mysterium-network\",[]],[\"description/mysterium-network\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/mysterium-network\",[2,0.397,3,0.303,4,0.296,5,0.288,22,1.26,228,4.306]],[\"name/nighthawk-wallet\",[87,13.452,229,33.309]],[\"category/nighthawk-wallet\",[]],[\"description/nighthawk-wallet\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/nighthawk-wallet\",[2,0.397,3,0.303,4,0.296,5,0.288,87,1.739,229,4.306]],[\"name/nillion\",[230,43.999]],[\"category/nillion\",[12,7.604]],[\"description/nillion\",[163,10.984,200,6.513,231,12.042,232,9.037]],[\"searchableText/nillion\",[12,2.183,163,3.927,200,2.329,230,4.306,231,4.306,232,3.231]],[\"name/nucypher\",[233,43.999]],[\"category/nucypher\",[7,2.515]],[\"description/nucypher\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/nucypher\",[2,0.397,3,0.303,4,0.296,5,0.288,7,0.722,233,4.306]],[\"name/nym\",[234,43.999]],[\"category/nym\",[221,9.766]],[\"description/nym\",[107,9.228,221,6.589,232,7.592,235,10.117,236,10.117,237,10.117]],[\"searchableText/nym\",[107,3.532,221,3.456,232,2.906,234,3.873,235,3.873,236,3.873,237,3.873]],[\"name/oasis-network\",[22,9.749,238,33.309]],[\"category/oasis-network\",[]],[\"description/oasis-network\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/oasis-network\",[2,0.397,3,0.303,4,0.296,5,0.288,22,1.26,238,4.306]],[\"name/orchid\",[239,43.999]],[\"category/orchid\",[]],[\"description/orchid\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/orchid\",[2,0.421,3,0.321,4,0.313,5,0.305,239,4.561]],[\"name/oxen\",[240,43.999]],[\"category/oxen\",[]],[\"description/oxen\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/oxen\",[2,0.421,3,0.321,4,0.313,5,0.305,240,4.561]],[\"name/panther-protocol\",[81,10.73,241,33.309]],[\"category/panther-protocol\",[47,6.949]],[\"description/panther-protocol\",[2,1.228,200,7.198,242,13.308]],[\"searchableText/panther-protocol\",[2,0.397,47,1.996,81,1.387,200,2.329,241,4.306,242,4.306]],[\"name/penumbra\",[243,43.999]],[\"category/penumbra\",[221,9.766]],[\"description/penumbra\",[2,0.933,81,3.259,137,8.564,138,6.883,244,10.117,245,10.117]],[\"searchableText/penumbra\",[2,0.357,81,1.248,137,3.278,138,2.635,221,2.522,243,3.873,244,3.873,245,3.873]],[\"name/phala-network\",[22,9.749,246,33.309]],[\"category/phala-network\",[12,7.604]],[\"description/phala-network\",[12,5.576,81,3.542,161,8.252,202,9.308,247,10.996]],[\"searchableText/phala-network\",[12,2.691,22,1.133,81,1.248,161,2.906,202,3.278,246,3.873,247,3.873]],[\"name/pirate-chain\",[138,22.662,248,33.309]],[\"category/pirate-chain\",[83,11.252]],[\"description/pirate-chain\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/pirate-chain\",[2,0.376,3,0.287,4,0.28,5,0.273,83,3.06,138,2.774,248,4.078]],[\"name/platon-network\",[22,9.749,249,33.309]],[\"category/platon-network\",[12,7.604]],[\"description/platon-network\",[2,1.014,12,5.576,250,9.308,251,8.252,252,9.308]],[\"searchableText/platon-network\",[2,0.357,12,2.691,22,1.133,249,3.873,250,3.278,251,2.906,252,3.278]],[\"name/polygon-hermez\",[253,22.662,254,33.309]],[\"category/polygon-hermez\",[]],[\"description/polygon-hermez\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/polygon-hermez\",[2,0.397,3,0.303,4,0.296,5,0.288,253,2.929,254,4.306]],[\"name/polygon-id\",[253,22.662,255,33.309]],[\"category/polygon-id\",[]],[\"description/polygon-id\",[2,1.111,81,3.879,217,10.193,251,9.037]],[\"searchableText/polygon-id\",[2,0.397,81,1.387,217,3.645,251,3.231,253,2.929,255,4.306]],[\"name/polygon-nightfall\",[253,22.662,256,33.309]],[\"category/polygon-nightfall\",[257,10.201]],[\"description/polygon-nightfall\",[2,1.111,3,0.848,50,10.193,258,12.042]],[\"searchableText/polygon-nightfall\",[2,0.376,3,0.287,50,3.452,253,2.774,256,4.078,257,2.774,258,4.078]],[\"name/polygon-zero\",[51,23.751,253,22.662]],[\"category/polygon-zero\",[]],[\"description/polygon-zero\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/polygon-zero\",[2,0.397,3,0.303,4,0.296,5,0.288,51,3.07,253,2.929]],[\"name/privatepool\",[259,43.999]],[\"category/privatepool\",[]],[\"description/privatepool\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/privatepool\",[2,0.421,3,0.321,4,0.313,5,0.305,259,4.561]],[\"name/pse--privacy---scaling-explorations-\",[2,2.068,260,22.417,261,22.417,262,22.417]],[\"category/pse--privacy---scaling-explorations-\",[7,2.515]],[\"description/pse--privacy---scaling-explorations-\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/pse--privacy---scaling-explorations-\",[2,0.473,3,0.26,4,0.253,5,0.247,7,0.619,260,3.687,261,3.687,262,3.687]],[\"name/railgun\",[263,37.244]],[\"category/railgun\",[47,6.949]],[\"description/railgun\",[2,1.228,47,6.168,81,4.287]],[\"searchableText/railgun\",[2,0.421,47,2.743,81,1.469,263,3.86]],[\"name/railgun-relay-adapt\",[263,22.684,264,26.798,265,26.798]],[\"category/railgun-relay-adapt\",[136,11.906]],[\"description/railgun-relay-adapt\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/railgun-relay-adapt\",[2,0.357,3,0.273,4,0.266,5,0.259,136,3.075,263,3.278,264,3.873,265,3.873]],[\"name/railway-wallet\",[87,13.452,266,33.309]],[\"category/railway-wallet\",[87,6.056]],[\"description/railway-wallet\",[2,1.111,3,0.848,47,5.581,87,4.863]],[\"searchableText/railway-wallet\",[2,0.376,3,0.287,47,1.89,87,2.51,266,4.078]],[\"name/ronin\",[267,43.999]],[\"category/ronin\",[7,2.515]],[\"description/ronin\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/ronin\",[2,0.397,3,0.303,4,0.296,5,0.288,7,0.722,267,4.306]],[\"name/rotki\",[268,43.999]],[\"category/rotki\",[]],[\"description/rotki\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/rotki\",[2,0.421,3,0.321,4,0.313,5,0.305,268,4.561]],[\"name/samourai-wallet\",[87,13.452,269,33.309]],[\"category/samourai-wallet\",[7,2.515]],[\"description/samourai-wallet\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/samourai-wallet\",[2,0.376,3,0.287,4,0.28,5,0.273,7,0.684,87,1.647,269,4.078]],[\"name/scroll\",[270,43.999]],[\"category/scroll\",[257,10.201]],[\"description/scroll\",[161,9.986,271,11.265,272,13.308]],[\"searchableText/scroll\",[161,3.422,257,3.103,270,4.561,271,3.86,272,4.561]],[\"name/secret-network\",[22,9.749,273,33.309]],[\"category/secret-network\",[221,9.766]],[\"description/secret-network\",[2,1.111,48,8.193,250,10.193,274,12.042]],[\"searchableText/secret-network\",[2,0.376,22,1.193,48,2.774,221,2.656,250,3.452,273,4.078,274,4.078]],[\"name/semaphore\",[275,43.999]],[\"category/semaphore\",[]],[\"description/semaphore\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/semaphore\",[2,0.421,3,0.321,4,0.313,5,0.305,275,4.561]],[\"name/sentinel\",[276,43.999]],[\"category/sentinel\",[]],[\"description/sentinel\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/sentinel\",[2,0.421,3,0.321,4,0.313,5,0.305,276,4.561]],[\"name/session\",[277,43.999]],[\"category/session\",[167,10.201]],[\"description/session\",[59,11.808,278,14.871]],[\"searchableText/session\",[59,3.849,167,3.298,277,4.848,278,4.848]],[\"name/sienna-network\",[22,9.749,279,33.309]],[\"category/sienna-network\",[]],[\"description/sienna-network\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/sienna-network\",[2,0.397,3,0.303,4,0.296,5,0.288,22,1.26,279,4.306]],[\"name/silent-protocol\",[81,10.73,280,33.309]],[\"category/silent-protocol\",[47,6.949]],[\"description/silent-protocol\",[2,0.707,48,5.216,69,6.993,70,6.993,81,2.47,281,6.489,282,7.666,283,7.666,284,7.666,285,7.666]],[\"searchableText/silent-protocol\",[2,0.285,47,1.434,48,2.105,69,2.823,70,2.823,81,1.458,280,3.094,281,2.619,282,3.094,283,3.094,284,3.094,285,3.094]],[\"name/sismo\",[286,43.999]],[\"category/sismo\",[]],[\"description/sismo\",[2,1.111,81,3.879,251,9.037,287,12.042]],[\"searchableText/sismo\",[2,0.421,81,1.469,251,3.422,286,4.561,287,4.561]],[\"name/snapshot-x\",[288,33.309,289,33.309]],[\"category/snapshot-x\",[7,2.515]],[\"description/snapshot-x\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/snapshot-x\",[2,0.376,3,0.287,4,0.28,5,0.273,7,0.684,288,4.078,289,4.078]],[\"name/snarkjs\",[185,40.132]],[\"category/snarkjs\",[]],[\"description/snarkjs\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/snarkjs\",[2,0.421,3,0.321,4,0.313,5,0.305,185,4.16]],[\"name/starkex\",[290,43.999]],[\"category/starkex\",[]],[\"description/starkex\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/starkex\",[2,0.421,3,0.321,4,0.313,5,0.305,290,4.561]],[\"name/starknet\",[291,43.999]],[\"category/starknet\",[7,2.515]],[\"description/starknet\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/starknet\",[2,0.397,3,0.303,4,0.296,5,0.288,7,0.722,291,4.306]],[\"name/status\",[292,43.999]],[\"category/status\",[167,10.201]],[\"description/status\",[87,4.863,167,8.193,293,12.042,294,12.042]],[\"searchableText/status\",[87,1.739,167,3.877,292,4.306,293,4.306,294,4.306]],[\"name/suterusu\",[295,43.999]],[\"category/suterusu\",[]],[\"description/suterusu\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/suterusu\",[2,0.421,3,0.321,4,0.313,5,0.305,295,4.561]],[\"name/taiko\",[296,43.999]],[\"category/taiko\",[257,10.201]],[\"description/taiko\",[271,11.265,297,13.308,298,13.308]],[\"searchableText/taiko\",[257,3.103,271,3.86,296,4.561,297,4.561,298,4.561]],[\"name/ten\",[299,43.999]],[\"category/ten\",[257,10.201]],[\"description/ten\",[4,0.644,57,7.93,214,7.93,300,9.368,301,9.368,302,9.368,303,9.368]],[\"searchableText/ten\",[4,0.253,57,3.121,214,3.121,257,2.509,299,3.687,300,3.687,301,3.687,302,3.687,303,3.687]],[\"name/tornado-cash\",[304,30.382,305,26.45]],[\"category/tornado-cash\",[306,14.994]],[\"description/tornado-cash\",[22,0.872,51,2.123,52,2.365,53,2.521,58,2.521,59,2.365,81,0.959,89,2.235,108,2.365,109,2.365,200,1.611,252,2.521,281,2.521,304,2.716,305,2.365,307,2.978,308,2.978,309,2.978,310,2.978,311,2.978,312,2.978,313,2.978,314,2.978,315,5.328,316,2.978,317,2.978,318,2.978,319,2.978,320,2.978,321,2.978,322,2.978,323,2.978,324,2.978,325,2.978,326,2.978]],[\"searchableText/tornado-cash\",[12,0.641,22,0.37,32,1.265,33,1.154,34,1.265,49,1.154,51,0.902,52,1.004,53,1.071,54,1.265,58,1.071,59,1.004,74,1.071,76,0.949,81,0.407,89,0.949,108,1.004,109,1.004,140,1.071,200,0.684,252,1.071,281,1.071,304,2.006,305,1.746,306,1.265,307,1.265,308,1.265,309,1.265,310,1.265,311,1.265,312,1.265,313,1.265,314,1.265,315,2.199,316,1.265,317,1.265,318,1.265,319,1.265,320,1.265,321,1.265,322,1.265,323,1.265,324,1.265,325,1.265,326,1.265,327,1.434]],[\"name/typhoon-network\",[22,9.749,328,33.309]],[\"category/typhoon-network\",[]],[\"description/typhoon-network\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/typhoon-network\",[2,0.397,3,0.303,4,0.296,5,0.288,22,1.26,328,4.306]],[\"name/umbra-cash\",[305,26.45,329,33.309]],[\"category/umbra-cash\",[7,2.515]],[\"description/umbra-cash\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/umbra-cash\",[2,0.376,3,0.287,4,0.28,5,0.273,7,0.684,305,3.238,329,4.078]],[\"name/veramo\",[330,43.999]],[\"category/veramo\",[]],[\"description/veramo\",[23,10.193,76,9.037,210,10.193,232,9.037]],[\"searchableText/veramo\",[23,3.86,76,3.422,210,3.86,232,3.422,330,4.561]],[\"name/wasabi-wallet\",[87,13.452,331,33.309]],[\"category/wasabi-wallet\",[]],[\"description/wasabi-wallet\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/wasabi-wallet\",[2,0.397,3,0.303,4,0.296,5,0.288,87,1.739,331,4.306]],[\"name/webb-protocol\",[81,10.73,332,33.309]],[\"category/webb-protocol\",[]],[\"description/webb-protocol\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/webb-protocol\",[2,0.397,3,0.303,4,0.296,5,0.288,81,1.387,332,4.306]],[\"name/xx-network\",[22,9.749,333,33.309]],[\"category/xx-network\",[]],[\"description/xx-network\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/xx-network\",[2,0.397,3,0.303,4,0.296,5,0.288,22,1.26,333,4.306]],[\"name/zano\",[334,43.999]],[\"category/zano\",[]],[\"description/zano\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/zano\",[2,0.421,3,0.321,4,0.313,5,0.305,334,4.561]],[\"name/zcash\",[335,43.999]],[\"category/zcash\",[]],[\"description/zcash\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/zcash\",[2,0.421,3,0.321,4,0.313,5,0.305,335,4.561]],[\"name/zeal\",[336,43.999]],[\"category/zeal\",[]],[\"description/zeal\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/zeal\",[2,0.421,3,0.321,4,0.313,5,0.305,336,4.561]],[\"name/zecrey\",[337,43.999]],[\"category/zecrey\",[7,2.515]],[\"description/zecrey\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/zecrey\",[2,0.397,3,0.303,4,0.296,5,0.288,7,0.722,337,4.306]],[\"name/zion\",[338,43.999]],[\"category/zion\",[167,10.201]],[\"description/zion\",[22,3.895,200,7.198,339,13.308]],[\"searchableText/zion\",[22,1.335,167,3.103,200,2.467,338,4.561,339,4.561]],[\"name/zk-money\",[340,43.999]],[\"category/zk-money\",[]],[\"description/zk-money\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/zk-money\",[2,0.421,3,0.321,4,0.313,5,0.305,340,4.561]],[\"name/zkbob\",[341,43.999]],[\"category/zkbob\",[7,2.515]],[\"description/zkbob\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/zkbob\",[2,0.397,3,0.303,4,0.296,5,0.288,7,0.722,341,4.306]],[\"name/zkp2p\",[342,43.999]],[\"category/zkp2p\",[7,2.515]],[\"description/zkp2p\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/zkp2p\",[2,0.397,3,0.303,4,0.296,5,0.288,7,0.722,342,4.306]],[\"name/zksync\",[343,43.999]],[\"category/zksync\",[]],[\"description/zksync\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/zksync\",[2,0.421,3,0.321,4,0.313,5,0.305,343,4.561]],[\"name/zkvote\",[344,43.999]],[\"category/zkvote\",[]],[\"description/zkvote\",[2,1.111,3,0.848,4,0.827,5,0.807]],[\"searchableText/zkvote\",[2,0.421,3,0.321,4,0.313,5,0.305,344,4.561]]],\"invertedIndex\":[[\"\",{\"_index\":172,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"firn-protocol\":{}}}],[\"0xbow\",{\"_index\":0,\"name\":{\"0xbow\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"0xbow\":{}}}],[\"1\",{\"_index\":298,\"name\":{},\"category\":{},\"description\":{\"taiko\":{}},\"searchableText\":{\"taiko\":{}}}],[\"1193\",{\"_index\":103,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"1inch\",{\"_index\":6,\"name\":{\"1inch-privacy\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"1inch-privacy\":{}}}],[\"2\",{\"_index\":300,\"name\":{},\"category\":{},\"description\":{\"ten\":{}},\"searchableText\":{\"ten\":{}}}],[\"2022\",{\"_index\":318,\"name\":{},\"category\":{},\"description\":{\"tornado-cash\":{}},\"searchableText\":{\"tornado-cash\":{}}}],[\"2025\",{\"_index\":321,\"name\":{},\"category\":{},\"description\":{\"tornado-cash\":{}},\"searchableText\":{\"tornado-cash\":{}}}],[\"20x\",{\"_index\":115,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"3\",{\"_index\":223,\"name\":{},\"category\":{},\"description\":{\"manta-network\":{}},\"searchableText\":{\"manta-network\":{}}}],[\"account\",{\"_index\":99,\"name\":{},\"category\":{},\"description\":{\"firn-protocol\":{}},\"searchableText\":{\"brume-wallet\":{},\"firn-protocol\":{}}}],[\"adapt\",{\"_index\":265,\"name\":{\"railgun-relay-adapt\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"railgun-relay-adapt\":{}}}],[\"address\",{\"_index\":97,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"aggreg\",{\"_index\":218,\"name\":{},\"category\":{},\"description\":{\"litentry\":{}},\"searchableText\":{\"litentry\":{}}}],[\"ai\",{\"_index\":8,\"name\":{\"ai-discovered\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"ai-discovered\":{}}}],[\"aleo\",{\"_index\":10,\"name\":{\"aleo\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"aleo\":{}}}],[\"alephim\",{\"_index\":11,\"name\":{\"alephim\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"alephim\":{}}}],[\"anoma\",{\"_index\":18,\"name\":{\"anoma\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"anoma\":{}}}],[\"anonym\",{\"_index\":121,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{},\"firn-protocol\":{}}}],[\"architectur\",{\"_index\":110,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"argument\",{\"_index\":183,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"firn-protocol\":{}}}],[\"arpa\",{\"_index\":19,\"name\":{\"arpa\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"arpa\":{}}}],[\"asset\",{\"_index\":285,\"name\":{},\"category\":{},\"description\":{\"silent-protocol\":{}},\"searchableText\":{\"silent-protocol\":{}}}],[\"assumpt\",{\"_index\":180,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"firn-protocol\":{}}}],[\"august\",{\"_index\":317,\"name\":{},\"category\":{},\"description\":{\"tornado-cash\":{}},\"searchableText\":{\"tornado-cash\":{}}}],[\"aztec\",{\"_index\":46,\"name\":{\"aztec\":{},\"aztec-network\":{},\"aztec-protocol\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"aztec\":{},\"aztec-network\":{},\"aztec-protocol\":{}}}],[\"aztec.j\",{\"_index\":79,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"aztec-network\":{}}}],[\"aztec.nr\",{\"_index\":80,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"aztec-network\":{}}}],[\"barretenberg\",{\"_index\":78,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"aztec-network\":{}}}],[\"base\",{\"_index\":161,\"name\":{},\"category\":{},\"description\":{\"firn-protocol\":{},\"phala-network\":{},\"scroll\":{}},\"searchableText\":{\"firn-protocol\":{},\"phala-network\":{},\"scroll\":{}}}],[\"beam\",{\"_index\":82,\"name\":{\"beam\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"beam\":{}}}],[\"bl\",{\"_index\":21,\"name\":{},\"category\":{},\"description\":{\"arpa\":{}},\"searchableText\":{\"arpa\":{}}}],[\"blockchain\",{\"_index\":250,\"name\":{},\"category\":{},\"description\":{\"platon-network\":{},\"secret-network\":{}},\"searchableText\":{\"platon-network\":{},\"secret-network\":{}}}],[\"brave\",{\"_index\":84,\"name\":{\"brave-browser\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"brave-browser\":{}}}],[\"bridg\",{\"_index\":136,\"name\":{},\"category\":{\"chainport\":{},\"railgun-relay-adapt\":{}},\"description\":{\"chainport\":{}},\"searchableText\":{\"chainport\":{},\"railgun-relay-adapt\":{}}}],[\"browser\",{\"_index\":85,\"name\":{\"brave-browser\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"brave-browser\":{}}}],[\"brume\",{\"_index\":86,\"name\":{\"brume-wallet\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"build\",{\"_index\":112,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"built\",{\"_index\":92,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"bullet\",{\"_index\":170,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"firn-protocol\":{}}}],[\"bulletproof\",{\"_index\":171,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"firn-protocol\":{}}}],[\"byzantin\",{\"_index\":43,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"arpa\":{}}}],[\"c\",{\"_index\":71,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"aztec-network\":{}}}],[\"cake\",{\"_index\":134,\"name\":{\"cake-wallet\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"cake-wallet\":{}}}],[\"capacitor\",{\"_index\":127,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"cash\",{\"_index\":305,\"name\":{\"tornado-cash\":{},\"umbra-cash\":{}},\"category\":{},\"description\":{\"tornado-cash\":{}},\"searchableText\":{\"tornado-cash\":{},\"umbra-cash\":{}}}],[\"chain\",{\"_index\":138,\"name\":{\"pirate-chain\":{}},\"category\":{},\"description\":{\"chainport\":{},\"manta-network\":{},\"penumbra\":{}},\"searchableText\":{\"chainport\":{},\"manta-network\":{},\"penumbra\":{},\"pirate-chain\":{}}}],[\"chainport\",{\"_index\":135,\"name\":{\"chainport\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"chainport\":{}}}],[\"circom\",{\"_index\":140,\"name\":{\"circom\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"circom\":{},\"firn-protocol\":{},\"tornado-cash\":{}}}],[\"circuit\",{\"_index\":324,\"name\":{},\"category\":{},\"description\":{\"tornado-cash\":{}},\"searchableText\":{\"tornado-cash\":{}}}],[\"cli\",{\"_index\":155,\"name\":{\"eth2-deposit-cli\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"eth2-deposit-cli\":{}}}],[\"cloud\",{\"_index\":201,\"name\":{},\"category\":{},\"description\":{\"iexec\":{}},\"searchableText\":{\"iexec\":{}}}],[\"compat\",{\"_index\":313,\"name\":{},\"category\":{},\"description\":{\"tornado-cash\":{}},\"searchableText\":{\"tornado-cash\":{}}}],[\"competitor\",{\"_index\":117,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"complianc\",{\"_index\":211,\"name\":{},\"category\":{},\"description\":{\"labyrinth\":{}},\"searchableText\":{\"labyrinth\":{}}}],[\"compliant\",{\"_index\":282,\"name\":{},\"category\":{},\"description\":{\"silent-protocol\":{}},\"searchableText\":{\"silent-protocol\":{}}}],[\"comput\",{\"_index\":12,\"name\":{},\"category\":{\"alephim\":{},\"arpa\":{},\"iexec\":{},\"nillion\":{},\"phala-network\":{},\"platon-network\":{}},\"description\":{\"iexec\":{},\"phala-network\":{},\"platon-network\":{}},\"searchableText\":{\"alephim\":{},\"arpa\":{},\"iexec\":{},\"nillion\":{},\"phala-network\":{},\"platon-network\":{},\"tornado-cash\":{}}}],[\"concordium\",{\"_index\":141,\"name\":{\"concordium\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"concordium\":{}}}],[\"confidenti\",{\"_index\":16,\"name\":{},\"category\":{},\"description\":{\"alephim\":{}},\"searchableText\":{\"alephim\":{},\"aztec-network\":{}}}],[\"contract\",{\"_index\":70,\"name\":{},\"category\":{},\"description\":{\"silent-protocol\":{}},\"searchableText\":{\"aztec-network\":{},\"silent-protocol\":{}}}],[\"court\",{\"_index\":325,\"name\":{},\"category\":{},\"description\":{\"tornado-cash\":{}},\"searchableText\":{\"tornado-cash\":{}}}],[\"cross\",{\"_index\":137,\"name\":{},\"category\":{},\"description\":{\"chainport\":{},\"penumbra\":{}},\"searchableText\":{\"chainport\":{},\"penumbra\":{}}}],[\"crypto\",{\"_index\":294,\"name\":{},\"category\":{},\"description\":{\"status\":{}},\"searchableText\":{\"status\":{}}}],[\"cryptocurr\",{\"_index\":308,\"name\":{},\"category\":{},\"description\":{\"tornado-cash\":{}},\"searchableText\":{\"tornado-cash\":{}}}],[\"cryptographi\",{\"_index\":39,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"arpa\":{}}}],[\"currenc\",{\"_index\":83,\"name\":{},\"category\":{\"beam\":{},\"grin\":{},\"pirate-chain\":{}},\"description\":{},\"searchableText\":{\"beam\":{},\"grin\":{},\"pirate-chain\":{}}}],[\"curv\",{\"_index\":38,\"name\":{\"curve-privacy\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"arpa\":{},\"curve-privacy\":{}}}],[\"custodi\",{\"_index\":109,\"name\":{},\"category\":{},\"description\":{\"frame\":{},\"tornado-cash\":{}},\"searchableText\":{\"brume-wallet\":{},\"frame\":{},\"tornado-cash\":{}}}],[\"customiz\",{\"_index\":274,\"name\":{},\"category\":{},\"description\":{\"secret-network\":{}},\"searchableText\":{\"secret-network\":{}}}],[\"cyclon\",{\"_index\":142,\"name\":{\"cyclone-protocol\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"cyclone-protocol\":{}}}],[\"dark\",{\"_index\":144,\"name\":{\"dark-forest\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"dark-forest\":{}}}],[\"darkfi\",{\"_index\":146,\"name\":{\"darkfi\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"darkfi\":{}}}],[\"dash\",{\"_index\":147,\"name\":{\"dash\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"dash\":{}}}],[\"data\",{\"_index\":232,\"name\":{},\"category\":{},\"description\":{\"nillion\":{},\"nym\":{},\"veramo\":{}},\"searchableText\":{\"nillion\":{},\"nym\":{},\"veramo\":{}}}],[\"ddh\",{\"_index\":179,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"firn-protocol\":{}}}],[\"decentr\",{\"_index\":200,\"name\":{},\"category\":{},\"description\":{\"iexec\":{},\"labyrinth\":{},\"litentry\":{},\"nillion\":{},\"panther-protocol\":{},\"tornado-cash\":{},\"zion\":{}},\"searchableText\":{\"iexec\":{},\"labyrinth\":{},\"litentry\":{},\"nillion\":{},\"panther-protocol\":{},\"tornado-cash\":{},\"zion\":{}}}],[\"decision\",{\"_index\":176,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"firn-protocol\":{}}}],[\"deeper\",{\"_index\":148,\"name\":{\"deeper-network\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"deeper-network\":{}}}],[\"defi\",{\"_index\":47,\"name\":{},\"category\":{\"aztec-network\":{},\"firn-protocol\":{},\"labyrinth\":{},\"light-protocol\":{},\"panther-protocol\":{},\"railgun\":{},\"silent-protocol\":{}},\"description\":{\"manta-network\":{},\"railgun\":{},\"railway-wallet\":{}},\"searchableText\":{\"aztec-network\":{},\"firn-protocol\":{},\"labyrinth\":{},\"light-protocol\":{},\"manta-network\":{},\"panther-protocol\":{},\"railgun\":{},\"railway-wallet\":{},\"silent-protocol\":{}}}],[\"depend\",{\"_index\":114,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"depin\",{\"_index\":15,\"name\":{},\"category\":{},\"description\":{\"alephim\":{}},\"searchableText\":{\"alephim\":{}}}],[\"deposit\",{\"_index\":154,\"name\":{\"eth2-deposit-cli\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"eth2-deposit-cli\":{}}}],[\"desktop\",{\"_index\":192,\"name\":{},\"category\":{},\"description\":{\"frame\":{}},\"searchableText\":{\"frame\":{}}}],[\"diffi\",{\"_index\":177,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"firn-protocol\":{}}}],[\"discov\",{\"_index\":9,\"name\":{\"ai-discovered\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"ai-discovered\":{}}}],[\"distribut\",{\"_index\":29,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"arpa\":{}}}],[\"dkg\",{\"_index\":31,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"arpa\":{}}}],[\"doc\",{\"_index\":149,\"name\":{\"docs\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"docs\":{}}}],[\"domain\",{\"_index\":120,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"dusk\",{\"_index\":150,\"name\":{\"dusk-network\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"dusk-network\":{}}}],[\"dynam\",{\"_index\":40,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"arpa\":{}}}],[\"edg\",{\"_index\":151,\"name\":{\"edge-wallet\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"edge-wallet\":{}}}],[\"eip\",{\"_index\":102,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"elgam\",{\"_index\":166,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"firn-protocol\":{}}}],[\"ellipt\",{\"_index\":37,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"arpa\":{}}}],[\"elusiv\",{\"_index\":152,\"name\":{\"elusiv\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"elusiv\":{}}}],[\"enabl\",{\"_index\":281,\"name\":{},\"category\":{},\"description\":{\"silent-protocol\":{},\"tornado-cash\":{}},\"searchableText\":{\"silent-protocol\":{},\"tornado-cash\":{}}}],[\"encrypt\",{\"_index\":57,\"name\":{},\"category\":{},\"description\":{\"ten\":{}},\"searchableText\":{\"aztec-network\":{},\"firn-protocol\":{},\"ten\":{}}}],[\"enterpris\",{\"_index\":258,\"name\":{},\"category\":{},\"description\":{\"polygon-nightfall\":{}},\"searchableText\":{\"polygon-nightfall\":{}}}],[\"environ\",{\"_index\":64,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"aztec-network\":{}}}],[\"eth2\",{\"_index\":153,\"name\":{\"eth2-deposit-cli\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"eth2-deposit-cli\":{}}}],[\"ethereum\",{\"_index\":89,\"name\":{},\"category\":{},\"description\":{\"brume-wallet\":{},\"frame\":{},\"tornado-cash\":{}},\"searchableText\":{\"brume-wallet\":{},\"frame\":{},\"tornado-cash\":{}}}],[\"execut\",{\"_index\":63,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"aztec-network\":{}}}],[\"explor\",{\"_index\":262,\"name\":{\"pse--privacy---scaling-explorations-\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"pse--privacy---scaling-explorations-\":{}}}],[\"expon\",{\"_index\":168,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"firn-protocol\":{}}}],[\"extend\",{\"_index\":302,\"name\":{},\"category\":{},\"description\":{\"ten\":{}},\"searchableText\":{\"ten\":{}}}],[\"farcast\",{\"_index\":156,\"name\":{\"farcaster\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"farcaster\":{}}}],[\"fault\",{\"_index\":44,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"arpa\":{}}}],[\"fifth\",{\"_index\":323,\"name\":{},\"category\":{},\"description\":{\"tornado-cash\":{}},\"searchableText\":{\"tornado-cash\":{}}}],[\"filevers\",{\"_index\":157,\"name\":{\"fileverse\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"fileverse\":{}}}],[\"findora\",{\"_index\":158,\"name\":{\"findora\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"findora\":{}}}],[\"firn\",{\"_index\":159,\"name\":{\"firn-protocol\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"firn-protocol\":{}}}],[\"firo\",{\"_index\":189,\"name\":{\"firo\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"firo\":{}}}],[\"first\",{\"_index\":48,\"name\":{},\"category\":{},\"description\":{\"aztec-network\":{},\"firn-protocol\":{},\"secret-network\":{},\"silent-protocol\":{}},\"searchableText\":{\"aztec-network\":{},\"firn-protocol\":{},\"secret-network\":{},\"silent-protocol\":{}}}],[\"fish\",{\"_index\":205,\"name\":{\"iron-fish\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"iron-fish\":{}}}],[\"fluidkey\",{\"_index\":190,\"name\":{\"fluidkey\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"fluidkey\":{}}}],[\"focus\",{\"_index\":3,\"name\":{},\"category\":{},\"description\":{\"0xbow\":{},\"1inch-privacy\":{},\"ai-discovered\":{},\"aleo\":{},\"anoma\":{},\"aztec\":{},\"aztec-protocol\":{},\"beam\":{},\"brave-browser\":{},\"cake-wallet\":{},\"circom\":{},\"concordium\":{},\"curve-privacy\":{},\"cyclone-protocol\":{},\"dark-forest\":{},\"darkfi\":{},\"dash\":{},\"deeper-network\":{},\"docs\":{},\"dusk-network\":{},\"edge-wallet\":{},\"elusiv\":{},\"eth2-deposit-cli\":{},\"farcaster\":{},\"fileverse\":{},\"findora\":{},\"firo\":{},\"fluidkey\":{},\"gitcoin-grants\":{},\"grin\":{},\"hopr\":{},\"horizen\":{},\"iden3\":{},\"incognito\":{},\"iron-fish\":{},\"keep-network\":{},\"lens-protocol\":{},\"maci\":{},\"mask\":{},\"mask-network\":{},\"metamask-snaps\":{},\"mina-protocol\":{},\"mobilecoin\":{},\"monero\":{},\"mysterium-network\":{},\"nighthawk-wallet\":{},\"nucypher\":{},\"oasis-network\":{},\"orchid\":{},\"oxen\":{},\"pirate-chain\":{},\"polygon-hermez\":{},\"polygon-nightfall\":{},\"polygon-zero\":{},\"privatepool\":{},\"pse--privacy---scaling-explorations-\":{},\"railgun-relay-adapt\":{},\"railway-wallet\":{},\"ronin\":{},\"rotki\":{},\"samourai-wallet\":{},\"semaphore\":{},\"sentinel\":{},\"sienna-network\":{},\"snapshot-x\":{},\"snarkjs\":{},\"starkex\":{},\"starknet\":{},\"suterusu\":{},\"typhoon-network\":{},\"umbra-cash\":{},\"wasabi-wallet\":{},\"webb-protocol\":{},\"xx-network\":{},\"zano\":{},\"zcash\":{},\"zeal\":{},\"zecrey\":{},\"zk-money\":{},\"zkbob\":{},\"zkp2p\":{},\"zksync\":{},\"zkvote\":{}},\"searchableText\":{\"0xbow\":{},\"1inch-privacy\":{},\"ai-discovered\":{},\"aleo\":{},\"anoma\":{},\"aztec\":{},\"aztec-protocol\":{},\"beam\":{},\"brave-browser\":{},\"cake-wallet\":{},\"circom\":{},\"concordium\":{},\"curve-privacy\":{},\"cyclone-protocol\":{},\"dark-forest\":{},\"darkfi\":{},\"dash\":{},\"deeper-network\":{},\"docs\":{},\"dusk-network\":{},\"edge-wallet\":{},\"elusiv\":{},\"eth2-deposit-cli\":{},\"farcaster\":{},\"fileverse\":{},\"findora\":{},\"firo\":{},\"fluidkey\":{},\"gitcoin-grants\":{},\"grin\":{},\"hopr\":{},\"horizen\":{},\"iden3\":{},\"incognito\":{},\"iron-fish\":{},\"keep-network\":{},\"lens-protocol\":{},\"maci\":{},\"mask\":{},\"mask-network\":{},\"metamask-snaps\":{},\"mina-protocol\":{},\"mobilecoin\":{},\"monero\":{},\"mysterium-network\":{},\"nighthawk-wallet\":{},\"nucypher\":{},\"oasis-network\":{},\"orchid\":{},\"oxen\":{},\"pirate-chain\":{},\"polygon-hermez\":{},\"polygon-nightfall\":{},\"polygon-zero\":{},\"privatepool\":{},\"pse--privacy---scaling-explorations-\":{},\"railgun-relay-adapt\":{},\"railway-wallet\":{},\"ronin\":{},\"rotki\":{},\"samourai-wallet\":{},\"semaphore\":{},\"sentinel\":{},\"sienna-network\":{},\"snapshot-x\":{},\"snarkjs\":{},\"starkex\":{},\"starknet\":{},\"suterusu\":{},\"typhoon-network\":{},\"umbra-cash\":{},\"wasabi-wallet\":{},\"webb-protocol\":{},\"xx-network\":{},\"zano\":{},\"zcash\":{},\"zeal\":{},\"zecrey\":{},\"zk-money\":{},\"zkbob\":{},\"zkp2p\":{},\"zksync\":{},\"zkvote\":{}}}],[\"follow\",{\"_index\":322,\"name\":{},\"category\":{},\"description\":{\"tornado-cash\":{}},\"searchableText\":{\"tornado-cash\":{}}}],[\"forest\",{\"_index\":145,\"name\":{\"dark-forest\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"dark-forest\":{}}}],[\"foundri\",{\"_index\":184,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"firn-protocol\":{}}}],[\"frame\",{\"_index\":191,\"name\":{\"frame\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"frame\":{}}}],[\"framework\",{\"_index\":210,\"name\":{},\"category\":{},\"description\":{\"labyrinth\":{},\"veramo\":{}},\"searchableText\":{\"labyrinth\":{},\"veramo\":{}}}],[\"full\",{\"_index\":283,\"name\":{},\"category\":{},\"description\":{\"silent-protocol\":{}},\"searchableText\":{\"silent-protocol\":{}}}],[\"fulli\",{\"_index\":307,\"name\":{},\"category\":{},\"description\":{\"tornado-cash\":{}},\"searchableText\":{\"tornado-cash\":{}}}],[\"function\",{\"_index\":35,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"arpa\":{}}}],[\"gener\",{\"_index\":26,\"name\":{},\"category\":{},\"description\":{\"arpa\":{}},\"searchableText\":{\"arpa\":{}}}],[\"gitcoin\",{\"_index\":193,\"name\":{\"gitcoin-grants\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"gitcoin-grants\":{}}}],[\"grant\",{\"_index\":194,\"name\":{\"gitcoin-grants\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"gitcoin-grants\":{}}}],[\"grin\",{\"_index\":195,\"name\":{\"grin\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"grin\":{}}}],[\"group\",{\"_index\":42,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"arpa\":{}}}],[\"harden\",{\"_index\":105,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"hellman\",{\"_index\":178,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"firn-protocol\":{}}}],[\"hermez\",{\"_index\":254,\"name\":{\"polygon-hermez\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"polygon-hermez\":{}}}],[\"homomorph\",{\"_index\":175,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"firn-protocol\":{}}}],[\"hopr\",{\"_index\":196,\"name\":{\"hopr\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"hopr\":{}}}],[\"horizen\",{\"_index\":197,\"name\":{\"horizen\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"horizen\":{}}}],[\"html/css\",{\"_index\":132,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"hybrid\",{\"_index\":67,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"aztec-network\":{}}}],[\"id\",{\"_index\":255,\"name\":{\"polygon-id\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"polygon-id\":{}}}],[\"iden3\",{\"_index\":198,\"name\":{\"iden3\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"iden3\":{}}}],[\"ident\",{\"_index\":217,\"name\":{},\"category\":{},\"description\":{\"litentry\":{},\"polygon-id\":{}},\"searchableText\":{\"litentry\":{},\"polygon-id\":{}}}],[\"iexec\",{\"_index\":199,\"name\":{\"iexec\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"iexec\":{}}}],[\"incognito\",{\"_index\":203,\"name\":{\"incognito\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"incognito\":{}}}],[\"infrastructur\",{\"_index\":221,\"name\":{},\"category\":{\"manta-network\":{},\"nym\":{},\"penumbra\":{},\"secret-network\":{}},\"description\":{\"nym\":{}},\"searchableText\":{\"manta-network\":{},\"nym\":{},\"penumbra\":{},\"secret-network\":{}}}],[\"inner\",{\"_index\":181,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"firn-protocol\":{}}}],[\"integr\",{\"_index\":91,\"name\":{},\"category\":{},\"description\":{\"brume-wallet\":{}},\"searchableText\":{\"brume-wallet\":{}}}],[\"ip\",{\"_index\":96,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"ip/wallet\",{\"_index\":123,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"iron\",{\"_index\":204,\"name\":{\"iron-fish\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"iron-fish\":{}}}],[\"javascript\",{\"_index\":76,\"name\":{},\"category\":{},\"description\":{\"veramo\":{}},\"searchableText\":{\"aztec-network\":{},\"brume-wallet\":{},\"firn-protocol\":{},\"tornado-cash\":{},\"veramo\":{}}}],[\"keep\",{\"_index\":206,\"name\":{\"keep-network\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"keep-network\":{}}}],[\"key\",{\"_index\":30,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"arpa\":{}}}],[\"knowledg\",{\"_index\":52,\"name\":{},\"category\":{},\"description\":{\"firn-protocol\":{},\"tornado-cash\":{}},\"searchableText\":{\"aztec-network\":{},\"firn-protocol\":{},\"tornado-cash\":{}}}],[\"kotlin\",{\"_index\":131,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"labyrinth\",{\"_index\":207,\"name\":{\"labyrinth\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"labyrinth\":{}}}],[\"layer\",{\"_index\":214,\"name\":{},\"category\":{},\"description\":{\"light-protocol\":{},\"ten\":{}},\"searchableText\":{\"light-protocol\":{},\"ten\":{}}}],[\"layer2\",{\"_index\":257,\"name\":{},\"category\":{\"polygon-nightfall\":{},\"scroll\":{},\"taiko\":{},\"ten\":{}},\"description\":{},\"searchableText\":{\"polygon-nightfall\":{},\"scroll\":{},\"taiko\":{},\"ten\":{}}}],[\"leakag\",{\"_index\":236,\"name\":{},\"category\":{},\"description\":{\"nym\":{}},\"searchableText\":{\"nym\":{}}}],[\"len\",{\"_index\":212,\"name\":{\"lens-protocol\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"lens-protocol\":{}}}],[\"less\",{\"_index\":116,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"lift\",{\"_index\":319,\"name\":{},\"category\":{},\"description\":{\"tornado-cash\":{}},\"searchableText\":{\"tornado-cash\":{}}}],[\"light\",{\"_index\":213,\"name\":{\"light-protocol\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"light-protocol\":{}}}],[\"litentri\",{\"_index\":216,\"name\":{\"litentry\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"litentry\":{}}}],[\"machin\",{\"_index\":312,\"name\":{},\"category\":{},\"description\":{\"tornado-cash\":{}},\"searchableText\":{\"tornado-cash\":{}}}],[\"maci\",{\"_index\":219,\"name\":{\"maci\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"maci\":{}}}],[\"manag\",{\"_index\":61,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"aztec-network\":{}}}],[\"mani\",{\"_index\":173,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"firn-protocol\":{}}}],[\"manta\",{\"_index\":220,\"name\":{\"manta-network\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"manta-network\":{}}}],[\"march\",{\"_index\":320,\"name\":{},\"category\":{},\"description\":{\"tornado-cash\":{}},\"searchableText\":{\"tornado-cash\":{}}}],[\"mask\",{\"_index\":100,\"name\":{\"mask\":{},\"mask-network\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{},\"mask\":{},\"mask-network\":{}}}],[\"mdx\",{\"_index\":133,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"messag\",{\"_index\":167,\"name\":{},\"category\":{\"session\":{},\"status\":{},\"zion\":{}},\"description\":{\"status\":{}},\"searchableText\":{\"firn-protocol\":{},\"session\":{},\"status\":{},\"zion\":{}}}],[\"messeng\",{\"_index\":278,\"name\":{},\"category\":{},\"description\":{\"session\":{}},\"searchableText\":{\"session\":{}}}],[\"metadata\",{\"_index\":237,\"name\":{},\"category\":{},\"description\":{\"nym\":{}},\"searchableText\":{\"nym\":{}}}],[\"metamask\",{\"_index\":186,\"name\":{\"metamask-snaps\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"firn-protocol\":{},\"metamask-snaps\":{}}}],[\"metaprotocol\",{\"_index\":242,\"name\":{},\"category\":{},\"description\":{\"panther-protocol\":{}},\"searchableText\":{\"panther-protocol\":{}}}],[\"mina\",{\"_index\":225,\"name\":{\"mina-protocol\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"mina-protocol\":{}}}],[\"minim\",{\"_index\":113,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"mix\",{\"_index\":143,\"name\":{},\"category\":{\"cyclone-protocol\":{}},\"description\":{},\"searchableText\":{\"cyclone-protocol\":{}}}],[\"mixer\",{\"_index\":309,\"name\":{},\"category\":{},\"description\":{\"tornado-cash\":{}},\"searchableText\":{\"tornado-cash\":{}}}],[\"mobilecoin\",{\"_index\":226,\"name\":{\"mobilecoin\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"mobilecoin\":{}}}],[\"model\",{\"_index\":162,\"name\":{},\"category\":{},\"description\":{\"firn-protocol\":{}},\"searchableText\":{\"firn-protocol\":{}}}],[\"modular\",{\"_index\":209,\"name\":{},\"category\":{},\"description\":{\"labyrinth\":{}},\"searchableText\":{\"labyrinth\":{}}}],[\"monero\",{\"_index\":227,\"name\":{\"monero\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"monero\":{}}}],[\"more\",{\"_index\":224,\"name\":{},\"category\":{},\"description\":{\"manta-network\":{}},\"searchableText\":{\"manta-network\":{}}}],[\"mpc\",{\"_index\":34,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"arpa\":{},\"tornado-cash\":{}}}],[\"multi\",{\"_index\":32,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"arpa\":{},\"tornado-cash\":{}}}],[\"multichain\",{\"_index\":208,\"name\":{},\"category\":{},\"description\":{\"labyrinth\":{}},\"searchableText\":{\"labyrinth\":{}}}],[\"mysterium\",{\"_index\":228,\"name\":{\"mysterium-network\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"mysterium-network\":{}}}],[\"nativ\",{\"_index\":88,\"name\":{},\"category\":{},\"description\":{\"brume-wallet\":{}},\"searchableText\":{\"brume-wallet\":{}}}],[\"network\",{\"_index\":22,\"name\":{\"aztec-network\":{},\"deeper-network\":{},\"dusk-network\":{},\"keep-network\":{},\"manta-network\":{},\"mask-network\":{},\"mysterium-network\":{},\"oasis-network\":{},\"phala-network\":{},\"platon-network\":{},\"secret-network\":{},\"sienna-network\":{},\"typhoon-network\":{},\"xx-network\":{}},\"category\":{},\"description\":{\"arpa\":{},\"labyrinth\":{},\"tornado-cash\":{},\"zion\":{}},\"searchableText\":{\"arpa\":{},\"aztec-network\":{},\"brume-wallet\":{},\"deeper-network\":{},\"dusk-network\":{},\"keep-network\":{},\"labyrinth\":{},\"manta-network\":{},\"mask-network\":{},\"mysterium-network\":{},\"oasis-network\":{},\"phala-network\":{},\"platon-network\":{},\"secret-network\":{},\"sienna-network\":{},\"tornado-cash\":{},\"typhoon-network\":{},\"xx-network\":{},\"zion\":{}}}],[\"next.j\",{\"_index\":125,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"nightfal\",{\"_index\":256,\"name\":{\"polygon-nightfall\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"polygon-nightfall\":{}}}],[\"nighthawk\",{\"_index\":229,\"name\":{\"nighthawk-wallet\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"nighthawk-wallet\":{}}}],[\"nillion\",{\"_index\":230,\"name\":{\"nillion\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"nillion\":{}}}],[\"node\",{\"_index\":41,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"arpa\":{}}}],[\"node.j\",{\"_index\":77,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"aztec-network\":{},\"brume-wallet\":{}}}],[\"noir\",{\"_index\":73,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"aztec-network\":{}}}],[\"non\",{\"_index\":108,\"name\":{},\"category\":{},\"description\":{\"frame\":{},\"tornado-cash\":{}},\"searchableText\":{\"brume-wallet\":{},\"frame\":{},\"tornado-cash\":{}}}],[\"note\",{\"_index\":66,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"aztec-network\":{}}}],[\"nucyph\",{\"_index\":233,\"name\":{\"nucypher\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"nucypher\":{}}}],[\"nullifi\",{\"_index\":62,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"aztec-network\":{}}}],[\"number\",{\"_index\":25,\"name\":{},\"category\":{},\"description\":{\"arpa\":{}},\"searchableText\":{\"arpa\":{}}}],[\"nym\",{\"_index\":234,\"name\":{\"nym\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"nym\":{}}}],[\"oasi\",{\"_index\":238,\"name\":{\"oasis-network\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"oasis-network\":{}}}],[\"ofac\",{\"_index\":316,\"name\":{},\"category\":{},\"description\":{\"tornado-cash\":{}},\"searchableText\":{\"tornado-cash\":{}}}],[\"open\",{\"_index\":13,\"name\":{},\"category\":{},\"description\":{\"alephim\":{},\"frame\":{}},\"searchableText\":{\"alephim\":{},\"brume-wallet\":{},\"frame\":{}}}],[\"option\",{\"_index\":139,\"name\":{},\"category\":{},\"description\":{\"chainport\":{}},\"searchableText\":{\"chainport\":{}}}],[\"orchid\",{\"_index\":239,\"name\":{\"orchid\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"orchid\":{}}}],[\"out\",{\"_index\":174,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"firn-protocol\":{}}}],[\"oxen\",{\"_index\":240,\"name\":{\"oxen\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"oxen\":{}}}],[\"panther\",{\"_index\":241,\"name\":{\"panther-protocol\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"panther-protocol\":{}}}],[\"parti\",{\"_index\":33,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"arpa\":{},\"brume-wallet\":{},\"tornado-cash\":{}}}],[\"penumbra\",{\"_index\":243,\"name\":{\"penumbra\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"penumbra\":{}}}],[\"per\",{\"_index\":98,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"permissionless\",{\"_index\":247,\"name\":{},\"category\":{},\"description\":{\"phala-network\":{}},\"searchableText\":{\"phala-network\":{}}}],[\"phala\",{\"_index\":246,\"name\":{\"phala-network\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"phala-network\":{}}}],[\"phish\",{\"_index\":106,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"pirat\",{\"_index\":248,\"name\":{\"pirate-chain\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"pirate-chain\":{}}}],[\"platform\",{\"_index\":160,\"name\":{},\"category\":{},\"description\":{\"firn-protocol\":{}},\"searchableText\":{\"firn-protocol\":{}}}],[\"platon\",{\"_index\":249,\"name\":{\"platon-network\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"platon-network\":{}}}],[\"plonk\",{\"_index\":55,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"aztec-network\":{}}}],[\"polygon\",{\"_index\":253,\"name\":{\"polygon-hermez\":{},\"polygon-id\":{},\"polygon-nightfall\":{},\"polygon-zero\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"polygon-hermez\":{},\"polygon-id\":{},\"polygon-nightfall\":{},\"polygon-zero\":{}}}],[\"pool\",{\"_index\":245,\"name\":{},\"category\":{},\"description\":{\"penumbra\":{}},\"searchableText\":{\"penumbra\":{}}}],[\"preserv\",{\"_index\":251,\"name\":{},\"category\":{},\"description\":{\"platon-network\":{},\"polygon-id\":{},\"sismo\":{}},\"searchableText\":{\"platon-network\":{},\"polygon-id\":{},\"sismo\":{}}}],[\"prevent\",{\"_index\":235,\"name\":{},\"category\":{},\"description\":{\"nym\":{}},\"searchableText\":{\"nym\":{}}}],[\"privaci\",{\"_index\":2,\"name\":{\"1inch-privacy\":{},\"curve-privacy\":{},\"pse--privacy---scaling-explorations-\":{}},\"category\":{},\"description\":{\"0xbow\":{},\"1inch-privacy\":{},\"ai-discovered\":{},\"aleo\":{},\"anoma\":{},\"aztec\":{},\"aztec-network\":{},\"aztec-protocol\":{},\"beam\":{},\"brave-browser\":{},\"brume-wallet\":{},\"cake-wallet\":{},\"chainport\":{},\"circom\":{},\"concordium\":{},\"curve-privacy\":{},\"cyclone-protocol\":{},\"dark-forest\":{},\"darkfi\":{},\"dash\":{},\"deeper-network\":{},\"docs\":{},\"dusk-network\":{},\"edge-wallet\":{},\"elusiv\":{},\"eth2-deposit-cli\":{},\"farcaster\":{},\"fileverse\":{},\"findora\":{},\"firn-protocol\":{},\"firo\":{},\"fluidkey\":{},\"gitcoin-grants\":{},\"grin\":{},\"hopr\":{},\"horizen\":{},\"iden3\":{},\"incognito\":{},\"iron-fish\":{},\"keep-network\":{},\"labyrinth\":{},\"lens-protocol\":{},\"light-protocol\":{},\"maci\":{},\"manta-network\":{},\"mask\":{},\"mask-network\":{},\"metamask-snaps\":{},\"mina-protocol\":{},\"mobilecoin\":{},\"monero\":{},\"mysterium-network\":{},\"nighthawk-wallet\":{},\"nucypher\":{},\"oasis-network\":{},\"orchid\":{},\"oxen\":{},\"panther-protocol\":{},\"penumbra\":{},\"pirate-chain\":{},\"platon-network\":{},\"polygon-hermez\":{},\"polygon-id\":{},\"polygon-nightfall\":{},\"polygon-zero\":{},\"privatepool\":{},\"pse--privacy---scaling-explorations-\":{},\"railgun\":{},\"railgun-relay-adapt\":{},\"railway-wallet\":{},\"ronin\":{},\"rotki\":{},\"samourai-wallet\":{},\"secret-network\":{},\"semaphore\":{},\"sentinel\":{},\"sienna-network\":{},\"silent-protocol\":{},\"sismo\":{},\"snapshot-x\":{},\"snarkjs\":{},\"starkex\":{},\"starknet\":{},\"suterusu\":{},\"typhoon-network\":{},\"umbra-cash\":{},\"wasabi-wallet\":{},\"webb-protocol\":{},\"xx-network\":{},\"zano\":{},\"zcash\":{},\"zeal\":{},\"zecrey\":{},\"zk-money\":{},\"zkbob\":{},\"zkp2p\":{},\"zksync\":{},\"zkvote\":{}},\"searchableText\":{\"0xbow\":{},\"1inch-privacy\":{},\"ai-discovered\":{},\"aleo\":{},\"anoma\":{},\"aztec\":{},\"aztec-network\":{},\"aztec-protocol\":{},\"beam\":{},\"brave-browser\":{},\"brume-wallet\":{},\"cake-wallet\":{},\"chainport\":{},\"circom\":{},\"concordium\":{},\"curve-privacy\":{},\"cyclone-protocol\":{},\"dark-forest\":{},\"darkfi\":{},\"dash\":{},\"deeper-network\":{},\"docs\":{},\"dusk-network\":{},\"edge-wallet\":{},\"elusiv\":{},\"eth2-deposit-cli\":{},\"farcaster\":{},\"fileverse\":{},\"findora\":{},\"firn-protocol\":{},\"firo\":{},\"fluidkey\":{},\"gitcoin-grants\":{},\"grin\":{},\"hopr\":{},\"horizen\":{},\"iden3\":{},\"incognito\":{},\"iron-fish\":{},\"keep-network\":{},\"labyrinth\":{},\"lens-protocol\":{},\"light-protocol\":{},\"maci\":{},\"manta-network\":{},\"mask\":{},\"mask-network\":{},\"metamask-snaps\":{},\"mina-protocol\":{},\"mobilecoin\":{},\"monero\":{},\"mysterium-network\":{},\"nighthawk-wallet\":{},\"nucypher\":{},\"oasis-network\":{},\"orchid\":{},\"oxen\":{},\"panther-protocol\":{},\"penumbra\":{},\"pirate-chain\":{},\"platon-network\":{},\"polygon-hermez\":{},\"polygon-id\":{},\"polygon-nightfall\":{},\"polygon-zero\":{},\"privatepool\":{},\"pse--privacy---scaling-explorations-\":{},\"railgun\":{},\"railgun-relay-adapt\":{},\"railway-wallet\":{},\"ronin\":{},\"rotki\":{},\"samourai-wallet\":{},\"secret-network\":{},\"semaphore\":{},\"sentinel\":{},\"sienna-network\":{},\"silent-protocol\":{},\"sismo\":{},\"snapshot-x\":{},\"snarkjs\":{},\"starkex\":{},\"starknet\":{},\"suterusu\":{},\"typhoon-network\":{},\"umbra-cash\":{},\"wasabi-wallet\":{},\"webb-protocol\":{},\"xx-network\":{},\"zano\":{},\"zcash\":{},\"zeal\":{},\"zecrey\":{},\"zk-money\":{},\"zkbob\":{},\"zkp2p\":{},\"zksync\":{},\"zkvote\":{}}}],[\"privacy_mix\",{\"_index\":306,\"name\":{},\"category\":{\"tornado-cash\":{}},\"description\":{},\"searchableText\":{\"tornado-cash\":{}}}],[\"privat\",{\"_index\":59,\"name\":{},\"category\":{},\"description\":{\"session\":{},\"tornado-cash\":{}},\"searchableText\":{\"aztec-network\":{},\"session\":{},\"tornado-cash\":{}}}],[\"privatepool\",{\"_index\":259,\"name\":{\"privatepool\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"privatepool\":{}}}],[\"product\",{\"_index\":182,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"firn-protocol\":{}}}],[\"project\",{\"_index\":5,\"name\":{},\"category\":{},\"description\":{\"0xbow\":{},\"1inch-privacy\":{},\"ai-discovered\":{},\"aleo\":{},\"anoma\":{},\"aztec\":{},\"aztec-protocol\":{},\"beam\":{},\"brave-browser\":{},\"cake-wallet\":{},\"circom\":{},\"concordium\":{},\"curve-privacy\":{},\"cyclone-protocol\":{},\"dark-forest\":{},\"darkfi\":{},\"dash\":{},\"deeper-network\":{},\"docs\":{},\"dusk-network\":{},\"edge-wallet\":{},\"elusiv\":{},\"eth2-deposit-cli\":{},\"farcaster\":{},\"fileverse\":{},\"findora\":{},\"firo\":{},\"fluidkey\":{},\"gitcoin-grants\":{},\"grin\":{},\"hopr\":{},\"horizen\":{},\"iden3\":{},\"incognito\":{},\"iron-fish\":{},\"keep-network\":{},\"lens-protocol\":{},\"maci\":{},\"mask\":{},\"mask-network\":{},\"metamask-snaps\":{},\"mina-protocol\":{},\"mobilecoin\":{},\"monero\":{},\"mysterium-network\":{},\"nighthawk-wallet\":{},\"nucypher\":{},\"oasis-network\":{},\"orchid\":{},\"oxen\":{},\"pirate-chain\":{},\"polygon-hermez\":{},\"polygon-zero\":{},\"privatepool\":{},\"pse--privacy---scaling-explorations-\":{},\"railgun-relay-adapt\":{},\"ronin\":{},\"rotki\":{},\"samourai-wallet\":{},\"semaphore\":{},\"sentinel\":{},\"sienna-network\":{},\"snapshot-x\":{},\"snarkjs\":{},\"starkex\":{},\"starknet\":{},\"suterusu\":{},\"typhoon-network\":{},\"umbra-cash\":{},\"wasabi-wallet\":{},\"webb-protocol\":{},\"xx-network\":{},\"zano\":{},\"zcash\":{},\"zeal\":{},\"zecrey\":{},\"zk-money\":{},\"zkbob\":{},\"zkp2p\":{},\"zksync\":{},\"zkvote\":{}},\"searchableText\":{\"0xbow\":{},\"1inch-privacy\":{},\"ai-discovered\":{},\"aleo\":{},\"anoma\":{},\"aztec\":{},\"aztec-protocol\":{},\"beam\":{},\"brave-browser\":{},\"cake-wallet\":{},\"circom\":{},\"concordium\":{},\"curve-privacy\":{},\"cyclone-protocol\":{},\"dark-forest\":{},\"darkfi\":{},\"dash\":{},\"deeper-network\":{},\"docs\":{},\"dusk-network\":{},\"edge-wallet\":{},\"elusiv\":{},\"eth2-deposit-cli\":{},\"farcaster\":{},\"fileverse\":{},\"findora\":{},\"firo\":{},\"fluidkey\":{},\"gitcoin-grants\":{},\"grin\":{},\"hopr\":{},\"horizen\":{},\"iden3\":{},\"incognito\":{},\"iron-fish\":{},\"keep-network\":{},\"lens-protocol\":{},\"maci\":{},\"mask\":{},\"mask-network\":{},\"metamask-snaps\":{},\"mina-protocol\":{},\"mobilecoin\":{},\"monero\":{},\"mysterium-network\":{},\"nighthawk-wallet\":{},\"nucypher\":{},\"oasis-network\":{},\"orchid\":{},\"oxen\":{},\"pirate-chain\":{},\"polygon-hermez\":{},\"polygon-zero\":{},\"privatepool\":{},\"pse--privacy---scaling-explorations-\":{},\"railgun-relay-adapt\":{},\"ronin\":{},\"rotki\":{},\"samourai-wallet\":{},\"semaphore\":{},\"sentinel\":{},\"sienna-network\":{},\"snapshot-x\":{},\"snarkjs\":{},\"starkex\":{},\"starknet\":{},\"suterusu\":{},\"typhoon-network\":{},\"umbra-cash\":{},\"wasabi-wallet\":{},\"webb-protocol\":{},\"xx-network\":{},\"zano\":{},\"zcash\":{},\"zeal\":{},\"zecrey\":{},\"zk-money\":{},\"zkbob\":{},\"zkp2p\":{},\"zksync\":{},\"zkvote\":{}}}],[\"proof\",{\"_index\":53,\"name\":{},\"category\":{},\"description\":{\"tornado-cash\":{}},\"searchableText\":{\"aztec-network\":{},\"firn-protocol\":{},\"tornado-cash\":{}}}],[\"protect\",{\"_index\":107,\"name\":{},\"category\":{},\"description\":{\"nym\":{}},\"searchableText\":{\"brume-wallet\":{},\"nym\":{}}}],[\"protocol\",{\"_index\":81,\"name\":{\"aztec-protocol\":{},\"cyclone-protocol\":{},\"firn-protocol\":{},\"lens-protocol\":{},\"light-protocol\":{},\"mina-protocol\":{},\"panther-protocol\":{},\"silent-protocol\":{},\"webb-protocol\":{}},\"category\":{},\"description\":{\"litentry\":{},\"penumbra\":{},\"phala-network\":{},\"polygon-id\":{},\"railgun\":{},\"silent-protocol\":{},\"sismo\":{},\"tornado-cash\":{}},\"searchableText\":{\"aztec-protocol\":{},\"cyclone-protocol\":{},\"firn-protocol\":{},\"lens-protocol\":{},\"light-protocol\":{},\"litentry\":{},\"mina-protocol\":{},\"panther-protocol\":{},\"penumbra\":{},\"phala-network\":{},\"polygon-id\":{},\"railgun\":{},\"silent-protocol\":{},\"sismo\":{},\"tornado-cash\":{},\"webb-protocol\":{}}}],[\"provid\",{\"_index\":104,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"pse\",{\"_index\":260,\"name\":{\"pse--privacy---scaling-explorations-\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"pse--privacy---scaling-explorations-\":{}}}],[\"public\",{\"_index\":68,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"aztec-network\":{}}}],[\"pxe\",{\"_index\":65,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"aztec-network\":{}}}],[\"railgun\",{\"_index\":263,\"name\":{\"railgun\":{},\"railgun-relay-adapt\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"railgun\":{},\"railgun-relay-adapt\":{}}}],[\"railway\",{\"_index\":266,\"name\":{\"railway-wallet\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"railway-wallet\":{}}}],[\"random\",{\"_index\":24,\"name\":{},\"category\":{},\"description\":{\"arpa\":{}},\"searchableText\":{\"arpa\":{}}}],[\"react\",{\"_index\":126,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"relay\",{\"_index\":264,\"name\":{\"railgun-relay-adapt\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"railgun-relay-adapt\":{}}}],[\"reproduc\",{\"_index\":111,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"reput\",{\"_index\":287,\"name\":{},\"category\":{},\"description\":{\"sismo\":{}},\"searchableText\":{\"sismo\":{}}}],[\"request\",{\"_index\":94,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"rollup\",{\"_index\":50,\"name\":{},\"category\":{},\"description\":{\"aztec-network\":{},\"polygon-nightfall\":{}},\"searchableText\":{\"aztec-network\":{},\"polygon-nightfall\":{}}}],[\"ronin\",{\"_index\":267,\"name\":{\"ronin\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"ronin\":{}}}],[\"rotki\",{\"_index\":268,\"name\":{\"rotki\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"rotki\":{}}}],[\"rout\",{\"_index\":93,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"rule\",{\"_index\":326,\"name\":{},\"category\":{},\"description\":{\"tornado-cash\":{}},\"searchableText\":{\"tornado-cash\":{}}}],[\"run\",{\"_index\":310,\"name\":{},\"category\":{},\"description\":{\"tornado-cash\":{}},\"searchableText\":{\"tornado-cash\":{}}}],[\"rust\",{\"_index\":75,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"aztec-network\":{},\"firn-protocol\":{}}}],[\"samourai\",{\"_index\":269,\"name\":{\"samourai-wallet\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"samourai-wallet\":{}}}],[\"sanction\",{\"_index\":315,\"name\":{},\"category\":{},\"description\":{\"tornado-cash\":{}},\"searchableText\":{\"tornado-cash\":{}}}],[\"scalabl\",{\"_index\":303,\"name\":{},\"category\":{},\"description\":{\"ten\":{}},\"searchableText\":{\"ten\":{}}}],[\"scale\",{\"_index\":261,\"name\":{\"pse--privacy---scaling-explorations-\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"pse--privacy---scaling-explorations-\":{}}}],[\"scroll\",{\"_index\":270,\"name\":{\"scroll\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"scroll\":{}}}],[\"secret\",{\"_index\":273,\"name\":{\"secret-network\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"secret-network\":{}}}],[\"secur\",{\"_index\":293,\"name\":{},\"category\":{},\"description\":{\"status\":{}},\"searchableText\":{\"status\":{}}}],[\"semaphor\",{\"_index\":275,\"name\":{\"semaphore\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"semaphore\":{}}}],[\"sensit\",{\"_index\":231,\"name\":{},\"category\":{},\"description\":{\"nillion\":{}},\"searchableText\":{\"nillion\":{}}}],[\"sentinel\",{\"_index\":276,\"name\":{\"sentinel\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"sentinel\":{}}}],[\"session\",{\"_index\":277,\"name\":{\"session\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"session\":{}}}],[\"setup\",{\"_index\":164,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"firn-protocol\":{}}}],[\"share\",{\"_index\":124,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"shield\",{\"_index\":244,\"name\":{},\"category\":{},\"description\":{\"penumbra\":{}},\"searchableText\":{\"penumbra\":{}}}],[\"sienna\",{\"_index\":279,\"name\":{\"sienna-network\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"sienna-network\":{}}}],[\"sigma\",{\"_index\":169,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"firn-protocol\":{}}}],[\"signatur\",{\"_index\":27,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"arpa\":{}}}],[\"silent\",{\"_index\":280,\"name\":{\"silent-protocol\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"silent-protocol\":{}}}],[\"sismo\",{\"_index\":286,\"name\":{\"sismo\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"sismo\":{}}}],[\"smart\",{\"_index\":69,\"name\":{},\"category\":{},\"description\":{\"silent-protocol\":{}},\"searchableText\":{\"aztec-network\":{},\"silent-protocol\":{}}}],[\"snap\",{\"_index\":187,\"name\":{\"metamask-snaps\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"firn-protocol\":{},\"metamask-snaps\":{}}}],[\"snapshot\",{\"_index\":288,\"name\":{\"snapshot-x\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"snapshot-x\":{}}}],[\"snark\",{\"_index\":54,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"aztec-network\":{},\"tornado-cash\":{}}}],[\"snarkj\",{\"_index\":185,\"name\":{\"snarkjs\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"firn-protocol\":{},\"snarkjs\":{}}}],[\"social\",{\"_index\":339,\"name\":{},\"category\":{},\"description\":{\"zion\":{}},\"searchableText\":{\"zion\":{}}}],[\"solana\",{\"_index\":215,\"name\":{},\"category\":{},\"description\":{\"light-protocol\":{}},\"searchableText\":{\"light-protocol\":{}}}],[\"solid\",{\"_index\":74,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"aztec-network\":{},\"brume-wallet\":{},\"firn-protocol\":{},\"tornado-cash\":{}}}],[\"solut\",{\"_index\":301,\"name\":{},\"category\":{},\"description\":{\"ten\":{}},\"searchableText\":{\"ten\":{}}}],[\"sourc\",{\"_index\":14,\"name\":{},\"category\":{},\"description\":{\"alephim\":{},\"frame\":{}},\"searchableText\":{\"alephim\":{},\"brume-wallet\":{},\"frame\":{}}}],[\"spoof\",{\"_index\":119,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"stack\",{\"_index\":284,\"name\":{},\"category\":{},\"description\":{\"silent-protocol\":{}},\"searchableText\":{\"silent-protocol\":{}}}],[\"starkex\",{\"_index\":290,\"name\":{\"starkex\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"starkex\":{}}}],[\"starknet\",{\"_index\":291,\"name\":{\"starknet\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"starknet\":{}}}],[\"state\",{\"_index\":60,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"aztec-network\":{}}}],[\"statu\",{\"_index\":292,\"name\":{\"status\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"status\":{}}}],[\"suterusu\",{\"_index\":295,\"name\":{\"suterusu\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"suterusu\":{}}}],[\"swift\",{\"_index\":130,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"system\",{\"_index\":56,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"aztec-network\":{}}}],[\"taiko\",{\"_index\":296,\"name\":{\"taiko\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"taiko\":{}}}],[\"technolog\",{\"_index\":252,\"name\":{},\"category\":{},\"description\":{\"platon-network\":{},\"tornado-cash\":{}},\"searchableText\":{\"platon-network\":{},\"tornado-cash\":{}}}],[\"tee\",{\"_index\":202,\"name\":{},\"category\":{},\"description\":{\"iexec\":{},\"phala-network\":{}},\"searchableText\":{\"iexec\":{},\"phala-network\":{}}}],[\"ten\",{\"_index\":299,\"name\":{\"ten\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"ten\":{}}}],[\"third\",{\"_index\":101,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"threshold\",{\"_index\":20,\"name\":{},\"category\":{},\"description\":{\"arpa\":{}},\"searchableText\":{\"arpa\":{}}}],[\"through\",{\"_index\":122,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"toler\",{\"_index\":45,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"arpa\":{}}}],[\"toolkit\",{\"_index\":188,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"firn-protocol\":{}}}],[\"tor\",{\"_index\":90,\"name\":{},\"category\":{},\"description\":{\"brume-wallet\":{}},\"searchableText\":{\"brume-wallet\":{}}}],[\"tornado\",{\"_index\":304,\"name\":{\"tornado-cash\":{}},\"category\":{},\"description\":{\"tornado-cash\":{}},\"searchableText\":{\"tornado-cash\":{}}}],[\"transact\",{\"_index\":58,\"name\":{},\"category\":{},\"description\":{\"tornado-cash\":{}},\"searchableText\":{\"aztec-network\":{},\"brume-wallet\":{},\"tornado-cash\":{}}}],[\"trust\",{\"_index\":163,\"name\":{},\"category\":{},\"description\":{\"nillion\":{}},\"searchableText\":{\"firn-protocol\":{},\"nillion\":{}}}],[\"tss\",{\"_index\":28,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"arpa\":{}}}],[\"type\",{\"_index\":297,\"name\":{},\"category\":{},\"description\":{\"taiko\":{}},\"searchableText\":{\"taiko\":{}}}],[\"typescript\",{\"_index\":72,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"aztec-network\":{},\"brume-wallet\":{},\"firn-protocol\":{}}}],[\"typhoon\",{\"_index\":328,\"name\":{\"typhoon-network\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"typhoon-network\":{}}}],[\"umbra\",{\"_index\":329,\"name\":{\"umbra-cash\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"umbra-cash\":{}}}],[\"uncategor\",{\"_index\":7,\"name\":{},\"category\":{\"1inch-privacy\":{},\"ai-discovered\":{},\"aleo\":{},\"anoma\":{},\"brave-browser\":{},\"curve-privacy\":{},\"dark-forest\":{},\"dash\":{},\"docs\":{},\"dusk-network\":{},\"eth2-deposit-cli\":{},\"farcaster\":{},\"gitcoin-grants\":{},\"horizen\":{},\"keep-network\":{},\"lens-protocol\":{},\"maci\":{},\"mask\":{},\"metamask-snaps\":{},\"mina-protocol\":{},\"nucypher\":{},\"pse--privacy---scaling-explorations-\":{},\"ronin\":{},\"samourai-wallet\":{},\"snapshot-x\":{},\"starknet\":{},\"umbra-cash\":{},\"zecrey\":{},\"zkbob\":{},\"zkp2p\":{}},\"description\":{},\"searchableText\":{\"1inch-privacy\":{},\"ai-discovered\":{},\"aleo\":{},\"anoma\":{},\"brave-browser\":{},\"curve-privacy\":{},\"dark-forest\":{},\"dash\":{},\"docs\":{},\"dusk-network\":{},\"eth2-deposit-cli\":{},\"farcaster\":{},\"gitcoin-grants\":{},\"horizen\":{},\"keep-network\":{},\"lens-protocol\":{},\"maci\":{},\"mask\":{},\"metamask-snaps\":{},\"mina-protocol\":{},\"nucypher\":{},\"pse--privacy---scaling-explorations-\":{},\"ronin\":{},\"samourai-wallet\":{},\"snapshot-x\":{},\"starknet\":{},\"umbra-cash\":{},\"zecrey\":{},\"zkbob\":{},\"zkp2p\":{}}}],[\"uniqu\",{\"_index\":95,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"unknown\",{\"_index\":1,\"name\":{},\"category\":{\"0xbow\":{},\"aztec\":{},\"aztec-protocol\":{}},\"description\":{},\"searchableText\":{\"0xbow\":{},\"aztec\":{},\"aztec-protocol\":{}}}],[\"us\",{\"_index\":314,\"name\":{},\"category\":{},\"description\":{\"tornado-cash\":{}},\"searchableText\":{\"tornado-cash\":{}}}],[\"veramo\",{\"_index\":330,\"name\":{\"veramo\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"veramo\":{}}}],[\"verifi\",{\"_index\":23,\"name\":{},\"category\":{},\"description\":{\"arpa\":{},\"veramo\":{}},\"searchableText\":{\"arpa\":{},\"veramo\":{}}}],[\"virtual\",{\"_index\":311,\"name\":{},\"category\":{},\"description\":{\"tornado-cash\":{}},\"searchableText\":{\"tornado-cash\":{}}}],[\"vm\",{\"_index\":17,\"name\":{},\"category\":{},\"description\":{\"alephim\":{}},\"searchableText\":{\"alephim\":{}}}],[\"vrf\",{\"_index\":36,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"arpa\":{}}}],[\"wallet\",{\"_index\":87,\"name\":{\"brume-wallet\":{},\"cake-wallet\":{},\"edge-wallet\":{},\"nighthawk-wallet\":{},\"railway-wallet\":{},\"samourai-wallet\":{},\"wasabi-wallet\":{}},\"category\":{\"brume-wallet\":{},\"edge-wallet\":{},\"frame\":{},\"railway-wallet\":{}},\"description\":{\"brume-wallet\":{},\"frame\":{},\"railway-wallet\":{},\"status\":{}},\"searchableText\":{\"brume-wallet\":{},\"cake-wallet\":{},\"edge-wallet\":{},\"frame\":{},\"nighthawk-wallet\":{},\"railway-wallet\":{},\"samourai-wallet\":{},\"status\":{},\"wasabi-wallet\":{}}}],[\"walletconnect\",{\"_index\":118,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"wasabi\",{\"_index\":331,\"name\":{\"wasabi-wallet\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"wasabi-wallet\":{}}}],[\"wasm\",{\"_index\":129,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"web\",{\"_index\":222,\"name\":{},\"category\":{},\"description\":{\"manta-network\":{}},\"searchableText\":{\"manta-network\":{}}}],[\"web3\",{\"_index\":4,\"name\":{},\"category\":{},\"description\":{\"0xbow\":{},\"1inch-privacy\":{},\"ai-discovered\":{},\"aleo\":{},\"anoma\":{},\"aztec\":{},\"aztec-protocol\":{},\"beam\":{},\"brave-browser\":{},\"cake-wallet\":{},\"circom\":{},\"concordium\":{},\"curve-privacy\":{},\"cyclone-protocol\":{},\"dark-forest\":{},\"darkfi\":{},\"dash\":{},\"deeper-network\":{},\"docs\":{},\"dusk-network\":{},\"edge-wallet\":{},\"elusiv\":{},\"eth2-deposit-cli\":{},\"farcaster\":{},\"fileverse\":{},\"findora\":{},\"firo\":{},\"fluidkey\":{},\"gitcoin-grants\":{},\"grin\":{},\"hopr\":{},\"horizen\":{},\"iden3\":{},\"incognito\":{},\"iron-fish\":{},\"keep-network\":{},\"lens-protocol\":{},\"maci\":{},\"mask\":{},\"mask-network\":{},\"metamask-snaps\":{},\"mina-protocol\":{},\"mobilecoin\":{},\"monero\":{},\"mysterium-network\":{},\"nighthawk-wallet\":{},\"nucypher\":{},\"oasis-network\":{},\"orchid\":{},\"oxen\":{},\"pirate-chain\":{},\"polygon-hermez\":{},\"polygon-zero\":{},\"privatepool\":{},\"pse--privacy---scaling-explorations-\":{},\"railgun-relay-adapt\":{},\"ronin\":{},\"rotki\":{},\"samourai-wallet\":{},\"semaphore\":{},\"sentinel\":{},\"sienna-network\":{},\"snapshot-x\":{},\"snarkjs\":{},\"starkex\":{},\"starknet\":{},\"suterusu\":{},\"ten\":{},\"typhoon-network\":{},\"umbra-cash\":{},\"wasabi-wallet\":{},\"webb-protocol\":{},\"xx-network\":{},\"zano\":{},\"zcash\":{},\"zeal\":{},\"zecrey\":{},\"zk-money\":{},\"zkbob\":{},\"zkp2p\":{},\"zksync\":{},\"zkvote\":{}},\"searchableText\":{\"0xbow\":{},\"1inch-privacy\":{},\"ai-discovered\":{},\"aleo\":{},\"anoma\":{},\"aztec\":{},\"aztec-protocol\":{},\"beam\":{},\"brave-browser\":{},\"cake-wallet\":{},\"circom\":{},\"concordium\":{},\"curve-privacy\":{},\"cyclone-protocol\":{},\"dark-forest\":{},\"darkfi\":{},\"dash\":{},\"deeper-network\":{},\"docs\":{},\"dusk-network\":{},\"edge-wallet\":{},\"elusiv\":{},\"eth2-deposit-cli\":{},\"farcaster\":{},\"fileverse\":{},\"findora\":{},\"firo\":{},\"fluidkey\":{},\"gitcoin-grants\":{},\"grin\":{},\"hopr\":{},\"horizen\":{},\"iden3\":{},\"incognito\":{},\"iron-fish\":{},\"keep-network\":{},\"lens-protocol\":{},\"maci\":{},\"mask\":{},\"mask-network\":{},\"metamask-snaps\":{},\"mina-protocol\":{},\"mobilecoin\":{},\"monero\":{},\"mysterium-network\":{},\"nighthawk-wallet\":{},\"nucypher\":{},\"oasis-network\":{},\"orchid\":{},\"oxen\":{},\"pirate-chain\":{},\"polygon-hermez\":{},\"polygon-zero\":{},\"privatepool\":{},\"pse--privacy---scaling-explorations-\":{},\"railgun-relay-adapt\":{},\"ronin\":{},\"rotki\":{},\"samourai-wallet\":{},\"semaphore\":{},\"sentinel\":{},\"sienna-network\":{},\"snapshot-x\":{},\"snarkjs\":{},\"starkex\":{},\"starknet\":{},\"suterusu\":{},\"ten\":{},\"typhoon-network\":{},\"umbra-cash\":{},\"wasabi-wallet\":{},\"webb-protocol\":{},\"xx-network\":{},\"zano\":{},\"zcash\":{},\"zeal\":{},\"zecrey\":{},\"zk-money\":{},\"zkbob\":{},\"zkp2p\":{},\"zksync\":{},\"zkvote\":{}}}],[\"webassembl\",{\"_index\":128,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"brume-wallet\":{}}}],[\"webb\",{\"_index\":332,\"name\":{\"webb-protocol\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"webb-protocol\":{}}}],[\"websnark\",{\"_index\":327,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"tornado-cash\":{}}}],[\"x\",{\"_index\":289,\"name\":{\"snapshot-x\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"snapshot-x\":{}}}],[\"xx\",{\"_index\":333,\"name\":{\"xx-network\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"xx-network\":{}}}],[\"zano\",{\"_index\":334,\"name\":{\"zano\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"zano\":{}}}],[\"zcash\",{\"_index\":335,\"name\":{\"zcash\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"zcash\":{}}}],[\"zeal\",{\"_index\":336,\"name\":{\"zeal\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"zeal\":{}}}],[\"zecrey\",{\"_index\":337,\"name\":{\"zecrey\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"zecrey\":{}}}],[\"zero\",{\"_index\":51,\"name\":{\"polygon-zero\":{}},\"category\":{},\"description\":{\"firn-protocol\":{},\"tornado-cash\":{}},\"searchableText\":{\"aztec-network\":{},\"firn-protocol\":{},\"polygon-zero\":{},\"tornado-cash\":{}}}],[\"zether\",{\"_index\":165,\"name\":{},\"category\":{},\"description\":{},\"searchableText\":{\"firn-protocol\":{}}}],[\"zion\",{\"_index\":338,\"name\":{\"zion\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"zion\":{}}}],[\"zk\",{\"_index\":49,\"name\":{},\"category\":{},\"description\":{\"aztec-network\":{}},\"searchableText\":{\"aztec-network\":{},\"tornado-cash\":{}}}],[\"zk.money\",{\"_index\":340,\"name\":{\"zk-money\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"zk-money\":{}}}],[\"zkbob\",{\"_index\":341,\"name\":{\"zkbob\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"zkbob\":{}}}],[\"zkevm\",{\"_index\":271,\"name\":{},\"category\":{},\"description\":{\"scroll\":{},\"taiko\":{}},\"searchableText\":{\"scroll\":{},\"taiko\":{}}}],[\"zkp2p\",{\"_index\":342,\"name\":{\"zkp2p\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"zkp2p\":{}}}],[\"zkrollup\",{\"_index\":272,\"name\":{},\"category\":{},\"description\":{\"scroll\":{}},\"searchableText\":{\"scroll\":{}}}],[\"zksync\",{\"_index\":343,\"name\":{\"zksync\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"zksync\":{}}}],[\"zkvote\",{\"_index\":344,\"name\":{\"zkvote\":{}},\"category\":{},\"description\":{},\"searchableText\":{\"zkvote\":{}}}]],\"pipeline\":[\"stemmer\"]}",
+  "filters": {
+    "categories": [
+      "Uncategorized",
+      "bridges",
+      "computing",
+      "currency",
+      "defi",
+      "did",
+      "infrastructure",
+      "layer2",
+      "messaging",
+      "mixing",
+      "other",
+      "privacy_mixer",
+      "unknown",
+      "wallet"
+    ],
+    "tech_stacks": [
+      "Aztec.js",
+      "Aztec.nr",
+      "Barretenberg",
+      "C++",
+      "Capacitor",
+      "Circom",
+      "Foundry",
+      "HTML/CSS",
+      "JavaScript",
+      "Kotlin",
+      "MDX",
+      "MetaMask Snap",
+      "Next.js",
+      "Node.js",
+      "Noir",
+      "React",
+      "Rust",
+      "Rust (Foundry toolkit)",
+      "SnarkJS",
+      "Solidity",
+      "Swift",
+      "TypeScript",
+      "WebAssembly (WASM)",
+      "Websnark"
+    ],
+    "privacy_techniques": [
+      "Account-based privacy model",
+      "Anonymous Zether Protocol",
+      "Anonymous transaction routing through Tor",
+      "Built-in Tor routing for all network requests",
+      "Byzantine Fault Tolerance",
+      "Confidential Smart Contracts",
+      "Decisional Diffie-Hellman (DDH) assumption",
+      "Distributed Key Generation (DKG)",
+      "Dynamic Node Grouping",
+      "EIP-1193 provider with hardened phishing protections",
+      "ElGamal Encryption (with message in the exponent)",
+      "Elliptic Curve Cryptography",
+      "Encrypted Transactions",
+      "Homomorphic encryption",
+      "Hybrid Public-Private Execution",
+      "IP address masking from third-parties",
+      "Inner Product Arguments",
+      "Many-out-of-Many Proofs",
+      "Minimal dependencies (20x less than competitors)",
+      "Multi-Party Computation (MPC)",
+      "No IP/wallet address sharing with third parties",
+      "Non-custodial architecture",
+      "Note Encryption",
+      "Nullifier System",
+      "Open-source and reproducible builds",
+      "PLONK Proof System",
+      "Private Execution Environment (PXE)",
+      "Private State Management",
+      "Sigma-Bullets (Bulletproofs + Σ-protocols)",
+      "Threshold BLS Signatures (BLS-TSS)",
+      "Tor Network Integration",
+      "Unique IP address per wallet account",
+      "Verifiable Random Function (VRF)",
+      "WalletConnect with spoofed domain protection",
+      "ZK-ZK Rollup (ZK²)",
+      "Zero-Knowledge Proofs (ZK-SNARKs)",
+      "Zero-Knowledge Proofs (no trusted setup)",
+      "multi-party computation (MPC)",
+      "zk-SNARKs"
+    ],
+    "platforms": []
+  },
+  "statistics": {
+    "avg_confidence": 0,
+    "avg_completeness": 31,
+    "projects_by_category": {},
+    "projects_by_status": {}
+  },
+  "total_projects": 114
+}
