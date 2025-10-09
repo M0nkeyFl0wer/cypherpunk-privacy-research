@@ -46,8 +46,8 @@ export async function loadProjectIndex(): Promise<ProjectIndex> {
   if (cachedData) return cachedData;
 
   try {
-    // Use basePath from environment variable
-    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+    // Hardcoded basePath for GitHub Pages (site is ONLY deployed there)
+    const basePath = '/web3-privacy-ethereum-cypherpunk-research';
     const response = await fetch(`${basePath}/data/projects.json`);
     if (!response.ok) {
       throw new Error(`Failed to load project index: ${response.statusText}`);
