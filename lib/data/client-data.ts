@@ -46,10 +46,8 @@ export async function loadProjectIndex(): Promise<ProjectIndex> {
   if (cachedData) return cachedData;
 
   try {
-    // Detect GitHub Pages deployment at runtime
-    const isGitHubPages = typeof window !== 'undefined' && window.location.hostname.includes('github.io');
-    const basePath = isGitHubPages ? '/web3-privacy-ethereum-cypherpunk-research' : '';
-    const response = await fetch(`${basePath}/data/projects.json`);
+    // Always use full GitHub Pages path - site is only deployed there
+    const response = await fetch('/web3-privacy-ethereum-cypherpunk-research/data/projects.json');
     if (!response.ok) {
       throw new Error(`Failed to load project index: ${response.statusText}`);
     }

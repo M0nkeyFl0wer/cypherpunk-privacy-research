@@ -24,5 +24,64 @@
   "supported_chains": [
     "ethereum"
   ],
-  "launch_status": "Private Testnet"
+  "launch_status": "Private Testnet",
+  "tech_stack": {
+    "programming_languages": [
+      "TypeScript",
+      "JavaScript",
+      "Solidity"
+    ],
+    "blockchain_platforms": [
+      "Ethereum",
+      "Optimism",
+      "EVM-compatible chains"
+    ],
+    "frameworks_and_tools": [
+      "Next.js",
+      "Circom (zkSNARK circuit compiler)",
+      "SnarkJS (zkSNARK implementation)",
+      "Hardhat (likely, based on DeFi context)",
+      "MetaMask Snap SDK",
+      "pnpm (package manager)"
+    ],
+    "smart_contract_platforms": [
+      "Solidity (EVM)",
+      "Uniswap V3 periphery (fork/integration)"
+    ],
+    "zk_libraries": [
+      "circomlibjs (JavaScript library for circomlib circuits)",
+      "snarkjs (zkSNARK proofs)"
+    ]
+  },
+  "privacy_techniques": {
+    "zero_knowledge_proofs": {
+      "implemented": true,
+      "types": [
+        "zkSNARKs",
+        "zk-based queued Merkle trees"
+      ],
+      "description": "Core privacy mechanism using zero-knowledge proofs for shielded transactions",
+      "confidence": 1.0
+    },
+    "threshold_cryptography": {
+      "implemented": true,
+      "use_case": "Selective De-Anonymization (SeDe) compliance mechanism",
+      "description": "Threshold decryption for compliant selective de-anonymization with multiple trusted revokers",
+      "confidence": 0.9
+    },
+    "multi_party_computation": {
+      "implemented": "likely",
+      "evidence": "Threshold cryptography suggests MPC usage for distributed trust in compliance network",
+      "confidence": 0.7
+    },
+    "additional_techniques": [
+      "Shielded accounts",
+      "Blinded addresses",
+      "Account abstraction",
+      "Note system (similar to Zcash)",
+      "JoinSplits for transaction privacy",
+      "Merkle tree architecture"
+    ]
+  },
+  "github_url": "https://github.com/zkfi-tech"
 }

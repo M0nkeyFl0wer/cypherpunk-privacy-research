@@ -13,5 +13,88 @@
     "status": "initial_discovery",
     "completion_percent": 10,
     "last_updated": "2025-09-29T14:06:45.302868"
-  }
+  },
+  "tech_stack": {
+    "smart_contracts": {
+      "languages": [
+        "Solidity"
+      ],
+      "frameworks": [
+        "Hardhat",
+        "Foundry"
+      ],
+      "libraries": [
+        "OpenZeppelin"
+      ],
+      "confidence": 0.95
+    },
+    "backend": {
+      "languages": [
+        "TypeScript",
+        "JavaScript"
+      ],
+      "runtime": [
+        "Node.js (v16.14.0+)"
+      ],
+      "confidence": 0.9
+    },
+    "development_tools": {
+      "package_managers": [
+        "Yarn (v1.22.19)"
+      ],
+      "tooling": [
+        "TypeScript",
+        "ESLint",
+        "Solhint"
+      ],
+      "confidence": 0.9
+    },
+    "blockchain_compatibility": {
+      "supported_chains": "25+ EVM-compatible and non-EVM blockchains",
+      "standards": [
+        "ERC20"
+      ],
+      "confidence": 0.95
+    }
+  },
+  "privacy_techniques": {
+    "multi_party_computation": {
+      "description": "Active MPC with hardware isolation for multi-layer security",
+      "provider": "Fireblocks",
+      "implementation": "Private key sharding with encrypted shares distributed among multiple parties",
+      "coverage": "Storage and transfers",
+      "confidence": 1.0
+    },
+    "hardware_isolation": {
+      "description": "Hardware-based security isolation combined with MPC cryptography",
+      "purpose": "Protection against cyber attacks, internal collusion, and human error",
+      "confidence": 0.95
+    },
+    "cold_storage": {
+      "description": "Multi-signature cold storage with fund segregation",
+      "provider": "Gnosis Safe and Fireblocks",
+      "percentage": "98% of funds in cold storage",
+      "hot_wallet": "5% maximum in bridge contract",
+      "confidence": 1.0
+    },
+    "private_bridge_service": {
+      "description": "Enhanced privacy bridge with 3-of-5 multi-sig wallets",
+      "key_distribution": "2 keys held by ChainPort, 2 by token issuer, 1 optional trustee key",
+      "confidence": 0.9
+    },
+    "encryption": {
+      "description": "Fireblocks MPC encryption for key management",
+      "confidence": 0.95
+    },
+    "proof_of_reserves": {
+      "description": "Transparency mechanism for verifying locked assets",
+      "confidence": 0.85
+    },
+    "notes": {
+      "tee_support": "No evidence found for Trusted Execution Environment (TEE) implementation",
+      "zero_knowledge_proofs": "No specific implementation details found for zero-knowledge proofs",
+      "confidence": 0.7
+    }
+  },
+  "github_url": "https://github.com/chainport"
 }

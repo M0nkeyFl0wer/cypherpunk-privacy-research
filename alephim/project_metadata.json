@@ -15,5 +15,86 @@
     "last_updated": "2025-09-29T14:06:45.275666"
   },
   "github_source": "Web Search 2025-09-29",
-  "github_confidence": "high"
+  "github_confidence": "high",
+  "tech_stack": {
+    "primary_languages": [
+      "Python",
+      "TypeScript",
+      "JavaScript",
+      "Solidity"
+    ],
+    "core_technologies": [
+      "IPFS",
+      "Firecracker",
+      "PostgreSQL",
+      "Redis",
+      "AMD SEV (Secure Encrypted Virtualization)"
+    ],
+    "virtualization": [
+      "Firecracker microVMs",
+      "QEMU (for confidential computing)",
+      "AMD SEV-enabled virtual machines"
+    ],
+    "blockchain_integrations": [
+      "Ethereum",
+      "Solana",
+      "Polkadot/Substrate",
+      "Cosmos-SDK",
+      "NULS"
+    ],
+    "frameworks": [
+      "ASGI-compatible frameworks (Python)",
+      "Vue.js (frontend)"
+    ]
+  },
+  "privacy_techniques": {
+    "confidential_computing": {
+      "technology": "AMD SEV (Secure Encrypted Virtualization)",
+      "description": "Hardware-based confidential computing using AMD SEV on 4th Generation AMD EPYC processors",
+      "features": [
+        "Memory encryption with unique keys per VM",
+        "CPU-level encryption for RAM and storage",
+        "Secure isolation from hypervisor and other VMs",
+        "Cryptographic attestation for VM integrity verification",
+        "Protection against privileged users and compromised hypervisors"
+      ],
+      "hardware_requirements": "4th Generation AMD EPYC Processors (9004 Series, 8004 Series) with SEV support",
+      "status": "Beta"
+    },
+    "trusted_execution_environment": {
+      "implementation": "TEE via AMD SEV",
+      "guarantees": [
+        "Data remains encrypted during computation",
+        "No external entity (including hypervisor) can access VM memory",
+        "Hardware-generated and managed encryption keys",
+        "Complete VM isolation"
+      ]
+    },
+    "encryption": {
+      "data_at_rest": "IPFS with encryption capabilities",
+      "data_in_use": "AMD SEV memory encryption",
+      "storage": "Private and encrypted object/file storage",
+      "key_management": "Hardware-based key generation and management"
+    },
+    "network_privacy": {
+      "architecture": "Peer-to-peer decentralized network",
+      "node_types": [
+        "Core Channel Nodes (CCN) - Infrastructure management",
+        "Compute Resource Nodes (CRN) - Computational resources"
+      ],
+      "decentralization": {
+        "total_nodes": "659+ nodes",
+        "compute_resources": "8,964 CPUs, 35.36 TB RAM, 450.73 TB HDD",
+        "distribution": "Fully distributed across network"
+      }
+    },
+    "additional_privacy_features": [
+      "Confidential Virtual Machines (CVMs)",
+      "Function-as-a-Service with isolated execution",
+      "Decentralized Identification (DID) framework",
+      "Censorship resistance",
+      "Data privacy from cloud provider"
+    ]
+  },
+  "github_url": "https://github.com/aleph-im"
 }

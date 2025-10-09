@@ -32,3 +32,28 @@ The portal to the new, open Internet. ([I:b])
 ---
 
 *Constitutional Research v2.0.0 - Real data only*
+
+
+---
+
+## 🔍 OSINT Intelligence
+
+**Research Date**: 2025-10-08
+
+### Official Channels
+- **Website**: https://mask.io
+- **Twitter/X**: N/A
+- **GitHub**: N/A
+- **Contact**: info@dimension.im
+
+### Infrastructure & Security
+- **Domain Reputation**: Unknown (VirusTotal)
+- **Subdomain Exposure**: 16 discovered
+- **Security Status**: ✅ No malicious flags detected
+
+📊 **[View Full OPSEC Report](reports/opsec_vulnerability_assessment.md)**
+
+---
+
+*OSINT data collected via Shodan, VirusTotal, Hunter.io - Constitution v2.0.0 compliant*
+

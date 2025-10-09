@@ -13,5 +13,206 @@
     "status": "initial_discovery",
     "completion_percent": 10,
     "last_updated": "2025-09-29T14:06:45.281845"
-  }
+  },
+  "tech_stack": {
+    "primary_languages": [
+      {
+        "language": "Rust",
+        "percentage": 79.3,
+        "usage": "Core blockchain implementation, runtime, pallets"
+      },
+      {
+        "language": "TypeScript",
+        "percentage": 12.1,
+        "usage": "GraphQL server, API layer"
+      },
+      {
+        "language": "Solidity",
+        "percentage": 4.4,
+        "usage": "EVM compatibility layer"
+      },
+      {
+        "language": "Shell",
+        "usage": "Build scripts and deployment automation"
+      },
+      {
+        "language": "C",
+        "usage": "SGX SDK integration"
+      },
+      {
+        "language": "Python",
+        "usage": "Worker launch scripts and configuration tools"
+      }
+    ],
+    "frameworks_and_platforms": [
+      {
+        "name": "Substrate",
+        "version": "Latest",
+        "purpose": "L1 blockchain framework",
+        "confidence": 1.0
+      },
+      {
+        "name": "Polkadot",
+        "purpose": "Relay chain for parachain slot (shared security and interoperability)",
+        "confidence": 1.0
+      },
+      {
+        "name": "Kusama",
+        "purpose": "Alternative relay chain (strategic focus on Polkadot)",
+        "confidence": 0.85
+      },
+      {
+        "name": "Integritee",
+        "purpose": "TEE sidechain framework for SGX worker implementation",
+        "confidence": 1.0
+      }
+    ],
+    "key_dependencies": [
+      {
+        "name": "Intel SGX SDK",
+        "purpose": "Trusted Execution Environment implementation",
+        "configuration": "SGX_MODE=SW for development, /opt/intel/sgxsdk/environment"
+      },
+      {
+        "name": "Substrate pallets",
+        "purpose": "Modular runtime components (governance, balance, parachain-system, etc.)"
+      },
+      {
+        "name": "incubator-mesatee-sgx",
+        "purpose": "Rust SGX SDK for writing Intel SGX applications in Rust",
+        "source": "https://github.com/litentry/incubator-mesatee-sgx"
+      },
+      {
+        "name": "tee-sgx-sdk",
+        "purpose": "SGX pallet compilation to WASM blob/binary"
+      },
+      {
+        "name": "Zombienet",
+        "purpose": "Local network deployment and testing"
+      }
+    ],
+    "build_system": [
+      "Cargo (Rust package manager)",
+      "Makefile-based build processes",
+      "worker-log-level-config.toml for RUST_LOG configuration"
+    ]
+  },
+  "privacy_techniques": {
+    "primary_approach": "Trusted Execution Environment (TEE)",
+    "techniques": [
+      {
+        "technique": "Intel SGX (Software Guard Extensions)",
+        "implementation_details": [
+          "Hardware-based secure enclaves isolated from host system",
+          "TEE sidechain for confidential execution",
+          "SGX runtime enables integration of Substrate-compatible pallets",
+          "Private keys stored only in SGX nodes",
+          "Encrypted extrinsic parameters/addresses in parachain",
+          "Data decryption and dispatch within SGX enclave"
+        ],
+        "purpose": "Privacy-preserving identity aggregation and credential issuance",
+        "confidence": 1.0
+      },
+      {
+        "technique": "Verifiable Credentials (VC)",
+        "implementation_details": [
+          "W3C DID standards compliant",
+          "Identity Hub (IDHub) as onchain VC registry on Litentry Parachain",
+          "Trustless workflow for VC issuance and verification",
+          "Digital signatures and cryptographic proofs",
+          "Minimal disclosure principle",
+          "Tamper-evident credential storage"
+        ],
+        "purpose": "Decentralized identity verification without exposing user data",
+        "confidence": 1.0
+      },
+      {
+        "technique": "Decentralized Identifiers (DIDs)",
+        "implementation_details": [
+          "W3C DID v1.0 specification compliance",
+          "DID aggregation across multiple blockchains",
+          "Platform-agnostic identification system",
+          "DID indexing protocol",
+          "Substrate-based DID validation blockchain"
+        ],
+        "purpose": "Cross-chain identity management without centralized registries",
+        "confidence": 1.0
+      },
+      {
+        "technique": "Encrypted Communication",
+        "implementation_details": [
+          "Client-to-TEE encrypted interactions",
+          "Three call types: Trusted calls, Direct calls, Indirect calls",
+          "Encrypted runtime calls sent through Teerex Pallet",
+          "Worker node block synchronization for call parsing"
+        ],
+        "purpose": "Secure data transmission between clients and TEE workers",
+        "confidence": 0.95
+      },
+      {
+        "technique": "Privacy Data Segregation",
+        "implementation_details": [
+          "Privacy data stored in SGX nodes only",
+          "ID graph linking performed within TEE",
+          "Assertion verification in isolated environment",
+          "Public parachain state separated from private TEE state"
+        ],
+        "purpose": "Data isolation and privacy protection",
+        "confidence": 1.0
+      }
+    ],
+    "architecture": {
+      "layer_1": {
+        "name": "Parachain Layer",
+        "components": [
+          "Litentry Parachain",
+          "Litmus Parachain"
+        ],
+        "purpose": "Application-specific blockchains with relay chain integration",
+        "characteristics": [
+          "Shared security",
+          "XCM message handling",
+          "Public state visibility"
+        ]
+      },
+      "layer_2": {
+        "name": "TEE Sidechain",
+        "components": [
+          "Integritee-based workers",
+          "SGX runtime"
+        ],
+        "purpose": "Confidential execution environment for privacy-sensitive operations",
+        "characteristics": [
+          "Private state",
+          "SGX secure enclaves",
+          "Off-chain computation"
+        ]
+      },
+      "layer_3": {
+        "name": "Relay Chain",
+        "components": [
+          "Polkadot",
+          "Kusama"
+        ],
+        "purpose": "Shared security and parachain coordination",
+        "characteristics": [
+          "Block validation",
+          "Cross-chain messaging",
+          "Network consensus"
+        ]
+      }
+    },
+    "tee_vs_zkp_rationale": {
+      "chosen_approach": "TEE (Trusted Execution Environment)",
+      "reasons": [
+        "Speed: TEE provides faster execution than zero-knowledge proof cryptographic processes",
+        "Versatility: Secure CPU area enables broad use cases",
+        "Efficiency: Lower computational overhead for identity operations",
+        "Practicality: Better suited for verifiable credential transmission and confidential communications"
+      ],
+      "zkp_consideration": "Zero-knowledge proofs involve more complex and time-consuming cryptographic processes, though both technologies achieve similar privacy results",
+      "confidence": 0.95
+    }
+  },
+  "github_url": "https://github.com/litentry/litentry-parachain"
 }

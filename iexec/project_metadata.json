@@ -13,5 +13,113 @@
     "status": "initial_discovery",
     "completion_percent": 10,
     "last_updated": "2025-09-29T14:06:45.276191"
-  }
+  },
+  "tech_stack": {
+    "primary_languages": [
+      "Java",
+      "Solidity",
+      "TypeScript",
+      "JavaScript"
+    ],
+    "blockchain": [
+      "Ethereum",
+      "Solidity Smart Contracts",
+      "ERC-2535 (Diamond Proxy Pattern)",
+      "ERC1538 Module System"
+    ],
+    "backend": [
+      "Java",
+      "Spring Boot",
+      "Gradle"
+    ],
+    "containerization": [
+      "Docker",
+      "OCI images"
+    ],
+    "databases": [
+      "MongoDB",
+      "H2"
+    ],
+    "testing": [
+      "Hardhat",
+      "Jest"
+    ],
+    "build_tools": [
+      "Gradle",
+      "Hardhat",
+      "npm/yarn"
+    ],
+    "deployment": [
+      "Docker Hub",
+      "GitHub Actions",
+      "Create2 Factory"
+    ]
+  },
+  "privacy_techniques": {
+    "trusted_execution_environment": {
+      "technology": "TEE (Trusted Execution Environment)",
+      "implementations": [
+        {
+          "name": "Intel SGX",
+          "description": "Software Guard Extensions for secure enclaves",
+          "driver_modes": [
+            "NONE (default)",
+            "LEGACY",
+            "NATIVE"
+          ],
+          "features": [
+            "Enclave-based secure computation",
+            "Memory isolation",
+            "Hardware-level protection",
+            "Attestation support"
+          ]
+        }
+      ],
+      "frameworks": [
+        {
+          "name": "Scone",
+          "provider": "Scontain",
+          "description": "High-level framework for SGX development",
+          "features": [
+            "Container protection without modification",
+            "Code and data confidentiality",
+            "Integrity guarantees",
+            "Native SGX limitation resolution"
+          ]
+        },
+        {
+          "name": "Gramine",
+          "description": "TEE framework supported by SMS"
+        }
+      ],
+      "components": [
+        {
+          "name": "Secret Management Service (SMS)",
+          "description": "Stores user secrets and provisions them to authorized TEE applications",
+          "security": [
+            "AES encryption for disk storage",
+            "TLS channel for secret transfer",
+            "On-chain Access Control Lists (ACL)",
+            "Granular access policies",
+            "SSL keystore support"
+          ]
+        }
+      ]
+    },
+    "cryptography": [
+      "AES encryption",
+      "TLS/SSL",
+      "Blockchain-based verification",
+      "Hardware-based attestation"
+    ],
+    "security_features": [
+      "End-to-end data protection",
+      "Code integrity verification",
+      "Tamper-proof execution",
+      "Decentralized trust model",
+      "Proof of Contribution validation",
+      "Staking mechanisms"
+    ]
+  },
+  "github_url": "https://github.com/iExecBlockchainComputing"
 }
