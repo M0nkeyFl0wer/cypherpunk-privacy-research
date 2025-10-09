@@ -223,14 +223,19 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
                 <div className="mb-4">
                   <h3 className="text-sm font-semibold text-gray-700 mb-2">Tech Stack</h3>
                   <div className="flex flex-wrap gap-2">
-                    {metadata.tech_stack.map(tech => (
-                      <span
-                        key={tech}
-                        className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800"
-                      >
-                        {tech}
-                      </span>
-                    ))}
+                    {metadata.tech_stack.map((tech: any, idx: number) => {
+                      // Handle both strings and complex objects
+                      const techName = typeof tech === 'string' ? tech : (tech.name || tech.technology || 'Unknown');
+                      const techKey = typeof tech === 'string' ? tech : `tech-${idx}`;
+                      return (
+                        <span
+                          key={techKey}
+                          className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800"
+                        >
+                          {techName}
+                        </span>
+                      );
+                    })}
                   </div>
                 </div>
               )}
@@ -240,14 +245,19 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
                 <div className="mb-4">
                   <h3 className="text-sm font-semibold text-gray-700 mb-2">Privacy Techniques</h3>
                   <div className="flex flex-wrap gap-2">
-                    {metadata.privacy_techniques.map(technique => (
-                      <span
-                        key={technique}
-                        className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-purple-100 text-purple-800"
-                      >
-                        {technique}
-                      </span>
-                    ))}
+                    {metadata.privacy_techniques.map((technique: any, idx: number) => {
+                      // Handle both strings and complex objects
+                      const techniqueName = typeof technique === 'string' ? technique : (technique.technique || technique.name || 'Unknown');
+                      const techniqueKey = typeof technique === 'string' ? technique : `technique-${idx}`;
+                      return (
+                        <span
+                          key={techniqueKey}
+                          className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-purple-100 text-purple-800"
+                        >
+                          {techniqueName}
+                        </span>
+                      );
+                    })}
                   </div>
                 </div>
               )}

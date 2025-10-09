@@ -55,14 +55,24 @@ for (const projectName of PROJECT_DIRS) {
   }
 
   // Build project summary
+  // Normalize privacy_techniques and tech_stack to always be string arrays
+  const normalizeArray = (arr) => {
+    if (!Array.isArray(arr)) return [];
+    return arr.map(item => {
+      if (typeof item === 'string') return item;
+      // Extract name from complex objects
+      return item.technique || item.name || item.technology || 'Unknown';
+    });
+  };
+
   const project = {
     slug: projectName,
     name: metadata?.name || projectName.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
     category: metadata?.category || 'Uncategorized',
     website: metadata?.website || null,
     description: metadata?.description || 'Privacy-focused Web3 project',
-    privacyTechniques: metadata?.privacy_techniques || [],
-    techStack: metadata?.tech_stack || [],
+    privacyTechniques: normalizeArray(metadata?.privacy_techniques),
+    techStack: normalizeArray(metadata?.tech_stack),
     hasReadme,
     hasCard,
     completeness: calculateCompleteness(metadata, hasReadme, hasCard),
@@ -80,8 +90,8 @@ for (const projectName of PROJECT_DIRS) {
       project.name,
       project.category,
       project.description,
-      ...(project.privacyTechniques || []),
-      ...(project.techStack || []),
+      ...(Array.isArray(project.privacyTechniques) ? project.privacyTechniques : []),
+      ...(Array.isArray(project.techStack) ? project.techStack : []),
     ].join(' ').toLowerCase(),
   });
 }

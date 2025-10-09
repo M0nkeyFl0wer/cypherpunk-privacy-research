@@ -46,7 +46,7 @@
     "name": "Arpa",
     "category": "computing",
     "description": "Threshold BLS network for verifiable random number generation",
-    "searchableText": "arpa computing threshold bls network for verifiable random number generation"
+    "searchableText": "arpa computing threshold bls network for verifiable random number generation threshold bls signatures (bls-tss) distributed key generation (dkg) multi-party computation (mpc) verifiable random function (vrf) elliptic curve cryptography dynamic node grouping byzantine fault tolerance"
   },
   {
     "slug": "aztec",
@@ -60,7 +60,7 @@
     "name": "Aztec Network",
     "category": "defi",
     "description": "Privacy-first ZK rollup",
-    "searchableText": "aztec network defi privacy-first zk rollup"
+    "searchableText": "aztec network defi privacy-first zk rollup zero-knowledge proofs (zk-snarks) plonk proof system zk-zk rollup (zk²) encrypted transactions private state management nullifier system private execution environment (pxe) note encryption hybrid public-private execution confidential smart contracts c++ typescript noir solidity rust javascript node.js barretenberg aztec.js aztec.nr"
   },
   {
     "slug": "aztec-protocol",
@@ -88,7 +88,7 @@
     "name": "Brume Wallet",
     "category": "wallet",
     "description": "Privacy-native Ethereum wallet with TOR integration",
-    "searchableText": "brume wallet wallet privacy-native ethereum wallet with tor integration"
+    "searchableText": "brume wallet wallet privacy-native ethereum wallet with tor integration tor network integration built-in tor routing for all network requests unique ip address per wallet account ip address masking from third-parties eip-1193 provider with hardened phishing protections non-custodial architecture open-source and reproducible builds minimal dependencies (20x less than competitors) walletconnect with spoofed domain protection anonymous transaction routing through tor no ip/wallet address sharing with third parties typescript next.js react capacitor webassembly (wasm) solidity node.js swift kotlin html/css mdx javascript"
   },
   {
     "slug": "cake-wallet",
@@ -221,7 +221,7 @@
     "name": "Firn Protocol",
     "category": "defi",
     "description": "First zero-knowledge privacy platform in account-based model",
-    "searchableText": "firn protocol defi first zero-knowledge privacy platform in account-based model"
+    "searchableText": "firn protocol defi first zero-knowledge privacy platform in account-based model zero-knowledge proofs (no trusted setup) anonymous zether protocol elgamal encryption (with message in the exponent) sigma-bullets (bulletproofs + σ-protocols) many-out-of-many proofs account-based privacy model homomorphic encryption decisional diffie-hellman (ddh) assumption inner product arguments solidity javascript typescript foundry circom snarkjs metamask snap rust (foundry toolkit)"
   },
   {
     "slug": "firo",

@@ -57,7 +57,7 @@
     "techStack": [],
     "hasReadme": true,
     "hasCard": true,
-    "completeness": 40
+    "completeness": 50
   },
   {
     "slug": "anoma",
@@ -77,11 +77,19 @@
     "category": "computing",
     "website": null,
     "description": "Threshold BLS network for verifiable random number generation",
-    "privacyTechniques": [],
+    "privacyTechniques": [
+      "Threshold BLS Signatures (BLS-TSS)",
+      "Distributed Key Generation (DKG)",
+      "Multi-Party Computation (MPC)",
+      "Verifiable Random Function (VRF)",
+      "Elliptic Curve Cryptography",
+      "Dynamic Node Grouping",
+      "Byzantine Fault Tolerance"
+    ],
     "techStack": [],
     "hasReadme": true,
     "hasCard": true,
-    "completeness": 40
+    "completeness": 50
   },
   {
     "slug": "aztec",
@@ -101,11 +109,33 @@
     "category": "defi",
     "website": "https://aztec.network",
     "description": "Privacy-first ZK rollup",
-    "privacyTechniques": [],
-    "techStack": [],
+    "privacyTechniques": [
+      "Zero-Knowledge Proofs (ZK-SNARKs)",
+      "PLONK Proof System",
+      "ZK-ZK Rollup (ZK²)",
+      "Encrypted Transactions",
+      "Private State Management",
+      "Nullifier System",
+      "Private Execution Environment (PXE)",
+      "Note Encryption",
+      "Hybrid Public-Private Execution",
+      "Confidential Smart Contracts"
+    ],
+    "techStack": [
+      "C++",
+      "TypeScript",
+      "Noir",
+      "Solidity",
+      "Rust",
+      "JavaScript",
+      "Node.js",
+      "Barretenberg",
+      "Aztec.js",
+      "Aztec.nr"
+    ],
     "hasReadme": true,
     "hasCard": true,
-    "completeness": 50
+    "completeness": 80
   },
   {
     "slug": "aztec-protocol",
@@ -149,11 +179,36 @@
     "category": "wallet",
     "website": null,
     "description": "Privacy-native Ethereum wallet with TOR integration",
-    "privacyTechniques": [],
-    "techStack": [],
+    "privacyTechniques": [
+      "Tor Network Integration",
+      "Built-in Tor routing for all network requests",
+      "Unique IP address per wallet account",
+      "IP address masking from third-parties",
+      "EIP-1193 provider with hardened phishing protections",
+      "Non-custodial architecture",
+      "Open-source and reproducible builds",
+      "Minimal dependencies (20x less than competitors)",
+      "WalletConnect with spoofed domain protection",
+      "Anonymous transaction routing through Tor",
+      "No IP/wallet address sharing with third parties"
+    ],
+    "techStack": [
+      "TypeScript",
+      "Next.js",
+      "React",
+      "Capacitor",
+      "WebAssembly (WASM)",
+      "Solidity",
+      "Node.js",
+      "Swift",
+      "Kotlin",
+      "HTML/CSS",
+      "MDX",
+      "JavaScript"
+    ],
     "hasReadme": true,
     "hasCard": true,
-    "completeness": 40
+    "completeness": 70
   },
   {
     "slug": "cake-wallet",
@@ -177,7 +232,7 @@
     "techStack": [],
     "hasReadme": true,
     "hasCard": true,
-    "completeness": 40
+    "completeness": 50
   },
   {
     "slug": "circom",
@@ -377,11 +432,30 @@
     "category": "defi",
     "website": null,
     "description": "First zero-knowledge privacy platform in account-based model",
-    "privacyTechniques": [],
-    "techStack": [],
+    "privacyTechniques": [
+      "Zero-Knowledge Proofs (no trusted setup)",
+      "Anonymous Zether Protocol",
+      "ElGamal Encryption (with message in the exponent)",
+      "Sigma-Bullets (Bulletproofs + Σ-protocols)",
+      "Many-out-of-Many Proofs",
+      "Account-based privacy model",
+      "Homomorphic encryption",
+      "Decisional Diffie-Hellman (DDH) assumption",
+      "Inner Product Arguments"
+    ],
+    "techStack": [
+      "Solidity",
+      "JavaScript",
+      "TypeScript",
+      "Foundry",
+      "Circom",
+      "SnarkJS",
+      "MetaMask Snap",
+      "Rust (Foundry toolkit)"
+    ],
     "hasReadme": true,
     "hasCard": true,
-    "completeness": 40
+    "completeness": 70
   },
   {
     "slug": "firo",
@@ -489,7 +563,7 @@
     "techStack": [],
     "hasReadme": true,
     "hasCard": true,
-    "completeness": 40
+    "completeness": 50
   },
   {
     "slug": "incognito",
@@ -537,7 +611,7 @@
     "techStack": [],
     "hasReadme": true,
     "hasCard": true,
-    "completeness": 40
+    "completeness": 50
   },
   {
     "slug": "lens-protocol",
@@ -561,7 +635,7 @@
     "techStack": [],
     "hasReadme": true,
     "hasCard": true,
-    "completeness": 40
+    "completeness": 50
   },
   {
     "slug": "litentry",
@@ -573,7 +647,7 @@
     "techStack": [],
     "hasReadme": true,
     "hasCard": true,
-    "completeness": 40
+    "completeness": 50
   },
   {
     "slug": "maci",
