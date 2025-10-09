@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 Privacy Projects - Search</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e4e4e7;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to right, #a78bfa, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subtitle { color: #9ca3af; margin-bottom: 2rem; }
+        .search-box {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.1rem;
+            background: #27272a;
+            border: 2px solid #3f3f46;
+            border-radius: 8px;
+            color: #e4e4e7;
+            margin-bottom: 2rem;
+        }
+        .search-box:focus {
+            outline: none;
+            border-color: #a78bfa;
+        }
+        .stats {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: #27272a;
+            border-radius: 8px;
+            display: flex;
+            gap: 2rem;
+        }
+        .stat { color: #9ca3af; }
+        .stat strong { color: #a78bfa; font-size: 1.5rem; display: block; }
+        .projects-grid {
+            display: grid;
+            gap: 1rem;
+        }
+        .project-card {
+            background: #27272a;
+            border: 1px solid #3f3f46;
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: all 0.2s;
+        }
+        .project-card:hover {
+            border-color: #a78bfa;
+            transform: translateY(-2px);
+        }
+        .project-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #e4e4e7;
+        }
+        .project-desc {
+            color: #9ca3af;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .tag {
+            padding: 0.25rem 0.75rem;
+            background: #3f3f46;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            color: #a78bfa;
+        }
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: #9ca3af;
+        }
+        .error {
+            background: #991b1b;
+            color: #fca5a5;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        .nav {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .nav a {
+            color: #9ca3af;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+        .nav a:hover {
+            background: #27272a;
+            color: #a78bfa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <a href="/">← Home</a>
+            <a href="simple-viz.html">📊 Visualizations</a>
+            <a href="/chat">💬 AI Chat</a>
+        </div>
+
+        <h1>🔍 Web3 Privacy Projects</h1>
+        <p class="subtitle">Search through 114 Ethereum-based privacy projects</p>
+
+        <input
+            type="text"
+            id="searchBox"
+            class="search-box"
+            placeholder="Search by name, category, or technology..."
+        >
+
+        <div class="stats">
+            <div class="stat">
+                <strong id="totalCount">114</strong>
+                Total Projects
+            </div>
+            <div class="stat">
+                <strong id="shownCount">114</strong>
+                Shown
+            </div>
+            <div class="stat">
+                <strong id="avgComplete">31%</strong>
+                Avg Completeness
+            </div>
+        </div>
+
+        <div id="results" class="projects-grid">
+            <div class="loading">Loading projects...</div>
+        </div>
+    </div>
+
+    <script>
+        let allProjects = [];
+        const basePath = '/web3-privacy-ethereum-cypherpunk-research';
+
+        async function loadProjects() {
+            try {
+                const response = await fetch(`${basePath}/data/search-index.json`);
+                if (!response.ok) throw new Error('Failed to load');
+
+                const data = await response.json();
+                allProjects = data.projects || [];
+
+                console.log('Loaded projects:', allProjects.length);
+                displayProjects(allProjects);
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('results').innerHTML = `
+                    <div class="error">
+                        ❌ Failed to load projects. Check console for details.
+                        <br>Tried to fetch: ${basePath}/data/search-index.json
+                    </div>
+                `;
+            }
+        }
+
+        function displayProjects(projects) {
+            const container = document.getElementById('results');
+            document.getElementById('shownCount').textContent = projects.length;
+
+            if (projects.length === 0) {
+                container.innerHTML = '<div class="loading">No projects found</div>';
+                return;
+            }
+
+            container.innerHTML = projects.map(project => `
+                <div class="project-card">
+                    <div class="project-name">${project.name || project.id}</div>
+                    <div class="project-desc">${project.description || 'No description available'}</div>
+                    <div class="tags">
+                        ${project.category ? `<span class="tag">${project.category}</span>` : ''}
+                        ${(project.privacy_techniques || []).slice(0, 3).map(t =>
+                            `<span class="tag">🔒 ${t}</span>`
+                        ).join('')}
+                        ${(project.tech_stack || []).slice(0, 2).map(t =>
+                            `<span class="tag">⚙️ ${t}</span>`
+                        ).join('')}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function searchProjects(query) {
+            if (!query.trim()) {
+                displayProjects(allProjects);
+                return;
+            }
+
+            const lowerQuery = query.toLowerCase();
+            const filtered = allProjects.filter(project => {
+                const searchText = project.searchableText || '';
+                return searchText.includes(lowerQuery) ||
+                       (project.name || '').toLowerCase().includes(lowerQuery) ||
+                       (project.description || '').toLowerCase().includes(lowerQuery);
+            });
+
+            displayProjects(filtered);
+        }
+
+        // Event listeners
+        document.getElementById('searchBox').addEventListener('input', (e) => {
+            searchProjects(e.target.value);
+        });
+
+        // Load on page load
+        loadProjects();
+    </script>
+</body>
+</html>
