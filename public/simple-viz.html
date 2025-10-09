@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 Privacy Projects - Visualizations</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e4e4e7;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        .container { max-width: 1400px; margin: 0 auto; }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to right, #a78bfa, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .nav a {
+            color: #9ca3af;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+        .nav a:hover {
+            background: #27272a;
+            color: #a78bfa;
+        }
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .chart-card {
+            background: #27272a;
+            border: 1px solid #3f3f46;
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+        .chart-title {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: #a78bfa;
+        }
+        .bar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+        .bar-label {
+            width: 150px;
+            font-size: 0.9rem;
+            color: #9ca3af;
+        }
+        .bar-fill {
+            height: 24px;
+            background: linear-gradient(to right, #a78bfa, #ec4899);
+            border-radius: 4px;
+            transition: width 0.3s;
+            display: flex;
+            align-items: center;
+            padding: 0 0.5rem;
+            color: white;
+            font-size: 0.85rem;
+        }
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: #9ca3af;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <a href="/">← Home</a>
+            <a href="simple-search.html">🔍 Search</a>
+            <a href="/chat">💬 AI Chat</a>
+        </div>
+
+        <h1>📊 Project Visualizations</h1>
+
+        <div id="charts" class="charts-grid">
+            <div class="loading">Loading data...</div>
+        </div>
+    </div>
+
+    <script>
+        const basePath = '/web3-privacy-ethereum-cypherpunk-research';
+
+        async function loadAndVisualize() {
+            try {
+                const response = await fetch(`${basePath}/data/search-index.json`);
+                const data = await response.json();
+                const projects = data.projects || [];
+
+                // Count categories
+                const categories = {};
+                const techniques = {};
+                const techStack = {};
+
+                projects.forEach(p => {
+                    categories[p.category] = (categories[p.category] || 0) + 1;
+
+                    (p.privacy_techniques || []).forEach(t => {
+                        techniques[t] = (techniques[t] || 0) + 1;
+                    });
+
+                    (p.tech_stack || []).forEach(t => {
+                        techStack[t] = (techStack[t] || 0) + 1;
+                    });
+                });
+
+                const charts = document.getElementById('charts');
+                charts.innerHTML = `
+                    ${createBarChart('Categories', categories, 15)}
+                    ${createBarChart('Privacy Techniques', techniques, 10)}
+                    ${createBarChart('Tech Stack', techStack, 10)}
+                `;
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('charts').innerHTML = `
+                    <div class="loading">Failed to load data</div>
+                `;
+            }
+        }
+
+        function createBarChart(title, data, limit = 10) {
+            const sorted = Object.entries(data)
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, limit);
+
+            const max = sorted[0]?.[1] || 1;
+
+            const bars = sorted.map(([name, count]) => {
+                const width = (count / max) * 100;
+                return `
+                    <div class="bar">
+                        <div class="bar-label">${name}</div>
+                        <div class="bar-fill" style="width: ${width}%">
+                            ${count}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            return `
+                <div class="chart-card">
+                    <div class="chart-title">${title}</div>
+                    ${bars}
+                </div>
+            `;
+        }
+
+        loadAndVisualize();
+    </script>
+</body>
+</html>
