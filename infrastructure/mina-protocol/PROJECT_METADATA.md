@@ -1,0 +1,18 @@
+# Project Metadata - mina-protocol
+
+**Name**: Mina Protocol
+
+**Category**: Uncategorized
+
+**Description**: Mina Protocol is the world's lightest blockchain at approximately 22kb in size, using advanced cryptography and recursive zk-SNARKs to maintain this constant size. Mina is the first layer-1 to enable efficient implementation and easy programmability of zero knowledge smart contracts (zkApps). zkApps are Turing complete and offer enhanced privacy, off-chain computation, and composable proofs. With zkApps, user data never leaves local devices - only proofs are submitted to the chain, not personal data.
+
+**Website**: https://minaprotocol.com
+
+**GitHub**: https://github.com/MinaProtocol
+
+## Privacy Features
+
+- Zero-knowledge smart contracts
+- Constant-size blockchain
+- zkApps (ZK applications)
+
