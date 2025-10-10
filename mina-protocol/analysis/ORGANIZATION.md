@@ -1,0 +1,2 @@
+# Organization Intelligence - mina-protocol
+
