@@ -1,287 +1,292 @@
-# Ethereum Cypherpunk Research
+# Web3 Privacy Ethereum Cypherpunk Research
 
-Comprehensive research dataset on 74 Web3 privacy projects, organized by category with detailed analysis, documentation, and OSINT findings.
+Comprehensive security and privacy analysis of 74 Web3 privacy-focused projects on the Ethereum ecosystem.
 
-## 📂 Repository Structure
+## 📊 Dataset Overview
 
-Projects are organized by category, with the most complete examples listed first in each category:
+| Metric | Value |
+|--------|-------|
+| **Total Projects** | 74 |
+| **Average Completeness** | 56.0% |
+| **Highly Complete (≥85%)** | 1 project |
+| **Categories** | 9 |
+| **Documentation Files** | 800+ |
 
-### 🏦 DeFi (13 projects)
-Privacy-focused decentralized finance protocols and tools.
+## 📁 Project Categories
 
-**Most Complete:**
-- [beam](defi/beam/) (85.7%)
-- [penumbra](defi/penumbra/) (85.7%)
-- [0xbow](defi/0xbow/) (71.4%)
-- [hopr](defi/hopr/) (71.4%)
-- [privatepool](defi/privatepool/) (71.4%)
+### DeFi & Privacy Protocols (13 projects)
 
-[View all DeFi projects →](defi/)
+**Average Completeness**: 53.1%
 
-### 🆔 Identity (4 projects)
-Decentralized identity and credential solutions.
+**Top Projects:**
 
-**Most Complete:**
-- [circom](identity/circom/) (71.4%)
-- [elusiv](identity/elusiv/) (71.4%)
-- [iron-fish](identity/iron-fish/) (71.4%)
+- [hopr](defi/hopr/) - 81.8% ✅
+- [penumbra](defi/penumbra/) - 81.8% ✅
+- [0xbow](defi/0xbow/) - 72.7% ✅
+- [privatepool](defi/privatepool/) - 72.7% ✅
+- [starkex](defi/starkex/) - 54.5% 
 
-[View all Identity projects →](identity/)
+<details>
+<summary>View all 13 projects</summary>
 
-### 🏗️ Infrastructure (22 projects)
-Privacy infrastructure, protocols, and networks.
+- [hopr](defi/hopr/) - 81.8%
+- [penumbra](defi/penumbra/) - 81.8%
+- [0xbow](defi/0xbow/) - 72.7%
+- [privatepool](defi/privatepool/) - 72.7%
+- [starkex](defi/starkex/) - 54.5%
+- [zcash](defi/zcash/) - 54.5%
+- [alephim](defi/alephim/) - 45.5%
+- [beam](defi/beam/) - 45.5%
+- [zkp2p](defi/zkp2p/) - 45.5%
+- [chainport](defi/chainport/) - 36.4%
+- [iexec](defi/iexec/) - 36.4%
+- [mask](defi/mask/) - 36.4%
+- [inco](defi/inco/) - 27.3%
 
-**Perfect Completeness:**
-- [litentry](infrastructure/litentry/) (100%) ⭐
-- [manta-network](infrastructure/manta-network/) (100%) ⭐
-- [scroll](infrastructure/scroll/) (100%) ⭐
+</details>
 
-**Highly Complete:**
-- [grin](infrastructure/grin/) (85.7%)
-- [light-protocol](infrastructure/light-protocol/) (85.7%)
-- [nym](infrastructure/nym/) (85.7%)
-- [tornado-cash](infrastructure/tornado-cash/) (85.7%)
+### Identity & Privacy (4 projects)
 
-[View all Infrastructure projects →](infrastructure/)
+**Average Completeness**: 68.2%
 
-### ⚡ Layer 2 (8 projects)
-Layer 2 scaling solutions with privacy features.
+**Top Projects:**
 
-**Perfect Completeness:**
-- [aztec-protocol](layer2/aztec-protocol/) (100%) ⭐
-- [ten](layer2/ten/) (100%) ⭐
+- [iron-fish](identity/iron-fish/) - 81.8% ✅
+- [circom](identity/circom/) - 72.7% ✅
+- [dark-forest](identity/dark-forest/) - 63.6% 
+- [elusiv](identity/elusiv/) - 54.5% 
 
-**Highly Complete:**
-- [aztec-network](layer2/aztec-network/) (85.7%)
-- [zksync](layer2/zksync/) (85.7%)
+### Infrastructure & Protocols (22 projects)
 
-[View all Layer 2 projects →](layer2/)
+**Average Completeness**: 60.3%
 
-### 👛 Wallets (12 projects)
-Privacy-preserving cryptocurrency wallets.
+**Top Projects:**
 
-**Most Complete:**
-- [arpa](wallets/arpa/) (85.7%)
-- [edge-wallet](wallets/edge-wallet/) (85.7%)
-- [frame](wallets/frame/) (85.7%)
+- [scroll](infrastructure/scroll/) - 81.8% ✅
+- [semaphore](infrastructure/semaphore/) - 81.8% ✅
+- [tornado-cash](infrastructure/tornado-cash/) - 81.8% ✅
+- [incognito](infrastructure/incognito/) - 72.7% ✅
+- [mask-network](infrastructure/mask-network/) - 72.7% ✅
 
-[View all Wallet projects →](wallets/)
+<details>
+<summary>View all 22 projects</summary>
 
-### 🔐 Privacy Tools (1 project)
-Dedicated privacy enhancement tools.
+- [scroll](infrastructure/scroll/) - 81.8%
+- [semaphore](infrastructure/semaphore/) - 81.8%
+- [tornado-cash](infrastructure/tornado-cash/) - 81.8%
+- [incognito](infrastructure/incognito/) - 72.7%
+- [mask-network](infrastructure/mask-network/) - 72.7%
+- [nym](infrastructure/nym/) - 72.7%
+- [rotki](infrastructure/rotki/) - 72.7%
+- [zkvote](infrastructure/zkvote/) - 72.7%
+- [mina-protocol](infrastructure/mina-protocol/) - 63.6%
+- [umbra-cash](infrastructure/umbra-cash/) - 63.6%
+- [darkfi](infrastructure/darkfi/) - 54.5%
+- [light-protocol](infrastructure/light-protocol/) - 54.5%
+- [litentry](infrastructure/litentry/) - 54.5%
+- [manta-network](infrastructure/manta-network/) - 54.5%
+- [oasis-network](infrastructure/oasis-network/) - 54.5%
+- [sentinel](infrastructure/sentinel/) - 54.5%
+- [grin](infrastructure/grin/) - 45.5%
+- [nillion](infrastructure/nillion/) - 45.5%
+- [sismo](infrastructure/sismo/) - 45.5%
+- [snapshot-x](infrastructure/snapshot-x/) - 45.5%
+- [veramo](infrastructure/veramo/) - 45.5%
+- [labyrinth](infrastructure/labyrinth/) - 36.4%
 
-- [firo](privacy-tools/firo/) (71.4%)
+</details>
 
-### 💾 Storage (1 project)
-Decentralized storage with privacy features.
+### Layer 2 Solutions (8 projects)
 
-- [fileverse](storage/fileverse/) (71.4%)
+**Average Completeness**: 60.2%
 
-### 🔍 ZKP (1 project)
-Zero-knowledge proof protocols.
+**Highly Complete (≥85%):**
 
-- [findora](zkp/findora/) (57.1%)
+- [aztec-protocol](layer2/aztec-protocol/) - 90.9% ⭐
 
-### 📦 Other (12 projects)
-Additional privacy-focused projects and protocols.
+**Top Projects:**
 
-**Most Complete:**
-- [concordium](other/concordium/) (71.4%)
-- [fluidkey](other/fluidkey/) (71.4%)
-- [mobilecoin](other/mobilecoin/) (71.4%)
-- [monero](other/monero/) (71.4%)
+- [aztec-protocol](layer2/aztec-protocol/) - 90.9% ⭐
+- [zksync](layer2/zksync/) - 81.8% ✅
+- [zecrey](layer2/zecrey/) - 63.6% 
+- [aztec-network](layer2/aztec-network/) - 54.5% 
+- [ten](layer2/ten/) - 54.5% 
 
-[View all Other projects →](other/)
+<details>
+<summary>View all 8 projects</summary>
 
----
+- [aztec-protocol](layer2/aztec-protocol/) - 90.9%
+- [zksync](layer2/zksync/) - 81.8%
+- [zecrey](layer2/zecrey/) - 63.6%
+- [aztec-network](layer2/aztec-network/) - 54.5%
+- [ten](layer2/ten/) - 54.5%
+- [pse--privacy---scaling-explorations-](layer2/pse--privacy---scaling-explorations-/) - 45.5%
+- [starknet](layer2/starknet/) - 45.5%
+- [taiko](layer2/taiko/) - 45.5%
 
-## 📊 Dataset Statistics
+</details>
 
-- **Total Projects**: 74
-- **Average Completeness**: 38.6%
-- **Perfect Projects (100%)**: 5
-- **Categories**: 9
+### Privacy Tools (1 projects)
 
-### Completeness by Type
+**Average Completeness**: 54.5%
 
-| Category | Projects | Avg Completeness |
-|----------|----------|------------------|
-| Infrastructure | 22 | 75.3% |
-| Layer 2 | 8 | 71.4% |
-| Wallets | 12 | 70.2% |
-| DeFi | 13 | 67.0% |
-| Identity | 4 | 64.3% |
-| Other | 12 | 65.5% |
+**Top Projects:**
 
----
+- [firo](privacy-tools/firo/) - 54.5% 
+
+### Storage Solutions (1 projects)
+
+**Average Completeness**: 72.7%
+
+**Top Projects:**
+
+- [fileverse](storage/fileverse/) - 72.7% ✅
+
+### Wallets (12 projects)
+
+**Average Completeness**: 41.7%
+
+**Top Projects:**
+
+- [oxen](wallets/oxen/) - 54.5% 
+- [wasabi-wallet](wallets/wasabi-wallet/) - 54.5% 
+- [zeal](wallets/zeal/) - 54.5% 
+- [arpa](wallets/arpa/) - 45.5% 
+- [brume-wallet](wallets/brume-wallet/) - 45.5% 
+
+<details>
+<summary>View all 12 projects</summary>
+
+- [oxen](wallets/oxen/) - 54.5%
+- [wasabi-wallet](wallets/wasabi-wallet/) - 54.5%
+- [zeal](wallets/zeal/) - 54.5%
+- [arpa](wallets/arpa/) - 45.5%
+- [brume-wallet](wallets/brume-wallet/) - 45.5%
+- [edge-wallet](wallets/edge-wallet/) - 45.5%
+- [frame](wallets/frame/) - 45.5%
+- [zion](wallets/zion/) - 45.5%
+- [cake-wallet](wallets/cake-wallet/) - 36.4%
+- [railway](wallets/railway/) - 27.3%
+- [railway-wallet](wallets/railway-wallet/) - 27.3%
+- [zkbob](wallets/zkbob/) - 18.2%
+
+</details>
+
+### Zero-Knowledge Proofs (1 projects)
+
+**Average Completeness**: 36.4%
+
+**Top Projects:**
+
+- [findora](zkp/findora/) - 36.4% 
+
+### Other Projects (12 projects)
+
+**Average Completeness**: 59.1%
+
+**Top Projects:**
+
+- [railgun](other/railgun/) - 81.8% ✅
+- [fluidkey](other/fluidkey/) - 72.7% ✅
+- [aleo](other/aleo/) - 63.6% 
+- [anoma](other/anoma/) - 63.6% 
+- [concordium](other/concordium/) - 54.5% 
+
+<details>
+<summary>View all 12 projects</summary>
+
+- [railgun](other/railgun/) - 81.8%
+- [fluidkey](other/fluidkey/) - 72.7%
+- [aleo](other/aleo/) - 63.6%
+- [anoma](other/anoma/) - 63.6%
+- [concordium](other/concordium/) - 54.5%
+- [iden3](other/iden3/) - 54.5%
+- [mobilecoin](other/mobilecoin/) - 54.5%
+- [monero](other/monero/) - 54.5%
+- [orchid](other/orchid/) - 54.5%
+- [suterusu](other/suterusu/) - 54.5%
+- [zano](other/zano/) - 54.5%
+- [pirate-chain](other/pirate-chain/) - 45.5%
+
+</details>
 
 ## 📚 Documentation Structure
 
-Each project folder contains:
+Each project contains:
 
-### Core Documents
-- **CONSTITUTIONAL_RESEARCH.md** - Privacy features, tech overview
-- **PROJECT_METADATA.md** - Basic project information
-- **README.md** - Project summary with documentation links
+### Core Documentation
+- `CONSTITUTIONAL_RESEARCH.md` - Privacy features and constitutional analysis
+- `PROJECT_METADATA.md` - Basic project information
 
-### Analysis (where available)
-- **analysis/CODE_ANALYSIS.md** - Code metrics and review
-- **analysis/SMART_CONTRACTS.md** - Contract analysis
-- **analysis/GITHUB_ANALYSIS.md** - Repository statistics
-- **analysis/TECH_STACK.md** - Technology breakdown
+### Analysis Files (`/analysis/`)
+- `CODE_ANALYSIS.md` - Code quality and architecture analysis
+- `TECH_STACK.md` - Technology stack breakdown
+- `GITHUB_ANALYSIS.md` - GitHub repository metrics
+- `SMART_CONTRACTS.md` - Smart contract analysis
 
-### Data (JSON)
-- **constitutional_research.json** - Core research data
-- **project_metadata.json** - Structured metadata
-- **analysis/*.json** - Analysis data files
+### Reports (`/reports/`)
+- `code_analysis.md` - Detailed code review
+- `blockchain_metrics.md` - On-chain metrics
+- `organization_profile.md` - Team and organization data
+- `technical_analysis.md` - Technical deep dive
 
-### Media
-- **media/avatar.png** - Project logo/avatar
+### Source Data (`/sources/`)
+- `verified_data.json` - Verified research data
 
----
-
-## 🔍 Research Methodology
-
-<details>
-<summary>Click to expand research flow</summary>
-
-```
-┌─────────────────────┐
-│  Initial Discovery  │
-│  • Web Search       │
-│  • Web Fetch        │
-│  • API Calls        │
-└──────────┬──────────┘
-           │
-           ▼
-┌─────────────────────┐
-│ Technical Analysis  │
-│  • GitHub Review    │
-│  • Code Analysis    │
-│  • Smart Contracts  │
-└──────────┬──────────┘
-           │
-           ▼
-┌─────────────────────┐
-│    Deep Research    │
-│  • OSINT            │
-│  • Team Research    │
-│  • Security Review  │
-└──────────┬──────────┘
-           │
-           ▼
-┌─────────────────────┐
-│  Data Processing    │
-│  • Python Scripts   │
-│  • Visualizations   │
-│  • JSON/MD Reports  │
-└──────────┬──────────┘
-           │
-           ▼
-┌─────────────────────┐
-│  GitHub Repository  │
-└─────────────────────┘
-```
-
-### Tools & Technologies
-- **AI Agents**: Claude Flow swarms for parallel research
-- **OSINT**: SpiderFoot, manual research
-- **Code Analysis**: cloc, scc, custom analyzers
-- **APIs**: GitHub, Etherscan, Web3Privacy, OSO
-- **Development**: VS Codium, Python, Bash
-
-### Special Thanks
-- **Seshat Server**: Compute-intensive tasks and parallel processing
-</details>
-
----
-
-## 📈 Gap Analysis
-
-See [GAP_REPORT.md](GAP_REPORT.md) for detailed analysis of missing documentation and priorities for completion.
-
-**Key Gaps:**
-- OSINT findings (74/74 missing)
-- Verified data sources (74/74 missing)
-- Funding information (74/74 missing)
-- Team information (73/74 missing)
-
----
-
-## 🚀 Quick Start
+## 🔍 Quick Start
 
 ### Browse by Category
 ```bash
-# View all DeFi projects
+# View DeFi projects
 ls defi/
 
 # View Infrastructure projects
 ls infrastructure/
 
-# Find projects with perfect completeness
-find . -name "README.md" -path "*/100%*"
+# View Layer 2 projects
+ls layer2/
 ```
 
-### Search for Specific Technology
+### Find Highly Complete Projects
 ```bash
-# Find all projects using zero-knowledge proofs
-grep -r "zero-knowledge" --include="*.md"
-
-# Find Ethereum-based projects
-grep -r "ethereum" --include="CONSTITUTIONAL_RESEARCH.md"
+# Projects with ≥85% completeness
+grep -r "⭐" README.md
 ```
 
-### JSON Data Access
-```bash
-# Extract all GitHub URLs
-find . -name "constitutional_research.json" -exec jq -r '.github_url' {} \;
+## 📈 Research Methodology
 
-# Get project descriptions
-find . -name "constitutional_research.json" -exec jq -r '.description' {} \;
-```
+This research follows a systematic approach:
 
----
+1. **Constitutional Analysis** - Privacy features and compliance
+2. **Code Analysis** - Repository structure and quality
+3. **GitHub Metrics** - Development activity and community
+4. **Smart Contract Review** - On-chain analysis
+5. **Security Assessment** - OPSEC and vulnerability research
 
-## 📋 Use Cases
+## 🎯 Gap Analysis
 
-1. **Privacy Research**: Comprehensive dataset on Web3 privacy technologies
-2. **Due Diligence**: Structured information for investment/partnership decisions
-3. **Competitive Analysis**: Compare privacy features across projects
-4. **Academic Research**: Documented privacy implementations and approaches
-5. **Developer Reference**: Technical details and code analysis
+For detailed gap analysis and completion roadmap, see:
+- [GAP_REPORT.md](GAP_REPORT.md) - Comprehensive gap analysis
 
----
+**Recent Improvements:**
+- Phase 1: Repository reorganization by category (+0% completeness)
+- Phase 2: Generated 38 missing analysis files (+17.4% completeness)
+- Current: 56.0% average completeness (up from 38.6%)
 
 ## 🤝 Contributing
 
-This is a research dataset. For corrections or additions:
+This is a living dataset. Contributions welcome via:
+1. GitHub Issues for data corrections
+2. Pull Requests for new analysis
+3. Feedback form (coming soon)
 
-1. Check [GAP_REPORT.md](GAP_REPORT.md) for known gaps
-2. Ensure data is from verified sources (no synthetic data)
-3. Follow the constitutional research guidelines
-4. Submit pull requests with sources cited
+## 📜 License
 
----
-
-## 📄 License & Attribution
-
-Research compiled from public sources. Individual projects retain their respective licenses.
-
-**Citation:**
-```
-Ethereum Cypherpunk Research Dataset
-https://github.com/M0nkeyFl0wer/ethereum-cypherpunk-research
-Generated: 2025-10-10
-```
+Research data is provided as-is for educational and research purposes.
 
 ---
 
-## 🔗 Related Resources
-
-- [Web3Privacy Directory](https://web3privacy.info)
-- [Privacy & Scaling Explorations](https://pse.dev)
-- [Zero Knowledge Podcast](https://zeroknowledge.fm)
-
----
-
-*Research methodology: Multi-source verification, OSINT, code analysis, and AI-assisted research with constitutional data integrity requirements.*
+**Last Updated**: 2025-10-10  
+**Total Projects**: 74  
+**Average Completeness**: 56.0%  
+**Repository**: [ethereum-cypherpunk-research](https://github.com/M0nkeyFl0wer/ethereum-cypherpunk-research)
