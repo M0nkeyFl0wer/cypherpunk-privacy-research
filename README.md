@@ -19,7 +19,10 @@ Each project includes:
 - Security assessments
 - OSINT data
 
-## 🔄 Research Methodology Flow
+## 🔄 Research Methodology
+
+<details>
+<summary>Click to view research pipeline flow diagram</summary>
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -64,8 +67,10 @@ Each project includes:
 │                    Pushed to GitHub                              │
 └─────────────────────────────────────────────────────────────────┘
 
-Special thanks to Seshat server for handling data-intensive tasks
+*Special thanks to Seshat server for handling data-intensive tasks*
 ```
+
+</details>
 
 ## 📁 Repository Structure
 
