@@ -1,19 +1,16 @@
 # Ethereum Cypherpunk Research
 
-Comprehensive research on **76 Web3 privacy projects** - protocols, tools, and infrastructure enabling confidential transactions and anonymous interactions on Ethereum and other blockchains.
+A draft of ongoing comprehensive research on **Etherum privacy projects** - protocols, tools, and infrastructure enabling confidential transactions and anonymous interactions.
 
 ## 📊 Dataset Overview
 
-- **Total Projects**: 76 privacy-focused projects
-- **Descriptions**: 100% complete
-- **GitHub URLs**: 100% complete
-- **Code Analysis**: 89.5% complete
+- **Current Total Projects**: 76 privacy-focused projects
 
 ## 🔍 What's Included
 
-Each project includes:
+Each project includes: (some work still underway, this is an open source project pleaese suggest edits and addidtions)
 - Detailed technical description
-- GitHub repository links
+- GitHub repository links (where available)
 - Code analysis (languages, LOC, contracts)
 - Team information
 - Security assessments
