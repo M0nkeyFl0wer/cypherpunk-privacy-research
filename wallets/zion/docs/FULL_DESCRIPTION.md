@@ -1,3 +1,0 @@
-# Zion - Project Overview
-
-Zion is an open global scalable decentralized community platform that facilitates direct flow of content and payments between creators and their audiences. Built on Bitcoin's Lightning Network and Web5 framework, Zion enables censorship-resistant social networking with protocol-level privacy guarantees. Users maintain full control of their data through Decentralized Web Nodes (DWNs) and receive Bitcoin micropayments for content creation. The platform operates on a non-custodial model where users control their private keys for both identity and payments, eliminating centralized intermediaries and targeted advertising.
