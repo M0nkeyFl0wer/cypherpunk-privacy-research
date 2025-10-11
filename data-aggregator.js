@@ -48,25 +48,102 @@ class DataAggregator {
     }
 
     /**
-     * Get list of project directories by scanning for constitutional_research.json files
+     * Get list of project paths by scanning for constitutional_research.json files
      */
     async getProjectDirectories() {
-        // Since we can't directly scan the file system from the browser,
-        // we'll use a hardcoded list based on the repository structure
+        // Updated structure with category-based organization
         return [
-            '0xbow', 'aleo', 'alephim', 'anoma', 'arpa', 'aztec-network', 'aztec-protocol',
-            'beam', 'brume-wallet', 'cake-wallet', 'chainport', 'circom', 'concordium',
-            'darkfi', 'dark-forest', 'edge-wallet', 'elusiv', 'fileverse', 'findora',
-            'firo', 'fluidkey', 'frame', 'grin', 'hopr', 'iden3', 'iexec', 'inco',
-            'incognito', 'iron-fish', 'labyrinth', 'light-protocol', 'litentry',
-            'manta-network', 'mask', 'mask-network', 'mina-protocol', 'mobilecoin',
-            'monero', 'nillion', 'nym', 'oasis-network', 'orchid', 'oxen', 'penumbra',
-            'pirate-chain', 'privatepool', 'pse--privacy---scaling-explorations-',
-            'railgun', 'railway', 'railway-wallet', 'rotki', 'scroll', 'semaphore',
-            'sentinel', 'session', 'sismo', 'snapshot-x', 'starkex', 'starknet',
-            'status', 'suterusu', 'taiko', 'ten', 'tornado-cash', 'umbra-cash',
-            'veramo', 'wasabi-wallet', 'zano', 'zcash', 'zeal', 'zecrey', 'zion',
-            'zkbob', 'zkp2p', 'zksync', 'zkvote'
+            // DeFi Privacy Projects
+            'defi/0xbow',
+            'defi/alephim',
+            'defi/beam',
+            'defi/chainport',
+            'defi/hopr',
+            'defi/iexec',
+            'defi/inco',
+            'defi/mask',
+            'defi/penumbra',
+            'defi/privatepool',
+            'defi/starkex',
+            'defi/zcash',
+            'defi/zkp2p',
+            
+            // Identity & Privacy Tools
+            'identity/circom',
+            'identity/dark-forest',
+            'identity/elusiv',
+            'identity/iron-fish',
+            
+            // Infrastructure
+            'infrastructure/darkfi',
+            'infrastructure/grin',
+            'infrastructure/incognito',
+            'infrastructure/labyrinth',
+            'infrastructure/light-protocol',
+            'infrastructure/litentry',
+            'infrastructure/manta-network',
+            'infrastructure/mask-network',
+            'infrastructure/mina-protocol',
+            'infrastructure/nillion',
+            'infrastructure/nym',
+            'infrastructure/oasis-network',
+            'infrastructure/rotki',
+            'infrastructure/scroll',
+            'infrastructure/semaphore',
+            'infrastructure/sentinel',
+            'infrastructure/sismo',
+            'infrastructure/snapshot-x',
+            'infrastructure/tornado-cash',
+            'infrastructure/umbra-cash',
+            'infrastructure/veramo',
+            'infrastructure/zkvote',
+            
+            // Layer 2 Solutions
+            'layer2/aztec-network',
+            'layer2/aztec-protocol',
+            'layer2/pse--privacy---scaling-explorations-',
+            'layer2/starknet',
+            'layer2/taiko',
+            'layer2/ten',
+            'layer2/zecrey',
+            'layer2/zksync',
+            
+            // Other Projects
+            'other/aleo',
+            'other/anoma',
+            'other/concordium',
+            'other/fluidkey',
+            'other/iden3',
+            'other/mobilecoin',
+            'other/monero',
+            'other/orchid',
+            'other/pirate-chain',
+            'other/railgun',
+            'other/suterusu',
+            'other/zano',
+            
+            // Privacy Tools
+            'privacy-tools/firo',
+            
+            // Storage
+            'storage/fileverse',
+            
+            // Wallets
+            'wallets/arpa',
+            'wallets/brume-wallet',
+            'wallets/cake-wallet',
+            'wallets/edge-wallet',
+            'wallets/frame',
+            'wallets/oxen',
+            'wallets/railway',
+            'wallets/railway-wallet',
+            'wallets/wasabi-wallet',
+            'wallets/zeal',
+            'wallets/zion',
+            'wallets/zkbob',
+            
+            // ZKP Projects
+            'zkp/findora'
         ];
     }
 

@@ -1,0 +1,74 @@
+# Binary and compiled files
+*.wasm
+*.wasm.gz
+*.bin
+*.so
+*.dylib
+*.dll
+*.exe
+*.obj
+*.o
+*.a
+*.lib
+
+# Build directories
+node_modules/
+dist/
+build/
+target/
+pkg/
+out/
+.next/
+.nuxt/
+.cache/
+coverage/
+.nyc_output/
+.pytest_cache/
+__pycache__/
+.venv/
+venv/
+
+# Specific problematic paths
+layer2/
+**/aztec-packages/**
+**/barretenberg/**
+**/target/**
+**/node_modules/**
+**/dist/**
+**/build/**
+
+# Lock files
+*.lock
+yarn.lock
+package-lock.json
+Cargo.lock
+Pipfile.lock
+
+# Environment files
+.env*
+*.env
+
+# Temporary files
+*.log
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Git directories
+.git/
+.github/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Large data files
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+*.7z
