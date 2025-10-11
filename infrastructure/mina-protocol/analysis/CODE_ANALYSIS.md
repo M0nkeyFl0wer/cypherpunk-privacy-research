@@ -6,3 +6,7 @@
 
 - **Total Lines of Code**: 123,709
 
+## Language Breakdown
+
+| Language | Lines | Percentage |
+|----------|-------|------------|

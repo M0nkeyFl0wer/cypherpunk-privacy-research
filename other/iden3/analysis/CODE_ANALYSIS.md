@@ -5,15 +5,20 @@
 ## Overview
 
 - **Total Lines of Code**: 1,048
+- **Total Files**: 135
 
 ## Language Breakdown
 
-| Language | Files | Lines |
-|----------|-------|-------|
-| python | - | 5 |
-| solidity | - | 0 |
-| rust | - | 0 |
-| typescript | - | 0 |
-| javascript | - | 0 |
-| go | - | 0 |
+| Language | Lines | Percentage |
+|----------|-------|------------|
+| python | 5 | 0.5% |
 
+## Dependencies
+
+
+## Documentation
+
+- ✅ README.md present
+- 3 markdown files
+
+*Analysis performed: 2025-10-10T15:39:54Z*

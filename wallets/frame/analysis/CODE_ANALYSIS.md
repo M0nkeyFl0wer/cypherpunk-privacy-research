@@ -5,15 +5,23 @@
 ## Overview
 
 - **Total Lines of Code**: 57,600
+- **Total Files**: 576
+- **Test Files**: 182
 
 ## Language Breakdown
 
-| Language | Files | Lines |
-|----------|-------|-------|
-| javascript | - | 256 |
-| typescript | - | 144 |
-| solidity | - | 0 |
-| rust | - | 0 |
-| go | - | 0 |
-| python | - | 0 |
+| Language | Lines | Percentage |
+|----------|-------|------------|
+| javascript | 256 | 0.4% |
+| typescript | 144 | 0.2% |
 
+## Dependencies
+
+- NPM/Yarn packages detected
+
+## Documentation
+
+- ✅ README.md present
+- 1 markdown files
+
+*Analysis performed: 2025-10-10T15:50:28Z*
