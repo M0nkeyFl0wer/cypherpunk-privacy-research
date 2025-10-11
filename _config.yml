@@ -1,0 +1,99 @@
+# Jekyll Configuration for Web3 Privacy Research Portal
+title: "Web3 Privacy Research Portal"
+description: "Comprehensive research on Web3 privacy projects - protocols, tools, and infrastructure enabling confidential transactions and anonymous interactions"
+url: "https://m0nkeyfl0wer.github.io"
+baseurl: "/ethereum-cypherpunk-research"
+
+# Build settings
+theme: jekyll-theme-primer
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude files and directories from processing
+exclude:
+  - "*.wasm"
+  - "*.wasm.gz"
+  - "*.bin"
+  - "*.so"
+  - "*.dylib"
+  - "*.dll"
+  - "node_modules/"
+  - "dist/"
+  - "build/"
+  - "target/"
+  - "pkg/"
+  - ".git/"
+  - ".github/"
+  - "*.log"
+  - "*.tmp"
+  - "*.temp"
+  - ".cache/"
+  - ".next/"
+  - ".nuxt/"
+  - "coverage/"
+  - ".nyc_output/"
+  - ".pytest_cache/"
+  - "__pycache__/"
+  - "*.pyc"
+  - ".venv/"
+  - "venv/"
+  - ".env"
+  - ".env.local"
+  - ".env.production"
+  - ".DS_Store"
+  - "Thumbs.db"
+  - "*.lock"
+  - "yarn.lock"
+  - "package-lock.json"
+  - "Cargo.lock"
+  - "*/target/*"
+  - "*/node_modules/*"
+  - "*/dist/*"
+  - "*/build/*"
+  - "*/.git/*"
+  - "*/.cache/*"
+  - "*/.next/*"
+  - "*/.nuxt/*"
+  - "*/coverage/*"
+  - "*/.nyc_output/*"
+  - "*/.pytest_cache/*"
+  - "*/__pycache__/*"
+  - "*/.venv/*"
+  - "*/venv/*"
+  - "layer2/*/aztec-packages/barretenberg/**"
+  - "layer2/*/barretenberg/**"
+  - "**/barretenberg.wasm*"
+  - "**/aztec-packages/**"
+  - "**/*.wasm"
+  - "**/*.wasm.gz"
+  - "**/target/**"
+  - "**/node_modules/**"
+  - "**/dist/**"
+  - "**/build/**"
+
+# Include specific files that might be excluded by default
+include:
+  - "_pages"
+  - ".well-known"
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Collections for project data
+collections:
+  projects:
+    output: false
+
+# Default layout
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
