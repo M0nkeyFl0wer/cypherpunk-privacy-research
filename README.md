@@ -129,9 +129,9 @@ Each project contains comprehensive research documentation:
 
 ### Reports (`/reports/`)
 - `code_analysis.md` - Detailed code review
-- `blockchain_metrics.md` - On-chain metrics
 - `organization_profile.md` - Team and organization data
 - `technical_analysis.md` - Technical deep dive
+- `RESEARCH_NOTES.md` - Documents data sources searched and gaps found
 
 ### Source Data (`/sources/`)
 - `verified_data.json` - Verified research data
