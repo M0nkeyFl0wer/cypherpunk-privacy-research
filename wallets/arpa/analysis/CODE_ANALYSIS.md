@@ -5,15 +5,25 @@
 ## Overview
 
 - **Total Lines of Code**: 49,717
+- **Total Files**: 483
+- **Smart Contracts**: 84 Solidity files
+- **Test Files**: 90
 
 ## Language Breakdown
 
-| Language | Files | Lines |
-|----------|-------|-------|
-| rust | - | 186 |
-| solidity | - | 84 |
-| python | - | 14 |
-| typescript | - | 0 |
-| javascript | - | 0 |
-| go | - | 0 |
+| Language | Lines | Percentage |
+|----------|-------|------------|
+| rust | 186 | 0.4% |
+| solidity | 84 | 0.2% |
+| python | 14 | 0.0% |
 
+## Dependencies
+
+- Rust/Cargo dependencies detected
+
+## Documentation
+
+- ✅ README.md present
+- 22 markdown files
+
+*Analysis performed: 2025-10-10T15:50:23Z*
