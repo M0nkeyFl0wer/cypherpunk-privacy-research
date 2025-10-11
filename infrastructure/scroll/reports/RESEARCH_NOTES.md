@@ -36,4 +36,17 @@ To obtain blockchain metrics for this project:
 
 ---
 
+### Have Information to Add?
+
+If you have blockchain metrics, contract addresses, or other data for this project:
+
+- **📝 Create a Pull Request**: [Submit data via PR](https://github.com/M0nkeyFl0wer/ethereum-cypherpunk-research/pulls)
+- **🐛 Open an Issue**: [Report missing data](https://github.com/M0nkeyFl0wer/ethereum-cypherpunk-research/issues)
+
+Please include:
+- Source of information (link to block explorer, official docs, etc.)
+- Contract addresses (if applicable)
+- Network/chain information
+- Any verification steps you took
+
 *Constitutional Compliance: This note documents research attempts as required. We report gaps, not fabricate data.*
