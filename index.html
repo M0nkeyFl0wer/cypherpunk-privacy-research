@@ -14,9 +14,13 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <i class="fas fa-shield-alt"></i>
-                    <h1>Web3 Privacy</h1>
-                    <span class="subtitle">Ethereum Cypherpunk Research</span>
+                    <div class="logo-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Web3 Privacy</h1>
+                        <span class="subtitle">Ethereum Cypherpunk Research</span>
+                    </div>
                 </div>
                 <nav class="nav">
                     <a href="https://github.com/M0nkeyFl0wer/ethereum-cypherpunk-research" class="nav-link" target="_blank">
@@ -80,10 +84,22 @@
 
             <!-- Projects Grid -->
             <section class="projects-section">
-                <div id="projects-grid" class="projects-grid">
-                    <div class="loading">
-                        <i class="fas fa-spinner fa-spin"></i>
-                        <p>Loading privacy projects...</p>
+                <div id="projects-grid" class="projects-grid" style="display: none;">
+                    <!-- Projects will appear here after search -->
+                </div>
+                
+                <!-- Search Prompt -->
+                <div id="search-prompt" class="search-prompt">
+                    <div class="prompt-content">
+                        <i class="fas fa-search"></i>
+                        <h3>Search Web3 Privacy Projects</h3>
+                        <p>Use the search bar above to find privacy protocols, tools, and infrastructure across Ethereum and other blockchains.</p>
+                        <div class="search-tips">
+                            <div class="tip">
+                                <i class="fas fa-lightbulb"></i>
+                                <span>Try searching for: "tornado", "zk", "mixer", "privacy"</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 

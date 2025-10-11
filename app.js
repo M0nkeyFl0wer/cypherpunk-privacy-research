@@ -150,8 +150,10 @@ class PrivacyResearchApp {
      * Perform initial display of projects
      */
     performInitialDisplay() {
+        // Don't show projects initially - only show search prompt
+        // Projects will appear when user searches
         if (window.searchEngine) {
-            window.searchEngine.performSearch();
+            window.searchEngine.showSearchPrompt();
         }
     }
 

@@ -11,6 +11,7 @@ class SearchEngine {
         this.techFilter = null;
         this.projectsGrid = null;
         this.noResults = null;
+        this.searchPrompt = null;
         
         this.currentQuery = '';
         this.currentFilters = {
@@ -43,6 +44,7 @@ class SearchEngine {
         this.techFilter = document.getElementById('tech-filter');
         this.projectsGrid = document.getElementById('projects-grid');
         this.noResults = document.getElementById('no-results');
+        this.searchPrompt = document.getElementById('search-prompt');
     }
 
     /**
@@ -101,9 +103,9 @@ class SearchEngine {
         // Show/hide clear button
         if (this.searchClear) {
             if (value.trim()) {
-                this.searchClear.classList.add('visible');
+                this.searchClear.style.display = 'block';
             } else {
-                this.searchClear.classList.remove('visible');
+                this.searchClear.style.display = 'none';
             }
         }
 
@@ -127,11 +129,26 @@ class SearchEngine {
         }
         
         if (this.searchClear) {
-            this.searchClear.classList.remove('visible');
+            this.searchClear.style.display = 'none';
         }
         
         this.currentQuery = '';
-        this.performSearch();
+        this.showSearchPrompt();
+    }
+
+    /**
+     * Show search prompt (initial state)
+     */
+    showSearchPrompt() {
+        if (this.projectsGrid) {
+            this.projectsGrid.style.display = 'none';
+        }
+        if (this.noResults) {
+            this.noResults.style.display = 'none';
+        }
+        if (this.searchPrompt) {
+            this.searchPrompt.style.display = 'block';
+        }
     }
 
     /**
@@ -207,6 +224,16 @@ class SearchEngine {
             return;
         }
 
+        // If no search query or filters, show prompt
+        if (!this.currentQuery.trim() && 
+            !this.currentFilters.category && 
+            !this.currentFilters.blockchain && 
+            !this.currentFilters.technology) {
+            this.showSearchPrompt();
+            this.updateURL();
+            return;
+        }
+
         // Get search results
         this.currentResults = window.dataAggregator.searchProjects(
             this.currentQuery, 
@@ -224,6 +251,11 @@ class SearchEngine {
      */
     displayProjects(projects) {
         if (!this.projectsGrid) return;
+
+        // Hide search prompt when showing results
+        if (this.searchPrompt) {
+            this.searchPrompt.style.display = 'none';
+        }
 
         if (projects.length === 0) {
             this.projectsGrid.style.display = 'none';
@@ -258,50 +290,56 @@ class SearchEngine {
         card.setAttribute('role', 'button');
         card.setAttribute('data-project-id', project.id);
 
+        // Determine project folder path
+        const projectPath = this.getProjectFolderPath(project);
+        
         // Create card content
         card.innerHTML = `
             <div class="project-header">
-                <h3 class="project-title">${this.escapeHtml(project.name)}</h3>
+                <h3 class="project-title">${this.escapeHtml(project.name || project.id || 'Unknown Project')}</h3>
                 <div class="project-links">
                     ${project.website ? `<a href="${this.escapeHtml(project.website)}" class="project-link" target="_blank" rel="noopener" title="Website" onclick="event.stopPropagation()"><i class="fas fa-globe"></i></a>` : ''}
                     ${project.github ? `<a href="${this.escapeHtml(project.github)}" class="project-link" target="_blank" rel="noopener" title="GitHub" onclick="event.stopPropagation()"><i class="fab fa-github"></i></a>` : ''}
                     ${project.documentation ? `<a href="${this.escapeHtml(project.documentation)}" class="project-link" target="_blank" rel="noopener" title="Documentation" onclick="event.stopPropagation()"><i class="fas fa-book"></i></a>` : ''}
+                    ${projectPath ? `<a href="${projectPath}" class="project-link" target="_blank" rel="noopener" title="Project Folder" onclick="event.stopPropagation()"><i class="fas fa-folder"></i></a>` : ''}
                 </div>
             </div>
 
+            ${project.tagline ? `<div class="project-tagline">${this.escapeHtml(project.tagline)}</div>` : ''}
+
             <div class="project-description">
-                ${this.escapeHtml(project.description)}
+                ${this.escapeHtml(project.description || 'No description available')}
             </div>
 
             <div class="project-meta">
                 <div class="project-category">
-                    ${this.escapeHtml(project.category)}
+                    ${this.escapeHtml(project.category || 'Privacy Protocol')}
                 </div>
                 
                 <div class="project-tech">
-                    ${project.blockchain.slice(0, 2).map(chain => 
+                    ${(project.blockchain || []).slice(0, 2).map(chain => 
                         `<span class="tech-tag">${this.escapeHtml(chain)}</span>`
                     ).join('')}
-                    ${project.techStack.slice(0, 3).map(tech => 
+                    ${(project.techStack || []).slice(0, 3).map(tech => 
                         `<span class="tech-tag">${this.escapeHtml(tech)}</span>`
                     ).join('')}
-                    ${(project.blockchain.length + project.techStack.length) > 5 ? 
-                        `<span class="tech-tag">+${(project.blockchain.length + project.techStack.length) - 5} more</span>` : ''}
+                    ${((project.blockchain || []).length + (project.techStack || []).length) > 5 ? 
+                        `<span class="tech-tag">+${((project.blockchain || []).length + (project.techStack || []).length) - 5} more</span>` : ''}
                 </div>
             </div>
 
             <div class="project-stats">
                 <div class="stat-item">
                     <i class="fas fa-star"></i>
-                    <span>${project.githubStats.stars || 0}</span>
+                    <span>${(project.githubStats && project.githubStats.stars) || 0}</span>
                 </div>
                 <div class="stat-item">
                     <i class="fas fa-code-branch"></i>
-                    <span>${project.githubStats.forks || 0}</span>
+                    <span>${(project.githubStats && project.githubStats.forks) || 0}</span>
                 </div>
                 <div class="stat-item">
                     <i class="fas fa-chart-bar"></i>
-                    <span>${Math.round(project.confidence * 100)}% confidence</span>
+                    <span>${Math.round((project.confidence || 0) * 100)}% confidence</span>
                 </div>
             </div>
         `;
@@ -497,6 +535,25 @@ class SearchEngine {
                 this.techFilter.value = this.currentFilters.technology;
             }
         }
+    }
+
+    /**
+     * Get project folder path based on project data
+     */
+    getProjectFolderPath(project) {
+        // Try to determine category and project name from the data
+        if (project.rawData && project.rawData.project_name) {
+            // Check common category patterns
+            const projectName = project.rawData.project_name;
+            const categories = ['defi', 'layer2', 'infrastructure', 'wallets', 'identity', 'other', 'privacy-tools', 'storage', 'zkp'];
+            
+            for (const category of categories) {
+                const path = `${category}/${projectName}`;
+                // Return the path - GitHub will handle if it exists or not
+                return path;
+            }
+        }
+        return null;
     }
 
     /**
