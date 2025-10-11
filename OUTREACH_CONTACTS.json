@@ -1,0 +1,966 @@
+[
+  {
+    "project": "0xbow",
+    "category": "defi",
+    "website": "https://0xbow.io",
+    "github": "https://github.com/0xbow-io/",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": true
+  },
+  {
+    "project": "alephim",
+    "category": "defi",
+    "website": "https://alephim.com",
+    "github": "https://github.com/aleph-im/aleph-vm",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "beam",
+    "category": "defi",
+    "website": "https://beam.com",
+    "github": {
+      "organization_url": "https://github.com/BeamMW",
+      "organization_name": "Beam Privacy",
+      "organization_description": "Confidential Cryptocurrency and DeFi Platform",
+      "organization_email": "contact@beam-mw.com",
+      "organization_twitter": "beamprivacy",
+      "organization_created": "2018-10-30T15:52:10Z",
+      "public_repos_count": 102,
+      "organization_followers": 83,
+      "main_repository_url": "https://github.com/BeamMW/beam",
+      "repository_description": "Beam: Scalable Confidential Cryptocurrency. Leading the way to Confidential DeFi",
+      "stars": 711,
+      "forks": 203,
+      "watchers": 711,
+      "subscribers": 79,
+      "open_issues": 234,
+      "has_discussions": true,
+      "license": "Apache-2.0",
+      "license_name": "Apache License 2.0",
+      "license_confidence": 0.95,
+      "created_at": "2018-03-15T18:49:06Z",
+      "last_updated": "2025-10-02T19:15:08Z",
+      "last_pushed": "2025-10-02T19:20:14Z",
+      "repository_size_kb": 66212,
+      "topics": [
+        "atomic-swaps",
+        "beam",
+        "beamprivacy",
+        "blockchain",
+        "cryptocurrency",
+        "dandelion",
+        "dapps",
+        "defi",
+        "lelantus",
+        "mimblewimble",
+        "smart-contracts"
+      ],
+      "primary_language": "C++",
+      "language_distribution": {
+        "C++": {
+          "bytes": 9376178,
+          "percentage": 91.09
+        },
+        "C": {
+          "bytes": 566864,
+          "percentage": 5.51
+        },
+        "HTML": {
+          "bytes": 218613,
+          "percentage": 2.12
+        },
+        "CMake": {
+          "bytes": 76405,
+          "percentage": 0.74
+        },
+        "Java": {
+          "bytes": 27888,
+          "percentage": 0.27
+        },
+        "JavaScript": {
+          "bytes": 19222,
+          "percentage": 0.19
+        },
+        "Shell": {
+          "bytes": 3539,
+          "percentage": 0.03
+        },
+        "Batchfile": {
+          "bytes": 2628,
+          "percentage": 0.03
+        },
+        "Python": {
+          "bytes": 1171,
+          "percentage": 0.01
+        },
+        "Dockerfile": {
+          "bytes": 726,
+          "percentage": 0.01
+        }
+      },
+      "top_contributors": [
+        {
+          "username": "valdok",
+          "contributions": 5499,
+          "profile_url": "https://github.com/valdok",
+          "rank": 1
+        },
+        {
+          "username": "anatolse",
+          "contributions": 2110,
+          "profile_url": "https://github.com/anatolse",
+          "rank": 2
+        },
+        {
+          "username": "chapati",
+          "contributions": 1295,
+          "profile_url": "https://github.com/chapati",
+          "rank": 3
+        },
+        {
+          "username": "nesbox",
+          "contributions": 1095,
+          "profile_url": "https://github.com/nesbox",
+          "rank": 4
+        },
+        {
+          "username": "roman-strilets",
+          "contributions": 1080,
+          "profile_url": "https://github.com/roman-strilets",
+          "rank": 5
+        },
+        {
+          "username": "echoby",
+          "contributions": 1029,
+          "profile_url": "https://github.com/echoby",
+          "rank": 6
+        },
+        {
+          "username": "Aleksandr-Starun",
+          "contributions": 679,
+          "profile_url": "https://github.com/Aleksandr-Starun",
+          "rank": 7
+        },
+        {
+          "username": "Zeke133",
+          "contributions": 410,
+          "profile_url": "https://github.com/Zeke133",
+          "rank": 8
+        },
+        {
+          "username": "DenisDemyanko",
+          "contributions": 109,
+          "profile_url": "https://github.com/DenisDemyanko",
+          "rank": 9
+        },
+        {
+          "username": "beam-mw",
+          "contributions": 64,
+          "profile_url": "https://github.com/beam-mw",
+          "rank": 10
+        }
+      ],
+      "total_contributors": 10,
+      "github_metrics_confidence": 0.95,
+      "github_metrics_sources": [
+        "https://api.github.com/orgs/BeamMW",
+        "https://api.github.com/repos/BeamMW/beam",
+        "https://api.github.com/repos/BeamMW/beam/contributors"
+      ],
+      "data_freshness": "2025-10-06T12:01:00Z"
+    },
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "chainport",
+    "category": "defi",
+    "website": "https://www.chainport.io/",
+    "github": "https://github.com/chainport",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "hopr",
+    "category": "defi",
+    "website": "https://hopr.com",
+    "github": "https://github.com/hoprnet/hoprnet",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": true
+  },
+  {
+    "project": "iexec",
+    "category": "defi",
+    "website": "https://www.iex.ec/",
+    "github": "https://github.com/iExecBlockchainComputing",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "inco",
+    "category": "defi",
+    "website": "https://www.inco.org/",
+    "github": "https://github.com/Inco-fhevm",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "mask",
+    "category": "defi",
+    "website": "https://www.mask.io/",
+    "github": "https://github.com/DimensionDev/Maskbook",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "penumbra",
+    "category": "defi",
+    "website": "https://penumbra.io",
+    "github": "https://github.com/penumbra-zone/penumbra",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": true
+  },
+  {
+    "project": "privatepool",
+    "category": "defi",
+    "website": "https://privatepool.com",
+    "github": "https://github.com/0xbow-io/privacy-pools-core",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": true
+  },
+  {
+    "project": "starkex",
+    "category": "defi",
+    "website": "https://starkware.co/starkex/",
+    "github": "https://github.com/starkware-libs/starkex-contracts",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "zcash",
+    "category": "defi",
+    "website": "https://z.cash/",
+    "github": "https://github.com/zcash/zcash",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "zkp2p",
+    "category": "defi",
+    "website": null,
+    "github": "https://github.com/zkp2p",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": true
+  },
+  {
+    "project": "circom",
+    "category": "identity",
+    "website": "https://circom.io",
+    "github": "https://github.com/iden3/circom",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": true
+  },
+  {
+    "project": "dark-forest",
+    "category": "identity",
+    "website": "https://zkga.me",
+    "github": "https://github.com/darkforest-eth",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": true
+  },
+  {
+    "project": "elusiv",
+    "category": "identity",
+    "website": "https://elusiv.network",
+    "github": "https://github.com/elusiv-privacy/elusiv",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "iron-fish",
+    "category": "identity",
+    "website": "https://iron-fish.com",
+    "github": "https://github.com/iron-fish/ironfish",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": true
+  },
+  {
+    "project": "darkfi",
+    "category": "infrastructure",
+    "website": "https://dark.fi",
+    "github": "https://github.com/darkrenaissance/darkfi",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "grin",
+    "category": "infrastructure",
+    "website": "https://grin.io",
+    "github": "https://github.com/mimblewimble/grin",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "incognito",
+    "category": "infrastructure",
+    "website": "https://incognito.com",
+    "github": "https://github.com/incognitochain",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": true
+  },
+  {
+    "project": "labyrinth",
+    "category": "infrastructure",
+    "website": "https://labyrinth.xyz",
+    "github": "https://github.com/anonymouslabyrinth",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "light-protocol",
+    "category": "infrastructure",
+    "website": "https://www.light-protocol.com",
+    "github": "https://github.com/Lightprotocol/light-protocol",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "litentry",
+    "category": "infrastructure",
+    "website": "https://litentry.network",
+    "github": "https://github.com/litentry/litentry-parachain",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "manta-network",
+    "category": "infrastructure",
+    "website": "https://manta-network.com",
+    "github": "https://github.com/Manta-Network/manta-rs",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "mask-network",
+    "category": "infrastructure",
+    "website": "",
+    "github": "https://github.com/DimensionDev/Maskbook",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": true
+  },
+  {
+    "project": "mina-protocol",
+    "category": "infrastructure",
+    "website": "https://minaprotocol.com",
+    "github": "https://github.com/MinaProtocol",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": true
+  },
+  {
+    "project": "nillion",
+    "category": "infrastructure",
+    "website": "https://nillion.com",
+    "github": "https://github.com/NillionNetwork",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "nym",
+    "category": "infrastructure",
+    "website": "https://nym.network",
+    "github": "https://github.com/nymtech/nym",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": true
+  },
+  {
+    "project": "oasis-network",
+    "category": "infrastructure",
+    "website": "https://oasis-network.org",
+    "github": "https://github.com/oasisprotocol/oasis-core",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "rotki",
+    "category": "infrastructure",
+    "website": "https://rotki.com",
+    "github": "https://github.com/rotki/rotki",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": true
+  },
+  {
+    "project": "scroll",
+    "category": "infrastructure",
+    "website": "https://scroll.io",
+    "github": "https://github.com/scroll-tech/scroll",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": true
+  },
+  {
+    "project": "semaphore",
+    "category": "infrastructure",
+    "website": "https://semaphore.io",
+    "github": "https://github.com/semaphore-protocol/semaphore",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": true
+  },
+  {
+    "project": "sentinel",
+    "category": "infrastructure",
+    "website": "https://sentinel.network",
+    "github": "https://github.com/sentinel-official/sentinelhub",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "sismo",
+    "category": "infrastructure",
+    "website": "https://sismo.io",
+    "github": "https://github.com/sismo-core/sismo-badges",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "snapshot-x",
+    "category": "infrastructure",
+    "website": "https://snapshot.box/",
+    "github": "https://github.com/snapshot-labs/sx-monorepo",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": true
+  },
+  {
+    "project": "tornado-cash",
+    "category": "infrastructure",
+    "website": "https://tornado-cash.org",
+    "github": "https://github.com/tornadocash/tornado-core",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": true
+  },
+  {
+    "project": "umbra-cash",
+    "category": "infrastructure",
+    "website": "https://umbra.cash",
+    "github": "https://github.com/ScopeLift/umbra-protocol",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": true
+  },
+  {
+    "project": "veramo",
+    "category": "infrastructure",
+    "website": "https://veramo.io",
+    "github": "https://github.com/decentralized-identity/veramo",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "zkvote",
+    "category": "infrastructure",
+    "website": "https://github.com/node101-io/zkvot",
+    "github": "https://github.com/KimiWu123/zkvote",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": true
+  },
+  {
+    "project": "aztec-network",
+    "category": "layer2",
+    "website": "https://aztec-network.com",
+    "github": "https://github.com/AztecProtocol/aztec-packages",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "aztec-protocol",
+    "category": "layer2",
+    "website": "https://aztec.network/",
+    "github": "https://github.com/AztecProtocol/aztec-packages",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": true
+  },
+  {
+    "project": "pse--privacy---scaling-explorations-",
+    "category": "layer2",
+    "website": "https://pse.dev/",
+    "github": "https://github.com/privacy-scaling-explorations",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": true
+  },
+  {
+    "project": "starknet",
+    "category": "layer2",
+    "website": "https://www.starknet.io/",
+    "github": "https://github.com/starkware-libs/cairo",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": true
+  },
+  {
+    "project": "taiko",
+    "category": "layer2",
+    "website": "https://taiko.io",
+    "github": "https://github.com/taikoxyz/taiko-mono",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "ten",
+    "category": "layer2",
+    "website": "https://ten.network",
+    "github": "https://github.com/ten-protocol/go-ten",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "zecrey",
+    "category": "layer2",
+    "website": "https://www.zecrey.com",
+    "github": "https://github.com/Zecrey-Labs",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": true
+  },
+  {
+    "project": "zksync",
+    "category": "layer2",
+    "website": "https://www.zksync.io/",
+    "github": "https://github.com/matter-labs/zksync",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": true
+  },
+  {
+    "project": "firo",
+    "category": "privacy-tools",
+    "website": "https://firo.com",
+    "github": "https://github.com/firoorg/firo",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "fileverse",
+    "category": "storage",
+    "website": "https://fileverse.io",
+    "github": "https://github.com/fileverse/fileverse-ddoc",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": true
+  },
+  {
+    "project": "arpa",
+    "category": "wallets",
+    "website": "https://arpa.io",
+    "github": "https://github.com/ARPA-Network/BLS-TSS-Network",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "brume-wallet",
+    "category": "wallets",
+    "website": "https://wallet.brume.money/",
+    "github": "https://github.com/brumeproject/wallet",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "cake-wallet",
+    "category": "wallets",
+    "website": "https://cakewallet.com/",
+    "github": "https://github.com/cake-tech/cake_wallet",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "edge-wallet",
+    "category": "wallets",
+    "website": "https://edge-wallet.com",
+    "github": "https://github.com/EdgeApp",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "frame",
+    "category": "wallets",
+    "website": "https://frame.io",
+    "github": "https://github.com/floating/frame",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "oxen",
+    "category": "wallets",
+    "website": "https://oxen.io",
+    "github": "https://github.com/oxen-io/oxen-core",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "railway",
+    "category": "wallets",
+    "website": "https://www.railway.xyz/",
+    "github": "https://github.com/Railway-Wallet",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "railway-wallet",
+    "category": "wallets",
+    "website": "https://www.railway.xyz/",
+    "github": "https://github.com/Railway-Wallet",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "wasabi-wallet",
+    "category": "wallets",
+    "website": "https://wasabiwallet.io/",
+    "github": "https://github.com/zkSNACKs/WalletWasabi",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "zeal",
+    "category": "wallets",
+    "website": "https://www.zeal.app",
+    "github": "https://github.com/zealwallet",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "zion",
+    "category": "wallets",
+    "website": "https://zion.fyi",
+    "github": "https://github.com/getzion",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "zkbob",
+    "category": "wallets",
+    "website": "https://zkbob.com",
+    "github": "https://github.com/zkBob/zkbob-contracts",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "findora",
+    "category": "zkp",
+    "website": "https://findora.com",
+    "github": "https://github.com/FindoraNetwork/platform",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "aleo",
+    "category": "other",
+    "website": "https://aleo.org",
+    "github": "https://github.com/AleoHQ",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": true
+  },
+  {
+    "project": "anoma",
+    "category": "other",
+    "website": "https://anoma.net",
+    "github": "https://github.com/anoma",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": true
+  },
+  {
+    "project": "concordium",
+    "category": "other",
+    "website": "https://concordium.com",
+    "github": "https://github.com/Concordium/concordium-node",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "fluidkey",
+    "category": "other",
+    "website": "https://fluidkey.com",
+    "github": "https://github.com/fluidkey/fluidkey-stealth-account-kit",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": true
+  },
+  {
+    "project": "iden3",
+    "category": "other",
+    "website": "https://iden3.com",
+    "github": "https://github.com/iden3/iden3-docs",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "mobilecoin",
+    "category": "other",
+    "website": "https://mobilecoin.com",
+    "github": "https://github.com/mobilecoinfoundation/mobilecoin",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "monero",
+    "category": "other",
+    "website": "https://monero.io",
+    "github": "https://github.com/monero-project/monero",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "orchid",
+    "category": "other",
+    "website": "https://orchid.network",
+    "github": "https://github.com/OrchidTechnologies/orchid",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "pirate-chain",
+    "category": "other",
+    "website": "https://pirate-chain.com",
+    "github": "https://github.com/PirateNetwork/pirate",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "railgun",
+    "category": "other",
+    "website": "https://railgun.org/",
+    "github": "https://github.com/railgun-privacy",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": true
+  },
+  {
+    "project": "suterusu",
+    "category": "other",
+    "website": "https://suterusu.com",
+    "github": "https://github.com/suterusu-team/suter-proofs",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  },
+  {
+    "project": "zano",
+    "category": "other",
+    "website": "https://zano.org/",
+    "github": "https://github.com/hyle-team/zano",
+    "twitter": null,
+    "discord": null,
+    "telegram": null,
+    "email": null,
+    "has_research_notes": false
+  }
+]
