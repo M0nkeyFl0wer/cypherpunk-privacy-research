@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3Privacy Research - Interactive Database</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/jpeg" href="assets/images/favicon.jpg">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script>
+        // Fallback CDN for D3.js
+        if (typeof d3 === 'undefined') {
+            document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"><\/script>');
+        }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Courier New', 'Monaco', 'Menlo', monospace;
+            background: #0a0a0a;
+            color: #ffffff;
+            line-height: 1.4;
+            letter-spacing: 0.5px;
+        }
+        
+        .hero-section {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            background: 
+                linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(15, 15, 35, 0.9)),
+                url('./assets/images/web3privacy-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 20%, rgba(0, 212, 255, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 80%, rgba(255, 107, 107, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        
+        .hero-logo {
+            margin-bottom: 30px;
+            z-index: 1;
+        }
+        
+        .hero-logo-img {
+            max-width: 500px;
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .hero-title {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 900;
+            margin-bottom: 20px;
+            color: #ffffff;
+            text-align: center;
+            z-index: 1;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.5),
+                         0 0 40px rgba(0, 255, 255, 0.3),
+                         0 0 60px rgba(0, 255, 255, 0.1);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.7);
+            text-align: center;
+            margin-bottom: 40px;
+            max-width: 600px;
+            z-index: 1;
+        }
+        
+        .search-container {
+            position: relative;
+            max-width: 600px;
+            width: 100%;
+            z-index: 1;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 20px 25px;
+            font-size: 18px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 50px;
+            color: white;
+            outline: none;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        
+        .search-input:focus {
+            border-color: rgba(0, 212, 255, 0.5);
+            box-shadow: 0 0 0 1px rgba(0, 212, 255, 0.3), 0 16px 64px rgba(0, 212, 255, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        .search-input::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+        
+        .quick-searches {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            opacity: 0.8;
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+        
+        .empty-state h3 {
+            color: #00d4ff;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .example-searches {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+        
+        .example-btn {
+            background: rgba(0, 212, 255, 0.1);
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            color: #00d4ff;
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+        
+        .example-btn:hover {
+            background: rgba(0, 212, 255, 0.2);
+            border-color: rgba(0, 212, 255, 0.5);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 212, 255, 0.2);
+        }
+        
+        .loading-dots {
+            display: inline-flex;
+            gap: 4px;
+            margin-bottom: 15px;
+        }
+        
+        .loading-dots span {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #00d4ff;
+            animation: loading-bounce 1.4s ease-in-out infinite both;
+        }
+        
+        .loading-dots span:nth-child(1) { animation-delay: -0.32s; }
+        .loading-dots span:nth-child(2) { animation-delay: -0.16s; }
+        .loading-dots span:nth-child(3) { animation-delay: 0s; }
+        
+        @keyframes loading-bounce {
+            0%, 80%, 100% { transform: scale(0.8); opacity: 0.5; }
+            40% { transform: scale(1.2); opacity: 1; }
+        }
+        
+        .no-results {
+            text-align: center;
+            padding: 40px 20px;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 1.1rem;
+        }
+        
+        .no-results h3 {
+            color: #ff6b6b;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .quick-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .quick-btn:hover {
+            background: rgba(0, 212, 255, 0.2);
+            border-color: rgba(0, 212, 255, 0.3);
+            color: #00d4ff;
+            transform: translateY(-2px);
+        }
+        
+        .results-section {
+            display: none;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            padding: 40px 20px;
+        }
+        
+        .results-section.visible {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .results-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .results-title {
+            font-size: 2rem;
+            color: #00d4ff;
+            margin-bottom: 10px;
+        }
+        
+        .results-subtitle {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 1.1rem;
+        }
+        
+        .surprise-text {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 600;
+            animation: sparkle 2s ease-in-out;
+        }
+        
+        @keyframes sparkle {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; transform: scale(1.02); }
+        }
+        
+        .network-container {
+            background: rgba(15, 15, 35, 0.8);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            margin: 40px auto;
+            max-width: 1200px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .network-header {
+            padding: 20px;
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(255, 107, 107, 0.1));
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+        
+        .network-title {
+            font-size: 1.3rem;
+            color: #00d4ff;
+            margin-bottom: 5px;
+        }
+        
+        .network-description {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+        }
+        
+        .network-svg {
+            width: 100%;
+            height: 500px;
+            background: radial-gradient(circle at center, rgba(0, 212, 255, 0.03) 0%, transparent 70%);
+        }
+        
+        .network-controls {
+            position: absolute;
+            top: 80px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            padding: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .control-item {
+            font-size: 12px;
+            margin-bottom: 5px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .cards-container {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+        
+        .cards-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .cards-title {
+            font-size: 1.8rem;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+            animation: slideUp 0.8s ease-out 0.3s both;
+        }
+        
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .project-card {
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 0;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #00d4ff, transparent);
+            transition: left 0.6s ease;
+        }
+        
+        .project-card:hover::before {
+            left: 100%;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(0, 212, 255, 0.3);
+            background: rgba(0, 212, 255, 0.05);
+            box-shadow: 0 20px 60px rgba(0, 212, 255, 0.15);
+        }
+        
+        .card-image {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            border-radius: 8px 8px 0 0;
+        }
+        
+        .card-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+            display: flex;
+            align-items: flex-end;
+            padding: 20px;
+        }
+        
+        .card-content {
+            padding: 25px;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+        }
+        
+        .card-category {
+            background: rgba(0, 0, 0, 0.8);
+            color: #00ffff;
+            padding: 4px 12px;
+            border-radius: 2px;
+            font-size: 12px;
+            font-weight: 700;
+            border: 1px solid #00ffff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .card-description {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        
+        .card-metrics {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .metric {
+            text-align: center;
+        }
+        
+        .metric-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #00d4ff;
+            display: block;
+        }
+        
+        .metric-label {
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.5);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .card-footer {
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .card-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .tag {
+            background: rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 3px 8px;
+            border-radius: 10px;
+            font-size: 11px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .disclaimer-tag {
+            background: rgba(255, 107, 107, 0.2);
+            color: #ff9999;
+            border-color: rgba(255, 107, 107, 0.3);
+        }
+        
+        .card-disclaimer {
+            background: rgba(0, 212, 255, 0.1);
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            border-radius: 4px;
+            padding: 8px 12px;
+            margin-bottom: 15px;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.4;
+        }
+        
+        .card-disclaimer.warning {
+            background: rgba(255, 193, 7, 0.1);
+            border-color: rgba(255, 193, 7, 0.3);
+            color: #ffc107;
+        }
+        
+        .tooltip {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-size: 13px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            max-width: 280px;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+        
+        .loading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 60px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid rgba(0, 212, 255, 0.1);
+            border-top: 3px solid #00d4ff;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .loading-text {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .loading-subtext {
+            font-size: 14px;
+            opacity: 0.7;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2rem; /* Smaller on mobile */
+            }
+            
+            .search-input {
+                padding: 15px 20px; /* Better touch targets */
+                font-size: 16px; /* Prevent zoom on iOS */
+            }
+            
+            .network-svg {
+                height: 300px; /* Smaller on mobile */
+            }
+            
+            .quick-btn, .example-btn {
+                padding: 12px 16px; /* Better touch targets */
+                min-height: 44px; /* iOS touch target minimum */
+                font-size: 14px;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .network-controls {
+                position: static;
+                margin: 20px;
+                width: auto;
+            }
+            
+            .hero-section {
+                padding: 20px 10px;
+            }
+            
+            .empty-state {
+                padding: 40px 20px;
+            }
+            
+            .example-searches {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            
+            .example-btn {
+                width: 100%;
+                max-width: 280px;
+            }
+        }
+        
+        .sr-only {
+            position: absolute;
+            left: -10000px;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <div class="hero-logo">
+            <img src="assets/images/web3privacy-banner.jpg" alt="Web3Privacy" class="hero-logo-img" />
+        </div>
+        <h1 class="hero-title">Interactive Research Database</h1>
+        <p class="hero-subtitle">Discover privacy-focused blockchain projects, tools, and technologies shaping the decentralized future</p>
+        
+        <div class="search-container">
+            <input 
+                type="text" 
+                class="search-input" 
+                placeholder="Search projects, technologies, or categories..." 
+                id="searchInput"
+                role="searchbox"
+                aria-label="Search for privacy-focused web3 projects"
+                aria-describedby="search-description"
+                autocomplete="off"
+            >
+            <div id="search-description" class="sr-only">Type to search through privacy-focused blockchain projects and technologies</div>
+        </div>
+        
+        <div class="quick-searches" role="group" aria-label="Quick search options">
+            <button class="quick-btn" data-search="zk" aria-label="Search for zero knowledge projects">Zero Knowledge</button>
+            <button class="quick-btn" data-search="privacy" aria-label="Search for privacy tools">Privacy Tools</button>
+            <button class="quick-btn" data-search="wallet" aria-label="Search for wallets">Wallets</button>
+            <button class="quick-btn" data-search="defi" aria-label="Search for DeFi privacy projects">DeFi Privacy</button>
+            <button class="quick-btn" data-search="blockchain" aria-label="Search for blockchains">Blockchains</button>
+        </div>
+        
+        <!-- Empty state with onboarding -->
+        <div class="empty-state" id="emptyState">
+            <h3>🔍 Smart Search Tips</h3>
+            <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: 20px;">Try these example searches to discover privacy-focused web3 projects:</p>
+            <div class="example-searches" role="group" aria-label="Example search queries">
+                <button class="example-btn" data-search="zk privacy" aria-label="Search for zero knowledge privacy projects">"zk privacy"</button>
+                <button class="example-btn" data-search="ethereum mixers" aria-label="Search for ethereum mixers">"ethereum mixers"</button>
+                <button class="example-btn" data-search="DeFi privacy tools" aria-label="Search for DeFi privacy tools">"DeFi privacy tools"</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="results-section" id="resultsSection" role="region" aria-live="polite" aria-label="Search results">
+        <div class="results-header">
+            <h2 class="results-title" id="resultsTitle">Search Results</h2>
+            <p class="results-subtitle">
+                <span class="surprise-text">✨ Interactive network visualization</span> + detailed project cards below
+            </p>
+        </div>
+        
+        <div class="loading" id="loading">
+            <div class="loading-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="loading-text">Searching privacy projects...</div>
+            <div class="loading-subtext">Preparing interactive network ✨</div>
+        </div>
+        
+        <div class="no-results" id="noResults" style="display: none;">
+            <h3>No results found</h3>
+            <p>Try different keywords or browse our suggested searches above.</p>
+        </div>
+        
+        <div class="network-container" id="networkContainer" style="display: none;" role="region" aria-label="Interactive project network visualization">
+            <div class="network-header">
+                <h3 class="network-title">Project Network Map</h3>
+                <p class="network-description">Drag nodes • Zoom and pan • Hover for details</p>
+            </div>
+            <svg class="network-svg" id="networkSvg" role="img" aria-label="Interactive network diagram of privacy projects"></svg>
+            <div class="network-controls" id="networkControls">
+                <div class="control-item">Projects: <span id="projectCount">0</span></div>
+                <div class="control-item">Categories: <span id="categoryCount">0</span></div>
+                <div class="control-item">Connections: <span id="connectionCount">0</span></div>
+            </div>
+        </div>
+        
+        <div class="cards-container" id="cardsContainer" style="display: none;" role="region" aria-label="Detailed project information">
+            <div class="cards-header">
+                <h3 class="cards-title">Detailed Project Information</h3>
+            </div>
+            <div class="cards-grid" id="cardsGrid" role="list" aria-label="List of privacy project details"></div>
+        </div>
+    </div>
+    
+    <div class="tooltip" id="tooltip"></div>
+
+    <script>
+        let allProjects = [];
+        let searchResults = [];
+        let networkVisible = false;
+        
+        // Network variables
+        let svg, g, simulation;
+        const width = 1000;
+        const height = 500;
+        
+        // Initialize
+        async function init() {
+            await loadProjects();
+            setupEventListeners();
+        }
+        
+        async function loadProjects() {
+            try {
+                const response = await fetch('./PROJECT_MASTER_CONSOLIDATED.json');
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const data = await response.json();
+                allProjects = data.projects || [];
+                
+                if (allProjects.length === 0) {
+                    console.warn('No projects found in data, using fallback');
+                    throw new Error('Empty project data');
+                }
+                
+            } catch (error) {
+                console.warn('Failed to load project data, using fallback:', error.message);
+                // Fallback sample data with new structure
+                allProjects = [
+                    { id: "aztec-network", category: "defi", privacy_techniques_count: 8, team_size: 25, description: "Privacy-first ZK rollup", github_url: "https://github.com/AztecProtocol", website_url: "https://aztec.network", data_quality: "rich", has_contracts: true },
+                    { id: "monero", category: "currency", privacy_techniques_count: 9, team_size: 15, description: "Private cryptocurrency with ring signatures and stealth addresses", github_url: "https://github.com/monero-project/monero", data_quality: "rich", has_contracts: false },
+                    { id: "zcash", category: "currency", privacy_techniques_count: 7, team_size: 12, description: "Privacy-focused cryptocurrency with shielded transactions", github_url: "https://github.com/zcash/zcash", data_quality: "rich", has_contracts: false },
+                    { id: "tornado-cash", category: "mixing", privacy_techniques_count: 5, team_size: 3, description: "Ethereum mixer for private transactions", github_url: "https://github.com/tornadocash", data_quality: "rich", has_contracts: true },
+                    { id: "railgun", category: "defi", privacy_techniques_count: 4, team_size: 8, description: "Privacy protocol for DeFi transactions", github_url: "https://github.com/Railgun-Privacy", data_quality: "rich", has_contracts: true }
+                ];
+            }
+        }
+        
+        function setupEventListeners() {
+            const searchInput = document.getElementById('searchInput');
+            searchInput.addEventListener('input', debounce(handleSearch, 500));
+            
+            // Keyboard navigation for search
+            searchInput.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    searchInput.value = '';
+                    handleSearch({ target: { value: '' } });
+                }
+            });
+            
+            // Quick search buttons
+            document.querySelectorAll('.quick-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const searchTerm = btn.getAttribute('data-search');
+                    searchInput.value = searchTerm;
+                    handleSearch({ target: { value: searchTerm } });
+                });
+                
+                // Keyboard support for buttons
+                btn.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        btn.click();
+                    }
+                });
+            });
+            
+            // Example search buttons
+            document.querySelectorAll('.example-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const searchTerm = btn.getAttribute('data-search');
+                    searchInput.value = searchTerm;
+                    handleSearch({ target: { value: searchTerm } });
+                });
+                
+                // Keyboard support for buttons
+                btn.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        btn.click();
+                    }
+                });
+            });
+        }
+        
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+        
+        function handleSearch(e) {
+            const query = e.target.value.trim();
+            
+            if (!query) {
+                hideResults();
+                return;
+            }
+            
+            try {
+                showLoading();
+                
+                // Reduced delay for better UX - show instant feedback
+                setTimeout(() => {
+                    try {
+                        performSearch(query);
+                        showResults(query);
+                    } catch (searchError) {
+                        console.error('Search error:', searchError);
+                        showSearchError();
+                    }
+                }, 300);
+                
+            } catch (error) {
+                console.error('Error handling search:', error);
+                showSearchError();
+            }
+        }
+        
+        function showSearchError() {
+            const loading = document.getElementById('loading');
+            const noResults = document.getElementById('noResults');
+            
+            loading.style.display = 'none';
+            noResults.innerHTML = `
+                <h3>Search Error</h3>
+                <p>Something went wrong while searching. Please try again or refresh the page.</p>
+            `;
+            noResults.style.display = 'block';
+        }
+        
+        function performSearch(query) {
+            const terms = query.toLowerCase().split(' ').filter(term => term.length > 0);
+            
+            searchResults = allProjects.filter(project => {
+                // Use AND logic - all terms must match
+                return terms.every(term => {
+                    return project.id.toLowerCase().includes(term) ||
+                           project.category.toLowerCase().includes(term) ||
+                           (term === 'zk' && isZKProject(project)) ||
+                           (project.description && project.description.toLowerCase().includes(term)) ||
+                           (project.website_url && project.website_url.toLowerCase().includes(term)) ||
+                           (project.tech_stack && project.tech_stack.some(tech => tech.toLowerCase().includes(term)))
+                });
+            });
+        }
+        
+        function isZKProject(project) {
+            const zkKeywords = ['aztec', 'aleo', 'zcash', 'mina', 'penumbra', 'zero', 'zk'];
+            return zkKeywords.some(keyword => 
+                project.id.toLowerCase().includes(keyword) ||
+                (project.description && project.description.toLowerCase().includes(keyword))
+            );
+        }
+        
+        function showLoading() {
+            const resultsSection = document.getElementById('resultsSection');
+            const loading = document.getElementById('loading');
+            const emptyState = document.getElementById('emptyState');
+            const noResults = document.getElementById('noResults');
+            
+            // Hide empty state when searching
+            emptyState.style.display = 'none';
+            noResults.style.display = 'none';
+            
+            resultsSection.style.display = 'block';
+            loading.style.display = 'flex';
+            
+            setTimeout(() => {
+                resultsSection.classList.add('visible');
+            }, 100);
+        }
+        
+        function showResults(query) {
+            const loading = document.getElementById('loading');
+            const networkContainer = document.getElementById('networkContainer');
+            const cardsContainer = document.getElementById('cardsContainer');
+            const resultsTitle = document.getElementById('resultsTitle');
+            const noResults = document.getElementById('noResults');
+            
+            // Update title
+            resultsTitle.textContent = `Found ${searchResults.length} projects for "${query}"`;
+            
+            // Hide loading
+            loading.style.display = 'none';
+            
+            if (searchResults.length === 0) {
+                // Show no results message
+                noResults.style.display = 'block';
+                networkContainer.style.display = 'none';
+                cardsContainer.style.display = 'none';
+                return;
+            }
+            
+            // Hide no results if we have results
+            noResults.style.display = 'none';
+            
+            // Show network first (the magical surprise!)
+            setTimeout(() => {
+                networkContainer.style.display = 'block';
+                createNetworkVisualization();
+            }, 200);
+            
+            // Then show cards
+            setTimeout(() => {
+                cardsContainer.style.display = 'block';
+                createProjectCards();
+            }, 800);
+        }
+        
+        function createNetworkVisualization() {
+            try {
+                // Check if D3.js is available
+                if (typeof d3 === 'undefined') {
+                    console.error('D3.js not loaded, falling back to simple list view');
+                    showFallbackView();
+                    return;
+                }
+                
+                // Clear any existing network
+                d3.select("#networkSvg").selectAll("*").remove();
+                
+                svg = d3.select("#networkSvg")
+                    .attr("viewBox", [0, 0, width, height]);
+            
+            g = svg.append("g");
+            
+            // Zoom behavior
+            const zoom = d3.zoom()
+                .scaleExtent([0.3, 3])
+                .on("zoom", (event) => {
+                    g.attr("transform", event.transform);
+                });
+            
+            svg.call(zoom);
+            
+            // Create network data
+            const links = createNetworkLinks(searchResults);
+            
+            // Force simulation with touch optimization
+            const isTouchDevice = 'ontouchstart' in window;
+            simulation = d3.forceSimulation(searchResults)
+                .force("link", d3.forceLink(links).id(d => d.id).distance(60))
+                .force("charge", d3.forceManyBody().strength(-200))
+                .force("center", d3.forceCenter(width / 2, height / 2))
+                .force("collision", d3.forceCollide(isTouchDevice ? 35 : 25)); // Bigger touch targets
+            
+            // Add links with animation
+            const link = g.append("g")
+                .selectAll("line")
+                .data(links)
+                .enter().append("line")
+                .attr("stroke", "rgba(255, 255, 255, 0.1)")
+                .attr("stroke-width", 2)
+                .style("opacity", 0);
+            
+            // Add nodes
+            const node = g.append("g")
+                .selectAll("g")
+                .data(searchResults)
+                .enter().append("g")
+                .style("opacity", 0)
+                .call(d3.drag()
+                    .on("start", dragStarted)
+                    .on("drag", dragged)
+                    .on("end", dragEnded));
+            
+            // Node circles
+            node.append("circle")
+                .attr("r", d => Math.max(8, (d.privacy_techniques_count || 0) * 2 + 8))
+                .attr("fill", d => getCategoryColor(d.category))
+                .attr("stroke", "#fff")
+                .attr("stroke-width", 2)
+                .style("cursor", "pointer")
+                .style("filter", "drop-shadow(0 0 10px rgba(0, 212, 255, 0.3))");
+            
+            // Node labels
+            node.append("text")
+                .text(d => d.id)
+                .attr("dy", d => Math.max(8, (d.privacy_techniques_count || 0) * 2 + 8) + 18)
+                .attr("text-anchor", "middle")
+                .attr("font-size", "11px")
+                .attr("fill", "#ccc")
+                .attr("font-weight", "500")
+                .style("pointer-events", "none");
+            
+            // Hover effects
+            node.on("mouseover", function(event, d) {
+                d3.select(this).select("circle")
+                    .transition().duration(200)
+                    .attr("stroke", "#00d4ff")
+                    .attr("stroke-width", 3)
+                    .style("filter", "drop-shadow(0 0 20px rgba(0, 212, 255, 0.6))");
+                
+                showTooltip(event, d);
+            })
+            .on("mouseout", function(event, d) {
+                d3.select(this).select("circle")
+                    .transition().duration(200)
+                    .attr("stroke", "#fff")
+                    .attr("stroke-width", 2)
+                    .style("filter", "drop-shadow(0 0 10px rgba(0, 212, 255, 0.3))");
+                
+                hideTooltip();
+            });
+            
+            // Animation sequence
+            simulation.on("tick", () => {
+                link
+                    .attr("x1", d => d.source.x)
+                    .attr("y1", d => d.source.y)
+                    .attr("x2", d => d.target.x)
+                    .attr("y2", d => d.target.y);
+                
+                node
+                    .attr("transform", d => `translate(${d.x},${d.y})`);
+            });
+            
+            // Animate nodes and links appearing
+            node.transition()
+                .delay((d, i) => i * 100)
+                .duration(600)
+                .style("opacity", 1)
+                .attr("transform", d => `translate(${d.x || width/2},${d.y || height/2})`);
+            
+            link.transition()
+                .delay(searchResults.length * 100)
+                .duration(800)
+                .style("opacity", 0.6);
+            
+            updateNetworkStats();
+                
+            } catch (error) {
+                console.error('Error creating network visualization:', error);
+                showFallbackView();
+            }
+        }
+        
+        function showFallbackView() {
+            const networkContainer = document.getElementById('networkContainer');
+            networkContainer.innerHTML = `
+                <div style="padding: 40px; text-align: center; color: rgba(255, 255, 255, 0.7);">
+                    <h3 style="color: #00d4ff; margin-bottom: 20px;">Network View Unavailable</h3>
+                    <p>The interactive network visualization could not be loaded.</p>
+                    <p>Please see the detailed project cards below.</p>
+                </div>
+            `;
+            networkContainer.style.display = 'block';
+        }
+        
+        function createNetworkLinks(nodes) {
+            const links = [];
+            const categories = {};
+            
+            nodes.forEach(node => {
+                if (!categories[node.category]) categories[node.category] = [];
+                categories[node.category].push(node);
+            });
+            
+            // Create links within categories and between high-quality projects
+            Object.values(categories).forEach(categoryNodes => {
+                for (let i = 0; i < categoryNodes.length - 1; i++) {
+                    links.push({
+                        source: categoryNodes[i].id,
+                        target: categoryNodes[i + 1].id
+                    });
+                }
+            });
+            
+            // Add some cross-category links for high privacy projects
+            const highPrivacy = nodes.filter(n => (n.privacy_techniques_count || 0) >= 4);
+            for (let i = 0; i < highPrivacy.length - 1; i++) {
+                if (highPrivacy[i].category !== highPrivacy[i + 1].category) {
+                    links.push({
+                        source: highPrivacy[i].id,
+                        target: highPrivacy[i + 1].id
+                    });
+                }
+            }
+            
+            return links;
+        }
+        
+        function getCategoryColor(category) {
+            const colors = {
+                'privacy': '#ff6b6b',
+                'wallet': '#4ecdc4', 
+                'blockchain': '#45b7d1',
+                'computing': '#f9ca24',
+                'defi': '#6c5ce7',
+                'bridge': '#5ac8fa'
+            };
+            return colors[category] || '#666';
+        }
+        
+        function createProjectCards() {
+            const cardsGrid = document.getElementById('cardsGrid');
+            cardsGrid.innerHTML = '';
+            
+            searchResults.forEach((project, index) => {
+                const card = createProjectCard(project, index);
+                cardsGrid.appendChild(card);
+                
+                // Animate cards appearing
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 150);
+            });
+        }
+        
+        function getCardImage(project, index) {
+            // Rotate through available web3privacy artwork
+            const artFiles = [
+                './web3privacy-card-art.jpg',
+                './web3privacy-art-1.jpg', 
+                './web3privacy-art-2.jpg',
+                './web3privacy-art-3.jpg',
+                './web3privacy-logo-banner.jpg'
+            ];
+            
+            // Use project hash or index to consistently assign images
+            const imageIndex = (project.id.length + index) % artFiles.length;
+            const selectedImage = artFiles[imageIndex];
+            
+            // Add error handling for missing images
+            return selectedImage;
+        }
+        
+        function formatCategory(category) {
+            if (!category || category === 'unknown') {
+                return 'UNCATEGORIZED';
+            }
+            
+            // Format common categories nicely
+            const categoryMap = {
+                'defi': 'DeFi',
+                'did': 'Identity',
+                'layer2': 'Layer 2',
+                'fhe': 'FHE',
+                'stealth-addresses': 'Stealth Addresses',
+                'privacy_mixer': 'Privacy Mixer'
+            };
+            
+            return categoryMap[category] || category.charAt(0).toUpperCase() + category.slice(1);
+        }
+        
+        function getProjectDescription(project) {
+            if (project.description && project.description !== 'No description available') {
+                return project.description;
+            }
+            
+            // Generate contextual description based on category and ID
+            const categoryDescriptions = {
+                'defi': 'Privacy-focused decentralized finance protocol',
+                'wallet': 'Privacy-enhanced cryptocurrency wallet',
+                'blockchain': 'Privacy-focused blockchain network',
+                'computing': 'Privacy-preserving computation platform',
+                'did': 'Decentralized identity solution with privacy features',
+                'layer2': 'Privacy-focused Layer 2 scaling solution',
+                'bridges': 'Cross-chain bridge with privacy features',
+                'messaging': 'Private communication protocol',
+                'mixing': 'Privacy mixer for transaction anonymization',
+                'fhe': 'Fully homomorphic encryption implementation',
+                'stealth-addresses': 'Stealth address privacy solution',
+                'infrastructure': 'Privacy infrastructure component'
+            };
+            
+            return categoryDescriptions[project.category] || 'Privacy-focused blockchain project under research';
+        }
+        
+        function getDataDisclaimer(project) {
+            if (project.data_quality === 'minimal' || project.data_quality === 'moderate') {
+                const sources = project.data_sources?.length || 0;
+                return `
+                    <div class="card-disclaimer warning">
+                        ℹ️ <strong>Limited Information:</strong> We searched multiple sources including GitHub, project websites, 
+                        and documentation repositories but found limited details for this project (${sources} data source${sources !== 1 ? 's' : ''}). 
+                        <a href="./research-data/projects/${project.id}/profile.md" style="color: #ffc107; text-decoration: underline;">View research notes →</a>
+                    </div>
+                `;
+            }
+            
+            return '';
+        }
+        
+        function createProjectCard(project, index = 0) {
+            const card = document.createElement('div');
+            card.className = 'project-card';
+            card.setAttribute('role', 'listitem');
+            card.setAttribute('tabindex', '0');
+            card.setAttribute('aria-label', `${project.id} - ${formatCategory(project.category)} project with ${project.privacy_techniques_count || 0} privacy techniques`);
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+            
+            const categoryColor = getCategoryColor(project.category);
+            const cardImage = getCardImage(project, index);
+            
+            card.innerHTML = `
+                <div class="card-image" style="background-image: url('${cardImage}'); background-color: rgba(0, 212, 255, 0.1);" 
+                     onerror="this.style.backgroundImage='none'; this.style.backgroundColor='rgba(0, 212, 255, 0.2)';">
+                    <div class="card-overlay">
+                        <div class="card-category" style="background: rgba(0, 0, 0, 0.9); color: #00ffff; border-color: #00ffff;">
+                            ${formatCategory(project.category)}
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-content">
+                    <div class="card-header">
+                        <div>
+                            <div class="card-title">${project.id}</div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-description">
+                        ${getProjectDescription(project)}
+                    </div>
+                    
+                    <div class="card-disclaimer">
+                        ${getDataDisclaimer(project)}
+                    </div>
+                    
+                    <div class="card-metrics">
+                        <div class="metric">
+                            <span class="metric-value">${project.privacy_techniques_count || 0}</span>
+                            <span class="metric-label">PRIVACY TECH</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">${project.github_url ? '✓' : '✗'}</span>
+                            <span class="metric-label">GITHUB</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">${project.team_size || 0}</span>
+                            <span class="metric-label">TEAM SIZE</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <div class="card-tags">
+                            ${project.category !== 'unknown' ? `<span class="tag">${formatCategory(project.category)}</span>` : '<span class="tag disclaimer-tag">UNCATEGORIZED</span>'}
+                            ${project.privacy_techniques_count > 3 ? '<span class="tag">HIGH PRIVACY</span>' : ''}
+                            ${isZKProject(project) ? '<span class="tag">ZERO KNOWLEDGE</span>' : ''}
+                            ${project.data_quality === 'minimal' ? '<span class="tag disclaimer-tag">LIMITED DATA</span>' : ''}
+                            ${project.has_contracts ? '<span class="tag">SMART CONTRACTS</span>' : ''}
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            return card;
+        }
+        
+        function updateNetworkStats() {
+            const categories = [...new Set(searchResults.map(p => p.category))];
+            const links = createNetworkLinks(searchResults);
+            
+            document.getElementById('projectCount').textContent = searchResults.length;
+            document.getElementById('categoryCount').textContent = categories.length;
+            document.getElementById('connectionCount').textContent = links.length;
+        }
+        
+        function showTooltip(event, d) {
+            const tooltip = document.getElementById('tooltip');
+            tooltip.innerHTML = `
+                <strong>${d.id}</strong><br>
+                <small>${formatCategory(d.category)} • ${d.data_quality} quality</small><br>
+                <br>
+                ${d.description || getProjectDescription(d)}<br>
+                <br>
+                <small>Privacy techniques: ${d.privacy_techniques_count || 0} • Team: ${d.team_size || 0}</small>
+            `;
+            
+            tooltip.style.left = (event.pageX + 15) + 'px';
+            tooltip.style.top = (event.pageY - 15) + 'px';
+            tooltip.style.opacity = '1';
+        }
+        
+        function hideTooltip() {
+            document.getElementById('tooltip').style.opacity = '0';
+        }
+        
+        function hideResults() {
+            const resultsSection = document.getElementById('resultsSection');
+            const emptyState = document.getElementById('emptyState');
+            
+            resultsSection.classList.remove('visible');
+            
+            setTimeout(() => {
+                resultsSection.style.display = 'none';
+                document.getElementById('networkContainer').style.display = 'none';
+                document.getElementById('cardsContainer').style.display = 'none';
+                document.getElementById('noResults').style.display = 'none';
+                
+                // Show empty state again
+                emptyState.style.display = 'block';
+            }, 300);
+        }
+        
+        // Drag functions
+        function dragStarted(event, d) {
+            if (!event.active) simulation.alphaTarget(0.3).restart();
+            d.fx = d.x;
+            d.fy = d.y;
+        }
+        
+        function dragged(event, d) {
+            d.fx = event.x;
+            d.fy = event.y;
+        }
+        
+        function dragEnded(event, d) {
+            if (!event.active) simulation.alphaTarget(0);
+            d.fx = null;
+            d.fy = null;
+        }
+        
+        // Initialize the app
+        init();
+    </script>
+</body>
+</html>
