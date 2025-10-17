@@ -1,0 +1,87 @@
+{
+  "project_name": "Umbra Cash",
+  "description": "Privacy-preserving stealth payments on EVM blockchain networks. Enables transactions where the receiver's identity is known only to the sender and receiver, using stealth addresses that have never been seen on-chain before. Not a mixer - relies on elliptic curve cryptography rather than zero-knowledge proofs.",
+  "website": "https://umbra.cash",
+  "app_url": "https://app.umbra.cash",
+  "category": "Stealth Addresses Protocol",
+  "blockchain": "Ethereum, Polygon, Arbitrum, Optimism (EVM chains)",
+  "github": "https://github.com/ScopeLift/umbra-protocol",
+  "primary_language": "TypeScript",
+  "tech_stack": [
+    "Stealth Addresses",
+    "Elliptic Curve Cryptography",
+    "EVM",
+    "TypeScript"
+  ],
+  "github_stats": {
+    "stars": 372,
+    "forks": 91,
+    "language": "TypeScript"
+  },
+  "organization": {
+    "name": "ScopeLift",
+    "website": "http://www.scopelift.co",
+    "location": "Philadelphia, PA"
+  },
+  "team": [
+    {
+      "name": "Matt Solomon",
+      "role": "Lead Developer",
+      "github": "mds1",
+      "contributions": 533
+    },
+    {
+      "name": "Andrew Bendi",
+      "role": "Core Developer",
+      "github": "apbendi",
+      "contributions": 207
+    },
+    {
+      "name": "Gary Ghayrat",
+      "role": "Core Developer",
+      "github": "garyghayrat",
+      "contributions": 130
+    },
+    {
+      "name": "David Laprade",
+      "role": "Developer",
+      "github": "davidlaprade",
+      "contributions": 71
+    },
+    {
+      "name": "Alex Keating",
+      "role": "Developer",
+      "github": "alexkeating",
+      "contributions": 70
+    }
+  ],
+  "contact": {
+    "email": "support@umbra.cash",
+    "twitter": "@UmbraCash",
+    "github": "https://github.com/ScopeLift/umbra-protocol",
+    "organization_website": "http://www.scopelift.co"
+  },
+  "resources": {
+    "website": "https://umbra.cash",
+    "app": "https://app.umbra.cash",
+    "github": "https://github.com/ScopeLift/umbra-protocol",
+    "organization": "http://www.scopelift.co"
+  },
+  "status": "Active",
+  "metadata": {
+    "sources": [
+      "https://github.com/ScopeLift/umbra-protocol (GitHub API)",
+      "https://umbra.cash (Gemini research)",
+      "GitHub contributors analysis",
+      "ScopeLift organization data"
+    ],
+    "confidence": 0.92,
+    "research_date": "2025-10-09",
+    "gaps": [
+      "Logo/banner images not yet captured",
+      "Team photos not available",
+      "Discord invite link not captured"
+    ],
+    "research_method": "Gemini CLI + GitHub API + Organization research"
+  }
+}

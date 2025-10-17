@@ -1,0 +1,30 @@
+{
+  "id": "token-shielder",
+  "name": "Token-Shielder",
+  "category": "wallet",
+  "shortDescription": "ERC-20 privacy token shielder",
+  "stats": {
+    "techStack": 6,
+    "privacyTechniques": 6,
+    "confidence": 0.95
+  },
+  "highlights": {
+    "topPrivacy": [
+      "Zero-Knowledge Proofs (zk-SNARKs)",
+      "{'description': 'Move tokens from public wallet to private RAILGUN address (0zk address)', 'fee': '0.25% on shielded amount', 'supported_tokens': ['ERC-20', 'ERC-721 (NFTs)', 'ERC-1155 (NFTs)', 'Native tokens (ETH, MATIC, BNB, etc.)']}",
+      "{'description': 'Move tokens from private RAILGUN address back to public wallet', 'verification': 'zk-SNARK proof verifies ownership without revealing transaction history'}"
+    ],
+    "topTech": [
+      "TypeScript",
+      "{'ethereum_library': 'ethers', 'railgun_sdk': ['@railgun-community/quickstart', '@railgun-community/shared-models']}",
+      "{'libraries': ['browser-level', 'level-js', 'levelup', 'localforage'], 'purpose': 'Client-side encrypted data storage for RAILGUN wallet state'}"
+    ]
+  },
+  "links": {
+    "github": null,
+    "website": null,
+    "readme": "/deliverables/token-shielder/README.md"
+  },
+  "status": "COMPLETE",
+  "researchComplete": true
+}

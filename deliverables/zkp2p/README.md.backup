@@ -1,0 +1,17 @@
+# ZKP2P
+
+**Official Website:** [https://zkp2p.xyz](https://zkp2p.xyz)
+
+**Description:** ZKP2P is the first trustless P2P on/offramping bulletin board. It enables a new buying and selling crypto experience that is fast, cheap and composable with DeFi. Currently, the only way to buy and sell crypto is through centralized exchanges or custodians, which are expensive, slow, and require unnecessarily intrusive identity verification. Using cryptographic proofs of transfer, ZKP2P allows buyers to authenticate that they have transferred the correct value to sellers. Buyers instantly receive their crypto in less than 60 seconds with settlement facilitated by fully noncustodial smart contracts.
+
+**GitHub:** [https://github.com/zkp2p](https://github.com/zkp2p)
+
+**Team:** Not publicly listed (P2P Labs Inc. is mentioned as the company behind the project).
+
+**Contact:**
+*   Email: team@zkp2p.xyz
+*   Telegram: (link not directly found, but mentioned for community discussions)
+
+**Logos, Banners, Screenshots:** Not obtainable via web_fetch/puppeteer_evaluate without further interaction or direct image links.
+
+**Team Photos:** Not obtainable as team members are not publicly listed.

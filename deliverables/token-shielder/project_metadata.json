@@ -1,0 +1,23 @@
+{
+  "name": "token-shielder",
+  "category": "wallet",
+  "description": "ERC-20 privacy token shielder",
+  "tech_stack": [
+    "TypeScript",
+    "{'ethereum_library': 'ethers', 'railgun_sdk': ['@railgun-community/quickstart', '@railgun-community/shared-models']}",
+    "{'libraries': ['browser-level', 'level-js', 'levelup', 'localforage'], 'purpose': 'Client-side encrypted data storage for RAILGUN wallet state'}",
+    "{'library': 'fuse.js', 'purpose': 'Fuzzy search for token lists'}",
+    "{'package_manager': 'Yarn 3.3.1', 'node_version': '18.12.1', 'linter': 'ESLint', 'formatter': 'Prettier with @trivago/prettier-plugin-sort-imports'}",
+    "['Netlify', 'Vercel']"
+  ],
+  "privacy_techniques": [
+    "Zero-Knowledge Proofs (zk-SNARKs)",
+    "{'description': 'Move tokens from public wallet to private RAILGUN address (0zk address)', 'fee': '0.25% on shielded amount', 'supported_tokens': ['ERC-20', 'ERC-721 (NFTs)', 'ERC-1155 (NFTs)', 'Native tokens (ETH, MATIC, BNB, etc.)']}",
+    "{'description': 'Move tokens from private RAILGUN address back to public wallet', 'verification': 'zk-SNARK proof verifies ownership without revealing transaction history'}",
+    "{'description': 'Transfer tokens between RAILGUN addresses without revealing sender, receiver, or amount', 'anonymity_set': 'All RAILGUN users share the same Merkle tree anonymity set'}",
+    "{'description': 'Interact with smart contracts privately via cross-contract calls', 'capabilities': ['Private DEX trading', 'Private liquidity provision', 'Private DeFi protocol interactions']}",
+    "{'non_interactive': 'Proofs do not require interaction between prover and verifier', 'succinct': 'Proofs are small and fast to verify', 'statistically_unforgeable': 'Proofs are computationally impossible to fake', 'on_chain_verification': 'Smart contracts act as verifiers'}"
+  ],
+  "github_url": null,
+  "website": null
+}

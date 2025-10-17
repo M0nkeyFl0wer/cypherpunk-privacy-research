@@ -1,0 +1,20 @@
+{
+  "project_name": "Nocturne",
+  "description": "An Ethereum privacy project that has ceased operations as of June 2024. It previously offered a private vault user interface. Withdrawal processes are now self-serve via a GitHub repository with detailed instructions and a CLI tool.",
+  "website": null,
+  "github": "https://github.com/nocturne-xyz",
+  "category": null,
+  "blockchain": null,
+  "tech_stack": null,
+  "team": "Not publicly listed (project has ceased operations).",
+  "contact": {
+    "pr_manager": "Kayla Gill at bccmedia@serotonin.co",
+    "general_email": "An email address ending in @nocturnelabs.xyz",
+    "social_media": "Twitter and Discord (links via their website or GitHub)"
+  },
+  "resources": null,
+  "status": "Ceased operations in June 2024.",
+  "confidence": null,
+  "research_date": null,
+  "sources": null
+}

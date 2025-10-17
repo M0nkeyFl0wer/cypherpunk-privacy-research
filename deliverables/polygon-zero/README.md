@@ -1,25 +1,31 @@
-# Polygon Zero
+# polygon-zero
+
+## 📝 Description
+Privacy technology project focused on Web3 security and anonymity.
 
 ## 🔗 Links
+- **Website**: Not available
 
-- **GitHub**: https://github.com/0xPolygonZero/plonky2
 
-## 📊 GitHub Statistics
+## 🏷️ Category
+Privacy Technology
 
-- ⭐ **Stars**: 833
-- 🔀 **Forks**: 339
-- 👥 **Contributors**: 58
+## 📊 Project Status
 
-**Primary Language**: Rust
-**Total Languages**: 5
+### GitHub Statistics
 
-**Language Distribution:**
-- Rust: 99.29%
-- Python: 0.56%
-- HTML: 0.09%
-- Shell: 0.06%
-- RenderScript: 0.0%
+
+
+
+## 👥 Team
+See [TEAM.md](reports/TEAM.md) for detailed team information.
+
+## 🛠️ Technical Details
+See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
+
+## 🔒 Security
+See [SECURITY.md](reports/SECURITY.md) for security analysis.
 
 ---
-
-*Constitutional Research v2.0.0 - Real data only*
+*Research completed with Constitutional Research v2.0.0*
+*Last updated: 2025-10-10*

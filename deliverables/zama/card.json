@@ -1,0 +1,30 @@
+{
+  "id": "zama",
+  "name": "Zama",
+  "category": "fhe",
+  "shortDescription": "Fully Homomorphic Encryption pioneer",
+  "stats": {
+    "techStack": 6,
+    "privacyTechniques": 7,
+    "confidence": 0.95
+  },
+  "highlights": {
+    "topPrivacy": [
+      "Fully Homomorphic Encryption (FHE)",
+      "[{'name': 'TFHE (Fully Homomorphic Encryption over the Torus)', 'variant': \"Zama's variant with programmable bootstrapping\", 'description': 'Lattice-based cryptography scheme for FHE', 'security_model': 'IND-CPA^D', 'failure_probability': '\u2264 2^-128', 'security_estimation_tool': 'Lattice Estimator with red_cost_model = reduction.RC.BDGL16', 'confidence': 1.0, 'source': 'https://github.com/zama-ai/tfhe-rs'}, {'name': 'Programmable Bootstrapping', 'description': 'Advanced FHE technique enabling arbitrary computations on encrypted data', 'confidence': 0.95}]",
+      "[{'type': 'Boolean Operations', 'description': 'Homomorphic boolean logic operations on encrypted data', 'confidence': 1.0}, {'type': 'Integer Arithmetic', 'description': 'Homomorphic integer operations (up to 8 bits message space in short integer API)', 'confidence': 1.0}, {'type': 'High-Precision Encrypted Integers', 'description': 'Full range of computational operators on encrypted integers', 'confidence': 0.95}]"
+    ],
+    "topTech": [
+      "Rust",
+      "Python",
+      "TypeScript"
+    ]
+  },
+  "links": {
+    "github": "https://github.com/zama-ai",
+    "website": null,
+    "readme": "/deliverables/zama/README.md"
+  },
+  "status": "COMPLETE",
+  "researchComplete": true
+}

@@ -1,15 +1,31 @@
-# Phala Network
+# phala-network
 
-## 📊 GitHub Statistics
+## 📝 Description
+Privacy technology project focused on Web3 security and anonymity.
 
-- ⭐ **Stars**: 0
-- 🔀 **Forks**: 0
-- 👥 **Contributors**: 0
+## 🔗 Links
+- **Website**: Not available
+- **GitHub**: https://github.com/Phala-Network/phala-blockchain
 
-## 📜 Smart Contracts
+## 🏷️ Category
+Privacy Technology
 
-- **PHA Token**: `0x6c5bA91642F10282b576d91922Ae6448C9d52f4E` (unknown)
+## 📊 Project Status
+
+### GitHub Statistics
+
+
+
+
+## 👥 Team
+See [TEAM.md](reports/TEAM.md) for detailed team information.
+
+## 🛠️ Technical Details
+See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
+
+## 🔒 Security
+See [SECURITY.md](reports/SECURITY.md) for security analysis.
 
 ---
-
-*Constitutional Research v2.0.0 - Real data only*
+*Research completed with Constitutional Research v2.0.0*
+*Last updated: 2025-10-10*

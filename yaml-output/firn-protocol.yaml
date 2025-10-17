@@ -1,0 +1,37 @@
+id: firn-protocol
+name: Firn Protocol
+categories:
+  - defi
+description: First zero-knowledge privacy platform in account-based model
+ecosystem:
+  - ethereum
+product_launch_day: 2022-06
+project_status:
+  version: Live
+  mainnet: true
+technology:
+  features:
+    - Zero-Knowledge Proofs (no trusted setup)
+    - Anonymous Zether Protocol
+    - ElGamal Encryption (with message in the exponent)
+    - Sigma-Bullets (Bulletproofs + Σ-protocols)
+    - Many-out-of-Many Proofs
+    - Account-based privacy model
+    - Homomorphic encryption
+    - Decisional Diffie-Hellman (DDH) assumption
+    - Inner Product Arguments
+  type: Solidity
+  stack:
+    - Solidity
+    - JavaScript
+    - TypeScript
+    - Foundry
+    - Circom
+    - SnarkJS
+    - MetaMask Snap
+    - Rust (Foundry toolkit)
+data_quality:
+  confidence: 0.5
+  completeness: 0.7
+  last_verified: '2025-10-16'
+  sources_count: 0

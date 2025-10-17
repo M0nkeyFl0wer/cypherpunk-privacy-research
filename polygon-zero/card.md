@@ -1,6 +1,0 @@
-# polygon-zero
-**Privacy**
-
-
-
----

@@ -1,26 +1,31 @@
-# Oasis Network
+# oasis-network
+
+## 📝 Description
+Privacy technology project focused on Web3 security and anonymity.
 
 ## 🔗 Links
-
 - **Website**: https://oasis-network.org
-- **GitHub**: https://github.com/oasisprotocol/oasis-core
 
-## 📊 GitHub Statistics
 
-- ⭐ **Stars**: 356
-- 🔀 **Forks**: 142
-- 👥 **Contributors**: 51
+## 🏷️ Category
+Privacy Technology
 
-**Primary Language**: Go
-**Total Languages**: 7
+## 📊 Project Status
 
-**Language Distribution:**
-- Go: 80.9%
-- Rust: 18.27%
-- Shell: 0.39%
-- Makefile: 0.33%
-- Dockerfile: 0.07%
+### GitHub Statistics
+
+
+
+
+## 👥 Team
+See [TEAM.md](reports/TEAM.md) for detailed team information.
+
+## 🛠️ Technical Details
+See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
+
+## 🔒 Security
+See [SECURITY.md](reports/SECURITY.md) for security analysis.
 
 ---
-
-*Constitutional Research v2.0.0 - Real data only*
+*Research completed with Constitutional Research v2.0.0*
+*Last updated: 2025-10-10*

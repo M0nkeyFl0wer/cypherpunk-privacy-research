@@ -1,17 +1,31 @@
 # Nym
 
-## 🔗 Links
-
-- **Website**: https://nym.network
-
 ## 📝 Description
-
 Nym provides strong network-level privacy against sophisticated end-to-end attackers, and anonymous transactions using blinded, re-randomizable, decentralized credentials.
 
-## 📜 Smart Contracts
+## 🔗 Links
+- **Website**: https://nym.network
 
-- **Contract**: `0x0362c2f89a548e9c246c27d5846a77421a2b7e44` (unknown)
+
+## 🏷️ Category
+Privacy Technology
+
+## 📊 Project Status
+
+### GitHub Statistics
+- ⭐ Stars: 1536
+- 🔀 Forks: 252
+
+
+## 👥 Team
+See [TEAM.md](reports/TEAM.md) for detailed team information.
+
+## 🛠️ Technical Details
+See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
+
+## 🔒 Security
+See [SECURITY.md](reports/SECURITY.md) for security analysis.
 
 ---
-
-*Constitutional Research v2.0.0 - Real data only*
+*Research completed with Constitutional Research v2.0.0*
+*Last updated: 2025-10-10*

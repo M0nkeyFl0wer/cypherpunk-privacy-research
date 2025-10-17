@@ -1,0 +1,447 @@
+{
+  "project_name": "Zama",
+  "research_date": "2025-10-08",
+  "confidence_score": 0.95,
+  "data_sources": [
+    "https://github.com/zama-ai",
+    "https://github.com/zama-ai/tfhe-rs",
+    "https://github.com/zama-ai/concrete",
+    "https://github.com/zama-ai/fhevm",
+    "https://github.com/zama-ai/concrete-ml",
+    "https://www.zama.ai",
+    "https://docs.zama.ai"
+  ],
+  "verification_status": "multi_source_verified",
+  "constitutional_compliance": {
+    "real_data_only": true,
+    "no_synthetic_generation": true,
+    "multi_source_verification": true,
+    "gaps_reported": true
+  },
+  "github_url": "https://github.com/zama-ai",
+  "github_stats": {
+    "total_repositories": 66,
+    "most_starred_repo": "fhevm",
+    "fhevm_stars": 22800,
+    "tfhe_rs_stars": 1500,
+    "concrete_stars": 1500,
+    "concrete_ml_stars": 1300,
+    "organization_location": "Paris, France",
+    "confidence": 1.0
+  },
+  "tech_stack": {
+    "primary_languages": [
+      {
+        "language": "Rust",
+        "usage": "Primary language for TFHE-rs implementation",
+        "version_requirement": "1.84 or newer",
+        "confidence": 1.0,
+        "source": "https://github.com/zama-ai/tfhe-rs"
+      },
+      {
+        "language": "Python",
+        "usage": "Concrete compiler and Concrete ML framework",
+        "versions_supported": [
+          "3.8",
+          "3.9",
+          "3.10",
+          "3.11",
+          "3.12"
+        ],
+        "confidence": 1.0,
+        "source": "https://github.com/zama-ai/concrete"
+      },
+      {
+        "language": "TypeScript",
+        "usage": "FHEVM framework (38.3% of codebase)",
+        "confidence": 0.95,
+        "source": "https://github.com/zama-ai/fhevm"
+      },
+      {
+        "language": "Solidity",
+        "usage": "Smart contracts for FHEVM (11.9% of codebase)",
+        "confidence": 1.0,
+        "source": "https://github.com/zama-ai/fhevm"
+      },
+      {
+        "language": "C++",
+        "usage": "Concrete compiler internals and MLIR",
+        "confidence": 0.9,
+        "source": "https://github.com/zama-ai/concrete"
+      },
+      {
+        "language": "SystemVerilog",
+        "usage": "Hardware acceleration components",
+        "confidence": 0.85,
+        "source": "https://github.com/zama-ai"
+      }
+    ],
+    "key_projects": [
+      {
+        "name": "TFHE-rs",
+        "description": "Pure Rust implementation of TFHE for boolean and integer arithmetics over encrypted data",
+        "repository": "https://github.com/zama-ai/tfhe-rs",
+        "stars": 1500,
+        "primary_language": "Rust",
+        "apis_provided": [
+          "Rust",
+          "C",
+          "WebAssembly"
+        ],
+        "confidence": 1.0
+      },
+      {
+        "name": "Concrete",
+        "description": "Open-source FHE Compiler that simplifies the use of fully homomorphic encryption",
+        "repository": "https://github.com/zama-ai/concrete",
+        "stars": 1500,
+        "primary_language": "Python",
+        "technologies": [
+          "Python",
+          "C++",
+          "MLIR",
+          "LLVM"
+        ],
+        "confidence": 1.0
+      },
+      {
+        "name": "fhevm",
+        "description": "Full-stack framework for integrating Fully Homomorphic Encryption with blockchain applications",
+        "repository": "https://github.com/zama-ai/fhevm",
+        "stars": 22800,
+        "primary_languages": [
+          "Rust (49.1%)",
+          "TypeScript (38.3%)",
+          "Solidity (11.9%)"
+        ],
+        "confidence": 1.0
+      },
+      {
+        "name": "Concrete ML",
+        "description": "Privacy-Preserving Machine Learning framework using FHE",
+        "repository": "https://github.com/zama-ai/concrete-ml",
+        "stars": 1300,
+        "primary_language": "Python",
+        "ml_frameworks_supported": [
+          "scikit-learn",
+          "XGBoost",
+          "PyTorch",
+          "Keras",
+          "TensorFlow"
+        ],
+        "confidence": 1.0
+      }
+    ],
+    "frameworks_and_libraries": [
+      {
+        "name": "LLVM",
+        "usage": "Compiler infrastructure for Concrete",
+        "confidence": 0.95
+      },
+      {
+        "name": "MLIR",
+        "usage": "Multi-Level Intermediate Representation for compiler development",
+        "confidence": 0.95
+      },
+      {
+        "name": "scikit-learn",
+        "usage": "ML model compatibility in Concrete ML",
+        "confidence": 1.0
+      },
+      {
+        "name": "PyTorch",
+        "usage": "Neural network model import via ONNX",
+        "confidence": 1.0
+      },
+      {
+        "name": "Hardhat",
+        "usage": "Ethereum development environment for FHEVM",
+        "confidence": 0.9
+      }
+    ],
+    "development_tools": [
+      {
+        "name": "Prettier",
+        "version": "3.5.3",
+        "usage": "Code formatting for FHEVM",
+        "confidence": 1.0
+      },
+      {
+        "name": "Docker",
+        "usage": "Containerized deployment for Concrete ML",
+        "confidence": 0.95
+      },
+      {
+        "name": "pip",
+        "usage": "Package installation for Python libraries",
+        "confidence": 1.0
+      }
+    ],
+    "system_requirements": {
+      "concrete_ml": {
+        "ram": "8GB minimum (16GB recommended)",
+        "processors": [
+          "x86_64",
+          "ARM64"
+        ],
+        "platforms": [
+          "Linux",
+          "macOS",
+          "Windows (via WSL)"
+        ],
+        "confidence": 1.0
+      },
+      "tfhe_rs": {
+        "processors": "x86 CPU backend (AArch64 on Windows not supported)",
+        "rust_version": "1.84 or newer",
+        "confidence": 1.0
+      }
+    }
+  },
+  "privacy_techniques": {
+    "core_technology": {
+      "name": "Fully Homomorphic Encryption (FHE)",
+      "description": "Enables performing computations on encrypted data without decryption",
+      "confidence": 1.0
+    },
+    "fhe_schemes": [
+      {
+        "name": "TFHE (Fully Homomorphic Encryption over the Torus)",
+        "variant": "Zama's variant with programmable bootstrapping",
+        "description": "Lattice-based cryptography scheme for FHE",
+        "security_model": "IND-CPA^D",
+        "failure_probability": "\u2264 2^-128",
+        "security_estimation_tool": "Lattice Estimator with red_cost_model = reduction.RC.BDGL16",
+        "confidence": 1.0,
+        "source": "https://github.com/zama-ai/tfhe-rs"
+      },
+      {
+        "name": "Programmable Bootstrapping",
+        "description": "Advanced FHE technique enabling arbitrary computations on encrypted data",
+        "confidence": 0.95
+      }
+    ],
+    "supported_operations": [
+      {
+        "type": "Boolean Operations",
+        "description": "Homomorphic boolean logic operations on encrypted data",
+        "confidence": 1.0
+      },
+      {
+        "type": "Integer Arithmetic",
+        "description": "Homomorphic integer operations (up to 8 bits message space in short integer API)",
+        "confidence": 1.0
+      },
+      {
+        "type": "High-Precision Encrypted Integers",
+        "description": "Full range of computational operators on encrypted integers",
+        "confidence": 0.95
+      }
+    ],
+    "cryptographic_primitives": [
+      {
+        "name": "Lattice-based Cryptography",
+        "usage": "Foundation for TFHE scheme",
+        "quantum_resistant": true,
+        "confidence": 1.0
+      },
+      {
+        "name": "Key Generation",
+        "components": [
+          "Public Key Encryption",
+          "Server Key Generation",
+          "Client Key Generation"
+        ],
+        "confidence": 1.0
+      },
+      {
+        "name": "Ciphertext Compression",
+        "description": "Size-efficient encryption and server key compression",
+        "confidence": 0.95
+      }
+    ],
+    "blockchain_privacy": {
+      "fhevm_features": [
+        {
+          "feature": "End-to-End Transaction Encryption",
+          "description": "Full transaction privacy on blockchain",
+          "confidence": 1.0
+        },
+        {
+          "feature": "Encrypted State Management",
+          "description": "Encrypted state coexists with public state on-chain",
+          "confidence": 1.0
+        },
+        {
+          "feature": "Symbolic Execution",
+          "description": "FHE computations executed on host chain",
+          "confidence": 0.95
+        },
+        {
+          "feature": "Programmable Privacy Controls",
+          "description": "Configurable privacy settings for smart contracts",
+          "confidence": 0.9
+        },
+        {
+          "feature": "Confidential Smart Contracts",
+          "description": "EVM-compatible smart contracts with built-in encryption",
+          "confidence": 1.0
+        }
+      ],
+      "use_cases": [
+        "Confidential token swaps",
+        "Encrypted lending and yield farming",
+        "Sealed-bid auctions",
+        "Confidential governance",
+        "Private stablecoin transactions",
+        "RWA tokenization with privacy",
+        "On-chain gaming with hidden information",
+        "Encrypted identity management"
+      ],
+      "confidence": 0.95
+    },
+    "machine_learning_privacy": {
+      "concrete_ml_capabilities": [
+        {
+          "capability": "Privacy-Preserving ML Inference",
+          "description": "Run ML models on encrypted data without decryption",
+          "confidence": 1.0
+        },
+        {
+          "capability": "Encrypted Training Support",
+          "description": "Quantization-aware training for FHE compatibility",
+          "confidence": 0.95
+        },
+        {
+          "capability": "Model Import",
+          "description": "ONNX import from PyTorch, Keras, TensorFlow",
+          "confidence": 1.0
+        }
+      ],
+      "supported_models": [
+        "Linear models (Logistic Regression)",
+        "Tree-based models",
+        "Neural networks",
+        "Custom models via ONNX"
+      ],
+      "use_cases": [
+        "Healthcare data analysis",
+        "Financial services predictions",
+        "Biometric authentication",
+        "Government services",
+        "Predictive maintenance",
+        "Privacy-preserving ad tracking"
+      ],
+      "confidence": 1.0
+    },
+    "performance_optimizations": [
+      {
+        "feature": "GPU Acceleration",
+        "availability": "Concrete and Concrete ML",
+        "confidence": 0.95
+      },
+      {
+        "feature": "Automatic Parameter Selection",
+        "description": "Cryptographic parameter optimization",
+        "confidence": 0.95
+      },
+      {
+        "feature": "Coprocessor Architecture",
+        "description": "Offload FHE computation to maintain low gas fees",
+        "confidence": 0.9
+      }
+    ]
+  },
+  "company_information": {
+    "mission": "Building state-of-the-art FHE solutions for blockchain and AI",
+    "tagline": "Blockchain transparency is a bug, not a feature",
+    "location": "Paris, France",
+    "website": "https://www.zama.ai",
+    "type": "Open source cryptography company",
+    "confidence": 1.0
+  },
+  "documentation_and_resources": {
+    "official_docs": "https://docs.zama.ai",
+    "github_organization": "https://github.com/zama-ai",
+    "community_forum": "https://community.zama.ai",
+    "discord": "https://discord.gg/zama",
+    "bounty_email": "bounty@zama.ai",
+    "bounty_program": {
+      "total_envelope": "\u20ac10,000 per challenge",
+      "prizes": {
+        "first_place": "\u20ac5,000",
+        "second_place": "\u20ac3,000",
+        "third_place": "\u20ac2,000"
+      },
+      "confidence": 1.0
+    }
+  },
+  "use_cases": {
+    "defi": [
+      "Confidential token swaps",
+      "Private lending protocols",
+      "Encrypted yield farming",
+      "Dark pool trading"
+    ],
+    "payments": [
+      "Encrypted stablecoin transactions",
+      "Private payment channels",
+      "Confidential banking"
+    ],
+    "governance": [
+      "Secret ballot voting",
+      "Confidential proposals",
+      "Private token launches and vesting"
+    ],
+    "gaming": [
+      "On-chain games with hidden information",
+      "Fair random number generation",
+      "Private game state"
+    ],
+    "identity": [
+      "Encrypted identity management",
+      "Privacy-preserving KYC",
+      "Confidential credentials"
+    ],
+    "rwa": [
+      "Real World Asset tokenization with privacy",
+      "Confidential compliance checks"
+    ],
+    "machine_learning": [
+      "Healthcare predictive models on encrypted data",
+      "Financial fraud detection with privacy",
+      "Biometric authentication without exposing data"
+    ],
+    "confidence": 0.95
+  },
+  "identified_gaps": [
+    {
+      "gap": "Specific performance benchmarks for TFHE-rs operations",
+      "impact": "low",
+      "status": "data_not_publicly_available",
+      "confidence": 0.8
+    },
+    {
+      "gap": "Detailed cryptographic parameter sets for different security levels",
+      "impact": "medium",
+      "status": "requires_technical_documentation_review",
+      "confidence": 0.7
+    },
+    {
+      "gap": "Complete list of all 66 repositories with descriptions",
+      "impact": "low",
+      "status": "requires_comprehensive_github_scraping",
+      "confidence": 0.9
+    }
+  ],
+  "metadata": {
+    "research_methodology": "Multi-source web research and GitHub repository analysis",
+    "total_sources_consulted": 7,
+    "primary_data_only": true,
+    "synthetic_data_generated": false,
+    "researcher": "Claude Research Agent",
+    "constitutional_version": "v2.0.0",
+    "last_updated": "2025-10-08T14:30:00Z"
+  },
+  "confidence": 0.95
+}

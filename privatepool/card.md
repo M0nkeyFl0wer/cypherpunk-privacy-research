@@ -1,6 +1,0 @@
-# privatepool
-**Privacy**
-
-
-
----

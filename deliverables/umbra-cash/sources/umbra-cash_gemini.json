@@ -1,0 +1,14 @@
+{
+    "project_name": "umbra-cash",
+    "official_website": "umbra.cash (informational) and app.umbra.cash (app)",
+    "description": "Umbra Cash is a protocol for privacy-preserving stealth payments on EVM blockchain networks, such as Ethereum and its layer-2 solutions like Polygon, Arbitrum, and Optimism. It enables transactions where the receiver's identity is known only to the sender and receiver, making it impossible for outside observers to determine who received funds by looking at the receiving address. The protocol works by allowing a payer to send funds to a newly generated, \"stealth\" address that is controlled by the intended receiver. This address has never been seen on-chain before, adding a layer of privacy to the payment. Umbra is not a mixer and does not use zero-knowledge proofs; instead, it relies on ordinary elliptic curve cryptography.",
+    "github": "https://github.com/ScopeLift/umbra-protocol",
+    "team": "Not publicly listed (maintained by ScopeLift).",
+    "contact": {
+        "email": "support@umbra.cash",
+        "twitter": "@UmbraCash",
+        "discord": "Links are available on their website and GitHub page"
+    },
+    "logos_banners_screenshots": "Not obtainable via direct website access or web_fetch.",
+    "team_photos": "Not obtainable as team members are not publicly listed."
+}

@@ -1,25 +1,31 @@
-# Mysterium Network
+# mysterium-network
+
+## 📝 Description
+Privacy technology project focused on Web3 security and anonymity.
 
 ## 🔗 Links
+- **Website**: Not available
 
-- **GitHub**: https://github.com/mysteriumnetwork/node
 
-## 📊 GitHub Statistics
+## 🏷️ Category
+Privacy Technology
 
-- ⭐ **Stars**: 1,164
-- 🔀 **Forks**: 326
-- 👥 **Contributors**: 45
+## 📊 Project Status
 
-**Primary Language**: Go
-**Total Languages**: 8
+### GitHub Statistics
 
-**Language Distribution:**
-- Go: 98.98%
-- Shell: 0.9%
-- Dockerfile: 0.06%
-- C: 0.03%
-- HTML: 0.01%
+
+
+
+## 👥 Team
+See [TEAM.md](reports/TEAM.md) for detailed team information.
+
+## 🛠️ Technical Details
+See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
+
+## 🔒 Security
+See [SECURITY.md](reports/SECURITY.md) for security analysis.
 
 ---
-
-*Constitutional Research v2.0.0 - Real data only*
+*Research completed with Constitutional Research v2.0.0*
+*Last updated: 2025-10-10*

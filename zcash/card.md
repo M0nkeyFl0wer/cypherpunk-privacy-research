@@ -1,6 +1,0 @@
-# zcash
-**Privacy**
-
-
-
----

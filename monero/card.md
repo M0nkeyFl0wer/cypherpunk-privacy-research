@@ -1,6 +1,0 @@
-# monero
-**Privacy**
-
-
-
----

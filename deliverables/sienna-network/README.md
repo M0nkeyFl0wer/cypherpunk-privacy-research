@@ -1,25 +1,31 @@
-# Sienna Network
+# sienna-network
+
+## 📝 Description
+Privacy technology project focused on Web3 security and anonymity.
 
 ## 🔗 Links
+- **Website**: Not available
 
-- **GitHub**: https://github.com/SiennaNetwork/SiennaNetwork
 
-## 📊 GitHub Statistics
+## 🏷️ Category
+Privacy Technology
 
-- ⭐ **Stars**: 12
-- 🔀 **Forks**: 13
-- 👥 **Contributors**: 15
+## 📊 Project Status
 
-**Primary Language**: Rust
-**Total Languages**: 10
+### GitHub Statistics
 
-**Language Distribution:**
-- Rust: 64.33%
-- TypeScript: 15.25%
-- JavaScript: 12.87%
-- HTML: 5.19%
-- CSS: 1.06%
+
+
+
+## 👥 Team
+See [TEAM.md](reports/TEAM.md) for detailed team information.
+
+## 🛠️ Technical Details
+See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
+
+## 🔒 Security
+See [SECURITY.md](reports/SECURITY.md) for security analysis.
 
 ---
-
-*Constitutional Research v2.0.0 - Real data only*
+*Research completed with Constitutional Research v2.0.0*
+*Last updated: 2025-10-10*

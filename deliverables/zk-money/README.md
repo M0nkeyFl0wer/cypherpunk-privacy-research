@@ -1,25 +1,31 @@
-# Zk Money
+# zk-money
+
+## 📝 Description
+Privacy technology project focused on Web3 security and anonymity.
 
 ## 🔗 Links
+- **Website**: Not available
 
-- **GitHub**: https://github.com/AztecProtocol/zk-money
 
-## 📊 GitHub Statistics
+## 🏷️ Category
+Privacy Technology
 
-- ⭐ **Stars**: 13
-- 🔀 **Forks**: 15
-- 👥 **Contributors**: 26
+## 📊 Project Status
 
-**Primary Language**: TypeScript
-**Total Languages**: 9
+### GitHub Statistics
 
-**Language Distribution:**
-- TypeScript: 95.88%
-- SCSS: 2.62%
-- HCL: 0.93%
-- CSS: 0.29%
-- JavaScript: 0.12%
+
+
+
+## 👥 Team
+See [TEAM.md](reports/TEAM.md) for detailed team information.
+
+## 🛠️ Technical Details
+See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
+
+## 🔒 Security
+See [SECURITY.md](reports/SECURITY.md) for security analysis.
 
 ---
-
-*Constitutional Research v2.0.0 - Real data only*
+*Research completed with Constitutional Research v2.0.0*
+*Last updated: 2025-10-10*

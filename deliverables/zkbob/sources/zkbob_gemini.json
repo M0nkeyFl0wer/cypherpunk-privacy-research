@@ -1,0 +1,14 @@
+{
+    "project_name": "zkbob",
+    "official_website": "https://zkbob.com",
+    "description": "A Web3 smart-contract privacy wallet based on ZKP technology. zkBob could be used for regular transfers, payments, and much more. Compliance features backed in!",
+    "github": "https://github.com/zkBob",
+    "team": "Not publicly listed.",
+    "contact": {
+        "twitter": "https://twitter.com/zkBob_",
+        "telegram": "https://t.me/zkbobcommunity",
+        "mirror": "https://mirror.xyz/0x6132eB883e88CD4E007552b871A6444Bfc34E837"
+    },
+    "logos_banners_screenshots": "Not obtainable via web_fetch/puppeteer_evaluate without further interaction or direct image links.",
+    "team_photos": "Not obtainable as team members are not publicly listed."
+}

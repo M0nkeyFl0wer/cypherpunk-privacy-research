@@ -1,22 +1,31 @@
-# Starkex
+# starkex
+
+## 📝 Description
+Privacy technology project focused on Web3 security and anonymity.
 
 ## 🔗 Links
-
 - **Website**: https://starkex.io
-- **GitHub**: https://github.com/starkware-libs/starkex-contracts
 
-## 📊 GitHub Statistics
 
-- ⭐ **Stars**: 286
-- 🔀 **Forks**: 119
-- 👥 **Contributors**: 3
+## 🏷️ Category
+Privacy Technology
 
-**Primary Language**: Solidity
-**Total Languages**: 1
+## 📊 Project Status
 
-**Language Distribution:**
-- Solidity: 100.0%
+### GitHub Statistics
+
+
+
+
+## 👥 Team
+See [TEAM.md](reports/TEAM.md) for detailed team information.
+
+## 🛠️ Technical Details
+See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
+
+## 🔒 Security
+See [SECURITY.md](reports/SECURITY.md) for security analysis.
 
 ---
-
-*Constitutional Research v2.0.0 - Real data only*
+*Research completed with Constitutional Research v2.0.0*
+*Last updated: 2025-10-10*

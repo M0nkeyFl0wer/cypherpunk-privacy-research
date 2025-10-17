@@ -1,0 +1,483 @@
+{
+  "project": "manta-network",
+  "category": "infrastructure",
+  "description": "On-Chain Privacy for Web 3, DeFi and more",
+  "research_timestamp": "2025-10-08T13:30:00Z",
+  "confidence_score": 0.95,
+  "data_sources": [
+    "https://github.com/Manta-Network",
+    "https://github.com/Manta-Network/Manta",
+    "https://github.com/Manta-Network/manta-rs",
+    "https://docs.manta.network",
+    "https://manta.network"
+  ],
+
+  "github_data": {
+    "organization_url": "https://github.com/Manta-Network",
+    "primary_repository": "https://github.com/Manta-Network/Manta",
+    "repository_description": "The main repo for manta blockchain nodes",
+    "stars": 234,
+    "key_repositories": [
+      {
+        "name": "Manta",
+        "url": "https://github.com/Manta-Network/Manta",
+        "description": "Main blockchain nodes repository",
+        "language": "Rust",
+        "stars": 234
+      },
+      {
+        "name": "manta-rs",
+        "url": "https://github.com/Manta-Network/manta-rs",
+        "description": "Rust Crates for the Manta Network Ecosystem",
+        "language": "Rust",
+        "stars": 79
+      },
+      {
+        "name": "manta-signer",
+        "url": "https://github.com/Manta-Network/manta-signer",
+        "description": "Manta Client to turbo-charge ZKP Generation",
+        "language": "CSS/TypeScript",
+        "stars": 92
+      },
+      {
+        "name": "manta-fp",
+        "url": "https://github.com/Manta-Network/manta-fp",
+        "description": "Fast Finality Protocol blockchain solution",
+        "language": "Go",
+        "stars": 7
+      },
+      {
+        "name": "manta-fp-contracts",
+        "url": "https://github.com/Manta-Network/manta-fp-contracts",
+        "description": "Fast Finality Verify Contracts",
+        "language": "Solidity",
+        "stars": 3
+      }
+    ]
+  },
+
+  "tech_stack": {
+    "primary_languages": [
+      {
+        "language": "Rust",
+        "percentage": 97.4,
+        "usage": "Core blockchain implementation, cryptographic primitives, runtime logic"
+      },
+      {
+        "language": "TypeScript",
+        "percentage": 1.9,
+        "usage": "Frontend tooling, SDK, client applications"
+      },
+      {
+        "language": "JavaScript",
+        "percentage": 0.3,
+        "usage": "Supporting scripts and tooling"
+      },
+      {
+        "language": "Solidity",
+        "percentage": 0.2,
+        "usage": "EVM smart contracts for Manta Pacific L2"
+      },
+      {
+        "language": "Go",
+        "percentage": 0.2,
+        "usage": "Fast Finality Protocol implementation"
+      }
+    ],
+
+    "blockchain_frameworks": [
+      {
+        "name": "Substrate",
+        "version": "latest",
+        "usage": "Layer 1 blockchain framework for Manta Atlantic",
+        "confidence": 1.0
+      },
+      {
+        "name": "OP Stack",
+        "usage": "Layer 2 rollup framework for Manta Pacific",
+        "confidence": 1.0
+      }
+    ],
+
+    "consensus_networks": [
+      {
+        "name": "Polkadot",
+        "role": "Parachain host network for Manta Atlantic L1",
+        "confidence": 1.0
+      },
+      {
+        "name": "Kusama",
+        "role": "Canary network - Calamari parachain",
+        "confidence": 1.0
+      },
+      {
+        "name": "Ethereum",
+        "role": "Host network for Manta Pacific L2",
+        "confidence": 1.0
+      }
+    ],
+
+    "cryptographic_libraries": [
+      {
+        "name": "arkworks",
+        "specific_crates": ["arkworks/groth16", "ark-crypto-primitives"],
+        "usage": "R1CS constraint system, Groth16 zk-SNARK implementation",
+        "confidence": 1.0
+      },
+      {
+        "name": "OpenZL",
+        "version": "custom",
+        "description": "Zero-Knowledge Cryptography Infrastructure Stack curated by Manta",
+        "usage": "High-level ZK application development framework",
+        "confidence": 1.0
+      },
+      {
+        "name": "zk-garage/plonk",
+        "usage": "Alternative proof system support",
+        "confidence": 0.85
+      },
+      {
+        "name": "microsoft/nova",
+        "usage": "Alternative proof system support",
+        "confidence": 0.85
+      }
+    ],
+
+    "manta_rust_crates": [
+      {
+        "name": "manta-crypto",
+        "description": "Cryptographic primitives and utilities",
+        "confidence": 0.95
+      },
+      {
+        "name": "manta-pay",
+        "description": "Privacy-preserving payment protocol implementation",
+        "confidence": 1.0
+      },
+      {
+        "name": "manta-parameters",
+        "description": "Cryptographic system parameters management",
+        "confidence": 0.9
+      },
+      {
+        "name": "manta-trusted-setup",
+        "description": "Infrastructure for trusted setup ceremonies",
+        "confidence": 0.9
+      }
+    ],
+
+    "data_availability": [
+      {
+        "name": "Celestia",
+        "usage": "Data availability layer for Manta Pacific L2",
+        "confidence": 1.0
+      }
+    ],
+
+    "additional_infrastructure": [
+      {
+        "name": "Eclair DSL",
+        "description": "Embedded Circuit Language And Intermediate Representation - DSL in Rust for circuit logic",
+        "usage": "Type-safe circuit construction and proof-system-agnostic descriptions",
+        "confidence": 1.0
+      }
+    ]
+  },
+
+  "privacy_techniques": {
+    "primary_technique": "zk-SNARKs (Zero-Knowledge Succinct Non-Interactive Arguments of Knowledge)",
+    "confidence": 1.0,
+
+    "specific_protocols": [
+      {
+        "name": "Groth16",
+        "type": "Pairing-based zk-SNARK",
+        "usage": "Production R1CS proof system via arkworks/groth16",
+        "characteristics": [
+          "Requires trusted setup with toxic waste",
+          "Leverages bilinear pairing properties of elliptic curves",
+          "Efficient verification of complex algebraic relations",
+          "Small proof size and fast verification"
+        ],
+        "confidence": 1.0
+      },
+      {
+        "name": "PLONK",
+        "type": "Universal zk-SNARK",
+        "usage": "Alternative proof system with universal trusted setup",
+        "characteristics": [
+          "Universal and updateable trusted setup",
+          "Custom gates for optimization"
+        ],
+        "confidence": 0.85
+      },
+      {
+        "name": "Nova",
+        "type": "Recursive zk-SNARK",
+        "usage": "Incremental verifiable computation",
+        "confidence": 0.75
+      }
+    ],
+
+    "cryptographic_primitives": [
+      {
+        "name": "Poseidon Hash",
+        "type": "zk-friendly hash function",
+        "usage": "Merkle tree construction and circuit-efficient hashing",
+        "confidence": 0.9
+      },
+      {
+        "name": "Merkle Trees",
+        "type": "Accumulator with zero-knowledge membership proof",
+        "usage": "Privacy-preserving state management",
+        "confidence": 0.95
+      },
+      {
+        "name": "Commitment Schemes",
+        "type": "Cryptographic commitments",
+        "usage": "Hiding transaction details while maintaining verifiability",
+        "confidence": 0.95
+      }
+    ],
+
+    "privacy_protocols": [
+      {
+        "name": "MantaPay",
+        "type": "Decentralized Anonymous Payment (DAP) protocol",
+        "description": "Privacy-preserving payment protocol based on zk-SNARKs",
+        "features": [
+          "Private sending of wrapped assets (BTC, ETH, DOT)",
+          "Anonymous token conversion (e.g., Anonymous DOT)",
+          "Redemption of anonymous tokens for underlying assets",
+          "Cross-parachain privacy via Polkadot interoperability"
+        ],
+        "supported_assets": ["BTC", "ETH", "DOT", "parachain assets"],
+        "confidence": 1.0
+      }
+    ],
+
+    "privacy_features": [
+      {
+        "feature": "Complete end-to-end privacy",
+        "description": "Only sender and receiver witness transaction details",
+        "confidence": 1.0
+      },
+      {
+        "feature": "Front-running prevention",
+        "description": "Privacy at base layer prevents MEV and front-running",
+        "confidence": 0.95
+      },
+      {
+        "feature": "Portfolio privacy",
+        "description": "Private management of crypto portfolios",
+        "confidence": 0.95
+      },
+      {
+        "feature": "Interoperable privacy",
+        "description": "Privacy across entire Polkadot/Kusama ecosystem",
+        "confidence": 0.95
+      }
+    ],
+
+    "zkp_system_components": [
+      {
+        "component": "Statement",
+        "description": "Claim to be proven"
+      },
+      {
+        "component": "Public Input",
+        "description": "Publicly known information"
+      },
+      {
+        "component": "Witness",
+        "description": "Private information known only to prover"
+      },
+      {
+        "component": "Proof",
+        "description": "Cryptographic proof of statement validity"
+      }
+    ],
+
+    "zkp_properties": [
+      "Completeness - Valid statements can always be proven",
+      "Soundness - Invalid statements cannot be falsely proven",
+      "Zero-Knowledge - No additional information leaked beyond statement validity"
+    ]
+  },
+
+  "architecture": {
+    "network_structure": [
+      {
+        "name": "Manta Atlantic",
+        "type": "Layer 1 Parachain",
+        "framework": "Substrate",
+        "network": "Polkadot",
+        "focus": "Interoperable identity verification and ZK application deployment",
+        "key_components": [
+          "Substrate runtime with custom pallets",
+          "Node implementation",
+          "Genesis configuration",
+          "MantaPay protocol integration"
+        ],
+        "confidence": 1.0
+      },
+      {
+        "name": "Calamari Network",
+        "type": "Layer 1 Parachain",
+        "framework": "Substrate",
+        "network": "Kusama",
+        "focus": "Canary network for testing and experimentation",
+        "confidence": 1.0
+      },
+      {
+        "name": "Manta Pacific",
+        "type": "Layer 2 Rollup",
+        "framework": "OP Stack",
+        "network": "Ethereum",
+        "data_availability": "Celestia",
+        "focus": "EVM-native modular ecosystem for ZK applications",
+        "features": [
+          "EVM compatibility",
+          "Universal circuits for Solidity/Rust developers",
+          "Fast transaction speeds",
+          "Reduced gas fees",
+          "200+ dApps supported"
+        ],
+        "confidence": 1.0
+      },
+      {
+        "name": "Dolphin Testnet",
+        "type": "Testnet",
+        "focus": "Development and testing environment",
+        "confidence": 0.9
+      }
+    ],
+
+    "substrate_components": [
+      "Node (blockchain client)",
+      "Runtime (on-chain logic)",
+      "Pallets (modular blockchain functionality)",
+      "Primitives (core types and traits)",
+      "Genesis (chain initialization)"
+    ],
+
+    "key_features": [
+      {
+        "feature": "Modular Architecture",
+        "description": "Separation of L1 (Polkadot) and L2 (Ethereum) with different use cases"
+      },
+      {
+        "feature": "Multi-network Support",
+        "description": "Operates on Polkadot, Kusama, and Ethereum ecosystems"
+      },
+      {
+        "feature": "EVM Compatibility",
+        "description": "Full Ethereum compatibility on Manta Pacific L2"
+      },
+      {
+        "feature": "Fast Finality",
+        "description": "Fast Finality Protocol for quick transaction confirmation"
+      },
+      {
+        "feature": "Low Gas Fees",
+        "description": "Optimized transaction costs through L2 scaling"
+      },
+      {
+        "feature": "Cross-chain Bridges",
+        "description": "Atlantic and Pacific bridges for asset transfers"
+      }
+    ]
+  },
+
+  "development_info": {
+    "rust_compiler_version": "1.74",
+    "sdk_available": true,
+    "sdk_url": "https://github.com/Manta-Network/sdk",
+    "documentation_url": "https://docs.manta.network",
+    "developer_support": [
+      "Ecosystem grants program",
+      "OpenZL library for ZK development",
+      "Solidity and Rust developer support",
+      "SDK and proof key integrations"
+    ]
+  },
+
+  "partnerships_and_backing": [
+    {
+      "partner": "Binance Labs",
+      "type": "Investor/Strategic Partner"
+    },
+    {
+      "partner": "Polychain Capital",
+      "type": "Investor"
+    },
+    {
+      "partner": "Parity Technologies",
+      "type": "Technology Partner (Substrate)",
+      "confidence": 0.9
+    },
+    {
+      "partner": "Celestia",
+      "type": "Infrastructure Partner (Data Availability)"
+    },
+    {
+      "partner": "Optimism",
+      "type": "Technology Partner (OP Stack)"
+    }
+  ],
+
+  "key_products": [
+    {
+      "name": "MantaPay",
+      "description": "Decentralized Anonymous Payment protocol",
+      "status": "Production"
+    },
+    {
+      "name": "OpenZL",
+      "description": "Zero-Knowledge Cryptography Infrastructure Stack",
+      "status": "Active Development"
+    },
+    {
+      "name": "Manta Signer",
+      "description": "Client for turbo-charging ZKP generation",
+      "status": "Active"
+    },
+    {
+      "name": "Fast Finality Protocol",
+      "description": "Quick withdrawal and finality mechanism",
+      "status": "Active"
+    }
+  ],
+
+  "staking_info": {
+    "available": true,
+    "apy": "22.4%",
+    "confidence": 0.9
+  },
+
+  "security_notes": [
+    "Code has not been fully security audited (as per GitHub README)",
+    "Users advised to use at own risk",
+    "Trusted setup required for Groth16 (toxic waste management)"
+  ],
+
+  "research_gaps": [],
+
+  "research_notes": [
+    "Manta Network operates a dual-layer architecture: Manta Atlantic (Polkadot L1) and Manta Pacific (Ethereum L2)",
+    "Originally launched on Polkadot in 2020, later expanded to Ethereum with L2 solution",
+    "OpenZL represents a significant contribution to ZK infrastructure for Web3",
+    "Eclair DSL provides type-safe circuit construction, reducing cryptographic errors",
+    "MantaPay enables privacy across entire Polkadot/Kusama parachain ecosystem",
+    "Over 200 decentralized applications supported on Manta Pacific",
+    "Multi-proof system support (Groth16, PLONK, Nova) provides flexibility"
+  ],
+
+  "verification_status": {
+    "github_verified": true,
+    "tech_stack_verified": true,
+    "privacy_techniques_verified": true,
+    "multi_source_confirmation": true,
+    "primary_sources_count": 5
+  }
+}

@@ -1,6 +1,0 @@
-# Findora
-**Privacy**
-
-
-
----

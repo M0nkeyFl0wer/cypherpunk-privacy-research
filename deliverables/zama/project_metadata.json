@@ -1,0 +1,24 @@
+{
+  "name": "zama",
+  "category": "fhe",
+  "description": "Fully Homomorphic Encryption pioneer",
+  "tech_stack": [
+    "Rust",
+    "Python",
+    "TypeScript",
+    "Solidity",
+    "C++",
+    "SystemVerilog"
+  ],
+  "privacy_techniques": [
+    "Fully Homomorphic Encryption (FHE)",
+    "[{'name': 'TFHE (Fully Homomorphic Encryption over the Torus)', 'variant': \"Zama's variant with programmable bootstrapping\", 'description': 'Lattice-based cryptography scheme for FHE', 'security_model': 'IND-CPA^D', 'failure_probability': '\u2264 2^-128', 'security_estimation_tool': 'Lattice Estimator with red_cost_model = reduction.RC.BDGL16', 'confidence': 1.0, 'source': 'https://github.com/zama-ai/tfhe-rs'}, {'name': 'Programmable Bootstrapping', 'description': 'Advanced FHE technique enabling arbitrary computations on encrypted data', 'confidence': 0.95}]",
+    "[{'type': 'Boolean Operations', 'description': 'Homomorphic boolean logic operations on encrypted data', 'confidence': 1.0}, {'type': 'Integer Arithmetic', 'description': 'Homomorphic integer operations (up to 8 bits message space in short integer API)', 'confidence': 1.0}, {'type': 'High-Precision Encrypted Integers', 'description': 'Full range of computational operators on encrypted integers', 'confidence': 0.95}]",
+    "[{'name': 'Lattice-based Cryptography', 'usage': 'Foundation for TFHE scheme', 'quantum_resistant': True, 'confidence': 1.0}, {'name': 'Key Generation', 'components': ['Public Key Encryption', 'Server Key Generation', 'Client Key Generation'], 'confidence': 1.0}, {'name': 'Ciphertext Compression', 'description': 'Size-efficient encryption and server key compression', 'confidence': 0.95}]",
+    "{'fhevm_features': [{'feature': 'End-to-End Transaction Encryption', 'description': 'Full transaction privacy on blockchain', 'confidence': 1.0}, {'feature': 'Encrypted State Management', 'description': 'Encrypted state coexists with public state on-chain', 'confidence': 1.0}, {'feature': 'Symbolic Execution', 'description': 'FHE computations executed on host chain', 'confidence': 0.95}, {'feature': 'Programmable Privacy Controls', 'description': 'Configurable privacy settings for smart contracts', 'confidence': 0.9}, {'feature': 'Confidential Smart Contracts', 'description': 'EVM-compatible smart contracts with built-in encryption', 'confidence': 1.0}], 'use_cases': ['Confidential token swaps', 'Encrypted lending and yield farming', 'Sealed-bid auctions', 'Confidential governance', 'Private stablecoin transactions', 'RWA tokenization with privacy', 'On-chain gaming with hidden information', 'Encrypted identity management'], 'confidence': 0.95}",
+    "{'concrete_ml_capabilities': [{'capability': 'Privacy-Preserving ML Inference', 'description': 'Run ML models on encrypted data without decryption', 'confidence': 1.0}, {'capability': 'Encrypted Training Support', 'description': 'Quantization-aware training for FHE compatibility', 'confidence': 0.95}, {'capability': 'Model Import', 'description': 'ONNX import from PyTorch, Keras, TensorFlow', 'confidence': 1.0}], 'supported_models': ['Linear models (Logistic Regression)', 'Tree-based models', 'Neural networks', 'Custom models via ONNX'], 'use_cases': ['Healthcare data analysis', 'Financial services predictions', 'Biometric authentication', 'Government services', 'Predictive maintenance', 'Privacy-preserving ad tracking'], 'confidence': 1.0}",
+    "[{'feature': 'GPU Acceleration', 'availability': 'Concrete and Concrete ML', 'confidence': 0.95}, {'feature': 'Automatic Parameter Selection', 'description': 'Cryptographic parameter optimization', 'confidence': 0.95}, {'feature': 'Coprocessor Architecture', 'description': 'Offload FHE computation to maintain low gas fees', 'confidence': 0.9}]"
+  ],
+  "github_url": "https://github.com/zama-ai",
+  "website": null
+}

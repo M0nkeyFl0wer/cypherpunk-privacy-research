@@ -1,28 +1,31 @@
-# Aztec Protocol
-
-## 🔗 Links
-
-- **Website**: https://aztec.network/
+# aztec-protocol
 
 ## 📝 Description
-
 Aztec Protocol is the privacy-first Layer 2 on Ethereum (same as 'aztec' and 'aztec-network' entries - this appears to be another duplicate project name referring to the same protocol).
 
-## 📊 GitHub Statistics
+## 🔗 Links
+- **Website**: https://aztec.network/
 
-- ⭐ **Stars**: 369
-- 🔀 **Forks**: 521
-- 👥 **Contributors**: 100
 
-**Primary Language**: C++
-**Total Languages**: 24
+## 🏷️ Category
+Privacy Technology
 
-**Language Distribution:**
+## 📊 Project Status
 
-## 📜 Smart Contracts
+### GitHub Statistics
 
-- **Aztec Connect Rollup**: `0xff1f2b4adb9df6fc8eafecdcbf96a2b351680455` (ethereum)
+
+
+
+## 👥 Team
+See [TEAM.md](reports/TEAM.md) for detailed team information.
+
+## 🛠️ Technical Details
+See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
+
+## 🔒 Security
+See [SECURITY.md](reports/SECURITY.md) for security analysis.
 
 ---
-
-*Constitutional Research v2.0.0 - Real data only*
+*Research completed with Constitutional Research v2.0.0*
+*Last updated: 2025-10-10*

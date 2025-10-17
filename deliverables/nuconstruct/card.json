@@ -1,0 +1,30 @@
+{
+  "id": "nuconstruct",
+  "name": "Nuconstruct",
+  "category": "computing",
+  "shortDescription": "Private computation",
+  "stats": {
+    "techStack": 6,
+    "privacyTechniques": 6,
+    "confidence": 0.75
+  },
+  "highlights": {
+    "topPrivacy": [
+      "Trusted Execution Environment (TEE)",
+      "Intel TDX for hardware-based isolation",
+      "Sealed-bid auction mechanism"
+    ],
+    "topTech": [
+      "Intel TDX (Trust Domain Extensions)",
+      "TEE (Trusted Execution Environment)",
+      "Ethereum (EVM-compatible)"
+    ]
+  },
+  "links": {
+    "github": null,
+    "website": null,
+    "readme": "/deliverables/nuconstruct/README.md"
+  },
+  "status": "COMPLETE_WITH_GAPS",
+  "researchComplete": true
+}
