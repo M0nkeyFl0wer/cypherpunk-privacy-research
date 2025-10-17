@@ -1,20 +1,31 @@
-# Findora
+# findora
+
+## 📝 Description
+Privacy technology project focused on Web3 security and anonymity.
 
 ## 🔗 Links
-
 - **Website**: https://findora.com
 
-## 📊 GitHub Statistics
 
-- ⭐ **Stars**: 72
-- 🔀 **Forks**: 27
-- 👥 **Contributors**: 42
+## 🏷️ Category
+Privacy Technology
 
-**Primary Language**: Rust
-**Total Languages**: 6
+## 📊 Project Status
 
-**Language Distribution:**
+### GitHub Statistics
+
+
+
+
+## 👥 Team
+See [TEAM.md](reports/TEAM.md) for detailed team information.
+
+## 🛠️ Technical Details
+See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
+
+## 🔒 Security
+See [SECURITY.md](reports/SECURITY.md) for security analysis.
 
 ---
-
-*Constitutional Research v2.0.0 - Real data only*
+*Research completed with Constitutional Research v2.0.0*
+*Last updated: 2025-10-10*

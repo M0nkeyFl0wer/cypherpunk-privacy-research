@@ -1,6 +1,0 @@
-# zkSync
-**Privacy**
-
-
-
----

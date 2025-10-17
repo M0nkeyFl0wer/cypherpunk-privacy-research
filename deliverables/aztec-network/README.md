@@ -1,28 +1,31 @@
-# Aztec Network
-
-## 🔗 Links
-
-- **Website**: https://aztec-network.com
+# 
 
 ## 📝 Description
-
 Aztec Network is the privacy-first Layer 2 blockchain on Ethereum (same as 'aztec' entry - this appears to be a duplicate project name referring to the same protocol).
 
-## 📊 GitHub Statistics
+## 🔗 Links
+- **Website**: https://aztec-network.com
 
-- ⭐ **Stars**: 0
-- 🔀 **Forks**: 0
-- 👥 **Contributors**: 0
 
-## 📜 Smart Contracts
+## 🏷️ Category
+Privacy Technology
 
-- **Aztec Connect Rollup**: `0xff1f2b4adb9df6fc8eafecdcbf96a2b351680455` (ethereum)
+## 📊 Project Status
 
-## 🔒 Security Scan
+### GitHub Statistics
+- ⭐ Stars: 370
+- 🔀 Forks: 522
 
-- **Events**: 101
-- **Modules**: 5
+
+## 👥 Team
+See [TEAM.md](reports/TEAM.md) for detailed team information.
+
+## 🛠️ Technical Details
+See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
+
+## 🔒 Security
+See [SECURITY.md](reports/SECURITY.md) for security analysis.
 
 ---
-
-*Constitutional Research v2.0.0 - Real data only*
+*Research completed with Constitutional Research v2.0.0*
+*Last updated: 2025-10-10*

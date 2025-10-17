@@ -1,0 +1,14 @@
+{
+  "project": "concordium",
+  "timestamp": "2025-10-08T08:39:04-07:00",
+  "osint_version": "v3_github_homepage",
+  "osint_sources": {
+    "shodan": {},
+    "virustotal": {},
+    "hunter": {},
+    "hibp": {}
+  },
+  "extracted_targets": {
+    "website": "none_in_github"
+  }
+}

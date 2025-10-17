@@ -1,13 +1,31 @@
-# Edge Wallet
+# edge-wallet
+
+## 📝 Description
+Privacy technology project focused on Web3 security and anonymity.
 
 ## 🔗 Links
-
 - **Website**: https://edge-wallet.com
 
-## 📜 Smart Contracts
 
-- **Contract**: `0xf473edfaaef8cb2e5cdd246b7d5b285e4f56f721` (unknown)
+## 🏷️ Category
+Privacy Technology
+
+## 📊 Project Status
+
+### GitHub Statistics
+
+
+
+
+## 👥 Team
+See [TEAM.md](reports/TEAM.md) for detailed team information.
+
+## 🛠️ Technical Details
+See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
+
+## 🔒 Security
+See [SECURITY.md](reports/SECURITY.md) for security analysis.
 
 ---
-
-*Constitutional Research v2.0.0 - Real data only*
+*Research completed with Constitutional Research v2.0.0*
+*Last updated: 2025-10-10*

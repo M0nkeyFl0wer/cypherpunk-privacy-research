@@ -1,0 +1,952 @@
+{
+  "timestamp": "2025-10-16T01:11:21.898Z",
+  "our_total": 117,
+  "their_estimated": 745,
+  "overlap": {
+    "count": 37,
+    "projects": [
+      {
+        "name": "Tornado Cash",
+        "slug": "tornado-cash",
+        "theirSlug": "tornado-cash",
+        "completeness": 80,
+        "hasDetailedData": true
+      },
+      {
+        "name": "Firn Protocol",
+        "slug": "firn-protocol",
+        "theirSlug": "firn-protocol",
+        "completeness": 70,
+        "hasDetailedData": true
+      },
+      {
+        "name": "Brume Wallet",
+        "slug": "brume-wallet",
+        "theirSlug": "brume-wallet",
+        "completeness": 70,
+        "hasDetailedData": true
+      },
+      {
+        "name": "Railgun",
+        "slug": "railgun",
+        "theirSlug": "railgun",
+        "completeness": 50,
+        "hasDetailedData": false
+      },
+      {
+        "name": "Secret Network",
+        "slug": "secret-network",
+        "theirSlug": "secret-network",
+        "completeness": 50,
+        "hasDetailedData": false
+      },
+      {
+        "name": "Nym",
+        "slug": "nym",
+        "theirSlug": "nym",
+        "completeness": 50,
+        "hasDetailedData": false
+      },
+      {
+        "name": "Penumbra",
+        "slug": "penumbra",
+        "theirSlug": "penumbra",
+        "completeness": 50,
+        "hasDetailedData": false
+      },
+      {
+        "name": "Litentry",
+        "slug": "litentry",
+        "theirSlug": "litentry",
+        "completeness": 50,
+        "hasDetailedData": false
+      },
+      {
+        "name": "monero",
+        "slug": "monero",
+        "theirSlug": "monero",
+        "completeness": 40,
+        "hasDetailedData": false
+      },
+      {
+        "name": "zcash",
+        "slug": "zcash",
+        "theirSlug": "zcash",
+        "completeness": 40,
+        "hasDetailedData": false
+      },
+      {
+        "name": "Firo",
+        "slug": "firo",
+        "theirSlug": "firo",
+        "completeness": 40,
+        "hasDetailedData": false
+      },
+      {
+        "name": "Wasabi Wallet",
+        "slug": "wasabi-wallet",
+        "theirSlug": "wasabi-wallet",
+        "completeness": 40,
+        "hasDetailedData": false
+      },
+      {
+        "name": "Cake Wallet",
+        "slug": "cake-wallet",
+        "theirSlug": "cake-wallet",
+        "completeness": 40,
+        "hasDetailedData": false
+      },
+      {
+        "name": "semaphore",
+        "slug": "semaphore",
+        "theirSlug": "semaphore",
+        "completeness": 40,
+        "hasDetailedData": false
+      },
+      {
+        "name": "Orchid",
+        "slug": "orchid",
+        "theirSlug": "orchid",
+        "completeness": 40,
+        "hasDetailedData": false
+      },
+      {
+        "name": "Session",
+        "slug": "session",
+        "theirSlug": "session",
+        "completeness": 40,
+        "hasDetailedData": false
+      },
+      {
+        "name": "Status",
+        "slug": "status",
+        "theirSlug": "status",
+        "completeness": 40,
+        "hasDetailedData": false
+      },
+      {
+        "name": "iden3",
+        "slug": "iden3",
+        "theirSlug": "iden3",
+        "completeness": 40,
+        "hasDetailedData": false
+      },
+      {
+        "name": "Polygon Id",
+        "slug": "polygon-id",
+        "theirSlug": "polygon-id",
+        "completeness": 40,
+        "hasDetailedData": false
+      },
+      {
+        "name": "Polygon Nightfall",
+        "slug": "polygon-nightfall",
+        "theirSlug": "polygon-nightfall",
+        "completeness": 40,
+        "hasDetailedData": false
+      },
+      {
+        "name": "Manta Network",
+        "slug": "manta-network",
+        "theirSlug": "manta-network",
+        "completeness": 40,
+        "hasDetailedData": false
+      },
+      {
+        "name": "Phala Network",
+        "slug": "phala-network",
+        "theirSlug": "phala-network",
+        "completeness": 40,
+        "hasDetailedData": false
+      },
+      {
+        "name": "Scroll",
+        "slug": "scroll",
+        "theirSlug": "scroll",
+        "completeness": 40,
+        "hasDetailedData": false
+      },
+      {
+        "name": "Taiko",
+        "slug": "taiko",
+        "theirSlug": "taiko",
+        "completeness": 40,
+        "hasDetailedData": false
+      },
+      {
+        "name": "Sismo",
+        "slug": "sismo",
+        "theirSlug": "sismo",
+        "completeness": 40,
+        "hasDetailedData": false
+      },
+      {
+        "name": "Mask Network",
+        "slug": "mask-network",
+        "theirSlug": "mask-network",
+        "completeness": 40,
+        "hasDetailedData": false
+      },
+      {
+        "name": "Panther Protocol",
+        "slug": "panther-protocol",
+        "theirSlug": "panther-protocol",
+        "completeness": 40,
+        "hasDetailedData": false
+      },
+      {
+        "name": "darkfi",
+        "slug": "darkfi",
+        "theirSlug": "darkfi",
+        "completeness": 40,
+        "hasDetailedData": false
+      },
+      {
+        "name": "Elusiv",
+        "slug": "elusiv",
+        "theirSlug": "elusiv",
+        "completeness": 40,
+        "hasDetailedData": false
+      },
+      {
+        "name": "Railway Wallet",
+        "slug": "railway-wallet",
+        "theirSlug": "railway-wallet",
+        "completeness": 40,
+        "hasDetailedData": false
+      },
+      {
+        "name": "Frame",
+        "slug": "frame",
+        "theirSlug": "frame",
+        "completeness": 40,
+        "hasDetailedData": false
+      },
+      {
+        "name": "Ten",
+        "slug": "ten",
+        "theirSlug": "ten",
+        "completeness": 40,
+        "hasDetailedData": false
+      },
+      {
+        "name": "Nillion",
+        "slug": "nillion",
+        "theirSlug": "nillion",
+        "completeness": 40,
+        "hasDetailedData": false
+      },
+      {
+        "name": "Grin",
+        "slug": "grin",
+        "theirSlug": "grin",
+        "completeness": 30,
+        "hasDetailedData": false
+      },
+      {
+        "name": "Beam",
+        "slug": "beam",
+        "theirSlug": "beam",
+        "completeness": 30,
+        "hasDetailedData": false
+      },
+      {
+        "name": "Aztec",
+        "slug": "aztec",
+        "theirSlug": "aztec",
+        "completeness": 30,
+        "hasDetailedData": false
+      },
+      {
+        "name": "Samourai Wallet",
+        "slug": "samourai-wallet",
+        "theirSlug": "samourai-wallet",
+        "completeness": 0,
+        "hasDetailedData": false
+      }
+    ]
+  },
+  "only_ours": {
+    "count": 80,
+    "projects": [
+      {
+        "name": "Aztec Network",
+        "slug": "aztec-network",
+        "category": "defi",
+        "completeness": 80,
+        "privacyTechniques": 10,
+        "techStack": 10
+      },
+      {
+        "name": "Alephim",
+        "slug": "alephim",
+        "category": "computing",
+        "completeness": 50,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Arpa",
+        "slug": "arpa",
+        "category": "computing",
+        "completeness": 50,
+        "privacyTechniques": 7,
+        "techStack": 0
+      },
+      {
+        "name": "Chainport",
+        "slug": "chainport",
+        "category": "bridges",
+        "completeness": 50,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Iexec",
+        "slug": "iexec",
+        "category": "computing",
+        "completeness": 50,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Labyrinth",
+        "slug": "labyrinth",
+        "category": "defi",
+        "completeness": 50,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Light Protocol",
+        "slug": "light-protocol",
+        "category": "defi",
+        "completeness": 50,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "zano",
+        "slug": "zano",
+        "category": "other",
+        "completeness": 50,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Circom",
+        "slug": "circom",
+        "category": "other",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Concordium",
+        "slug": "concordium",
+        "category": "other",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Deeper Network",
+        "slug": "deeper-network",
+        "category": "other",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "fileverse",
+        "slug": "fileverse",
+        "category": "other",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Findora",
+        "slug": "findora",
+        "category": "other",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Fluidkey",
+        "slug": "fluidkey",
+        "category": "other",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "HOPR",
+        "slug": "hopr",
+        "category": "other",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Incognito",
+        "slug": "incognito",
+        "category": "other",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Iron Fish",
+        "slug": "iron-fish",
+        "category": "other",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "MobileCoin",
+        "slug": "mobilecoin",
+        "category": "other",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "mysterium-network",
+        "slug": "mysterium-network",
+        "category": "other",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Nighthawk Wallet",
+        "slug": "nighthawk-wallet",
+        "category": "other",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "oasis-network",
+        "slug": "oasis-network",
+        "category": "other",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "oxen",
+        "slug": "oxen",
+        "category": "other",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Platon Network",
+        "slug": "platon-network",
+        "category": "computing",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "polygon-hermez",
+        "slug": "polygon-hermez",
+        "category": "other",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "polygon-zero",
+        "slug": "polygon-zero",
+        "category": "other",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "privatepool",
+        "slug": "privatepool",
+        "category": "other",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "rotki",
+        "slug": "rotki",
+        "category": "other",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Sentinel",
+        "slug": "sentinel",
+        "category": "other",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "sienna-network",
+        "slug": "sienna-network",
+        "category": "other",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Silent Protocol",
+        "slug": "silent-protocol",
+        "category": "defi",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "snarkjs",
+        "slug": "snarkjs",
+        "category": "other",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "StarkEX",
+        "slug": "starkex",
+        "category": "other",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Suterusu",
+        "slug": "suterusu",
+        "category": "other",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "typhoon-network",
+        "slug": "typhoon-network",
+        "category": "other",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Veramo",
+        "slug": "veramo",
+        "category": "did",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Webb Protocol",
+        "slug": "webb-protocol",
+        "category": "other",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "xx-network",
+        "slug": "xx-network",
+        "category": "other",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Zeal",
+        "slug": "zeal",
+        "category": "other",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Zion",
+        "slug": "zion",
+        "category": "messaging",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "zk.money",
+        "slug": "zk-money",
+        "category": "other",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "zkSync",
+        "slug": "zksync",
+        "category": "other",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "zkVote",
+        "slug": "zkvote",
+        "category": "other",
+        "completeness": 40,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "0xbow",
+        "slug": "0xbow",
+        "category": "unknown",
+        "completeness": 30,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Aztec Protocol",
+        "slug": "aztec-protocol",
+        "category": "unknown",
+        "completeness": 30,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Cyclone Protocol",
+        "slug": "cyclone-protocol",
+        "category": "mixing",
+        "completeness": 30,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Edge Wallet",
+        "slug": "edge-wallet",
+        "category": "wallet",
+        "completeness": 30,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Pirate Chain",
+        "slug": "pirate-chain",
+        "category": "currency",
+        "completeness": 30,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Railgun Relay Adapt",
+        "slug": "railgun-relay-adapt",
+        "category": "bridges",
+        "completeness": 30,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "1inch Privacy",
+        "slug": "1inch-privacy",
+        "category": "Uncategorized",
+        "completeness": 0,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Ai Discovered",
+        "slug": "ai-discovered",
+        "category": "Uncategorized",
+        "completeness": 0,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Aleo",
+        "slug": "aleo",
+        "category": "Uncategorized",
+        "completeness": 0,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Anoma",
+        "slug": "anoma",
+        "category": "Uncategorized",
+        "completeness": 0,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Archive Incomplete",
+        "slug": "archive-incomplete",
+        "category": "Uncategorized",
+        "completeness": 0,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Brave Browser",
+        "slug": "brave-browser",
+        "category": "Uncategorized",
+        "completeness": 0,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Curve Privacy",
+        "slug": "curve-privacy",
+        "category": "Uncategorized",
+        "completeness": 0,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Dark Forest",
+        "slug": "dark-forest",
+        "category": "Uncategorized",
+        "completeness": 0,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Dash",
+        "slug": "dash",
+        "category": "Uncategorized",
+        "completeness": 0,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Deliverables",
+        "slug": "deliverables",
+        "category": "Uncategorized",
+        "completeness": 0,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Docs",
+        "slug": "docs",
+        "category": "Uncategorized",
+        "completeness": 0,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Dusk Network",
+        "slug": "dusk-network",
+        "category": "Uncategorized",
+        "completeness": 0,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Eth2 Deposit Cli",
+        "slug": "eth2-deposit-cli",
+        "category": "Uncategorized",
+        "completeness": 0,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Farcaster",
+        "slug": "farcaster",
+        "category": "Uncategorized",
+        "completeness": 0,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Gitcoin Grants",
+        "slug": "gitcoin-grants",
+        "category": "Uncategorized",
+        "completeness": 0,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Horizen",
+        "slug": "horizen",
+        "category": "Uncategorized",
+        "completeness": 0,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Keep Network",
+        "slug": "keep-network",
+        "category": "Uncategorized",
+        "completeness": 0,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Lens Protocol",
+        "slug": "lens-protocol",
+        "category": "Uncategorized",
+        "completeness": 0,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Maci",
+        "slug": "maci",
+        "category": "Uncategorized",
+        "completeness": 0,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Mask",
+        "slug": "mask",
+        "category": "Uncategorized",
+        "completeness": 0,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Metamask Snaps",
+        "slug": "metamask-snaps",
+        "category": "Uncategorized",
+        "completeness": 0,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Mina Protocol",
+        "slug": "mina-protocol",
+        "category": "Uncategorized",
+        "completeness": 0,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Nucypher",
+        "slug": "nucypher",
+        "category": "Uncategorized",
+        "completeness": 0,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Pse  Privacy   Scaling Explorations ",
+        "slug": "pse--privacy---scaling-explorations-",
+        "category": "Uncategorized",
+        "completeness": 0,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Ronin",
+        "slug": "ronin",
+        "category": "Uncategorized",
+        "completeness": 0,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Snapshot X",
+        "slug": "snapshot-x",
+        "category": "Uncategorized",
+        "completeness": 0,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Starknet",
+        "slug": "starknet",
+        "category": "Uncategorized",
+        "completeness": 0,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Temp_cleanup",
+        "slug": "temp_cleanup",
+        "category": "Uncategorized",
+        "completeness": 0,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Umbra Cash",
+        "slug": "umbra-cash",
+        "category": "Uncategorized",
+        "completeness": 0,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Zecrey",
+        "slug": "zecrey",
+        "category": "Uncategorized",
+        "completeness": 0,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Zkbob",
+        "slug": "zkbob",
+        "category": "Uncategorized",
+        "completeness": 0,
+        "privacyTechniques": 0,
+        "techStack": 0
+      },
+      {
+        "name": "Zkp2p",
+        "slug": "zkp2p",
+        "category": "Uncategorized",
+        "completeness": 0,
+        "privacyTechniques": 0,
+        "techStack": 0
+      }
+    ]
+  },
+  "only_theirs": {
+    "count": 11,
+    "projects": [
+      {
+        "slug": "brave-wallet"
+      },
+      {
+        "slug": "zk-email"
+      },
+      {
+        "slug": "noir"
+      },
+      {
+        "slug": "mullvad-vpn"
+      },
+      {
+        "slug": "protonvpn"
+      },
+      {
+        "slug": "mysterium"
+      },
+      {
+        "slug": "jami"
+      },
+      {
+        "slug": "waku"
+      },
+      {
+        "slug": "brightid"
+      },
+      {
+        "slug": "holonym"
+      },
+      {
+        "slug": "cheqd"
+      }
+    ]
+  }
+}

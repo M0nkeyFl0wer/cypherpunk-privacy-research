@@ -1,25 +1,31 @@
-# Polygon Hermez
+# polygon-hermez
+
+## 📝 Description
+Privacy technology project focused on Web3 security and anonymity.
 
 ## 🔗 Links
+- **Website**: Not available
 
-- **GitHub**: https://github.com/hermeznetwork/hermez-node
 
-## 📊 GitHub Statistics
+## 🏷️ Category
+Privacy Technology
 
-- ⭐ **Stars**: 60
-- 🔀 **Forks**: 30
-- 👥 **Contributors**: 21
+## 📊 Project Status
 
-**Primary Language**: Go
-**Total Languages**: 5
+### GitHub Statistics
 
-**Language Distribution:**
-- Go: 98.56%
-- PLpgSQL: 1.02%
-- Makefile: 0.33%
-- Shell: 0.09%
-- Dockerfile: 0.01%
+
+
+
+## 👥 Team
+See [TEAM.md](reports/TEAM.md) for detailed team information.
+
+## 🛠️ Technical Details
+See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
+
+## 🔒 Security
+See [SECURITY.md](reports/SECURITY.md) for security analysis.
 
 ---
-
-*Constitutional Research v2.0.0 - Real data only*
+*Research completed with Constitutional Research v2.0.0*
+*Last updated: 2025-10-10*

@@ -1,0 +1,30 @@
+{
+  "id": "railway",
+  "name": "Railway",
+  "category": "wallet",
+  "shortDescription": "Railway Wallet - privacy mixer integration",
+  "stats": {
+    "techStack": 6,
+    "privacyTechniques": 9,
+    "confidence": 0.92
+  },
+  "highlights": {
+    "topPrivacy": [
+      "RAILGUN Privacy System",
+      "{'scheme': 'zk-SNARKs (Zero-Knowledge Succinct Non-Interactive Argument of Knowledge)', 'proving_system': 'Groth16', 'circuit_count': 54, 'circuit_types': ['Multi-send transactions (various input/output combinations)', 'Private NFT shielding', 'Cross-contract interactions', '1 input to 2 outputs', '7 UTXOs to 2 destinations', 'Multiple inputs to single output'], 'circuit_setup': 'Trusted setup ceremony (Common Reference String generation)', 'proof_generation': 'Client-side proof generation, on-chain verification', 'cryptographic_foundation': 'Elliptic curve cryptography for succinct proofs'}",
+      "{'process': 'Shield existing ERC-20 tokens/NFTs into private 0zk address', 'encryption': 'Zero-Knowledge cryptography', 'data_encrypted': ['Sender address', 'Recipient address', 'Transaction amount', 'Token type', 'Wallet balances'], 'merkle_tree': {'type': 'Batch-incremental Merkle Tree', 'hash_function': 'Poseidon (SNARK-friendly)', 'shared_tree': 'All tokens share the same Merkle tree', 'tree_updates': 'Each shield/transfer creates new Root/Leaf', 'optimization': 'EVM-optimized Poseidon implementation (v3) for reduced gas costs'}}"
+    ],
+    "topTech": [
+      "TypeScript",
+      "SCSS",
+      "JavaScript"
+    ]
+  },
+  "links": {
+    "github": null,
+    "website": null,
+    "readme": "/deliverables/railway/README.md"
+  },
+  "status": "COMPLETE",
+  "researchComplete": true
+}

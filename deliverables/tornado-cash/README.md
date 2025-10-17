@@ -1,30 +1,31 @@
-# Tornado Cash
+# tornado-cash
+
+## 📝 Description
+Privacy technology project focused on Web3 security and anonymity.
 
 ## 🔗 Links
-
 - **Website**: https://tornado-cash.org
-- **GitHub**: https://github.com/tornadocash/tornado-core
 
-## 📊 GitHub Statistics
 
-- ⭐ **Stars**: 1,609
-- 🔀 **Forks**: 612
-- 👥 **Contributors**: 11
+## 🏷️ Category
+Privacy Technology
 
-**Primary Language**: JavaScript
-**Total Languages**: 4
+## 📊 Project Status
 
-**Language Distribution:**
-- JavaScript: 74.7%
-- Solidity: 24.54%
-- Shell: 0.39%
-- HTML: 0.37%
+### GitHub Statistics
 
-## 📜 Smart Contracts
 
-- **TORN Governance Token**: `0x77777feddddffc19ff86db637967013e6c6a116c` (ethereum)
-- **Tornado Cash Pool**: `0x910Cbd523D972eb0a6f4cAe4618aD62622b39DbF` (ethereum)
+
+
+## 👥 Team
+See [TEAM.md](reports/TEAM.md) for detailed team information.
+
+## 🛠️ Technical Details
+See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
+
+## 🔒 Security
+See [SECURITY.md](reports/SECURITY.md) for security analysis.
 
 ---
-
-*Constitutional Research v2.0.0 - Real data only*
+*Research completed with Constitutional Research v2.0.0*
+*Last updated: 2025-10-10*

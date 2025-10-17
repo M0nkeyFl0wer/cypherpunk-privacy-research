@@ -1,30 +1,31 @@
-# Secret Network
+# secret-network
+
+## 📝 Description
+Privacy technology project focused on Web3 security and anonymity.
 
 ## 🔗 Links
+- **Website**: Not available
 
-- **GitHub**: https://github.com/scrtlabs/SecretNetwork
 
-## 📊 GitHub Statistics
+## 🏷️ Category
+Privacy Technology
 
-- ⭐ **Stars**: 563
-- 🔀 **Forks**: 229
-- 👥 **Contributors**: 57
+## 📊 Project Status
 
-**Primary Language**: Rust
-**Total Languages**: 10
+### GitHub Statistics
 
-**Language Distribution:**
-- Rust: 55.11%
-- Go: 39.95%
-- Shell: 2.25%
-- TypeScript: 1.01%
-- Makefile: 0.72%
 
-## 📜 Smart Contracts
 
-- **Wrapped SCRT (wSCRT) on Ethereum**: `0x2b89bf8ba858cd2fcee1fada378d5cd6936968be` (ethereum)
-- **Secret SCRT (sSCRT) on Secret Network**: `secret1k0jntykt7e4g3y88ltc60czgjuqdy4c9e8fzek` (secret-network)
+
+## 👥 Team
+See [TEAM.md](reports/TEAM.md) for detailed team information.
+
+## 🛠️ Technical Details
+See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
+
+## 🔒 Security
+See [SECURITY.md](reports/SECURITY.md) for security analysis.
 
 ---
-
-*Constitutional Research v2.0.0 - Real data only*
+*Research completed with Constitutional Research v2.0.0*
+*Last updated: 2025-10-10*

@@ -1,35 +1,31 @@
-# Privatepool
-
-## 🔗 Links
-
-- **Website**: https://privatepool.com
-- **GitHub**: https://github.com/0xbow-io/privacy-pools-core
+# Privacy Pools by 0xbow
 
 ## 📝 Description
-
 Privacy Pools by 0xbow is a compliant way to anonymously transact on Ethereum. 0xbow blocks illicit actors to ensure pool integrity.
 
-## 📊 GitHub Statistics
+## 🔗 Links
+- **Website**: https://privatepool.com
 
-- ⭐ **Stars**: 81
-- 🔀 **Forks**: 21
-- 👥 **Contributors**: 17
 
-**Primary Language**: TypeScript
-**Total Languages**: 7
+## 🏷️ Category
+Privacy Technology
 
-**Language Distribution:**
-- TypeScript: 55.04%
-- Solidity: 38.53%
-- JavaScript: 5.26%
-- Circom: 0.96%
-- Mustache: 0.11%
+## 📊 Project Status
 
-## 🔒 Security Scan
+### GitHub Statistics
+- ⭐ Stars: 80
+- 🔀 Forks: 21
 
-- **Events**: 13
-- **Modules**: 6
+
+## 👥 Team
+See [TEAM.md](reports/TEAM.md) for detailed team information.
+
+## 🛠️ Technical Details
+See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
+
+## 🔒 Security
+See [SECURITY.md](reports/SECURITY.md) for security analysis.
 
 ---
-
-*Constitutional Research v2.0.0 - Real data only*
+*Research completed with Constitutional Research v2.0.0*
+*Last updated: 2025-10-10*

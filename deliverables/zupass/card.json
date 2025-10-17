@@ -1,0 +1,30 @@
+{
+  "id": "zupass",
+  "name": "Zupass",
+  "category": "did",
+  "shortDescription": "Zero-knowledge credentials for events",
+  "stats": {
+    "techStack": 5,
+    "privacyTechniques": 5,
+    "confidence": 0
+  },
+  "highlights": {
+    "topPrivacy": [
+      "{'proof_systems': ['zkSNARKs', 'Groth16'], 'protocols': ['Semaphore Protocol (anonymous signaling and group membership)'], 'implementations': ['General Purpose Circuits (GPCs) - pre-compiled ZK circuits with human-readable configuration', 'Custom zkSNARK circuits for application-specific queries', 'Merkle proofs for set membership', 'ZK proofs for social graph analysis (e.g., degrees of separation)'], 'features': ['Anonymous signaling on Ethereum', 'Group membership proofs without revealing identity', 'Selective disclosure of credentials', 'Proof of event attendance without revealing specific identity', 'Degrees of separation proofs (e.g., connection to specific individuals)', 'Financial health verification without exposing details', 'Social media verification while preserving privacy']}",
+      "{'pcd_structure': {'claim': 'Structured data fields with cryptographic identifiers', 'proof': 'Cryptographic proof attached to the claim (signatures, Merkle proofs, ZK proofs, hash commitments)'}, 'proof_types': ['EdDSA signatures', 'RSA signatures', 'Merkle proofs', 'zkSNARK proofs', 'Hash commitments', 'Keypair-based proofs'], 'operations': ['prove() - Generate cryptographic proofs', 'verify() - Verify proof validity', 'Redaction - Hide sensitive data while maintaining verifiability', 'Transformation - Modify data with end-to-end verifiability', 'Aggregation - Combine multiple PCDs with maintained integrity']}",
+      "{'description': 'Standard for cryptographic data that enables storage and sharing of data while preserving its integrity', 'data_structure': 'Arbitrary key/value data that can be signed and distributed', 'cryptographic_signing': ['EdDSA (Edwards-curve Digital Signature Algorithm)', 'Merkle tree-based signing'], 'general_purpose_circuits': {'description': 'Highly-configurable family of circuits for creating flexible proofs about PODs without app-specific circuits or trusted setup', 'configuration': 'Simple configuration language compiled to GPCs', 'capabilities': ['Redact sensitive fields while proving claims about remaining data', 'Transform POD content with cryptographic guarantees', 'Aggregate multiple PODs into composite proofs', 'Prove relationships between POD fields without revealing values', 'Range proofs on numerical values', 'Set membership proofs']}, 'packages': ['@pcd/pod (v0.5.1+)', '@pcd/pod-pcd', '@pcd/gpc-pcd'], 'applications': ['Zupass', 'Frogcrypto', 'PODBox', 'Meerkat', 'Devcon Passport']}"
+    ],
+    "topTech": [
+      "['TypeScript', 'JavaScript']",
+      "{'framework': 'React v18.2.0', 'routing': 'React Router v6.9.0', 'state_management': ['React Query', 'Broadcast Channel'], 'ui_libraries': ['Heroicons', 'Styled Components', 'React Select', 'React Modal', 'React Tooltip'], 'styling': 'CSS-in-JS with Styled Components', 'utilities': ['Lodash', 'UUID', 'Zod', 'Valibot'], 'visualization': ['TSParticles', 'Typewriter Effect', 'React Scroll Parallax'], 'build_tools': ['ESBuild', 'Vitest', 'ESLint']}",
+      "{'runtime': 'Node.js v20', 'framework': 'Express.js', 'api': 'Apollo GraphQL', 'database': 'PostgreSQL v15+', 'authentication': ['Stytch', 'OpenID Connect', 'WebAuthn'], 'messaging': ['SendGrid', 'Discord.js', 'Telegram', 'PagerDuty'], 'observability': ['OpenTelemetry', 'Honeycomb', 'Rollbar', 'Morgan'], 'utilities': ['Lodash', 'UUID', 'Zod', 'Worker-farm'], 'testing': 'Mocha'}"
+    ]
+  },
+  "links": {
+    "github": null,
+    "website": null,
+    "readme": "/deliverables/zupass/README.md"
+  },
+  "status": "COMPLETE",
+  "researchComplete": true
+}

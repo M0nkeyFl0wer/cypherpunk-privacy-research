@@ -72,6 +72,18 @@
     "completeness": 0
   },
   {
+    "slug": "archive-incomplete",
+    "name": "Archive Incomplete",
+    "category": "Uncategorized",
+    "website": null,
+    "description": "Privacy-focused Web3 project",
+    "privacyTechniques": [],
+    "techStack": [],
+    "hasReadme": false,
+    "hasCard": false,
+    "completeness": 0
+  },
+  {
     "slug": "arpa",
     "name": "Arpa",
     "category": "computing",
@@ -329,6 +341,18 @@
     "hasReadme": true,
     "hasCard": true,
     "completeness": 40
+  },
+  {
+    "slug": "deliverables",
+    "name": "Deliverables",
+    "category": "Uncategorized",
+    "website": null,
+    "description": "Privacy-focused Web3 project",
+    "privacyTechniques": [],
+    "techStack": [],
+    "hasReadme": false,
+    "hasCard": false,
+    "completeness": 0
   },
   {
     "slug": "docs",
@@ -1224,6 +1248,18 @@
     "hasReadme": true,
     "hasCard": true,
     "completeness": 40
+  },
+  {
+    "slug": "temp_cleanup",
+    "name": "Temp_cleanup",
+    "category": "Uncategorized",
+    "website": null,
+    "description": "Privacy-focused Web3 project",
+    "privacyTechniques": [],
+    "techStack": [],
+    "hasReadme": false,
+    "hasCard": false,
+    "completeness": 0
   },
   {
     "slug": "ten",

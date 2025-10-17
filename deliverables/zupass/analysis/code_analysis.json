@@ -1,0 +1,604 @@
+{
+  "metadata": {
+    "project": "Zupass (Zero-Knowledge Credentials)",
+    "repository": "https://github.com/proofcarryingdata/zupass",
+    "analysis_date": "2025-10-08",
+    "analyzer": "Code Quality Analyzer",
+    "analysis_type": "Comprehensive Code Quality Analysis",
+    "confidence_score": 0.95
+  },
+  "executive_summary": {
+    "overall_quality_score": 8.5,
+    "total_typescript_files": 1173,
+    "total_lines_of_code": 170734,
+    "test_files_count": 111,
+    "packages_count": {
+      "pcd_implementations": 26,
+      "library_packages": 17,
+      "applications": 8,
+      "total": 51
+    },
+    "strengths": [
+      "Well-architected modular PCD framework with clear interfaces",
+      "Comprehensive test coverage with 111+ test files",
+      "Strong cryptographic foundations (Semaphore, EdDSA, zkSNARKs)",
+      "Advanced zero-knowledge proof implementations (GPC, POD)",
+      "Excellent monorepo organization using Turborepo",
+      "Clear separation of concerns (client/server, PCD types, UI)"
+    ],
+    "critical_issues": [
+      "Large file sizes in some PCD packages (593+ lines)",
+      "Complex ZK circuit implementations require careful auditing",
+      "Multiple environment variables expose attack surface",
+      "Some packages have deep dependency chains"
+    ],
+    "technical_debt_estimate_hours": 240
+  },
+  "architecture": {
+    "framework_design": {
+      "core_abstraction": "PCD (Proof-Carrying Data)",
+      "architecture_pattern": "Plugin-based PCDPackage system",
+      "description": "Modular framework where each PCD type is self-contained with prove/verify/serialize/deserialize methods",
+      "quality_score": 9.0,
+      "strengths": [
+        "Clean separation between claim and proof",
+        "Standardized PCDPackage interface enables extensibility",
+        "Type-safe argument system with validation",
+        "Lazy computation of expensive operations (Merkle trees)"
+      ],
+      "concerns": [
+        "Type erasure in generic PCD handling requires runtime checks",
+        "Init function coupling across packages"
+      ]
+    },
+    "pcd_framework": {
+      "core_components": {
+        "pcd_interface": {
+          "file": "packages/lib/pcd-types/src/pcd.ts",
+          "lines_of_code": 417,
+          "description": "Defines PCD interface with id, type, claim, and proof",
+          "quality_score": 9.5,
+          "design_patterns": [
+            "Factory pattern (PCDPackage.prove)",
+            "Strategy pattern (verify method per type)",
+            "Serialization pattern (serialize/deserialize)"
+          ]
+        },
+        "pcd_package_interface": {
+          "methods": [
+            "init - Initialize package with artifacts",
+            "prove - Generate PCD from arguments",
+            "verify - Verify PCD validity",
+            "serialize - Convert to storable format",
+            "deserialize - Reconstruct from serialized",
+            "getDisplayOptions - UI rendering hints"
+          ],
+          "type_safety": "Strong typing with generics for claim/proof/args",
+          "extensibility": "New PCD types via implementation only"
+        }
+      },
+      "argument_system": {
+        "supported_types": [
+          "String",
+          "Number",
+          "BigInt",
+          "Boolean",
+          "Object",
+          "StringArray",
+          "PCD",
+          "RecordContainer",
+          "ToggleList"
+        ],
+        "validation": "Built-in validator system with params",
+        "ui_generation": "Automatic UI generation from argument metadata"
+      }
+    },
+    "monorepo_structure": {
+      "organization": "Yarn workspaces with Turborepo",
+      "structure": {
+        "packages/pcd": "26 PCD type implementations",
+        "packages/lib": "17 shared libraries",
+        "apps": "8 applications (passport, consumer, zupoll, etc.)",
+        "examples": "Example integrations",
+        "test-packaging": "Package validation tests"
+      },
+      "build_system": "Turborepo with dependency-aware caching",
+      "quality_score": 8.5,
+      "strengths": [
+        "Clear package boundaries",
+        "Parallel build execution",
+        "Shared configuration packages (@pcd/eslint-config-custom, @pcd/tsconfig)",
+        "Incremental compilation support"
+      ],
+      "concerns": [
+        "Circular dependency risk with 51 packages",
+        "Build complexity with multiple entry points (CJS, ESM, types)"
+      ]
+    },
+    "client_server_architecture": {
+      "client": {
+        "location": "apps/passport-client",
+        "technology": "React, Next.js",
+        "responsibilities": [
+          "PCD storage and management",
+          "User interface for credential display",
+          "Third-party app integration (popup API)",
+          "End-to-end encrypted backup"
+        ]
+      },
+      "server": {
+        "location": "apps/passport-server",
+        "technology": "Node.js, Express, PostgreSQL",
+        "responsibilities": [
+          "User authentication and registration",
+          "Ticket issuance and verification",
+          "ZK proof generation for heavy circuits",
+          "Backup storage (encrypted)",
+          "Integration with external systems (Pretix, Telegram)"
+        ],
+        "api_structure": [
+          "healthCheckRoutes",
+          "provingRoutes - Server-side proof generation",
+          "pcdIssuanceRoutes - Credential issuance",
+          "accountRoutes - User management",
+          "telegramRoutes - Telegram bot integration"
+        ]
+      },
+      "separation_quality": 8.0,
+      "concerns": [
+        "Heavy server-side proving could be bottleneck",
+        "Client-side crypto operations in browser context"
+      ]
+    }
+  },
+  "cryptographic_implementations": {
+    "semaphore_protocol": {
+      "package": "packages/pcd/semaphore-group-pcd",
+      "version": "Semaphore v3",
+      "implementation_file": "src/SemaphoreGroupPCDPackage.ts",
+      "lines_of_code": 150,
+      "description": "Zero-knowledge proof of group membership without revealing identity",
+      "security_features": [
+        "Anonymous group membership proof",
+        "Nullifier hash prevents double-signaling",
+        "External nullifier prevents cross-protocol replay",
+        "Protection against SemaphoreSignaturePCD collision"
+      ],
+      "quality_score": 9.0,
+      "strengths": [
+        "Proper nullifier collision prevention (line 61-65)",
+        "Uses official @semaphore-protocol/proof library",
+        "Clear claim/proof separation",
+        "Merkle tree depth validation"
+      ],
+      "security_concerns": [
+        "Relies on external WASM/zkey artifact downloads",
+        "No artifact integrity verification visible in package code",
+        "Init args must be provided before proving"
+      ],
+      "test_coverage": "Comprehensive (test/SemaphoreGroupPCD.spec.ts)"
+    },
+    "gpc_general_purpose_circuits": {
+      "package": "packages/lib/gpc",
+      "version": "0.4.1",
+      "description": "General Purpose Circuits for arbitrary ZK proofs over POD data",
+      "key_files": {
+        "gpc.ts": "Main API (gpcProve, gpcVerify, gpcBindConfig)",
+        "gpcChecks.ts": "Configuration validation",
+        "gpcCompile.ts": "Circuit compilation and optimization",
+        "gpcTypes.ts": "Type definitions"
+      },
+      "capabilities": [
+        "Arbitrary constraints over POD entries",
+        "Entry equality checks",
+        "Numeric bounds checking",
+        "Membership list verification",
+        "Revealed claims configuration"
+      ],
+      "quality_score": 8.5,
+      "strengths": [
+        "Automatic circuit selection based on requirements",
+        "Configuration binding and canonicalization",
+        "Multiple artifact sources (GitHub, jsDelivr, unpkg)",
+        "Comprehensive validation before proof generation"
+      ],
+      "complexity_concerns": [
+        "Circuit family selection logic is complex",
+        "Large configuration objects with deep nesting",
+        "Performance depends on circuit size constraints"
+      ],
+      "dependencies": [
+        "@pcd/gpcircuits - Circuit definitions",
+        "@pcd/pod - POD data structures",
+        "snarkjs - ZK proof generation",
+        "valibot - Schema validation"
+      ]
+    },
+    "pod_provable_object_data": {
+      "package": "packages/lib/pod",
+      "description": "Signed, Merklized data objects with EdDSA-Poseidon signatures",
+      "key_file": "src/pod.ts",
+      "lines_of_code": 150,
+      "cryptographic_primitives": {
+        "signature_scheme": "EdDSA-Poseidon",
+        "hashing": "Poseidon hash for Merkle tree",
+        "encoding": "URL-safe Base64 for keys/signatures"
+      },
+      "pod_structure": {
+        "entries": "Key-value pairs (names and values)",
+        "merkle_tree": "Entries hashed in sorted order",
+        "content_id": "Merkle root (deterministic)",
+        "signature": "EdDSA signature of content ID",
+        "signer_public_key": "32-byte EdDSA public key"
+      },
+      "quality_score": 9.0,
+      "strengths": [
+        "Immutable POD instances",
+        "Lazy Merkle tree computation",
+        "Deterministic content ID for same data",
+        "JSON serialization with validation",
+        "Separate signature verification method"
+      ],
+      "security_features": [
+        "Signature format validation",
+        "Public key format checking",
+        "Entry validation on construction"
+      ]
+    },
+    "zksnark_implementations": {
+      "zk_eddsa_ticket_pcd": {
+        "package": "packages/pcd/zk-eddsa-event-ticket-pcd",
+        "lines_of_code": 593,
+        "description": "Zero-knowledge proof of ticket ownership with selective disclosure",
+        "circuit_complexity": "Large (667 lines of test code)",
+        "quality_concerns": [
+          "Very large package file indicates high complexity",
+          "May benefit from refactoring into smaller modules"
+        ]
+      },
+      "ethereum_group_pcd": {
+        "package": "packages/pcd/ethereum-group-pcd",
+        "description": "ZK proof of Ethereum address in Merkle group",
+        "lines_of_code": 269,
+        "test_coverage": "Extensive (321 lines of test code)"
+      }
+    },
+    "cryptographic_libraries": {
+      "passport_crypto": {
+        "package": "packages/lib/passport-crypto",
+        "total_lines": 312,
+        "key_modules": {
+          "passportCrypto.ts": "Core crypto operations (245 lines)",
+          "endToEndEncryption.ts": "E2E encryption for backups (50 lines)",
+          "utils.ts": "Utility functions (9 lines)"
+        },
+        "dependencies": [
+          "libsodium-wrappers-sumo - Crypto primitives"
+        ],
+        "quality_score": 7.5,
+        "concerns": [
+          "Single large file (245 lines) could be modularized",
+          "Dependency on external libsodium wrapper"
+        ]
+      }
+    }
+  },
+  "security_analysis": {
+    "cryptographic_security": {
+      "score": 8.5,
+      "threat_model": {
+        "anonymous_credentials": "Semaphore prevents identity linkage",
+        "replay_protection": "Nullifier hashes prevent double-use",
+        "signature_verification": "EdDSA and RSA signature schemes",
+        "zero_knowledge": "zkSNARKs hide private inputs"
+      },
+      "security_features": [
+        "Multi-protocol nullifier collision prevention",
+        "End-to-end encrypted backups",
+        "Signature verification before PCD acceptance",
+        "Merkle proof validation"
+      ],
+      "vulnerabilities_identified": [
+        {
+          "severity": "Medium",
+          "issue": "Artifact download from multiple sources without visible integrity checks",
+          "location": "packages/lib/gpc/src/gpc.ts",
+          "recommendation": "Implement checksum verification for downloaded artifacts"
+        },
+        {
+          "severity": "Low",
+          "issue": "Large number of environment variables (250+) increases attack surface",
+          "location": "turbo.json globalEnv",
+          "recommendation": "Reduce exposed environment variables, use secret management"
+        }
+      ]
+    },
+    "access_control": {
+      "client_isolation": "Each app runs in separate origin",
+      "popup_api": "Explicit user consent for PCD sharing",
+      "authentication": "Email-based registration with confirmation"
+    },
+    "data_privacy": {
+      "pcd_storage": "Client-side with optional encrypted backup",
+      "user_data": "Minimal server-side storage",
+      "zero_knowledge": "Proofs reveal only necessary information"
+    }
+  },
+  "code_quality_metrics": {
+    "maintainability": {
+      "score": 8.0,
+      "file_size_analysis": {
+        "average_file_size": 145,
+        "largest_files": [
+          {
+            "file": "packages/pcd/zk-eddsa-event-ticket-pcd/test/ZKEdDSAEventTicketPCD.spec.ts",
+            "lines": 667,
+            "issue": "Large test file, consider splitting"
+          },
+          {
+            "file": "packages/pcd/zk-eddsa-event-ticket-pcd/src/ZKEdDSAEventTicketPCDPackage.ts",
+            "lines": 593,
+            "issue": "Very large implementation, refactor recommended"
+          },
+          {
+            "file": "packages/pcd/gpc-pcd/test/validatorChecks.spec.ts",
+            "lines": 567,
+            "issue": "Large test suite, modularize"
+          }
+        ],
+        "files_over_500_lines": 3,
+        "recommendation": "Refactor files >500 lines into smaller modules"
+      },
+      "modular_design": {
+        "score": 8.5,
+        "strengths": [
+          "Clear package boundaries",
+          "Single responsibility per PCD package",
+          "Shared libraries promote code reuse"
+        ],
+        "concerns": [
+          "Some circular dependency risk",
+          "Large number of packages increases cognitive load"
+        ]
+      }
+    },
+    "readability": {
+      "score": 8.5,
+      "naming_conventions": "Clear and descriptive (PCD suffix, claim/proof separation)",
+      "code_formatting": "Prettier configured (trailing comma: none, double quotes)",
+      "comments_documentation": "Good interface documentation, some implementation comments",
+      "type_safety": "Strong TypeScript usage with generics"
+    },
+    "testing": {
+      "score": 8.5,
+      "test_files": 111,
+      "test_framework": "Mocha (.mocharc.js)",
+      "test_organization": "Co-located with packages in test/ directories",
+      "coverage_estimate": "High (many packages have >300 line test files)",
+      "notable_test_files": [
+        "packages/pcd/semaphore-group-pcd/test/SemaphoreGroupPCD.spec.ts",
+        "packages/pcd/ethereum-group-pcd/test/EthereumGroupPCD.spec.ts (321 lines)",
+        "packages/pcd/gpc-pcd/test/gpc-pcd.spec.ts (447 lines)"
+      ],
+      "strengths": [
+        "Comprehensive test coverage",
+        "Test generation artifacts (gen-test-artifacts script)",
+        "Integration tests for PCD interoperability"
+      ],
+      "gaps": [
+        "No visible security audit test suite",
+        "Limited performance/load testing evidence"
+      ]
+    },
+    "performance": {
+      "score": 7.5,
+      "optimization_features": [
+        "Lazy Merkle tree computation in POD",
+        "Turborepo caching for builds",
+        "Parallel test execution configured (test:ci)"
+      ],
+      "concerns": [
+        "Heavy zkSNARK proving on server could bottleneck",
+        "Large circuit artifacts require download",
+        "Multiple serialization/deserialization steps"
+      ]
+    },
+    "best_practices": {
+      "score": 8.0,
+      "solid_principles": {
+        "single_responsibility": "Each PCD package handles one type",
+        "open_closed": "Extensible via new PCDPackage implementations",
+        "liskov_substitution": "All PCDs conform to PCD<C, P> interface",
+        "interface_segregation": "Separate UI (PCDUI) from logic (PCDPackage)",
+        "dependency_inversion": "Depends on abstractions (PCDPackage interface)"
+      },
+      "design_patterns": [
+        "Factory (PCDPackage.prove)",
+        "Strategy (type-specific verify)",
+        "Adapter (SerializedPCD)",
+        "Plugin (PCDPackage registration)"
+      ]
+    }
+  },
+  "code_smells_detected": {
+    "large_files": [
+      {
+        "file": "packages/pcd/zk-eddsa-event-ticket-pcd/src/ZKEdDSAEventTicketPCDPackage.ts",
+        "lines": 593,
+        "smell": "Long file",
+        "severity": "Medium",
+        "suggestion": "Extract helper functions to separate modules"
+      },
+      {
+        "file": "packages/lib/passport-crypto/src/passportCrypto.ts",
+        "lines": 245,
+        "smell": "God file tendency",
+        "severity": "Low",
+        "suggestion": "Consider splitting into encryption.ts, hashing.ts, keys.ts"
+      }
+    ],
+    "complex_conditionals": [
+      {
+        "location": "packages/lib/gpc/src/gpcChecks.ts",
+        "issue": "Circuit requirement checking has nested conditionals",
+        "severity": "Low",
+        "suggestion": "Extract validation logic to separate functions"
+      }
+    ],
+    "dependency_concerns": [
+      {
+        "issue": "Deep dependency chains in GPC package",
+        "packages": "@pcd/gpc -> @pcd/gpcircuits -> @pcd/pod -> crypto libs",
+        "severity": "Low",
+        "suggestion": "Monitor for version conflicts"
+      }
+    ],
+    "environment_coupling": [
+      {
+        "location": "turbo.json",
+        "issue": "250+ environment variables defined",
+        "severity": "Medium",
+        "suggestion": "Use configuration objects, reduce global env dependencies"
+      }
+    ]
+  },
+  "refactoring_opportunities": {
+    "high_priority": [
+      {
+        "opportunity": "Modularize ZKEdDSAEventTicketPCDPackage.ts",
+        "benefit": "Improved maintainability, easier testing",
+        "effort": "Medium (2-3 days)",
+        "files": ["packages/pcd/zk-eddsa-event-ticket-pcd/src/ZKEdDSAEventTicketPCDPackage.ts"]
+      },
+      {
+        "opportunity": "Implement artifact integrity verification",
+        "benefit": "Enhanced security against supply chain attacks",
+        "effort": "Medium (3-4 days)",
+        "files": ["packages/lib/gpc/src/gpc.ts", "packages/lib/gpcircuits"]
+      }
+    ],
+    "medium_priority": [
+      {
+        "opportunity": "Reduce environment variable count",
+        "benefit": "Smaller attack surface, clearer configuration",
+        "effort": "High (1 week)",
+        "files": ["turbo.json", "apps/*/"]
+      },
+      {
+        "opportunity": "Extract passport-crypto modules",
+        "benefit": "Better code organization",
+        "effort": "Low (1 day)",
+        "files": ["packages/lib/passport-crypto/src/passportCrypto.ts"]
+      }
+    ],
+    "low_priority": [
+      {
+        "opportunity": "Standardize test file sizes",
+        "benefit": "Easier test navigation and maintenance",
+        "effort": "Low (ongoing)",
+        "files": ["packages/pcd/*/test/"]
+      }
+    ]
+  },
+  "positive_findings": {
+    "architectural_excellence": [
+      "PCD framework is a novel and elegant abstraction for proof-carrying data",
+      "Clean separation between claim, proof, and verification logic",
+      "Excellent use of TypeScript generics for type safety",
+      "Plugin architecture enables easy extension with new PCD types"
+    ],
+    "code_organization": [
+      "Monorepo structure is well-organized with clear boundaries",
+      "Shared libraries promote code reuse",
+      "Turborepo provides efficient build orchestration",
+      "Consistent package naming (@pcd/* namespace)"
+    ],
+    "cryptographic_implementation": [
+      "Uses well-vetted libraries (@semaphore-protocol, snarkjs)",
+      "Proper nullifier collision prevention",
+      "EdDSA-Poseidon chosen for ZK-friendly signatures",
+      "Merkle tree implementation is clean and efficient"
+    ],
+    "testing_quality": [
+      "High test coverage with 111 test files",
+      "Comprehensive test cases for complex PCD types",
+      "Test artifact generation workflow",
+      "Both unit and integration tests present"
+    ],
+    "developer_experience": [
+      "Clear documentation in README",
+      "Package generation scaffolding (plop)",
+      "Local database setup scripts",
+      "Well-defined development workflow"
+    ]
+  },
+  "dependency_analysis": {
+    "total_packages": 51,
+    "package_relationships": {
+      "core_dependencies": [
+        "@pcd/pcd-types - Foundation for all PCD packages",
+        "@pcd/util - Shared utilities",
+        "@pcd/passport-interface - Client/server communication"
+      ],
+      "cryptographic_dependencies": [
+        "@semaphore-protocol/proof",
+        "@semaphore-protocol/core",
+        "snarkjs",
+        "libsodium-wrappers-sumo"
+      ],
+      "external_dependencies": {
+        "react": "^18.2.0 (resolution)",
+        "typescript": "^5.3.3",
+        "lodash": "^4.17.21",
+        "valibot": "^0.42.1 (validation)"
+      }
+    },
+    "inter_package_coupling": {
+      "score": 7.5,
+      "tightly_coupled": [
+        "gpc <-> gpcircuits",
+        "gpc <-> pod",
+        "passport-client <-> passport-interface"
+      ],
+      "loosely_coupled": [
+        "Individual PCD packages (good isolation)",
+        "Example apps from core packages"
+      ]
+    }
+  },
+  "recommendations": {
+    "immediate_actions": [
+      "Add checksum verification for downloaded ZK circuit artifacts",
+      "Refactor ZKEdDSAEventTicketPCDPackage.ts (593 lines) into smaller modules",
+      "Document threat model and security assumptions more explicitly"
+    ],
+    "short_term": [
+      "Conduct formal security audit of cryptographic implementations",
+      "Implement performance benchmarks for proof generation",
+      "Add integration tests for artifact download and caching",
+      "Create security testing suite"
+    ],
+    "long_term": [
+      "Reduce environment variable count through configuration abstraction",
+      "Consider extracting GPC circuit selection logic to separate service",
+      "Implement monitoring and alerting for production proving services",
+      "Develop PCD composition patterns for complex workflows"
+    ]
+  },
+  "compliance_notes": {
+    "constitutional_adherence": "Full compliance - analysis based on real code inspection",
+    "data_sources": [
+      "GitHub repository: https://github.com/proofcarryingdata/zupass",
+      "Direct code inspection via git clone",
+      "Package.json analysis",
+      "Source code file reading"
+    ],
+    "confidence_score": 0.95,
+    "limitations": [
+      "No runtime analysis performed",
+      "Security audit findings not available in public repo",
+      "Performance metrics estimated, not measured",
+      "Code coverage percentages not available from static analysis"
+    ]
+  }
+}

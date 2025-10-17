@@ -1,16 +1,31 @@
-# Polygon Id
+# polygon-id
 
-## 📊 GitHub Statistics
+## 📝 Description
+Privacy technology project focused on Web3 security and anonymity.
 
-- ⭐ **Stars**: 0
-- 🔀 **Forks**: 0
-- 👥 **Contributors**: 0
+## 🔗 Links
+- **Website**: Not available
+- **GitHub**: https://github.com/0xPolygonID/issuer-node
 
-## 📜 Smart Contracts
+## 🏷️ Category
+Privacy Technology
 
-- **IdentityTreeStore**: `0x134B1BE34911E39A8397ec6289782989729807a4` (unknown)
-- **StateV2**: `0x134B1BE34911E39A8397ec6289782989729807a4` (unknown)
+## 📊 Project Status
+
+### GitHub Statistics
+
+
+
+
+## 👥 Team
+See [TEAM.md](reports/TEAM.md) for detailed team information.
+
+## 🛠️ Technical Details
+See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
+
+## 🔒 Security
+See [SECURITY.md](reports/SECURITY.md) for security analysis.
 
 ---
-
-*Constitutional Research v2.0.0 - Real data only*
+*Research completed with Constitutional Research v2.0.0*
+*Last updated: 2025-10-10*

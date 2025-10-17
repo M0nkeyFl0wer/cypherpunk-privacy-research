@@ -1,6 +1,0 @@
-# Orchid
-**Privacy**
-
-
-
----

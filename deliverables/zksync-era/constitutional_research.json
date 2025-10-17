@@ -1,0 +1,19 @@
+{
+  "project_name": "Zksync Era",
+  "description": "No description available",
+  "website": "null",
+  "github": "null",
+  "category": "Uncategorized",
+  "status": "Unknown",
+  "github_stats": {
+    "stars": 0,
+    "forks": 0,
+    "language": "Unknown"
+  },
+  "metadata": {
+    "source": "README.md conversion",
+    "extracted_date": "2025-10-09",
+    "confidence": 0.85,
+    "data_type": "markdown_extracted"
+  }
+}

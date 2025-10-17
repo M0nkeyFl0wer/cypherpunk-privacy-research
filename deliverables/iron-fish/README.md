@@ -1,26 +1,31 @@
-# Iron Fish
+# iron-fish
+
+## 📝 Description
+Privacy technology project focused on Web3 security and anonymity.
 
 ## 🔗 Links
-
 - **Website**: https://iron-fish.com
-- **GitHub**: https://github.com/iron-fish/ironfish
 
-## 📊 GitHub Statistics
 
-- ⭐ **Stars**: 976
-- 🔀 **Forks**: 567
-- 👥 **Contributors**: 66
+## 🏷️ Category
+Privacy Technology
 
-**Primary Language**: TypeScript
-**Total Languages**: 7
+## 📊 Project Status
 
-**Language Distribution:**
-- TypeScript: 85.64%
-- Rust: 13.24%
-- JavaScript: 0.7%
-- Shell: 0.21%
-- Go: 0.19%
+### GitHub Statistics
+
+
+
+
+## 👥 Team
+See [TEAM.md](reports/TEAM.md) for detailed team information.
+
+## 🛠️ Technical Details
+See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
+
+## 🔒 Security
+See [SECURITY.md](reports/SECURITY.md) for security analysis.
 
 ---
-
-*Constitutional Research v2.0.0 - Real data only*
+*Research completed with Constitutional Research v2.0.0*
+*Last updated: 2025-10-10*

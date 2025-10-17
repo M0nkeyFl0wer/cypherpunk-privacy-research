@@ -1,26 +1,31 @@
-# Zeal
+# zeal
+
+## 📝 Description
+Privacy technology project focused on Web3 security and anonymity.
 
 ## 🔗 Links
-
 - **Website**: https://zeal.network
-- **GitHub**: https://github.com/zealwallet/Wallet
 
-## 📊 GitHub Statistics
 
-- ⭐ **Stars**: 38
-- 🔀 **Forks**: 10
-- 👥 **Contributors**: 2
+## 🏷️ Category
+Privacy Technology
 
-**Primary Language**: TypeScript
-**Total Languages**: 9
+## 📊 Project Status
 
-**Language Distribution:**
-- TypeScript: 98.36%
-- Solidity: 0.82%
-- JavaScript: 0.4%
-- HTML: 0.14%
-- Swift: 0.1%
+### GitHub Statistics
+
+
+
+
+## 👥 Team
+See [TEAM.md](reports/TEAM.md) for detailed team information.
+
+## 🛠️ Technical Details
+See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
+
+## 🔒 Security
+See [SECURITY.md](reports/SECURITY.md) for security analysis.
 
 ---
-
-*Constitutional Research v2.0.0 - Real data only*
+*Research completed with Constitutional Research v2.0.0*
+*Last updated: 2025-10-10*

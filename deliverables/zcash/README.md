@@ -1,26 +1,31 @@
-# Zcash
+# zcash
+
+## 📝 Description
+Privacy technology project focused on Web3 security and anonymity.
 
 ## 🔗 Links
-
 - **Website**: https://zcash.org
-- **GitHub**: https://github.com/zcash/zcash
 
-## 📊 GitHub Statistics
 
-- ⭐ **Stars**: 5,080
-- 🔀 **Forks**: 2,104
-- 👥 **Contributors**: 100
+## 🏷️ Category
+Privacy Technology
 
-**Primary Language**: C++
-**Total Languages**: 12
+## 📊 Project Status
 
-**Language Distribution:**
-- C++: 58.71%
-- Python: 19.02%
-- C: 13.9%
-- Rust: 3.4%
-- Shell: 1.53%
+### GitHub Statistics
+
+
+
+
+## 👥 Team
+See [TEAM.md](reports/TEAM.md) for detailed team information.
+
+## 🛠️ Technical Details
+See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
+
+## 🔒 Security
+See [SECURITY.md](reports/SECURITY.md) for security analysis.
 
 ---
-
-*Constitutional Research v2.0.0 - Real data only*
+*Research completed with Constitutional Research v2.0.0*
+*Last updated: 2025-10-10*

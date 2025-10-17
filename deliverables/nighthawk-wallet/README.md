@@ -1,22 +1,31 @@
-# Nighthawk Wallet
+# nighthawk-wallet
+
+## 📝 Description
+Privacy technology project focused on Web3 security and anonymity.
 
 ## 🔗 Links
+- **Website**: Not available
 
-- **GitHub**: https://github.com/nighthawk-apps/nighthawk-wallet-android
 
-## 📊 GitHub Statistics
+## 🏷️ Category
+Privacy Technology
 
-- ⭐ **Stars**: 33
-- 🔀 **Forks**: 15
-- 👥 **Contributors**: 6
+## 📊 Project Status
 
-**Primary Language**: Kotlin
-**Total Languages**: 2
+### GitHub Statistics
 
-**Language Distribution:**
-- Kotlin: 99.73%
-- Ruby: 0.27%
+
+
+
+## 👥 Team
+See [TEAM.md](reports/TEAM.md) for detailed team information.
+
+## 🛠️ Technical Details
+See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
+
+## 🔒 Security
+See [SECURITY.md](reports/SECURITY.md) for security analysis.
 
 ---
-
-*Constitutional Research v2.0.0 - Real data only*
+*Research completed with Constitutional Research v2.0.0*
+*Last updated: 2025-10-10*

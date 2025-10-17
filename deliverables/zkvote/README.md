@@ -1,28 +1,31 @@
-# Zkvote
+# zkvote
+
+## 📝 Description
+Privacy technology project focused on Web3 security and anonymity.
 
 ## 🔗 Links
-
 - **Website**: https://zkvote.com
-- **GitHub**: https://github.com/KimiWu123/zkvote
 
-## 📊 GitHub Statistics
 
-- ⭐ **Stars**: 6
-- 🔀 **Forks**: 3
-- 👥 **Contributors**: 3
+## 🏷️ Category
+Privacy Technology
 
-**Primary Language**: JavaScript
-**Total Languages**: 2
+## 📊 Project Status
 
-**Language Distribution:**
-- JavaScript: 94.63%
-- Shell: 5.37%
+### GitHub Statistics
 
-## 🔒 Security Scan
 
-- **Events**: 16
-- **Modules**: 7
+
+
+## 👥 Team
+See [TEAM.md](reports/TEAM.md) for detailed team information.
+
+## 🛠️ Technical Details
+See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
+
+## 🔒 Security
+See [SECURITY.md](reports/SECURITY.md) for security analysis.
 
 ---
-
-*Constitutional Research v2.0.0 - Real data only*
+*Research completed with Constitutional Research v2.0.0*
+*Last updated: 2025-10-10*

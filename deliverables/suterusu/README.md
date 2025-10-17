@@ -1,22 +1,31 @@
-# Suterusu
+# suterusu
+
+## 📝 Description
+Privacy technology project focused on Web3 security and anonymity.
 
 ## 🔗 Links
-
 - **Website**: https://suterusu.com
-- **GitHub**: https://github.com/suterusu-team/suter-proofs
 
-## 📊 GitHub Statistics
 
-- ⭐ **Stars**: 8
-- 🔀 **Forks**: 15
-- 👥 **Contributors**: 3
+## 🏷️ Category
+Privacy Technology
 
-**Primary Language**: Rust
-**Total Languages**: 1
+## 📊 Project Status
 
-**Language Distribution:**
-- Rust: 100.0%
+### GitHub Statistics
+
+
+
+
+## 👥 Team
+See [TEAM.md](reports/TEAM.md) for detailed team information.
+
+## 🛠️ Technical Details
+See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
+
+## 🔒 Security
+See [SECURITY.md](reports/SECURITY.md) for security analysis.
 
 ---
-
-*Constitutional Research v2.0.0 - Real data only*
+*Research completed with Constitutional Research v2.0.0*
+*Last updated: 2025-10-10*

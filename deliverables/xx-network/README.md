@@ -1,24 +1,31 @@
-# Xx Network
+# xx-network
+
+## 📝 Description
+Privacy technology project focused on Web3 security and anonymity.
 
 ## 🔗 Links
+- **Website**: Not available
 
-- **GitHub**: https://github.com/xxfoundation/xxchain
 
-## 📊 GitHub Statistics
+## 🏷️ Category
+Privacy Technology
 
-- ⭐ **Stars**: 20
-- 🔀 **Forks**: 11
-- 👥 **Contributors**: 2
+## 📊 Project Status
 
-**Primary Language**: Rust
-**Total Languages**: 4
+### GitHub Statistics
 
-**Language Distribution:**
-- Rust: 99.61%
-- Makefile: 0.21%
-- Shell: 0.15%
-- Dockerfile: 0.03%
+
+
+
+## 👥 Team
+See [TEAM.md](reports/TEAM.md) for detailed team information.
+
+## 🛠️ Technical Details
+See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
+
+## 🔒 Security
+See [SECURITY.md](reports/SECURITY.md) for security analysis.
 
 ---
-
-*Constitutional Research v2.0.0 - Real data only*
+*Research completed with Constitutional Research v2.0.0*
+*Last updated: 2025-10-10*

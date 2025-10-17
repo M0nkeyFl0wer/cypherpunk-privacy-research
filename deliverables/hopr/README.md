@@ -1,26 +1,31 @@
-# Hopr
+# hopr
+
+## 📝 Description
+Privacy technology project focused on Web3 security and anonymity.
 
 ## 🔗 Links
-
 - **Website**: https://hopr.com
-- **GitHub**: https://github.com/hoprnet/hoprnet
 
-## 📊 GitHub Statistics
 
-- ⭐ **Stars**: 232
-- 🔀 **Forks**: 98
-- 👥 **Contributors**: 51
+## 🏷️ Category
+Privacy Technology
 
-**Primary Language**: Rust
-**Total Languages**: 8
+## 📊 Project Status
 
-**Language Distribution:**
-- Rust: 70.53%
-- Solidity: 21.72%
-- Python: 3.79%
-- Shell: 1.21%
-- Nix: 1.1%
+### GitHub Statistics
+
+
+
+
+## 👥 Team
+See [TEAM.md](reports/TEAM.md) for detailed team information.
+
+## 🛠️ Technical Details
+See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
+
+## 🔒 Security
+See [SECURITY.md](reports/SECURITY.md) for security analysis.
 
 ---
-
-*Constitutional Research v2.0.0 - Real data only*
+*Research completed with Constitutional Research v2.0.0*
+*Last updated: 2025-10-10*

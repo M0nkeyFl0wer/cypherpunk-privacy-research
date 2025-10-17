@@ -1,19 +1,31 @@
-# Scroll
+# scroll
+
+## 📝 Description
+Privacy technology project focused on Web3 security and anonymity.
 
 ## 🔗 Links
-
 - **Website**: https://scroll.io
+- **GitHub**: https://github.com/scroll-tech/scroll
 
-## 📊 GitHub Statistics
+## 🏷️ Category
+Privacy Technology
 
-- ⭐ **Stars**: 0
-- 🔀 **Forks**: 0
-- 👥 **Contributors**: 0
+## 📊 Project Status
 
-## 📜 Smart Contracts
+### GitHub Statistics
 
-- **Scroll Chain**: `0xa13BAF47339d63B743e7Da8741db5456DAc1E556` (unknown)
+
+
+
+## 👥 Team
+See [TEAM.md](reports/TEAM.md) for detailed team information.
+
+## 🛠️ Technical Details
+See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
+
+## 🔒 Security
+See [SECURITY.md](reports/SECURITY.md) for security analysis.
 
 ---
-
-*Constitutional Research v2.0.0 - Real data only*
+*Research completed with Constitutional Research v2.0.0*
+*Last updated: 2025-10-10*

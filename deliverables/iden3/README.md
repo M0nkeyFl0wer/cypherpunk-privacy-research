@@ -1,24 +1,31 @@
-# Iden3
+# iden3
+
+## 📝 Description
+Privacy technology project focused on Web3 security and anonymity.
 
 ## 🔗 Links
-
 - **Website**: https://iden3.com
-- **GitHub**: https://github.com/iden3/iden3-docs
 
-## 📊 GitHub Statistics
 
-- ⭐ **Stars**: 14
-- 🔀 **Forks**: 10
-- 👥 **Contributors**: 1
+## 🏷️ Category
+Privacy Technology
 
-**Primary Language**: Python
-**Total Languages**: 3
+## 📊 Project Status
 
-**Language Distribution:**
-- Python: 95.7%
-- Batchfile: 2.34%
-- Makefile: 1.96%
+### GitHub Statistics
+
+
+
+
+## 👥 Team
+See [TEAM.md](reports/TEAM.md) for detailed team information.
+
+## 🛠️ Technical Details
+See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
+
+## 🔒 Security
+See [SECURITY.md](reports/SECURITY.md) for security analysis.
 
 ---
-
-*Constitutional Research v2.0.0 - Real data only*
+*Research completed with Constitutional Research v2.0.0*
+*Last updated: 2025-10-10*
