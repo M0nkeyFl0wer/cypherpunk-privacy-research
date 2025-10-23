@@ -75,14 +75,26 @@ function normalizeToId(name) {
  * Map identity fields
  */
 function mapIdentity(projectData) {
+  const verified = projectData.verified;
   const cr = projectData.constitutional;
   const meta = projectData.metadata;
 
-  const name = cr?.project_overview?.name || meta?.project_name || projectData.slug;
+  // Use verified data first (highest quality), then fallback
+  // Support both monero schema (basic_information) and circom schema (tier_1_data)
+  const name = verified?.basic_information?.name?.value ||
+    verified?.tier_1_data?.project_name?.value ||
+    verified?.project_name ||
+    cr?.project_overview?.name ||
+    meta?.project_name ||
+    projectData.slug;
+
   const id = normalizeToId(name);
 
-  // Get description (prefer constitutional, fallback to README excerpt)
-  let description = cr?.project_overview?.description;
+  // Get description (prefer verified, then constitutional, then README)
+  let description = verified?.basic_information?.description?.value ||
+    verified?.tier_1_data?.description?.value ||
+    cr?.project_overview?.description ||
+    meta?.description;
 
   if (!description && projectData.readme) {
     // Extract first paragraph from README (up to 200 chars)
@@ -108,22 +120,79 @@ function mapIdentity(projectData) {
  */
 function mapCategories(projectData) {
   const categories = new Set();
+  const verified = projectData.verified;
   const cr = projectData.constitutional;
   const meta = projectData.metadata;
 
-  // Map primary category
-  const primaryCategory = meta?.category || cr?.project_overview?.category;
-  if (primaryCategory && CATEGORY_MAP[primaryCategory]) {
-    categories.add(CATEGORY_MAP[primaryCategory]);
+  // Try to infer from project type (multiple schema support)
+  const projectType = verified?.basic_information?.type?.value ||     // monero schema
+    verified?.tier_1_data?.category?.value ||                         // circom schema
+    meta?.category ||
+    cr?.project_overview?.category;
+
+  if (projectType && typeof projectType === 'string') {
+    const normalized = projectType.toLowerCase();
+
+    if (normalized.includes('currency') || normalized.includes('coin')) {
+      categories.add('currency');
+    } else if (normalized.includes('wallet')) {
+      categories.add('applications');
+    } else if (normalized.includes('defi') || normalized.includes('financial')) {
+      categories.add('defi');
+    } else if (normalized.includes('infrastructure') || normalized.includes('layer') || normalized.includes('tool') || normalized.includes('compiler')) {
+      categories.add('infrastructure');
+    } else if (normalized.includes('identity')) {
+      categories.add('applications');
+    } else if (normalized.includes('messaging')) {
+      categories.add('applications');
+    }
+  }
+
+  // Add from metadata category mapping
+  if (meta?.category && CATEGORY_MAP[meta.category]) {
+    categories.add(CATEGORY_MAP[meta.category]);
   }
 
   // Map subcategories
-  const subcategories = cr?.project_overview?.subcategories || meta?.subcategories || [];
+  const subcategories = cr?.project_overview?.subcategories ||
+    meta?.subcategories ||
+    verified?.tier_1_data?.category?.sub_categories ||
+    [];
+
   subcategories.forEach(sub => {
-    if (CATEGORY_MAP[sub]) {
-      categories.add(CATEGORY_MAP[sub]);
+    if (typeof sub === 'string') {
+      // Check if substring matches known categories
+      const lowerSub = sub.toLowerCase();
+      if (lowerSub.includes('privacy') || lowerSub.includes('privacy-tech')) {
+        categories.add('infrastructure');
+      }
+      if (lowerSub.includes('zk') || lowerSub.includes('zero-knowledge')) {
+        categories.add('infrastructure');
+      }
+      if (CATEGORY_MAP[sub]) {
+        categories.add(CATEGORY_MAP[sub]);
+      }
     }
   });
+
+  // If no categories inferred, check key_features for hints
+  if (categories.size === 0) {
+    if (verified?.key_features) {
+      const features = Object.keys(verified.key_features).map(k => k.toLowerCase()).join(' ');
+      if (features.includes('privacy') || features.includes('untraceable')) {
+        categories.add('currency');
+      }
+      if (features.includes('defi')) {
+        categories.add('defi');
+      }
+    }
+    if (verified?.tier_1_data?.description?.value) {
+      const desc = verified.tier_1_data.description.value.toLowerCase();
+      if (desc.includes('circuit') || desc.includes('zk-snark') || desc.includes('privacy') || desc.includes('compiler')) {
+        categories.add('infrastructure');
+      }
+    }
+  }
 
   return Array.from(categories).filter(Boolean);
 }
@@ -133,10 +202,14 @@ function mapCategories(projectData) {
  */
 function mapEcosystem(projectData) {
   const ecosystems = new Set();
+  const verified = projectData.verified;
   const cr = projectData.constitutional;
 
-  const blockchainType = cr?.technical_architecture?.blockchain_type;
-  if (blockchainType) {
+  // Try verified data first
+  const blockchainType = verified?.technical_details?.blockchain_type ||
+    cr?.technical_architecture?.blockchain_type;
+
+  if (blockchainType && typeof blockchainType === 'string') {
     const normalized = blockchainType.toLowerCase();
 
     if (normalized.includes('ethereum')) ecosystems.add('ethereum');
@@ -146,6 +219,7 @@ function mapEcosystem(projectData) {
     if (normalized.includes('zksync')) ecosystems.add('zksync');
     if (normalized.includes('starknet')) ecosystems.add('starknet');
     if (normalized.includes('solana')) ecosystems.add('solana');
+    if (normalized.includes('layer 2') || normalized.includes('layer2')) ecosystems.add('ethereum');
   }
 
   return Array.from(ecosystems);
@@ -155,32 +229,64 @@ function mapEcosystem(projectData) {
  * Map links
  */
 function mapLinks(projectData) {
+  const verified = projectData.verified;
   const cr = projectData.constitutional;
   const meta = projectData.metadata;
   const links = {};
 
-  // Website
-  if (cr?.project_overview?.website) {
-    links.web = cr.project_overview.website;
+  // Try verified official_links first (monero schema)
+  if (verified?.official_links) {
+    const ol = verified.official_links;
+
+    if (ol.website?.value) {
+      links.web = ol.website.value;
+    }
+    if (ol.github?.value) {
+      links.github = ol.github.value;
+    }
+    if (ol.documentation?.value) {
+      links.documentation = ol.documentation.value;
+    }
+    if (ol.blog?.value) {
+      links.blog = ol.blog.value;
+    }
+    if (ol.twitter?.value) {
+      links.twitter = ol.twitter.value;
+    }
+    if (ol.discord?.value) {
+      links.discord = ol.discord.value;
+    }
+    if (ol.telegram?.value) {
+      links.telegram = ol.telegram.value;
+    }
+    if (ol.whitepaper?.value) {
+      links.whitepaper = ol.whitepaper.value;
+    }
   }
 
-  // GitHub
-  if (meta?.github) {
-    links.github = meta.github;
-  } else if (cr?.project_overview?.github) {
-    links.github = cr.project_overview.github;
+  // Try alternative schema (circom schema with tier_1_data)
+  if (!links.web && verified?.tier_1_data?.website_url?.value) {
+    links.web = verified.tier_1_data.website_url.value;
+  }
+  if (!links.github && verified?.tier_1_data?.github_url?.value) {
+    links.github = verified.tier_1_data.github_url.value;
   }
 
-  // Documentation
-  if (cr?.project_overview?.documentation) {
-    links.docs = cr.project_overview.documentation;
+  // Fallback to constitutional/metadata if not in verified
+  if (!links.web) {
+    links.web = cr?.project_overview?.website || meta?.website;
+  }
+  if (!links.github) {
+    links.github = meta?.github || cr?.project_overview?.github;
+  }
+  if (!links.documentation) {
+    links.documentation = cr?.project_overview?.documentation || meta?.documentation;
   }
 
-  // Extract social links from sources
-  if (cr?.sources) {
+  // Extract from sources if still missing
+  if (!links.twitter && cr?.sources) {
     cr.sources.forEach(source => {
-      if (source.type === 'twitter' && source.url) {
-        // Extract Twitter handle
+      if (source.type === 'twitter' && source.url && !links.twitter) {
         const match = source.url.match(/twitter\.com\/([^\/\?]+)/);
         if (match) {
           links.twitter = match[1];
@@ -189,6 +295,11 @@ function mapLinks(projectData) {
     });
   }
 
+  // Remove empty links
+  Object.keys(links).forEach(key => {
+    if (!links[key]) delete links[key];
+  });
+
   return links;
 }
 
@@ -196,35 +307,65 @@ function mapLinks(projectData) {
  * Map team information
  */
 function mapTeam(projectData) {
+  const verified = projectData.verified;
   const cr = projectData.constitutional;
 
-  if (!cr?.team_and_governance) {
-    return null;
-  }
-
-  const tg = cr.team_and_governance;
   const team = {
-    anonymous: tg.anonymous === true,
+    anonymous: false,
     teammembers: []
   };
 
-  // Add founders
-  if (tg.founders && Array.isArray(tg.founders)) {
-    tg.founders.forEach(founder => {
-      if (founder.name && founder.name !== 'Unknown') {
-        team.teammembers.push({
-          name: founder.name,
-          role: founder.role || 'Founder',
-          link: founder.github || founder.linkedin || founder.twitter || null
-        });
-      }
-    });
+  // Try verified team structure first
+  if (verified?.team_structure) {
+    const ts = verified.team_structure;
+
+    if (ts.anonymous !== undefined) {
+      team.anonymous = ts.anonymous === true;
+    }
+
+    // Add members from verified
+    if (ts.members && Array.isArray(ts.members)) {
+      ts.members.forEach(member => {
+        if (member.name && member.name !== 'Unknown') {
+          team.teammembers.push({
+            name: member.name,
+            role: member.role || 'Team Member',
+            link: member.github || member.linkedin || member.twitter || null
+          });
+        }
+      });
+    }
+
+    // Add team size from verified
+    if (ts.team_size || ts.members_count) {
+      team.members_count = ts.team_size || ts.members_count;
+    }
   }
 
-  // Add team size if available
-  if (tg.team_size) {
-    team.members_count = tg.team_size;
-  } else if (team.teammembers.length > 0) {
+  // Fallback to constitutional if no verified team data
+  if (team.teammembers.length === 0 && cr?.team_and_governance) {
+    const tg = cr.team_and_governance;
+    team.anonymous = team.anonymous || tg.anonymous === true;
+
+    if (tg.founders && Array.isArray(tg.founders)) {
+      tg.founders.forEach(founder => {
+        if (founder.name && founder.name !== 'Unknown') {
+          team.teammembers.push({
+            name: founder.name,
+            role: founder.role || 'Founder',
+            link: founder.github || founder.linkedin || founder.twitter || null
+          });
+        }
+      });
+    }
+
+    if (tg.team_size && !team.members_count) {
+      team.members_count = tg.team_size;
+    }
+  }
+
+  // Set members_count if not already set
+  if (!team.members_count && team.teammembers.length > 0) {
     team.members_count = team.teammembers.length;
   }
 
@@ -235,13 +376,35 @@ function mapTeam(projectData) {
  * Map technology and privacy features
  */
 function mapTechnology(projectData) {
+  const verified = projectData.verified;
   const cr = projectData.constitutional;
   const tech = {
     features: []
   };
 
-  // Map privacy techniques
-  if (cr?.technical_architecture?.privacy_technology) {
+  // Extract privacy features from verified key_features
+  if (verified?.key_features) {
+    Object.entries(verified.key_features).forEach(([featureName, featureData]) => {
+      if (featureData?.value) {
+        const description = featureData.value.toLowerCase();
+
+        // Map common privacy techniques
+        if (featureName.toLowerCase().includes('privacy') || description.includes('privacy')) {
+          // Parse out specific techniques
+          if (description.includes('ring signature')) tech.features.push('ring-signatures');
+          if (description.includes('stealth address')) tech.features.push('stealth-addresses');
+          if (description.includes('confidential')) tech.features.push('confidential-transactions');
+          if (description.includes('mixing') || description.includes('coin mix')) tech.features.push('mixing');
+          if (description.includes('zero-knowledge') || description.includes('zk-snark')) tech.features.push('zk-SNARKs');
+          if (description.includes('zero knowledge') || description.includes('zk proof')) tech.features.push('zk-SNARKs');
+          if (description.includes('untraceable') || description.includes('monero')) tech.features.push('ring-signatures');
+        }
+      }
+    });
+  }
+
+  // Fallback to constitutional privacy techniques if no verified features
+  if (tech.features.length === 0 && cr?.technical_architecture?.privacy_technology) {
     const techniques = cr.technical_architecture.privacy_technology;
 
     techniques.forEach(technique => {
@@ -271,8 +434,13 @@ function mapTechnology(projectData) {
     tech.type = 'Zero-knowledge proof system';
   }
 
-  // Add stack (languages)
-  if (cr?.technical_architecture?.language_breakdown) {
+  // Add stack (languages) - try verified first
+  if (verified?.technical_details?.programming_languages) {
+    const languages = verified.technical_details.programming_languages;
+    if (Array.isArray(languages)) {
+      tech.stack = languages.slice(0, 5); // Top 5 languages
+    }
+  } else if (cr?.technical_architecture?.language_breakdown) {
     const languages = Object.keys(cr.technical_architecture.language_breakdown);
     tech.stack = languages.slice(0, 5); // Top 5 languages
   }
