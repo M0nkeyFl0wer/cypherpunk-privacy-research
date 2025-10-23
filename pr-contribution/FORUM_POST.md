@@ -2,7 +2,7 @@
 
 > **Repository**: https://github.com/M0nkeyFl0wer/web3-privacy-ethereum-cypherpunk-research
 
-**TL;DR**: We have 110 deeply-researched Web3 privacy projects with constitutional-grade verification and quality assurance. We'd like to contribute this data to enhance the Web3Privacy Explorer database.
+**TL;DR**: We have 86 deeply-researched Web3 privacy projects (TIER 1+2: complete/substantial data) ready to contribute to enhance the Web3Privacy Explorer database. An additional 24 projects (TIER 3+4) are in our research pipeline for data completion.
 
 ---
 
@@ -10,12 +10,13 @@
 
 Hi Web3Privacy community!
 
-As a long-time contributor to Web3Privacy Now, I've been conducting in-depth research on Web3 privacy projects using a constitutional research methodology with multi-source verification. I've compiled comprehensive verified data on 110 projects and would love to contribute this to enhance the existing Web3Privacy database.
+As a long-time contributor to Web3Privacy Now, I've been conducting in-depth research on Web3 privacy projects using a constitutional research methodology with multi-source verification. I've compiled comprehensive verified data on 86 quality-assured projects and would love to contribute this to enhance the existing Web3Privacy database. An additional 24 projects are in completion phase.
 
 ## 📊 What I Have
 
 **My Research Dataset**:
-- **110 privacy projects** with deep technical analysis (verified, no templates)
+- **86 privacy projects** ready for publication (TIER 1+2: complete/substantial data with analysis, sources, reports)
+- **24 projects** in completion phase (TIER 3+4: need description/data enrichment)
 - **Constitutional research methodology**: Multi-source verification with confidence scoring
 - **Rich data per project**:
   - 8-12 detailed privacy techniques (cryptographic primitives)
@@ -32,13 +33,13 @@ As a long-time contributor to Web3Privacy Now, I've been conducting in-depth res
 - Analysis files (GitHub, smart contracts, OSINT)
 - Comprehensive markdown reports
 
-## 🎯 Overlap Analysis
+## 🎯 Overlap Analysis (86 Publication-Ready Projects)
 
-I've analyzed the overlap between my 110 quality-assured research projects and the Web3Privacy Explorer database (~745 projects):
+I've analyzed the overlap between my 86 publication-ready projects and the Web3Privacy Explorer database (~745 projects):
 
-- **37 projects in both databases** → I can enrich the existing entries with my detailed research
-- **73 projects only in my research** → New additions I can contribute to Web3Privacy
-- **~700 projects in the Web3Privacy database** → Opportunities to expand my research coverage
+- **~30 projects in both databases** (estimated) → Can enrich existing entries with detailed research
+- **~56 projects only in my research** (estimated) → New quality additions to contribute
+- **~700 projects in the Web3Privacy database** → Opportunities to expand research coverage over time
 
 ## 💎 Value Proposition
 
@@ -414,24 +415,29 @@ This depth of research is what I'm bringing to the Web3Privacy ecosystem - compl
 
 ## 📊 Current Progress
 
-**Phase 1: Quality Assurance & Template Cleanup**: ✅ Complete
+**Phase 1: Quality Assurance & Categorization**: ✅ Complete
 - Analyzed 129 total projects in repository
-- Identified and moved 19 incomplete template projects to `research-required/` folder
-- Identified and deleted 133 empty template files (metrics.json, TECHNICAL.md, CARD.md stubs)
-- Retained 110 verified quality projects with real analysis, sources, and research
-- Final deliverables/ contains only substantive research: README, analysis/ with JSON data, sources/, comprehensive reports
+- Moved 19 incomplete template projects to `research-required/` folder
+- Deleted 133 empty template files (metrics.json, TECHNICAL.md, CARD.md stubs)
+- Categorized remaining 110 projects by data completeness (TIER 1-4)
+- **TIER 1 (Complete): 43 projects** - Ready for publication ✅
+- **TIER 2 (Substantial): 43 projects** - Ready for publication ✅
+- **TIER 3 (Minimal): 2 projects** - Moved to research-required
+- **TIER 4 (Stub): 22 projects** - Moved to research-required for description/enrichment
 
-**Phase 2: Data Transformation (Next)**: 🔄 Ready to Start
-- Transform 110 quality projects to Web3Privacy YAML schema
+**Phase 2: Preparation for Contribution (Next)**: 🔄 Ready to Start
+- **86 publication-ready projects** (TIER 1+2) in `/deliverables/`
+  - 43 COMPLETE: Full analysis, sources/verified_data.json, comprehensive reports
+  - 43 SUBSTANTIAL: Good coverage, may be missing one component (usually sources/verified_data.json)
+- Transform to Web3Privacy YAML schema
 - Create before/after enrichment comparisons
-- Document field mappings and transformation methodology
-- Test on 5-10 pilot projects first
+- Pilot PR with top 5-10 projects
 
 **Phase 3: Community Contribution**: ⏳ Planned
 - Submit pilot PR with 5-10 highest-quality enrichments
 - Address community feedback
-- Roll out remaining 100+ projects in batches
-- Commit to ongoing maintenance
+- Roll out remaining 76+ projects in batches
+- 24 projects in research-required ready for future enrichment
 
 ## 🗣️ Questions for the Community
 
