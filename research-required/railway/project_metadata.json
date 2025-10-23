@@ -1,0 +1,26 @@
+{
+  "name": "railway",
+  "category": "wallet",
+  "description": "Railway Wallet - privacy mixer integration",
+  "tech_stack": [
+    "TypeScript",
+    "SCSS",
+    "JavaScript",
+    "Kotlin",
+    "Shell",
+    "HTML"
+  ],
+  "privacy_techniques": [
+    "RAILGUN Privacy System",
+    "{'scheme': 'zk-SNARKs (Zero-Knowledge Succinct Non-Interactive Argument of Knowledge)', 'proving_system': 'Groth16', 'circuit_count': 54, 'circuit_types': ['Multi-send transactions (various input/output combinations)', 'Private NFT shielding', 'Cross-contract interactions', '1 input to 2 outputs', '7 UTXOs to 2 destinations', 'Multiple inputs to single output'], 'circuit_setup': 'Trusted setup ceremony (Common Reference String generation)', 'proof_generation': 'Client-side proof generation, on-chain verification', 'cryptographic_foundation': 'Elliptic curve cryptography for succinct proofs'}",
+    "{'process': 'Shield existing ERC-20 tokens/NFTs into private 0zk address', 'encryption': 'Zero-Knowledge cryptography', 'data_encrypted': ['Sender address', 'Recipient address', 'Transaction amount', 'Token type', 'Wallet balances'], 'merkle_tree': {'type': 'Batch-incremental Merkle Tree', 'hash_function': 'Poseidon (SNARK-friendly)', 'shared_tree': 'All tokens share the same Merkle tree', 'tree_updates': 'Each shield/transfer creates new Root/Leaf', 'optimization': 'EVM-optimized Poseidon implementation (v3) for reduced gas costs'}}",
+    "{'private_sends': {'description': 'Valid blockchain transactions that transfer value without revealing details', 'hidden_data': ['Sender identity', 'Recipient identity', 'Transfer amount', 'Token type']}, 'private_defi': {'capabilities': ['Private token swaps', 'Private liquidity provision', 'Private yield farming', 'Private lending/borrowing', 'Private smart contract interactions'], 'liquidity': 'Maintains liquidity on original blockchain (no bridges)'}, 'utxo_model': {'description': 'Private UTXO-based accounting system', 'encryption': 'Poseidon hash-encrypted UTXOs', 'merkle_structure': 'UTXOs arranged in private Merkle Tree'}}",
+    "{'private_proofs_of_innocence': {'name': 'Private POI (Privacy Pools)', 'introduced': '2025', 'description': 'Zero-Knowledge proof system for cryptographic assurance of fund origin', 'mechanism': 'Users create ZK proof that funds are not part of publicly known undesirable transactions', 'privacy_preservation': 'Completely private, generated on-device', 'decentralization': 'Decentralized and privacy-preserving tool', 'impact': 'Enables regulatory compliance without sacrificing privacy'}, 'viewing_keys': {'purpose': 'Selective transaction transparency for auditing/compliance', 'control': 'User-controlled disclosure'}, 'tax_reporting': {'feature': 'Easy tax report generation', 'privacy': 'Maintains transaction privacy while enabling compliance'}}",
+    "{'transaction_unlinkability': 'Cannot link sender to recipient', 'amount_privacy': 'Transaction amounts fully encrypted', 'token_type_privacy': 'Token types not revealed in transactions', 'balance_privacy': 'Wallet balances encrypted and hidden', 'statistical_security': 'Proofs statistically impossible to fake', 'anonymity_set': 'All RAILGUN users share same anonymity set', 'no_bridges': 'Direct on-chain privacy without bridge risks', 'non_custodial': 'Fully self-custody solution'}",
+    "{'purpose': 'Submit transactions without revealing user IP/origin', 'architecture': 'Decentralized broadcaster network', 'privacy_benefit': 'Network-level privacy protection'}",
+    "{'user_activity_logs': 'Zero logs collected', 'data_sharing': 'No user data sent to developers or third parties', 'analytics': 'No tracking or analytics'}",
+    "{'future_optimizations': ['KZG commitments (planned for gas reduction)', 'WASM-based proof generation optimization'], 'cryptographic_primitives': ['Elliptic curve cryptography', 'Poseidon hash function', 'Groth16 zk-SNARKs', 'Merkle tree commitments', 'Blinded commitments']}"
+  ],
+  "github_url": null,
+  "website": null
+}

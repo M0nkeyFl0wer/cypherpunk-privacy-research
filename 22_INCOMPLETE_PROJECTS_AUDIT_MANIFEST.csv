@@ -1,0 +1,23 @@
+Project Name,File Count,Total Size (KB),README Present,Has Real Description,Constitutional JSON,Analysis Folder,Analysis Files,Reports Folder,Sources Folder,Verified Data JSON,Verified Data Size (KB),Images Folder,Project Metadata,Move to Research-Required,Reason
+dash,2,0,Yes,No,Yes,Yes,0,No,Yes,No,0,No,No,Yes,Template only (2-3 files; no research data)
+dusk-network,2,0,Yes,No,Yes,Yes,0,No,No,No,0,No,No,Yes,Template only (2-3 files; no research data)
+horizen,2,0,Yes,No,Yes,Yes,0,No,No,No,0,No,No,Yes,Template only (2-3 files; no research data)
+keep-network,2,0,Yes,No,Yes,Yes,0,No,No,No,0,No,No,Yes,Template only (2-3 files; no research data)
+nucypher,2,0,Yes,No,Yes,Yes,0,No,No,No,0,No,No,Yes,Template only (2-3 files; no research data)
+ronin,2,0,Yes,No,Yes,Yes,0,Yes,Yes,No,0,No,No,Yes,Template only (2-3 files; no research data)
+semaphoreconstitutional_research.json,2,2,Yes,Yes,Yes,No,0,No,No,No,0,No,No,Yes,Template only (2-3 files; no research data)
+hurricane-core,3,0,Yes,No,Yes,Yes,1,No,Yes,No,0,No,No,Yes,Template only (3 files; minimal analysis)
+taceo,3,0,Yes,No,Yes,Yes,1,No,Yes,No,0,No,No,Yes,Template only (3 files; minimal analysis)
+zksync-era,3,0,Yes,No,Yes,Yes,1,No,Yes,No,0,No,No,Yes,Template only (3 files; minimal analysis)
+samourai-wallet,4,15,Yes,No,Yes,No,0,Yes,No,No,0,No,No,Yes,Insufficient analysis data (no analysis folder; minimal files)
+--target,5,7,Yes,No,Yes,Yes,2,Yes,No,No,0,No,No,Yes,No real description and no verified research data
+mask,5,549,Yes,No,Yes,Yes,2,Yes,No,No,0,No,No,Yes,No real description and no verified research data
+nuconstruct,6,11,Yes,No,Yes,No,0,No,No,No,0,No,Yes,Yes,Insufficient analysis data (no analysis folder; no research data)
+nocturne,6,3,Yes,Yes,Yes,Yes,1,Yes,Yes,No,0,Yes,Yes,Yes,Insufficient analysis data (minimal analysis; no verified_data.json)
+zkbob,6,4,Yes,Yes,Yes,Yes,1,Yes,Yes,No,0,Yes,Yes,Yes,Insufficient analysis data (minimal analysis; no verified_data.json)
+ai-discovered,7,14,Yes,Yes,Yes,Yes,0,Yes,Yes,No,0,No,No,Yes,Insufficient analysis data (0 analysis files; no verified_data.json)
+curvy,7,31,Yes,No,Yes,Yes,1,No,Yes,No,0,No,Yes,Yes,Insufficient analysis data (minimal analysis; no verified_data.json)
+night,7,47,Yes,No,Yes,Yes,1,No,No,No,0,No,Yes,Yes,Insufficient analysis data (minimal analysis; no verified_data.json)
+railway,7,59,Yes,No,Yes,Yes,1,No,No,No,0,No,Yes,Yes,Insufficient analysis data (minimal analysis; no verified_data.json)
+railway-wallet,7,70,Yes,Yes,Yes,Yes,2,Yes,Yes,No,0,No,Yes,Yes,Minimal research content (missing verified_data.json)
+token-shielder,7,59,Yes,No,Yes,Yes,1,No,No,No,0,No,Yes,Yes,Insufficient analysis data (minimal analysis; no verified_data.json)

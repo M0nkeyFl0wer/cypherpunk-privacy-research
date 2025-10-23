@@ -1,0 +1,30 @@
+{
+  "id": "night",
+  "name": "Night",
+  "category": "stealth-addresses",
+  "shortDescription": "Stealth address protocol",
+  "stats": {
+    "techStack": 12,
+    "privacyTechniques": 8,
+    "confidence": 0.92
+  },
+  "highlights": {
+    "topPrivacy": [
+      "Stealth addresses (based on https://eprint.iacr.org/2018/990.pdf)",
+      "Zero-knowledge proofs (zkSNARKs)",
+      "Note encryption"
+    ],
+    "topTech": [
+      "Circom",
+      "Solidity",
+      "TypeScript"
+    ]
+  },
+  "links": {
+    "github": "https://github.com/nocturne-xyz/protocol",
+    "website": null,
+    "readme": "/deliverables/night/README.md"
+  },
+  "status": "COMPLETE",
+  "researchComplete": true
+}

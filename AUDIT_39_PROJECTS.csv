@@ -1,0 +1,40 @@
+project_name|file_count|size_kb|has_analysis|has_verified_data|decision|reason
+1inch-privacy|8|48|Y|N|KEEP|Has analysis/ with JSON files
+aleo|12|92|Y|N|KEEP|Has analysis/ with JSON files
+anoma|12|96|Y|N|KEEP|Has analysis/ with JSON files
+brave-browser|10|64|Y|N|KEEP|Has analysis/ with JSON files
+curve-privacy|8|48|Y|N|KEEP|Has analysis/ with JSON files
+curvy|7|64|Y|N|KEEP|Has analysis/ with JSON files
+dark-forest|8|44|Y|N|KEEP|Has analysis/ with JSON files
+dash|2|20|N|N|MOVE|No substantive analysis data
+dusk-network|2|16|N|N|MOVE|No substantive analysis data
+eth2-deposit-cli|8|44|Y|N|KEEP|Has analysis/ with JSON files
+farcaster|10|68|Y|N|KEEP|Has analysis/ with JSON files
+gitcoin-grants|8|44|Y|N|KEEP|Has analysis/ with JSON files
+hinkal|11|128|Y|N|KEEP|Has analysis/ with JSON files
+horizen|2|16|N|N|MOVE|No substantive analysis data
+hurricane-core|3|24|Y|N|KEEP|Has analysis/ with JSON files
+inco|10|96|Y|N|KEEP|Has analysis/ with JSON files
+keep-network|2|16|N|N|MOVE|No substantive analysis data
+lens-protocol|10|64|Y|N|KEEP|Has analysis/ with JSON files
+maci|10|64|Y|N|KEEP|Has analysis/ with JSON files
+mask|5|576|Y|N|KEEP|Has analysis/ with JSON files
+metamask-snaps|10|64|Y|N|KEEP|Has analysis/ with JSON files
+mina-protocol|8|48|Y|N|KEEP|Has analysis/ with JSON files
+night|7|76|Y|N|KEEP|Has analysis/ with JSON files
+nuconstruct|6|36|N|N|MOVE|No substantive analysis data
+nucypher|2|16|N|N|MOVE|No substantive analysis data
+pse--privacy---scaling-explorations-|8|48|Y|N|KEEP|Has analysis/ with JSON files
+railway|7|84|Y|N|KEEP|Has analysis/ with JSON files
+rarime|8|116|Y|N|KEEP|Has analysis/ with JSON files
+ronin|2|24|N|N|MOVE|No substantive analysis data
+samourai-wallet|4|36|N|N|MOVE|No substantive analysis data
+snapshot-x|8|44|Y|N|KEEP|Has analysis/ with JSON files
+starknet|10|72|Y|N|KEEP|Has analysis/ with JSON files
+taceo|3|24|Y|N|KEEP|Has analysis/ with JSON files
+--target|5|36|Y|N|KEEP|Has analysis/ with JSON files
+token-shielder|7|84|Y|N|KEEP|Has analysis/ with JSON files
+zama|9|88|Y|N|KEEP|Has analysis/ with JSON files
+zecrey|8|48|Y|N|KEEP|Has analysis/ with JSON files
+zksync-era|3|24|Y|N|KEEP|Has analysis/ with JSON files
+zupass|8|80|Y|N|KEEP|Has analysis/ with JSON files
