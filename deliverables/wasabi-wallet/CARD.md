@@ -1,6 +1,0 @@
-# Wasabi Wallet
-**Privacy**
-
-
-
----
