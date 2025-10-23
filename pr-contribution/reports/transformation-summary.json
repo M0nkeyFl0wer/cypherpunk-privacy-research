@@ -1,0 +1,528 @@
+{
+  "timestamp": "2025-10-23T21:38:21.390Z",
+  "totalProjects": 43,
+  "successful": 0,
+  "enrichment": 0,
+  "newProjects": 0,
+  "failed": 43,
+  "successRate": "0.0%",
+  "details": [
+    {
+      "projectId": "cake-wallet",
+      "projectName": "cake-wallet",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "circom",
+      "projectName": "circom",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "concordium",
+      "projectName": "concordium",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "darkfi",
+      "projectName": "darkfi",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "deeper-network",
+      "projectName": "deeper-network",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "elusiv",
+      "projectName": "elusiv",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "fileverse",
+      "projectName": "fileverse",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "findora",
+      "projectName": "findora",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "firo",
+      "projectName": "firo",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "fluidkey",
+      "projectName": "fluidkey",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "hopr",
+      "projectName": "hopr",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "iden3",
+      "projectName": "iden3",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "incognito",
+      "projectName": "incognito",
+      "status": "rejected",
+      "reason": "4 critical errors",
+      "issues": {
+        "totalIssues": 5,
+        "criticalIssues": 4,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "iron-fish",
+      "projectName": "iron-fish",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "mask-network",
+      "projectName": "mask-network",
+      "status": "rejected",
+      "reason": "4 critical errors",
+      "issues": {
+        "totalIssues": 5,
+        "criticalIssues": 4,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "mobilecoin",
+      "projectName": "mobilecoin",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "monero",
+      "projectName": "monero",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "mysterium-network",
+      "projectName": "mysterium-network",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "nighthawk-wallet",
+      "projectName": "nighthawk-wallet",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "oasis-network",
+      "projectName": "oasis-network",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "orchid",
+      "projectName": "orchid",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "oxen",
+      "projectName": "oxen",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "polygon-hermez",
+      "projectName": "polygon-hermez",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "polygon-zero",
+      "projectName": "polygon-zero",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "privatepool",
+      "projectName": "privatepool",
+      "status": "rejected",
+      "reason": "4 critical errors",
+      "issues": {
+        "totalIssues": 5,
+        "criticalIssues": 4,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "rotki",
+      "projectName": "Rotki",
+      "status": "rejected",
+      "reason": "4 critical errors",
+      "issues": {
+        "totalIssues": 6,
+        "criticalIssues": 4,
+        "warnings": 1,
+        "info": 1
+      }
+    },
+    {
+      "projectId": "semaphore",
+      "projectName": "semaphore",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "sentinel",
+      "projectName": "sentinel",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "sienna-network",
+      "projectName": "sienna-network",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "snarkjs",
+      "projectName": "snarkjs",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "starkex",
+      "projectName": "starkex",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "suterusu",
+      "projectName": "suterusu",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "tornado-cash",
+      "projectName": "tornado-cash",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "typhoon-network",
+      "projectName": "typhoon-network",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "wasabi-wallet",
+      "projectName": "wasabi-wallet",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "webb-protocol",
+      "projectName": "webb-protocol",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "xx-network",
+      "projectName": "xx-network",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "zano",
+      "projectName": "zano",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "zcash",
+      "projectName": "zcash",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "zeal",
+      "projectName": "zeal",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "zk-money",
+      "projectName": "zk-money",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "zksync",
+      "projectName": "zksync",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    },
+    {
+      "projectId": "zkvote",
+      "projectName": "zkvote",
+      "status": "rejected",
+      "reason": "3 critical errors",
+      "issues": {
+        "totalIssues": 4,
+        "criticalIssues": 3,
+        "warnings": 1,
+        "info": 0
+      }
+    }
+  ],
+  "errors": []
+}
