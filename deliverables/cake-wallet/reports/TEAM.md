@@ -1,5 +1,7 @@
 # Team & Leadership
 
+![Cake Wallet Logo](../media/cake_logo.png)
+
 **Research Date**: 2025-10-07
 **Constitution v2.0.0 Compliance**: ✅
 **Data Quality**: Tier 2 Partial (70% completeness)
@@ -11,6 +13,13 @@
 
 ### Vikrant Sharma
 **Role**: Founder & CEO
+
+<!--
+Team member photo placeholder:
+Photo path: media/vikrant-sharma.jpg (if available)
+If you have a photo of Vikrant Sharma, add it here:
+![Vikrant Sharma](../media/vikrant-sharma.jpg)
+-->
 
 **Background**:
 - Electrical engineering degree from Case Western Reserve University
