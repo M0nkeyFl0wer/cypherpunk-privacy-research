@@ -102,14 +102,4 @@ If you have a photo of Vikrant Sharma, add it here:
 | [ChangeNow Interview](https://changenow.io/blog/know-the-wallet-cake-wallet-founder-vikrant-sharma) | Profile/Interview | SECONDARY | 2025-10-07 |
 | [LinkedIn Company](https://www.linkedin.com/company/cakewallet) | Professional Network | SECONDARY | 2025-10-07 |
 
----
-
-## Constitutional Compliance ✅
-
-- **✅ Zero fabrication** - All data points from verified, primary sources
-- **✅ Multi-source verification** - Founder information verified across official + secondary sources
-- **✅ Confidence scoring** - Data includes reliability confidence levels
-- **✅ Honest gap reporting** - Extended team information gaps clearly documented
-- **✅ Source attribution** - All claims link to original sources
-- **✅ Transparent limitations** - Explains why fuller team info not available (privacy practices)
 

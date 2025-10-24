@@ -123,14 +123,4 @@ If security audits are critical for your evaluation:
 | [Release Notes](https://github.com/cake-tech/cake_wallet/releases) | Version History | ✅ Active |
 | Major Audit Firms | Public Databases | ✅ Searched |
 
----
-
-## Constitutional Compliance ✅
-
-- **✅ Honest assessment** - No fabricating audits that don't exist
-- **✅ Context provided** - Explaining why wallet apps may not have audits
-- **✅ Sources cited** - Where we searched and what we found
-- **✅ Gap reporting** - Clear about what we couldn't verify
-- **✅ Actionable guidance** - How to find more security information
-- **✅ Fair representation** - Acknowledging strong security features implemented
 

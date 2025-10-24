@@ -190,12 +190,3 @@
 | [docs.cakewallet.com](https://docs.cakewallet.com) | Documentation | PRIMARY |
 | [GitHub README](https://github.com/cake-tech/cake_wallet) | Project Info | PRIMARY |
 
----
-
-## Constitutional Compliance ✅
-
-- **✅ Verifiable claims** - All technical features from official sources
-- **✅ Accurate representation** - Describes actual capabilities
-- **✅ Honest limitations** - Notes what's not applicable
-- **✅ Source attribution** - All claims traceable
-- **✅ Accessible research** - Code publicly auditable
