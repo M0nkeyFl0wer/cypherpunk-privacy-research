@@ -1,0 +1,24 @@
+# Project data generated from constitutional research methodology
+# Multi-source verification with confidence scoring
+
+id: polygon-hermez
+name: polygon-hermez
+categories:
+  - infrastructure
+description: >-
+  ZK-rollup scaling solution for Ethereum using zero-knowledge proofs. Acquired by Polygon in 2021
+  for $250M and integrated as Polygon zkEVM. Features ZisK zkVM for verifiable execution of programs
+  written in high-level languages like Rust.
+links:
+  web: https://polygon.technology/polygon-zkevm
+  github: https://github.com/0xPolygonHermez
+
+# Constitutional metadata (proposed addition)
+# This section provides transparency about data quality and sources
+data_quality:
+  confidence: 0.6  # Data confidence score (0.0-1.0)
+  completeness: 0.44  # Data completeness (0.0-1.0)
+  verification_date: '2025-10-07T22:25:37.760641'
+  sources:
+    - type: unknown
+      verified: false

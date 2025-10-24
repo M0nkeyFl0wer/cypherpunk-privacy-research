@@ -1,0 +1,25 @@
+# Project data generated from constitutional research methodology
+# Multi-source verification with confidence scoring
+
+id: nighthawk-wallet
+name: Nighthawk Wallet
+categories:
+  - applications
+description: >-
+  Privacy-focused Zcash wallet for Android and iOS with shielded-by-default transactions. First
+  purely-z2z (shielded-to-shielded) ZEC wallet built using Electric Coin Company's reference SDKs.
+  Features auto-shielding, retail payment integration via Flexa, and non-custodial architecture.
+  Maintained by Nighthawk Apps.
+links:
+  web: https://nighthawkwallet.com
+  github: https://github.com/nighthawk-apps/nighthawk-android-wallet
+
+# Constitutional metadata (proposed addition)
+# This section provides transparency about data quality and sources
+data_quality:
+  confidence: 0.7  # Data confidence score (0.0-1.0)
+  completeness: 0.5  # Data completeness (0.0-1.0)
+  verification_date: '2025-10-07T20:30:00Z'
+  sources:
+    - type: unknown
+      verified: false

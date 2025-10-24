@@ -1,0 +1,23 @@
+# Project data generated from constitutional research methodology
+# Multi-source verification with confidence scoring
+
+id: orchid
+name: Orchid
+description: >-
+  The Orchid Protocol organizes bandwidth sellers into a structured peer-to-peer (P2P) network
+  termed the Orchid Market. A decentralized marketplace for AI, storage, and bandwidth that enables
+  customers to connect to the Orchid Market and pay bandwidth sellers in order to form a proxy chain
+  to a specific resource on the Internet.
+links:
+  web: https://www.orchid.com
+  github: https://github.com/OrchidTechnologies/orchid
+
+# Constitutional metadata (proposed addition)
+# This section provides transparency about data quality and sources
+data_quality:
+  confidence: 0.7  # Data confidence score (0.0-1.0)
+  completeness: 0.5  # Data completeness (0.0-1.0)
+  verification_date: '2025-10-07T22:25:37.701254'
+  sources:
+    - type: unknown
+      verified: false

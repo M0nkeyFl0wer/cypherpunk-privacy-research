@@ -1,0 +1,22 @@
+# Project data generated from constitutional research methodology
+# Multi-source verification with confidence scoring
+
+id: webb-protocol
+name: Webb Protocol
+categories:
+  - infrastructure
+description: >-
+  Zero-knowledge privacy protocol for building private, decentralized applications with cross-chain
+  capabilities
+links:
+  github: https://github.com/webb-tools
+
+# Constitutional metadata (proposed addition)
+# This section provides transparency about data quality and sources
+data_quality:
+  confidence: 0.6  # Data confidence score (0.0-1.0)
+  completeness: 0.44  # Data completeness (0.0-1.0)
+  verification_date: '2025-10-07T22:25:37.754743'
+  sources:
+    - type: unknown
+      verified: false

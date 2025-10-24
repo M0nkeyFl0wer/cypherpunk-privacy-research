@@ -1,0 +1,22 @@
+# Project data generated from constitutional research methodology
+# Multi-source verification with confidence scoring
+
+id: rotki
+name: Rotki
+description: >-
+  Rotki is an open-source, self-hosted portfolio management tool that puts privacy first. Unlike
+  most competitors which are closed-source SaaS platforms requiring users to hand over sensitive
+  financial data, Rotki keeps data encrypted and stored locally—ensuring users stay in control. The
+  application provides comprehensive portfolio tracking across multiple blockchains and exchanges,
+  transaction decoding, analytics, accounting, and tax reporting capabilities. It supports 80+ DeFi
+  protocols and runs on Windows, macOS, and Linux.
+links:
+  web: https://rotki.com
+  github: https://github.com/rotki/rotki
+
+# Constitutional metadata (proposed addition)
+# This section provides transparency about data quality and sources
+data_quality:
+  confidence: 0.6  # Data confidence score (0.0-1.0)
+  completeness: 0.44  # Data completeness (0.0-1.0)
+  verification_date: '2025-10-07T22:25:37.749845'

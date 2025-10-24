@@ -1,44 +1,59 @@
 {
-  "timestamp": "2025-10-23T21:38:21.390Z",
+  "timestamp": "2025-10-24T02:32:29.785Z",
   "totalProjects": 43,
-  "successful": 0,
-  "enrichment": 0,
-  "newProjects": 0,
-  "failed": 43,
-  "successRate": "0.0%",
+  "successful": 43,
+  "enrichment": 14,
+  "newProjects": 29,
+  "failed": 0,
+  "successRate": "100.0%",
   "details": [
     {
       "projectId": "cake-wallet",
-      "projectName": "cake-wallet",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "projectName": "Cake Wallet",
+      "status": "success",
+      "category": "new-projects",
+      "completeness": 50,
+      "confidence": 0.7,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "new-projects/cake-wallet.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 1,
+        "criticalIssues": 0,
         "warnings": 1,
         "info": 0
       }
     },
     {
       "projectId": "circom",
-      "projectName": "circom",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "projectName": "Circom",
+      "status": "success",
+      "category": "new-projects",
+      "completeness": 44,
+      "confidence": 0.6,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "new-projects/circom.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 1,
+        "criticalIssues": 0,
         "warnings": 1,
         "info": 0
       }
     },
     {
       "projectId": "concordium",
-      "projectName": "concordium",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "projectName": "Concordium",
+      "status": "success",
+      "category": "new-projects",
+      "completeness": 50,
+      "confidence": 0.7,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "new-projects/concordium.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 1,
+        "criticalIssues": 0,
         "warnings": 1,
         "info": 0
       }
@@ -46,191 +61,271 @@
     {
       "projectId": "darkfi",
       "projectName": "darkfi",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "status": "success",
+      "category": "new-projects",
+      "completeness": 50,
+      "confidence": 0.7,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "new-projects/darkfi.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 2,
+        "criticalIssues": 0,
         "warnings": 1,
-        "info": 0
+        "info": 1
       }
     },
     {
       "projectId": "deeper-network",
-      "projectName": "deeper-network",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "projectName": "Deeper Network",
+      "status": "success",
+      "category": "new-projects",
+      "completeness": 50,
+      "confidence": 0.7,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "new-projects/deeper-network.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 2,
+        "criticalIssues": 0,
         "warnings": 1,
-        "info": 0
+        "info": 1
       }
     },
     {
       "projectId": "elusiv",
-      "projectName": "elusiv",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "projectName": "Elusiv",
+      "status": "success",
+      "category": "new-projects",
+      "completeness": 50,
+      "confidence": 0.7,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "new-projects/elusiv.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 2,
+        "criticalIssues": 0,
         "warnings": 1,
-        "info": 0
+        "info": 1
       }
     },
     {
       "projectId": "fileverse",
       "projectName": "fileverse",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "status": "success",
+      "category": "new-projects",
+      "completeness": 44,
+      "confidence": 0.6,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "new-projects/fileverse.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 2,
+        "criticalIssues": 0,
         "warnings": 1,
-        "info": 0
+        "info": 1
       }
     },
     {
       "projectId": "findora",
-      "projectName": "findora",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "projectName": "Findora",
+      "status": "success",
+      "category": "new-projects",
+      "completeness": 50,
+      "confidence": 0.7,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "new-projects/findora.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 1,
+        "criticalIssues": 0,
         "warnings": 1,
         "info": 0
       }
     },
     {
       "projectId": "firo",
-      "projectName": "firo",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "projectName": "Firo",
+      "status": "success",
+      "category": "new-projects",
+      "completeness": 50,
+      "confidence": 0.7,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "new-projects/firo.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 2,
+        "criticalIssues": 0,
         "warnings": 1,
-        "info": 0
+        "info": 1
       }
     },
     {
       "projectId": "fluidkey",
-      "projectName": "fluidkey",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "projectName": "Fluidkey",
+      "status": "success",
+      "category": "new-projects",
+      "completeness": 50,
+      "confidence": 0.85,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "new-projects/fluidkey.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 1,
+        "criticalIssues": 0,
         "warnings": 1,
         "info": 0
       }
     },
     {
       "projectId": "hopr",
-      "projectName": "hopr",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "projectName": "HOPR",
+      "status": "success",
+      "category": "new-projects",
+      "completeness": 50,
+      "confidence": 0.7,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "new-projects/hopr.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 2,
+        "criticalIssues": 0,
         "warnings": 1,
-        "info": 0
+        "info": 1
       }
     },
     {
       "projectId": "iden3",
       "projectName": "iden3",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "status": "success",
+      "category": "new-projects",
+      "completeness": 50,
+      "confidence": 0.7,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "new-projects/iden3.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 2,
+        "criticalIssues": 0,
         "warnings": 1,
-        "info": 0
+        "info": 1
       }
     },
     {
       "projectId": "incognito",
-      "projectName": "incognito",
-      "status": "rejected",
-      "reason": "4 critical errors",
+      "projectName": "Incognito",
+      "status": "success",
+      "category": "enrichment",
+      "completeness": 33,
+      "confidence": 0.6,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "enrichment/incognito.yaml",
       "issues": {
-        "totalIssues": 5,
-        "criticalIssues": 4,
+        "totalIssues": 2,
+        "criticalIssues": 0,
         "warnings": 1,
-        "info": 0
+        "info": 1
       }
     },
     {
       "projectId": "iron-fish",
-      "projectName": "iron-fish",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "projectName": "Iron Fish",
+      "status": "success",
+      "category": "enrichment",
+      "completeness": 50,
+      "confidence": 0.7,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "enrichment/iron-fish.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 1,
+        "criticalIssues": 0,
         "warnings": 1,
         "info": 0
       }
     },
     {
       "projectId": "mask-network",
-      "projectName": "mask-network",
-      "status": "rejected",
-      "reason": "4 critical errors",
+      "projectName": "Mask Network",
+      "status": "success",
+      "category": "enrichment",
+      "completeness": 33,
+      "confidence": 0.6,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "enrichment/mask-network.yaml",
       "issues": {
-        "totalIssues": 5,
-        "criticalIssues": 4,
+        "totalIssues": 2,
+        "criticalIssues": 0,
         "warnings": 1,
-        "info": 0
+        "info": 1
       }
     },
     {
       "projectId": "mobilecoin",
-      "projectName": "mobilecoin",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "projectName": "MobileCoin",
+      "status": "success",
+      "category": "enrichment",
+      "completeness": 50,
+      "confidence": 0.7,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "enrichment/mobilecoin.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 2,
+        "criticalIssues": 0,
         "warnings": 1,
-        "info": 0
+        "info": 1
       }
     },
     {
       "projectId": "monero",
-      "projectName": "monero",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "projectName": "Monero",
+      "status": "success",
+      "category": "enrichment",
+      "completeness": 50,
+      "confidence": 0.7,
+      "privacyFeatures": 3,
+      "teamMembers": 0,
+      "yamlPath": "enrichment/monero.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
-        "warnings": 1,
+        "totalIssues": 0,
+        "criticalIssues": 0,
+        "warnings": 0,
         "info": 0
       }
     },
     {
       "projectId": "mysterium-network",
       "projectName": "mysterium-network",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "status": "success",
+      "category": "enrichment",
+      "completeness": 50,
+      "confidence": 0.7,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "enrichment/mysterium-network.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 2,
+        "criticalIssues": 0,
         "warnings": 1,
-        "info": 0
+        "info": 1
       }
     },
     {
       "projectId": "nighthawk-wallet",
-      "projectName": "nighthawk-wallet",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "projectName": "Nighthawk Wallet",
+      "status": "success",
+      "category": "new-projects",
+      "completeness": 50,
+      "confidence": 0.7,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "new-projects/nighthawk-wallet.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 1,
+        "criticalIssues": 0,
         "warnings": 1,
         "info": 0
       }
@@ -238,47 +333,67 @@
     {
       "projectId": "oasis-network",
       "projectName": "oasis-network",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "status": "success",
+      "category": "enrichment",
+      "completeness": 50,
+      "confidence": 0.7,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "enrichment/oasis-network.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 2,
+        "criticalIssues": 0,
         "warnings": 1,
-        "info": 0
+        "info": 1
       }
     },
     {
       "projectId": "orchid",
-      "projectName": "orchid",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "projectName": "Orchid",
+      "status": "success",
+      "category": "enrichment",
+      "completeness": 50,
+      "confidence": 0.7,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "enrichment/orchid.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 2,
+        "criticalIssues": 0,
         "warnings": 1,
-        "info": 0
+        "info": 1
       }
     },
     {
       "projectId": "oxen",
       "projectName": "oxen",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "status": "success",
+      "category": "new-projects",
+      "completeness": 50,
+      "confidence": 0.7,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "new-projects/oxen.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 2,
+        "criticalIssues": 0,
         "warnings": 1,
-        "info": 0
+        "info": 1
       }
     },
     {
       "projectId": "polygon-hermez",
       "projectName": "polygon-hermez",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "status": "success",
+      "category": "new-projects",
+      "completeness": 44,
+      "confidence": 0.6,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "new-projects/polygon-hermez.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 1,
+        "criticalIssues": 0,
         "warnings": 1,
         "info": 0
       }
@@ -286,155 +401,220 @@
     {
       "projectId": "polygon-zero",
       "projectName": "polygon-zero",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "status": "success",
+      "category": "new-projects",
+      "completeness": 44,
+      "confidence": 0.6,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "new-projects/polygon-zero.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
-        "warnings": 1,
-        "info": 0
-      }
-    },
-    {
-      "projectId": "privatepool",
-      "projectName": "privatepool",
-      "status": "rejected",
-      "reason": "4 critical errors",
-      "issues": {
-        "totalIssues": 5,
-        "criticalIssues": 4,
-        "warnings": 1,
-        "info": 0
-      }
-    },
-    {
-      "projectId": "rotki",
-      "projectName": "Rotki",
-      "status": "rejected",
-      "reason": "4 critical errors",
-      "issues": {
-        "totalIssues": 6,
-        "criticalIssues": 4,
+        "totalIssues": 2,
+        "criticalIssues": 0,
         "warnings": 1,
         "info": 1
       }
     },
     {
-      "projectId": "semaphore",
-      "projectName": "semaphore",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "projectId": "privatepool",
+      "projectName": "privatepool",
+      "status": "success",
+      "category": "new-projects",
+      "completeness": 33,
+      "confidence": 0.6,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "new-projects/privatepool.yaml",
+      "issues": {
+        "totalIssues": 2,
+        "criticalIssues": 0,
+        "warnings": 1,
+        "info": 1
+      }
+    },
+    {
+      "projectId": "rotki",
+      "projectName": "Rotki",
+      "status": "success",
+      "category": "new-projects",
+      "completeness": 44,
+      "confidence": 0.6,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "new-projects/rotki.yaml",
       "issues": {
         "totalIssues": 4,
-        "criticalIssues": 3,
+        "criticalIssues": 0,
+        "warnings": 2,
+        "info": 2
+      }
+    },
+    {
+      "projectId": "semaphore",
+      "projectName": "semaphore",
+      "status": "success",
+      "category": "new-projects",
+      "completeness": 50,
+      "confidence": 0.7,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "new-projects/semaphore.yaml",
+      "issues": {
+        "totalIssues": 2,
+        "criticalIssues": 0,
         "warnings": 1,
-        "info": 0
+        "info": 1
       }
     },
     {
       "projectId": "sentinel",
-      "projectName": "sentinel",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "projectName": "Sentinel",
+      "status": "success",
+      "category": "new-projects",
+      "completeness": 50,
+      "confidence": 0.7,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "new-projects/sentinel.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 2,
+        "criticalIssues": 0,
         "warnings": 1,
-        "info": 0
+        "info": 1
       }
     },
     {
       "projectId": "sienna-network",
       "projectName": "sienna-network",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "status": "success",
+      "category": "new-projects",
+      "completeness": 50,
+      "confidence": 0.7,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "new-projects/sienna-network.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 2,
+        "criticalIssues": 0,
         "warnings": 1,
-        "info": 0
+        "info": 1
       }
     },
     {
       "projectId": "snarkjs",
       "projectName": "snarkjs",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "status": "success",
+      "category": "new-projects",
+      "completeness": 44,
+      "confidence": 0.6,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "new-projects/snarkjs.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 2,
+        "criticalIssues": 0,
         "warnings": 1,
-        "info": 0
+        "info": 1
       }
     },
     {
       "projectId": "starkex",
-      "projectName": "starkex",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "projectName": "StarkEX",
+      "status": "success",
+      "category": "new-projects",
+      "completeness": 50,
+      "confidence": 0.7,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "new-projects/starkex.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 2,
+        "criticalIssues": 0,
         "warnings": 1,
-        "info": 0
+        "info": 1
       }
     },
     {
       "projectId": "suterusu",
-      "projectName": "suterusu",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "projectName": "Suterusu",
+      "status": "success",
+      "category": "new-projects",
+      "completeness": 55,
+      "confidence": 0.72,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "new-projects/suterusu.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 2,
+        "criticalIssues": 0,
         "warnings": 1,
-        "info": 0
+        "info": 1
       }
     },
     {
       "projectId": "tornado-cash",
-      "projectName": "tornado-cash",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "projectName": "Tornado Cash",
+      "status": "success",
+      "category": "enrichment",
+      "completeness": 50,
+      "confidence": 0.7,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "enrichment/tornado-cash.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 2,
+        "criticalIssues": 0,
         "warnings": 1,
-        "info": 0
+        "info": 1
       }
     },
     {
       "projectId": "typhoon-network",
       "projectName": "typhoon-network",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "status": "success",
+      "category": "new-projects",
+      "completeness": 50,
+      "confidence": 0.7,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "new-projects/typhoon-network.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 2,
+        "criticalIssues": 0,
         "warnings": 1,
-        "info": 0
+        "info": 1
       }
     },
     {
       "projectId": "wasabi-wallet",
-      "projectName": "wasabi-wallet",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "projectName": "Wasabi Wallet",
+      "status": "success",
+      "category": "enrichment",
+      "completeness": 50,
+      "confidence": 0.7,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "enrichment/wasabi-wallet.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 1,
+        "criticalIssues": 0,
         "warnings": 1,
         "info": 0
       }
     },
     {
       "projectId": "webb-protocol",
-      "projectName": "webb-protocol",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "projectName": "Webb Protocol",
+      "status": "success",
+      "category": "enrichment",
+      "completeness": 44,
+      "confidence": 0.6,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "enrichment/webb-protocol.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 1,
+        "criticalIssues": 0,
         "warnings": 1,
         "info": 0
       }
@@ -442,11 +622,16 @@
     {
       "projectId": "xx-network",
       "projectName": "xx-network",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "status": "success",
+      "category": "enrichment",
+      "completeness": 50,
+      "confidence": 0.7,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "enrichment/xx-network.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 1,
+        "criticalIssues": 0,
         "warnings": 1,
         "info": 0
       }
@@ -454,73 +639,103 @@
     {
       "projectId": "zano",
       "projectName": "zano",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "status": "success",
+      "category": "new-projects",
+      "completeness": 50,
+      "confidence": 0.7,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "new-projects/zano.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 2,
+        "criticalIssues": 0,
         "warnings": 1,
-        "info": 0
+        "info": 1
       }
     },
     {
       "projectId": "zcash",
       "projectName": "zcash",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "status": "success",
+      "category": "enrichment",
+      "completeness": 50,
+      "confidence": 0.7,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "enrichment/zcash.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 2,
+        "criticalIssues": 0,
         "warnings": 1,
-        "info": 0
+        "info": 1
       }
     },
     {
       "projectId": "zeal",
-      "projectName": "zeal",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "projectName": "Zeal",
+      "status": "success",
+      "category": "new-projects",
+      "completeness": 50,
+      "confidence": 0.7,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "new-projects/zeal.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 2,
+        "criticalIssues": 0,
         "warnings": 1,
-        "info": 0
+        "info": 1
       }
     },
     {
       "projectId": "zk-money",
-      "projectName": "zk-money",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "projectName": "zk.money",
+      "status": "success",
+      "category": "new-projects",
+      "completeness": 44,
+      "confidence": 0.6,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "new-projects/zk-money.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 1,
+        "criticalIssues": 0,
         "warnings": 1,
         "info": 0
       }
     },
     {
       "projectId": "zksync",
-      "projectName": "zksync",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "projectName": "zkSync",
+      "status": "success",
+      "category": "enrichment",
+      "completeness": 50,
+      "confidence": 0.7,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "enrichment/zksync.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 2,
+        "criticalIssues": 0,
         "warnings": 1,
-        "info": 0
+        "info": 1
       }
     },
     {
       "projectId": "zkvote",
-      "projectName": "zkvote",
-      "status": "rejected",
-      "reason": "3 critical errors",
+      "projectName": "zkVote",
+      "status": "success",
+      "category": "new-projects",
+      "completeness": 44,
+      "confidence": 0.6,
+      "privacyFeatures": 0,
+      "teamMembers": 0,
+      "yamlPath": "new-projects/zkvote.yaml",
       "issues": {
-        "totalIssues": 4,
-        "criticalIssues": 3,
+        "totalIssues": 2,
+        "criticalIssues": 0,
         "warnings": 1,
-        "info": 0
+        "info": 1
       }
     }
   ],

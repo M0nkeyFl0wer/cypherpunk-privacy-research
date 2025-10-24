@@ -1,0 +1,24 @@
+# Project data generated from constitutional research methodology
+# Multi-source verification with confidence scoring
+
+id: concordium
+name: Concordium
+categories:
+  - infrastructure
+description: >-
+  A privacy-focused, public, and permissionless Layer-1 blockchain with protocol-level identity
+  verification, zero-knowledge proofs, and built-in compliance features. First blockchain with
+  built-in identity verification at the protocol level.
+links:
+  web: https://www.concordium.com/
+  github: https://github.com/Concordium
+
+# Constitutional metadata (proposed addition)
+# This section provides transparency about data quality and sources
+data_quality:
+  confidence: 0.7  # Data confidence score (0.0-1.0)
+  completeness: 0.5  # Data completeness (0.0-1.0)
+  verification_date: '2025-10-07T22:25:37.758781'
+  sources:
+    - type: unknown
+      verified: false

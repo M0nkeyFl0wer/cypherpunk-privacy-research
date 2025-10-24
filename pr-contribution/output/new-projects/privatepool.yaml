@@ -1,0 +1,17 @@
+# Project data generated from constitutional research methodology
+# Multi-source verification with confidence scoring
+
+id: privatepool
+name: privatepool
+description: >-
+  Privacy Pools by 0xbow is a compliant way to anonymously transact on Ethereum. 0xbow blocks
+  illicit actors to ensure pool integrity.
+links:
+  web: https://privacypools.com/
+
+# Constitutional metadata (proposed addition)
+# This section provides transparency about data quality and sources
+data_quality:
+  confidence: 0.6  # Data confidence score (0.0-1.0)
+  completeness: 0.33  # Data completeness (0.0-1.0)
+  verification_date: '2025-10-07T22:25:37.700361'

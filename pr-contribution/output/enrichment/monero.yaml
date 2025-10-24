@@ -1,0 +1,28 @@
+# Project data generated from constitutional research methodology
+# Multi-source verification with confidence scoring
+
+id: monero
+name: Monero
+categories:
+  - currency
+description: >-
+  Monero: the secure, private, untraceable cryptocurrency. Private, decentralized cryptocurrency
+  that keeps your finances confidential and secure.
+links:
+  web: https://www.getmonero.org/
+  github: https://github.com/monero-project/monero
+technology:
+  features:
+    - ring-signatures
+    - stealth-addresses
+    - confidential-transactions
+
+# Constitutional metadata (proposed addition)
+# This section provides transparency about data quality and sources
+data_quality:
+  confidence: 0.7  # Data confidence score (0.0-1.0)
+  completeness: 0.5  # Data completeness (0.0-1.0)
+  verification_date: '2025-10-07T22:25:37.757852'
+  sources:
+    - type: unknown
+      verified: false

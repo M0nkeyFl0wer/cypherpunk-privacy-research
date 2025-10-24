@@ -1,0 +1,19 @@
+# Project data generated from constitutional research methodology
+# Multi-source verification with confidence scoring
+
+id: suterusu
+name: Suterusu
+description: Privacy technology project focused on Web3 security and anonymity.
+links:
+  web: https://suterusu.com
+  github: https://github.com/suterusu-team/suter-proofs
+
+# Constitutional metadata (proposed addition)
+# This section provides transparency about data quality and sources
+data_quality:
+  confidence: 0.72  # Data confidence score (0.0-1.0)
+  completeness: 0.55  # Data completeness (0.0-1.0)
+  verification_date: '2025-10-07'
+  sources:
+    - type: unknown
+      verified: false

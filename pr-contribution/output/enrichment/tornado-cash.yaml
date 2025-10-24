@@ -1,0 +1,23 @@
+# Project data generated from constitutional research methodology
+# Multi-source verification with confidence scoring
+
+id: tornado-cash
+name: Tornado Cash
+description: >-
+  Fully decentralized, non-custodial cryptocurrency mixer protocol that runs on Ethereum Virtual
+  Machine-compatible networks, enabling private transactions using zero-knowledge proof technology.
+  Tornado Cash was sanctioned by OFAC in August 2022 but had sanctions lifted in March 2025
+  following a Fifth Circuit court ruling.
+links:
+  web: https://tornado.cash
+  github: https://github.com/tornadocash
+
+# Constitutional metadata (proposed addition)
+# This section provides transparency about data quality and sources
+data_quality:
+  confidence: 0.7  # Data confidence score (0.0-1.0)
+  completeness: 0.5  # Data completeness (0.0-1.0)
+  verification_date: '2025-10-07T22:25:37.704606'
+  sources:
+    - type: unknown
+      verified: false

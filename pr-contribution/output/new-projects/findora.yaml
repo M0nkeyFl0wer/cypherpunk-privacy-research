@@ -1,0 +1,25 @@
+# Project data generated from constitutional research methodology
+# Multi-source verification with confidence scoring
+
+id: findora
+name: Findora
+categories:
+  - infrastructure
+description: >-
+  Findora is a Layer-1 blockchain that accelerates mainstream adoption through powerful
+  zero-knowledge solutions and SDKs. It is a decentralized, privacy-preserving smart contract
+  platform featuring programmable privacy, secured by a decentralized network of global validators
+  running the Tendermint consensus mechanism.
+links:
+  web: https://findora.org/
+  github: https://github.com/FindoraNetwork
+
+# Constitutional metadata (proposed addition)
+# This section provides transparency about data quality and sources
+data_quality:
+  confidence: 0.7  # Data confidence score (0.0-1.0)
+  completeness: 0.5  # Data completeness (0.0-1.0)
+  verification_date: '2025-10-07'
+  sources:
+    - type: unknown
+      verified: false

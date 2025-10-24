@@ -1,0 +1,23 @@
+# Project data generated from constitutional research methodology
+# Multi-source verification with confidence scoring
+
+id: fluidkey
+name: Fluidkey
+categories:
+  - applications
+description: >-
+  Privacy-preserving wallet using stealth addresses to allow users to receive and manage funds
+  onchain without publicly linking them to their identity. Implements ERC-5564 standard for stealth
+  addresses with integration to ENS.
+links:
+  web: https://fluidkey.com
+
+# Constitutional metadata (proposed addition)
+# This section provides transparency about data quality and sources
+data_quality:
+  confidence: 0.85  # Data confidence score (0.0-1.0)
+  completeness: 0.5  # Data completeness (0.0-1.0)
+  verification_date: '2025-10-07T22:25:37.753520'
+  sources:
+    - type: unknown
+      verified: false
