@@ -502,51 +502,17 @@ Beyond these 43 publication-ready projects, I have **700+ Web3 privacy projects*
 
 Rather than have me alone research 700+ projects, I'm proposing a **community-driven methodology** where Web3Privacy contributors can use my constitutional research framework to complete the remaining projects.
 
-### 👥 Join the Constitutional Research Training Program
+### 👥 Scaling the Research Together
 
-I'm opening up the constitutional research methodology to the Web3Privacy community. We're looking for contributors who want to:
+Currently, I'm using **AI agents** to automate much of the data collection and verification work. This approach lets us process 700+ projects at scale while maintaining quality standards through constitutional research methodology.
 
-**Research Roles We Need**:
-1. **GitHub & Code Analysts**: Review repositories, extract tech stack, assess code quality
-2. **Blockchain Analysts**: Verify smart contracts, analyze on-chain metrics, token economics
-3. **Security & OPSEC Researchers**: Audit assessments, threat modeling, security posture
-4. **Community Researchers**: Team verification (LinkedIn/Twitter/GitHub cross-reference), Discord/governance analysis
-5. **Documentation Specialists**: Organize findings, write reports, fact-check and source attribution
+**If you're interested in helping scale this research further** - whether through improving the automation, contributing domain expertise, or helping verify specific project categories - please reach out! The goal is to transform the Web3Privacy database from 745 projects (breadth) to 745 projects with **deep constitutional research** (depth + breadth = completeness).
 
-**What You Get**:
-- ✅ **Training Handbook**: Step-by-step methodology documentation
-- ✅ **Research Templates**: Standardized data collection formats
-- ✅ **Verification Checklist**: Quality assurance criteria
-- ✅ **Tool Scripts**: Automated data collection helpers
-- ✅ **Community Credit**: Your name on project attribution
-- ✅ **Contribution Guidelines**: How to format contributions for W3P
-
-**How It Works**:
-1. Choose an unresearched project (or ask for assignment)
-2. Follow constitutional research methodology (5-phase process)
-3. Collect data, verify sources, score confidence
-4. Generate project JSON and reports
-5. Submit for review (peer verification)
-6. Once approved → rolls into W3P database
-
-### The Constitutional Research Framework
-
-**Our 5-Phase System** (simplified for contributors):
-1. **Gather**: Multi-source data collection (GitHub, website, documentation, team)
-2. **Analyze**: Automated + manual analysis (code, blockchain, OPSEC)
-3. **Verify**: Cross-reference across 2-3+ independent sources
-4. **Score**: Assign confidence (0.0-1.0) based on verification
-5. **Document**: Record gaps, sources, methodology transparently
-
-**Training & Support**:
-- 📖 Detailed methodology handbook (living document)
-- 🛠️ Research templates and checklists
-- 🤖 Automated helper scripts (GitHub API, blockchain data, OSINT)
-- 👥 Peer review process (quality assurance)
-- 💬 Community Slack/Discord (real-time help)
-- 📊 Leaderboard (track contributions, celebrate progress)
-
-**The Goal**: Transform the Web3Privacy database from 745 projects (breadth) to 745 projects with **deep constitutional research** (depth + breadth = completeness).
+**Contact me to discuss**:
+- Contributing to the research effort
+- Improving the constitutional research framework
+- Domain-specific expertise (cryptography, security, blockchain, etc.)
+- Scaling strategies for the remaining 700+ projects
 
 ---
 
