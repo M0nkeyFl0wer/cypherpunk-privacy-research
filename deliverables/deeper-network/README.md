@@ -1,7 +1,7 @@
 # deeper-network
 
 ## 📝 Description
-Privacy technology project focused on Web3 security and anonymity.
+deeper chain is the blockchain layer for deeper network.
 
 ## 🔗 Links
 - **Website**: Not available
@@ -20,8 +20,6 @@ Privacy Technology
 ## 👥 Team
 See [TEAM.md](reports/TEAM.md) for detailed team information.
 
-## 🛠️ Technical Details
-See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
 
 ## 🔒 Security
 See [SECURITY.md](reports/SECURITY.md) for security analysis.

@@ -1,7 +1,7 @@
 # 
 
 ## 📝 Description
-Privacy technology project focused on Web3 security and anonymity.
+A portfolio tracking, analytics, accounting and management application that protects your privacy
 
 ## 🔗 Links
 - **Website**: https://rotki.com
@@ -21,7 +21,7 @@ Privacy Technology
 See [TEAM.md](reports/TEAM.md) for detailed team information.
 
 ## 🛠️ Technical Details
-See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
+See [TECHNICAL.md](reports/technical_analysis.md) for technical documentation.
 
 ## 🔒 Security
 See [SECURITY.md](reports/SECURITY.md) for security analysis.

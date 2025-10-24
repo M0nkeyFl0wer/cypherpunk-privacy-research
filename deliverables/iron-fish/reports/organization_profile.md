@@ -2,7 +2,6 @@
 
 **Generated**: 2025-10-07
 **Source**: org_intelligence.json
-**Constitutional Compliance**: ✅ v2.0.0
 
 ---
 
@@ -66,5 +65,4 @@
 
 ---
 
-**Constitutional Notice**: All data verified from real sources. No synthetic information.
 **Research Date**: 2025-10-07

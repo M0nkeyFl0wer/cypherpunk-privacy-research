@@ -1,7 +1,10 @@
 # darkfi
 
+![darkfi logo](https://raw.githubusercontent.com/M0nkeyFl0wer/web3-privacy-ethereum-cypherpunk-research/master/deliverables/darkfi/media/darkfi-github-avatar.png)
+
+
 ## 📝 Description
-Privacy technology project focused on Web3 security and anonymity.
+Anonymous. Uncensored. Sovereign.
 
 ## 🔗 Links
 - **Website**: https://darkfi.org
@@ -20,8 +23,6 @@ Privacy Technology
 ## 👥 Team
 See [TEAM.md](reports/TEAM.md) for detailed team information.
 
-## 🛠️ Technical Details
-See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
 
 ## 🔒 Security
 See [SECURITY.md](reports/SECURITY.md) for security analysis.

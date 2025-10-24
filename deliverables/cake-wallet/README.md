@@ -30,6 +30,19 @@ See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
 ## 🔒 Security
 See [SECURITY.md](reports/SECURITY.md) for security analysis.
 
+## 💻 Code Review
+See [CODE_REVIEW.md](reports/CODE_REVIEW.md) for code repository analysis and development activity.
+
 ---
+
+## 📚 Documentation
+
+### Internal Reference Guides
+- [DATA_FLOW.md](DATA_FLOW.md) - Complete data architecture and flow documentation
+- [SCALING_GUIDE.md](SCALING_GUIDE.md) - Instructions for scaling this template to 42 projects
+- [WEEKEND_TASKS.md](WEEKEND_TASKS.md) - Reference data for blockchain projects (not applicable to wallet apps)
+
+---
+
 *Research completed with Constitutional Research v2.0.0*
-*Last updated: 2025-10-10*
+*Last updated: 2025-10-24*

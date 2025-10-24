@@ -1,7 +1,10 @@
 # iden3
 
+![iden3 logo](https://raw.githubusercontent.com/M0nkeyFl0wer/web3-privacy-ethereum-cypherpunk-research/master/deliverables/iden3/media/iden3-logo.svg)
+
+
 ## 📝 Description
-Privacy technology project focused on Web3 security and anonymity.
+iden3 documentation
 
 ## 🔗 Links
 - **Website**: https://iden3.com
@@ -20,8 +23,6 @@ Privacy Technology
 ## 👥 Team
 See [TEAM.md](reports/TEAM.md) for detailed team information.
 
-## 🛠️ Technical Details
-See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
 
 ## 🔒 Security
 See [SECURITY.md](reports/SECURITY.md) for security analysis.

@@ -1,0 +1,820 @@
+version: '1.0'
+generated_at: '2025-10-24T15:49:50.137880'
+total_projects: 43
+source: Web3 Privacy Ethereum Cypherpunk Research
+projects:
+- id: cake-wallet
+  name: Cake Wallet
+  slug: cake-wallet
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: cake-wallet/reports/TEAM.md
+    security: cake-wallet/reports/SECURITY.md
+    technical: cake-wallet/reports/TECHNICAL.md
+    code-review: cake-wallet/reports/CODE_REVIEW.md
+  description: Open-source, non-custodial, privacy-focused multi-currency cryptocurrency
+    wallet supporting Monero, Bitcoin, Ethereum, Litecoin, and other cryptocurrencies.
+    Features built-in exchange, native Tor integration, Bitcoin privacy tools (Silent
+    Payments, Payjoin), and best-in-class Monero support.
+  website: https://cakewallet.com
+  github: https://github.com/cake-tech/cake_wallet
+  category: privacy-wallet
+  tech_stack:
+  - Dart
+  - Flutter
+  - C++
+  - Swift
+  - Java
+  - Kotlin
+  privacy_techniques:
+  - Tor integration
+  - Silent Payments (Bitcoin)
+  - Payjoin (Bitcoin)
+  - Native Monero support
+  - Client-side encryption
+  - Non-custodial design
+  blockchain_platforms:
+  - Bitcoin
+  - Monero
+  - Ethereum
+  - Litecoin
+  - Haven
+  repository:
+    stars: 1213
+    forks: 267
+    watchers: 1213
+    contributors: 66
+    open_issues: 238
+    license: MIT License
+    primary_language: Dart
+    last_commit: '2025-10-03T17:58:37Z'
+    activity_level: very_active
+    size_kb: 94782
+- id: circom
+  name: Circom
+  slug: circom
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: circom/reports/TEAM.md
+    security: circom/reports/SECURITY.md
+    technical-analysis: circom/reports/technical_analysis.md
+    code-review: circom/reports/CODE_REVIEW.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: concordium
+  name: Concordium
+  slug: concordium
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: concordium/reports/TEAM.md
+    security: concordium/reports/SECURITY.md
+    code-review: concordium/reports/CODE_REVIEW.md
+    opsec-vulnerability-assessment: concordium/reports/opsec_vulnerability_assessment.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: darkfi
+  name: darkfi
+  slug: darkfi
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: darkfi/reports/TEAM.md
+    security: darkfi/reports/SECURITY.md
+    code-review: darkfi/reports/CODE_REVIEW.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: deeper-network
+  name: Deeper Network
+  slug: deeper-network
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: deeper-network/reports/TEAM.md
+    security: deeper-network/reports/SECURITY.md
+    code-review: deeper-network/reports/CODE_REVIEW.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: elusiv
+  name: Elusiv
+  slug: elusiv
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: elusiv/reports/TEAM.md
+    security: elusiv/reports/SECURITY.md
+    code-review: elusiv/reports/CODE_REVIEW.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: fileverse
+  name: fileverse
+  slug: fileverse
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: fileverse/reports/TEAM.md
+    security: fileverse/reports/SECURITY.md
+    technical-analysis: fileverse/reports/technical_analysis.md
+    code-review: fileverse/reports/CODE_REVIEW.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: findora
+  name: Findora
+  slug: findora
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: findora/reports/TEAM.md
+    security: findora/reports/SECURITY.md
+    code-review: findora/reports/CODE_REVIEW.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: firo
+  name: Firo
+  slug: firo
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: firo/reports/TEAM.md
+    security: firo/reports/SECURITY.md
+    code-review: firo/reports/CODE_REVIEW.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: fluidkey
+  name: Fluidkey
+  slug: fluidkey
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: fluidkey/reports/TEAM.md
+    security: fluidkey/reports/SECURITY.md
+    technical-analysis: fluidkey/reports/technical_analysis.md
+    code-review: fluidkey/reports/CODE_REVIEW.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: hopr
+  name: HOPR
+  slug: hopr
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: hopr/reports/TEAM.md
+    security: hopr/reports/SECURITY.md
+    technical-analysis: hopr/reports/technical_analysis.md
+    code-review: hopr/reports/CODE_REVIEW.md
+    opsec-vulnerability-assessment: hopr/reports/opsec_vulnerability_assessment.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: iden3
+  name: iden3
+  slug: iden3
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: iden3/reports/TEAM.md
+    security: iden3/reports/SECURITY.md
+    code-review: iden3/reports/CODE_REVIEW.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: incognito
+  name: Incognito
+  slug: incognito
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: incognito/reports/TEAM.md
+    security: incognito/reports/SECURITY.md
+    technical-analysis: incognito/reports/technical_analysis.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: iron-fish
+  name: Iron Fish
+  slug: iron-fish
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: iron-fish/reports/TEAM.md
+    security: iron-fish/reports/SECURITY.md
+    technical-analysis: iron-fish/reports/technical_analysis.md
+    code-review: iron-fish/reports/CODE_REVIEW.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: mask-network
+  name: Mask Network
+  slug: mask-network
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: mask-network/reports/TEAM.md
+    security: mask-network/reports/SECURITY.md
+    technical-analysis: mask-network/reports/technical_analysis.md
+    code-review: mask-network/reports/CODE_REVIEW.md
+    opsec-vulnerability-assessment: mask-network/reports/opsec_vulnerability_assessment.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: mobilecoin
+  name: MobileCoin
+  slug: mobilecoin
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: mobilecoin/reports/TEAM.md
+    security: mobilecoin/reports/SECURITY.md
+    code-review: mobilecoin/reports/CODE_REVIEW.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: monero
+  name: monero
+  slug: monero
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: monero/reports/TEAM.md
+    security: monero/reports/SECURITY.md
+    code-review: monero/reports/CODE_REVIEW.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: mysterium-network
+  name: mysterium-network
+  slug: mysterium-network
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: mysterium-network/reports/TEAM.md
+    security: mysterium-network/reports/SECURITY.md
+    code-review: mysterium-network/reports/CODE_REVIEW.md
+    opsec-vulnerability-assessment: mysterium-network/reports/opsec_vulnerability_assessment.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: nighthawk-wallet
+  name: Nighthawk Wallet
+  slug: nighthawk-wallet
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: nighthawk-wallet/reports/TEAM.md
+    security: nighthawk-wallet/reports/SECURITY.md
+    code-review: nighthawk-wallet/reports/CODE_REVIEW.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: oasis-network
+  name: oasis-network
+  slug: oasis-network
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: oasis-network/reports/TEAM.md
+    security: oasis-network/reports/SECURITY.md
+    code-review: oasis-network/reports/CODE_REVIEW.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: orchid
+  name: Orchid
+  slug: orchid
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: orchid/reports/TEAM.md
+    security: orchid/reports/SECURITY.md
+    code-review: orchid/reports/CODE_REVIEW.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: oxen
+  name: oxen
+  slug: oxen
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: oxen/reports/TEAM.md
+    security: oxen/reports/SECURITY.md
+    code-review: oxen/reports/CODE_REVIEW.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: polygon-hermez
+  name: polygon-hermez
+  slug: polygon-hermez
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: polygon-hermez/reports/TEAM.md
+    security: polygon-hermez/reports/SECURITY.md
+    technical-analysis: polygon-hermez/reports/technical_analysis.md
+    code-review: polygon-hermez/reports/CODE_REVIEW.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: polygon-zero
+  name: polygon-zero
+  slug: polygon-zero
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: polygon-zero/reports/TEAM.md
+    security: polygon-zero/reports/SECURITY.md
+    technical-analysis: polygon-zero/reports/technical_analysis.md
+    code-review: polygon-zero/reports/CODE_REVIEW.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: privatepool
+  name: privatepool
+  slug: privatepool
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: privatepool/reports/TEAM.md
+    security: privatepool/reports/SECURITY.md
+    technical-analysis: privatepool/reports/technical_analysis.md
+    code-review: privatepool/reports/CODE_REVIEW.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: rotki
+  name: rotki
+  slug: rotki
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: rotki/reports/TEAM.md
+    security: rotki/reports/SECURITY.md
+    technical-analysis: rotki/reports/technical_analysis.md
+    code-review: rotki/reports/CODE_REVIEW.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: semaphore
+  name: semaphore
+  slug: semaphore
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: semaphore/reports/TEAM.md
+    security: semaphore/reports/SECURITY.md
+    technical-analysis: semaphore/reports/technical_analysis.md
+    code-review: semaphore/reports/CODE_REVIEW.md
+    opsec-vulnerability-assessment: semaphore/reports/opsec_vulnerability_assessment.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: sentinel
+  name: Sentinel
+  slug: sentinel
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: sentinel/reports/TEAM.md
+    security: sentinel/reports/SECURITY.md
+    code-review: sentinel/reports/CODE_REVIEW.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: sienna-network
+  name: sienna-network
+  slug: sienna-network
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: sienna-network/reports/TEAM.md
+    security: sienna-network/reports/SECURITY.md
+    code-review: sienna-network/reports/CODE_REVIEW.md
+    opsec-vulnerability-assessment: sienna-network/reports/opsec_vulnerability_assessment.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: snarkjs
+  name: snarkjs
+  slug: snarkjs
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: snarkjs/reports/TEAM.md
+    security: snarkjs/reports/SECURITY.md
+    technical-analysis: snarkjs/reports/technical_analysis.md
+    code-review: snarkjs/reports/CODE_REVIEW.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: starkex
+  name: StarkEX
+  slug: starkex
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: starkex/reports/TEAM.md
+    security: starkex/reports/SECURITY.md
+    code-review: starkex/reports/CODE_REVIEW.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: suterusu
+  name: Suterusu
+  slug: suterusu
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: suterusu/reports/TEAM.md
+    security: suterusu/reports/SECURITY.md
+    code-review: suterusu/reports/CODE_REVIEW.md
+    opsec-vulnerability-assessment: suterusu/reports/opsec_vulnerability_assessment.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: tornado-cash
+  name: Tornado Cash
+  slug: tornado-cash
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: tornado-cash/reports/TEAM.md
+    security: tornado-cash/reports/SECURITY.md
+    technical-analysis: tornado-cash/reports/technical_analysis.md
+    code-review: tornado-cash/reports/CODE_REVIEW.md
+    opsec-vulnerability-assessment: tornado-cash/reports/opsec_vulnerability_assessment.md
+  description: Fully decentralized, non-custodial cryptocurrency mixer protocol that
+    runs on Ethereum Virtual Machine-compatible networks, enabling private transactions
+    using zero-knowledge proof technology. Tornado Cash was sanctioned by OFAC in
+    August 2022 but had sanctions lifted in March 2025 following a Fifth Circuit court
+    ruling.
+  website: ''
+  github: ''
+  category: privacy_mixer
+  tech_stack:
+  - Circom
+  - Websnark
+  - Solidity
+  - JavaScript
+  privacy_techniques:
+  - zk-SNARKs
+  - multi-party computation (MPC)
+  blockchain_platforms:
+  - avalanche
+  - arbitrum
+  - optimism
+  - gnosis_chain
+  - binance_smart_chain
+  - ethereum
+  - polygon
+- id: typhoon-network
+  name: typhoon-network
+  slug: typhoon-network
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: typhoon-network/reports/TEAM.md
+    security: typhoon-network/reports/SECURITY.md
+    code-review: typhoon-network/reports/CODE_REVIEW.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: wasabi-wallet
+  name: Wasabi Wallet
+  slug: wasabi-wallet
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: wasabi-wallet/reports/TEAM.md
+    security: wasabi-wallet/reports/SECURITY.md
+    code-review: wasabi-wallet/reports/CODE_REVIEW.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: webb-protocol
+  name: Webb Protocol
+  slug: webb-protocol
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: webb-protocol/reports/TEAM.md
+    security: webb-protocol/reports/SECURITY.md
+    technical-analysis: webb-protocol/reports/technical_analysis.md
+    code-review: webb-protocol/reports/CODE_REVIEW.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: xx-network
+  name: xx-network
+  slug: xx-network
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: xx-network/reports/TEAM.md
+    security: xx-network/reports/SECURITY.md
+    code-review: xx-network/reports/CODE_REVIEW.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: zano
+  name: zano
+  slug: zano
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: zano/reports/TEAM.md
+    security: zano/reports/SECURITY.md
+    code-review: zano/reports/CODE_REVIEW.md
+    opsec-vulnerability-assessment: zano/reports/opsec_vulnerability_assessment.md
+  description: ''
+  website:
+    primary_url: https://zano.org
+    blog_url: https://blog.zano.org/
+    explorer_url: https://explorer.zano.org/
+    confidence: 0.95
+    sources:
+    - url: https://zano.org
+      method: direct HTTP curl
+      status_code: 200
+      verification: HTTPS verified, Cloudflare-secured
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: zcash
+  name: zcash
+  slug: zcash
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: zcash/reports/TEAM.md
+    security: zcash/reports/SECURITY.md
+    code-review: zcash/reports/CODE_REVIEW.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: zeal
+  name: Zeal
+  slug: zeal
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: zeal/reports/TEAM.md
+    security: zeal/reports/SECURITY.md
+    code-review: zeal/reports/CODE_REVIEW.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: zk-money
+  name: zk.money
+  slug: zk-money
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: zk-money/reports/TEAM.md
+    security: zk-money/reports/SECURITY.md
+    technical-analysis: zk-money/reports/technical_analysis.md
+    code-review: zk-money/reports/CODE_REVIEW.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: zksync
+  name: zkSync
+  slug: zksync
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: zksync/reports/TEAM.md
+    security: zksync/reports/SECURITY.md
+    technical-analysis: zksync/reports/technical_analysis.md
+    code-review: zksync/reports/CODE_REVIEW.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []
+- id: zkvote
+  name: zkVote
+  slug: zkvote
+  status: active
+  verified: true
+  last_update: '2025-10-24'
+  reports:
+    team: zkvote/reports/TEAM.md
+    security: zkvote/reports/SECURITY.md
+    technical-analysis: zkvote/reports/technical_analysis.md
+    code-review: zkvote/reports/CODE_REVIEW.md
+  description: ''
+  website: ''
+  github: ''
+  category: other
+  tech_stack: []
+  privacy_techniques: []
+  blockchain_platforms: []

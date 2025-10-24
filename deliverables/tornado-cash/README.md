@@ -1,7 +1,7 @@
 # tornado-cash
 
 ## 📝 Description
-Privacy technology project focused on Web3 security and anonymity.
+Tornado cash. Non-custodial private transactions on Ethereum. 
 
 ## 🔗 Links
 - **Website**: https://tornado-cash.org
@@ -21,7 +21,7 @@ Privacy Technology
 See [TEAM.md](reports/TEAM.md) for detailed team information.
 
 ## 🛠️ Technical Details
-See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
+See [TECHNICAL.md](reports/technical_analysis.md) for technical documentation.
 
 ## 🔒 Security
 See [SECURITY.md](reports/SECURITY.md) for security analysis.

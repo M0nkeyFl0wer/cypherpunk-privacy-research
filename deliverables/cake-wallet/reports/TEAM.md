@@ -2,10 +2,7 @@
 
 ![Cake Wallet Logo](../media/cake_logo.png)
 
-**Research Date**: 2025-10-07
-**Constitution v2.0.0 Compliance**: ✅
-**Data Quality**: Tier 2 Partial (70% completeness)
-**Average Confidence**: 0.95
+**Last Updated**: 2025-10-07
 
 ---
 
@@ -36,8 +33,6 @@ If you have a photo of Vikrant Sharma, add it here:
 - GitHub: [@cake-tech](https://github.com/cake-tech)
 - LinkedIn: [Cake Wallet Company](https://www.linkedin.com/company/cakewallet)
 
-**Confidence**: 🟢 0.95 - Verified across official and secondary sources
-
 ---
 
 ## Company Organization
@@ -57,8 +52,6 @@ If you have a photo of Vikrant Sharma, add it here:
 - Twitter: https://x.com/cakewallet
 - LinkedIn: https://www.linkedin.com/company/cakewallet
 - Support: support@cakewallet.com
-
-**Confidence**: 🟢 0.95 - Verified via official sources
 
 ---
 

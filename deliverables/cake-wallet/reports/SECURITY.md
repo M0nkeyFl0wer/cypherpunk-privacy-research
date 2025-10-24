@@ -1,9 +1,6 @@
 # Security & Audits
 
-**Research Date**: 2025-10-07
-**Constitution v2.0.0 Compliance**: ✅
-**Data Quality**: Tier 3 Partial (40% completeness)
-**Confidence**: 0.90
+**Last Updated**: 2025-10-07
 
 ---
 
@@ -26,8 +23,6 @@
 - Blog posts and press releases
 - Company announcements
 
-**Confidence**: 0.90 (Comprehensive search across multiple channels)
-
 ### Context
 Cake Wallet is a client-side wallet application (non-custodial). Unlike smart contract platforms that commonly undergo formal audits, wallet applications often prioritize code review through open-source community scrutiny rather than expensive third-party audits.
 
@@ -45,8 +40,6 @@ Cake Wallet is a client-side wallet application (non-custodial). Unlike smart co
 - ✅ **100% free** - No fees or tracking
 - ✅ **Platform security** - Available on all major platforms (iOS, Android, macOS, Linux)
 
-**Confidence**: 🟢 0.95 - Verified from official sources
-
 ---
 
 ## Open-Source Security Posture
@@ -61,8 +54,6 @@ Cake Wallet is a client-side wallet application (non-custodial). Unlike smart co
 - ✅ **Release history** - Notable: v4.20.0 with MWEB (Litecoin privacy upgrade)
 - ✅ **Multi-platform maintenance** - Supporting iOS, Android, macOS, Linux
 - ✅ **Version updates** - Regular security patches and feature releases
-
-**Confidence**: 🟢 1.0 - Verifiable from GitHub public data
 
 ---
 

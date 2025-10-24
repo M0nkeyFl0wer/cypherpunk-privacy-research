@@ -1,0 +1,348 @@
+web3_privacy_projects:
+- id: cake-wallet
+  path: deliverables/cake-wallet
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+  - TECHNICAL.md
+- id: circom
+  path: deliverables/circom
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+  - blockchain_metrics_ATTEMPTED.md
+  - organization_profile.md
+  - technical_analysis.md
+- id: concordium
+  path: deliverables/concordium
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+  - opsec_vulnerability_assessment.md
+- id: darkfi
+  path: deliverables/darkfi
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+- id: deeper-network
+  path: deliverables/deeper-network
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+- id: elusiv
+  path: deliverables/elusiv
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+  - news_report.md
+- id: fileverse
+  path: deliverables/fileverse
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+  - blockchain_metrics_ATTEMPTED.md
+  - organization_profile.md
+  - osint_statistics.md
+  - technical_analysis.md
+- id: findora
+  path: deliverables/findora
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+- id: firo
+  path: deliverables/firo
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+  - news_report.md
+- id: fluidkey
+  path: deliverables/fluidkey
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+  - blockchain_metrics_ATTEMPTED.md
+  - organization_profile.md
+  - osint_statistics.md
+  - technical_analysis.md
+- id: hopr
+  path: deliverables/hopr
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+  - blockchain_metrics_ATTEMPTED.md
+  - news_report.md
+  - opsec_vulnerability_assessment.md
+  - organization_profile.md
+  - technical_analysis.md
+- id: iden3
+  path: deliverables/iden3
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+- id: incognito
+  path: deliverables/incognito
+  reports:
+  - SECURITY.md
+  - TEAM.md
+  - blockchain_metrics_ATTEMPTED.md
+  - news_report.md
+  - organization_profile.md
+  - technical_analysis.md
+- id: iron-fish
+  path: deliverables/iron-fish
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+  - blockchain_metrics_ATTEMPTED.md
+  - news_report.md
+  - organization_profile.md
+  - technical_analysis.md
+- id: mask-network
+  path: deliverables/mask-network
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+  - blockchain_metrics_ATTEMPTED.md
+  - news_report.md
+  - opsec_vulnerability_assessment.md
+  - organization_profile.md
+  - osint_statistics.md
+  - technical_analysis.md
+- id: mobilecoin
+  path: deliverables/mobilecoin
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+- id: monero
+  path: deliverables/monero
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+  - news_report.md
+- id: mysterium-network
+  path: deliverables/mysterium-network
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+  - opsec_vulnerability_assessment.md
+- id: nighthawk-wallet
+  path: deliverables/nighthawk-wallet
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+- id: oasis-network
+  path: deliverables/oasis-network
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+  - news_report.md
+- id: orchid
+  path: deliverables/orchid
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+  - news_report.md
+- id: oxen
+  path: deliverables/oxen
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+- id: polygon-hermez
+  path: deliverables/polygon-hermez
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+  - blockchain_metrics_ATTEMPTED.md
+  - news_report.md
+  - organization_profile.md
+  - technical_analysis.md
+- id: polygon-zero
+  path: deliverables/polygon-zero
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+  - blockchain_metrics_ATTEMPTED.md
+  - news_report.md
+  - organization_profile.md
+  - technical_analysis.md
+- id: privatepool
+  path: deliverables/privatepool
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+  - blockchain_metrics_ATTEMPTED.md
+  - organization_profile.md
+  - osint_statistics.md
+  - technical_analysis.md
+- id: rotki
+  path: deliverables/rotki
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+  - blockchain_metrics_ATTEMPTED.md
+  - organization_profile.md
+  - osint_statistics.md
+  - technical_analysis.md
+- id: semaphore
+  path: deliverables/semaphore
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+  - blockchain_metrics_ATTEMPTED.md
+  - news_report.md
+  - opsec_vulnerability_assessment.md
+  - organization_profile.md
+  - technical_analysis.md
+- id: sentinel
+  path: deliverables/sentinel
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+- id: sienna-network
+  path: deliverables/sienna-network
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+  - news_report.md
+  - opsec_vulnerability_assessment.md
+- id: snarkjs
+  path: deliverables/snarkjs
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+  - blockchain_metrics_ATTEMPTED.md
+  - organization_profile.md
+  - technical_analysis.md
+- id: starkex
+  path: deliverables/starkex
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+- id: suterusu
+  path: deliverables/suterusu
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+  - news_report.md
+  - opsec_vulnerability_assessment.md
+- id: tornado-cash
+  path: deliverables/tornado-cash
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+  - blockchain_metrics_ATTEMPTED.md
+  - news_report.md
+  - opsec_vulnerability_assessment.md
+  - organization_profile.md
+  - technical_analysis.md
+- id: typhoon-network
+  path: deliverables/typhoon-network
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+- id: wasabi-wallet
+  path: deliverables/wasabi-wallet
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+  - news_report.md
+- id: webb-protocol
+  path: deliverables/webb-protocol
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+  - blockchain_metrics_ATTEMPTED.md
+  - news_report.md
+  - organization_profile.md
+  - technical_analysis.md
+- id: xx-network
+  path: deliverables/xx-network
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+- id: zano
+  path: deliverables/zano
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+  - opsec_vulnerability_assessment.md
+- id: zcash
+  path: deliverables/zcash
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+  - news_report.md
+- id: zeal
+  path: deliverables/zeal
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+- id: zk-money
+  path: deliverables/zk-money
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+  - blockchain_metrics_ATTEMPTED.md
+  - news_report.md
+  - organization_profile.md
+  - technical_analysis.md
+- id: zksync
+  path: deliverables/zksync
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+  - blockchain_metrics_ATTEMPTED.md
+  - news_report.md
+  - organization_profile.md
+  - technical_analysis.md
+- id: zkvote
+  path: deliverables/zkvote
+  reports:
+  - CODE_REVIEW.md
+  - SECURITY.md
+  - TEAM.md
+  - blockchain_metrics_ATTEMPTED.md
+  - organization_profile.md
+  - osint_statistics.md
+  - technical_analysis.md

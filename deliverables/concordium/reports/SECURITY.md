@@ -1,7 +1,6 @@
 # Security & Audits
 
 *Research Date: 2025-10-05*
-*Constitution v2.0.0 Compliance: ✅*
 
 ---
 
@@ -16,8 +15,6 @@ Checked sources:
 - Blog announcements
 
 📧 **Have audit reports?** Submit via [Pull Request](https://github.com/web3privacy/web3privacy/pulls)
-
-
 
 ---
 
