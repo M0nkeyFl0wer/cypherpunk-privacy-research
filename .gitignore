@@ -1,8 +1,40 @@
+# Dependencies
 node_modules/
 .next/
 out/
+
+# System Files
 .DS_Store
 *.log
-.env.local
+
+# Environment & Secrets
 .env
+.env.local
+.env.*.local
+.env.production
+.env.development
+*.secret
+*.secrets
+*secret.yaml
+*secrets.yaml
+credentials.json
+*credentials*
+*.key
+*.pem
+api_keys.txt
+*apikey*
+*api_key*
+
+# Session & Temporary Files
+SESSION_*.md
+RESUME_*.md
+BATCH_*_AUDIT_*.md
+*_COMMANDS.sh
+*_VERIFICATION.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
 
