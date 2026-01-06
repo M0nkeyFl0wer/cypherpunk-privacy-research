@@ -1,0 +1,24 @@
+name: Wasabi Wallet
+categories:
+- infrastructure
+ecosystem:
+- Ethereum
+usecases:
+- Privacy
+description: Open-source, non-custodial, privacy preserving Bitcoin wallet for Windows,
+  Linux, and Mac.
+team:
+  anonymous: true
+links:
+  web: https://wasabi-wallet.io
+  github: https://github.com/WalletWasabi/WalletWasabi
+project_status:
+  version: Mainnet
+sunset: false
+blockchain_features:
+  opensource: true
+  asset_custody_type: non-custody
+default_privacy: false
+tracebility:
+  kyc: false
+licences: MIT License

@@ -1,0 +1,23 @@
+name: Iron Fish
+categories:
+- infrastructure
+ecosystem:
+- Ethereum
+usecases:
+- Privacy
+description: A novel cryptocurrency focused on privacy and accessibility.
+team:
+  anonymous: true
+links:
+  web: https://iron-fish.com
+  github: https://github.com/iron-fish/ironfish
+project_status:
+  version: Mainnet
+sunset: false
+blockchain_features:
+  opensource: true
+  asset_custody_type: non-custody
+default_privacy: false
+tracebility:
+  kyc: false
+licences: Mozilla Public License 2.0

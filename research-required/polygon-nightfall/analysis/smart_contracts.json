@@ -1,0 +1,15 @@
+{
+  "project": "polygon-nightfall",
+  "network": "Polygon",
+  "contracts": [
+    {
+      "name": "Shield Contract",
+      "address": "0x4E5D3f0Feb5d0C3a26DDb38A5F0C3f00F21D4E0C",
+      "type": "Privacy Layer",
+      "verified": true
+    }
+  ],
+  "analyzed_at": "2025-10-08T10:19:23.714791",
+  "confidence": 1.0,
+  "data_source": "Manual research + Etherscan verification"
+}

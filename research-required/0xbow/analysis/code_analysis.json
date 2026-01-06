@@ -1,0 +1,294 @@
+{
+  "project_id": "0xbow",
+  "analyzed_at": "2025-10-09T14:53:52Z",
+  "repository": "https://github.com/0xbow-io/privacy-pools-core",
+  "repository_size_mb": 161,
+  "last_commit_date": "2025-09-04T17:17:09+04:00",
+  "metrics": {
+    "total_lines": 29803,
+    "languages": {
+      "solidity": 10420,
+      "typescript": 19151,
+      "circom": 232
+    },
+    "files_count": 378,
+    "contract_files": 47,
+    "typescript_files": 137,
+    "javascript_files": 10,
+    "circom_files": 3,
+    "test_files": 34,
+    "documentation_files": 39,
+    "test_coverage_percent": null
+  },
+  "repository_structure": {
+    "monorepo": true,
+    "workspace_manager": "yarn",
+    "packages": [
+      "circuits",
+      "contracts",
+      "sdk",
+      "relayer"
+    ],
+    "package_lines": {
+      "contracts_src": 2468,
+      "sdk_src": 5536,
+      "circuits": 232
+    }
+  },
+  "quality_scores": {
+    "code_organization": 9.0,
+    "documentation": 8.5,
+    "testing": 8.0,
+    "security": 9.5,
+    "overall": 8.8
+  },
+  "tech_stack": [
+    "Solidity 0.8.28",
+    "TypeScript 5.5.4",
+    "Circom (zero-knowledge circuits)",
+    "Foundry (smart contract framework)",
+    "Vitest (testing)",
+    "OpenZeppelin Contracts 5.1.0",
+    "OpenZeppelin Upgradeable 5.0.2",
+    "Poseidon Hashing",
+    "Lean IMT (Merkle trees)",
+    "SnarkJS 0.7.5",
+    "Yarn Workspaces"
+  ],
+  "security_features": [
+    "Zero-knowledge proofs (ZK-SNARKs)",
+    "Poseidon hash function",
+    "Merkle tree (Lean IMT) for commitment tracking",
+    "AccessControlUpgradeable pattern",
+    "UUPSUpgradeable proxy pattern",
+    "ReentrancyGuard protection",
+    "SafeERC20 for token transfers",
+    "Multiple professional security audits (4 reports)",
+    "Formal verification with fuzzing tests",
+    "Invariant testing",
+    "Security policy with responsible disclosure"
+  ],
+  "audit_reports": [
+    {
+      "auditor": "Oxorio",
+      "subject": "Circuits",
+      "lines": 474,
+      "file": "audit/circuits_audit_oxorio.md"
+    },
+    {
+      "auditor": "Auditware",
+      "subject": "Contracts",
+      "lines": 195,
+      "file": "audit/contracts_audit_auditware.md"
+    },
+    {
+      "auditor": "Oxorio",
+      "subject": "Contracts",
+      "lines": 600,
+      "file": "audit/contracts_audit_oxorio.md"
+    },
+    {
+      "auditor": "Oxorio",
+      "subject": "Entrypoint Upgrade",
+      "lines": 288,
+      "file": "audit/entrypoint_upgrade_audit_oxorio.md"
+    }
+  ],
+  "testing_infrastructure": {
+    "unit_tests": true,
+    "integration_tests": true,
+    "fuzz_tests": true,
+    "invariant_tests": true,
+    "contracts_test_files": 28,
+    "sdk_test_files": 13,
+    "circuits_test_files": 3,
+    "test_frameworks": [
+      "Foundry Forge",
+      "Vitest",
+      "Mocha",
+      "Medusa (fuzzing)"
+    ],
+    "ci_cd": true,
+    "github_workflows": [
+      "circuits.yml",
+      "contracts.yml",
+      "docs.yml",
+      "relayer.yml",
+      "sdk-npm-release.yml",
+      "sdk.yml"
+    ]
+  },
+  "documentation_quality": {
+    "readme_files": 4,
+    "readme_total_lines": 694,
+    "security_policy": true,
+    "package_documentation": {
+      "contracts": 233,
+      "relayer": 302,
+      "circuits": 86,
+      "sdk": 73
+    },
+    "docs_site": true,
+    "docusaurus": true,
+    "deployment_guides": true,
+    "developer_guides": true,
+    "protocol_documentation": true,
+    "api_reference": true
+  },
+  "architecture": {
+    "design_patterns": [
+      "Upgradeable proxy (UUPS)",
+      "Access control with roles",
+      "Factory pattern",
+      "State machine pattern",
+      "Library pattern for proof verification",
+      "Abstract contract inheritance"
+    ],
+    "core_contracts": [
+      "Entrypoint.sol (402 lines)",
+      "PrivacyPool.sol (186 lines)",
+      "State.sol (183 lines)",
+      "WithdrawalVerifier.sol (219 lines)",
+      "CommitmentVerifier.sol (191 lines)"
+    ],
+    "largest_contract_lines": 402,
+    "average_contract_size": 238,
+    "modular_design": true,
+    "separation_of_concerns": true
+  },
+  "code_quality_indicators": {
+    "solidity_version_consistency": true,
+    "naming_conventions": "clear",
+    "code_comments": "extensive",
+    "natspec_documentation": true,
+    "error_handling": "custom errors",
+    "gas_optimization": true,
+    "immutable_variables": true,
+    "constants_defined": true,
+    "library_usage": "extensive",
+    "interface_definitions": true
+  },
+  "findings": [
+    {
+      "type": "strength",
+      "category": "security",
+      "description": "Comprehensive security audit coverage with 4 independent audits from Oxorio and Auditware",
+      "severity": "positive",
+      "confidence": 1.0
+    },
+    {
+      "type": "strength",
+      "category": "architecture",
+      "description": "Well-structured monorepo with clear separation of concerns across circuits, contracts, SDK, and relayer packages",
+      "severity": "positive",
+      "confidence": 1.0
+    },
+    {
+      "type": "strength",
+      "category": "testing",
+      "description": "Extensive testing infrastructure including unit, integration, fuzz, and invariant tests with CI/CD automation",
+      "severity": "positive",
+      "confidence": 1.0
+    },
+    {
+      "type": "strength",
+      "category": "security",
+      "description": "Implementation uses battle-tested OpenZeppelin libraries for access control, upgradeability, and reentrancy protection",
+      "severity": "positive",
+      "confidence": 1.0
+    },
+    {
+      "type": "strength",
+      "category": "documentation",
+      "description": "Professional documentation site with Docusaurus, comprehensive README files, and detailed protocol documentation",
+      "severity": "positive",
+      "confidence": 1.0
+    },
+    {
+      "type": "strength",
+      "category": "code_quality",
+      "description": "Contracts maintain reasonable size (largest 402 lines) with clear modular architecture and consistent Solidity 0.8.28 version",
+      "severity": "positive",
+      "confidence": 1.0
+    },
+    {
+      "type": "strength",
+      "category": "security",
+      "description": "Zero-knowledge circuit implementation using Circom with dedicated verification contracts and Poseidon hashing",
+      "severity": "positive",
+      "confidence": 1.0
+    },
+    {
+      "type": "strength",
+      "category": "code_quality",
+      "description": "TypeScript SDK with 5,536 lines of well-organized code supporting both Node.js and browser environments",
+      "severity": "positive",
+      "confidence": 1.0
+    },
+    {
+      "type": "observation",
+      "category": "testing",
+      "description": "Test coverage metrics not available in repository - unable to verify actual coverage percentage",
+      "severity": "neutral",
+      "confidence": 0.95
+    },
+    {
+      "type": "observation",
+      "category": "maintenance",
+      "description": "Repository actively maintained with latest commit from September 2025, indicating current development",
+      "severity": "positive",
+      "confidence": 1.0
+    },
+    {
+      "type": "strength",
+      "category": "security",
+      "description": "Formal security policy in place with responsible disclosure process and dedicated security contact",
+      "severity": "positive",
+      "confidence": 1.0
+    },
+    {
+      "type": "strength",
+      "category": "devops",
+      "description": "Comprehensive CI/CD with 6 GitHub workflow files covering all packages and automated testing",
+      "severity": "positive",
+      "confidence": 1.0
+    }
+  ],
+  "dependencies": {
+    "production": [
+      "@openzeppelin/contracts@5.1.0",
+      "@openzeppelin/contracts-upgradeable@5.0.2",
+      "@zk-kit/lean-imt@2.2.2",
+      "poseidon-solidity@0.0.5",
+      "snarkjs@0.7.5",
+      "viem@2.22.14",
+      "maci-crypto@2.5.0"
+    ],
+    "development": [
+      "forge-std",
+      "foundry",
+      "vitest@3.0.5",
+      "typescript@5.5.4",
+      "solhint-community@4.0.0",
+      "prettier@3.3.3",
+      "eslint@9.18.0"
+    ]
+  },
+  "license": "Apache-2.0",
+  "organization": "0xbow / Wonderland",
+  "confidence": 0.95,
+  "analysis_notes": [
+    "All metrics derived from actual repository analysis",
+    "Test coverage percentage unavailable - no coverage reports in repository",
+    "Quality scores based on observed code patterns, documentation, testing infrastructure, and security practices",
+    "Repository shows professional development practices with comprehensive tooling",
+    "Zero-knowledge privacy pool implementation with strong cryptographic foundations"
+  ],
+  "constitutional_compliance": {
+    "real_data_only": true,
+    "multi_source_verification": true,
+    "confidence_scoring": true,
+    "gaps_documented": true,
+    "synthetic_data_used": false
+  }
+}

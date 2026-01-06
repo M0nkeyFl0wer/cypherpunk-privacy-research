@@ -1,0 +1,244 @@
+{
+  "project": "iexec",
+  "category": "computing",
+  "description": "Decentralized cloud computing with TEE",
+  "github_url": "https://github.com/iExecBlockchainComputing",
+  "main_repositories": [
+    {
+      "name": "iexec-core",
+      "url": "https://github.com/iExecBlockchainComputing/iexec-core",
+      "description": "iExec Core Scheduler - orchestrates workerpools by watching on-chain deals and scheduling off-chain computation",
+      "primary_language": "Java",
+      "language_percentage": "100%"
+    },
+    {
+      "name": "iexec-worker",
+      "url": "https://github.com/iExecBlockchainComputing/iexec-worker",
+      "description": "iExec Worker that participates in workerpool by computing tasks purchased by requesters",
+      "primary_language": "Java",
+      "language_percentage": "99.9%"
+    },
+    {
+      "name": "iexec-sms",
+      "url": "https://github.com/iExecBlockchainComputing/iexec-sms",
+      "description": "Secret Management Service - stores user secrets and provisions them to authorized TEE applications",
+      "primary_language": "Java",
+      "language_percentage": "99.8%"
+    },
+    {
+      "name": "PoCo",
+      "url": "https://github.com/iExecBlockchainComputing/PoCo",
+      "description": "Proof of Contribution - Smart contracts for hub, PoCo protocol, and marketplace",
+      "primary_languages": {
+        "Solidity": "24.9%",
+        "TypeScript": "73.5%"
+      },
+      "design_pattern": "Diamond Proxy Pattern (ERC-2535)",
+      "version": "v6.0.0"
+    },
+    {
+      "name": "iexec-sdk",
+      "url": "https://github.com/iExecBlockchainComputing/iexec-sdk",
+      "description": "CLI and JS library for interacting with the iExec stack"
+    },
+    {
+      "name": "iexec-apps",
+      "url": "https://github.com/iExecBlockchainComputing/iexec-apps",
+      "description": "Dockerfile of all iExec apps"
+    }
+  ],
+  "tech_stack": {
+    "primary_languages": [
+      "Java",
+      "Solidity",
+      "TypeScript",
+      "JavaScript"
+    ],
+    "blockchain": [
+      "Ethereum",
+      "Solidity Smart Contracts",
+      "ERC-2535 (Diamond Proxy Pattern)",
+      "ERC1538 Module System"
+    ],
+    "backend": [
+      "Java",
+      "Spring Boot",
+      "Gradle"
+    ],
+    "containerization": [
+      "Docker",
+      "OCI images"
+    ],
+    "databases": [
+      "MongoDB",
+      "H2"
+    ],
+    "testing": [
+      "Hardhat",
+      "Jest"
+    ],
+    "build_tools": [
+      "Gradle",
+      "Hardhat",
+      "npm/yarn"
+    ],
+    "deployment": [
+      "Docker Hub",
+      "GitHub Actions",
+      "Create2 Factory"
+    ]
+  },
+  "privacy_techniques": {
+    "trusted_execution_environment": {
+      "technology": "TEE (Trusted Execution Environment)",
+      "implementations": [
+        {
+          "name": "Intel SGX",
+          "description": "Software Guard Extensions for secure enclaves",
+          "driver_modes": [
+            "NONE (default)",
+            "LEGACY",
+            "NATIVE"
+          ],
+          "features": [
+            "Enclave-based secure computation",
+            "Memory isolation",
+            "Hardware-level protection",
+            "Attestation support"
+          ]
+        }
+      ],
+      "frameworks": [
+        {
+          "name": "Scone",
+          "provider": "Scontain",
+          "description": "High-level framework for SGX development",
+          "features": [
+            "Container protection without modification",
+            "Code and data confidentiality",
+            "Integrity guarantees",
+            "Native SGX limitation resolution"
+          ]
+        },
+        {
+          "name": "Gramine",
+          "description": "TEE framework supported by SMS"
+        }
+      ],
+      "components": [
+        {
+          "name": "Secret Management Service (SMS)",
+          "description": "Stores user secrets and provisions them to authorized TEE applications",
+          "security": [
+            "AES encryption for disk storage",
+            "TLS channel for secret transfer",
+            "On-chain Access Control Lists (ACL)",
+            "Granular access policies",
+            "SSL keystore support"
+          ]
+        }
+      ]
+    },
+    "cryptography": [
+      "AES encryption",
+      "TLS/SSL",
+      "Blockchain-based verification",
+      "Hardware-based attestation"
+    ],
+    "security_features": [
+      "End-to-end data protection",
+      "Code integrity verification",
+      "Tamper-proof execution",
+      "Decentralized trust model",
+      "Proof of Contribution validation",
+      "Staking mechanisms"
+    ]
+  },
+  "core_protocol": {
+    "name": "Proof-of-Contribution (PoCo)",
+    "description": "Protocol for consensus over off-chain computing in decentralized environment",
+    "features": [
+      "On-chain deal watching",
+      "Off-chain computation scheduling",
+      "Result verification",
+      "Trust provision in untrusted machine environment",
+      "Modular design (ERC1538/ERC2535)",
+      "Native or ERC20 token-based escrow"
+    ]
+  },
+  "key_features": {
+    "computing": [
+      "Decentralized cloud computing",
+      "Distributed workerpool orchestration",
+      "CPU and GPU computation support",
+      "Docker-based application execution",
+      "Blockchain-coordinated task distribution"
+    ],
+    "privacy": [
+      "Confidential computing",
+      "Trusted execution environments",
+      "Secret management",
+      "Encrypted data storage",
+      "Privacy-preserving off-chain computation"
+    ],
+    "blockchain_integration": [
+      "Ethereum smart contracts",
+      "On-chain access control",
+      "Blockchain-based validation",
+      "RLC token economics",
+      "Decentralized marketplace"
+    ]
+  },
+  "partnerships_integrations": [
+    {
+      "partner": "Intel",
+      "integration": "Intel SGX technology, AI ecosystem membership"
+    },
+    {
+      "partner": "Scontain",
+      "integration": "Scone framework for SGX"
+    },
+    {
+      "partner": "IBM Cloud",
+      "integration": "Enhanced security for decentralized computing"
+    },
+    {
+      "partner": "Enterprise Ethereum Alliance (EEA)",
+      "integration": "Trusted Compute Spec V1"
+    }
+  ],
+  "documentation": {
+    "official_docs": "https://docs.iex.ec/",
+    "protocol_docs": "https://protocol.docs.iex.ec/",
+    "knowledge_base": "https://github.com/iExecBlockchainComputing/knowledge-base",
+    "sgx_docs": "https://docs.iex.ec/protocol/tee/intel-sgx"
+  },
+  "license": "Apache License 2.0",
+  "organization_stats": {
+    "total_repositories": 188,
+    "github_org": "iExecBlockchainComputing",
+    "description": "Blockchain-Based Fully Distributed Cloud Computing - iExec"
+  },
+  "confidence_score": 0.95,
+  "data_sources": [
+    "https://github.com/iExecBlockchainComputing",
+    "https://github.com/iExecBlockchainComputing/iexec-core",
+    "https://github.com/iExecBlockchainComputing/iexec-worker",
+    "https://github.com/iExecBlockchainComputing/iexec-sms",
+    "https://github.com/iExecBlockchainComputing/PoCo",
+    "https://docs.iex.ec/protocol/tee/intel-sgx",
+    "https://medium.com/iex-ec/iexec-end-to-end-sgx-solution-fee1e63297b2",
+    "https://www.iex.ec/"
+  ],
+  "verification_status": "multi-source verified",
+  "last_updated": "2025-10-08",
+  "research_notes": [
+    "All information extracted from official iExec GitHub repositories and documentation",
+    "Tech stack confirmed through direct repository analysis (Java 99-100% for core services)",
+    "Intel SGX and TEE implementation thoroughly documented with Scone and Gramine framework support",
+    "Smart contracts use modern Solidity with Diamond Proxy Pattern (ERC-2535)",
+    "Secret Management Service uses AES encryption and on-chain ACL for access control",
+    "Partnership with Intel and IBM Cloud verified through official announcements",
+    "Active development with trunk-based workflow and automated releases"
+  ]
+}

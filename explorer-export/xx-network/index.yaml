@@ -1,0 +1,22 @@
+name: Xx Network
+categories:
+- infrastructure
+ecosystem:
+- Ethereum
+usecases:
+- Privacy
+description: xx network Substrate based blockchain node
+team:
+  anonymous: true
+links:
+  github: https://github.com/xxfoundation/xxchain
+project_status:
+  version: Mainnet
+sunset: false
+blockchain_features:
+  opensource: true
+  asset_custody_type: non-custody
+default_privacy: false
+tracebility:
+  kyc: false
+licences: GNU General Public License v3.0

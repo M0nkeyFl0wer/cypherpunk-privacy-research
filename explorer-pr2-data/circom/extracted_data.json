@@ -1,0 +1,13 @@
+{
+  "name": "Circom",
+  "description": "zkSnark circuit compiler - A domain-specific language for defining arithmetic circuits that can be used to generate zero-knowledge proofs",
+  "ecosystem": [
+    "other"
+  ],
+  "links": {
+    "web": "https://docs.circom.io/",
+    "github": "https://github.com/iden3/circom"
+  },
+  "_research_confidence": 0.5,
+  "_research_date": ""
+}

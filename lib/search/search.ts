@@ -17,8 +17,8 @@ let cachedProjects: SearchableProject[] = [];
  * Load search index from JSON
  */
 export async function loadSearchIndex(): Promise<SearchIndex> {
-  //  Hardcoded basePath for GitHub Pages (site is ONLY deployed there)
-  const basePath = '/web3-privacy-ethereum-cypherpunk-research';
+  // Use environment variable for base path (empty string for custom subdomain)
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
   const response = await fetch(`${basePath}/data/search-index.json`);
   if (!response.ok) {
     throw new Error(`Failed to load search index: ${response.statusText}`);

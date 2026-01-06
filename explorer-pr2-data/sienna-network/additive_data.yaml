@@ -1,0 +1,14 @@
+
+# Merge Instructions for sienna-network
+#
+# This data should be ADDED to the existing entry, not replace it.
+# Review each field and only add what's missing or more accurate.
+#
+# Fields with underscore prefix (_research_confidence) are metadata
+# and should NOT be included in the final YAML.
+#
+# Research confidence: 0.95
+# Research date: 2025-10-07
+
+ecosystem:
+- other

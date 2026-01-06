@@ -1,0 +1,21 @@
+name: Deeper Network
+categories:
+- infrastructure
+ecosystem:
+- Ethereum
+usecases:
+- Privacy
+description: deeper chain is the blockchain layer for deeper network.
+team:
+  anonymous: true
+links: {}
+project_status:
+  version: Mainnet
+sunset: false
+blockchain_features:
+  opensource: true
+  asset_custody_type: non-custody
+default_privacy: false
+tracebility:
+  kyc: false
+licences: Apache License 2.0

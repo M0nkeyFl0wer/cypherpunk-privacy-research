@@ -1,0 +1,17 @@
+{
+  "source": "Open Source Observer",
+  "discovered_at": "2025-09-29T14:42:57.308435",
+  "oso_name": "Scroll Name Services",
+  "github_repos": [
+    "https://github.com/scroll-name-service"
+  ],
+  "blockchain_addresses": [],
+  "websites": [
+    "https://scrollname.domains/"
+  ],
+  "npm_packages": [],
+  "defillama_urls": [],
+  "description": "Scroll Name Service (SNS) is a decentralized naming system on the Scroll network. It allows users to register human-readable names that resolve to Scroll addresses, enabling easier transactions and identity management on the blockchain.",
+  "social": {},
+  "confidence": "medium"
+}

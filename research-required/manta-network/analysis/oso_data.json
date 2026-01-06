@@ -1,0 +1,33 @@
+{
+  "source": "Open Source Observer",
+  "discovered_at": "2025-09-29T14:42:57.272869",
+  "oso_name": "Manta Pacific",
+  "github_repos": [
+    "https://github.com/manta-network"
+  ],
+  "blockchain_addresses": [],
+  "websites": [
+    "https://pacific.manta.network/"
+  ],
+  "npm_packages": [],
+  "defillama_urls": [],
+  "description": "Manta Pacific is a Web3 ecosystem built on the Manta Network, focusing on providing privacy-preserving infrastructure and applications. It aims to enable scalable, private on-chain interactions and DeFi services while maintaining user confidentiality.",
+  "social": {
+    "twitter": [
+      {
+        "url": "https://x.com/MantaNetwork"
+      }
+    ],
+    "telegram": [
+      {
+        "url": "https://www.t.me/mantanetworkofficial"
+      }
+    ],
+    "discord": [
+      {
+        "url": "https://discord.com/invite/mantanetwork"
+      }
+    ]
+  },
+  "confidence": "medium"
+}

@@ -1,4 +1,4 @@
-// File: /home/flower/web3-privacy-ethereum-cypherpunk-research/app/page.tsx
+// File: /home/flower/Projects/web3-privacy-ethereum-cypherpunk-research/app/page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

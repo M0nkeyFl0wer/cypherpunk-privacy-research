@@ -1,0 +1,12 @@
+{
+  "project_name": "railgun-relay-adapt",
+  "team_information": "GitHub contributors: therealjmj,jacobmakarsky,ptsimpso,mattgle,staltz",
+  "founder_information": "",
+  "team_confidence": 0.70,
+  "team_sources": ["https://api.github.com/repos/Railgun-Community/private-proof-of-innocence/contributors"]
+  "research_date": "2025-10-06T15:51:53Z",
+  "batch_number": 4,
+  "execution_host": "seshat",
+  "research_method": "github_contributors + curl_scraping",
+  "gaps": []
+}

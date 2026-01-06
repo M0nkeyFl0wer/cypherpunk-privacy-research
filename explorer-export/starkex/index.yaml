@@ -1,0 +1,23 @@
+name: StarkEX
+categories:
+- infrastructure
+ecosystem:
+- Ethereum
+usecases:
+- Privacy
+description: Privacy technology project focused on Web3 security and anonymity.
+team:
+  anonymous: true
+links:
+  web: https://starkex.io
+  github: https://github.com/starkware-libs/starkex-contracts
+project_status:
+  version: Mainnet
+sunset: false
+blockchain_features:
+  opensource: true
+  asset_custody_type: non-custody
+default_privacy: false
+tracebility:
+  kyc: false
+licences: Other

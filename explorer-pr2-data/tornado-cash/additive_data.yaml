@@ -1,0 +1,31 @@
+
+# Merge Instructions for tornado-cash
+#
+# This data should be ADDED to the existing entry, not replace it.
+# Review each field and only add what's missing or more accurate.
+#
+# Fields with underscore prefix (_research_confidence) are metadata
+# and should NOT be included in the final YAML.
+#
+# Research confidence: 0.8
+# Research date: 
+
+name: Tornado Cash
+description: Fully decentralized, non-custodial cryptocurrency mixer protocol that
+  runs on Ethereum Virtual Machine-compatible networks, enabling private transactions
+  using zero-knowledge proof technology. Tornado Cash was sanctioned by OFAC in August
+  2022 but had sanctions lifted in March 2025 following a Fifth Circuit court ruling.
+ecosystem:
+- ethereum
+team:
+  anonymous: false
+  teammembers:
+  - name: Roman Storm
+    role: Founder
+  - name: Alexey Pertsev
+    role: Founder
+  - name: Roman Semenov
+    role: Founder
+links:
+  web: https://tornado.cash
+  github: https://github.com/tornadocash

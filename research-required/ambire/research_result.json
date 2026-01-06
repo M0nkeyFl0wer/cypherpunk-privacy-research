@@ -1,0 +1,233 @@
+{
+  "project": "Ambire Wallet",
+  "category": "wallet",
+  "research_date": "2025-10-08",
+  "data_quality": {
+    "confidence_score": 0.95,
+    "sources_verified": 12,
+    "data_type": "real"
+  },
+  "github": {
+    "organization_url": "https://github.com/AmbireTech",
+    "primary_repositories": [
+      {
+        "name": "wallet",
+        "url": "https://github.com/AmbireTech/wallet",
+        "description": "Ambire Wallet: making self-custody easy and secure for the EVM ecosystem",
+        "stars": 207,
+        "forks": 71,
+        "primary_language": "JavaScript"
+      },
+      {
+        "name": "ambire-common",
+        "url": "https://github.com/AmbireTech/ambire-common",
+        "description": "Core business logic behind the Ambire browser extensions and mobile apps",
+        "primary_languages": {
+          "TypeScript": "87.3%",
+          "Solidity": "12.0%"
+        },
+        "active_branch": "v2"
+      },
+      {
+        "name": "extension",
+        "url": "https://github.com/AmbireTech/extension",
+        "description": "The web3 wallet that makes crypto self-custody easy and secure via hybrid account abstraction"
+      },
+      {
+        "name": "signature-validator",
+        "url": "https://github.com/AmbireTech/signature-validator",
+        "description": "TypeScript library that supports validation of any type of signature: account abstraction (ERC-1271, ERC-6492), standard signatures, ERC-712",
+        "primary_language": "TypeScript"
+      },
+      {
+        "name": "wallet-login-sdk",
+        "url": "https://github.com/AmbireTech/wallet-login-sdk",
+        "description": "Ambire Wallet Login SDK: onboard users who are new to Web3 by letting them create a self-custodial account using their email in seconds"
+      },
+      {
+        "name": "adex-protocol-eth",
+        "url": "https://github.com/AmbireTech/adex-protocol-eth",
+        "description": "AdEx Protocol Ethereum implementation with OUTPACE and AdEx Identity (gas abstraction layer)",
+        "primary_language": "Solidity"
+      }
+    ]
+  },
+  "tech_stack": {
+    "frontend": {
+      "framework": "React",
+      "language": "TypeScript",
+      "typescript_version": "^5.8.3",
+      "build_system": "Create React App",
+      "additional_tools": [
+        "webpack",
+        "Babel",
+        "ESLint"
+      ]
+    },
+    "smart_contracts": {
+      "language": "Solidity",
+      "solidity_version": "0.8.19",
+      "license": "AGPL-3.0",
+      "main_contract": "AmbireAccount.sol",
+      "contract_location": "https://github.com/AmbireTech/ambire-common/blob/v2/contracts/AmbireAccount.sol",
+      "deployment_pattern": "Minimal Proxy (EIP-1167)",
+      "factory_address": "0xBf07a0Df119Ca234634588fbDb5625594E2a5BCA",
+      "base_identity": "0x2A2b85EB1054d6f0c6c2E37dA05eD3E5feA684EF",
+      "quick_acc_manager": "0xfF3f6D14DF43c112aB98834Ee1F82083E07c26BF",
+      "batcher": "0x460fad03099f67391d84c9cc0ea7aa2457969cea"
+    },
+    "account_abstraction": {
+      "type": "Hybrid Account Abstraction",
+      "standards_supported": [
+        "ERC-4337",
+        "ERC-1271 (signature validation)",
+        "ERC-6492 (pre-deploy signature verification)",
+        "EIP-1167 (minimal proxy)",
+        "EIP-712 (typed data signing)",
+        "EIP-7702 (future support planned)"
+      ],
+      "bundlers": [
+        "Pimlico",
+        "Biconomy"
+      ],
+      "relayer_support": true,
+      "relayerless_mode": true
+    },
+    "wallet_integrations": {
+      "hardware_wallets": [
+        "Ledger",
+        "Trezor",
+        "Lattice (Grid+)"
+      ],
+      "web3_libraries": [
+        "WalletConnect v2",
+        "ethers.js",
+        "viem"
+      ],
+      "dapp_integration": "web3-react, web3-onboard"
+    },
+    "blockchain_networks": [
+      "Ethereum",
+      "Polygon",
+      "Avalanche",
+      "Binance Smart Chain (BSC)",
+      "Fantom",
+      "Arbitrum",
+      "Optimism",
+      "Base",
+      "Scroll",
+      "Gnosis"
+    ]
+  },
+  "privacy_techniques": {
+    "no_tracking_policy": {
+      "description": "No tracking, no data logging - just powerful features and real ownership",
+      "user_identity_tracking": false,
+      "data_collection": false,
+      "confidence_score": 0.98
+    },
+    "address_rotation": {
+      "description": "Users can minimize the risk of third parties tracking their funds or linking transactions to a specific identity by rotating multiple addresses for different use cases",
+      "feature_enabled": true,
+      "use_cases": "Account derivation allows separate addresses controlled by a single signer key",
+      "confidence_score": 0.95
+    },
+    "account_segmentation": {
+      "description": "Users can derive multiple accounts (EOAs or Smart Accounts) from a hardware wallet for specific use cases, segmenting assets across accounts to reduce risk",
+      "feature_enabled": true,
+      "confidence_score": 0.95
+    },
+    "hardware_wallet_integration": {
+      "description": "Hardware wallet support for enhanced security and privacy",
+      "supported_devices": [
+        "Trezor",
+        "Ledger",
+        "Grid+ Lattice"
+      ],
+      "confidence_score": 0.98
+    },
+    "transaction_simulation": {
+      "description": "On-chain simulation shows the outcome of actions in a human-readable format",
+      "feature_enabled": true,
+      "purpose": "Phishing protection and transaction verification",
+      "confidence_score": 0.95
+    },
+    "email_authentication": {
+      "description": "Email registration and recovery with self-custodial email/password authentication via DKIM (in development)",
+      "feature_enabled": true,
+      "status": "in_development",
+      "confidence_score": 0.90
+    }
+  },
+  "security_features": {
+    "audits": {
+      "count": "10+",
+      "critical_vulnerabilities_found": 0,
+      "audit_firms": [
+        "G0 Group",
+        "Sigma Prime",
+        "CodeArena"
+      ],
+      "bug_bounty": {
+        "platform": "Immunefi",
+        "status": "active"
+      }
+    },
+    "transaction_features": [
+      "Transaction batching",
+      "Account recovery",
+      "Multisig support",
+      "Key rotation",
+      "Gas abstraction (pay in stablecoins)",
+      "OTP (Authenticator) support"
+    ],
+    "signature_standards": [
+      "ERC-1271 (smart contract signature validation)",
+      "ERC-6492 (pre-deployment signature verification)",
+      "EIP-712 (typed data signing)",
+      "eth_sign"
+    ]
+  },
+  "notable_achievements": {
+    "ethereum_foundation_grant": {
+      "year": 2023,
+      "description": "Received grant from the Ethereum Foundation"
+    }
+  },
+  "development_practices": {
+    "open_source": true,
+    "git_branching": "Lightweight Git branching model with v2 as active development branch",
+    "testing": "Detailed testing for each contract",
+    "code_quality": "No Solidity warnings allowed, uses Checks-Effects-Interactions pattern",
+    "security_design": "Minimalistic smart contract approach, avoids complex centralization"
+  },
+  "additional_features": [
+    "Cross-chain transfers",
+    "ENS support",
+    "ERC-721 token receiver",
+    "ERC-1155 token receiver",
+    "Counterfactual deployment",
+    "OUTPACE (off-chain unidirectional trustless payment channels)"
+  ],
+  "research_notes": {
+    "primary_focus": "Account abstraction wallet with hybrid approach supporting both EOAs and smart accounts",
+    "key_differentiator": "Hybrid account abstraction combining traditional EOAs with smart contract wallets for ease of use and security",
+    "privacy_stance": "Strong privacy-by-design with no tracking, address rotation, and account segmentation features",
+    "development_status": "Active development with regular updates to TypeScript (v5.8.3) and ongoing feature development (EIP-7702, DKIM authentication)"
+  },
+  "gaps_identified": [],
+  "verification_sources": [
+    "https://github.com/AmbireTech/wallet",
+    "https://github.com/AmbireTech/ambire-common",
+    "https://github.com/AmbireTech/signature-validator",
+    "https://blog.ambire.com/account-abstraction-myths/",
+    "https://blog.ambire.com/hybrid-account-abstraction-explained/",
+    "https://blog.ambire.com/understanding-signer-keys/",
+    "https://www.ambire.com",
+    "https://github.com/AmbireTech/adex-protocol-eth",
+    "https://github.com/code-423n4/2023-05-ambire",
+    "https://www.bitdegree.org/crypto/tutorials/what-is-ambire-wallet",
+    "https://blog.ambire.com/eip-7702-allowing-account-abstraction/",
+    "https://chromewebstore.google.com/detail/ambire-web3-wallet/ehgjhhccekdedpbkifaojjaefeohnoea"
+  ]
+}

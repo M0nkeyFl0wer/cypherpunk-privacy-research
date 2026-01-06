@@ -1,0 +1,13 @@
+{
+  "project_name": "taiko",
+  "website": "https://taiko.org",
+  "website_confidence": 0.85,
+  "website_sources": ["https://taiko.org", "curl scraping"],
+  "description": "Creating innovative performances, empowering diverse voices, and educating across cultures to foster a more accepting and engaged world since 1973",
+  "description_confidence": 0.80,
+  "description_sources": ["https://taiko.org meta tags"],
+  "research_date": "2025-10-06T13:29:05Z",
+  "batch_number": 3,
+  "execution_host": "seshat",
+  "scraping_method": "curl + grep"
+}

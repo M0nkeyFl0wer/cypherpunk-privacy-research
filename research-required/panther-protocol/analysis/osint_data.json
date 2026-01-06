@@ -1,0 +1,475 @@
+{
+  "project": "panther-protocol",
+  "timestamp": "2025-10-08T08:38:30-07:00",
+  "osint_version": "v3_github_homepage",
+  "osint_sources": {
+    "shodan": {
+      "domain": "pantherprotocol.io",
+      "tags": [
+        "dmarc",
+        "google-verified",
+        "ipv6",
+        "spf"
+      ],
+      "subdomains": [
+        "_dmarc",
+        "blog",
+        "data",
+        "docs",
+        "faucet",
+        "forum",
+        "jobs",
+        "launchdao",
+        "miner.testnet",
+        "publicsale",
+        "staking",
+        "test.staking",
+        "testlaunchdao",
+        "www",
+        "www.publicsale"
+      ],
+      "data": [
+        {
+          "subdomain": "",
+          "type": "A",
+          "value": "104.26.2.248",
+          "last_seen": "2025-10-08T02:27:56.267000"
+        },
+        {
+          "subdomain": "",
+          "type": "A",
+          "value": "104.26.3.248",
+          "last_seen": "2025-10-08T02:27:56.267000"
+        },
+        {
+          "subdomain": "",
+          "type": "A",
+          "value": "172.67.73.100",
+          "last_seen": "2025-10-08T02:27:56.267000"
+        },
+        {
+          "subdomain": "",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:2f8",
+          "last_seen": "2025-10-08T02:27:56.267000"
+        },
+        {
+          "subdomain": "",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:3f8",
+          "last_seen": "2025-10-08T02:27:56.267000"
+        },
+        {
+          "subdomain": "",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:4964",
+          "last_seen": "2025-10-08T02:27:56.267000"
+        },
+        {
+          "subdomain": "",
+          "type": "MX",
+          "value": "alt1.aspmx.l.google.com",
+          "last_seen": "2025-10-07T21:55:17.808000"
+        },
+        {
+          "subdomain": "",
+          "type": "MX",
+          "value": "alt2.aspmx.l.google.com",
+          "last_seen": "2025-10-07T21:55:17.808000"
+        },
+        {
+          "subdomain": "",
+          "type": "MX",
+          "value": "alt3.aspmx.l.google.com",
+          "last_seen": "2025-10-07T21:55:17.807000"
+        },
+        {
+          "subdomain": "",
+          "type": "MX",
+          "value": "alt4.aspmx.l.google.com",
+          "last_seen": "2025-10-07T21:55:17.808000"
+        },
+        {
+          "subdomain": "",
+          "type": "MX",
+          "value": "aspmx.l.google.com",
+          "last_seen": "2025-10-07T21:55:17.807000"
+        },
+        {
+          "subdomain": "",
+          "type": "NS",
+          "value": "daniella.ns.cloudflare.com",
+          "last_seen": "2025-10-07T21:54:25.541000"
+        },
+        {
+          "subdomain": "",
+          "type": "NS",
+          "value": "tate.ns.cloudflare.com",
+          "last_seen": "2025-10-07T21:54:25.541000"
+        },
+        {
+          "subdomain": "",
+          "type": "SOA",
+          "value": "daniella.ns.cloudflare.com",
+          "last_seen": "2025-10-07T21:56:46.902000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "google-site-verification=OVtFU_kJr5--w1WyyeODa4gdVlxC_WOsBbtb2KXYy1A",
+          "last_seen": "2025-10-07T21:50:11.178000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "google-site-verification=gONxOtomDWvbRA_w-Cn2CvrxehcocwiW-gkgh_YgsfE",
+          "last_seen": "2025-10-07T21:50:11.178000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "v=spf1 include:_spf.google.com include:mail.zendesk.com include:smtp.mail.ethermail.io include:zcsend.net ~all",
+          "last_seen": "2025-10-07T21:50:11.178000"
+        },
+        {
+          "subdomain": "_dmarc",
+          "type": "TXT",
+          "value": "v=DMARC1;  p=none; rua=mailto:it.admin@pantherprotocol.io",
+          "last_seen": "2025-10-07T21:50:11.274000"
+        },
+        {
+          "subdomain": "blog",
+          "type": "CNAME",
+          "value": "the-panther-blog.ghost.io",
+          "last_seen": "2025-10-07T21:57:19.992000"
+        },
+        {
+          "subdomain": "data",
+          "type": "CNAME",
+          "value": "d-gd1rxciq1i.execute-api.us-east-1.amazonaws.com",
+          "last_seen": "2025-10-07T21:57:19.471000"
+        },
+        {
+          "subdomain": "docs",
+          "type": "CNAME",
+          "value": "hosting.gitbook.io",
+          "last_seen": "2025-10-07T21:57:19.439000"
+        },
+        {
+          "subdomain": "faucet",
+          "type": "A",
+          "value": "104.26.2.248",
+          "last_seen": "2025-10-07T21:57:19.471000"
+        },
+        {
+          "subdomain": "faucet",
+          "type": "A",
+          "value": "104.26.3.248",
+          "last_seen": "2025-10-07T21:57:19.471000"
+        },
+        {
+          "subdomain": "faucet",
+          "type": "A",
+          "value": "172.67.73.100",
+          "last_seen": "2025-10-07T21:57:19.471000"
+        },
+        {
+          "subdomain": "faucet",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:2f8",
+          "last_seen": "2025-10-07T21:58:35.647000"
+        },
+        {
+          "subdomain": "faucet",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:3f8",
+          "last_seen": "2025-10-07T21:58:35.647000"
+        },
+        {
+          "subdomain": "faucet",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:4964",
+          "last_seen": "2025-10-07T21:58:35.647000"
+        },
+        {
+          "subdomain": "forum",
+          "type": "CNAME",
+          "value": "pantherprotocol.hosted-by-discourse.com",
+          "last_seen": "2025-10-07T21:57:19.472000"
+        },
+        {
+          "subdomain": "jobs",
+          "type": "CNAME",
+          "value": "recruit.cs.zohohost.eu",
+          "last_seen": "2025-10-07T21:57:19.989000"
+        },
+        {
+          "subdomain": "launchdao",
+          "type": "A",
+          "value": "104.26.2.248",
+          "last_seen": "2025-10-07T21:57:19.889000"
+        },
+        {
+          "subdomain": "launchdao",
+          "type": "A",
+          "value": "104.26.3.248",
+          "last_seen": "2025-10-07T21:57:19.889000"
+        },
+        {
+          "subdomain": "launchdao",
+          "type": "A",
+          "value": "172.67.73.100",
+          "last_seen": "2025-10-07T21:57:19.889000"
+        },
+        {
+          "subdomain": "launchdao",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:2f8",
+          "last_seen": "2025-10-07T21:58:37.066000"
+        },
+        {
+          "subdomain": "launchdao",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:3f8",
+          "last_seen": "2025-10-07T21:58:37.066000"
+        },
+        {
+          "subdomain": "launchdao",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:4964",
+          "last_seen": "2025-10-07T21:58:37.066000"
+        },
+        {
+          "subdomain": "miner.testnet",
+          "type": "A",
+          "value": "104.26.2.248",
+          "last_seen": "2025-10-07T21:57:19.097000"
+        },
+        {
+          "subdomain": "miner.testnet",
+          "type": "A",
+          "value": "104.26.3.248",
+          "last_seen": "2025-10-07T21:57:19.097000"
+        },
+        {
+          "subdomain": "miner.testnet",
+          "type": "A",
+          "value": "172.67.73.100",
+          "last_seen": "2025-10-07T21:57:19.097000"
+        },
+        {
+          "subdomain": "miner.testnet",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:2f8",
+          "last_seen": "2025-10-07T21:58:35.850000"
+        },
+        {
+          "subdomain": "miner.testnet",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:3f8",
+          "last_seen": "2025-10-07T21:58:35.850000"
+        },
+        {
+          "subdomain": "miner.testnet",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:4964",
+          "last_seen": "2025-10-07T21:58:35.850000"
+        },
+        {
+          "subdomain": "publicsale",
+          "type": "CNAME",
+          "value": "client-platform.tokensoft.io",
+          "last_seen": "2025-10-07T21:57:19.550000"
+        },
+        {
+          "subdomain": "staking",
+          "type": "A",
+          "value": "104.26.2.248",
+          "last_seen": "2025-10-07T21:57:19.118000"
+        },
+        {
+          "subdomain": "staking",
+          "type": "A",
+          "value": "104.26.3.248",
+          "last_seen": "2025-10-07T21:57:19.119000"
+        },
+        {
+          "subdomain": "staking",
+          "type": "A",
+          "value": "172.67.73.100",
+          "last_seen": "2025-10-07T21:57:19.118000"
+        },
+        {
+          "subdomain": "staking",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:2f8",
+          "last_seen": "2025-10-07T21:58:35.662000"
+        },
+        {
+          "subdomain": "staking",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:3f8",
+          "last_seen": "2025-10-07T21:58:35.662000"
+        },
+        {
+          "subdomain": "staking",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:4964",
+          "last_seen": "2025-10-07T21:58:35.662000"
+        },
+        {
+          "subdomain": "test.staking",
+          "type": "A",
+          "value": "104.26.2.248",
+          "last_seen": "2025-10-07T21:57:18.996000"
+        },
+        {
+          "subdomain": "test.staking",
+          "type": "A",
+          "value": "104.26.3.248",
+          "last_seen": "2025-10-07T21:57:18.996000"
+        },
+        {
+          "subdomain": "test.staking",
+          "type": "A",
+          "value": "172.67.73.100",
+          "last_seen": "2025-10-07T21:57:18.996000"
+        },
+        {
+          "subdomain": "test.staking",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:2f8",
+          "last_seen": "2025-10-07T21:58:37.507000"
+        },
+        {
+          "subdomain": "test.staking",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:3f8",
+          "last_seen": "2025-10-07T21:58:37.507000"
+        },
+        {
+          "subdomain": "test.staking",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:4964",
+          "last_seen": "2025-10-07T21:58:37.508000"
+        },
+        {
+          "subdomain": "testlaunchdao",
+          "type": "A",
+          "value": "104.26.2.248",
+          "last_seen": "2025-10-07T21:57:19.619000"
+        },
+        {
+          "subdomain": "testlaunchdao",
+          "type": "A",
+          "value": "104.26.3.248",
+          "last_seen": "2025-10-07T21:57:19.619000"
+        },
+        {
+          "subdomain": "testlaunchdao",
+          "type": "A",
+          "value": "172.67.73.100",
+          "last_seen": "2025-10-07T21:57:19.619000"
+        },
+        {
+          "subdomain": "testlaunchdao",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:2f8",
+          "last_seen": "2025-10-07T21:58:33.824000"
+        },
+        {
+          "subdomain": "testlaunchdao",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:3f8",
+          "last_seen": "2025-10-07T21:58:33.823000"
+        },
+        {
+          "subdomain": "testlaunchdao",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:4964",
+          "last_seen": "2025-10-07T21:58:33.824000"
+        },
+        {
+          "subdomain": "www",
+          "type": "A",
+          "value": "104.26.2.248",
+          "last_seen": "2025-10-07T21:57:18.997000"
+        },
+        {
+          "subdomain": "www",
+          "type": "A",
+          "value": "104.26.3.248",
+          "last_seen": "2025-10-07T21:57:18.997000"
+        },
+        {
+          "subdomain": "www",
+          "type": "A",
+          "value": "172.67.73.100",
+          "last_seen": "2025-10-07T21:57:18.997000"
+        },
+        {
+          "subdomain": "www",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:2f8",
+          "last_seen": "2025-10-07T21:58:28.445000"
+        },
+        {
+          "subdomain": "www",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:3f8",
+          "last_seen": "2025-10-07T21:58:28.445000"
+        },
+        {
+          "subdomain": "www",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:4964",
+          "last_seen": "2025-10-07T21:58:28.445000"
+        },
+        {
+          "subdomain": "www.publicsale",
+          "type": "A",
+          "value": "104.26.2.248",
+          "last_seen": "2025-10-07T21:57:19.448000"
+        },
+        {
+          "subdomain": "www.publicsale",
+          "type": "A",
+          "value": "104.26.3.248",
+          "last_seen": "2025-10-07T21:57:19.448000"
+        },
+        {
+          "subdomain": "www.publicsale",
+          "type": "A",
+          "value": "172.67.73.100",
+          "last_seen": "2025-10-07T21:57:19.448000"
+        },
+        {
+          "subdomain": "www.publicsale",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:2f8",
+          "last_seen": "2025-10-07T21:58:30.338000"
+        },
+        {
+          "subdomain": "www.publicsale",
+          "type": "AAAA",
+          "value": "2606:4700:20::681a:3f8",
+          "last_seen": "2025-10-07T21:58:30.338000"
+        },
+        {
+          "subdomain": "www.publicsale",
+          "type": "AAAA",
+          "value": "2606:4700:20::ac43:4964",
+          "last_seen": "2025-10-07T21:58:30.338000"
+        }
+      ],
+      "more": false
+    },
+    "virustotal": {},
+    "hunter": {},
+    "hibp": {}
+  },
+  "extracted_targets": {
+    "domain": "pantherprotocol.io",
+    "website": "https://pantherprotocol.io/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "contracts": [
+    {
+      "name": "Wrapped SCRT (wSCRT) on Ethereum",
+      "address": "0x2b89bf8ba858cd2fcee1fada378d5cd6936968be",
+      "network": "ethereum",
+      "type": "wrapped_token",
+      "source": "etherscan.io",
+      "verified": true
+    },
+    {
+      "name": "Secret SCRT (sSCRT) on Secret Network",
+      "address": "secret1k0jntykt7e4g3y88ltc60czgjuqdy4c9e8fzek",
+      "network": "secret-network",
+      "type": "snip20_token",
+      "source": "Secret Network docs",
+      "verified": true
+    }
+  ],
+  "search_attempted": true,
+  "note": "Manual verification needed - check website and docs",
+  "analyzed_at": "2025-09-29T14:12:10.769497",
+  "last_updated": "2025-09-29T15:47:14.208201"
+}

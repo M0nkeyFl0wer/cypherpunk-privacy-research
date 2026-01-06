@@ -1,0 +1,19 @@
+
+# Merge Instructions for xx-network
+#
+# This data should be ADDED to the existing entry, not replace it.
+# Review each field and only add what's missing or more accurate.
+#
+# Fields with underscore prefix (_research_confidence) are metadata
+# and should NOT be included in the final YAML.
+#
+# Research confidence: 0.8
+# Research date: 
+
+name: Xx Network
+description: Quantum Resistant Decentralized Mixnet with Blockchain
+ecosystem:
+- other
+links:
+  web: https://xx.network
+  github: https://github.com/xx-labs

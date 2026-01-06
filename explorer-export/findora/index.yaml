@@ -1,0 +1,22 @@
+name: Findora
+categories:
+- infrastructure
+ecosystem:
+- Ethereum
+usecases:
+- Privacy
+description: Official Implementation of Findora Network.
+team:
+  anonymous: true
+links:
+  web: https://findora.com
+project_status:
+  version: Mainnet
+sunset: false
+blockchain_features:
+  opensource: true
+  asset_custody_type: non-custody
+default_privacy: false
+tracebility:
+  kyc: false
+licences: Other

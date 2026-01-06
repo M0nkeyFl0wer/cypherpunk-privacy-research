@@ -1,0 +1,12 @@
+{
+  "project": "",
+  "timestamp": "2025-10-08T07:54:51-07:00",
+  "apis": {
+    "hibp": "8179a64e9e...",
+    "shodan": "RwisPOtgIJ...",
+    "abuseipdb": "4ce14d82924f548...",
+    "virustotal": "5bdb406d1b9be38...",
+    "hunter": "fc2fdd4c29..."
+  },
+  "task": "Comprehensive OSINT using all available APIs"
+}

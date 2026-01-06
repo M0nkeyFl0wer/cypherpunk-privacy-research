@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
-const basePath = process.env.NODE_ENV === 'production' ? '/web3-privacy-ethereum-cypherpunk-research' : '';
+// For cypherpunk-research.benwest.io - no basePath needed for custom subdomain
+const basePath = '';
 
 const nextConfig = {
   output: 'export',
@@ -8,7 +9,7 @@ const nextConfig = {
   },
   trailingSlash: true,
   basePath,
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/web3-privacy-ethereum-cypherpunk-research/' : '',
+  assetPrefix: '',
   env: {
     NEXT_PUBLIC_BASE_PATH: basePath,
   },

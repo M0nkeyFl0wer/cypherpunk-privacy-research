@@ -1,0 +1,17 @@
+{
+  "project_name": "aztec",
+  "team": [],
+  "team_confidence": 0.0,
+  "team_sources": [],
+  "research_date": "2025-10-06T16:00:27Z",
+  "batch_number": 4,
+  "research_method": "multi_source_verification",
+  "execution_host": "FlowerPowered",
+  "gaps": [
+    {
+      "field": "team_information",
+      "reason": "No team information found via website scraping or GitHub",
+      "sources_attempted": 3
+    }
+  ]
+}

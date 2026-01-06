@@ -1,1501 +1,1056 @@
 [
   {
-    "slug": "0xbow",
-    "name": "0xbow",
-    "category": "unknown",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 30
-  },
-  {
-    "slug": "1inch-privacy",
-    "name": "1inch Privacy",
-    "category": "Uncategorized",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": false,
-    "completeness": 0
-  },
-  {
-    "slug": "ai-discovered",
-    "name": "Ai Discovered",
-    "category": "Uncategorized",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 0
-  },
-  {
-    "slug": "aleo",
-    "name": "Aleo",
-    "category": "Uncategorized",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": false,
-    "completeness": 0
-  },
-  {
-    "slug": "alephim",
-    "name": "Alephim",
-    "category": "computing",
-    "website": null,
-    "description": "Open source DePIN confidential VMs",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 50
-  },
-  {
-    "slug": "anoma",
-    "name": "Anoma",
-    "category": "Uncategorized",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": false,
-    "completeness": 0
-  },
-  {
-    "slug": "archive-incomplete",
-    "name": "Archive Incomplete",
-    "category": "Uncategorized",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": false,
-    "hasCard": false,
-    "completeness": 0
-  },
-  {
-    "slug": "arpa",
-    "name": "Arpa",
-    "category": "computing",
-    "website": null,
-    "description": "Threshold BLS network for verifiable random number generation",
-    "privacyTechniques": [
-      "Threshold BLS Signatures (BLS-TSS)",
-      "Distributed Key Generation (DKG)",
-      "Multi-Party Computation (MPC)",
-      "Verifiable Random Function (VRF)",
-      "Elliptic Curve Cryptography",
-      "Dynamic Node Grouping",
-      "Byzantine Fault Tolerance"
-    ],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 50
-  },
-  {
-    "slug": "aztec",
-    "name": "Aztec",
-    "category": "unknown",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 30
-  },
-  {
-    "slug": "aztec-network",
-    "name": "Aztec Network",
-    "category": "defi",
-    "website": "https://aztec.network",
-    "description": "Privacy-first ZK rollup",
-    "privacyTechniques": [
-      "Zero-Knowledge Proofs (ZK-SNARKs)",
-      "PLONK Proof System",
-      "ZK-ZK Rollup (ZK²)",
-      "Encrypted Transactions",
-      "Private State Management",
-      "Nullifier System",
-      "Private Execution Environment (PXE)",
-      "Note Encryption",
-      "Hybrid Public-Private Execution",
-      "Confidential Smart Contracts"
-    ],
-    "techStack": [
-      "C++",
-      "TypeScript",
-      "Noir",
-      "Solidity",
-      "Rust",
-      "JavaScript",
-      "Node.js",
-      "Barretenberg",
-      "Aztec.js",
-      "Aztec.nr"
-    ],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 80
-  },
-  {
-    "slug": "aztec-protocol",
-    "name": "Aztec Protocol",
-    "category": "unknown",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 30
-  },
-  {
-    "slug": "beam",
-    "name": "Beam",
-    "category": "currency",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 30
-  },
-  {
-    "slug": "brave-browser",
-    "name": "Brave Browser",
-    "category": "Uncategorized",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": false,
-    "completeness": 0
-  },
-  {
-    "slug": "brume-wallet",
-    "name": "Brume Wallet",
-    "category": "wallet",
-    "website": null,
-    "description": "Privacy-native Ethereum wallet with TOR integration",
-    "privacyTechniques": [
-      "Tor Network Integration",
-      "Built-in Tor routing for all network requests",
-      "Unique IP address per wallet account",
-      "IP address masking from third-parties",
-      "EIP-1193 provider with hardened phishing protections",
-      "Non-custodial architecture",
-      "Open-source and reproducible builds",
-      "Minimal dependencies (20x less than competitors)",
-      "WalletConnect with spoofed domain protection",
-      "Anonymous transaction routing through Tor",
-      "No IP/wallet address sharing with third parties"
-    ],
-    "techStack": [
-      "TypeScript",
-      "Next.js",
-      "React",
-      "Capacitor",
-      "WebAssembly (WASM)",
-      "Solidity",
-      "Node.js",
-      "Swift",
-      "Kotlin",
-      "HTML/CSS",
-      "MDX",
-      "JavaScript"
-    ],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 70
-  },
-  {
+    "id": "cake-wallet",
     "slug": "cake-wallet",
+    "confidence": 0.8,
+    "researchDate": "2025-10-07",
     "name": "Cake Wallet",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "description": "Open-source, non-custodial, privacy-focused multi-currency cryptocurrency wallet supporting Monero, Bitcoin, Ethereum, Litecoin, and other cryptocurrencies. Features built-in exchange, native Tor integration, Bitcoin privacy tools (Silent Payments, Payjoin), and best-in-class Monero support.",
+    "website": "https://cakewallet.com/",
+    "github": "https://github.com/cake-tech/cake_wallet",
+    "team": [
+      {
+        "name": "Vikrant Sharma",
+        "role": "Founder & CEO",
+        "linkedin": null
+      }
+    ],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "monero",
+    "category": "Privacy Infrastructure"
   },
   {
-    "slug": "chainport",
-    "name": "Chainport",
-    "category": "bridges",
-    "website": null,
-    "description": "Cross-chain bridge with privacy options",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 50
-  },
-  {
+    "id": "circom",
     "slug": "circom",
+    "confidence": 0.5,
+    "researchDate": "",
     "name": "Circom",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "description": "zkSnark circuit compiler - A domain-specific language for defining arithmetic circuits that can be used to generate zero-knowledge proofs",
+    "website": "https://docs.circom.io/",
+    "github": "https://github.com/iden3/circom",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
   },
   {
+    "id": "concordium",
     "slug": "concordium",
+    "confidence": 0.8,
+    "researchDate": "2025-10-07",
     "name": "Concordium",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "description": "A privacy-focused, public, and permissionless Layer-1 blockchain with protocol-level identity verification, zero-knowledge proofs, and built-in compliance features. First blockchain with built-in identity verification at the protocol level.",
+    "website": "https://www.concordium.com/",
+    "github": "https://github.com/Concordium",
+    "team": [
+      {
+        "name": "Lars Seier Christensen",
+        "role": "Founder and Chairman of Concordium Foundation Board",
+        "linkedin": "NOT_FOUND"
+      }
+    ],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
   },
   {
-    "slug": "curve-privacy",
-    "name": "Curve Privacy",
-    "category": "Uncategorized",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": false,
-    "completeness": 0
-  },
-  {
-    "slug": "cyclone-protocol",
-    "name": "Cyclone Protocol",
-    "category": "mixing",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 30
-  },
-  {
-    "slug": "dark-forest",
-    "name": "Dark Forest",
-    "category": "Uncategorized",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": false,
-    "completeness": 0
-  },
-  {
+    "id": "darkfi",
     "slug": "darkfi",
-    "name": "darkfi",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "confidence": 0.8,
+    "researchDate": "",
+    "name": "Darkfi",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
   },
   {
-    "slug": "dash",
-    "name": "Dash",
-    "category": "Uncategorized",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": false,
-    "completeness": 0
-  },
-  {
+    "id": "deeper-network",
     "slug": "deeper-network",
+    "confidence": 0.8,
+    "researchDate": "",
     "name": "Deeper Network",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "description": "",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
   },
   {
-    "slug": "deliverables",
-    "name": "Deliverables",
-    "category": "Uncategorized",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": false,
-    "hasCard": false,
-    "completeness": 0
-  },
-  {
-    "slug": "docs",
-    "name": "Docs",
-    "category": "Uncategorized",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": false,
-    "hasCard": false,
-    "completeness": 0
-  },
-  {
-    "slug": "dusk-network",
-    "name": "Dusk Network",
-    "category": "Uncategorized",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": false,
-    "completeness": 0
-  },
-  {
-    "slug": "edge-wallet",
-    "name": "Edge Wallet",
-    "category": "wallet",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 30
-  },
-  {
+    "id": "elusiv",
     "slug": "elusiv",
+    "confidence": 0.8,
+    "researchDate": "2025-10-07T20:30:00Z",
     "name": "Elusiv",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "description": "",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
   },
   {
-    "slug": "eth2-deposit-cli",
-    "name": "Eth2 Deposit Cli",
-    "category": "Uncategorized",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": false,
-    "completeness": 0
-  },
-  {
-    "slug": "farcaster",
-    "name": "Farcaster",
-    "category": "Uncategorized",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": false,
-    "completeness": 0
-  },
-  {
+    "id": "fileverse",
     "slug": "fileverse",
-    "name": "fileverse",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "confidence": 0.8,
+    "researchDate": "2025-10-07",
+    "name": "Fileverse",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
   },
   {
+    "id": "findora",
     "slug": "findora",
+    "confidence": 0.8,
+    "researchDate": "",
     "name": "Findora",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "description": "Findora is a Layer-1 blockchain that accelerates mainstream adoption through powerful zero-knowledge solutions and SDKs. It is a decentralized, privacy-preserving smart contract platform featuring programmable privacy, secured by a decentralized network of global validators running the Tendermint consensus mechanism.",
+    "website": "https://findora.org/",
+    "github": "https://github.com/FindoraNetwork",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
   },
   {
-    "slug": "firn-protocol",
-    "name": "Firn Protocol",
-    "category": "defi",
-    "website": null,
-    "description": "First zero-knowledge privacy platform in account-based model",
-    "privacyTechniques": [
-      "Zero-Knowledge Proofs (no trusted setup)",
-      "Anonymous Zether Protocol",
-      "ElGamal Encryption (with message in the exponent)",
-      "Sigma-Bullets (Bulletproofs + Σ-protocols)",
-      "Many-out-of-Many Proofs",
-      "Account-based privacy model",
-      "Homomorphic encryption",
-      "Decisional Diffie-Hellman (DDH) assumption",
-      "Inner Product Arguments"
-    ],
-    "techStack": [
-      "Solidity",
-      "JavaScript",
-      "TypeScript",
-      "Foundry",
-      "Circom",
-      "SnarkJS",
-      "MetaMask Snap",
-      "Rust (Foundry toolkit)"
-    ],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 70
-  },
-  {
+    "id": "firo",
     "slug": "firo",
+    "confidence": 0.8,
+    "researchDate": "2025-10-07",
     "name": "Firo",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "description": "Privacy-focused cryptocurrency that utilizes the Lelantus Spark protocol which supports high anonymity sets without requiring trusted setup and relying on standard cryptographic assumptions",
+    "website": "https://firo.org",
+    "github": "https://github.com/firoorg/firo",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
   },
   {
+    "id": "fluidkey",
     "slug": "fluidkey",
+    "confidence": 0.8,
+    "researchDate": "2025-10-07T20:15:00Z",
     "name": "Fluidkey",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "description": "Privacy-preserving wallet using stealth addresses to allow users to receive and manage funds onchain without publicly linking them to their identity. Implements ERC-5564 standard for stealth addresses with integration to ENS.",
+    "website": "https://fluidkey.com",
+    "github": "",
+    "team": [
+      {
+        "name": "Antonio",
+        "role": "Co-founder & CTO",
+        "linkedin": null
+      },
+      {
+        "name": "Moritz",
+        "role": "Co-founder",
+        "linkedin": null
+      }
+    ],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "ethereum",
+    "category": "Privacy Infrastructure"
   },
   {
-    "slug": "frame",
-    "name": "Frame",
-    "category": "wallet",
-    "website": null,
-    "description": "Open-source, non-custodial Ethereum desktop wallet",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
-  },
-  {
-    "slug": "gitcoin-grants",
-    "name": "Gitcoin Grants",
-    "category": "Uncategorized",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": false,
-    "completeness": 0
-  },
-  {
-    "slug": "grin",
-    "name": "Grin",
-    "category": "currency",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 30
-  },
-  {
+    "id": "hopr",
     "slug": "hopr",
+    "confidence": 0.8,
+    "researchDate": "",
     "name": "HOPR",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "description": "HOPR provides essential and compliant network-level metadata privacy for everyone. HOPR is an open incentivized mixnet which enables privacy-preserving point-to-point data exchange. HOPR is similar to Tor but actually private, decentralized and economically sustainable.",
+    "website": "https://hoprnet.org/",
+    "github": "https://github.com/hoprnet",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
   },
   {
-    "slug": "horizen",
-    "name": "Horizen",
-    "category": "Uncategorized",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": false,
-    "completeness": 0
-  },
-  {
+    "id": "iden3",
     "slug": "iden3",
+    "confidence": 0.8,
+    "researchDate": "",
     "name": "iden3",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "description": "Blockchain-based identity management solution including privacy by design with zkSNARKs. Self-sovereign identity protocol for decentralised and trust-minimised environments.",
+    "website": "https://iden3.io",
+    "github": "https://github.com/iden3",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
   },
   {
-    "slug": "iexec",
-    "name": "Iexec",
-    "category": "computing",
-    "website": null,
-    "description": "Decentralized cloud computing with TEE",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 50
-  },
-  {
+    "id": "incognito",
     "slug": "incognito",
+    "confidence": 0.8,
+    "researchDate": "",
     "name": "Incognito",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "description": "",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
   },
   {
+    "id": "iron-fish",
     "slug": "iron-fish",
+    "confidence": 0.8,
+    "researchDate": "2025-10-07T20:15:00-07:00",
     "name": "Iron Fish",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "description": "A novel cryptocurrency focused on privacy and accessibility. Iron Fish encrypts every transaction, shielding your sensitive asset information from public view. With read-only view keys, you remain compliant and in control.",
+    "website": "https://ironfish.network",
+    "github": "https://github.com/iron-fish/ironfish",
+    "team": [
+      {
+        "name": "Elena Nadolinski",
+        "role": "Founder & CEO",
+        "linkedin": "https://www.linkedin.com/in/elenanadolinski/"
+      }
+    ],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
   },
   {
-    "slug": "keep-network",
-    "name": "Keep Network",
-    "category": "Uncategorized",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": false,
-    "completeness": 0
-  },
-  {
-    "slug": "labyrinth",
-    "name": "Labyrinth",
-    "category": "defi",
-    "website": null,
-    "description": "Multichain Modular Privacy Framework with a Decentralized Compliance Network",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 50
-  },
-  {
-    "slug": "lens-protocol",
-    "name": "Lens Protocol",
-    "category": "Uncategorized",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": false,
-    "completeness": 0
-  },
-  {
-    "slug": "light-protocol",
-    "name": "Light Protocol",
-    "category": "defi",
-    "website": null,
-    "description": "Privacy layer for Solana",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 50
-  },
-  {
-    "slug": "litentry",
-    "name": "Litentry",
-    "category": "did",
-    "website": null,
-    "description": "Decentralized identity aggregation protocol",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 50
-  },
-  {
-    "slug": "maci",
-    "name": "Maci",
-    "category": "Uncategorized",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": false,
-    "completeness": 0
-  },
-  {
-    "slug": "manta-network",
-    "name": "Manta Network",
-    "category": "infrastructure",
-    "website": null,
-    "description": "On-Chain Privacy for Web 3, DeFi and more",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
-  },
-  {
-    "slug": "mask",
-    "name": "Mask",
-    "category": "Uncategorized",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": false,
-    "completeness": 0
-  },
-  {
+    "id": "mask-network",
     "slug": "mask-network",
+    "confidence": 0.8,
+    "researchDate": "",
     "name": "Mask Network",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "description": "",
+    "website": "",
+    "github": "",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
   },
   {
-    "slug": "metamask-snaps",
-    "name": "Metamask Snaps",
-    "category": "Uncategorized",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": false,
-    "completeness": 0
-  },
-  {
-    "slug": "mina-protocol",
-    "name": "Mina Protocol",
-    "category": "Uncategorized",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": false,
-    "completeness": 0
-  },
-  {
+    "id": "mobilecoin",
     "slug": "mobilecoin",
+    "confidence": 0.8,
+    "researchDate": "",
     "name": "MobileCoin",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "description": "",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
   },
   {
+    "id": "monero",
     "slug": "monero",
-    "name": "monero",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "confidence": 0.9,
+    "researchDate": "2025-10-07T20:00:00Z",
+    "name": "Monero",
+    "description": "Monero: the secure, private, untraceable cryptocurrency. Private, decentralized cryptocurrency that keeps your finances confidential and secure.",
+    "team": [
+      {
+        "name": "fluffypony (Riccardo Spagni)",
+        "role": "Lead maintainer (historical)"
+      },
+      {
+        "name": "tacotime",
+        "role": "Lead maintainer (early)"
+      },
+      {
+        "name": "smooth",
+        "role": "Core Team member"
+      },
+      {
+        "name": "binaryFate (Jeremie Dubois-Lacoste)",
+        "role": "Core Team member"
+      },
+      {
+        "name": "thankful_for_today (pseudonymous)",
+        "role": "Original Founder"
+      }
+    ],
+    "technology": {
+      "privacyTechniques": [
+        "ring signatures",
+        "confidential transactions",
+        "stealth addresses",
+        "Untraceable transactions with ring signatures, stealth addresses, and confidential transactions",
+        "Decentralized peer-to-peer consensus network",
+        "Low transaction fees",
+        "Supports mining (ASIC-resistant)",
+        "Volunteer-driven, community-organized development"
+      ],
+      "techStack": [],
+      "platforms": []
+    },
+    "website": "https://www.getmonero.org/",
+    "github": "https://github.com/monero-project/monero",
+    "ecosystem": "monero",
+    "category": "Privacy Infrastructure",
+    "marketData": {
+      "current_price_usd": 320.4,
+      "market_cap_usd": 5914362929,
+      "market_cap_rank": 38,
+      "24h_volume_usd": 235575007,
+      "circulating_supply": 18446744.07370955,
+      "total_supply": 18446744.07370955,
+      "price_changes": {
+        "24h_percentage": 2.90766,
+        "7d_percentage": 8.47565,
+        "30d_percentage": 18.02351,
+        "1y_percentage": 122.02534
+      },
+      "all_time_high": {
+        "price_usd": 542.33,
+        "date": "2018-01-09",
+        "confidence": 1,
+        "sources": [
+          "https://api.coingecko.com/api/v3/coins/monero"
+        ],
+        "verified": true
+      },
+      "all_time_low": {
+        "price_usd": 0.216177,
+        "date": "2015-01-14",
+        "confidence": 1,
+        "sources": [
+          "https://api.coingecko.com/api/v3/coins/monero"
+        ],
+        "verified": true
+      }
+    },
+    "githubMetrics": {
+      "repository": "https://github.com/monero-project/monero",
+      "stars": 9900,
+      "forks": 3300,
+      "latest_release": "v0.18.4.1"
+    }
   },
   {
+    "id": "mysterium-network",
     "slug": "mysterium-network",
-    "name": "mysterium-network",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "confidence": 0.8,
+    "researchDate": "",
+    "name": "Mysterium Network",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
   },
   {
-    "slug": "nighthawk-wallet",
-    "name": "Nighthawk Wallet",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
-  },
-  {
-    "slug": "nillion",
-    "name": "Nillion",
-    "category": "computing",
-    "website": null,
-    "description": "Decentralizes trust for sensitive data",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
-  },
-  {
-    "slug": "nucypher",
-    "name": "Nucypher",
-    "category": "Uncategorized",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": false,
-    "completeness": 0
-  },
-  {
-    "slug": "nym",
-    "name": "Nym",
-    "category": "infrastructure",
-    "website": "https://nymtech.net",
-    "description": "Infrastructure to prevent data leakage by protecting metadata",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 50
-  },
-  {
+    "id": "oasis-network",
     "slug": "oasis-network",
-    "name": "oasis-network",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "confidence": 0.8,
+    "researchDate": "",
+    "name": "Oasis Network",
+    "description": "Oasis: Smart Privacy for Web3 & AI. Build a better Web3 on the only confidential EVM in production. Scalable & Secure. Interoperable by design.",
+    "website": "https://oasisprotocol.org",
+    "github": "https://github.com/oasisprotocol",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "ethereum",
+    "category": "Privacy Infrastructure"
   },
   {
+    "id": "orchid",
     "slug": "orchid",
+    "confidence": 0.8,
+    "researchDate": "",
     "name": "Orchid",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "description": "The Orchid Protocol organizes bandwidth sellers into a structured peer-to-peer (P2P) network termed the Orchid Market. A decentralized marketplace for AI, storage, and bandwidth that enables customers to connect to the Orchid Market and pay bandwidth sellers in order to form a proxy chain to a specific resource on the Internet.",
+    "website": "https://www.orchid.com",
+    "github": "https://github.com/OrchidTechnologies/orchid",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
   },
   {
+    "id": "oxen",
     "slug": "oxen",
-    "name": "oxen",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "confidence": 0.8,
+    "researchDate": "",
+    "name": "Oxen",
+    "description": "Oxen is a private cryptocurrency based on Monero that offers an incentivised full node layer (Service Nodes), an anonymous onion routing network (Lokinet), and a private messenger (Session). The project has transitioned to using SENT token on Arbitrum L2 for staking and rewards while maintaining the Oxen blockchain as a state chain.",
+    "website": "https://oxen.io",
+    "github": "https://github.com/oxen-io/oxen-core",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "monero",
+    "category": "Privacy Infrastructure"
   },
   {
-    "slug": "panther-protocol",
-    "name": "Panther Protocol",
-    "category": "defi",
-    "website": null,
-    "description": "Decentralized privacy metaprotocol",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
-  },
-  {
-    "slug": "penumbra",
-    "name": "Penumbra",
-    "category": "infrastructure",
-    "website": "https://penumbra.zone",
-    "description": "Shielded pool protocol with cross-chain privacy",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 50
-  },
-  {
-    "slug": "phala-network",
-    "name": "Phala Network",
-    "category": "computing",
-    "website": null,
-    "description": "TEE-based Permissionless Computing Protocol",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
-  },
-  {
-    "slug": "pirate-chain",
-    "name": "Pirate Chain",
-    "category": "currency",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 30
-  },
-  {
-    "slug": "platon-network",
-    "name": "Platon Network",
-    "category": "computing",
-    "website": null,
-    "description": "Blockchain and privacy-preserving computation technologies",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
-  },
-  {
-    "slug": "polygon-hermez",
-    "name": "polygon-hermez",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
-  },
-  {
-    "slug": "polygon-id",
-    "name": "Polygon Id",
-    "category": "did",
-    "website": null,
-    "description": "Privacy-preserving identity protocol",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
-  },
-  {
-    "slug": "polygon-nightfall",
-    "name": "Polygon Nightfall",
-    "category": "layer2",
-    "website": null,
-    "description": "Privacy-Focused Rollup for Enterprises",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
-  },
-  {
-    "slug": "polygon-zero",
-    "name": "polygon-zero",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
-  },
-  {
+    "id": "privatepool",
     "slug": "privatepool",
-    "name": "privatepool",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "confidence": 0.8,
+    "researchDate": "",
+    "name": "Privatepool",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
   },
   {
-    "slug": "pse--privacy---scaling-explorations-",
-    "name": "Pse  Privacy   Scaling Explorations ",
-    "category": "Uncategorized",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": false,
-    "completeness": 0
-  },
-  {
-    "slug": "railgun",
-    "name": "Railgun",
-    "category": "defi",
-    "website": "https://railgun.org",
-    "description": "Privacy protocol for DeFi",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 50
-  },
-  {
-    "slug": "railgun-relay-adapt",
-    "name": "Railgun Relay Adapt",
-    "category": "bridges",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 30
-  },
-  {
-    "slug": "railway-wallet",
-    "name": "Railway Wallet",
-    "category": "wallet",
-    "website": null,
-    "description": "Privacy-focused DeFi wallet",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
-  },
-  {
-    "slug": "ronin",
-    "name": "Ronin",
-    "category": "Uncategorized",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": false,
-    "completeness": 0
-  },
-  {
+    "id": "rotki",
     "slug": "rotki",
-    "name": "rotki",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "confidence": 0.8,
+    "researchDate": "",
+    "name": "Rotki",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
   },
   {
-    "slug": "samourai-wallet",
-    "name": "Samourai Wallet",
-    "category": "Uncategorized",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": false,
-    "completeness": 0
-  },
-  {
-    "slug": "scroll",
-    "name": "Scroll",
-    "category": "layer2",
-    "website": null,
-    "description": "zkEVM-based zkRollup",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
-  },
-  {
-    "slug": "secret-network",
-    "name": "Secret Network",
-    "category": "infrastructure",
-    "website": "https://scrt.network",
-    "description": "First blockchain with customizable privacy",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 50
-  },
-  {
+    "id": "semaphore",
     "slug": "semaphore",
-    "name": "semaphore",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "confidence": 0.8,
+    "researchDate": "",
+    "name": "Semaphore",
+    "description": "A zero-knowledge protocol for anonymous interactions",
+    "website": "https://semaphore.pse.dev",
+    "github": "",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
   },
   {
+    "id": "sentinel",
     "slug": "sentinel",
+    "confidence": 0.8,
+    "researchDate": "",
     "name": "Sentinel",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "description": "",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
   },
   {
-    "slug": "session",
-    "name": "Session",
-    "category": "messaging",
-    "website": null,
-    "description": "Private messenger",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
-  },
-  {
+    "id": "sienna-network",
     "slug": "sienna-network",
-    "name": "sienna-network",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "confidence": 0.95,
+    "researchDate": "2025-10-07",
+    "name": "Sienna Network",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
   },
   {
-    "slug": "silent-protocol",
-    "name": "Silent Protocol",
-    "category": "defi",
-    "website": null,
-    "description": "First protocol enabling compliant full-stack privacy for smart contract assets",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
-  },
-  {
-    "slug": "sismo",
-    "name": "Sismo",
-    "category": "did",
-    "website": null,
-    "description": "Privacy-preserving reputation protocol",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
-  },
-  {
-    "slug": "snapshot-x",
-    "name": "Snapshot X",
-    "category": "Uncategorized",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": false,
-    "completeness": 0
-  },
-  {
+    "id": "snarkjs",
     "slug": "snarkjs",
+    "confidence": 0.8,
+    "researchDate": "",
     "name": "snarkjs",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "description": "",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
   },
   {
+    "id": "starkex",
     "slug": "starkex",
+    "confidence": 0.8,
+    "researchDate": "",
     "name": "StarkEX",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "description": "",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
   },
   {
-    "slug": "starknet",
-    "name": "Starknet",
-    "category": "Uncategorized",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": false,
-    "completeness": 0
-  },
-  {
-    "slug": "status",
-    "name": "Status",
-    "category": "messaging",
-    "website": null,
-    "description": "Secure messaging and crypto wallet",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
-  },
-  {
+    "id": "suterusu",
     "slug": "suterusu",
+    "confidence": 0.8,
+    "researchDate": "",
     "name": "Suterusu",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "description": "",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
   },
   {
-    "slug": "taiko",
-    "name": "Taiko",
-    "category": "layer2",
-    "website": null,
-    "description": "Type 1 zkEVM",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
-  },
-  {
-    "slug": "temp_cleanup",
-    "name": "Temp_cleanup",
-    "category": "Uncategorized",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": false,
-    "hasCard": false,
-    "completeness": 0
-  },
-  {
-    "slug": "ten",
-    "name": "Ten",
-    "category": "layer2",
-    "website": null,
-    "description": "Layer 2 solution extending Web3 Scalability with Encryption",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
-  },
-  {
+    "id": "tornado-cash",
     "slug": "tornado-cash",
+    "confidence": 0.8,
+    "researchDate": "",
     "name": "Tornado Cash",
-    "category": "privacy_mixer",
-    "website": null,
     "description": "Fully decentralized, non-custodial cryptocurrency mixer protocol that runs on Ethereum Virtual Machine-compatible networks, enabling private transactions using zero-knowledge proof technology. Tornado Cash was sanctioned by OFAC in August 2022 but had sanctions lifted in March 2025 following a Fifth Circuit court ruling.",
-    "privacyTechniques": [
-      "zk-SNARKs",
-      "multi-party computation (MPC)"
+    "website": "https://tornado.cash",
+    "github": "https://github.com/tornadocash",
+    "team": [
+      {
+        "name": "Roman Storm",
+        "role": "Founder",
+        "status": "arrested_august_2023"
+      },
+      {
+        "name": "Alexey Pertsev",
+        "role": "Founder",
+        "status": "convicted_netherlands_may_2024"
+      },
+      {
+        "name": "Roman Semenov",
+        "role": "Founder",
+        "status": "at_large_indicted"
+      }
     ],
-    "techStack": [
-      "Circom",
-      "Websnark",
-      "Solidity",
-      "JavaScript"
-    ],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 80
-  },
-  {
-    "slug": "typhoon-network",
-    "name": "typhoon-network",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
-  },
-  {
-    "slug": "umbra-cash",
-    "name": "Umbra Cash",
-    "category": "Uncategorized",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": false,
-    "completeness": 0
-  },
-  {
-    "slug": "veramo",
-    "name": "Veramo",
-    "category": "did",
-    "website": null,
-    "description": "JavaScript framework for verifiable data",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
-  },
-  {
-    "slug": "wasabi-wallet",
-    "name": "Wasabi Wallet",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
-  },
-  {
-    "slug": "webb-protocol",
-    "name": "Webb Protocol",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
-  },
-  {
-    "slug": "xx-network",
-    "name": "xx-network",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
-  },
-  {
-    "slug": "zano",
-    "name": "zano",
-    "category": "other",
-    "website": {
-      "primary_url": "https://zano.org",
-      "blog_url": "https://blog.zano.org/",
-      "explorer_url": "https://explorer.zano.org/",
-      "confidence": 0.95,
-      "sources": [
-        {
-          "url": "https://zano.org",
-          "method": "direct HTTP curl",
-          "status_code": 200,
-          "verification": "HTTPS verified, Cloudflare-secured"
-        }
+    "technology": {
+      "privacyTechniques": [
+        "zk-SNARKs"
+      ],
+      "techStack": [
+        "zkSNARK_privacy_mixer"
+      ],
+      "platforms": [
+        "ethereum",
+        "binance_smart_chain",
+        "polygon",
+        "arbitrum",
+        "optimism",
+        "gnosis_chain",
+        "avalanche"
       ]
     },
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 50
+    "ecosystem": "ethereum",
+    "category": "privacy_mixer",
+    "status": "sanctions_lifted_march_2025",
+    "legalHistory": {
+      "ofac_sanctions": {
+        "sanction_date": "2022-08-08",
+        "reason": "Laundering over $7 billion in virtual currency since 2019, including $455M stolen by North Korean Lazarus Group",
+        "authority": "Executive Order 13694 (as amended)",
+        "press_release": "https://home.treasury.gov/news/press-releases/jy0916",
+        "confidence": 1
+      },
+      "fifth_circuit_ruling": {
+        "decision_date": "2024-11-26",
+        "ruling": "OFAC exceeded statutory authority; immutable smart contracts cannot be classified as 'property' under IEEPA",
+        "decision": "3-0 panel reversal",
+        "key_finding": "Immutable contracts lack hallmarks of ownership, control, and exclusivity",
+        "sources": [
+          "https://www.bakerlaw.com/insights/victory-for-tornado-cash-as-court-rules-sanctions-were-unlawful/",
+          "https://www.mayerbrown.com/en/insights/publications/2024/12/federal-appeals-court-tosses-ofac-sanctions-on-tornado-cash-and-limits-federal-governments-ability-to-police-crypto-transactions"
+        ],
+        "confidence": 1
+      },
+      "sanctions_lifted": {
+        "date": "2025-03-21",
+        "announced_by": "U.S. Department of Treasury OFAC",
+        "reason": "Following Fifth Circuit ruling; OFAC exercised discretion acknowledging 'novel legal and policy issues'",
+        "press_release": "https://home.treasury.gov/news/press-releases/sb0057",
+        "sources": [
+          "https://www.venable.com/insights/publications/2025/04/a-legal-whirlwind-settles-treasury-lifts-sanctions"
+        ],
+        "confidence": 1
+      },
+      "current_status": "sanctions_lifted_criminal_cases_ongoing",
+      "note": "While OFAC sanctions were lifted in March 2025, criminal proceedings against founders Roman Storm and Alexey Pertsev continue"
+    },
+    "contracts": [
+      {
+        "network": "ethereum",
+        "token": "ETH",
+        "denomination": "0.1 ETH",
+        "address": "0x12d66f87a04a9e220743712ce6d9bb1b5616b8fc",
+        "verified": true,
+        "explorer_url": "https://etherscan.io/address/0x12d66f87a04a9e220743712ce6d9bb1b5616b8fc",
+        "confidence": 0.95
+      },
+      {
+        "network": "ethereum",
+        "token": "ETH",
+        "denomination": "10 ETH",
+        "address": "0x910cbd523d972eb0a6f4cae4618ad62622b39dbf",
+        "verified": true,
+        "explorer_url": "https://etherscan.io/address/0x910cbd523d972eb0a6f4cae4618ad62622b39dbf",
+        "confidence": 0.95
+      },
+      {
+        "network": "ethereum",
+        "type": "Router",
+        "address": "0xd90e2f925da726b50c4ed8d0fb90ad053324f31b",
+        "verified": true,
+        "explorer_url": "https://etherscan.io/address/0xd90e2f925da726b50c4ed8d0fb90ad053324f31b",
+        "confidence": 0.95
+      },
+      {
+        "network": "ethereum",
+        "token": "DAI",
+        "denomination": "100,000 DAI",
+        "address": "0x23773e65ed146a459791799d01336db287f25334",
+        "verified": true,
+        "explorer_url": "https://etherscan.io/address/0x23773e65ed146a459791799d01336db287f25334",
+        "confidence": 0.95
+      },
+      {
+        "network": "ethereum",
+        "token": "USDT",
+        "address": "0xd4b88df4d29f5cedd6857912842cff3b20c8cfa3",
+        "verified": true,
+        "note": "Specific denomination not confirmed",
+        "confidence": 0.9
+      },
+      {
+        "network": "ethereum",
+        "token": "TORN",
+        "type": "Governance Token",
+        "address": "0x77777feddddffc19ff86db637967013e6c6a116c",
+        "verified": true,
+        "explorer_url": "https://etherscan.io/address/0x77777feddddffc19ff86db637967013e6c6a116c",
+        "confidence": 0.95
+      }
+    ],
+    "milestones": [
+      {
+        "year": 2019,
+        "month": 8,
+        "event": "Initial Launch",
+        "description": "Tornado Cash v1 launched on Ethereum as experimental software",
+        "confidence": 0.95
+      },
+      {
+        "year": 2020,
+        "month": 5,
+        "event": "Trusted Setup Ceremony",
+        "description": "1,114 contributions to zk-SNARK trusted setup using multi-party computation (MPC), making protocol 'completely trustless and unstoppable'",
+        "confidence": 0.95
+      },
+      {
+        "year": 2021,
+        "month": 6,
+        "event": "Multi-Chain Expansion",
+        "description": "Deployed to multiple side-chains and L2s beyond Ethereum",
+        "confidence": 0.9
+      },
+      {
+        "year": 2021,
+        "month": 10,
+        "event": "Peak TVL",
+        "description": "Total Value Locked reached peak of $1.17 billion",
+        "confidence": 0.95
+      },
+      {
+        "year": 2022,
+        "month": 8,
+        "day": 8,
+        "event": "OFAC Sanctions Imposed",
+        "description": "U.S. Treasury Department sanctioned Tornado Cash for laundering $7B including Lazarus Group funds",
+        "confidence": 1
+      },
+      {
+        "year": 2022,
+        "month": 8,
+        "event": "Alexey Pertsev Arrested",
+        "description": "Dutch authorities arrested co-founder Alexey Pertsev in Amsterdam",
+        "confidence": 0.98
+      },
+      {
+        "year": 2023,
+        "month": 8,
+        "day": 23,
+        "event": "Roman Storm Arrested, Roman Semenov Indicted",
+        "description": "DOJ arrested Roman Storm in Washington State and indicted Roman Semenov (at large); OFAC sanctioned Semenov",
+        "confidence": 0.98
+      },
+      {
+        "year": 2024,
+        "month": 5,
+        "event": "Alexey Pertsev Convicted",
+        "description": "Dutch court convicted Pertsev, sentenced to 5 years 4 months in prison",
+        "confidence": 0.98
+      },
+      {
+        "year": 2024,
+        "month": 11,
+        "day": 26,
+        "event": "Fifth Circuit Reversal",
+        "description": "Fifth Circuit Court ruled OFAC exceeded authority; immutable smart contracts are not 'property' under IEEPA",
+        "confidence": 1
+      },
+      {
+        "year": 2025,
+        "month": 3,
+        "day": 21,
+        "event": "Sanctions Lifted",
+        "description": "OFAC officially delisted Tornado Cash following Fifth Circuit ruling",
+        "confidence": 1
+      }
+    ],
+    "metrics": {
+      "github_stars": 1600,
+      "github_forks": 612,
+      "total_laundered_since_2019": "$7,000,000,000",
+      "total_laundered_since_2019_numeric": 7000000000,
+      "tvl_before_sanctions_august_2022": "$460,600,000",
+      "tvl_before_sanctions_numeric": 460600000,
+      "tvl_peak_october_2021": "$1,170,000,000",
+      "tvl_peak_numeric": 1170000000,
+      "tvl_after_sanctions_march_2023": "$168,250,000",
+      "tvl_after_sanctions_numeric": 168250000,
+      "tvl_drop_percentage": 63.5,
+      "lazarus_group_stolen_funds": "$455,000,000",
+      "lazarus_group_stolen_funds_numeric": 455000000,
+      "harmony_bridge_heist_laundered": "$96,000,000",
+      "harmony_bridge_heist_numeric": 96000000,
+      "nomad_heist_laundered": "$7,800,000",
+      "nomad_heist_numeric": 7800000
+    }
   },
   {
+    "id": "typhoon-network",
+    "slug": "typhoon-network",
+    "confidence": 0.8,
+    "researchDate": "",
+    "name": "Typhoon Network",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
+  },
+  {
+    "id": "wasabi-wallet",
+    "slug": "wasabi-wallet",
+    "confidence": 0.5,
+    "researchDate": "",
+    "name": "Wasabi Wallet",
+    "description": "Open-source, non-custodial, privacy preserving Bitcoin wallet for Windows, Linux, and Mac.",
+    "website": "https://wasabiwallet.io",
+    "github": "https://github.com/WalletWasabi/WalletWasabi",
+    "team": [
+      {
+        "name": "Adam Ficsor (nopara73)",
+        "role": "Creator/Lead Developer",
+        "linkedin": null
+      },
+      {
+        "name": "David Molnar",
+        "role": "Core Developer",
+        "linkedin": null
+      }
+    ],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "bitcoin",
+    "category": "Privacy Infrastructure"
+  },
+  {
+    "id": "webb-protocol",
+    "slug": "webb-protocol",
+    "confidence": 0.8,
+    "researchDate": "",
+    "name": "Webb Protocol",
+    "description": "Zero-knowledge privacy protocol for building private, decentralized applications with cross-chain capabilities",
+    "website": "",
+    "github": "https://github.com/webb-tools",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
+  },
+  {
+    "id": "xx-network",
+    "slug": "xx-network",
+    "confidence": 0.8,
+    "researchDate": "",
+    "name": "Xx Network",
+    "description": "Quantum Resistant Decentralized Mixnet with Blockchain",
+    "website": "https://xx.network",
+    "github": "https://github.com/xx-labs",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
+  },
+  {
+    "id": "zano",
+    "slug": "zano",
+    "confidence": 0.8,
+    "researchDate": "",
+    "name": "Zano",
+    "description": "Zano is an open-source cryptocurrency and ecosystem with enterprise-grade privacy, security, and scalability",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
+  },
+  {
+    "id": "zcash",
     "slug": "zcash",
-    "name": "zcash",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "confidence": 0.95,
+    "researchDate": "2025-10-07",
+    "name": "Zcash",
+    "description": "The first cryptocurrency to develop zero-knowledge encryption for private peer-to-peer payments",
+    "website": "https://z.cash/",
+    "github": "https://github.com/zcash/zcash",
+    "team": [
+      {
+        "name": "Zooko Wilcox-O'Hearn",
+        "role": "Founder and former CEO of Electric Coin Company"
+      },
+      {
+        "name": "Alessandro Chiesa",
+        "role": "Founding Scientist"
+      },
+      {
+        "name": "Christina Garman",
+        "role": "Founding Scientist"
+      },
+      {
+        "name": "Eli Ben-Sasson",
+        "role": "Founding Scientist"
+      },
+      {
+        "name": "Eran Tromer",
+        "role": "Founding Scientist"
+      },
+      {
+        "name": "Ian Miers",
+        "role": "Founding Scientist"
+      },
+      {
+        "name": "Madars Vizra",
+        "role": "Founding Scientist"
+      },
+      {
+        "name": "Matthew Green",
+        "role": "Founding Scientist"
+      },
+      {
+        "name": "Josh Swihart",
+        "role": "CEO"
+      },
+      {
+        "name": "J.W. Verret",
+        "role": "Associate Professor at Antonin Scalia Law School"
+      },
+      {
+        "name": "Marta Belcher",
+        "role": "Board Member"
+      },
+      {
+        "name": "Taylor Hornby",
+        "role": "Board Member"
+      },
+      {
+        "name": "Andrew Miller",
+        "role": "Board Member"
+      },
+      {
+        "name": "Ted Hoffmann",
+        "role": "Board Member"
+      },
+      {
+        "name": "Jack Gavigan",
+        "role": "Executive Director of Zcash Foundation"
+      }
+    ],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "zcash",
+    "category": "Privacy Infrastructure"
   },
   {
+    "id": "zeal",
     "slug": "zeal",
+    "confidence": 0.8,
+    "researchDate": "",
     "name": "Zeal",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "description": "",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
   },
   {
-    "slug": "zecrey",
-    "name": "Zecrey",
-    "category": "Uncategorized",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": false,
-    "completeness": 0
-  },
-  {
-    "slug": "zion",
-    "name": "Zion",
-    "category": "messaging",
-    "website": null,
-    "description": "Decentralized social network",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
-  },
-  {
+    "id": "zk-money",
     "slug": "zk-money",
+    "confidence": 0.8,
+    "researchDate": "",
     "name": "zk.money",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "description": "zk.money was a privacy-focused zkRollup wallet built on Aztec Connect protocol, enabling private transactions and DeFi interactions on Ethereum Layer 2 with zero-knowledge proofs. The service has been SUNSET as of March 31, 2024.",
+    "website": "https://zk.money (DEPRECATED - redirects to GitHub)",
+    "github": "https://github.com/AztecProtocol/zk-money",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "ethereum",
+    "category": "Privacy Infrastructure"
   },
   {
-    "slug": "zkbob",
-    "name": "Zkbob",
-    "category": "Uncategorized",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": false,
-    "completeness": 0
-  },
-  {
-    "slug": "zkp2p",
-    "name": "Zkp2p",
-    "category": "Uncategorized",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": false,
-    "completeness": 0
-  },
-  {
+    "id": "zksync",
     "slug": "zksync",
+    "confidence": 0.8,
+    "researchDate": "2025-10-07T21:54:00Z",
     "name": "zkSync",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "description": "",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
   },
   {
+    "id": "zkvote",
     "slug": "zkvote",
+    "confidence": 0.8,
+    "researchDate": "",
     "name": "zkVote",
-    "category": "other",
-    "website": null,
-    "description": "Privacy-focused Web3 project",
-    "privacyTechniques": [],
-    "techStack": [],
-    "hasReadme": true,
-    "hasCard": true,
-    "completeness": 40
+    "description": "",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
   }
 ]

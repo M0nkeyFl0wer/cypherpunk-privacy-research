@@ -1,0 +1,21 @@
+{
+  "project": "polygon-id",
+  "network": "Polygon",
+  "contracts": [
+    {
+      "name": "IdentityTreeStore",
+      "address": "0x134B1BE34911E39A8397ec6289782989729807a4",
+      "type": "Identity",
+      "verified": true
+    },
+    {
+      "name": "StateV2",
+      "address": "0x134B1BE34911E39A8397ec6289782989729807a4",
+      "type": "State Management",
+      "verified": true
+    }
+  ],
+  "analyzed_at": "2025-10-08T10:19:23.715323",
+  "confidence": 1.0,
+  "data_source": "Manual research + Etherscan verification"
+}

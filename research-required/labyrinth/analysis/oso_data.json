@@ -1,0 +1,48 @@
+{
+  "source": "Open Source Observer",
+  "discovered_at": "2025-09-29T14:42:57.267714",
+  "oso_name": "INT",
+  "github_repos": [
+    "https://github.com/devtrou/integer-contracts"
+  ],
+  "blockchain_addresses": [
+    {
+      "address": "0xa8a4367eeff6b4986f42b4d750be58bba87973fe",
+      "tags": [
+        "eoa",
+        "deployer"
+      ],
+      "networks": [
+        "base"
+      ]
+    },
+    {
+      "address": "0x59c2f99429fb7178ee8ce9bdb1d2bab730601ea4",
+      "tags": [
+        "contract"
+      ],
+      "networks": [
+        "base"
+      ]
+    }
+  ],
+  "websites": [
+    "https://intbase.xyz/"
+  ],
+  "npm_packages": [],
+  "defillama_urls": [],
+  "description": "INTBASE is a platform that hosted the \"INT BURN for AIRDROP\" event, allowing participants to burn $INT tokens in exchange for $100 in $pTAD each. The event was limited to the first 50 participants, with a maximum of 3 INT per wallet, and ran from September 1 to 15, 2024.",
+  "social": {
+    "twitter": [
+      {
+        "url": "https://twitter.com/INT4096BASE"
+      }
+    ],
+    "farcaster": [
+      {
+        "url": "https://warpcast.com/trou"
+      }
+    ]
+  },
+  "confidence": "medium"
+}

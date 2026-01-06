@@ -1,0 +1,20 @@
+{
+  "source": "Open Source Observer",
+  "discovered_at": "2025-09-29T14:42:57.293064",
+  "oso_name": "Polygon",
+  "github_repos": [
+    "https://github.com/0xpolygon",
+    "https://github.com/maticnetwork"
+  ],
+  "blockchain_addresses": [],
+  "websites": [],
+  "npm_packages": [
+    "https://www.npmjs.com/package/@maticnetwork/maticjs",
+    "https://www.npmjs.com/package/@maticnetwork/maticjs-ethers",
+    "https://www.npmjs.com/package/@maticnetwork/maticjs-web3"
+  ],
+  "defillama_urls": [],
+  "description": "",
+  "social": {},
+  "confidence": "medium"
+}

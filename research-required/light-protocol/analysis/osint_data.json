@@ -1,0 +1,129 @@
+{
+  "project": "light-protocol",
+  "timestamp": "2025-10-08T08:39:11-07:00",
+  "osint_version": "v3_github_homepage",
+  "osint_sources": {
+    "shodan": {
+      "domain": "zkcompression.com",
+      "tags": [
+        "ipv6",
+        "spf"
+      ],
+      "subdomains": [
+        "www"
+      ],
+      "data": [
+        {
+          "subdomain": "",
+          "type": "A",
+          "value": "104.21.35.225",
+          "last_seen": "2025-10-05T20:50:48.970000"
+        },
+        {
+          "subdomain": "",
+          "type": "A",
+          "value": "172.67.180.85",
+          "last_seen": "2025-10-05T20:50:48.971000"
+        },
+        {
+          "subdomain": "",
+          "type": "AAAA",
+          "value": "2606:4700:3032::6815:23e1",
+          "last_seen": "2025-10-05T20:53:12.151000"
+        },
+        {
+          "subdomain": "",
+          "type": "AAAA",
+          "value": "2606:4700:3037::ac43:b455",
+          "last_seen": "2025-10-05T20:53:12.151000"
+        },
+        {
+          "subdomain": "",
+          "type": "MX",
+          "value": "eforward1.registrar-servers.com",
+          "last_seen": "2025-10-02T08:57:25.896000"
+        },
+        {
+          "subdomain": "",
+          "type": "MX",
+          "value": "eforward2.registrar-servers.com",
+          "last_seen": "2025-10-02T08:57:25.897000"
+        },
+        {
+          "subdomain": "",
+          "type": "MX",
+          "value": "eforward3.registrar-servers.com",
+          "last_seen": "2025-10-02T08:57:25.897000"
+        },
+        {
+          "subdomain": "",
+          "type": "MX",
+          "value": "eforward4.registrar-servers.com",
+          "last_seen": "2025-10-02T08:57:25.897000"
+        },
+        {
+          "subdomain": "",
+          "type": "MX",
+          "value": "eforward5.registrar-servers.com",
+          "last_seen": "2025-10-02T08:57:25.897000"
+        },
+        {
+          "subdomain": "",
+          "type": "NS",
+          "value": "iris.ns.cloudflare.com",
+          "last_seen": "2025-10-02T08:57:46.922000"
+        },
+        {
+          "subdomain": "",
+          "type": "NS",
+          "value": "seamus.ns.cloudflare.com",
+          "last_seen": "2025-10-02T08:57:46.922000"
+        },
+        {
+          "subdomain": "",
+          "type": "SOA",
+          "value": "iris.ns.cloudflare.com",
+          "last_seen": "2025-10-02T09:00:04.065000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "v=spf1 include:spf.efwd.registrar-servers.com ~all",
+          "last_seen": "2025-10-02T09:00:25.145000"
+        },
+        {
+          "subdomain": "www",
+          "type": "A",
+          "value": "104.21.35.225",
+          "last_seen": "2025-10-05T20:50:49.581000"
+        },
+        {
+          "subdomain": "www",
+          "type": "A",
+          "value": "172.67.180.85",
+          "last_seen": "2025-10-05T20:50:49.581000"
+        },
+        {
+          "subdomain": "www",
+          "type": "AAAA",
+          "value": "2606:4700:3032::6815:23e1",
+          "last_seen": "2025-10-05T20:53:08.404000"
+        },
+        {
+          "subdomain": "www",
+          "type": "AAAA",
+          "value": "2606:4700:3037::ac43:b455",
+          "last_seen": "2025-10-05T20:53:08.404000"
+        }
+      ],
+      "more": false
+    },
+    "virustotal": {},
+    "hunter": {},
+    "hibp": {}
+  },
+  "extracted_targets": {
+    "domain": "zkcompression.com",
+    "website": "https://www.zkcompression.com"
+  }
+}

@@ -1,0 +1,37 @@
+name: Cake Wallet
+categories:
+- wallets
+ecosystem:
+- Ethereum
+- Monero
+- Litecoin
+- Haven
+usecases:
+- Wallet
+description: Open-source, non-custodial, privacy-focused multi-currency cryptocurrency
+  wallet supporting Monero, Bitcoin, Ethereum, Litecoin, and other cryptocurrencies.
+  Features built-in exchange, native Tor i...
+product_launch_day: '2018-01-01'
+team:
+  anonymous: false
+  teammembers:
+  - name: Vikrant Sharma
+    link: https://www.linkedin.com/company/cakewallet
+    role: Founder & CEO
+links:
+  web: https://cakewallet.com
+  github: https://github.com/cake-tech/cake_wallet
+  docs: https://docs.cakewallet.com
+  twitter: https://x.com/cakewallet
+project_status:
+  version: Mainnet
+sunset: false
+blockchain_features:
+  opensource: true
+  asset_custody_type: non-custody
+default_privacy: true
+tracebility:
+  kyc: false
+technology:
+  type: Tor integration, Silent Payments (Bitcoin), Payjoin (Bitcoin)
+licences: MIT License

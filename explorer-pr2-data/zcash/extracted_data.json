@@ -1,0 +1,60 @@
+{
+  "name": "Zcash",
+  "description": "The first cryptocurrency to develop zero-knowledge encryption for private peer-to-peer payments",
+  "ecosystem": [
+    "zcash"
+  ],
+  "team": {
+    "anonymous": false,
+    "teammembers": [
+      {
+        "name": "Zooko Wilcox-O'Hearn",
+        "role": "Founder and former CEO of Electric Coin Company"
+      },
+      {
+        "name": "Alessandro Chiesa",
+        "role": "Founding Scientist"
+      },
+      {
+        "name": "Christina Garman",
+        "role": "Founding Scientist"
+      },
+      {
+        "name": "Eli Ben-Sasson",
+        "role": "Founding Scientist"
+      },
+      {
+        "name": "Eran Tromer",
+        "role": "Founding Scientist"
+      },
+      {
+        "name": "Ian Miers",
+        "role": "Founding Scientist"
+      },
+      {
+        "name": "Madars Vizra",
+        "role": "Founding Scientist"
+      },
+      {
+        "name": "Matthew Green",
+        "role": "Founding Scientist"
+      },
+      {
+        "name": "Josh Swihart",
+        "role": "CEO"
+      },
+      {
+        "name": "J.W. Verret",
+        "role": "Associate Professor at Antonin Scalia Law School"
+      }
+    ]
+  },
+  "links": {
+    "web": "https://z.cash/",
+    "github": "https://github.com/zcash/zcash",
+    "twitter": "https://twitter.com/zcashfoundation"
+  },
+  "product_launch_day": "2016-10-28",
+  "_research_confidence": 0.95,
+  "_research_date": "2025-10-07"
+}

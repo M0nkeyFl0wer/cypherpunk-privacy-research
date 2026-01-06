@@ -1,0 +1,28 @@
+{
+  "project_name": "Labyrinth",
+  "category": "defi",
+  "status": "Private Testnet",
+  "ecosystem": "EVM chains",
+  "technology": "",
+  "description": "Multichain Modular Privacy Framework with a Decentralized Compliance Network",
+  "website": "",
+  "github": "",
+  "discovery_date": "2025-09-29T14:06:45.266607",
+  "discovery_source": "web3privacy_github",
+  "research_progress": {
+    "status": "initial_discovery",
+    "completion_percent": 10,
+    "last_updated": "2025-09-29T14:06:45.266614"
+  },
+  "web3privacy_enriched": true,
+  "enriched_at": "2025-09-29T16:11:39.083886",
+  "mainnet_status": "private_testnet",
+  "is_mainnet": false,
+  "launch_date": "unknown",
+  "audit_count": 0,
+  "audits": [],
+  "supported_chains": [
+    "ethereum"
+  ],
+  "launch_status": "Private Testnet"
+}

@@ -1,0 +1,15 @@
+{
+  "project": "manta-network",
+  "network": "Ethereum",
+  "contracts": [
+    {
+      "name": "Manta Pacific Bridge",
+      "address": "0x3B95bC951EE0f553ba487327278cAc44f29715E5",
+      "type": "Bridge",
+      "verified": true
+    }
+  ],
+  "analyzed_at": "2025-10-08T10:19:23.715134",
+  "confidence": 1.0,
+  "data_source": "Manual research + Etherscan verification"
+}

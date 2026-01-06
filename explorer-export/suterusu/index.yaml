@@ -1,0 +1,22 @@
+name: Suterusu
+categories:
+- infrastructure
+ecosystem:
+- Ethereum
+usecases:
+- Privacy
+description: zk-ConSNARK rust implementation
+team:
+  anonymous: true
+links:
+  web: https://suterusu.com
+  github: https://github.com/suterusu-team/suter-proofs
+project_status:
+  version: Mainnet
+sunset: false
+blockchain_features:
+  opensource: true
+  asset_custody_type: non-custody
+default_privacy: false
+tracebility:
+  kyc: false

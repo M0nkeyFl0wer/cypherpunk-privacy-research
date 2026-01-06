@@ -1,0 +1,394 @@
+{
+  "project_name": "StarShell",
+  "category": "wallet",
+  "confidence_score": 0.95,
+  "data_sources": [
+    "https://github.com/SolarRepublic/starshell-wallet",
+    "GitHub Repository Code Analysis",
+    "Package.json Dependencies",
+    "Documentation Files"
+  ],
+  "github_url": "https://github.com/SolarRepublic/starshell-wallet",
+  "verified": true,
+  "tech_stack": {
+    "primary_language": "TypeScript",
+    "languages": [
+      "TypeScript (ES2022)",
+      "JavaScript",
+      "Svelte",
+      "Less CSS"
+    ],
+    "frontend_framework": {
+      "name": "Svelte",
+      "version": "3.59.1",
+      "details": "Component-based UI with Svelte 3.x and svelte-preprocess"
+    },
+    "build_tools": [
+      {
+        "name": "Vite",
+        "version": "4.3.9",
+        "purpose": "Build tool and dev server"
+      },
+      {
+        "name": "TypeScript",
+        "version": "5.0.4",
+        "config": "ES2022 target with strict type checking"
+      },
+      {
+        "name": "Rollup",
+        "version": "3.23.0",
+        "purpose": "Module bundler (via Vite)"
+      },
+      {
+        "name": "web-ext",
+        "version": "7.6.2",
+        "purpose": "Browser extension development and testing"
+      }
+    ],
+    "cosmos_sdk_components": [
+      {
+        "name": "@cosmjs/amino",
+        "version": "0.30.1",
+        "purpose": "Amino encoding/decoding for Cosmos transactions"
+      },
+      {
+        "name": "@cosmjs/proto-signing",
+        "version": "0.30.1",
+        "purpose": "Protobuf transaction signing"
+      },
+      {
+        "name": "@cosmjs/crypto",
+        "version": "0.30.1",
+        "purpose": "Cryptographic primitives for Cosmos"
+      },
+      {
+        "name": "@cosmjs/encoding",
+        "version": "0.30.1",
+        "purpose": "Encoding utilities (base64, hex, bech32)"
+      },
+      {
+        "name": "@solar-republic/cosmos-grpc",
+        "version": "0.6.3",
+        "purpose": "Cosmos gRPC client implementation"
+      },
+      {
+        "name": "@solar-republic/grpc-web",
+        "version": "0.15.0-fix.3",
+        "purpose": "gRPC-Web protocol support"
+      },
+      {
+        "name": "grpc-web",
+        "version": "1.4.2",
+        "purpose": "gRPC web client"
+      },
+      {
+        "name": "secretjs",
+        "version": "1.9.0",
+        "purpose": "Secret Network JavaScript SDK"
+      }
+    ],
+    "cryptography_libraries": [
+      {
+        "name": "@solar-republic/wasm-secp256k1",
+        "version": "0.0.3-beta.2",
+        "purpose": "WebAssembly-based secp256k1 implementation (fork of libsecp256k1)",
+        "details": "Provides constant-time cryptographic operations resistant to timing attacks, with explicit memory zeroing"
+      },
+      {
+        "name": "libsodium-wrappers",
+        "version": "0.7.11",
+        "purpose": "Curve25519 cryptography for Secret Network transaction encryption",
+        "functions": ["crypto_scalarmult", "crypto_scalarmult_base"]
+      },
+      {
+        "name": "miscreant",
+        "version": "0.3.2",
+        "purpose": "AES-SIV authenticated encryption for Secret Network messages"
+      },
+      {
+        "name": "crypto-js",
+        "version": "4.1.1",
+        "purpose": "General cryptographic utilities"
+      },
+      {
+        "name": "bech32",
+        "version": "2.0.0",
+        "purpose": "Bech32 address encoding/decoding"
+      }
+    ],
+    "wallet_specific_libraries": [
+      {
+        "name": "@keplr-wallet/provider",
+        "version": "0.11.63",
+        "purpose": "Keplr wallet compatibility layer"
+      },
+      {
+        "name": "@keplr-wallet/types",
+        "version": "0.11.63",
+        "purpose": "TypeScript types for Keplr integration"
+      },
+      {
+        "name": "@ledgerhq/hw-transport-webusb",
+        "version": "6.27.15",
+        "purpose": "Ledger hardware wallet WebUSB transport"
+      },
+      {
+        "name": "@solar-republic/bc-ur",
+        "version": "1.1.6-patch.0",
+        "purpose": "Blockchain UR (Uniform Resources) support"
+      },
+      {
+        "name": "@solar-republic/bc-ur-registry-cosmos",
+        "version": "0.2.2-patch.2",
+        "purpose": "Cosmos-specific UR registry for QR code signing"
+      }
+    ],
+    "runtime_environment": "Browser Extension (Manifest V3)",
+    "supported_platforms": [
+      "Chrome/Chromium",
+      "Firefox",
+      "Safari",
+      "Android (Kiwi Browser)"
+    ],
+    "security_frameworks": [
+      {
+        "name": "SES (Secure EcmaScript)",
+        "version": "0.15.17",
+        "purpose": "Runtime hardening against supply-chain attacks via intrinsics lockdown"
+      }
+    ]
+  },
+  "privacy_techniques": {
+    "secret_network_integration": {
+      "description": "Native support for Secret Network's privacy-preserving smart contracts",
+      "snip_standards": [
+        {
+          "name": "SNIP-20",
+          "description": "Privacy-preserving fungible tokens (private transfers, balances)",
+          "implementation": "/src/schema/snip-20-def.ts"
+        },
+        {
+          "name": "SNIP-21",
+          "description": "Transaction history with viewing keys",
+          "implementation": "/src/schema/snip-21-def.ts"
+        },
+        {
+          "name": "SNIP-24",
+          "description": "Permission-based access control for privacy features",
+          "implementation": "/src/schema/snip-24-def.ts"
+        },
+        {
+          "name": "SNIP-25",
+          "description": "Extended token metadata",
+          "implementation": "/src/schema/snip-25-def.ts"
+        }
+      ],
+      "viewing_keys": {
+        "description": "User-controlled viewing keys for selective disclosure of transaction history",
+        "operations": [
+          "create_viewing_key",
+          "set_viewing_key"
+        ]
+      },
+      "transaction_encryption": {
+        "algorithm": "AES-SIV (Synthetic Initialization Vector)",
+        "key_derivation": "HKDF-SHA256 with Curve25519 ECDH",
+        "implementation": "/src/crypto/secret-wasm.ts",
+        "details": "Transactions encrypted client-side before broadcast using consensus IO public key extracted from chain certificate"
+      }
+    },
+    "private_key_management": {
+      "description": "Advanced private key protection using one-time pad technique",
+      "technique": "Runtime Key Split Storage",
+      "implementation": "/src/crypto/runtime-key.ts",
+      "details": [
+        "Private keys split into two halves using one-time pad (XOR operation)",
+        "One half stored in platform's protected memory (SubtleCrypto non-extractable keys)",
+        "Other half stored in application heap memory",
+        "Keys recombined only during signing/encryption operations",
+        "Immediate memory zeroing after cryptographic operations",
+        "Mitigates cold-boot attacks and memory dump vulnerabilities"
+      ],
+      "key_derivation": {
+        "standard": "BIP32/BIP39/BIP44",
+        "implementations": [
+          "/src/crypto/bip32.ts",
+          "/src/crypto/bip39.ts",
+          "/src/crypto/bip44.ts"
+        ]
+      }
+    },
+    "wasm_cryptography": {
+      "description": "WebAssembly-based secp256k1 operations for enhanced security",
+      "rationale": [
+        "Avoids JavaScript string interning that prevents reliable memory zeroing",
+        "Provides constant-time operations resistant to timing attacks",
+        "Uses battle-tested libsecp256k1 C library compiled to WASM"
+      ],
+      "operations": [
+        "Key generation",
+        "ECDSA signing",
+        "Signature verification",
+        "ECDH shared secret derivation"
+      ],
+      "implementation": "/src/crypto/secp256k1.ts",
+      "library": "@solar-republic/wasm-secp256k1 (fork of bitcoin-core/secp256k1)"
+    },
+    "encrypted_memo_support": {
+      "description": "End-to-end encrypted memos using ECDH key agreement",
+      "algorithm": "ECDH + AES-GCM-256",
+      "implementation": "/src/crypto/privacy.ts",
+      "features": [
+        "Sender-receiver key agreement using secp256k1 ECDH",
+        "Nonce derived from transaction sequence number",
+        "HKDF-SHA256 for encryption key derivation",
+        "Base93 encoding for compact ciphertext representation",
+        "Automatic size validation against chain memo limits",
+        "Self-verification via decryption simulation"
+      ],
+      "functions": [
+        "encrypt_private_memo()",
+        "decrypt_private_memo()",
+        "ecdh_encrypt()",
+        "ecdh_decrypt()"
+      ]
+    },
+    "supply_chain_attack_mitigation": {
+      "description": "Multi-layered defense against malicious dependencies",
+      "techniques": [
+        {
+          "name": "SES Lockdown",
+          "implementation": "ses package (0.15.17)",
+          "details": "Freezes JavaScript intrinsics to prevent prototype pollution"
+        },
+        {
+          "name": "Deep Freeze GlobalThis",
+          "implementation": "/static/deep-freeze.js",
+          "details": "Recursively freezes all global object properties before extension initialization"
+        },
+        {
+          "name": "Content Security Policy",
+          "details": "Manifest V3 CSP prevents foreign scripts, eval, and unlisted server connections"
+        }
+      ]
+    },
+    "web_extension_isolation": {
+      "description": "Advanced provider API isolation to prevent malicious extension interference",
+      "architecture": [
+        {
+          "component": "Spotter",
+          "role": "Content script in isolated world, filters messages at document_start"
+        },
+        {
+          "component": "Service Worker",
+          "role": "Handles authentication, policy checks, and orchestrates provider injection"
+        },
+        {
+          "component": "Host",
+          "role": "Content script managing communication with vanilla iframe"
+        },
+        {
+          "component": "Relay",
+          "role": "Script in vanilla iframe with guaranteed native functions"
+        },
+        {
+          "component": "Ratifier",
+          "role": "Verifies window.starshell object authenticity against hijacking"
+        }
+      ],
+      "isolation_features": [
+        "Closed shadow DOM prevents dApp manipulation",
+        "Vanilla iframe ensures true native JavaScript built-ins",
+        "MessageChannel-based communication isolated per connection",
+        "Multi-layer verification prevents co-installed extension attacks"
+      ],
+      "documentation": "/docs/README.md (Privacy and Security section)"
+    },
+    "hardware_wallet_support": {
+      "description": "Ledger hardware wallet integration via WebUSB",
+      "implementation": "/src/crypto/ledger.ts",
+      "transport": "@ledgerhq/hw-transport-webusb (6.27.15)",
+      "features": [
+        "Cosmos app support",
+        "Transaction signing delegation to hardware device",
+        "Public key export without private key exposure"
+      ]
+    },
+    "qr_code_signing": {
+      "description": "Air-gapped transaction signing via QR codes",
+      "standard": "Blockchain UR (Uniform Resources)",
+      "libraries": [
+        "@solar-republic/bc-ur (1.1.6-patch.0)",
+        "@solar-republic/bc-ur-registry-cosmos (0.2.2-patch.2)"
+      ],
+      "use_case": "Sign transactions on offline device and broadcast via QR code scanning"
+    },
+    "password_security": {
+      "description": "Argon2 password hashing for vault encryption",
+      "algorithm": "Argon2id",
+      "implementation": "/src/crypto/argon2.ts",
+      "parameters": {
+        "iterations": "21 (production), 8 (dev), 1 (localhost)",
+        "memory": "32 KiB (production), 1024 bytes (dev), 256 bytes (localhost)"
+      },
+      "vault_encryption": {
+        "cipher": "AES-GCM-256",
+        "key_derivation": "HKDF-SHA256",
+        "plaintext_padding": "512-byte block size to prevent size-based leakage"
+      }
+    }
+  },
+  "privacy_features_summary": [
+    "Native Secret Network SNIP-20/21/24/25 token standard support",
+    "Client-side transaction encryption for Secret Network contracts",
+    "Advanced private key protection with one-time pad splitting",
+    "WASM-based constant-time cryptography (secp256k1)",
+    "End-to-end encrypted memos using ECDH key agreement",
+    "Viewing keys for selective transaction history disclosure",
+    "Supply-chain attack mitigation (SES lockdown + deep freeze)",
+    "Web extension isolation preventing malicious co-installed extension attacks",
+    "Ledger hardware wallet integration",
+    "QR code air-gapped signing support",
+    "Argon2id password hashing with AES-GCM vault encryption",
+    "Memory protection with explicit zeroing after cryptographic operations"
+  ],
+  "metadata": {
+    "project_version": "1.0.34",
+    "license": "MIT",
+    "author": "Blake Regalia",
+    "description": "A privacy-preserving, free and open-source Web3 wallet built for the Secret Network and broader Cosmos ecosystem",
+    "documentation": {
+      "main": "https://github.com/SolarRepublic/starshell-wallet/blob/main/README.md",
+      "technical": "https://github.com/SolarRepublic/starshell-wallet/blob/main/docs/README.md",
+      "security_article": "https://medium.com/@starshellwallet/the-failures-of-web3-wallet-security-90311631e08c",
+      "privacy_article": "https://medium.com/@starshellwallet/web3-wallets-have-serious-privacy-and-security-flaws-5023f8f872b1"
+    },
+    "website": "https://starshell.net/",
+    "repository_structure": {
+      "src/crypto": "Cryptographic implementations (secp256k1, Secret WASM, BIP32/39/44, privacy features)",
+      "src/schema": "SNIP standard definitions (SNIP-20, SNIP-21, SNIP-24, SNIP-25)",
+      "src/app": "Svelte UI components",
+      "src/extension": "Browser extension compatibility layer",
+      "src/chain": "Cosmos chain interaction logic"
+    }
+  },
+  "research_notes": [
+    "StarShell is specifically designed as a privacy-first wallet for Secret Network and Cosmos ecosystem",
+    "Implementation includes novel approaches to private key security not commonly found in browser wallets",
+    "Extensive use of WebAssembly for security-critical cryptographic operations",
+    "Multiple layers of defense against supply-chain attacks and malicious extensions",
+    "Active development with recent commits (v1.0.34 as of analysis)",
+    "Comprehensive documentation of security and privacy architecture",
+    "All privacy features analyzed from actual source code, not marketing claims"
+  ],
+  "timestamp": "2025-10-08T15:22:00Z",
+  "analysis_date": "2025-10-08",
+  "researcher": "Claude Code Research Agent",
+  "constitutional_compliance": {
+    "real_data_only": true,
+    "multi_source_verification": true,
+    "confidence_scoring": true,
+    "gap_reporting": false,
+    "no_synthetic_data": true
+  }
+}

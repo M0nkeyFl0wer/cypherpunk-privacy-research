@@ -1,0 +1,23 @@
+name: MobileCoin
+categories:
+- infrastructure
+ecosystem:
+- Ethereum
+usecases:
+- Privacy
+description: Private payments for mobile devices.
+team:
+  anonymous: true
+links:
+  web: https://mobilecoin.com
+  github: https://github.com/mobilecoinfoundation/mobilecoin
+project_status:
+  version: Mainnet
+sunset: false
+blockchain_features:
+  opensource: true
+  asset_custody_type: non-custody
+default_privacy: false
+tracebility:
+  kyc: false
+licences: Other

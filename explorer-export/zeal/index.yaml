@@ -1,0 +1,22 @@
+name: Zeal
+categories:
+- infrastructure
+ecosystem:
+- Ethereum
+usecases:
+- Privacy
+description: Code repository for Zeal wallet
+team:
+  anonymous: true
+links:
+  web: https://zeal.network
+  github: https://github.com/zealwallet/Wallet
+project_status:
+  version: Mainnet
+sunset: false
+blockchain_features:
+  opensource: true
+  asset_custody_type: non-custody
+default_privacy: false
+tracebility:
+  kyc: false

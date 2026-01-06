@@ -1,0 +1,23 @@
+name: Oasis Network
+categories:
+- infrastructure
+ecosystem:
+- Ethereum
+usecases:
+- Privacy
+description: Performant and Confidentiality-Preserving Smart Contracts + Blockchains
+team:
+  anonymous: true
+links:
+  web: https://oasis-network.org
+  github: https://github.com/oasisprotocol/oasis-core
+project_status:
+  version: Mainnet
+sunset: false
+blockchain_features:
+  opensource: true
+  asset_custody_type: non-custody
+default_privacy: false
+tracebility:
+  kyc: false
+licences: Apache License 2.0

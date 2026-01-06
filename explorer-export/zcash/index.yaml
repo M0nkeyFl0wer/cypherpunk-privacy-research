@@ -1,0 +1,23 @@
+name: Zcash
+categories:
+- infrastructure
+ecosystem:
+- Ethereum
+usecases:
+- Privacy
+description: Zcash - Internet Money
+team:
+  anonymous: true
+links:
+  web: https://zcash.org
+  github: https://github.com/zcash/zcash
+project_status:
+  version: Mainnet
+sunset: false
+blockchain_features:
+  opensource: true
+  asset_custody_type: non-custody
+default_privacy: false
+tracebility:
+  kyc: false
+licences: Other

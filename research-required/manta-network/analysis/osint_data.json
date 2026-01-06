@@ -1,0 +1,2659 @@
+{
+  "project": "manta-network",
+  "timestamp": "2025-10-08T08:38:02-07:00",
+  "osint_version": "v3_github_homepage",
+  "osint_sources": {
+    "shodan": {
+      "domain": "github.com",
+      "tags": [
+        "dmarc",
+        "facebook-verified",
+        "google-verified",
+        "ipv6",
+        "microsoft-office-365",
+        "spf"
+      ],
+      "subdomains": [
+        "_dmarc",
+        "accelerator",
+        "accessibility",
+        "accessibility-playbook",
+        "admin",
+        "alive",
+        "antivirus.wiki",
+        "api",
+        "api.mcp",
+        "api.security",
+        "archiveprogram",
+        "asset-generator",
+        "atom-installer",
+        "autodiscover",
+        "blog",
+        "bounty",
+        "boxen",
+        "brand",
+        "cdn-185-199-108-153",
+        "cdn-185-199-109-153",
+        "cdn-185-199-109-154",
+        "cdn-185-199-110-133",
+        "cdn-185-199-110-153",
+        "cdn-185-199-111-153",
+        "central",
+        "classroom",
+        "cli",
+        "cloud",
+        "codeload",
+        "codeql",
+        "collector",
+        "collector-cdn",
+        "communication",
+        "community",
+        "containers.pkg",
+        "copilot",
+        "cs",
+        "customer-stories-feed",
+        "cxr",
+        "data-science",
+        "de",
+        "desktop",
+        "developer",
+        "developers",
+        "diversity",
+        "docker-proxy.pkg",
+        "docker.pkg",
+        "docs",
+        "docs-internal",
+        "eci",
+        "edu",
+        "education",
+        "email.support",
+        "emails",
+        "embed",
+        "enterprise",
+        "event-sponsorship",
+        "events-feed",
+        "examadmin",
+        "examadmin-uat",
+        "examregistration",
+        "examregistration-api",
+        "examregistration-uat",
+        "examregistration-uat-api",
+        "experiments",
+        "f.cloud",
+        "fi",
+        "forgoodfirstissue",
+        "forms",
+        "fr",
+        "galaxy",
+        "gameoff",
+        "garage",
+        "ghicons",
+        "gist",
+        "gist3",
+        "gists",
+        "git-lfs",
+        "github",
+        "glb-c0e95bd587389a",
+        "glb-db52c2cf8be544",
+        "globalmaintainersummit",
+        "government",
+        "graphql",
+        "guides",
+        "hackathons",
+        "help",
+        "hub",
+        "hubot",
+        "hubspot",
+        "identicons",
+        "import2",
+        "importer2",
+        "info",
+        "infocus",
+        "innovationgraph",
+        "insights",
+        "internships",
+        "ja.wiki",
+        "jobs",
+        "launch",
+        "lb-140-82-113-4-iad",
+        "learn",
+        "lfs",
+        "live",
+        "live-stream",
+        "m.communication",
+        "mac",
+        "mac-installer",
+        "mail01.resources",
+        "mailing",
+        "maintainermonth",
+        "maintainers",
+        "maven.pkg",
+        "mcmail",
+        "media",
+        "next",
+        "nodeload",
+        "nonprofits",
+        "npm-beta-proxy.pkg",
+        "npm-beta.pkg",
+        "npm-proxy.pkg",
+        "npm.pkg",
+        "ns1",
+        "ns2",
+        "nuget.pkg",
+        "o1.sgmail",
+        "o10.sgmail",
+        "o11.sgmail",
+        "o4.sgmail",
+        "o5.sgmail",
+        "o6.sgmail",
+        "o9.sgmail",
+        "octicons",
+        "octo",
+        "octocaptcha.review-lab",
+        "octodex",
+        "octoverse",
+        "octovisuals",
+        "out-1.smtp",
+        "out-17.smtp",
+        "out-18.smtp",
+        "out-19.smtp",
+        "out-2.smtp",
+        "out-20.smtp",
+        "out-21.smtp",
+        "out-22.smtp",
+        "out-23.smtp",
+        "out-24.smtp",
+        "out-25.smtp",
+        "out-26.smtp",
+        "out-27.smtp",
+        "out-28.smtp",
+        "out-3.smtp",
+        "out-4.smtp",
+        "out-5.smtp",
+        "out-6.smtp",
+        "out-7.smtp",
+        "pages",
+        "pages-auth",
+        "pages-origin",
+        "partner",
+        "pkg",
+        "policy",
+        "porter",
+        "porter2",
+        "primer-docs-preview",
+        "primer-lookbook",
+        "pypi.pkg",
+        "raw",
+        "raw-origin",
+        "redirect",
+        "releaseradar",
+        "render",
+        "res.communication",
+        "resources",
+        "rubygems.pkg",
+        "securitylab",
+        "services",
+        "sgmail",
+        "shop",
+        "skills",
+        "skyline",
+        "slack",
+        "smtp",
+        "socialimpact",
+        "spotlights-feed",
+        "ssh",
+        "stars",
+        "startups",
+        "status",
+        "styleguide",
+        "support",
+        "support-assets",
+        "support-origin",
+        "support-ws",
+        "support.enterprise",
+        "swift.pkg",
+        "t.communication",
+        "teach",
+        "teams",
+        "test",
+        "thehub",
+        "training",
+        "transparencycenter",
+        "tuf-repo",
+        "uploads",
+        "visualstudio",
+        "vpn-ca.iad",
+        "vscode",
+        "vscode-auth",
+        "wellarchitected",
+        "wiki",
+        "windows",
+        "ws.support",
+        "www",
+        "www.containers.pkg",
+        "www.docker-proxy.pkg",
+        "www.docker.pkg",
+        "www.maven.pkg",
+        "www.npm-beta-proxy.pkg",
+        "www.npm-beta.pkg",
+        "www.npm-proxy.pkg",
+        "www.npm.pkg",
+        "www.nuget.pkg",
+        "www.pkg",
+        "www.pypi.pkg",
+        "www.rubygems.pkg",
+        "www.swift.pkg"
+      ],
+      "data": [
+        {
+          "subdomain": "",
+          "type": "A",
+          "value": "140.82.112.4",
+          "last_seen": "2025-10-08T01:48:14.880000"
+        },
+        {
+          "subdomain": "",
+          "type": "A",
+          "value": "140.82.113.3",
+          "last_seen": "2025-10-01T02:40:13.810000"
+        },
+        {
+          "subdomain": "",
+          "type": "A",
+          "value": "140.82.113.4",
+          "last_seen": "2025-10-06T03:33:44.689000"
+        },
+        {
+          "subdomain": "",
+          "type": "A",
+          "value": "140.82.114.3",
+          "last_seen": "2025-09-20T03:18:25.429000"
+        },
+        {
+          "subdomain": "",
+          "type": "A",
+          "value": "140.82.114.4",
+          "last_seen": "2025-09-21T02:23:57.281000"
+        },
+        {
+          "subdomain": "",
+          "type": "A",
+          "value": "140.82.116.3",
+          "last_seen": "2025-10-08T13:12:18.611000"
+        },
+        {
+          "subdomain": "",
+          "type": "A",
+          "value": "140.82.116.4",
+          "last_seen": "2025-10-08T05:54:58.598000"
+        },
+        {
+          "subdomain": "",
+          "type": "A",
+          "value": "140.82.121.3",
+          "last_seen": "2025-10-07T15:24:37.263000"
+        },
+        {
+          "subdomain": "",
+          "type": "A",
+          "value": "140.82.121.4",
+          "last_seen": "2025-10-07T12:09:28.371000"
+        },
+        {
+          "subdomain": "",
+          "type": "A",
+          "value": "20.200.245.247",
+          "last_seen": "2025-09-24T19:55:58.855000"
+        },
+        {
+          "subdomain": "",
+          "type": "MX",
+          "value": "alt1.aspmx.l.google.com",
+          "last_seen": "2025-10-08T05:58:59.886000"
+        },
+        {
+          "subdomain": "",
+          "type": "MX",
+          "value": "alt2.aspmx.l.google.com",
+          "last_seen": "2025-10-08T05:58:59.886000"
+        },
+        {
+          "subdomain": "",
+          "type": "MX",
+          "value": "alt3.aspmx.l.google.com",
+          "last_seen": "2025-10-08T05:58:59.886000"
+        },
+        {
+          "subdomain": "",
+          "type": "MX",
+          "value": "alt4.aspmx.l.google.com",
+          "last_seen": "2025-10-08T05:58:59.886000"
+        },
+        {
+          "subdomain": "",
+          "type": "MX",
+          "value": "aspmx.l.google.com",
+          "last_seen": "2025-10-08T05:58:59.886000"
+        },
+        {
+          "subdomain": "",
+          "type": "NS",
+          "value": "dns1.p08.nsone.net",
+          "last_seen": "2025-10-08T05:57:53.800000"
+        },
+        {
+          "subdomain": "",
+          "type": "NS",
+          "value": "dns2.p08.nsone.net",
+          "last_seen": "2025-10-08T05:57:53.799000"
+        },
+        {
+          "subdomain": "",
+          "type": "NS",
+          "value": "dns3.p08.nsone.net",
+          "last_seen": "2025-10-08T05:57:53.799000"
+        },
+        {
+          "subdomain": "",
+          "type": "NS",
+          "value": "dns4.p08.nsone.net",
+          "last_seen": "2025-10-08T05:57:53.799000"
+        },
+        {
+          "subdomain": "",
+          "type": "NS",
+          "value": "ns-1283.awsdns-32.org",
+          "last_seen": "2025-10-08T05:57:53.799000"
+        },
+        {
+          "subdomain": "",
+          "type": "NS",
+          "value": "ns-1707.awsdns-21.co.uk",
+          "last_seen": "2025-10-08T05:57:53.799000"
+        },
+        {
+          "subdomain": "",
+          "type": "NS",
+          "value": "ns-421.awsdns-52.com",
+          "last_seen": "2025-10-08T05:57:53.800000"
+        },
+        {
+          "subdomain": "",
+          "type": "NS",
+          "value": "ns-520.awsdns-01.net",
+          "last_seen": "2025-10-08T05:57:53.800000"
+        },
+        {
+          "subdomain": "",
+          "type": "SOA",
+          "value": "dns1.p08.nsone.net",
+          "last_seen": "2025-10-08T06:00:45.640000"
+        },
+        {
+          "subdomain": "",
+          "type": "SOA",
+          "value": "ns-1707.awsdns-21.co.uk",
+          "last_seen": "2025-10-03T08:34:05.572000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "MS=6BF03E6AF5CB689E315FB6199603BABF2C88D805",
+          "last_seen": "2025-10-08T05:57:42.559000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "MS=ms44452932",
+          "last_seen": "2025-10-08T05:57:42.559000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "MS=ms58704441",
+          "last_seen": "2025-10-08T05:57:42.559000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "TAILSCALE-xOzoDvFUzZr5YYVCQFuD",
+          "last_seen": "2025-10-08T05:57:42.559000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "adobe-idp-site-verification=b92c9e999aef825edc36e0a3d847d2dbad5b2fc0e05c79ddd7a16139b48ecf4b",
+          "last_seen": "2025-10-08T05:57:42.559000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "apple-domain-verification=RyQhdzTl6Z6x8ZP4",
+          "last_seen": "2025-10-08T05:57:42.559000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "atlassian-domain-verification=jjgw98AKv2aeoYFxiL/VFaoyPkn3undEssTRuMg6C/3Fp/iqhkV4HVV7WjYlVeF8",
+          "last_seen": "2025-10-08T05:57:42.559000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "calendly-site-verification=at0DQARi7IZvJtXQAWhMqpmIzpvoBNF7aam5VKKxP",
+          "last_seen": "2025-10-08T05:57:42.559000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "docusign=087098e3-3d46-47b7-9b4e-8a23028154cd",
+          "last_seen": "2025-10-08T05:57:42.559000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "facebook-domain-verification=39xu4jzl7roi7x0n93ldkxjiaarx50",
+          "last_seen": "2025-10-08T05:57:42.559000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "google-site-verification=82Le34Flgtd15ojYhHlGF_6g72muSjamlMVThBOJpks",
+          "last_seen": "2025-10-08T05:57:42.559000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "google-site-verification=UTM-3akMgubp6tQtgEuAkYNYLyYAvpTnnSrDMWoDR3o",
+          "last_seen": "2025-10-08T05:57:42.559000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "jamf-site-verification=XtaPNIYghF_e_xRDI8CjgQ",
+          "last_seen": "2025-10-08T05:57:42.559000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "krisp-domain-verification=ZlyiK7XLhnaoUQb2hpak1PLY7dFkl1WE",
+          "last_seen": "2025-10-08T05:57:42.559000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "loom-site-verification=f3787154f1154b7880e720a511ea664d",
+          "last_seen": "2025-10-08T05:57:42.559000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "miro-verification=d2e174fdb00c71e0bcf58f8e58c3da2dd80dcfa9",
+          "last_seen": "2025-10-08T05:57:42.559000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "shopify-verification-code=t1YPwcmvnxZyBycaCpk1MPyWoFs72o",
+          "last_seen": "2025-10-08T05:57:42.559000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "stripe-verification=f88ef17321660a01bab1660454192e014defa29ba7b8de9633c69d6b4912217f",
+          "last_seen": "2025-10-08T05:57:42.559000"
+        },
+        {
+          "subdomain": "",
+          "type": "TXT",
+          "value": "v=spf1 ip4:192.30.252.0/22 include:_netblocks.google.com include:_netblocks2.google.com include:_netblocks3.google.com include:spf.protection.outlook.com include:mail.zendesk.com include:_spf.salesforce.com include:servers.mcsv.net include:mktomail.com ip4:62.253.227.114 ip4:166.78.69.169 ip4:166.78.69.170 ip4:166.78.71.131 ip4:167.89.101.2 ip4:167.89.101.192/28 ip4:192.254.112.60 ip4:192.254.112.98/31 ip4:192.254.113.10 ip4:192.254.113.101 ip4:192.254.114.176  ~all",
+          "last_seen": "2025-10-08T05:57:42.559000"
+        },
+        {
+          "subdomain": "_dmarc",
+          "type": "TXT",
+          "value": "v=DMARC1; p=reject; pct=100; rua=mailto:dmarc@github.com",
+          "last_seen": "2025-10-03T08:25:23.909000"
+        },
+        {
+          "subdomain": "accelerator",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.956000"
+        },
+        {
+          "subdomain": "accessibility",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.566000"
+        },
+        {
+          "subdomain": "accessibility-playbook",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.513000"
+        },
+        {
+          "subdomain": "admin",
+          "type": "CNAME",
+          "value": "glb-2a3c35-public-internal.githubapp.com",
+          "last_seen": "2025-10-05T05:31:09.806000"
+        },
+        {
+          "subdomain": "alive",
+          "type": "CNAME",
+          "value": "live.github.com",
+          "last_seen": "2025-10-08T01:08:06.726000"
+        },
+        {
+          "subdomain": "antivirus.wiki",
+          "type": "CNAME",
+          "value": "wiki.github.com",
+          "last_seen": "2025-10-05T05:31:10.140000"
+        },
+        {
+          "subdomain": "api",
+          "type": "A",
+          "value": "140.82.112.5",
+          "last_seen": "2025-10-08T01:10:44.617000"
+        },
+        {
+          "subdomain": "api",
+          "type": "A",
+          "value": "140.82.112.6",
+          "last_seen": "2025-10-07T02:12:15.783000"
+        },
+        {
+          "subdomain": "api",
+          "type": "A",
+          "value": "140.82.113.5",
+          "last_seen": "2025-09-22T04:29:31.594000"
+        },
+        {
+          "subdomain": "api",
+          "type": "A",
+          "value": "140.82.113.6",
+          "last_seen": "2025-09-20T03:17:48.201000"
+        },
+        {
+          "subdomain": "api",
+          "type": "A",
+          "value": "140.82.114.5",
+          "last_seen": "2025-10-01T01:13:39.731000"
+        },
+        {
+          "subdomain": "api",
+          "type": "A",
+          "value": "140.82.114.6",
+          "last_seen": "2025-09-30T04:12:59.564000"
+        },
+        {
+          "subdomain": "api",
+          "type": "A",
+          "value": "140.82.116.5",
+          "last_seen": "2025-10-08T12:14:36.927000"
+        },
+        {
+          "subdomain": "api",
+          "type": "A",
+          "value": "140.82.116.6",
+          "last_seen": "2025-10-08T09:14:27.400000"
+        },
+        {
+          "subdomain": "api",
+          "type": "A",
+          "value": "140.82.121.5",
+          "last_seen": "2025-10-05T12:16:49.258000"
+        },
+        {
+          "subdomain": "api",
+          "type": "A",
+          "value": "140.82.121.6",
+          "last_seen": "2025-09-30T09:16:56.713000"
+        },
+        {
+          "subdomain": "api",
+          "type": "A",
+          "value": "20.200.245.245",
+          "last_seen": "2025-09-19T09:15:49.860000"
+        },
+        {
+          "subdomain": "api.mcp",
+          "type": "CNAME",
+          "value": "glb-db52c2cf8be544.github.com",
+          "last_seen": "2025-10-06T01:12:59.114000"
+        },
+        {
+          "subdomain": "api.security",
+          "type": "CNAME",
+          "value": "glb-db52c2cf8be544.github.com",
+          "last_seen": "2025-10-05T05:31:09.572000"
+        },
+        {
+          "subdomain": "archiveprogram",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.549000"
+        },
+        {
+          "subdomain": "asset-generator",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.848000"
+        },
+        {
+          "subdomain": "atom-installer",
+          "type": "A",
+          "value": "185.199.108.133",
+          "last_seen": "2025-10-08T12:14:36.930000"
+        },
+        {
+          "subdomain": "atom-installer",
+          "type": "A",
+          "value": "185.199.109.133",
+          "last_seen": "2025-10-08T12:14:36.930000"
+        },
+        {
+          "subdomain": "atom-installer",
+          "type": "A",
+          "value": "185.199.110.133",
+          "last_seen": "2025-10-08T12:14:36.930000"
+        },
+        {
+          "subdomain": "atom-installer",
+          "type": "A",
+          "value": "185.199.111.133",
+          "last_seen": "2025-10-08T12:14:36.930000"
+        },
+        {
+          "subdomain": "autodiscover",
+          "type": "CNAME",
+          "value": "redirect.github.com",
+          "last_seen": "2025-10-05T05:31:09.353000"
+        },
+        {
+          "subdomain": "blog",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-08T02:48:03.179000"
+        },
+        {
+          "subdomain": "bounty",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.622000"
+        },
+        {
+          "subdomain": "boxen",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.492000"
+        },
+        {
+          "subdomain": "brand",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.609000"
+        },
+        {
+          "subdomain": "cdn-185-199-108-153",
+          "type": "A",
+          "value": "185.199.108.153",
+          "last_seen": "2025-10-08T12:14:36.930000"
+        },
+        {
+          "subdomain": "cdn-185-199-109-153",
+          "type": "A",
+          "value": "185.199.109.153",
+          "last_seen": "2025-10-08T12:14:36.929000"
+        },
+        {
+          "subdomain": "cdn-185-199-109-154",
+          "type": "A",
+          "value": "185.199.109.154",
+          "last_seen": "2025-10-08T12:14:37.083000"
+        },
+        {
+          "subdomain": "cdn-185-199-110-133",
+          "type": "A",
+          "value": "185.199.110.133",
+          "last_seen": "2025-10-08T12:14:37.247000"
+        },
+        {
+          "subdomain": "cdn-185-199-110-153",
+          "type": "A",
+          "value": "185.199.110.153",
+          "last_seen": "2025-10-08T12:14:36.935000"
+        },
+        {
+          "subdomain": "cdn-185-199-111-153",
+          "type": "A",
+          "value": "185.199.111.153",
+          "last_seen": "2025-10-08T12:14:36.942000"
+        },
+        {
+          "subdomain": "central",
+          "type": "CNAME",
+          "value": "glb-db52c2cf8be544.github.com",
+          "last_seen": "2025-10-08T01:23:58.502000"
+        },
+        {
+          "subdomain": "classroom",
+          "type": "CNAME",
+          "value": "glb-db52c2cf8be544.github.com",
+          "last_seen": "2025-10-08T03:21:01.883000"
+        },
+        {
+          "subdomain": "cli",
+          "type": "CNAME",
+          "value": "cli.github.io",
+          "last_seen": "2025-10-08T01:25:53.853000"
+        },
+        {
+          "subdomain": "cloud",
+          "type": "CNAME",
+          "value": "d24z2fz21y4fag.cloudfront.net",
+          "last_seen": "2025-10-05T05:31:09.889000"
+        },
+        {
+          "subdomain": "codeload",
+          "type": "A",
+          "value": "140.82.112.10",
+          "last_seen": "2025-09-17T00:20:00.348000"
+        },
+        {
+          "subdomain": "codeload",
+          "type": "A",
+          "value": "140.82.112.9",
+          "last_seen": "2025-09-11T15:40:00.699000"
+        },
+        {
+          "subdomain": "codeload",
+          "type": "A",
+          "value": "140.82.114.9",
+          "last_seen": "2025-09-28T01:26:11.947000"
+        },
+        {
+          "subdomain": "codeload",
+          "type": "A",
+          "value": "140.82.116.10",
+          "last_seen": "2025-10-08T12:14:37.041000"
+        },
+        {
+          "subdomain": "codeload",
+          "type": "A",
+          "value": "140.82.116.9",
+          "last_seen": "2025-10-08T09:14:27.384000"
+        },
+        {
+          "subdomain": "codeload",
+          "type": "A",
+          "value": "140.82.121.10",
+          "last_seen": "2025-10-05T00:14:21.549000"
+        },
+        {
+          "subdomain": "codeload",
+          "type": "A",
+          "value": "140.82.121.9",
+          "last_seen": "2025-10-05T05:31:09.637000"
+        },
+        {
+          "subdomain": "codeload",
+          "type": "A",
+          "value": "20.200.245.246",
+          "last_seen": "2025-09-27T03:19:56.086000"
+        },
+        {
+          "subdomain": "codeql",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.804000"
+        },
+        {
+          "subdomain": "collector",
+          "type": "CNAME",
+          "value": "glb-db52c2cf8be544.github.com",
+          "last_seen": "2025-10-08T01:27:12.907000"
+        },
+        {
+          "subdomain": "collector-cdn",
+          "type": "A",
+          "value": "185.199.108.133",
+          "last_seen": "2025-10-08T12:14:36.927000"
+        },
+        {
+          "subdomain": "collector-cdn",
+          "type": "A",
+          "value": "185.199.109.133",
+          "last_seen": "2025-10-08T12:14:36.927000"
+        },
+        {
+          "subdomain": "collector-cdn",
+          "type": "A",
+          "value": "185.199.110.133",
+          "last_seen": "2025-10-08T12:14:36.927000"
+        },
+        {
+          "subdomain": "collector-cdn",
+          "type": "A",
+          "value": "185.199.111.133",
+          "last_seen": "2025-10-08T12:14:36.927000"
+        },
+        {
+          "subdomain": "communication",
+          "type": "CNAME",
+          "value": "communication.github.com.cname.campaign.adobe.com",
+          "last_seen": "2025-10-05T05:31:10.027000"
+        },
+        {
+          "subdomain": "community",
+          "type": "CNAME",
+          "value": "redirect.github.com",
+          "last_seen": "2025-10-05T05:31:09.728000"
+        },
+        {
+          "subdomain": "containers.pkg",
+          "type": "CNAME",
+          "value": "pkg.github.com",
+          "last_seen": "2025-10-08T01:28:10.647000"
+        },
+        {
+          "subdomain": "copilot",
+          "type": "CNAME",
+          "value": "redirect.github.com",
+          "last_seen": "2025-10-05T05:31:09.601000"
+        },
+        {
+          "subdomain": "cs",
+          "type": "CNAME",
+          "value": "redirect.github.com",
+          "last_seen": "2025-10-05T05:31:09.842000"
+        },
+        {
+          "subdomain": "customer-stories-feed",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.991000"
+        },
+        {
+          "subdomain": "cxr",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.847000"
+        },
+        {
+          "subdomain": "data-science",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.638000"
+        },
+        {
+          "subdomain": "de",
+          "type": "CNAME",
+          "value": "redirect.github.com",
+          "last_seen": "2025-10-05T05:31:09.641000"
+        },
+        {
+          "subdomain": "desktop",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-08T01:32:45.083000"
+        },
+        {
+          "subdomain": "developer",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.415000"
+        },
+        {
+          "subdomain": "developers",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.843000"
+        },
+        {
+          "subdomain": "diversity",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.717000"
+        },
+        {
+          "subdomain": "docker-proxy.pkg",
+          "type": "CNAME",
+          "value": "pkg.github.com",
+          "last_seen": "2025-10-08T01:34:33.464000"
+        },
+        {
+          "subdomain": "docker.pkg",
+          "type": "CNAME",
+          "value": "pkg.github.com",
+          "last_seen": "2025-10-08T01:34:33.896000"
+        },
+        {
+          "subdomain": "docs",
+          "type": "A",
+          "value": "185.199.108.154",
+          "last_seen": "2025-10-08T12:14:37.083000"
+        },
+        {
+          "subdomain": "docs",
+          "type": "A",
+          "value": "185.199.109.154",
+          "last_seen": "2025-10-08T12:14:37.083000"
+        },
+        {
+          "subdomain": "docs",
+          "type": "A",
+          "value": "185.199.110.154",
+          "last_seen": "2025-10-08T12:14:37.083000"
+        },
+        {
+          "subdomain": "docs",
+          "type": "A",
+          "value": "185.199.111.154",
+          "last_seen": "2025-10-08T12:14:37.083000"
+        },
+        {
+          "subdomain": "docs",
+          "type": "AAAA",
+          "value": "2606:50c0:8000::154",
+          "last_seen": "2025-10-08T12:15:20.667000"
+        },
+        {
+          "subdomain": "docs",
+          "type": "AAAA",
+          "value": "2606:50c0:8001::154",
+          "last_seen": "2025-10-08T12:15:20.667000"
+        },
+        {
+          "subdomain": "docs",
+          "type": "AAAA",
+          "value": "2606:50c0:8002::154",
+          "last_seen": "2025-10-08T12:15:20.667000"
+        },
+        {
+          "subdomain": "docs",
+          "type": "AAAA",
+          "value": "2606:50c0:8003::154",
+          "last_seen": "2025-10-08T12:15:20.667000"
+        },
+        {
+          "subdomain": "docs-internal",
+          "type": "CNAME",
+          "value": "glb-db52c2cf8be544.github.com",
+          "last_seen": "2025-10-05T05:31:09.872000"
+        },
+        {
+          "subdomain": "eci",
+          "type": "CNAME",
+          "value": "glb-db52c2cf8be544.github.com",
+          "last_seen": "2025-10-05T05:31:09.806000"
+        },
+        {
+          "subdomain": "edu",
+          "type": "CNAME",
+          "value": "education.github.com",
+          "last_seen": "2025-10-05T05:31:09.540000"
+        },
+        {
+          "subdomain": "education",
+          "type": "CNAME",
+          "value": "glb-db52c2cf8be544.github.com",
+          "last_seen": "2025-10-08T03:19:24.204000"
+        },
+        {
+          "subdomain": "email.support",
+          "type": "CNAME",
+          "value": "mailgun.org",
+          "last_seen": "2025-10-05T05:31:09.842000"
+        },
+        {
+          "subdomain": "emails",
+          "type": "CNAME",
+          "value": "mkto-sj180011.com",
+          "last_seen": "2025-10-05T05:31:09.484000"
+        },
+        {
+          "subdomain": "embed",
+          "type": "CNAME",
+          "value": "github.com",
+          "last_seen": "2025-10-05T05:31:09.484000"
+        },
+        {
+          "subdomain": "enterprise",
+          "type": "CNAME",
+          "value": "glb-db52c2cf8be544.github.com",
+          "last_seen": "2025-10-05T05:31:09.899000"
+        },
+        {
+          "subdomain": "event-sponsorship",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.473000"
+        },
+        {
+          "subdomain": "events-feed",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.435000"
+        },
+        {
+          "subdomain": "examadmin",
+          "type": "CNAME",
+          "value": "gh-cert-registration-prod1.azurewebsites.net",
+          "last_seen": "2025-10-05T05:31:09.912000"
+        },
+        {
+          "subdomain": "examadmin-uat",
+          "type": "CNAME",
+          "value": "gh-cert-registration-s-uat.azurewebsites.net",
+          "last_seen": "2025-10-05T05:31:09.978000"
+        },
+        {
+          "subdomain": "examregistration",
+          "type": "CNAME",
+          "value": "gh-cert-react-prod1.azurewebsites.net",
+          "last_seen": "2025-10-05T05:31:10.386000"
+        },
+        {
+          "subdomain": "examregistration-api",
+          "type": "CNAME",
+          "value": "gh-cert-services-prod1.azurewebsites.net",
+          "last_seen": "2025-10-05T05:31:09.918000"
+        },
+        {
+          "subdomain": "examregistration-uat",
+          "type": "CNAME",
+          "value": "gh-cert-react-s-uat.azurewebsites.net",
+          "last_seen": "2025-09-14T19:50:51.267000"
+        },
+        {
+          "subdomain": "examregistration-uat",
+          "type": "CNAME",
+          "value": "learn.github.com",
+          "last_seen": "2025-10-05T05:31:09.650000"
+        },
+        {
+          "subdomain": "examregistration-uat-api",
+          "type": "CNAME",
+          "value": "gh-cert-services-s-uat.azurewebsites.net",
+          "last_seen": "2025-10-05T05:31:09.826000"
+        },
+        {
+          "subdomain": "experiments",
+          "type": "CNAME",
+          "value": "redirect.github.com",
+          "last_seen": "2025-10-05T05:31:09.797000"
+        },
+        {
+          "subdomain": "f.cloud",
+          "type": "CNAME",
+          "value": "r2.shared.global.fastly.net",
+          "last_seen": "2025-10-05T05:31:09.774000"
+        },
+        {
+          "subdomain": "fi",
+          "type": "CNAME",
+          "value": "github.com",
+          "last_seen": "2025-10-05T05:31:09.835000"
+        },
+        {
+          "subdomain": "forgoodfirstissue",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.453000"
+        },
+        {
+          "subdomain": "forms",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.598000"
+        },
+        {
+          "subdomain": "fr",
+          "type": "CNAME",
+          "value": "redirect.github.com",
+          "last_seen": "2025-10-05T05:31:09.766000"
+        },
+        {
+          "subdomain": "galaxy",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.753000"
+        },
+        {
+          "subdomain": "gameoff",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.929000"
+        },
+        {
+          "subdomain": "garage",
+          "type": "A",
+          "value": "140.82.112.41",
+          "last_seen": "2025-10-08T12:14:37.077000"
+        },
+        {
+          "subdomain": "garage",
+          "type": "A",
+          "value": "140.82.112.42",
+          "last_seen": "2025-10-08T12:14:37.077000"
+        },
+        {
+          "subdomain": "ghicons",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-08T01:47:59.893000"
+        },
+        {
+          "subdomain": "gist",
+          "type": "CNAME",
+          "value": "github.com",
+          "last_seen": "2025-10-08T03:20:41.167000"
+        },
+        {
+          "subdomain": "gist3",
+          "type": "CNAME",
+          "value": "github.com",
+          "last_seen": "2025-10-05T05:31:09.701000"
+        },
+        {
+          "subdomain": "gists",
+          "type": "CNAME",
+          "value": "redirect.github.com",
+          "last_seen": "2025-10-05T05:31:09.498000"
+        },
+        {
+          "subdomain": "git-lfs",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.485000"
+        },
+        {
+          "subdomain": "github",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-08T01:14:07.933000"
+        },
+        {
+          "subdomain": "glb-c0e95bd587389a",
+          "type": "A",
+          "value": "20.85.130.105",
+          "last_seen": "2025-10-08T12:14:37.260000"
+        },
+        {
+          "subdomain": "glb-db52c2cf8be544",
+          "type": "A",
+          "value": "140.82.112.21",
+          "last_seen": "2025-10-08T06:14:51.193000"
+        },
+        {
+          "subdomain": "glb-db52c2cf8be544",
+          "type": "A",
+          "value": "140.82.112.22",
+          "last_seen": "2025-10-08T02:37:45.408000"
+        },
+        {
+          "subdomain": "glb-db52c2cf8be544",
+          "type": "A",
+          "value": "140.82.113.21",
+          "last_seen": "2025-10-08T12:14:37.241000"
+        },
+        {
+          "subdomain": "glb-db52c2cf8be544",
+          "type": "A",
+          "value": "140.82.113.22",
+          "last_seen": "2025-10-08T03:03:40.924000"
+        },
+        {
+          "subdomain": "glb-db52c2cf8be544",
+          "type": "A",
+          "value": "140.82.114.21",
+          "last_seen": "2025-10-08T09:14:27.328000"
+        },
+        {
+          "subdomain": "glb-db52c2cf8be544",
+          "type": "A",
+          "value": "140.82.114.22",
+          "last_seen": "2025-10-08T02:56:17.669000"
+        },
+        {
+          "subdomain": "globalmaintainersummit",
+          "type": "CNAME",
+          "value": "glb-db52c2cf8be544.github.com",
+          "last_seen": "2025-10-05T05:31:10.096000"
+        },
+        {
+          "subdomain": "government",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.639000"
+        },
+        {
+          "subdomain": "graphql",
+          "type": "CNAME",
+          "value": "glb-db52c2cf8be544.github.com",
+          "last_seen": "2025-10-05T05:31:10.351000"
+        },
+        {
+          "subdomain": "guides",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.716000"
+        },
+        {
+          "subdomain": "hackathons",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.864000"
+        },
+        {
+          "subdomain": "help",
+          "type": "CNAME",
+          "value": "redirect.github.com",
+          "last_seen": "2025-10-08T01:52:26.224000"
+        },
+        {
+          "subdomain": "hub",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.513000"
+        },
+        {
+          "subdomain": "hubot",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.995000"
+        },
+        {
+          "subdomain": "hubspot",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.495000"
+        },
+        {
+          "subdomain": "identicons",
+          "type": "A",
+          "value": "185.199.108.133",
+          "last_seen": "2025-10-08T12:14:36.937000"
+        },
+        {
+          "subdomain": "identicons",
+          "type": "A",
+          "value": "185.199.109.133",
+          "last_seen": "2025-10-08T12:14:36.937000"
+        },
+        {
+          "subdomain": "identicons",
+          "type": "A",
+          "value": "185.199.110.133",
+          "last_seen": "2025-10-08T12:14:36.937000"
+        },
+        {
+          "subdomain": "identicons",
+          "type": "A",
+          "value": "185.199.111.133",
+          "last_seen": "2025-10-08T12:14:36.937000"
+        },
+        {
+          "subdomain": "import2",
+          "type": "CNAME",
+          "value": "porter-production-1232719825.us-east-1.elb.amazonaws.com",
+          "last_seen": "2025-10-05T05:31:09.510000"
+        },
+        {
+          "subdomain": "importer2",
+          "type": "CNAME",
+          "value": "porter-production-1232719825.us-east-1.elb.amazonaws.com",
+          "last_seen": "2025-10-05T05:31:09.516000"
+        },
+        {
+          "subdomain": "info",
+          "type": "CNAME",
+          "value": "157-gqe-382.mktoweb.com",
+          "last_seen": "2025-10-05T05:31:10.580000"
+        },
+        {
+          "subdomain": "infocus",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:10.071000"
+        },
+        {
+          "subdomain": "innovationgraph",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.484000"
+        },
+        {
+          "subdomain": "insights",
+          "type": "CNAME",
+          "value": "glb-db52c2cf8be544.github.com",
+          "last_seen": "2025-10-05T05:31:09.514000"
+        },
+        {
+          "subdomain": "internships",
+          "type": "CNAME",
+          "value": "redirect.github.com",
+          "last_seen": "2025-10-05T05:31:09.558000"
+        },
+        {
+          "subdomain": "ja.wiki",
+          "type": "CNAME",
+          "value": "wiki.github.com",
+          "last_seen": "2025-10-05T05:31:09.981000"
+        },
+        {
+          "subdomain": "jobs",
+          "type": "A",
+          "value": "0.0.0.0",
+          "last_seen": "2025-10-08T12:14:37.044000"
+        },
+        {
+          "subdomain": "launch",
+          "type": "CNAME",
+          "value": "github.com",
+          "last_seen": "2025-10-05T05:31:09.590000"
+        },
+        {
+          "subdomain": "lb-140-82-113-4-iad",
+          "type": "A",
+          "value": "140.82.113.4",
+          "last_seen": "2025-10-08T12:14:36.999000"
+        },
+        {
+          "subdomain": "learn",
+          "type": "CNAME",
+          "value": "glb-db52c2cf8be544.github.com",
+          "last_seen": "2025-10-05T05:33:14.588000"
+        },
+        {
+          "subdomain": "lfs",
+          "type": "CNAME",
+          "value": "api.github.com",
+          "last_seen": "2025-10-08T02:06:37.974000"
+        },
+        {
+          "subdomain": "live",
+          "type": "A",
+          "value": "140.82.112.25",
+          "last_seen": "2025-10-08T06:14:51.088000"
+        },
+        {
+          "subdomain": "live",
+          "type": "A",
+          "value": "140.82.112.26",
+          "last_seen": "2025-10-08T03:12:31.554000"
+        },
+        {
+          "subdomain": "live",
+          "type": "A",
+          "value": "140.82.113.25",
+          "last_seen": "2025-10-07T00:22:20.288000"
+        },
+        {
+          "subdomain": "live",
+          "type": "A",
+          "value": "140.82.113.26",
+          "last_seen": "2025-10-08T12:14:37.039000"
+        },
+        {
+          "subdomain": "live",
+          "type": "A",
+          "value": "140.82.114.25",
+          "last_seen": "2025-10-08T02:07:31.105000"
+        },
+        {
+          "subdomain": "live",
+          "type": "A",
+          "value": "140.82.114.26",
+          "last_seen": "2025-10-08T09:14:27.367000"
+        },
+        {
+          "subdomain": "live-stream",
+          "type": "CNAME",
+          "value": "pages.github.com",
+          "last_seen": "2025-10-05T05:31:09.967000"
+        },
+        {
+          "subdomain": "m.communication",
+          "type": "CNAME",
+          "value": "m.communication.github.com.cname.campaign.adobe.com",
+          "last_seen": "2025-10-05T05:31:10.291000"
+        },
+        {
+          "subdomain": "mac",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.562000"
+        },
+        {
+          "subdomain": "mac-installer",
+          "type": "CNAME",
+          "value": "d4hwcs1zqtwzs.cloudfront.net",
+          "last_seen": "2025-10-05T05:31:09.558000"
+        },
+        {
+          "subdomain": "mail01.resources",
+          "type": "A",
+          "value": "129.145.17.214",
+          "last_seen": "2025-10-08T12:14:37.289000"
+        },
+        {
+          "subdomain": "mailing",
+          "type": "A",
+          "value": "185.199.108.105",
+          "last_seen": "2025-10-08T12:14:37.041000"
+        },
+        {
+          "subdomain": "mailing",
+          "type": "A",
+          "value": "185.199.109.105",
+          "last_seen": "2025-10-08T12:14:37.040000"
+        },
+        {
+          "subdomain": "mailing",
+          "type": "A",
+          "value": "185.199.110.105",
+          "last_seen": "2025-10-08T12:14:37.040000"
+        },
+        {
+          "subdomain": "mailing",
+          "type": "A",
+          "value": "185.199.111.105",
+          "last_seen": "2025-10-08T12:14:37.041000"
+        },
+        {
+          "subdomain": "mailing",
+          "type": "AAAA",
+          "value": "2606:50c0:8000::105",
+          "last_seen": "2025-10-08T12:15:20.057000"
+        },
+        {
+          "subdomain": "mailing",
+          "type": "AAAA",
+          "value": "2606:50c0:8001::105",
+          "last_seen": "2025-10-08T12:15:20.057000"
+        },
+        {
+          "subdomain": "mailing",
+          "type": "AAAA",
+          "value": "2606:50c0:8002::105",
+          "last_seen": "2025-10-08T12:15:20.057000"
+        },
+        {
+          "subdomain": "mailing",
+          "type": "AAAA",
+          "value": "2606:50c0:8003::105",
+          "last_seen": "2025-10-08T12:15:20.057000"
+        },
+        {
+          "subdomain": "maintainermonth",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.591000"
+        },
+        {
+          "subdomain": "maintainers",
+          "type": "CNAME",
+          "value": "glb-db52c2cf8be544.github.com",
+          "last_seen": "2025-10-05T05:31:09.963000"
+        },
+        {
+          "subdomain": "maven.pkg",
+          "type": "CNAME",
+          "value": "pkg.github.com",
+          "last_seen": "2025-10-08T02:11:10.293000"
+        },
+        {
+          "subdomain": "mcmail",
+          "type": "A",
+          "value": "198.2.131.14",
+          "last_seen": "2025-10-08T12:14:37.078000"
+        },
+        {
+          "subdomain": "media",
+          "type": "CNAME",
+          "value": "alambic-origin.github.com",
+          "last_seen": "2025-10-05T05:31:09.984000"
+        },
+        {
+          "subdomain": "next",
+          "type": "CNAME",
+          "value": "redirect.github.com",
+          "last_seen": "2025-10-05T05:31:09.590000"
+        },
+        {
+          "subdomain": "nodeload",
+          "type": "CNAME",
+          "value": "codeload.github.com",
+          "last_seen": "2025-10-05T05:31:09.651000"
+        },
+        {
+          "subdomain": "nonprofits",
+          "type": "CNAME",
+          "value": "glb-db52c2cf8be544.github.com",
+          "last_seen": "2025-10-05T05:31:09.584000"
+        },
+        {
+          "subdomain": "npm-beta-proxy.pkg",
+          "type": "CNAME",
+          "value": "pkg.github.com",
+          "last_seen": "2025-10-08T02:20:58.800000"
+        },
+        {
+          "subdomain": "npm-beta.pkg",
+          "type": "CNAME",
+          "value": "pkg.github.com",
+          "last_seen": "2025-10-08T02:20:58.948000"
+        },
+        {
+          "subdomain": "npm-proxy.pkg",
+          "type": "CNAME",
+          "value": "pkg.github.com",
+          "last_seen": "2025-10-08T02:20:58.952000"
+        },
+        {
+          "subdomain": "npm.pkg",
+          "type": "CNAME",
+          "value": "pkg.github.com",
+          "last_seen": "2025-10-08T02:20:59.117000"
+        },
+        {
+          "subdomain": "ns1",
+          "type": "A",
+          "value": "192.0.2.1",
+          "last_seen": "2025-10-08T12:14:37.195000"
+        },
+        {
+          "subdomain": "ns2",
+          "type": "A",
+          "value": "192.0.2.2",
+          "last_seen": "2025-10-08T12:14:36.939000"
+        },
+        {
+          "subdomain": "nuget.pkg",
+          "type": "CNAME",
+          "value": "pkg.github.com",
+          "last_seen": "2025-10-08T02:24:05.489000"
+        },
+        {
+          "subdomain": "o1.sgmail",
+          "type": "A",
+          "value": "192.254.114.176",
+          "last_seen": "2025-10-08T12:14:36.935000"
+        },
+        {
+          "subdomain": "o10.sgmail",
+          "type": "A",
+          "value": "167.89.101.201",
+          "last_seen": "2025-10-08T12:14:37.008000"
+        },
+        {
+          "subdomain": "o11.sgmail",
+          "type": "A",
+          "value": "167.89.101.202",
+          "last_seen": "2025-10-08T12:14:37.082000"
+        },
+        {
+          "subdomain": "o4.sgmail",
+          "type": "A",
+          "value": "192.254.112.99",
+          "last_seen": "2025-10-08T12:14:36.932000"
+        },
+        {
+          "subdomain": "o5.sgmail",
+          "type": "A",
+          "value": "192.254.113.10",
+          "last_seen": "2025-10-08T12:14:37.076000"
+        },
+        {
+          "subdomain": "o6.sgmail",
+          "type": "A",
+          "value": "192.254.113.101",
+          "last_seen": "2025-10-08T12:14:37.072000"
+        },
+        {
+          "subdomain": "o9.sgmail",
+          "type": "A",
+          "value": "167.89.101.2",
+          "last_seen": "2025-10-08T12:14:36.935000"
+        },
+        {
+          "subdomain": "octicons",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:10.124000"
+        },
+        {
+          "subdomain": "octo",
+          "type": "CNAME",
+          "value": "redirect.github.com",
+          "last_seen": "2025-10-05T05:31:10.113000"
+        },
+        {
+          "subdomain": "octocaptcha.review-lab",
+          "type": "A",
+          "value": "140.82.112.15",
+          "last_seen": "2025-10-08T12:14:37.371000"
+        },
+        {
+          "subdomain": "octocaptcha.review-lab",
+          "type": "A",
+          "value": "140.82.112.16",
+          "last_seen": "2025-10-08T12:14:37.371000"
+        },
+        {
+          "subdomain": "octocaptcha.review-lab",
+          "type": "A",
+          "value": "140.82.113.15",
+          "last_seen": "2025-10-08T12:14:37.371000"
+        },
+        {
+          "subdomain": "octocaptcha.review-lab",
+          "type": "A",
+          "value": "140.82.113.16",
+          "last_seen": "2025-10-08T12:14:37.371000"
+        },
+        {
+          "subdomain": "octocaptcha.review-lab",
+          "type": "A",
+          "value": "140.82.114.15",
+          "last_seen": "2025-10-08T12:14:37.371000"
+        },
+        {
+          "subdomain": "octocaptcha.review-lab",
+          "type": "A",
+          "value": "140.82.114.16",
+          "last_seen": "2025-10-08T12:14:37.371000"
+        },
+        {
+          "subdomain": "octodex",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.589000"
+        },
+        {
+          "subdomain": "octoverse",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.761000"
+        },
+        {
+          "subdomain": "octovisuals",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.622000"
+        },
+        {
+          "subdomain": "out-1.smtp",
+          "type": "A",
+          "value": "192.30.252.192",
+          "last_seen": "2025-10-08T12:14:37.028000"
+        },
+        {
+          "subdomain": "out-17.smtp",
+          "type": "A",
+          "value": "192.30.252.200",
+          "last_seen": "2025-10-08T12:14:36.925000"
+        },
+        {
+          "subdomain": "out-18.smtp",
+          "type": "A",
+          "value": "192.30.252.201",
+          "last_seen": "2025-10-08T12:14:36.941000"
+        },
+        {
+          "subdomain": "out-19.smtp",
+          "type": "A",
+          "value": "192.30.252.202",
+          "last_seen": "2025-10-08T12:14:37.052000"
+        },
+        {
+          "subdomain": "out-2.smtp",
+          "type": "A",
+          "value": "192.30.252.193",
+          "last_seen": "2025-10-08T12:14:36.939000"
+        },
+        {
+          "subdomain": "out-20.smtp",
+          "type": "A",
+          "value": "192.30.252.203",
+          "last_seen": "2025-10-08T12:14:37.028000"
+        },
+        {
+          "subdomain": "out-21.smtp",
+          "type": "A",
+          "value": "192.30.252.204",
+          "last_seen": "2025-10-08T12:14:37.277000"
+        },
+        {
+          "subdomain": "out-22.smtp",
+          "type": "A",
+          "value": "192.30.252.205",
+          "last_seen": "2025-10-08T12:14:37.189000"
+        },
+        {
+          "subdomain": "out-23.smtp",
+          "type": "A",
+          "value": "192.30.252.206",
+          "last_seen": "2025-10-08T12:14:37.101000"
+        },
+        {
+          "subdomain": "out-24.smtp",
+          "type": "A",
+          "value": "192.30.252.207",
+          "last_seen": "2025-10-08T12:14:36.924000"
+        },
+        {
+          "subdomain": "out-25.smtp",
+          "type": "A",
+          "value": "192.30.252.208",
+          "last_seen": "2025-10-08T12:14:37.119000"
+        },
+        {
+          "subdomain": "out-26.smtp",
+          "type": "A",
+          "value": "192.30.252.209",
+          "last_seen": "2025-10-08T12:14:36.939000"
+        },
+        {
+          "subdomain": "out-27.smtp",
+          "type": "A",
+          "value": "192.30.252.210",
+          "last_seen": "2025-10-08T12:14:37.241000"
+        },
+        {
+          "subdomain": "out-28.smtp",
+          "type": "A",
+          "value": "192.30.252.211",
+          "last_seen": "2025-10-08T12:14:37.077000"
+        },
+        {
+          "subdomain": "out-3.smtp",
+          "type": "A",
+          "value": "192.30.252.194",
+          "last_seen": "2025-10-08T12:14:37.081000"
+        },
+        {
+          "subdomain": "out-4.smtp",
+          "type": "A",
+          "value": "192.30.252.195",
+          "last_seen": "2025-10-08T12:14:36.935000"
+        },
+        {
+          "subdomain": "out-5.smtp",
+          "type": "A",
+          "value": "192.30.252.196",
+          "last_seen": "2025-10-08T12:14:37.014000"
+        },
+        {
+          "subdomain": "out-6.smtp",
+          "type": "A",
+          "value": "192.30.252.197",
+          "last_seen": "2025-10-08T12:14:37.140000"
+        },
+        {
+          "subdomain": "out-7.smtp",
+          "type": "A",
+          "value": "192.30.252.198",
+          "last_seen": "2025-10-08T12:14:37.173000"
+        },
+        {
+          "subdomain": "pages",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-08T11:46:07.533000"
+        },
+        {
+          "subdomain": "pages-auth",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-08T02:27:43.365000"
+        },
+        {
+          "subdomain": "pages-origin",
+          "type": "A",
+          "value": "140.82.116.11",
+          "last_seen": "2025-10-08T12:14:36.942000"
+        },
+        {
+          "subdomain": "pages-origin",
+          "type": "A",
+          "value": "140.82.116.12",
+          "last_seen": "2025-10-08T06:14:51.097000"
+        },
+        {
+          "subdomain": "pages-origin",
+          "type": "A",
+          "value": "140.82.121.11",
+          "last_seen": "2025-09-17T12:21:10.411000"
+        },
+        {
+          "subdomain": "pages-origin",
+          "type": "A",
+          "value": "140.82.121.12",
+          "last_seen": "2025-10-06T00:19:35.189000"
+        },
+        {
+          "subdomain": "pages-origin",
+          "type": "A",
+          "value": "20.200.245.243",
+          "last_seen": "2025-09-30T00:14:24.878000"
+        },
+        {
+          "subdomain": "partner",
+          "type": "CNAME",
+          "value": "redirect.github.com",
+          "last_seen": "2025-10-05T05:31:10.105000"
+        },
+        {
+          "subdomain": "pkg",
+          "type": "A",
+          "value": "140.82.112.33",
+          "last_seen": "2025-10-08T03:10:01.332000"
+        },
+        {
+          "subdomain": "pkg",
+          "type": "A",
+          "value": "140.82.112.34",
+          "last_seen": "2025-10-08T02:20:58.948000"
+        },
+        {
+          "subdomain": "pkg",
+          "type": "A",
+          "value": "140.82.113.33",
+          "last_seen": "2025-10-08T03:11:17.045000"
+        },
+        {
+          "subdomain": "pkg",
+          "type": "A",
+          "value": "140.82.113.34",
+          "last_seen": "2025-10-07T02:28:14.830000"
+        },
+        {
+          "subdomain": "pkg",
+          "type": "A",
+          "value": "140.82.114.33",
+          "last_seen": "2025-09-30T01:36:49.719000"
+        },
+        {
+          "subdomain": "pkg",
+          "type": "A",
+          "value": "140.82.114.34",
+          "last_seen": "2025-10-07T02:45:14.408000"
+        },
+        {
+          "subdomain": "pkg",
+          "type": "A",
+          "value": "140.82.116.33",
+          "last_seen": "2025-10-08T09:14:27.382000"
+        },
+        {
+          "subdomain": "pkg",
+          "type": "A",
+          "value": "140.82.116.34",
+          "last_seen": "2025-10-08T12:14:37.028000"
+        },
+        {
+          "subdomain": "pkg",
+          "type": "A",
+          "value": "140.82.121.33",
+          "last_seen": "2025-10-04T00:22:44.865000"
+        },
+        {
+          "subdomain": "pkg",
+          "type": "A",
+          "value": "140.82.121.34",
+          "last_seen": "2025-10-04T06:24:12.787000"
+        },
+        {
+          "subdomain": "pkg",
+          "type": "A",
+          "value": "20.200.245.241",
+          "last_seen": "2025-09-27T21:38:29.638000"
+        },
+        {
+          "subdomain": "policy",
+          "type": "CNAME",
+          "value": "redirect.github.com",
+          "last_seen": "2025-10-05T05:31:09.933000"
+        },
+        {
+          "subdomain": "porter",
+          "type": "CNAME",
+          "value": "porter-production-1232719825.us-east-1.elb.amazonaws.com",
+          "last_seen": "2025-10-05T05:31:10.102000"
+        },
+        {
+          "subdomain": "porter2",
+          "type": "CNAME",
+          "value": "porter-production-1232719825.us-east-1.elb.amazonaws.com",
+          "last_seen": "2025-10-05T05:31:10.037000"
+        },
+        {
+          "subdomain": "primer-docs-preview",
+          "type": "CNAME",
+          "value": "glb-db52c2cf8be544.github.com",
+          "last_seen": "2025-10-05T05:31:09.643000"
+        },
+        {
+          "subdomain": "primer-lookbook",
+          "type": "CNAME",
+          "value": "glb-db52c2cf8be544.github.com",
+          "last_seen": "2025-10-05T05:31:10.187000"
+        },
+        {
+          "subdomain": "pypi.pkg",
+          "type": "CNAME",
+          "value": "pkg.github.com",
+          "last_seen": "2025-10-08T02:34:18.078000"
+        },
+        {
+          "subdomain": "raw",
+          "type": "A",
+          "value": "185.199.108.133",
+          "last_seen": "2025-10-08T12:14:36.925000"
+        },
+        {
+          "subdomain": "raw",
+          "type": "A",
+          "value": "185.199.109.133",
+          "last_seen": "2025-10-08T12:14:36.925000"
+        },
+        {
+          "subdomain": "raw",
+          "type": "A",
+          "value": "185.199.110.133",
+          "last_seen": "2025-10-08T12:14:36.925000"
+        },
+        {
+          "subdomain": "raw",
+          "type": "A",
+          "value": "185.199.111.133",
+          "last_seen": "2025-10-08T12:14:36.925000"
+        },
+        {
+          "subdomain": "raw",
+          "type": "AAAA",
+          "value": "2606:50c0:8000::154",
+          "last_seen": "2025-10-08T12:15:20.654000"
+        },
+        {
+          "subdomain": "raw",
+          "type": "AAAA",
+          "value": "2606:50c0:8001::154",
+          "last_seen": "2025-10-08T12:15:20.654000"
+        },
+        {
+          "subdomain": "raw",
+          "type": "AAAA",
+          "value": "2606:50c0:8002::154",
+          "last_seen": "2025-10-08T12:15:20.654000"
+        },
+        {
+          "subdomain": "raw",
+          "type": "AAAA",
+          "value": "2606:50c0:8003::154",
+          "last_seen": "2025-10-08T12:15:20.654000"
+        },
+        {
+          "subdomain": "raw-origin",
+          "type": "CNAME",
+          "value": "redirect.github.com",
+          "last_seen": "2025-10-05T05:33:12.789000"
+        },
+        {
+          "subdomain": "redirect",
+          "type": "A",
+          "value": "140.82.112.17",
+          "last_seen": "2025-10-08T13:36:40.891000"
+        },
+        {
+          "subdomain": "redirect",
+          "type": "A",
+          "value": "140.82.112.18",
+          "last_seen": "2025-10-08T13:22:32.348000"
+        },
+        {
+          "subdomain": "redirect",
+          "type": "A",
+          "value": "140.82.113.17",
+          "last_seen": "2025-10-08T10:08:19.600000"
+        },
+        {
+          "subdomain": "redirect",
+          "type": "A",
+          "value": "140.82.113.18",
+          "last_seen": "2025-10-08T13:14:24.266000"
+        },
+        {
+          "subdomain": "redirect",
+          "type": "A",
+          "value": "140.82.114.17",
+          "last_seen": "2025-10-08T13:36:19.192000"
+        },
+        {
+          "subdomain": "redirect",
+          "type": "A",
+          "value": "140.82.114.18",
+          "last_seen": "2025-10-08T09:14:27.324000"
+        },
+        {
+          "subdomain": "releaseradar",
+          "type": "CNAME",
+          "value": "github.com",
+          "last_seen": "2025-10-05T05:31:10.243000"
+        },
+        {
+          "subdomain": "render",
+          "type": "CNAME",
+          "value": "github.com",
+          "last_seen": "2025-10-05T05:31:09.823000"
+        },
+        {
+          "subdomain": "res.communication",
+          "type": "CNAME",
+          "value": "res.communication.github.com.cname.campaign.adobe.com",
+          "last_seen": "2025-10-05T05:31:10.400000"
+        },
+        {
+          "subdomain": "resources",
+          "type": "A",
+          "value": "185.199.108.133",
+          "last_seen": "2025-10-08T12:14:37.083000"
+        },
+        {
+          "subdomain": "resources",
+          "type": "A",
+          "value": "185.199.109.133",
+          "last_seen": "2025-10-08T12:14:37.083000"
+        },
+        {
+          "subdomain": "resources",
+          "type": "A",
+          "value": "185.199.110.133",
+          "last_seen": "2025-10-08T12:14:37.083000"
+        },
+        {
+          "subdomain": "resources",
+          "type": "A",
+          "value": "185.199.111.133",
+          "last_seen": "2025-10-08T12:14:37.083000"
+        },
+        {
+          "subdomain": "resources",
+          "type": "AAAA",
+          "value": "2606:50c0:8000::154",
+          "last_seen": "2025-10-08T12:15:20.543000"
+        },
+        {
+          "subdomain": "resources",
+          "type": "AAAA",
+          "value": "2606:50c0:8001::154",
+          "last_seen": "2025-10-08T12:15:20.543000"
+        },
+        {
+          "subdomain": "resources",
+          "type": "AAAA",
+          "value": "2606:50c0:8002::154",
+          "last_seen": "2025-10-08T12:15:20.543000"
+        },
+        {
+          "subdomain": "resources",
+          "type": "AAAA",
+          "value": "2606:50c0:8003::154",
+          "last_seen": "2025-10-08T12:15:20.543000"
+        },
+        {
+          "subdomain": "rubygems.pkg",
+          "type": "CNAME",
+          "value": "pkg.github.com",
+          "last_seen": "2025-10-08T02:40:39.429000"
+        },
+        {
+          "subdomain": "securitylab",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.618000"
+        },
+        {
+          "subdomain": "services",
+          "type": "CNAME",
+          "value": "redirect.github.com",
+          "last_seen": "2025-10-05T05:31:10.066000"
+        },
+        {
+          "subdomain": "sgmail",
+          "type": "A",
+          "value": "167.89.125.30",
+          "last_seen": "2025-10-08T12:14:36.926000"
+        },
+        {
+          "subdomain": "shop",
+          "type": "CNAME",
+          "value": "github.com",
+          "last_seen": "2025-10-05T05:31:09.864000"
+        },
+        {
+          "subdomain": "skills",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:10.043000"
+        },
+        {
+          "subdomain": "skyline",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:10.046000"
+        },
+        {
+          "subdomain": "slack",
+          "type": "CNAME",
+          "value": "glb-db52c2cf8be544.github.com",
+          "last_seen": "2025-10-08T02:46:48.256000"
+        },
+        {
+          "subdomain": "smtp",
+          "type": "A",
+          "value": "140.82.112.31",
+          "last_seen": "2025-10-08T12:14:37.065000"
+        },
+        {
+          "subdomain": "smtp",
+          "type": "A",
+          "value": "140.82.112.32",
+          "last_seen": "2025-10-08T12:14:37.065000"
+        },
+        {
+          "subdomain": "smtp",
+          "type": "A",
+          "value": "140.82.113.31",
+          "last_seen": "2025-10-08T12:14:37.065000"
+        },
+        {
+          "subdomain": "smtp",
+          "type": "A",
+          "value": "140.82.113.32",
+          "last_seen": "2025-10-08T12:14:37.065000"
+        },
+        {
+          "subdomain": "smtp",
+          "type": "A",
+          "value": "140.82.114.31",
+          "last_seen": "2025-10-08T12:14:37.065000"
+        },
+        {
+          "subdomain": "smtp",
+          "type": "A",
+          "value": "140.82.114.32",
+          "last_seen": "2025-10-08T12:14:37.065000"
+        },
+        {
+          "subdomain": "socialimpact",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.634000"
+        },
+        {
+          "subdomain": "spotlights-feed",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.839000"
+        },
+        {
+          "subdomain": "ssh",
+          "type": "A",
+          "value": "140.82.113.35",
+          "last_seen": "2025-09-13T12:15:56.834000"
+        },
+        {
+          "subdomain": "ssh",
+          "type": "A",
+          "value": "140.82.113.36",
+          "last_seen": "2025-09-09T03:01:15.632000"
+        },
+        {
+          "subdomain": "ssh",
+          "type": "A",
+          "value": "140.82.116.35",
+          "last_seen": "2025-10-08T12:14:37.419000"
+        },
+        {
+          "subdomain": "ssh",
+          "type": "A",
+          "value": "140.82.116.36",
+          "last_seen": "2025-10-08T09:14:27.327000"
+        },
+        {
+          "subdomain": "ssh",
+          "type": "A",
+          "value": "140.82.121.35",
+          "last_seen": "2025-10-07T00:22:20.484000"
+        },
+        {
+          "subdomain": "ssh",
+          "type": "A",
+          "value": "140.82.121.36",
+          "last_seen": "2025-10-06T09:22:02.286000"
+        },
+        {
+          "subdomain": "ssh",
+          "type": "A",
+          "value": "20.200.245.248",
+          "last_seen": "2025-09-26T21:18:49.731000"
+        },
+        {
+          "subdomain": "stars",
+          "type": "A",
+          "value": "185.199.108.133",
+          "last_seen": "2025-10-08T12:14:37.084000"
+        },
+        {
+          "subdomain": "stars",
+          "type": "A",
+          "value": "185.199.109.133",
+          "last_seen": "2025-10-08T12:14:37.084000"
+        },
+        {
+          "subdomain": "stars",
+          "type": "A",
+          "value": "185.199.110.133",
+          "last_seen": "2025-10-08T12:14:37.084000"
+        },
+        {
+          "subdomain": "stars",
+          "type": "A",
+          "value": "185.199.111.133",
+          "last_seen": "2025-10-08T12:14:37.084000"
+        },
+        {
+          "subdomain": "startups",
+          "type": "CNAME",
+          "value": "redirect.github.com",
+          "last_seen": "2025-10-05T05:31:09.904000"
+        },
+        {
+          "subdomain": "status",
+          "type": "CNAME",
+          "value": "redirect.github.com",
+          "last_seen": "2025-10-05T05:31:09.749000"
+        },
+        {
+          "subdomain": "styleguide",
+          "type": "CNAME",
+          "value": "redirect.github.com",
+          "last_seen": "2025-10-05T05:31:09.818000"
+        },
+        {
+          "subdomain": "support",
+          "type": "A",
+          "value": "185.199.108.133",
+          "last_seen": "2025-10-08T12:14:37.150000"
+        },
+        {
+          "subdomain": "support",
+          "type": "A",
+          "value": "185.199.109.133",
+          "last_seen": "2025-10-08T12:14:37.150000"
+        },
+        {
+          "subdomain": "support",
+          "type": "A",
+          "value": "185.199.110.133",
+          "last_seen": "2025-10-08T12:14:37.150000"
+        },
+        {
+          "subdomain": "support",
+          "type": "A",
+          "value": "185.199.111.133",
+          "last_seen": "2025-10-08T12:14:37.150000"
+        },
+        {
+          "subdomain": "support-assets",
+          "type": "A",
+          "value": "140.82.112.21",
+          "last_seen": "2025-10-08T00:13:30.377000"
+        },
+        {
+          "subdomain": "support-assets",
+          "type": "A",
+          "value": "140.82.112.22",
+          "last_seen": "2025-10-06T21:21:32.684000"
+        },
+        {
+          "subdomain": "support-assets",
+          "type": "A",
+          "value": "140.82.113.21",
+          "last_seen": "2025-10-08T06:14:51.067000"
+        },
+        {
+          "subdomain": "support-assets",
+          "type": "A",
+          "value": "140.82.113.22",
+          "last_seen": "2025-10-07T09:08:55.373000"
+        },
+        {
+          "subdomain": "support-assets",
+          "type": "A",
+          "value": "140.82.114.21",
+          "last_seen": "2025-10-08T09:14:27.379000"
+        },
+        {
+          "subdomain": "support-assets",
+          "type": "A",
+          "value": "140.82.114.22",
+          "last_seen": "2025-10-08T12:14:36.969000"
+        },
+        {
+          "subdomain": "support-origin",
+          "type": "A",
+          "value": "140.82.112.21",
+          "last_seen": "2025-10-08T00:13:31"
+        },
+        {
+          "subdomain": "support-origin",
+          "type": "A",
+          "value": "140.82.112.22",
+          "last_seen": "2025-10-07T15:10:04.569000"
+        },
+        {
+          "subdomain": "support-origin",
+          "type": "A",
+          "value": "140.82.113.21",
+          "last_seen": "2025-10-08T03:12:31.544000"
+        },
+        {
+          "subdomain": "support-origin",
+          "type": "A",
+          "value": "140.82.113.22",
+          "last_seen": "2025-10-06T21:21:32.806000"
+        },
+        {
+          "subdomain": "support-origin",
+          "type": "A",
+          "value": "140.82.114.21",
+          "last_seen": "2025-10-08T09:14:27.498000"
+        },
+        {
+          "subdomain": "support-origin",
+          "type": "A",
+          "value": "140.82.114.22",
+          "last_seen": "2025-10-08T12:14:37.260000"
+        },
+        {
+          "subdomain": "support-ws",
+          "type": "A",
+          "value": "140.82.112.21",
+          "last_seen": "2025-10-08T06:14:51.078000"
+        },
+        {
+          "subdomain": "support-ws",
+          "type": "A",
+          "value": "140.82.112.22",
+          "last_seen": "2025-10-08T00:13:30.726000"
+        },
+        {
+          "subdomain": "support-ws",
+          "type": "A",
+          "value": "140.82.113.21",
+          "last_seen": "2025-10-07T12:09:27.645000"
+        },
+        {
+          "subdomain": "support-ws",
+          "type": "A",
+          "value": "140.82.113.22",
+          "last_seen": "2025-10-08T12:14:37.061000"
+        },
+        {
+          "subdomain": "support-ws",
+          "type": "A",
+          "value": "140.82.114.21",
+          "last_seen": "2025-10-07T00:22:20.494000"
+        },
+        {
+          "subdomain": "support-ws",
+          "type": "A",
+          "value": "140.82.114.22",
+          "last_seen": "2025-10-06T03:20:05.293000"
+        },
+        {
+          "subdomain": "support.enterprise",
+          "type": "CNAME",
+          "value": "redirect.github.com",
+          "last_seen": "2025-10-05T05:31:10.229000"
+        },
+        {
+          "subdomain": "swift.pkg",
+          "type": "CNAME",
+          "value": "pkg.github.com",
+          "last_seen": "2025-10-08T02:52:03.839000"
+        },
+        {
+          "subdomain": "t.communication",
+          "type": "CNAME",
+          "value": "t.communication.github.com.cname.campaign.adobe.com",
+          "last_seen": "2025-10-05T05:31:10.343000"
+        },
+        {
+          "subdomain": "teach",
+          "type": "CNAME",
+          "value": "redirect.github.com",
+          "last_seen": "2025-10-05T05:31:09.961000"
+        },
+        {
+          "subdomain": "teams",
+          "type": "CNAME",
+          "value": "glb-db52c2cf8be544.github.com",
+          "last_seen": "2025-10-08T02:53:52.917000"
+        },
+        {
+          "subdomain": "test",
+          "type": "A",
+          "value": "192.0.2.1",
+          "last_seen": "2025-10-08T12:14:37.057000"
+        },
+        {
+          "subdomain": "thehub",
+          "type": "CNAME",
+          "value": "glb-2a3c35-public-internal.githubapp.com",
+          "last_seen": "2025-10-05T05:31:09.843000"
+        },
+        {
+          "subdomain": "training",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:10.124000"
+        },
+        {
+          "subdomain": "transparencycenter",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.670000"
+        },
+        {
+          "subdomain": "tuf-repo",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-08T02:58:44.783000"
+        },
+        {
+          "subdomain": "uploads",
+          "type": "CNAME",
+          "value": "alambic-origin.githubusercontent.com",
+          "last_seen": "2025-10-08T03:00:52.681000"
+        },
+        {
+          "subdomain": "visualstudio",
+          "type": "CNAME",
+          "value": "redirect.github.com",
+          "last_seen": "2025-10-05T05:31:09.908000"
+        },
+        {
+          "subdomain": "vpn-ca.iad",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:10.253000"
+        },
+        {
+          "subdomain": "vscode",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.779000"
+        },
+        {
+          "subdomain": "vscode-auth",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.949000"
+        },
+        {
+          "subdomain": "wellarchitected",
+          "type": "CNAME",
+          "value": "glb-db52c2cf8be544.github.com",
+          "last_seen": "2025-10-05T05:31:09.828000"
+        },
+        {
+          "subdomain": "wiki",
+          "type": "CNAME",
+          "value": "raw-origin.github.com",
+          "last_seen": "2025-10-05T05:33:07.679000"
+        },
+        {
+          "subdomain": "windows",
+          "type": "CNAME",
+          "value": "github.github.io",
+          "last_seen": "2025-10-05T05:31:09.678000"
+        },
+        {
+          "subdomain": "ws.support",
+          "type": "A",
+          "value": "140.82.112.21",
+          "last_seen": "2025-10-08T12:14:37.290000"
+        },
+        {
+          "subdomain": "ws.support",
+          "type": "A",
+          "value": "140.82.112.22",
+          "last_seen": "2025-10-08T12:14:37.290000"
+        },
+        {
+          "subdomain": "ws.support",
+          "type": "A",
+          "value": "140.82.113.21",
+          "last_seen": "2025-10-08T12:14:37.290000"
+        },
+        {
+          "subdomain": "ws.support",
+          "type": "A",
+          "value": "140.82.113.22",
+          "last_seen": "2025-10-08T12:14:37.290000"
+        },
+        {
+          "subdomain": "ws.support",
+          "type": "A",
+          "value": "140.82.114.21",
+          "last_seen": "2025-10-08T12:14:37.289000"
+        },
+        {
+          "subdomain": "ws.support",
+          "type": "A",
+          "value": "140.82.114.22",
+          "last_seen": "2025-10-08T12:14:37.290000"
+        },
+        {
+          "subdomain": "www",
+          "type": "CNAME",
+          "value": "github.com",
+          "last_seen": "2025-10-08T03:10:20.458000"
+        },
+        {
+          "subdomain": "www.containers.pkg",
+          "type": "CNAME",
+          "value": "pkg.github.com",
+          "last_seen": "2025-10-08T03:09:48.154000"
+        },
+        {
+          "subdomain": "www.docker-proxy.pkg",
+          "type": "CNAME",
+          "value": "pkg.github.com",
+          "last_seen": "2025-10-08T03:10:01.332000"
+        },
+        {
+          "subdomain": "www.docker.pkg",
+          "type": "CNAME",
+          "value": "pkg.github.com",
+          "last_seen": "2025-10-08T03:10:01.844000"
+        },
+        {
+          "subdomain": "www.maven.pkg",
+          "type": "CNAME",
+          "value": "pkg.github.com",
+          "last_seen": "2025-10-08T03:10:55.635000"
+        },
+        {
+          "subdomain": "www.npm-beta-proxy.pkg",
+          "type": "CNAME",
+          "value": "pkg.github.com",
+          "last_seen": "2025-10-08T03:11:16.020000"
+        },
+        {
+          "subdomain": "www.npm-beta.pkg",
+          "type": "CNAME",
+          "value": "pkg.github.com",
+          "last_seen": "2025-10-08T03:11:16.042000"
+        },
+        {
+          "subdomain": "www.npm-proxy.pkg",
+          "type": "CNAME",
+          "value": "pkg.github.com",
+          "last_seen": "2025-10-08T03:11:16.064000"
+        },
+        {
+          "subdomain": "www.npm.pkg",
+          "type": "CNAME",
+          "value": "pkg.github.com",
+          "last_seen": "2025-10-08T03:11:11.644000"
+        },
+        {
+          "subdomain": "www.nuget.pkg",
+          "type": "CNAME",
+          "value": "pkg.github.com",
+          "last_seen": "2025-10-08T03:11:17.045000"
+        },
+        {
+          "subdomain": "www.pkg",
+          "type": "CNAME",
+          "value": "pkg.github.com",
+          "last_seen": "2025-10-08T03:11:24.362000"
+        },
+        {
+          "subdomain": "www.pypi.pkg",
+          "type": "CNAME",
+          "value": "pkg.github.com",
+          "last_seen": "2025-10-08T03:11:28.134000"
+        },
+        {
+          "subdomain": "www.rubygems.pkg",
+          "type": "CNAME",
+          "value": "pkg.github.com",
+          "last_seen": "2025-10-08T03:11:46.720000"
+        },
+        {
+          "subdomain": "www.swift.pkg",
+          "type": "CNAME",
+          "value": "pkg.github.com",
+          "last_seen": "2025-10-08T03:11:59.115000"
+        }
+      ],
+      "more": false
+    },
+    "virustotal": {},
+    "hunter": {},
+    "hibp": {}
+  },
+  "extracted_targets": {
+    "domain": "github.com",
+    "website": "https://github.com/Manta-Network"
+  }
+}

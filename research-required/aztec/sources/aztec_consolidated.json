@@ -1,0 +1,312 @@
+{
+  "project_id": "aztec",
+  "consolidated_at": "2025-09-30T13:14:26.382998",
+  "constitutional_compliance": "Consolidated from real data sources only",
+  "data_sources": [
+    "research-data/project-cards/aztec/deep_research_claude.json"
+  ],
+  "deep_research": {
+    "project_id": "aztec",
+    "research_date": "2025-09-30",
+    "team_members": [
+      {
+        "name": "Zac Williamson",
+        "role": "Co-Founder & CEO",
+        "sources": [
+          "https://craft.co/aztec-protocol/executives",
+          "https://theorg.com/org/aztec-network/teams/leadership-team",
+          "https://www.linkedin.com/in/zachary-williamson-b02b0192/"
+        ],
+        "confidence": 0.95,
+        "notes": "Background in particle physics at CERN and T2K Japan, co-invented PLONK zero-knowledge proof algorithm"
+      },
+      {
+        "name": "Joe Andrews",
+        "role": "Co-Founder & Chief Product Officer",
+        "sources": [
+          "https://craft.co/aztec-protocol/executives",
+          "https://uk.linkedin.com/in/joe-andrews-2783918a"
+        ],
+        "confidence": 0.95,
+        "notes": "Formerly CTO of Silicon Valley food tech startup Radish"
+      },
+      {
+        "name": "Ariel Gabizon",
+        "role": "Chief Scientist",
+        "sources": [
+          "https://craft.co/aztec-protocol/executives",
+          "https://il.linkedin.com/in/ariel-gabizon-6b423a8"
+        ],
+        "confidence": 0.95,
+        "notes": "Works on zk-SNARK technology, previously at Zcash and Protocol Labs, co-inventor of PLONK"
+      },
+      {
+        "name": "Tom Pocock",
+        "role": "Co-Founder",
+        "sources": [
+          "https://tracxn.com/d/companies/aztec/__LE23OLSU3tSwcB512mod1tOqusASlza36dQp2aaFw6k"
+        ],
+        "confidence": 0.85,
+        "notes": "Co-founder, less public information available"
+      },
+      {
+        "name": "Arnaud Schenk",
+        "role": "Co-Founder",
+        "sources": [
+          "https://tracxn.com/d/companies/aztec/__LE23OLSU3tSwcB512mod1tOqusASlza36dQp2aaFw6k"
+        ],
+        "confidence": 0.85,
+        "notes": "Co-founder, less public information available"
+      },
+      {
+        "name": "Lisa Cuesta Bunin",
+        "role": "Chief Operating Officer",
+        "sources": [
+          "https://theorg.com/org/aztec-network/teams/leadership-team"
+        ],
+        "confidence": 0.9
+      },
+      {
+        "name": "Scott Siversen",
+        "role": "Chief Financial Officer",
+        "sources": [
+          "https://theorg.com/org/aztec-network/teams/leadership-team"
+        ],
+        "confidence": 0.9
+      },
+      {
+        "name": "Andrzej Omieta\u0144ski",
+        "role": "General Counsel",
+        "sources": [
+          "https://theorg.com/org/aztec-network/teams/leadership-team"
+        ],
+        "confidence": 0.9
+      },
+      {
+        "name": "Charlie Lye",
+        "role": "Chief Technology Officer",
+        "sources": [
+          "https://theorg.com/org/aztec-network/teams/leadership-team"
+        ],
+        "confidence": 0.85
+      },
+      {
+        "name": "Jonathan Wu",
+        "role": "Head of Growth",
+        "sources": [
+          "https://theorg.com/org/aztec-network/teams/leadership-team"
+        ],
+        "confidence": 0.85
+      },
+      {
+        "name": "Michael Connor",
+        "role": "Cryptography Engineering Lead",
+        "sources": [
+          "https://theorg.com/org/aztec-network/teams/leadership-team"
+        ],
+        "confidence": 0.85
+      },
+      {
+        "name": "Kev Wedderburn",
+        "role": "Noir Lead",
+        "sources": [
+          "https://theorg.com/org/aztec-network/teams/leadership-team"
+        ],
+        "confidence": 0.85
+      },
+      {
+        "name": "Maddiaa",
+        "role": "Developer (Public GitHub Member)",
+        "sources": [
+          "https://github.com/orgs/AztecProtocol/people"
+        ],
+        "github_username": "Maddiaa0",
+        "confidence": 0.95
+      },
+      {
+        "name": "Saleel",
+        "role": "Developer (Public GitHub Member)",
+        "sources": [
+          "https://github.com/orgs/AztecProtocol/people"
+        ],
+        "github_username": "saleel",
+        "confidence": 0.95
+      },
+      {
+        "name": "Savio",
+        "role": "Developer (Public GitHub Member)",
+        "sources": [
+          "https://github.com/orgs/AztecProtocol/people"
+        ],
+        "github_username": "Savio-Sou",
+        "confidence": 0.95
+      },
+      {
+        "name": "Tom French",
+        "role": "Developer (Public GitHub Member)",
+        "sources": [
+          "https://github.com/orgs/AztecProtocol/people"
+        ],
+        "github_username": "TomAFrench",
+        "confidence": 0.95
+      },
+      {
+        "name": "Leila Wang",
+        "role": "Team Member",
+        "sources": [
+          "https://www.linkedin.com/in/leila-wang/"
+        ],
+        "confidence": 0.8,
+        "notes": "LinkedIn profile shows affiliation with Aztec Protocol, specific role unclear"
+      }
+    ],
+    "tech_stack": {
+      "languages": [
+        {
+          "name": "C++",
+          "percentage": 47.4,
+          "primary_use": "ZK prover backend"
+        },
+        {
+          "name": "TypeScript",
+          "percentage": 30.5,
+          "primary_use": "Client and backend code"
+        },
+        {
+          "name": "Noir",
+          "percentage": 10.9,
+          "primary_use": "Smart contract framework (Aztec.nr)"
+        },
+        {
+          "name": "Solidity",
+          "percentage": 5.9,
+          "primary_use": "Ethereum contracts"
+        },
+        {
+          "name": "Shell",
+          "percentage": 2.7,
+          "primary_use": "Development tools and scripts"
+        }
+      ],
+      "frameworks": [
+        "Aztec.nr (Noir framework for private smart contracts)",
+        "Ethereum Layer 2",
+        "Zero-Knowledge Rollup"
+      ],
+      "cryptography": [
+        "PLONK (zero-knowledge proof algorithm, co-invented by Zac Williamson and Ariel Gabizon)",
+        "zk-SNARKs"
+      ],
+      "sources": [
+        "https://github.com/AztecProtocol/aztec-packages"
+      ],
+      "confidence": 0.95
+    },
+    "metrics": {
+      "github_stars": 369,
+      "github_forks": 520,
+      "github_watchers": 37,
+      "github_commits": 14451,
+      "twitter_followers": 196400,
+      "discord_members": 176595,
+      "sources": [
+        "https://github.com/AztecProtocol/aztec-packages",
+        "https://x.com/aztecnetwork",
+        "https://discord.com/invite/aztec"
+      ],
+      "confidence": 0.95
+    },
+    "company_info": {
+      "founded": 2018,
+      "location": "London, United Kingdom",
+      "description": "Privacy-First L2 on Ethereum - programmable end-to-end privacy blockchain network",
+      "funding": {
+        "series_b": {
+          "amount": "$100 million",
+          "year": 2022,
+          "lead_investor": "a16z"
+        }
+      },
+      "sources": [
+        "https://tracxn.com/d/companies/aztec/__LE23OLSU3tSwcB512mod1tOqusASlza36dQp2aaFw6k",
+        "https://www.crunchbase.com/organization/aztec-protocol"
+      ],
+      "confidence": 0.9
+    },
+    "technology_highlights": {
+      "core_innovation": "Privacy-native L2 with programmable privacy at protocol level",
+      "key_features": [
+        "Private and public state and execution in smart contracts",
+        "Encrypted blockchain on Ethereum",
+        "Zero-knowledge rollup architecture",
+        "Developer privacy infrastructure"
+      ],
+      "recent_milestones": [
+        {
+          "event": "Public Testnet Launch",
+          "date": "2025",
+          "description": "First privacy rollup with programmable privacy for Web3"
+        },
+        {
+          "event": "Privacy Network Launch",
+          "date": "2020-02",
+          "description": "First ever private DeFi solution for Ethereum"
+        }
+      ],
+      "sources": [
+        "https://aztec.network/",
+        "https://docs.aztec.network/",
+        "https://x.com/aztecnetwork/status/1918047026433990670"
+      ],
+      "confidence": 0.9
+    },
+    "social_media": {
+      "twitter": "https://twitter.com/aztecnetwork",
+      "discord": "https://discord.com/invite/aztec",
+      "github": "https://github.com/AztecProtocol",
+      "forum": "https://forum.aztec.network/",
+      "youtube": "https://www.youtube.com/channel/UCyr94cC0lyNJkyCmmLwbh7A",
+      "sources": [
+        "https://aztec.network/"
+      ],
+      "confidence": 0.95
+    },
+    "gaps": [
+      {
+        "field": "team_page",
+        "reason": "Team page at aztec.network/team returned 404 error",
+        "attempted_sources": [
+          "https://aztec.network/team"
+        ]
+      },
+      {
+        "field": "detailed_github_contributors",
+        "reason": "GitHub contributors page did not load with detailed statistics",
+        "attempted_sources": [
+          "https://github.com/AztecProtocol/aztec-packages/graphs/contributors"
+        ],
+        "notes": "Only 5 public GitHub organization members visible, full contributor list requires direct GitHub access"
+      },
+      {
+        "field": "complete_team_roster",
+        "reason": "Approximately 30+ team members mentioned in sources, but only leadership and public GitHub members identified",
+        "notes": "Team includes alums from Aave, Consensys Academy, Celo Foundation, ChainSafe Systems, and Rockstar Games"
+      }
+    ],
+    "overall_confidence": 0.88,
+    "research_notes": {
+      "data_quality": "High quality data from official sources including GitHub, LinkedIn, company profile sites, and news articles",
+      "verification_method": "Multiple independent sources cross-referenced for leadership team",
+      "limitations": "Full engineering team roster not publicly available, team page inaccessible, GitHub contributor details require direct access"
+    },
+    "constitutional_compliance": {
+      "real_data_only": true,
+      "sources_logged": true,
+      "gaps_reported": true,
+      "no_synthetic_data": true
+    }
+  },
+  "blockchain_analysis": null,
+  "ens_addresses": null,
+  "oso_metrics": null
+}

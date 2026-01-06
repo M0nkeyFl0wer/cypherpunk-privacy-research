@@ -1,0 +1,23 @@
+name: Oxen
+categories:
+- infrastructure
+ecosystem:
+- Ethereum
+usecases:
+- Privacy
+description: Oxen core repository, containing oxend and oxen cli wallets
+team:
+  anonymous: true
+links:
+  web: https://oxen.io
+  github: https://github.com/oxen-io/oxen-core
+project_status:
+  version: Mainnet
+sunset: false
+blockchain_features:
+  opensource: true
+  asset_custody_type: non-custody
+default_privacy: false
+tracebility:
+  kyc: false
+licences: Other

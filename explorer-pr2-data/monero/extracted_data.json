@@ -1,0 +1,39 @@
+{
+  "name": "Monero",
+  "description": "Monero: the secure, private, untraceable cryptocurrency. Private, decentralized cryptocurrency that keeps your finances confidential and secure.",
+  "ecosystem": [
+    "monero"
+  ],
+  "team": {
+    "anonymous": false,
+    "teammembers": [
+      {
+        "name": "fluffypony (Riccardo Spagni)",
+        "role": "Lead maintainer (historical)"
+      },
+      {
+        "name": "tacotime",
+        "role": "Lead maintainer (early)"
+      },
+      {
+        "name": "smooth",
+        "role": "Core Team member"
+      },
+      {
+        "name": "binaryFate (Jeremie Dubois-Lacoste)",
+        "role": "Core Team member"
+      },
+      {
+        "name": "thankful_for_today (pseudonymous)",
+        "role": "Original Founder"
+      }
+    ]
+  },
+  "links": {
+    "web": "https://www.getmonero.org/",
+    "github": "https://github.com/monero-project/monero"
+  },
+  "product_launch_day": "April 2014",
+  "_research_confidence": 0.9,
+  "_research_date": "2025-10-07T20:00:00Z"
+}

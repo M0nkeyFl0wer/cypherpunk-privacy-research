@@ -1,0 +1,243 @@
+{
+  "project_name": "Terminal Wallet",
+  "category": "wallet",
+  "description": "Command Line Interface wallet app for secure transactions & RAILGUN privacy across 0x and 0zk addresses",
+  "research_status": "COMPLETED",
+  "data_confidence": 0.95,
+  "last_updated": "2025-10-08T14:30:00Z",
+  "sources": [
+    "https://github.com/Terminal-Wallet/terminal-wallet-cli",
+    "https://terminal-wallet.com/",
+    "https://www.railgun.org/",
+    "https://docs.railgun.org/wiki/learn/privacy-system/zero-knowledge-cryptography",
+    "https://www.npmjs.com/package/terminal-wallet"
+  ],
+
+  "github": {
+    "url": "https://github.com/Terminal-Wallet/terminal-wallet-cli",
+    "organization": "Terminal-Wallet",
+    "repository": "terminal-wallet-cli",
+    "verified": true,
+    "license": "GPL-3.0",
+    "open_source": true
+  },
+
+  "technical_stack": {
+    "primary_languages": [
+      {
+        "name": "TypeScript",
+        "percentage": 97.8,
+        "purpose": "Main application logic"
+      },
+      {
+        "name": "JavaScript",
+        "percentage": 1.9,
+        "purpose": "Supporting scripts"
+      },
+      {
+        "name": "Rust",
+        "percentage": 0.3,
+        "purpose": "Performance-critical cryptographic operations"
+      }
+    ],
+    "runtime_requirements": [
+      {
+        "name": "Node.js",
+        "version": "16.x",
+        "required": true
+      },
+      {
+        "name": "Rust",
+        "version": "latest",
+        "required": true,
+        "purpose": "Executable building"
+      }
+    ],
+    "build_tools": [
+      "npm",
+      "cargo",
+      "nj-cli (Neon bindings for Node.js-Rust integration)"
+    ],
+    "frameworks_and_libraries": [
+      {
+        "name": "Neon (nj-cli)",
+        "purpose": "Node.js-Rust bindings for native code integration",
+        "confidence": 0.95
+      },
+      {
+        "name": "RAILGUN SDK",
+        "purpose": "Zero-knowledge privacy integration",
+        "confidence": 0.90
+      }
+    ],
+    "architecture": "Hybrid CLI application combining TypeScript/JavaScript with Rust for cryptographic operations",
+    "installation_notes": "Requires 'npm install --legacy-peer-deps' for Node.js dependencies and 'cargo install nj-cli' for Rust compilation"
+  },
+
+  "privacy_techniques": {
+    "core_privacy_system": {
+      "name": "RAILGUN Privacy Protocol",
+      "description": "Zero-knowledge privacy protocol enabling private transactions and DeFi interactions",
+      "confidence": 1.0
+    },
+    "cryptographic_techniques": [
+      {
+        "name": "zk-SNARKs",
+        "full_name": "Zero-Knowledge Succinct Non-Interactive Argument of Knowledge",
+        "description": "Non-interactive zero-knowledge proofs enabling transaction validation without revealing private data",
+        "implementation_details": [
+          "Uses EIP-197 and EIP-198 for on-chain zk-SNARK circuit generation",
+          "Smart contracts act as verifiers",
+          "Enables proof generation and verification without prover-verifier interaction"
+        ],
+        "confidence": 1.0
+      },
+      {
+        "name": "Zero-Knowledge Cryptography",
+        "description": "Encrypts wallet balances, transaction history, and transaction details",
+        "features": [
+          "Private balance encryption",
+          "Transaction history obfuscation",
+          "Sender/recipient anonymity",
+          "Amount obfuscation",
+          "Token type concealment"
+        ],
+        "confidence": 1.0
+      },
+      {
+        "name": "UTXO Model with Merkle Trees",
+        "description": "Unspent Transaction Outputs system represented in Merkle Trees within smart contracts",
+        "purpose": "Manage encrypted ownership and balances securely",
+        "confidence": 0.95
+      }
+    ],
+    "privacy_features": [
+      {
+        "feature": "0zk Addresses",
+        "description": "Private RAILGUN addresses (beginning with 0zk) separate from public 0x addresses",
+        "functionality": "Enable shielded transactions with encrypted balances and transaction details"
+      },
+      {
+        "feature": "Asset Shielding",
+        "description": "Shield any ERC-20 token or NFT (ERC-721, ERC-1155) into 0zk addresses",
+        "result": "Once shielded, tokens, balances, and transactions are encrypted"
+      },
+      {
+        "feature": "Private Transfers",
+        "description": "Transfer assets between 0zk addresses without revealing sender, recipient, amount, or token type",
+        "blockchain_validity": "Valid on-chain transactions with complete metadata privacy"
+      },
+      {
+        "feature": "Private DeFi Interactions",
+        "description": "Use DeFi protocols anonymously while maintaining transaction privacy",
+        "confidence": 0.95
+      },
+      {
+        "feature": "Private Swaps",
+        "description": "Execute token swaps with privacy protection",
+        "confidence": 0.90
+      },
+      {
+        "feature": "Anonymity Pool",
+        "description": "Private balances create an anonymity set making transaction linking difficult",
+        "confidence": 0.95
+      }
+    ],
+    "security_features": [
+      {
+        "feature": "SHA256 Hash Verification",
+        "purpose": "Release integrity verification"
+      },
+      {
+        "feature": "GPG Signed Certificates",
+        "purpose": "Authenticity verification"
+      },
+      {
+        "feature": "Public Key Verification",
+        "purpose": "Cryptographic proof of release origin"
+      }
+    ]
+  },
+
+  "blockchain_support": {
+    "supported_networks": [
+      {
+        "name": "Ethereum",
+        "type": "Layer 1",
+        "railgun_support": true
+      },
+      {
+        "name": "Polygon",
+        "type": "Layer 2/Sidechain",
+        "railgun_support": true
+      },
+      {
+        "name": "BNB Smart Chain (BSC)",
+        "type": "Layer 1",
+        "railgun_support": true
+      },
+      {
+        "name": "Arbitrum",
+        "type": "Layer 2",
+        "railgun_support": true
+      }
+    ],
+    "token_standards": [
+      "ERC-20 (Fungible Tokens)",
+      "ERC-721 (NFTs)",
+      "ERC-1155 (Multi-Token Standard)"
+    ]
+  },
+
+  "platform_support": {
+    "operating_systems": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "interface_type": "Command Line Interface (CLI)",
+    "input_method": "Primarily keyboard-based controls"
+  },
+
+  "project_attributes": {
+    "open_source": true,
+    "non_profit": true,
+    "free_to_use": true,
+    "licensing": "GPL-3.0",
+    "development_status": "Active"
+  },
+
+  "web3_privacy_classification": {
+    "is_web3_privacy_project": true,
+    "primary_privacy_focus": "Transaction privacy and DeFi anonymity",
+    "privacy_level": "High (zero-knowledge proofs with complete metadata encryption)",
+    "compliance_status": "Legitimate privacy wallet with verified open-source implementation"
+  },
+
+  "research_methodology": {
+    "search_strategies_used": [
+      "GitHub repository search",
+      "Web search for official documentation",
+      "NPM package registry search",
+      "RAILGUN protocol documentation review",
+      "Zero-knowledge cryptography technical documentation"
+    ],
+    "verification_steps": [
+      "Cross-referenced multiple official sources",
+      "Verified GitHub repository authenticity",
+      "Confirmed technical stack through repository analysis",
+      "Validated privacy claims through RAILGUN documentation",
+      "Verified blockchain network support through official sources"
+    ],
+    "data_gaps": "None identified - comprehensive technical information available"
+  },
+
+  "constitutional_compliance": {
+    "real_data_only": true,
+    "multi_source_verification": true,
+    "confidence_scoring": true,
+    "gaps_reported": false,
+    "synthetic_data_generated": false,
+    "notes": "All data extracted from official sources with high confidence scores. No placeholder or synthetic data used."
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "project_name": "STELS",
+  "full_name": "STELS Protocol - Stealth Transactions for DeFi",
+  "github_url": "NOT_FOUND",
+  "confidence": 0.6,
+  "data_sources": [
+    "https://stelsprotocol.com/",
+    "Web search results for stealth address protocols",
+    "General stealth address technology research"
+  ],
+  "tech_stack": {
+    "blockchain_platform": "Ethereum",
+    "core_technologies": [
+      "Stealth Addresses",
+      "Ephemeral Relays",
+      "Elliptic Curve Cryptography",
+      "One-time addresses"
+    ],
+    "standards": [
+      "ERC-5564 (likely - standard for stealth addresses)",
+      "ERC-6538 (likely - stealth meta-address registry)"
+    ],
+    "integration_targets": [
+      "Uniswap",
+      "DeFi protocols"
+    ],
+    "confidence": 0.5,
+    "notes": "Technology stack inferred from protocol description and general stealth address implementations. No official technical documentation or GitHub repository found."
+  },
+  "privacy_techniques": [
+    {
+      "technique": "Stealth Addresses",
+      "description": "Each transaction is routed to a unique one-time-use address viewable only by sender and receiver",
+      "confidence": 1.0
+    },
+    {
+      "technique": "Ephemeral Relays",
+      "description": "Temporary relay funds and sends transactions on behalf of users, acting like a burner phone used once then discarded",
+      "confidence": 1.0
+    },
+    {
+      "technique": "Transaction Unlinking",
+      "description": "Each transaction generates a unique temporary address ensuring no outside observer can connect transaction history",
+      "confidence": 1.0
+    },
+    {
+      "technique": "Wallet Address Privacy",
+      "description": "Real wallet address is never exposed during DeFi interactions",
+      "confidence": 1.0
+    },
+    {
+      "technique": "On-chain Privacy",
+      "description": "Unlinkable addresses prevent chain analysis firms from connecting transaction history even on public protocols",
+      "confidence": 0.9
+    }
+  ],
+  "research_notes": {
+    "status": "INCOMPLETE - GitHub repository not found",
+    "website": "https://stelsprotocol.com/",
+    "description": "STELS Protocol enables users to interact with DeFi protocols like Uniswap while keeping transactions completely hidden. Uses stealth address technology combined with ephemeral relays to ensure privacy without traditional mixers or pools.",
+    "key_features": [
+      "DeFi-native privacy without mixers",
+      "Direct protocol integration (Uniswap mentioned)",
+      "One-time unlinkable transactions",
+      "Temporary address generation per transaction",
+      "Ephemeral relay-based transaction routing"
+    ],
+    "roadmap_status": "Mentioned on website but details not publicly available",
+    "launch_status": "Appears to be early stage or stealth launch"
+  },
+  "gaps_identified": [
+    {
+      "gap": "Official GitHub repository",
+      "impact": "high",
+      "recommendation": "Contact project team via website or social media to obtain official GitHub link"
+    },
+    {
+      "gap": "Technical documentation",
+      "impact": "high",
+      "recommendation": "Search for whitepaper, technical docs, or developer documentation"
+    },
+    {
+      "gap": "Specific smart contract addresses",
+      "impact": "medium",
+      "recommendation": "Check Etherscan for deployed contracts or wait for official announcement"
+    },
+    {
+      "gap": "Team and developer information",
+      "impact": "medium",
+      "recommendation": "Look for team page on website or social media profiles"
+    },
+    {
+      "gap": "Open source code verification",
+      "impact": "high",
+      "recommendation": "Without GitHub repo, unable to verify implementation details and security"
+    }
+  ],
+  "related_technologies": {
+    "similar_projects": [
+      {
+        "name": "Umbra Cash",
+        "github": "https://github.com/ScopeLift/umbra-protocol",
+        "relation": "Similar stealth address implementation for Ethereum"
+      },
+      {
+        "name": "ERC-5564 Reference Implementations",
+        "github": "https://github.com/kassandraoftroy/erc5564-contracts",
+        "relation": "Standard stealth address protocol STELS likely builds upon"
+      },
+      {
+        "name": "ScopeLift Stealth Address SDK",
+        "github": "https://github.com/ScopeLift/stealth-address-sdk",
+        "relation": "TypeScript SDK for ERC-5564 that STELS may utilize"
+      }
+    ]
+  },
+  "research_metadata": {
+    "researcher": "Research Agent - Claude Code",
+    "research_date": "2025-10-08",
+    "search_queries_performed": [
+      "stels stealth transactions github cryptocurrency privacy",
+      "STELS protocol github repository stelsprotocol.com",
+      "STELS protocol twitter x.com ethereum privacy stealth",
+      "site:github.com stels protocol stealth addresses",
+      "stelsprotocol OR stels-protocol github.com",
+      "STELS whitepaper documentation github code repository",
+      "STELS protocol roadmap team contact developers",
+      "stels wallet ethereum privacy github"
+    ],
+    "sources_checked": [
+      "stelsprotocol.com",
+      "GitHub search",
+      "Web search engines",
+      "Cryptocurrency privacy resources"
+    ],
+    "constitutional_compliance": {
+      "real_data_only": true,
+      "no_synthetic_generation": true,
+      "gaps_reported": true,
+      "multi_source_attempted": true,
+      "confidence_scores_provided": true
+    }
+  }
+}

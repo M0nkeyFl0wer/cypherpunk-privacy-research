@@ -1,0 +1,28 @@
+{
+  "source": "Open Source Observer",
+  "discovered_at": "2025-09-29T14:42:57.333005",
+  "oso_name": "taiko",
+  "github_repos": [
+    "https://github.com/taikoxyz"
+  ],
+  "blockchain_addresses": [],
+  "websites": [
+    "https://taiko.xyz/"
+  ],
+  "npm_packages": [],
+  "defillama_urls": [],
+  "description": "Taiko is an Ethereum-based layer-2 scaling solution utilizing ZK-rollups without centralized sequencers. It offers two rollup implementations, Taiko Alethia, a type-1 general purpose ZK-rollup, and Taiko Gwyneth, a ZK-rollup synchronously composable with Ethereum.",
+  "social": {
+    "twitter": [
+      {
+        "url": "https://x.com/taikoxyz"
+      }
+    ],
+    "mirror": [
+      {
+        "url": "https://taiko.mirror.xyz/"
+      }
+    ]
+  },
+  "confidence": "high"
+}

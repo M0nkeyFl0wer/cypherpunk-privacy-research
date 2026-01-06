@@ -1,0 +1,34 @@
+{
+  "source": "Open Source Observer",
+  "discovered_at": "2025-09-29T14:42:57.278921",
+  "oso_name": "Synonym Finance",
+  "github_repos": [
+    "https://github.com/synonymfinance"
+  ],
+  "blockchain_addresses": [
+    {
+      "address": "0x0362c2f89a548e9c246c27d5846a77421a2b7e44",
+      "tags": [
+        "eoa",
+        "deployer"
+      ],
+      "networks": [
+        "any_evm"
+      ]
+    }
+  ],
+  "websites": [
+    "https://www.synonym.finance/"
+  ],
+  "npm_packages": [],
+  "defillama_urls": [],
+  "description": "Synonym Finance (SYNO) is a cross-VM lending market built on Wormhole, Arbitrum, Pyth, Chainlink, and Circle CCTP. It enables lending, borrowing, and earning across supported ecosystems, with a focus on security through multiple audits and industry best practices. SYNO aligns stakeholder interests to optimize liquidity outcomes.",
+  "social": {
+    "twitter": [
+      {
+        "url": "https://x.com/synonymfinance"
+      }
+    ]
+  },
+  "confidence": "medium"
+}

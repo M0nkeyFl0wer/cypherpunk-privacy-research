@@ -1,0 +1,12 @@
+{
+  "birth_claims": ["born in 1986"],
+  "education_claims": ["J.D., UBC", "B.A., McGill"],
+  "election_claims": ["Elected in 2019", "re-elected in 2021", "re-elected in 2025"],
+  "vote_claims": [
+    {"vote": "For Bill C-55", "year": "2019"},
+    {"vote": "For banning harmful fishing gear in MPAs", "year": "2023"}
+  ],
+  "family_claims": ["Wife Dr. Sarah Weiler", "Mother Beverly Tanchak"],
+  "staff_claims": ["David Wallis - Legislative Assistant"]
+}
+

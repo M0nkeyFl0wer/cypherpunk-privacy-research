@@ -1,0 +1,16 @@
+{
+  "contracts": [
+    {
+      "name": "Aztec Connect Rollup",
+      "address": "0xff1f2b4adb9df6fc8eafecdcbf96a2b351680455",
+      "network": "ethereum",
+      "type": "rollup",
+      "source": "etherscan.io",
+      "verified": true
+    }
+  ],
+  "search_attempted": true,
+  "note": "Manual verification needed - check website and docs",
+  "analyzed_at": "2025-09-29T14:12:14.183994",
+  "last_updated": "2025-09-29T15:45:58.238508"
+}

@@ -14,8 +14,8 @@ export default function Home() {
             Ethereum Cypherpunks Edition
           </p>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-12">
-            Comprehensive research on 114 Web3 privacy projects with 100% real data and zero fabrication.
-            Explore interactive visualizations, search detailed research, and discover privacy technologies.
+            Comprehensive verified research on 40 Web3 privacy projects with detailed data including
+            team members, contracts, milestones, and metrics. Explore the full depth of privacy research.
           </p>
 
           <div className="flex gap-4 justify-center">
@@ -39,20 +39,20 @@ export default function Home() {
       <div className="max-w-6xl mx-auto px-8 py-12">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
           <div className="bg-gray-800/50 backdrop-blur-lg rounded-xl p-6 border border-purple-500/30 text-center">
-            <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-2">114</div>
-            <div className="text-gray-400">Privacy Projects</div>
+            <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-2">40</div>
+            <div className="text-gray-400">Verified Projects</div>
           </div>
           <div className="bg-gray-800/50 backdrop-blur-lg rounded-xl p-6 border border-blue-500/30 text-center">
-            <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 mb-2">85</div>
-            <div className="text-gray-400">Project Cards</div>
+            <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 mb-2">8</div>
+            <div className="text-gray-400">With Team Data</div>
           </div>
           <div className="bg-gray-800/50 backdrop-blur-lg rounded-xl p-6 border border-green-500/30 text-center">
-            <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-400 mb-2">113</div>
-            <div className="text-gray-400">Full Reports</div>
+            <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-400 mb-2">5</div>
+            <div className="text-gray-400">Ecosystems</div>
           </div>
           <div className="bg-gray-800/50 backdrop-blur-lg rounded-xl p-6 border border-pink-500/30 text-center">
-            <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-rose-400 mb-2">30%</div>
-            <div className="text-gray-400">Avg Completeness</div>
+            <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-rose-400 mb-2">80%</div>
+            <div className="text-gray-400">Avg Confidence</div>
           </div>
         </div>
 
@@ -156,6 +156,27 @@ export default function Home() {
               </div>
             </div>
           </a>
+        </div>
+
+        {/* Postmortem Section */}
+        <div className="mb-16">
+          <Link
+            href="/postmortem"
+            className="block bg-gradient-to-r from-yellow-900/30 to-orange-900/30 backdrop-blur-lg rounded-xl p-6 border border-yellow-500/30 hover:border-yellow-500 transition-all group"
+          >
+            <div className="flex items-start gap-4">
+              <div className="text-4xl">📋</div>
+              <div>
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-yellow-400 transition-colors">
+                  Postmortem: Lessons Learned
+                </h3>
+                <p className="text-gray-400">
+                  Read about the PR disaster that led to this research site - what went wrong with the web3privacy explorer contribution,
+                  why the schema is limited, and how we&apos;re proposing to improve it.
+                </p>
+              </div>
+            </div>
+          </Link>
         </div>
 
         {/* Key Features */}

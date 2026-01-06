@@ -1,0 +1,180 @@
+{
+  "project_name": "light-protocol",
+  "category": "defi",
+  "description": "Privacy layer for Solana (originally) - now pivoted to ZK Compression Protocol for Solana state reduction",
+  "confidence_score": 0.95,
+  "sources": [
+    "https://github.com/Lightprotocol/light-protocol",
+    "https://github.com/Lightprotocol/light-protocol-v1",
+    "https://www.zkcompression.com/references/whitepaper",
+    "https://www.helius.dev/blog/privacy-on-solana-with-elusiv-and-light",
+    "https://lightprotocol.com/"
+  ],
+  "github_url": "https://github.com/Lightprotocol/light-protocol",
+  "github_url_legacy": "https://github.com/Lightprotocol/light-protocol-v1",
+  "tech_stack": {
+    "primary_languages": [
+      "Rust (78.5%)",
+      "TypeScript (12.5%)",
+      "Go (5.9%)",
+      "Shell"
+    ],
+    "blockchain_platform": "Solana",
+    "frameworks": [
+      "Anchor (v0.29.0)",
+      "Solana SDK"
+    ],
+    "node_runtime": "NodeJS v20.9.0 LTS",
+    "package_managers": [
+      "pnpm",
+      "Cargo"
+    ],
+    "development_tools": [
+      "Solana CLI",
+      "solana-test-validator",
+      "solana-keygen",
+      "solana-verify",
+      "Docker",
+      "LLVM (clang, lld)"
+    ],
+    "confidence_score": 0.98
+  },
+  "privacy_techniques": {
+    "primary_technique": "ZK Compression",
+    "cryptographic_primitives": [
+      {
+        "name": "Groth16 SNARK",
+        "purpose": "Zero-knowledge proofs for compressed account integrity verification",
+        "proof_size": "128 bytes (constant)",
+        "confidence_score": 0.95
+      },
+      {
+        "name": "Poseidon Hash",
+        "purpose": "Arithmetic-friendly hash function for Merkle tree construction",
+        "description": "Hash-based concurrent Merkle tree (sparse binary)",
+        "confidence_score": 0.95
+      },
+      {
+        "name": "Sparse Binary Merkle Tree",
+        "purpose": "State tree for compressed account storage",
+        "capacity": "67 million compressed account state transitions per tree",
+        "confidence_score": 0.93
+      }
+    ],
+    "architecture": {
+      "data_structure": "Forest of multiple binary Merkle trees",
+      "state_storage": "Compressed account data hashed and stored as Merkle tree leaves",
+      "on_chain_footprint": "Small fingerprint (state root) stored on-chain",
+      "verification": "Small validity proofs verify multiple compressed accounts",
+      "compressed_account_hash_components": [
+        "DataHash",
+        "Lamports",
+        "OwnerHash",
+        "Address",
+        "Discriminator",
+        "State tree hash",
+        "Leaf Index"
+      ],
+      "confidence_score": 0.92
+    },
+    "v1_privacy_features": {
+      "technique": "zkSNARK-based anonymous transactions",
+      "description": "Shielded pools similar to Zcash/Tornado Cash",
+      "features": [
+        "Shield tokens to liquidity pool",
+        "Break on-chain link between sender and recipient",
+        "Shielded internal transactions (conceals amount and recipient)",
+        "Optional compliance proofs to re-establish fund origin",
+        "Trustless zero-knowledge proof verification"
+      ],
+      "circuit_implementation": "Based on tornado_nova circuit",
+      "libraries": [
+        "arkworks (ark_bn254, ark_ec, ark_ff)",
+        "arkworks_gadgets"
+      ],
+      "status": "Legacy version (v1), current focus is ZK Compression",
+      "confidence_score": 0.90
+    },
+    "protocol_evolution": {
+      "original_purpose": "Privacy solution for Solana (anonymous transactions)",
+      "pivot": "Shifted focus to data compression through zero-knowledge proofs",
+      "current_focus": "ZK Compression Protocol for state reduction and cost optimization",
+      "confidence_score": 0.93
+    }
+  },
+  "key_features": {
+    "cost_reduction": {
+      "description": "Reduces Solana account storage costs by orders of magnitude",
+      "example": "100-byte PDA reduced from 0.0016 SOL to ~0.00001 SOL",
+      "mechanism": "State compression with zero-knowledge proofs",
+      "confidence_score": 0.95
+    },
+    "performance": {
+      "characteristics": [
+        "Maintains L1 performance",
+        "Full composability with existing Solana programs",
+        "Rent-free account creation",
+        "Custom ZK circuits support"
+      ],
+      "confidence_score": 0.93
+    },
+    "security": {
+      "auditors": [
+        "OtterSec",
+        "Neodyme",
+        "Zellic",
+        "Reilabs"
+      ],
+      "verification": "Formally verified security",
+      "builds": "Verifiable builds",
+      "confidence_score": 0.95
+    },
+    "developer_experience": {
+      "features": [
+        "Development environment flexibility",
+        "Development Containers support",
+        "Modular design",
+        "Custom ZK circuits support",
+        "Compressed state composition"
+      ],
+      "confidence_score": 0.92
+    }
+  },
+  "technical_specifications": {
+    "proof_system": "Groth16 SNARK",
+    "hash_function": "Poseidon",
+    "merkle_tree": "Sparse binary Merkle tree (concurrent)",
+    "capacity_per_tree": "67 million state transitions",
+    "proof_size": "128 bytes",
+    "solana_zk_syscalls": "3 syscalls live on Solana",
+    "confidence_score": 0.93
+  },
+  "documentation": {
+    "main_docs": "https://www.zkcompression.com",
+    "whitepaper": "https://www.zkcompression.com/references/whitepaper",
+    "github_org": "https://github.com/Lightprotocol",
+    "repository_count": 63,
+    "confidence_score": 0.98
+  },
+  "data_quality": {
+    "completeness": "high",
+    "verification_sources": 5,
+    "missing_information": [
+      "Specific Cargo.toml dependencies (not directly accessible)",
+      "Exact package.json dependencies (not directly accessible)",
+      "Detailed circuit specifications",
+      "Performance benchmarks"
+    ],
+    "research_methodology": "Multi-source web search, GitHub repository analysis, official documentation review",
+    "timestamp": "2025-10-08T13:30:00Z"
+  },
+  "notes": [
+    "Light Protocol has evolved from a privacy-focused protocol (v1) to a ZK compression protocol (current)",
+    "The v1 repository (light-protocol-v1) contains the original privacy-focused implementation with shielded pools",
+    "Current main repository focuses on ZK Compression for state reduction and cost optimization",
+    "Both versions leverage zkSNARKs but for different purposes",
+    "Protocol is production-ready with multiple security audits",
+    "Supports custom ZK circuits for advanced use cases",
+    "All data extracted from official sources - NO synthetic data generated"
+  ]
+}

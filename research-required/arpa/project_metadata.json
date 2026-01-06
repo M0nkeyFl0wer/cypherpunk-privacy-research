@@ -1,0 +1,17 @@
+{
+  "project_name": "ARPA",
+  "category": "computing",
+  "status": "active",
+  "ecosystem": "ethereum",
+  "technology": "",
+  "description": "Threshold BLS network for verifiable random number generation",
+  "website": "",
+  "github": "",
+  "discovery_date": "2025-09-29T14:06:45.274119",
+  "discovery_source": "web3privacy_github",
+  "research_progress": {
+    "status": "initial_discovery",
+    "completion_percent": 10,
+    "last_updated": "2025-09-29T14:06:45.274129"
+  }
+}

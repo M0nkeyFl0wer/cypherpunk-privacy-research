@@ -1,0 +1,206 @@
+{
+  "owner": "scrtlabs",
+  "repo_name": "SecretNetwork",
+  "full_name": "scrtlabs/SecretNetwork",
+  "github_url": "https://github.com/scrtlabs/SecretNetwork",
+  "html_url": "https://github.com/scrtlabs/SecretNetwork",
+  "stars": 563,
+  "forks": 229,
+  "watchers": 563,
+  "open_issues": 73,
+  "contributors": 57,
+  "created_at": "2020-01-29T11:02:01Z",
+  "updated_at": "2025-09-19T13:12:09Z",
+  "pushed_at": "2025-10-06T11:50:55Z",
+  "size_kb": 418078,
+  "default_branch": "master",
+  "primary_language": "Rust",
+  "languages": [
+    {
+      "name": "Rust",
+      "bytes": 4011557,
+      "percentage": 55.11
+    },
+    {
+      "name": "Go",
+      "bytes": 2908129,
+      "percentage": 39.95
+    },
+    {
+      "name": "Shell",
+      "bytes": 163726,
+      "percentage": 2.25
+    },
+    {
+      "name": "TypeScript",
+      "bytes": 73876,
+      "percentage": 1.01
+    },
+    {
+      "name": "Makefile",
+      "bytes": 52122,
+      "percentage": 0.72
+    },
+    {
+      "name": "Dockerfile",
+      "bytes": 43186,
+      "percentage": 0.59
+    },
+    {
+      "name": "JavaScript",
+      "bytes": 17926,
+      "percentage": 0.25
+    },
+    {
+      "name": "C",
+      "bytes": 7120,
+      "percentage": 0.1
+    },
+    {
+      "name": "Python",
+      "bytes": 1593,
+      "percentage": 0.02
+    },
+    {
+      "name": "Linker Script",
+      "bytes": 140,
+      "percentage": 0.0
+    }
+  ],
+  "total_languages": 10,
+  "top_contributors": [
+    {
+      "username": "assafmo",
+      "contributions": 2880,
+      "avatar_url": "https://avatars.githubusercontent.com/u/22766533?v=4",
+      "profile_url": "https://github.com/assafmo"
+    },
+    {
+      "username": "Cashmaney",
+      "contributions": 564,
+      "avatar_url": "https://avatars.githubusercontent.com/u/16579705?v=4",
+      "profile_url": "https://github.com/Cashmaney"
+    },
+    {
+      "username": "toml01",
+      "contributions": 461,
+      "avatar_url": "https://avatars.githubusercontent.com/u/7473870?v=4",
+      "profile_url": "https://github.com/toml01"
+    },
+    {
+      "username": "reuvenpo",
+      "contributions": 389,
+      "avatar_url": "https://avatars.githubusercontent.com/u/35386347?v=4",
+      "profile_url": "https://github.com/reuvenpo"
+    },
+    {
+      "username": "iKapitonau",
+      "contributions": 351,
+      "avatar_url": "https://avatars.githubusercontent.com/u/44369865?v=4",
+      "profile_url": "https://github.com/iKapitonau"
+    },
+    {
+      "username": "eshelB",
+      "contributions": 265,
+      "avatar_url": "https://avatars.githubusercontent.com/u/98821241?v=4",
+      "profile_url": "https://github.com/eshelB"
+    },
+    {
+      "username": "liorbond",
+      "contributions": 258,
+      "avatar_url": "https://avatars.githubusercontent.com/u/22855163?v=4",
+      "profile_url": "https://github.com/liorbond"
+    },
+    {
+      "username": "dependabot[bot]",
+      "contributions": 120,
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "profile_url": "https://github.com/apps/dependabot"
+    },
+    {
+      "username": "quaisx",
+      "contributions": 95,
+      "avatar_url": "https://avatars.githubusercontent.com/u/109706571?v=4",
+      "profile_url": "https://github.com/quaisx"
+    },
+    {
+      "username": "cboh4",
+      "contributions": 76,
+      "avatar_url": "https://avatars.githubusercontent.com/u/175821642?v=4",
+      "profile_url": "https://github.com/cboh4"
+    }
+  ],
+  "recent_commits": [
+    {
+      "sha": "5abbbba",
+      "message": "added upgrqde handler v1.21.7",
+      "author": "vlad",
+      "date": "2025-09-12T16:59:32Z",
+      "url": "https://github.com/scrtlabs/SecretNetwork/commit/5abbbbac52a0faa977c8177e2a732eefc9c2d056"
+    },
+    {
+      "sha": "ee67adb",
+      "message": "Merge pull request #1728 from scrtlabs/disable-implici-hash-in-the-header",
+      "author": "valdok",
+      "date": "2025-09-12T14:49:56Z",
+      "url": "https://github.com/scrtlabs/SecretNetwork/commit/ee67adb63715031697acb5524bd67c09beddb327"
+    },
+    {
+      "sha": "7f9ab16",
+      "message": "Fix xargo",
+      "author": "Ilya Raykker",
+      "date": "2025-09-12T13:42:52Z",
+      "url": "https://github.com/scrtlabs/SecretNetwork/commit/7f9ab163cf016f1815ae9453c3aa01d0a9843483"
+    },
+    {
+      "sha": "152f721",
+      "message": "disable execution of the cron msgs",
+      "author": "cboh4",
+      "date": "2025-09-12T11:43:29Z",
+      "url": "https://github.com/scrtlabs/SecretNetwork/commit/152f7219d70725f1f5e498cf1c3b4628ed2164b3"
+    },
+    {
+      "sha": "9629237",
+      "message": "Merge pull request #1727 from scrtlabs/remove-execution-stage-from-add-schedule",
+      "author": "cboh4",
+      "date": "2025-08-12T12:26:20Z",
+      "url": "https://github.com/scrtlabs/SecretNetwork/commit/9629237fa5200516365bf993ddfc718d6146e219"
+    }
+  ],
+  "total_commits_sample": 10,
+  "description": "\ud835\udd4a The Secret Network",
+  "homepage": "https://scrt.network",
+  "topics": [
+    "blockchain",
+    "computational-privacy",
+    "cosmos-hub",
+    "cosmos-sdk",
+    "enigma",
+    "nft",
+    "privacy",
+    "programmable-privacy",
+    "proof-of-stake",
+    "scrt",
+    "secret-contracts",
+    "secret-network",
+    "secret-nodes",
+    "sgx",
+    "sgx-enclave",
+    "tendermint",
+    "tendermint-consensus",
+    "tokens",
+    "wasm"
+  ],
+  "license": "Other",
+  "is_fork": false,
+  "is_archived": false,
+  "is_disabled": false,
+  "is_private": false,
+  "has_wiki": false,
+  "has_issues": true,
+  "has_projects": true,
+  "analyzed_at": "2025-10-07T23:22:50.441328",
+  "data_source": "github-api-v3",
+  "confidence": 1.0,
+  "verified": true
+}

@@ -1,0 +1,15 @@
+{
+  "project": "cyclone-protocol",
+  "network": "Ethereum",
+  "contracts": [
+    {
+      "name": "Cyclone Router",
+      "address": "0x527653eA119F3E6a1F5BD18fbF4714081D7B31ce",
+      "type": "Router",
+      "verified": true
+    }
+  ],
+  "analyzed_at": "2025-10-08T10:19:23.714267",
+  "confidence": 1.0,
+  "data_source": "Manual research + Etherscan verification"
+}

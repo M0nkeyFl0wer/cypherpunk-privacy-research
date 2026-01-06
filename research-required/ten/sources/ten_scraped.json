@@ -1,0 +1,13 @@
+{
+  "project_name": "ten",
+  "website": "https://ten.com",
+  "website_confidence": 0.85,
+  "website_sources": ["https://ten.com", "curl scraping"],
+  "description": "Technip Energies is a leading Engineering &amp; Technology company for the energy transition, with leadership positions in Liquefied Natural Gas (LNG), hydrogen and ethylene as well as growing market positions in blue and green hydrogen, sustainable chemistry and CO2 management...",
+  "description_confidence": 0.80,
+  "description_sources": ["https://ten.com meta tags"],
+  "research_date": "2025-10-06T13:29:04Z",
+  "batch_number": 3,
+  "execution_host": "seshat",
+  "scraping_method": "curl + grep"
+}

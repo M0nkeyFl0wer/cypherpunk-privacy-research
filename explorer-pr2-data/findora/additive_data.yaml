@@ -1,0 +1,22 @@
+
+# Merge Instructions for findora
+#
+# This data should be ADDED to the existing entry, not replace it.
+# Review each field and only add what's missing or more accurate.
+#
+# Fields with underscore prefix (_research_confidence) are metadata
+# and should NOT be included in the final YAML.
+#
+# Research confidence: 0.8
+# Research date: 
+
+name: Findora
+description: Findora is a Layer-1 blockchain that accelerates mainstream adoption
+  through powerful zero-knowledge solutions and SDKs. It is a decentralized, privacy-preserving
+  smart contract platform featuring programmable privacy, secured by a decentralized
+  network of global validators running the Tendermint consensus mechanism.
+ecosystem:
+- other
+links:
+  web: https://findora.org/
+  github: https://github.com/FindoraNetwork

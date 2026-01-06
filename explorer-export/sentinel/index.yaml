@@ -1,0 +1,25 @@
+name: Sentinel
+categories:
+- infrastructure
+ecosystem:
+- Ethereum
+usecases:
+- Privacy
+description: Blockchain core managing Sentinel network services, staking, and governance
+team:
+  anonymous: true
+links:
+  web: https://sentinel.network
+  github: https://github.com/sentinel-official/sentinelhub
+project_status:
+  version: Mainnet
+sunset: false
+blockchain_features:
+  opensource: true
+  asset_custody_type: non-custody
+  upgradability:
+    enabled: true
+default_privacy: false
+tracebility:
+  kyc: false
+licences: Apache License 2.0

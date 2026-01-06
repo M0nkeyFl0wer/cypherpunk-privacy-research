@@ -1,0 +1,29 @@
+{
+  "project_name": "Aztec Network",
+  "category": "defi",
+  "status": "active",
+  "ecosystem": "ethereum",
+  "technology": "",
+  "description": "Privacy-first ZK rollup",
+  "website": "https://aztec.network",
+  "github": "https://github.com/AztecProtocol",
+  "discovery_date": "2025-09-29T14:06:45.268357",
+  "discovery_source": "web3privacy_github",
+  "research_progress": {
+    "status": "initial_discovery",
+    "completion_percent": 10,
+    "last_updated": "2025-09-29T14:06:45.268364"
+  },
+  "web3privacy_enriched": true,
+  "enriched_at": "2025-09-29T16:11:39.094417",
+  "mainnet_status": "testnet",
+  "is_mainnet": false,
+  "launch_date": "2025-Q4",
+  "audit_count": 0,
+  "audits": [],
+  "supported_chains": [
+    "ethereum"
+  ],
+  "launch_status": "Public Testnet, Mainnet planned Q4 2025",
+  "status_note": "Aztec Connect was on mainnet (deprecated)"
+}

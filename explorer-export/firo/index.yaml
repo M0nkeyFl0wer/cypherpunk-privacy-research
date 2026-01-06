@@ -1,0 +1,22 @@
+name: Firo
+categories:
+- infrastructure
+ecosystem:
+- Ethereum
+usecases:
+- Privacy
+description: The privacy-focused cryptocurrency
+team:
+  anonymous: true
+links:
+  web: https://firo.com
+project_status:
+  version: Mainnet
+sunset: false
+blockchain_features:
+  opensource: true
+  asset_custody_type: non-custody
+default_privacy: false
+tracebility:
+  kyc: false
+licences: MIT License

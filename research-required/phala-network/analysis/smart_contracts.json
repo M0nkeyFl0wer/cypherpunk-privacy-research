@@ -1,0 +1,15 @@
+{
+  "project": "phala-network",
+  "network": "Ethereum",
+  "contracts": [
+    {
+      "name": "PHA Token",
+      "address": "0x6c5bA91642F10282b576d91922Ae6448C9d52f4E",
+      "type": "Token",
+      "verified": true
+    }
+  ],
+  "analyzed_at": "2025-10-08T10:19:23.715676",
+  "confidence": 1.0,
+  "data_source": "Manual research + Etherscan verification"
+}

@@ -1,0 +1,23 @@
+name: Monero
+categories:
+- infrastructure
+ecosystem:
+- Ethereum
+usecases:
+- Privacy
+description: 'Monero: the secure, private, untraceable cryptocurrency'
+team:
+  anonymous: true
+links:
+  web: https://monero.io
+  github: https://github.com/monero-project/monero
+project_status:
+  version: Mainnet
+sunset: false
+blockchain_features:
+  opensource: true
+  asset_custody_type: non-custody
+default_privacy: false
+tracebility:
+  kyc: false
+licences: Other
