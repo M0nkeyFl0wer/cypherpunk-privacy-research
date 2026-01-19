@@ -1,0 +1,22 @@
+{
+  "analysis_date": "2026-01-19",
+  "organization": {
+    "name": "ProtonMail",
+    "url": "https://github.com/ProtonMail",
+    "verified": true,
+    "location": "Geneva, Switzerland",
+    "followers": 4700,
+    "repository_count": 179
+  },
+  "key_repositories": [
+    {"name": "WebClients", "stars": 5199, "language": "TypeScript", "license": "MIT"},
+    {"name": "ios-mail", "stars": 1600, "language": "Swift", "license": "GPL-3.0"},
+    {"name": "proton-bridge", "stars": 1400, "language": "Go", "license": "GPL-3.0"},
+    {"name": "gopenpgp", "stars": 1208, "language": "Go", "license": "MIT"},
+    {"name": "android-mail", "stars": 716, "language": "Kotlin", "license": "GPL-3.0"}
+  ],
+  "development_health": {
+    "activity_level": "high",
+    "open_source_status": "clients_only"
+  }
+}

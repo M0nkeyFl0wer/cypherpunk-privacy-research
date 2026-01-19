@@ -1,0 +1,32 @@
+{
+  "project_id": "secret-network",
+  "verification_date": "2026-01-19",
+  "verified_data_points": [
+    {"field": "website", "value": "https://scrt.network", "confidence": 1.0},
+    {"field": "github", "value": "https://github.com/scrtlabs/SecretNetwork", "confidence": 1.0},
+    {"field": "founder", "value": "Guy Zyskind", "confidence": 1.0},
+    {"field": "launch_date", "value": "February 2020", "confidence": 0.95},
+    {"field": "technology", "value": "Cosmos SDK + Intel SGX TEE", "confidence": 1.0},
+    {"field": "token", "value": "SCRT", "confidence": 1.0},
+    {"field": "consensus", "value": "Tendermint BFT (Proof of Stake)", "confidence": 1.0},
+    {"field": "smart_contracts", "value": "CosmWasm (Rust → WASM)", "confidence": 1.0},
+    {"field": "ibc_enabled", "value": true, "confidence": 1.0}
+  ],
+  "research_gaps": [
+    "Complete team roster",
+    "Detailed funding history",
+    "Full security audit reports list"
+  ],
+  "known_issues": [
+    {
+      "issue": "2023 foundation controversy",
+      "description": "Dispute over $2.6M dividend payment to Tor Bair",
+      "status": "documented"
+    },
+    {
+      "issue": "SGX vulnerabilities",
+      "description": "Wiretap.fail academic attack (physical access required)",
+      "status": "mitigated in v1.22 upgrade"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "analysis_date": "2026-01-19",
+  "status": "repository_not_identified",
+  "notes": [
+    "Confer is described as open source",
+    "Reproducible builds mentioned",
+    "Repository URL not found in public sources",
+    "Expected for newly launched product (Dec 2025)"
+  ],
+  "founder_github": {
+    "name": "Moxie Marlinspike",
+    "note": "Creator of Signal, extensive GitHub history via signalapp org"
+  }
+}

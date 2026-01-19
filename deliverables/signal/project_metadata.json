@@ -1,0 +1,101 @@
+{
+  "id": "signal",
+  "name": "Signal",
+  "slug": "signal",
+  "description": "An open-source, cross-platform encrypted messaging application that uses the Signal Protocol for end-to-end encryption. Created by Moxie Marlinspike and operated by the Signal Technology Foundation, Signal has become the gold standard for secure private messaging with approximately 70 million monthly active users as of 2025.",
+  "website": "https://signal.org",
+  "github": "https://github.com/signalapp",
+  "documentation": "https://signal.org/docs/",
+  "category": "Privacy Infrastructure",
+  "subcategories": ["Encrypted Messaging", "Cryptographic Protocol"],
+  "tech_stack": [
+    "Kotlin (Android)",
+    "Swift (iOS)",
+    "TypeScript (Desktop)",
+    "Java (Server)",
+    "Rust (libsignal)"
+  ],
+  "privacy_techniques": [
+    "End-to-end encryption (Signal Protocol)",
+    "Double Ratchet algorithm",
+    "Extended Triple Diffie-Hellman (X3DH)",
+    "Forward secrecy",
+    "Post-compromise security",
+    "Post-quantum cryptography (SPQR/Triple Ratchet)",
+    "Zero-knowledge group credentials"
+  ],
+  "blockchain_platforms": [],
+  "status": "active_production",
+  "maturity_level": "production",
+  "last_update": "2026-01-19",
+  "launch_date": "2014-07-29",
+  "confidence": 0.95,
+  "sources": [
+    {
+      "type": "official_website",
+      "url": "https://signal.org",
+      "retrieved_at": "2026-01-19",
+      "confidence": 1.0
+    },
+    {
+      "type": "github",
+      "url": "https://github.com/signalapp",
+      "retrieved_at": "2026-01-19",
+      "confidence": 1.0
+    },
+    {
+      "type": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Signal_(software)",
+      "retrieved_at": "2026-01-19",
+      "confidence": 0.9
+    }
+  ],
+  "missing_fields": [],
+  "verified": true,
+  "readme_path": "signal/README.md",
+  "card_path": "signal/CARD.md",
+  "team": [
+    {
+      "name": "Moxie Marlinspike",
+      "role": "Founder, Former CEO (until 2022)",
+      "github": "moxie0",
+      "twitter": "maboroshi",
+      "background": "Cryptographer, cypherpunk, creator of Signal Protocol",
+      "verification": "verified_multiple_sources"
+    },
+    {
+      "name": "Brian Acton",
+      "role": "Co-founder Signal Foundation, CEO",
+      "github": "",
+      "twitter": "brianacton",
+      "background": "WhatsApp co-founder, provided $50M initial funding",
+      "verification": "verified_multiple_sources"
+    },
+    {
+      "name": "Meredith Whittaker",
+      "role": "President",
+      "github": "",
+      "twitter": "mer__edith",
+      "background": "AI researcher, co-founder AI Now Institute, former Google",
+      "verification": "verified_multiple_sources"
+    }
+  ],
+  "social_links": {
+    "twitter": "https://twitter.com/signalapp",
+    "discord": "",
+    "telegram": "",
+    "medium": "",
+    "blog": "https://signal.org/blog/"
+  },
+  "investors": [],
+  "funding_model": {
+    "type": "non_profit",
+    "organization": "Signal Technology Foundation",
+    "initial_funding": "$50M loan from Brian Acton (2018)",
+    "revenue_model": "donations"
+  },
+  "user_metrics": {
+    "monthly_active_users": "70 million (Jan 2025)",
+    "total_downloads": "220+ million"
+  }
+}

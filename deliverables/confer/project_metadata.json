@@ -1,0 +1,62 @@
+{
+  "id": "confer",
+  "name": "Confer",
+  "slug": "confer",
+  "description": "A privacy-focused AI assistant created by Moxie Marlinspike (Signal founder) launched in December 2025. Confer provides end-to-end encrypted AI conversations using WebAuthn passkeys for encryption and Trusted Execution Environments (TEE) for confidential computing. Unlike ChatGPT and other AI assistants, Confer is designed so that even the operators cannot access user conversations.",
+  "website": "https://confer.to",
+  "github": "",
+  "documentation": "https://confer.to/blog",
+  "category": "Privacy Infrastructure",
+  "subcategories": ["Privacy AI", "Encrypted Assistant", "Confidential Computing"],
+  "tech_stack": [
+    "WebAuthn/Passkeys",
+    "Trusted Execution Environment (TEE)",
+    "End-to-end encryption",
+    "Large Language Models"
+  ],
+  "privacy_techniques": [
+    "End-to-end encryption of prompts",
+    "Confidential computing (TEE)",
+    "Hardware-enforced isolation",
+    "WebAuthn passkey encryption",
+    "Zero operator access"
+  ],
+  "blockchain_platforms": [],
+  "status": "active_production",
+  "maturity_level": "production",
+  "last_update": "2026-01-19",
+  "launch_date": "2025-12",
+  "confidence": 0.9,
+  "sources": [
+    {
+      "type": "news",
+      "url": "https://techcrunch.com/2026/01/18/moxie-marlinspike-has-a-privacy-conscious-alternative-to-chatgpt/",
+      "retrieved_at": "2026-01-19",
+      "confidence": 0.9
+    },
+    {
+      "type": "news",
+      "url": "https://time.com/7346534/signal-confer-ai-moxie-marlinspike/",
+      "retrieved_at": "2026-01-19",
+      "confidence": 0.9
+    }
+  ],
+  "team": [
+    {
+      "name": "Moxie Marlinspike",
+      "role": "Founder",
+      "background": "Creator of Signal, Signal Protocol, cryptographer",
+      "verification": "verified_multiple_sources"
+    }
+  ],
+  "pricing": {
+    "free_tier": "20 messages/day, 5 active chats",
+    "paid_tier": "$35/month unlimited",
+    "note": "Higher than ChatGPT Plus due to privacy infrastructure costs"
+  },
+  "open_source_status": {
+    "codebase": "Open source and verifiable",
+    "verification": "Anyone can rebuild and verify measurements match running servers"
+  },
+  "platform_support": ["macOS", "iOS", "Android", "Windows (with authenticator)", "Linux (with authenticator)"]
+}

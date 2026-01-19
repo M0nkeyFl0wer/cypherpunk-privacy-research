@@ -1,0 +1,35 @@
+{
+  "project_name": "telegram",
+  "research_timestamp": "2026-01-19T00:00:00Z",
+  "research_method": "constitutional_research_v2",
+  "project_overview": {
+    "name": "Telegram",
+    "type": "Cloud Messaging Platform",
+    "ecosystem": "non-blockchain",
+    "confidence": 0.9
+  },
+  "github_data": {
+    "organization": "telegramdesktop",
+    "key_repositories": [
+      {"name": "tdesktop", "stars": 29577, "language": "C++", "license": "GPL-2.0"}
+    ]
+  },
+  "metadata": {
+    "confidence_score": 0.9,
+    "completeness": 80
+  },
+  "website": "https://telegram.org",
+  "website_confidence": 1.0,
+  "description": "Cross-platform cloud messaging with proprietary MTProto protocol. E2E encryption only in optional Secret Chats, not default. Over 950M users.",
+  "encryption_analysis": {
+    "default_encryption": "server-client only (NOT E2E)",
+    "secret_chats": "E2E available (optional)",
+    "group_chats": "NO E2E available",
+    "protocol": "MTProto 2.0 (proprietary)",
+    "concerns": ["Not E2E by default", "Proprietary protocol", "Academic security concerns"]
+  },
+  "research_metadata": {
+    "constitutional_research_complete": true,
+    "web_research_date": "2026-01-19"
+  }
+}

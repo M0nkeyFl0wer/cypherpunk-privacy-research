@@ -1,0 +1,14 @@
+{
+  "project_id": "confer",
+  "verification_date": "2026-01-19",
+  "verified_data_points": [
+    {"field": "website", "value": "https://confer.to", "confidence": 0.95},
+    {"field": "founder", "value": "Moxie Marlinspike", "confidence": 1.0},
+    {"field": "launch_date", "value": "December 2025", "confidence": 0.95},
+    {"field": "pricing_free", "value": "20 messages/day", "confidence": 0.9},
+    {"field": "pricing_paid", "value": "$35/month", "confidence": 0.9},
+    {"field": "encryption", "value": "E2E with TEE", "confidence": 0.95},
+    {"field": "open_source", "value": true, "confidence": 0.9}
+  ],
+  "research_gaps": ["GitHub repository URL", "Full team roster", "Technical specifications"]
+}

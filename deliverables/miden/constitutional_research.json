@@ -1,0 +1,125 @@
+{
+  "project_name": "miden",
+  "research_timestamp": "2026-01-19T00:00:00Z",
+  "research_method": "constitutional_research_v2",
+  "project_overview": {
+    "name": "Miden (0xMiden)",
+    "type": "STARK-based ZK Rollup",
+    "ecosystem": "ethereum",
+    "confidence": 0.9
+  },
+  "github_data": {
+    "organization": "0xPolygonMiden",
+    "primary_repo": "miden-vm",
+    "repos_count": 13,
+    "key_repositories": [
+      {
+        "name": "miden-vm",
+        "description": "STARK-based virtual machine",
+        "stars": 717,
+        "forks": 250,
+        "language": "Rust",
+        "license": "Apache-2.0 AND MIT"
+      },
+      {
+        "name": "miden-base",
+        "description": "Core components of the Polygon Miden rollup"
+      },
+      {
+        "name": "miden-client",
+        "description": "Reference client for user interactions"
+      },
+      {
+        "name": "miden-node",
+        "description": "Node software for Miden operators"
+      },
+      {
+        "name": "miden-compiler",
+        "description": "Compiler converting MidenIR to Miden Assembly"
+      },
+      {
+        "name": "miden-crypto",
+        "description": "Cryptographic primitives"
+      }
+    ]
+  },
+  "metadata": {
+    "confidence_score": 0.9,
+    "completeness": 85,
+    "sources_count": 6,
+    "research_host": "local",
+    "enhancement_track": "full_constitutional_research"
+  },
+  "gaps_and_missing_data": [
+    "Full team roster beyond founders",
+    "Detailed audit history",
+    "Bug bounty program status"
+  ],
+  "sources": [
+    "GitHub API",
+    "Polygon Official Blog",
+    "CoinDesk",
+    "Gate.io Technical Analysis",
+    "CryptoNews",
+    "BlockBeats"
+  ],
+  "website": "https://miden.build",
+  "website_confidence": 0.95,
+  "description": "Miden is a STARK-based zero-knowledge virtual machine and Ethereum L2 rollup that prioritizes privacy, client-side proving, and high throughput. It uses an Actor model where each account operates independently, generating its own proofs. The project was originally incubated by Polygon Labs and became independent (0xMiden) in March 2025 after raising $25M from a16z crypto, 1kx, and Hack VC.",
+  "description_confidence": 0.95,
+  "technical_highlights": {
+    "proof_system": "STARK (Scalable Transparent ARguments of Knowledge)",
+    "prover": "Winterfell (originally developed at Facebook/Novi)",
+    "framework": "Plonky3",
+    "execution_model": "Stack-based VM with Actor model",
+    "memory_model": "Code segment, Stack, Advice Tape, Memory",
+    "quantum_resistance": "Theoretically quantum-secure (hash-based security)",
+    "client_side_proving": true,
+    "proof_size": "30-100KB",
+    "verification_time": "<3ms"
+  },
+  "privacy_model": {
+    "default_privacy": true,
+    "description": "By default, the ledger stores only state commitments. Developers can optionally disclose specific trades or contract calls when needed.",
+    "private_accounts": true,
+    "public_accounts": true,
+    "note_system": "Private notes communicated off-chain between users",
+    "selective_transparency": true
+  },
+  "performance": {
+    "single_threaded": "20-25 KHz",
+    "8_core": "140 KHz",
+    "64_core": "265 KHz",
+    "client_proving_time": "1-2 seconds (standard laptop)",
+    "typical_cycle_cost": "90K cycles"
+  },
+  "funding_history": [
+    {
+      "round": "seed",
+      "amount": "$25,000,000",
+      "date": "2025-04-29",
+      "lead_investors": ["a16z crypto", "1kx", "Hack VC"],
+      "other_investors": ["Finality Capital Partners", "Symbolic Capital", "P2 Ventures", "Delta Fund", "MH Ventures"],
+      "angel_investors": ["Avery Ching (Aptos Labs CEO)", "Rune Christensen (MakerDAO founder)"]
+    }
+  ],
+  "timeline": {
+    "2021-11": "Initial prototype announced",
+    "2024": "Alpha testnet launches",
+    "2025-03-31": "Spin-off from Polygon Labs to independent 0xMiden",
+    "2025-04-29": "$25M seed round announced",
+    "2025-Q4": "Mainnet target (original)",
+    "2026-01-06": "Miden VM v0.20.2 released"
+  },
+  "research_metadata": {
+    "constitutional_research_complete": true,
+    "web_research_date": "2026-01-19",
+    "multi_source_verification": true
+  },
+  "website_sources": [
+    "https://github.com/0xPolygonMiden",
+    "https://polygon.technology/blog/polygon-unveils-miden-an-advanced-zk-starks-based-scaling-solution",
+    "https://www.coindesk.com/tech/2025/04/29/polygon-spin-off-miden-secures-25m-to-bring-speed-privacy-to-institutional-giants/",
+    "https://www.gate.com/learn/articles/deep-analysis-of-miden-a-high-performance-zero-knowledge-virtual-machine-architecture-based-on-stark/8979"
+  ]
+}

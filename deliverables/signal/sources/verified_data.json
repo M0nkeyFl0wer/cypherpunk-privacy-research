@@ -1,0 +1,99 @@
+{
+  "project_id": "signal",
+  "verification_date": "2026-01-19",
+  "verified_data_points": [
+    {
+      "field": "website",
+      "value": "https://signal.org",
+      "confidence": 1.0,
+      "sources": ["Direct verification"],
+      "verification_method": "direct_access"
+    },
+    {
+      "field": "github",
+      "value": "https://github.com/signalapp",
+      "confidence": 1.0,
+      "sources": ["GitHub verified organization"],
+      "verification_method": "direct_access"
+    },
+    {
+      "field": "monthly_active_users",
+      "value": "70 million",
+      "confidence": 0.9,
+      "sources": ["Wikipedia", "News sources"],
+      "verification_method": "multi_source_cross_reference",
+      "date": "January 2025"
+    },
+    {
+      "field": "total_downloads",
+      "value": "220+ million",
+      "confidence": 0.9,
+      "sources": ["Wikipedia"],
+      "verification_method": "single_source"
+    },
+    {
+      "field": "founder",
+      "value": "Moxie Marlinspike",
+      "confidence": 1.0,
+      "sources": ["Wikipedia", "Official blog", "Multiple news sources"],
+      "verification_method": "multi_source_cross_reference"
+    },
+    {
+      "field": "current_ceo",
+      "value": "Brian Acton",
+      "confidence": 0.95,
+      "sources": ["Wikipedia", "Signal blog"],
+      "verification_method": "multi_source_cross_reference"
+    },
+    {
+      "field": "current_president",
+      "value": "Meredith Whittaker",
+      "confidence": 1.0,
+      "sources": ["Wikipedia", "Signal blog", "News sources"],
+      "verification_method": "multi_source_cross_reference"
+    },
+    {
+      "field": "foundation_established",
+      "value": "2018-02-21",
+      "confidence": 0.95,
+      "sources": ["Wikipedia", "ProPublica Nonprofit Explorer"],
+      "verification_method": "multi_source_cross_reference"
+    },
+    {
+      "field": "initial_funding",
+      "value": "$50,000,000",
+      "confidence": 0.95,
+      "sources": ["Wikipedia", "News sources"],
+      "verification_method": "multi_source_cross_reference"
+    },
+    {
+      "field": "protocol_adopters",
+      "value": ["WhatsApp", "Facebook Messenger", "Google Messages", "Skype"],
+      "confidence": 1.0,
+      "sources": ["Wikipedia", "Official documentation"],
+      "verification_method": "multi_source_cross_reference"
+    },
+    {
+      "field": "license",
+      "value": "AGPL-3.0",
+      "confidence": 1.0,
+      "sources": ["GitHub"],
+      "verification_method": "direct_access"
+    }
+  ],
+  "security_verification": {
+    "formal_analysis_2016": {
+      "verified": true,
+      "source": "https://eprint.iacr.org/2016/1013.pdf"
+    },
+    "post_quantum_implementation": {
+      "verified": true,
+      "source": "https://signal.org/blog/spqr/"
+    }
+  },
+  "research_gaps": [
+    "Complete financial reports (non-profit filings)",
+    "Full engineering team roster",
+    "Detailed server architecture documentation"
+  ]
+}

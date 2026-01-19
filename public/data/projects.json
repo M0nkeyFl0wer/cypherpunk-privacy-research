@@ -66,6 +66,21 @@
     "category": "Privacy Infrastructure"
   },
   {
+    "id": "confer",
+    "slug": "confer",
+    "confidence": 0.8,
+    "researchDate": "",
+    "name": "Confer",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
+  },
+  {
     "id": "darkfi",
     "slug": "darkfi",
     "confidence": 0.8,
@@ -287,6 +302,36 @@
     "category": "Privacy Infrastructure"
   },
   {
+    "id": "meshtastic",
+    "slug": "meshtastic",
+    "confidence": 0.8,
+    "researchDate": "",
+    "name": "Meshtastic",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
+  },
+  {
+    "id": "miden",
+    "slug": "miden",
+    "confidence": 0.8,
+    "researchDate": "",
+    "name": "Miden",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
+  },
+  {
     "id": "mobilecoin",
     "slug": "mobilecoin",
     "confidence": 0.8,
@@ -404,6 +449,21 @@
     "category": "Privacy Infrastructure"
   },
   {
+    "id": "nym",
+    "slug": "nym",
+    "confidence": 0.8,
+    "researchDate": "",
+    "name": "Nym",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
+  },
+  {
     "id": "oasis-network",
     "slug": "oasis-network",
     "confidence": 0.8,
@@ -473,11 +533,41 @@
     "category": "Privacy Infrastructure"
   },
   {
+    "id": "protonmail",
+    "slug": "protonmail",
+    "confidence": 0.8,
+    "researchDate": "",
+    "name": "Protonmail",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
+  },
+  {
     "id": "rotki",
     "slug": "rotki",
     "confidence": 0.8,
     "researchDate": "",
     "name": "Rotki",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
+  },
+  {
+    "id": "secret-network",
+    "slug": "secret-network",
+    "confidence": 0.8,
+    "researchDate": "",
+    "name": "Secret Network",
     "team": [],
     "technology": {
       "privacyTechniques": [],
@@ -537,6 +627,21 @@
     "category": "Privacy Infrastructure"
   },
   {
+    "id": "signal",
+    "slug": "signal",
+    "confidence": 0.8,
+    "researchDate": "",
+    "name": "Signal",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
+  },
+  {
     "id": "snarkjs",
     "slug": "snarkjs",
     "confidence": 0.8,
@@ -575,6 +680,21 @@
     "researchDate": "",
     "name": "Suterusu",
     "description": "",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure"
+  },
+  {
+    "id": "telegram",
+    "slug": "telegram",
+    "confidence": 0.8,
+    "researchDate": "",
+    "name": "Telegram",
     "team": [],
     "technology": {
       "privacyTechniques": [],

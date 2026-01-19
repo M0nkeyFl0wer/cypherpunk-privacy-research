@@ -1,0 +1,125 @@
+{
+  "project_id": "miden",
+  "verification_date": "2026-01-19",
+  "verified_data_points": [
+    {
+      "field": "website",
+      "value": "https://miden.build",
+      "confidence": 0.95,
+      "sources": ["GitHub organization", "Official documentation"],
+      "verification_method": "multi_source_cross_reference"
+    },
+    {
+      "field": "github",
+      "value": "https://github.com/0xPolygonMiden",
+      "confidence": 1.0,
+      "sources": ["Direct verification"],
+      "verification_method": "direct_access"
+    },
+    {
+      "field": "documentation",
+      "value": "https://docs.miden.xyz",
+      "confidence": 1.0,
+      "sources": ["GitHub README"],
+      "verification_method": "direct_access"
+    },
+    {
+      "field": "proof_system",
+      "value": "STARK",
+      "confidence": 1.0,
+      "sources": ["Official documentation", "GitHub", "Technical analyses"],
+      "verification_method": "multi_source_cross_reference"
+    },
+    {
+      "field": "funding_amount",
+      "value": "$25,000,000",
+      "confidence": 0.95,
+      "sources": ["CoinDesk", "BlockBeats", "CryptoNews"],
+      "verification_method": "multi_source_cross_reference"
+    },
+    {
+      "field": "lead_investors",
+      "value": ["a16z crypto", "1kx", "Hack VC"],
+      "confidence": 0.95,
+      "sources": ["CoinDesk", "BlockBeats"],
+      "verification_method": "multi_source_cross_reference"
+    },
+    {
+      "field": "founder",
+      "value": "Bobbin Threadbare",
+      "confidence": 0.95,
+      "sources": ["Polygon Blog", "CoinDesk", "GitHub"],
+      "verification_method": "multi_source_cross_reference"
+    },
+    {
+      "field": "spin_off_date",
+      "value": "2025-03-31",
+      "confidence": 0.9,
+      "sources": ["BlockBeats"],
+      "verification_method": "news_source"
+    },
+    {
+      "field": "github_stars",
+      "value": 717,
+      "confidence": 1.0,
+      "sources": ["GitHub API"],
+      "verification_method": "direct_access",
+      "note": "As of 2026-01-19, subject to change"
+    },
+    {
+      "field": "github_forks",
+      "value": 250,
+      "confidence": 1.0,
+      "sources": ["GitHub API"],
+      "verification_method": "direct_access",
+      "note": "As of 2026-01-19, subject to change"
+    },
+    {
+      "field": "primary_language",
+      "value": "Rust",
+      "confidence": 1.0,
+      "sources": ["GitHub"],
+      "verification_method": "direct_access"
+    },
+    {
+      "field": "license",
+      "value": "Apache-2.0 AND MIT",
+      "confidence": 1.0,
+      "sources": ["GitHub"],
+      "verification_method": "direct_access"
+    },
+    {
+      "field": "latest_release",
+      "value": "v0.20.2",
+      "confidence": 1.0,
+      "sources": ["GitHub Releases"],
+      "verification_method": "direct_access",
+      "date": "2026-01-06"
+    },
+    {
+      "field": "contributor_count",
+      "value": "100+",
+      "confidence": 0.9,
+      "sources": ["GitHub"],
+      "verification_method": "direct_access"
+    }
+  ],
+  "unverified_claims": [
+    {
+      "claim": "Mainnet Q4 2025 target",
+      "status": "unverified",
+      "note": "Original target may have shifted; current roadmap unclear"
+    },
+    {
+      "claim": "Full team roster",
+      "status": "partial",
+      "note": "Only founders publicly identified"
+    }
+  ],
+  "research_gaps": [
+    "Security audit reports",
+    "Bug bounty program details",
+    "Complete team roster",
+    "Current mainnet timeline"
+  ]
+}

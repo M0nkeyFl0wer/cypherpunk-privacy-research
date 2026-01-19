@@ -1,0 +1,13 @@
+{
+  "project_id": "protonmail",
+  "verification_date": "2026-01-19",
+  "verified_data_points": [
+    {"field": "website", "value": "https://proton.me", "confidence": 1.0},
+    {"field": "github", "value": "https://github.com/ProtonMail", "confidence": 1.0},
+    {"field": "users_2022", "value": "70 million", "confidence": 0.9, "sources": ["Wikipedia"]},
+    {"field": "headquarters", "value": "Geneva, Switzerland", "confidence": 1.0},
+    {"field": "founded", "value": "2014", "confidence": 1.0},
+    {"field": "encryption", "value": "OpenPGP", "confidence": 1.0}
+  ],
+  "research_gaps": ["Backend server code (closed source)", "Detailed team roster"]
+}

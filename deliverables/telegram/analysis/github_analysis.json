@@ -1,0 +1,19 @@
+{
+  "analysis_date": "2026-01-19",
+  "organization": {
+    "name": "telegramdesktop",
+    "url": "https://github.com/telegramdesktop"
+  },
+  "primary_repository": {
+    "name": "tdesktop",
+    "stars": 29577,
+    "forks": 6191,
+    "language": "C++",
+    "license": "GPL-2.0"
+  },
+  "open_source_status": {
+    "clients": "Open source",
+    "server": "Closed source",
+    "protocol": "Proprietary (documented)"
+  }
+}

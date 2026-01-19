@@ -1,0 +1,34 @@
+{
+  "project_id": "nym",
+  "analysis_date": "2026-01-19",
+  "github_org": "nymtech",
+  "main_repository": "nymtech/nym",
+  "repositories": [
+    {
+      "name": "nym",
+      "description": "Main Nym mixnet codebase",
+      "language": "Rust",
+      "url": "https://github.com/nymtech/nym"
+    },
+    {
+      "name": "nym-vpn-client",
+      "description": "Cross-platform VPN client with mixnet",
+      "language": "Rust",
+      "url": "https://github.com/nymtech/nym-vpn-client"
+    }
+  ],
+  "open_source": true,
+  "license": "Apache-2.0",
+  "primary_language": "Rust",
+  "key_components": [
+    "nym-node (mixnode, gateway)",
+    "nym-wallet (Tauri desktop)",
+    "nym-cli",
+    "nym-explorer"
+  ],
+  "recent_activity": {
+    "last_release": "NymVPN v1.22.0 (Jan 2026)",
+    "status": "actively_maintained"
+  },
+  "deprecated_repos": ["nym-mixnet (replaced by main nym repo)"]
+}

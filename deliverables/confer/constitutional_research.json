@@ -1,0 +1,43 @@
+{
+  "project_name": "confer",
+  "research_timestamp": "2026-01-19T00:00:00Z",
+  "research_method": "constitutional_research_v2",
+  "project_overview": {
+    "name": "Confer",
+    "type": "Privacy AI Assistant",
+    "ecosystem": "non-blockchain",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "confidence_score": 0.9,
+    "completeness": 75,
+    "sources_count": 5,
+    "note": "New project (Dec 2025), limited historical data"
+  },
+  "website": "https://confer.to",
+  "website_confidence": 0.95,
+  "description": "End-to-end encrypted AI assistant by Moxie Marlinspike using TEE and WebAuthn passkeys. Designed so operators cannot access user conversations.",
+  "technical_highlights": {
+    "encryption": "E2E with WebAuthn passkeys",
+    "processing": "Trusted Execution Environment (TEE)",
+    "verification": "Open source, reproducible builds",
+    "platforms": ["macOS", "iOS", "Android", "Windows", "Linux"]
+  },
+  "founder": {
+    "name": "Moxie Marlinspike",
+    "background": "Signal founder, cryptographer",
+    "previous_work": ["Signal", "Signal Protocol", "Whisper Systems"]
+  },
+  "pricing": {
+    "free": "20 messages/day",
+    "paid": "$35/month unlimited"
+  },
+  "timeline": {
+    "2025-12": "Confer launched",
+    "2026-01": "Multiple media coverage"
+  },
+  "research_metadata": {
+    "constitutional_research_complete": true,
+    "web_research_date": "2026-01-19"
+  }
+}

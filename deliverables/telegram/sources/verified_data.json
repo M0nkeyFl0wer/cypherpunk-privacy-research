@@ -1,0 +1,13 @@
+{
+  "project_id": "telegram",
+  "verification_date": "2026-01-19",
+  "verified_data_points": [
+    {"field": "website", "value": "https://telegram.org", "confidence": 1.0},
+    {"field": "github", "value": "https://github.com/telegramdesktop", "confidence": 1.0},
+    {"field": "desktop_stars", "value": 29577, "confidence": 1.0},
+    {"field": "users", "value": "950+ million", "confidence": 0.9},
+    {"field": "default_e2e", "value": false, "confidence": 1.0},
+    {"field": "secret_chats_e2e", "value": true, "confidence": 1.0}
+  ],
+  "critical_note": "E2E encryption NOT enabled by default - only in optional Secret Chats"
+}
