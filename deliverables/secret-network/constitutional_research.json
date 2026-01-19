@@ -1,0 +1,41 @@
+{
+  "project_id": "secret-network",
+  "constitution_version": "2.0",
+  "research_date": "2026-01-19",
+  "methodology": {
+    "multi_source_verification": true,
+    "confidence_scoring": true,
+    "gaps_documented": true,
+    "sources_cited": true
+  },
+  "verification_status": {
+    "website": {"verified": true, "source": "direct_visit", "confidence": 1.0},
+    "github": {"verified": true, "source": "direct_visit", "confidence": 1.0},
+    "team": {"verified": true, "source": "multiple_sources", "confidence": 0.85},
+    "technology": {"verified": true, "source": "documentation", "confidence": 0.95}
+  },
+  "data_quality": {
+    "overall_confidence": 0.85,
+    "completeness": 0.85,
+    "recency": "2026-01-19"
+  },
+  "research_gaps": [
+    "Complete organizational structure unclear",
+    "2023 leadership controversy impact",
+    "Full security audit list"
+  ],
+  "known_controversies": [
+    {
+      "date": "2023-01",
+      "description": "Dispute over Secret Foundation funds - Tor Bair's $2.6M dividend",
+      "sources": ["CoinDesk", "Decrypt"]
+    }
+  ],
+  "sources_used": [
+    "https://github.com/scrtlabs/SecretNetwork",
+    "https://scrt.network",
+    "https://docs.scrt.network",
+    "https://www.coindesk.com/tech/2023/01/30/secret-blockchain-suffers-departures-as-foundation-heads-2m-plus-dividend-sparks-outcry/",
+    "https://scrt.network/graypaper"
+  ]
+}

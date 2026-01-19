@@ -1,0 +1,103 @@
+{
+  "id": "secret-network",
+  "name": "Secret Network",
+  "slug": "secret-network",
+  "description": "A privacy-focused blockchain built on Cosmos SDK that enables encrypted smart contracts ('Secret Contracts') using Trusted Execution Environments (Intel SGX). Provides privacy-preserving computation where inputs, outputs, and state are encrypted while contract code remains public and verifiable.",
+  "website": "https://scrt.network",
+  "github": "https://github.com/scrtlabs/SecretNetwork",
+  "documentation": "https://docs.scrt.network",
+  "category": "Privacy Infrastructure",
+  "subcategories": ["Privacy Blockchain", "Encrypted Smart Contracts", "TEE"],
+  "tech_stack": [
+    "Cosmos SDK",
+    "Tendermint BFT",
+    "CosmWasm",
+    "Rust",
+    "Intel SGX",
+    "WebAssembly"
+  ],
+  "privacy_techniques": [
+    "Trusted Execution Environment (Intel SGX)",
+    "Encrypted smart contract state",
+    "Private inputs/outputs",
+    "Encrypted mempool (frontrunning resistant)",
+    "Private NFT content",
+    "Viewing keys for selective disclosure"
+  ],
+  "blockchain_platforms": [
+    "cosmos"
+  ],
+  "status": "active_production",
+  "maturity_level": "production",
+  "last_update": "2026-01-19",
+  "launch_date": "2020-02",
+  "confidence": 0.85,
+  "sources": [
+    {
+      "type": "github",
+      "url": "https://github.com/scrtlabs/SecretNetwork",
+      "retrieved_at": "2026-01-19",
+      "confidence": 1.0
+    },
+    {
+      "type": "official_website",
+      "url": "https://scrt.network",
+      "retrieved_at": "2026-01-19",
+      "confidence": 1.0
+    },
+    {
+      "type": "documentation",
+      "url": "https://docs.scrt.network",
+      "retrieved_at": "2026-01-19",
+      "confidence": 0.95
+    }
+  ],
+  "missing_fields": [],
+  "verified": true,
+  "readme_path": "secret-network/README.md",
+  "card_path": "secret-network/CARD.md",
+  "team": [
+    {
+      "name": "Guy Zyskind",
+      "role": "CEO, SCRT Labs",
+      "github": "",
+      "twitter": "",
+      "background": "Former MIT Media Lab researcher, author of Secret Network whitepapers (2500+ citations), one of the most cited authors on blockchain privacy",
+      "verification": "verified_multiple_sources"
+    },
+    {
+      "name": "Can Kisagun",
+      "role": "Co-founder, SCRT Labs",
+      "github": "",
+      "twitter": "",
+      "background": "Co-founded Secret Network with Guy Zyskind",
+      "verification": "verified"
+    },
+    {
+      "name": "Tor Bair",
+      "role": "Founder, Secret Foundation",
+      "github": "",
+      "twitter": "",
+      "background": "Core contributor, founded Secret Foundation Inc.",
+      "verification": "verified_multiple_sources",
+      "note": "2023 controversy over foundation fund usage"
+    }
+  ],
+  "social_links": {
+    "twitter": "https://twitter.com/SecretNetwork",
+    "discord": "https://discord.gg/secret-network",
+    "telegram": "https://t.me/SCRTCommunity",
+    "medium": "",
+    "blog": "https://scrt.network/blog"
+  },
+  "token": {
+    "symbol": "SCRT",
+    "type": "Native",
+    "use_cases": ["Gas fees", "Staking", "Governance"]
+  },
+  "interoperability": {
+    "ibc": true,
+    "ethereum_bridge": true,
+    "note": "IBC compatible with all Cosmos chains"
+  }
+}

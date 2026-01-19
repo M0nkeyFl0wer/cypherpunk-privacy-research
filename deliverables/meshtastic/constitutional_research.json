@@ -1,0 +1,73 @@
+{
+  "project_name": "meshtastic",
+  "research_timestamp": "2026-01-19T00:00:00Z",
+  "research_method": "constitutional_research_v2",
+  "project_overview": {
+    "name": "Meshtastic",
+    "type": "Off-Grid Mesh Networking Protocol",
+    "ecosystem": "non-blockchain",
+    "confidence": 0.9
+  },
+  "github_data": {
+    "organization": "meshtastic",
+    "verified_domain": "meshtastic.org",
+    "followers": 5400,
+    "repository_count": 118,
+    "key_repositories": [
+      {
+        "name": "firmware",
+        "description": "Official Meshtastic device firmware",
+        "stars": 6591,
+        "language": "C++"
+      },
+      {
+        "name": "meshtastic",
+        "description": "Documentation and website",
+        "stars": 1523,
+        "language": "MDX"
+      },
+      {
+        "name": "Meshtastic-Android",
+        "description": "Android application",
+        "stars": 1334,
+        "language": "Kotlin"
+      }
+    ]
+  },
+  "metadata": {
+    "confidence_score": 0.9,
+    "completeness": 85,
+    "sources_count": 6,
+    "research_host": "local",
+    "enhancement_track": "full_constitutional_research"
+  },
+  "website": "https://meshtastic.org",
+  "website_confidence": 1.0,
+  "description": "Meshtastic is a decentralized wireless off-grid mesh networking LoRa protocol enabling low-power, long-range communication over ISM radio bands without requiring a license. Messages are encrypted with AES-256 and hop across nodes until reaching their destination.",
+  "technical_highlights": {
+    "radio_technology": "LoRa (Long Range)",
+    "encryption": "AES-256-CTR",
+    "microcontrollers": ["ESP32", "nRF52840"],
+    "communication_protocol": "Protocol Buffers",
+    "frequency_bands": "ISM bands (license-free)",
+    "range": "Several kilometers line-of-sight",
+    "power": "Low power, battery operated"
+  },
+  "community_metrics": {
+    "github_contributors": "300+",
+    "discord_members": "15000+",
+    "countries_deployed": 42,
+    "defcon_deployment": "2000+ nodes"
+  },
+  "timeline": {
+    "2019": "First prototypes using TTGO T-Beam",
+    "2020": "Meshtastic v0.1.0 released by Kevin Hester",
+    "2024": "DEF CON deployment with 2000+ nodes",
+    "2025": "Global movement, 42+ countries, municipal interest"
+  },
+  "research_metadata": {
+    "constitutional_research_complete": true,
+    "web_research_date": "2026-01-19",
+    "multi_source_verification": true
+  }
+}

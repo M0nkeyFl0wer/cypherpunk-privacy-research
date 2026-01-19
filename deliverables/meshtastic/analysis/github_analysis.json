@@ -1,0 +1,56 @@
+{
+  "analysis_date": "2026-01-19",
+  "organization": {
+    "name": "meshtastic",
+    "url": "https://github.com/meshtastic",
+    "description": "Open-source, decentralized mesh networking ecosystem",
+    "verified_domain": "meshtastic.org",
+    "followers": 5400,
+    "repository_count": 118
+  },
+  "repositories": [
+    {
+      "name": "firmware",
+      "stars": 6591,
+      "language": "C++",
+      "purpose": "Device firmware"
+    },
+    {
+      "name": "meshtastic",
+      "stars": 1523,
+      "language": "MDX",
+      "purpose": "Documentation"
+    },
+    {
+      "name": "Meshtastic-Android",
+      "stars": 1334,
+      "language": "Kotlin",
+      "purpose": "Android app"
+    },
+    {
+      "name": "web",
+      "stars": 642,
+      "language": "TypeScript",
+      "purpose": "Web client"
+    },
+    {
+      "name": "Meshtastic-Apple",
+      "stars": 588,
+      "language": "Swift",
+      "purpose": "iOS/macOS app"
+    }
+  ],
+  "technology_stack": {
+    "firmware": "C++ (Arduino/PlatformIO)",
+    "android": "Kotlin",
+    "ios": "Swift",
+    "web": "TypeScript/Vue",
+    "protocol": "Protocol Buffers"
+  },
+  "development_health": {
+    "activity_level": "very_high",
+    "contributors": "300+",
+    "commit_frequency": "daily",
+    "license": "GPL-3.0"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "project_id": "secret-network",
+  "analysis_date": "2026-01-19",
+  "github_org": "scrtlabs",
+  "main_repository": "scrtlabs/SecretNetwork",
+  "repositories": [
+    {
+      "name": "SecretNetwork",
+      "description": "Main Secret Network blockchain",
+      "language": "Go/Rust",
+      "url": "https://github.com/scrtlabs/SecretNetwork"
+    }
+  ],
+  "open_source": true,
+  "license": "MIT",
+  "primary_languages": ["Go", "Rust"],
+  "key_components": [
+    "Cosmos SDK chain",
+    "SGX compute module",
+    "CosmWasm smart contracts"
+  ],
+  "active_development": true,
+  "related_orgs": [
+    {
+      "name": "SecretFoundation",
+      "url": "https://github.com/SecretFoundation",
+      "purpose": "Documentation and ecosystem"
+    }
+  ]
+}

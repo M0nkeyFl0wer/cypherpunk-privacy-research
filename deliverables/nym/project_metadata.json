@@ -1,0 +1,135 @@
+{
+  "id": "nym",
+  "name": "NYM",
+  "slug": "nym",
+  "description": "A decentralized mixnet infrastructure providing network-level privacy against sophisticated end-to-end attackers. Uses Sphinx packet format for anonymous communication and blinded, re-randomizable credentials for anonymous transactions. Built on the Loopix academic research foundation.",
+  "website": "https://nymtech.net",
+  "github": "https://github.com/nymtech",
+  "documentation": "https://nymtech.net/docs/",
+  "category": "Privacy Infrastructure",
+  "subcategories": ["Mixnet", "Anonymous Communication", "VPN"],
+  "tech_stack": [
+    "Rust",
+    "Sphinx packet format",
+    "CosmWasm",
+    "Tauri (desktop apps)",
+    "WireGuard",
+    "WebAssembly"
+  ],
+  "privacy_techniques": [
+    "Mixnet (multi-hop routing)",
+    "Sphinx packet encryption",
+    "Cover traffic",
+    "Timing obfuscation",
+    "Blinded credentials (Coconut)",
+    "Re-randomizable credentials",
+    "Zero-knowledge payments"
+  ],
+  "blockchain_platforms": [
+    "cosmos"
+  ],
+  "status": "active_production",
+  "maturity_level": "production",
+  "last_update": "2026-01-19",
+  "launch_date": "2021",
+  "confidence": 0.9,
+  "sources": [
+    {
+      "type": "github",
+      "url": "https://github.com/nymtech/nym",
+      "retrieved_at": "2026-01-19",
+      "confidence": 1.0
+    },
+    {
+      "type": "official_website",
+      "url": "https://nymtech.net",
+      "retrieved_at": "2026-01-19",
+      "confidence": 1.0
+    },
+    {
+      "type": "news",
+      "url": "https://techcrunch.com/2021/11/19/nym-raises-13m-from-a16zs-crypto-fund/",
+      "retrieved_at": "2026-01-19",
+      "confidence": 0.95
+    }
+  ],
+  "missing_fields": [],
+  "verified": true,
+  "readme_path": "nym/README.md",
+  "card_path": "nym/CARD.md",
+  "team": [
+    {
+      "name": "Harry Halpin",
+      "role": "CEO & Co-founder",
+      "github": "",
+      "twitter": "",
+      "background": "Former Senior Research Scientist at MIT, led standardization of Web Cryptography API at W3C under Tim Berners-Lee, former Inria de Paris researcher",
+      "verification": "verified_multiple_sources"
+    },
+    {
+      "name": "George Danezis",
+      "role": "Co-founder",
+      "github": "",
+      "twitter": "",
+      "background": "Academic researcher, co-founder of Chainspace (acquired by Facebook/Libra), PhD supervisor of Loopix designer",
+      "verification": "verified_multiple_sources"
+    },
+    {
+      "name": "Claudia Diaz",
+      "role": "Co-founder & Chief Scientist",
+      "github": "",
+      "twitter": "",
+      "background": "Professor at KU Leuven COSIC research group, co-author of Nym white paper",
+      "verification": "verified_multiple_sources"
+    },
+    {
+      "name": "Aggelos Kiayias",
+      "role": "Co-founder",
+      "github": "",
+      "twitter": "",
+      "background": "Professor, Project Coordinator of PANORAMIX (EU-funded mixnet project), co-author of Nym token economics",
+      "verification": "verified"
+    },
+    {
+      "name": "Ania Piotrowska",
+      "role": "Co-founder",
+      "github": "",
+      "twitter": "",
+      "background": "Designer of Loopix mixnet (the academic foundation for Nym), PhD under George Danezis",
+      "verification": "verified"
+    }
+  ],
+  "social_links": {
+    "twitter": "https://twitter.com/nabornym",
+    "discord": "https://discord.gg/nym",
+    "telegram": "https://t.me/nymchan",
+    "medium": "",
+    "blog": "https://nym.com/blog"
+  },
+  "investors": [
+    {
+      "name": "a16z crypto",
+      "round": "Series A",
+      "amount": "$13M round",
+      "date": "2021-11",
+      "role": "lead"
+    },
+    {
+      "name": "Polychain Capital",
+      "round": "Seed",
+      "amount": "$6M round",
+      "date": "2021-07",
+      "role": "lead"
+    },
+    {
+      "name": "Binance Labs",
+      "round": "Incubation",
+      "date": "2019"
+    }
+  ],
+  "academic_origins": {
+    "project": "PANORAMIX",
+    "funding": "5 million euros from European Commission",
+    "research_partners": ["KU Leuven COSIC", "EPFL SPRING Lab"]
+  }
+}

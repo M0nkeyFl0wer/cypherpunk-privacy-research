@@ -1,0 +1,70 @@
+{
+  "id": "protonmail",
+  "name": "Proton Mail",
+  "slug": "protonmail",
+  "description": "A Swiss end-to-end encrypted email service launched in 2014. Operated by Proton AG (owned by non-profit Proton Foundation), Proton Mail uses OpenPGP-compliant encryption with open-source clients. The company also operates Proton VPN, Proton Drive, Proton Calendar, Proton Pass, and Proton Wallet. As of 2022, Proton Mail had nearly 70 million users.",
+  "website": "https://proton.me",
+  "github": "https://github.com/ProtonMail",
+  "documentation": "https://proton.me/support",
+  "category": "Privacy Infrastructure",
+  "subcategories": ["Encrypted Email", "Privacy Suite"],
+  "tech_stack": [
+    "TypeScript (Web)",
+    "Swift (iOS)",
+    "Kotlin (Android)",
+    "Go (Bridge, Server components)",
+    "OpenPGP.js"
+  ],
+  "privacy_techniques": [
+    "End-to-end encryption (OpenPGP)",
+    "Zero-access encryption",
+    "Swiss privacy jurisdiction",
+    "Open-source clients",
+    "No IP logging (VPN)"
+  ],
+  "blockchain_platforms": [],
+  "status": "active_production",
+  "maturity_level": "production",
+  "last_update": "2026-01-19",
+  "launch_date": "2014-05-16",
+  "confidence": 0.95,
+  "sources": [
+    {
+      "type": "official_website",
+      "url": "https://proton.me",
+      "retrieved_at": "2026-01-19",
+      "confidence": 1.0
+    },
+    {
+      "type": "github",
+      "url": "https://github.com/ProtonMail",
+      "retrieved_at": "2026-01-19",
+      "confidence": 1.0
+    },
+    {
+      "type": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Proton_Mail",
+      "retrieved_at": "2026-01-19",
+      "confidence": 0.9
+    }
+  ],
+  "organization": {
+    "name": "Proton AG",
+    "parent": "Proton Foundation (non-profit)",
+    "headquarters": "Geneva, Switzerland",
+    "founded": "2014"
+  },
+  "user_metrics": {
+    "users": "70 million (2022)",
+    "users_2017": "2 million"
+  },
+  "products": [
+    "Proton Mail",
+    "Proton VPN",
+    "Proton Drive",
+    "Proton Calendar",
+    "Proton Pass",
+    "Proton Wallet"
+  ],
+  "verified": true
+}

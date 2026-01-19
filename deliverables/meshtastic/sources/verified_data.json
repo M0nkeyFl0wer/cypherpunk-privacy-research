@@ -1,0 +1,60 @@
+{
+  "project_id": "meshtastic",
+  "verification_date": "2026-01-19",
+  "verified_data_points": [
+    {
+      "field": "website",
+      "value": "https://meshtastic.org",
+      "confidence": 1.0,
+      "sources": ["GitHub verified domain"],
+      "verification_method": "direct_access"
+    },
+    {
+      "field": "github",
+      "value": "https://github.com/meshtastic",
+      "confidence": 1.0,
+      "sources": ["Direct verification"],
+      "verification_method": "direct_access"
+    },
+    {
+      "field": "founder",
+      "value": "Kevin Hester (Geeksville)",
+      "confidence": 0.95,
+      "sources": ["Wikipedia", "Community sources"],
+      "verification_method": "multi_source_cross_reference"
+    },
+    {
+      "field": "encryption",
+      "value": "AES-256-CTR",
+      "confidence": 1.0,
+      "sources": ["Official documentation"],
+      "verification_method": "official_source"
+    },
+    {
+      "field": "launch_year",
+      "value": "2020",
+      "confidence": 0.95,
+      "sources": ["Wikipedia", "Community history"],
+      "verification_method": "multi_source_cross_reference"
+    },
+    {
+      "field": "firmware_stars",
+      "value": 6591,
+      "confidence": 1.0,
+      "sources": ["GitHub"],
+      "verification_method": "direct_access"
+    },
+    {
+      "field": "license",
+      "value": "GPL-3.0",
+      "confidence": 1.0,
+      "sources": ["GitHub"],
+      "verification_method": "direct_access"
+    }
+  ],
+  "research_gaps": [
+    "Formal security audit reports",
+    "Complete founder biography",
+    "Financial/organizational structure"
+  ]
+}

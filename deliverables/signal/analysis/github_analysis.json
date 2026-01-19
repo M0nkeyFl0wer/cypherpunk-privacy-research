@@ -1,0 +1,94 @@
+{
+  "analysis_date": "2026-01-19",
+  "organization": {
+    "name": "signalapp",
+    "url": "https://github.com/signalapp",
+    "description": "Private messaging and cryptographic tools",
+    "verified": true,
+    "verified_domains": ["signal.org", "www.signal.org"],
+    "followers": 9100
+  },
+  "repositories": [
+    {
+      "name": "Signal-Android",
+      "description": "A private messenger for Android",
+      "stars": 28200,
+      "language": "Kotlin",
+      "license": "AGPL-3.0",
+      "purpose": "Android mobile client"
+    },
+    {
+      "name": "Signal-Desktop",
+      "description": "A private messenger for Windows, macOS, and Linux",
+      "stars": 15900,
+      "language": "TypeScript",
+      "license": "AGPL-3.0",
+      "purpose": "Desktop client (Electron)"
+    },
+    {
+      "name": "Signal-iOS",
+      "description": "A private messenger for iOS",
+      "stars": 11800,
+      "language": "Swift",
+      "license": "AGPL-3.0",
+      "purpose": "iOS mobile client"
+    },
+    {
+      "name": "Signal-Server",
+      "description": "Server infrastructure for Signal applications",
+      "stars": 10300,
+      "language": "Java",
+      "license": "AGPL-3.0",
+      "purpose": "Backend server"
+    },
+    {
+      "name": "libsignal",
+      "description": "Signal Protocol and cryptographic primitives",
+      "stars": 5300,
+      "forks": 650,
+      "contributors": 57,
+      "commits": 3780,
+      "language": "Rust",
+      "license": "AGPL-3.0",
+      "latest_release": "v0.86.13",
+      "purpose": "Cryptographic core"
+    },
+    {
+      "name": "ringrtc",
+      "description": "Real-time communication library",
+      "stars": 621,
+      "language": "Rust",
+      "purpose": "Voice/video calls"
+    },
+    {
+      "name": "SparsePostQuantumRatchet",
+      "description": "Post-quantum cryptography component",
+      "stars": 50,
+      "language": "F*",
+      "purpose": "Formal verification of PQ ratchet"
+    }
+  ],
+  "total_stars": "70000+",
+  "development_health": {
+    "activity_level": "very_high",
+    "commit_frequency": "daily",
+    "release_cadence": "regular",
+    "issue_tracking": "active",
+    "ci_cd": true
+  },
+  "technology_stack": {
+    "cryptographic_core": "Rust",
+    "android_client": "Kotlin",
+    "ios_client": "Swift",
+    "desktop_client": "TypeScript (Electron)",
+    "server": "Java",
+    "formal_verification": "F*"
+  },
+  "analysis_notes": [
+    "Exceptionally well-maintained open source project",
+    "Clear separation between cryptographic core and platform clients",
+    "Rust used for memory-safe cryptographic implementation",
+    "Consistent AGPL-3.0 licensing across repositories",
+    "High contributor count indicates healthy community"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "project_id": "nym",
+  "verification_date": "2026-01-19",
+  "verified_data_points": [
+    {"field": "website", "value": "https://nymtech.net", "confidence": 1.0},
+    {"field": "github", "value": "https://github.com/nymtech", "confidence": 1.0},
+    {"field": "founder_ceo", "value": "Harry Halpin", "confidence": 1.0},
+    {"field": "technology", "value": "Mixnet with Sphinx packets", "confidence": 1.0},
+    {"field": "academic_foundation", "value": "Loopix (Piotrowska et al.)", "confidence": 1.0},
+    {"field": "eu_project", "value": "PANORAMIX (5M EUR)", "confidence": 0.95},
+    {"field": "a16z_funding", "value": "$13M Series A (Nov 2021)", "confidence": 0.95},
+    {"field": "language", "value": "Rust", "confidence": 1.0},
+    {"field": "mainnet_status", "value": "Production", "confidence": 0.95},
+    {"field": "token", "value": "NYM", "confidence": 1.0}
+  ],
+  "research_gaps": [
+    "Specific security audit reports",
+    "Complete employee count",
+    "Detailed organizational structure"
+  ]
+}

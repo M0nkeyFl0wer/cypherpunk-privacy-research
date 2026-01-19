@@ -1,0 +1,134 @@
+{
+  "project_name": "signal",
+  "research_timestamp": "2026-01-19T00:00:00Z",
+  "research_method": "constitutional_research_v2",
+  "project_overview": {
+    "name": "Signal",
+    "type": "Encrypted Messaging Application",
+    "ecosystem": "non-blockchain",
+    "confidence": 0.95
+  },
+  "github_data": {
+    "organization": "signalapp",
+    "verified_domains": ["signal.org", "www.signal.org"],
+    "followers": 9100,
+    "key_repositories": [
+      {
+        "name": "Signal-Android",
+        "description": "A private messenger for Android",
+        "stars": 28200,
+        "language": "Kotlin"
+      },
+      {
+        "name": "Signal-Desktop",
+        "description": "A private messenger for Windows, macOS, and Linux",
+        "stars": 15900,
+        "language": "TypeScript"
+      },
+      {
+        "name": "Signal-iOS",
+        "description": "A private messenger for iOS",
+        "stars": 11800,
+        "language": "Swift"
+      },
+      {
+        "name": "Signal-Server",
+        "description": "Server infrastructure",
+        "stars": 10300,
+        "language": "Java"
+      },
+      {
+        "name": "libsignal",
+        "description": "Signal Protocol and cryptographic primitives",
+        "stars": 5300,
+        "language": "Rust"
+      }
+    ]
+  },
+  "metadata": {
+    "confidence_score": 0.95,
+    "completeness": 90,
+    "sources_count": 8,
+    "research_host": "local",
+    "enhancement_track": "full_constitutional_research"
+  },
+  "gaps_and_missing_data": [
+    "Detailed financial reports (non-profit)",
+    "Complete engineering team roster"
+  ],
+  "sources": [
+    "Official Website",
+    "GitHub",
+    "Wikipedia",
+    "Academic Papers",
+    "News Sources"
+  ],
+  "website": "https://signal.org",
+  "website_confidence": 1.0,
+  "description": "Signal is an open-source, cross-platform encrypted messaging application developed by the Signal Technology Foundation. It pioneered the Signal Protocol, which provides end-to-end encryption with forward secrecy and post-compromise security. The protocol has been adopted by WhatsApp, Google Messages, Facebook Messenger, and Skype. As of 2025, Signal has approximately 70 million monthly active users.",
+  "description_confidence": 0.95,
+  "technical_highlights": {
+    "protocol": "Signal Protocol",
+    "encryption_algorithm": "Double Ratchet + X3DH",
+    "post_quantum": "SPQR (Sparse Post Quantum Ratchet) / Triple Ratchet",
+    "key_features": [
+      "End-to-end encryption by default",
+      "Forward secrecy",
+      "Post-compromise security",
+      "Zero-knowledge group credentials",
+      "Sealed sender (metadata protection)"
+    ],
+    "open_source": true,
+    "license": "AGPL-3.0"
+  },
+  "security_audits": [
+    {
+      "date": "2016-10",
+      "organization": "University of Oxford, Queensland University of Technology, McMaster University",
+      "scope": "Formal security analysis of Signal Protocol",
+      "result": "Protocol found cryptographically sound"
+    },
+    {
+      "date": "2014-10",
+      "organization": "Ruhr University Bochum",
+      "scope": "TextSecure v3 protocol analysis",
+      "result": "Found secure with minor issues identified"
+    },
+    {
+      "date": "2025-02",
+      "organization": "Independent researcher (Soatok)",
+      "scope": "Cryptography review",
+      "result": "No attacks found on Signal implementations"
+    }
+  ],
+  "protocol_adoption": [
+    "WhatsApp (2+ billion users)",
+    "Facebook Messenger (Secret Conversations)",
+    "Google Messages (RCS)",
+    "Skype (Private Conversations)"
+  ],
+  "organization": {
+    "name": "Signal Technology Foundation",
+    "type": "501(c)(3) non-profit",
+    "founded": "2018-02-21",
+    "headquarters": "United States",
+    "initial_funding": "$50,000,000 from Brian Acton"
+  },
+  "timeline": {
+    "2010-05": "TextSecure initial release (Signal predecessor)",
+    "2014-07-29": "Signal released for iOS",
+    "2015-11": "Signal for Android released (TextSecure renamed)",
+    "2016-03": "Protocol renamed to Signal Protocol",
+    "2018-02-21": "Signal Foundation established",
+    "2022-01-10": "Moxie Marlinspike steps down as CEO",
+    "2022-09": "Meredith Whittaker becomes President",
+    "2023-06": "Brian Acton confirmed as CEO",
+    "2023-09": "Post-quantum encryption (PQXDH) added",
+    "2025-03": "Signalgate incident (human error, not protocol flaw)"
+  },
+  "research_metadata": {
+    "constitutional_research_complete": true,
+    "web_research_date": "2026-01-19",
+    "multi_source_verification": true
+  }
+}

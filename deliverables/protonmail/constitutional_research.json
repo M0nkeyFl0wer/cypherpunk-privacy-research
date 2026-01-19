@@ -1,0 +1,56 @@
+{
+  "project_name": "protonmail",
+  "research_timestamp": "2026-01-19T00:00:00Z",
+  "research_method": "constitutional_research_v2",
+  "project_overview": {
+    "name": "Proton Mail",
+    "type": "Encrypted Email Service",
+    "ecosystem": "non-blockchain",
+    "confidence": 0.95
+  },
+  "github_data": {
+    "organization": "ProtonMail",
+    "verified": true,
+    "location": "Geneva, Switzerland",
+    "followers": 4700,
+    "repository_count": 179,
+    "key_repositories": [
+      {"name": "WebClients", "stars": 5199, "language": "TypeScript"},
+      {"name": "ios-mail", "stars": 1600, "language": "Swift"},
+      {"name": "proton-bridge", "stars": 1400, "language": "Go"},
+      {"name": "gopenpgp", "stars": 1208, "language": "Go"},
+      {"name": "android-mail", "stars": 716, "language": "Kotlin"}
+    ]
+  },
+  "metadata": {
+    "confidence_score": 0.95,
+    "completeness": 85,
+    "sources_count": 5
+  },
+  "website": "https://proton.me",
+  "website_confidence": 1.0,
+  "description": "Swiss end-to-end encrypted email service using OpenPGP standard with zero-access encryption. All client apps are open source under GPL or MIT licenses, though backend remains closed source.",
+  "technical_highlights": {
+    "encryption_standard": "OpenPGP",
+    "client_library": "OpenPGP.js",
+    "open_source_components": ["Web clients", "iOS app", "Android app", "Bridge", "gopenpgp library"],
+    "closed_source": ["Backend servers"]
+  },
+  "organization": {
+    "company": "Proton AG",
+    "parent": "Proton Foundation (non-profit)",
+    "headquarters": "Geneva, Switzerland",
+    "founded": "2014"
+  },
+  "timeline": {
+    "2014-05-16": "Proton Mail beta launched",
+    "2016-03": "Public launch",
+    "2017": "2 million users",
+    "2022": "70 million users",
+    "2025-07": "AI infrastructure moved to EU"
+  },
+  "research_metadata": {
+    "constitutional_research_complete": true,
+    "web_research_date": "2026-01-19"
+  }
+}

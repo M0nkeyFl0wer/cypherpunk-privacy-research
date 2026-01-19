@@ -1,0 +1,93 @@
+{
+  "id": "meshtastic",
+  "name": "Meshtastic",
+  "slug": "meshtastic",
+  "description": "An open-source, decentralized off-grid mesh networking protocol using LoRa radio technology for encrypted long-range communication without internet or cellular infrastructure. Created in 2020, Meshtastic enables text messaging, GPS sharing, and alerts across peer-to-peer networks using affordable hardware.",
+  "website": "https://meshtastic.org",
+  "github": "https://github.com/meshtastic",
+  "documentation": "https://meshtastic.org/docs/",
+  "category": "Privacy Infrastructure",
+  "subcategories": ["Mesh Networking", "Off-Grid Communication", "LoRa"],
+  "tech_stack": [
+    "C++ (Firmware)",
+    "Kotlin (Android)",
+    "Swift (iOS/macOS)",
+    "TypeScript (Web)",
+    "Vue.js (Web Flasher)",
+    "Protocol Buffers"
+  ],
+  "privacy_techniques": [
+    "AES-256-CTR encryption",
+    "Decentralized mesh networking",
+    "No central server",
+    "Per-channel encryption keys",
+    "License-free ISM band radio"
+  ],
+  "blockchain_platforms": [],
+  "status": "active_production",
+  "maturity_level": "production",
+  "last_update": "2026-01-19",
+  "launch_date": "2020",
+  "confidence": 0.9,
+  "sources": [
+    {
+      "type": "official_website",
+      "url": "https://meshtastic.org",
+      "retrieved_at": "2026-01-19",
+      "confidence": 1.0
+    },
+    {
+      "type": "github",
+      "url": "https://github.com/meshtastic",
+      "retrieved_at": "2026-01-19",
+      "confidence": 1.0
+    },
+    {
+      "type": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Meshtastic",
+      "retrieved_at": "2026-01-19",
+      "confidence": 0.9
+    }
+  ],
+  "missing_fields": [],
+  "verified": true,
+  "readme_path": "meshtastic/README.md",
+  "team": [
+    {
+      "name": "Kevin Hester (Geeksville)",
+      "role": "Founder",
+      "github": "geeksville",
+      "background": "Embedded engineer",
+      "verification": "verified_multiple_sources"
+    },
+    {
+      "name": "Jonathan Bennett",
+      "role": "Core Developer",
+      "background": "Co-founder Meshtastic Solutions",
+      "verification": "verified"
+    },
+    {
+      "name": "Tony Good",
+      "role": "Hardware Designer",
+      "background": "Entrepreneur, hardware design",
+      "verification": "verified"
+    }
+  ],
+  "social_links": {
+    "twitter": "",
+    "discord": "https://discord.gg/meshtastic",
+    "telegram": "",
+    "reddit": "https://reddit.com/r/meshtastic"
+  },
+  "community_metrics": {
+    "github_followers": 5400,
+    "discord_members": "15000+",
+    "contributors": "300+",
+    "countries_deployed": 42
+  },
+  "hardware": {
+    "supported_boards": ["ESP32", "nRF52840", "TTGO T-Beam", "T-Echo", "Heltec", "RAK Wireless"],
+    "entry_cost": "$9.90 - $40",
+    "popular_devices": ["T1000-E", "T-Beam", "T-Echo", "RAK WisBlock"]
+  }
+}

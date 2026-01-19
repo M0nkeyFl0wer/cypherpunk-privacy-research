@@ -1,0 +1,152 @@
+{
+  "id": "miden",
+  "name": "Miden (0xMiden)",
+  "slug": "miden",
+  "description": "A STARK-based zero-knowledge rollup for Ethereum featuring client-side proving, a UTXO-inspired account model with smart contracts, and built-in privacy by default. Originally incubated by Polygon Labs, Miden became an independent project (0xMiden) in March 2025 after securing $25M in seed funding led by a16z crypto.",
+  "website": "https://miden.build",
+  "github": "https://github.com/0xPolygonMiden",
+  "documentation": "https://docs.miden.xyz",
+  "category": "Privacy Infrastructure",
+  "subcategories": ["ZK Rollup", "zkVM", "Layer 2"],
+  "tech_stack": [
+    "Rust",
+    "STARK",
+    "Plonky3",
+    "WebAssembly",
+    "Winterfell Prover"
+  ],
+  "privacy_techniques": [
+    "STARK zero-knowledge proofs",
+    "Client-side proving",
+    "State commitment opacity",
+    "Private accounts with off-chain note communication",
+    "Selective transparency"
+  ],
+  "blockchain_platforms": [
+    "ethereum"
+  ],
+  "status": "active_development",
+  "maturity_level": "alpha_testnet",
+  "last_update": "2026-01-19",
+  "launch_date": "2021-11",
+  "confidence": 0.9,
+  "sources": [
+    {
+      "type": "github",
+      "url": "https://github.com/0xPolygonMiden/miden-vm",
+      "retrieved_at": "2026-01-19",
+      "confidence": 1.0
+    },
+    {
+      "type": "official_blog",
+      "url": "https://polygon.technology/blog/polygon-unveils-miden-an-advanced-zk-starks-based-scaling-solution",
+      "retrieved_at": "2026-01-19",
+      "confidence": 0.95
+    },
+    {
+      "type": "news",
+      "url": "https://www.coindesk.com/tech/2025/04/29/polygon-spin-off-miden-secures-25m-to-bring-speed-privacy-to-institutional-giants/",
+      "retrieved_at": "2026-01-19",
+      "confidence": 0.9
+    },
+    {
+      "type": "technical_analysis",
+      "url": "https://www.gate.com/learn/articles/deep-analysis-of-miden-a-high-performance-zero-knowledge-virtual-machine-architecture-based-on-stark/8979",
+      "retrieved_at": "2026-01-19",
+      "confidence": 0.85
+    }
+  ],
+  "missing_fields": [],
+  "verified": true,
+  "readme_path": "miden/README.md",
+  "card_path": "miden/CARD.md",
+  "team": [
+    {
+      "name": "Bobbin Threadbare",
+      "role": "Founder & Lead Developer",
+      "github": "bobbinth",
+      "twitter": "",
+      "background": "Former Facebook/Novi ZK researcher, creator of Distaff VM and Winterfell STARK prover",
+      "verification": "verified_multiple_sources"
+    },
+    {
+      "name": "Dominik Schmid",
+      "role": "Co-founder",
+      "github": "",
+      "twitter": "",
+      "background": "Former Meta blockchain team",
+      "verification": "verified"
+    },
+    {
+      "name": "Azeem Khan",
+      "role": "Co-founder",
+      "github": "",
+      "twitter": "",
+      "background": "Former Meta blockchain team",
+      "verification": "verified"
+    }
+  ],
+  "social_links": {
+    "twitter": "https://twitter.com/0xMiden",
+    "discord": "",
+    "telegram": "",
+    "medium": "",
+    "mirror": ""
+  },
+  "investors": [
+    {
+      "name": "a16z crypto",
+      "round": "seed",
+      "amount": "$25M total round",
+      "date": "2025-04",
+      "role": "lead"
+    },
+    {
+      "name": "1kx",
+      "round": "seed",
+      "date": "2025-04",
+      "role": "lead"
+    },
+    {
+      "name": "Hack VC",
+      "round": "seed",
+      "date": "2025-04",
+      "role": "lead"
+    },
+    {
+      "name": "Finality Capital Partners",
+      "round": "seed",
+      "date": "2025-04"
+    },
+    {
+      "name": "Symbolic Capital",
+      "round": "seed",
+      "date": "2025-04"
+    },
+    {
+      "name": "P2 Ventures",
+      "round": "seed",
+      "date": "2025-04"
+    },
+    {
+      "name": "Delta Fund",
+      "round": "seed",
+      "date": "2025-04"
+    },
+    {
+      "name": "MH Ventures",
+      "round": "seed",
+      "date": "2025-04"
+    }
+  ],
+  "angel_investors": [
+    {
+      "name": "Avery Ching",
+      "title": "CEO, Aptos Labs"
+    },
+    {
+      "name": "Rune Christensen",
+      "title": "Founder, MakerDAO"
+    }
+  ]
+}

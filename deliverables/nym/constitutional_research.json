@@ -1,0 +1,35 @@
+{
+  "project_id": "nym",
+  "constitution_version": "2.0",
+  "research_date": "2026-01-19",
+  "methodology": {
+    "multi_source_verification": true,
+    "confidence_scoring": true,
+    "gaps_documented": true,
+    "sources_cited": true
+  },
+  "verification_status": {
+    "website": {"verified": true, "source": "direct_visit", "confidence": 1.0},
+    "github": {"verified": true, "source": "direct_visit", "confidence": 1.0},
+    "team": {"verified": true, "source": "multiple_sources", "confidence": 0.9},
+    "funding": {"verified": true, "source": "news_articles", "confidence": 0.95},
+    "technology": {"verified": true, "source": "github_documentation", "confidence": 0.95}
+  },
+  "data_quality": {
+    "overall_confidence": 0.9,
+    "completeness": 0.9,
+    "recency": "2026-01-19"
+  },
+  "research_gaps": [
+    "Detailed organizational structure not publicly documented",
+    "Complete team roster beyond co-founders",
+    "Specific audit reports"
+  ],
+  "sources_used": [
+    "https://github.com/nymtech/nym",
+    "https://nymtech.net",
+    "https://techcrunch.com/2021/11/19/nym-raises-13m-from-a16zs-crypto-fund/",
+    "https://techcrunch.com/2021/07/16/nym-gets-6m-for-its-anonymous-overlay-mixnet-to-sell-privacy-as-a-service/",
+    "https://nym.com/blog/an-introduction-to-the-nym-technologies-team"
+  ]
+}

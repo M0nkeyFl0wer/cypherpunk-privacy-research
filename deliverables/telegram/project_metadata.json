@@ -1,0 +1,53 @@
+{
+  "id": "telegram",
+  "name": "Telegram",
+  "slug": "telegram",
+  "description": "A cross-platform cloud-based messaging service launched in 2013 by Pavel Durov. Telegram uses its proprietary MTProto protocol with server-client encryption for regular chats and optional end-to-end encryption for 'Secret Chats'. Client apps are open source, but server code is proprietary. As of 2024, Telegram has over 950 million monthly active users.",
+  "website": "https://telegram.org",
+  "github": "https://github.com/telegramdesktop",
+  "documentation": "https://core.telegram.org",
+  "category": "Privacy Infrastructure",
+  "subcategories": ["Messaging", "Cloud Communication"],
+  "tech_stack": [
+    "C++ (Desktop, TDLib)",
+    "Java (Android)",
+    "Swift (iOS)",
+    "MTProto protocol"
+  ],
+  "privacy_techniques": [
+    "MTProto 2.0 encryption",
+    "Secret Chats (E2E optional)",
+    "Perfect Forward Secrecy",
+    "Self-destructing messages",
+    "Anonymous accounts (phone number optional with Premium)"
+  ],
+  "blockchain_platforms": ["TON (formerly, now separate)"],
+  "status": "active_production",
+  "maturity_level": "production",
+  "last_update": "2026-01-19",
+  "launch_date": "2013-08-14",
+  "confidence": 0.9,
+  "sources": [
+    {
+      "type": "official_website",
+      "url": "https://telegram.org",
+      "retrieved_at": "2026-01-19",
+      "confidence": 1.0
+    },
+    {
+      "type": "github",
+      "url": "https://github.com/telegramdesktop",
+      "retrieved_at": "2026-01-19",
+      "confidence": 1.0
+    }
+  ],
+  "user_metrics": {
+    "monthly_active_users": "950+ million (2024)"
+  },
+  "open_source_status": {
+    "clients": "Open source (GPL v2/v3)",
+    "server": "Closed source",
+    "protocol": "Documented but proprietary"
+  },
+  "encryption_notes": "E2E encryption only available in 'Secret Chats' feature, not enabled by default. Regular chats use server-client encryption only."
+}
