@@ -80,17 +80,17 @@ export default function SearchPage() {
   };
 
   return (
-    <div className="min-h-screen bg-brand-bg-dark">
+    <div className="min-h-screen bg-[#000]">
       {/* Header - Web3Privacy Now Branded */}
-      <header className="bg-brand-bg-darker border-b border-brand-bg-active sticky top-0 z-10">
+      <header className="bg-[#111] border-b border-[#252525] sticky top-0 z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex items-center justify-between mb-4">
             <div>
-              <h1 className="text-3xl font-bold text-brand-text-primary flex items-center gap-3">
+              <h1 className="text-3xl font-bold text-[#e0e0e0] flex items-center gap-3">
                 <img src="/brand/logo-white.svg" alt="Web3Privacy Now" className="h-10 w-auto" />
                 Web3 Privacy Projects
               </h1>
-              <p className="mt-1 text-sm text-brand-text-secondary">
+              <p className="mt-1 text-sm text-[#a6adc8]">
                 Comprehensive research on Ethereum-based privacy technologies
               </p>
             </div>
@@ -99,19 +99,19 @@ export default function SearchPage() {
             <nav className="flex items-center gap-4">
               <a
                 href="/"
-                className="text-sm font-medium text-brand-text-secondary hover:text-brand-accent-blue transition-colors"
+                className="text-sm font-medium text-[#a6adc8] hover:text-[#89b4fa] transition-colors"
               >
                 Home
               </a>
               <a
                 href="/visualizations"
-                className="text-sm font-medium text-brand-text-secondary hover:text-brand-accent-purple transition-colors"
+                className="text-sm font-medium text-[#a6adc8] hover:text-[#94e2d5] transition-colors"
               >
                 Visualizations
               </a>
               <a
                 href="/chat"
-                className="text-sm font-medium text-brand-text-secondary hover:text-brand-accent-green transition-colors"
+                className="text-sm font-medium text-[#a6adc8] hover:text-[#a6e3a1] transition-colors"
               >
                 AI Assistant
               </a>
@@ -152,10 +152,10 @@ export default function SearchPage() {
       </main>
 
       {/* Footer - Web3Privacy Now Branded */}
-      <footer className="bg-brand-bg-darker border-t border-brand-bg-active mt-16">
+      <footer className="bg-[#111] border-t border-[#252525] mt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-sm text-brand-text-muted">
+            <p className="text-sm text-[#6c7086]">
               © 2025 Web3Privacy Now Research. All data verified per constitutional requirements.
             </p>
 
@@ -164,7 +164,7 @@ export default function SearchPage() {
                 href="https://github.com/M0nkeyFl0wer/web3-privacy-ethereum-cypherpunk-research"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-brand-text-secondary hover:text-brand-accent-blue transition-colors flex items-center gap-2"
+                className="text-sm text-[#a6adc8] hover:text-[#89b4fa] transition-colors flex items-center gap-2"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path
@@ -178,7 +178,7 @@ export default function SearchPage() {
 
               <a
                 href="/feedback"
-                className="text-sm text-brand-text-secondary hover:text-brand-accent-green transition-colors"
+                className="text-sm text-[#a6adc8] hover:text-[#a6e3a1] transition-colors"
               >
                 Submit Feedback
               </a>

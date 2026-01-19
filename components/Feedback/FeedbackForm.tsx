@@ -43,14 +43,14 @@ export default function FeedbackForm({ onSuccess, onError }: FeedbackFormProps) 
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 bg-brand-bg-darker rounded-lg p-6 border border-brand-bg-active">
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 bg-[#111] rounded-lg p-6 border border-[#252525]">
       <div>
-        <label className="block text-sm font-medium text-brand-text-primary mb-2">
+        <label className="block text-sm font-medium text-[#e0e0e0] mb-2">
           Feedback Type
         </label>
         <select
           {...register('type', { required: true })}
-          className="w-full px-4 py-3 bg-brand-bg-active border border-brand-bg-hover rounded-lg text-brand-text-primary"
+          className="w-full px-4 py-3 bg-[#252525] border border-[#1a1a1a] rounded-lg text-[#e0e0e0] focus:outline-none focus:ring-2 focus:ring-[#94e2d5]"
         >
           <option value="Missing Project">Missing Project</option>
           <option value="Incorrect Data">Incorrect Data</option>
@@ -61,33 +61,33 @@ export default function FeedbackForm({ onSuccess, onError }: FeedbackFormProps) 
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-brand-text-primary mb-2">
+        <label className="block text-sm font-medium text-[#e0e0e0] mb-2">
           Title
         </label>
         <input
           {...register('title', { required: true })}
           type="text"
           placeholder="Brief summary of your feedback"
-          className="w-full px-4 py-3 bg-brand-bg-active border border-brand-bg-hover rounded-lg text-brand-text-primary"
+          className="w-full px-4 py-3 bg-[#252525] border border-[#1a1a1a] rounded-lg text-[#e0e0e0] placeholder-[#6c7086] focus:outline-none focus:ring-2 focus:ring-[#94e2d5]"
         />
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-brand-text-primary mb-2">
+        <label className="block text-sm font-medium text-[#e0e0e0] mb-2">
           Description
         </label>
         <textarea
           {...register('description', { required: true })}
           rows={6}
           placeholder="Provide details about your feedback..."
-          className="w-full px-4 py-3 bg-brand-bg-active border border-brand-bg-hover rounded-lg text-brand-text-primary resize-none"
+          className="w-full px-4 py-3 bg-[#252525] border border-[#1a1a1a] rounded-lg text-[#e0e0e0] placeholder-[#6c7086] resize-none focus:outline-none focus:ring-2 focus:ring-[#94e2d5]"
         />
       </div>
 
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full px-6 py-3 bg-brand-accent-purple text-white rounded-lg font-medium hover:bg-brand-accent-purple-hover disabled:opacity-50"
+        className="w-full px-6 py-3 bg-[#94e2d5] text-[#000] rounded-lg font-medium hover:bg-[#74c7ba] disabled:opacity-50 transition-colors"
       >
         {isSubmitting ? 'Submitting...' : 'Submit Feedback'}
       </button>
