@@ -193,12 +193,12 @@ export default function Treemap({ projects, width = 1000, height = 600 }: Treema
             ` : ''}
             ${p?.website ? `
               <div style="margin-bottom: 4px; font-size: 10px;">
-                🌐 <a href="${p.website}" target="_blank" style="color: #8b5cf6;">${new URL(p.website).hostname}</a>
+                🌐 <a href="${p.website}" target="_blank" style="color: #94e2d5;">${new URL(p.website).hostname}</a>
               </div>
             ` : ''}
             ${p?.github ? `
               <div style="margin-bottom: 4px; font-size: 10px;">
-                💻 <a href="${p.github}" target="_blank" style="color: #8b5cf6;">${p.github.replace('https://github.com/', '')}</a>
+                💻 <a href="${p.github}" target="_blank" style="color: #94e2d5;">${p.github.replace('https://github.com/', '')}</a>
               </div>
             ` : ''}
             ${p?.techStack?.length > 0 ? `
@@ -218,7 +218,7 @@ export default function Treemap({ projects, width = 1000, height = 600 }: Treema
             ` : ''}
             <div style="color: #718096; font-size: 10px; margin-top: 8px; padding-top: 8px; border-top: 1px solid #4a5568;">
               Box: ${(d.x1 - d.x0).toFixed(0)} × ${(d.y1 - d.y0).toFixed(0)}px •
-              <span style="color: #8b5cf6; font-weight: bold;">Click for full details →</span>
+              <span style="color: #94e2d5; font-weight: bold;">Click for full details →</span>
             </div>
           `)
           .style('left', (event.pageX + 10) + 'px')
@@ -253,25 +253,25 @@ export default function Treemap({ projects, width = 1000, height = 600 }: Treema
 
   return (
     <div className="relative">
-      <div className="mb-4 text-sm text-brand-text-muted">
+      <div className="mb-4 text-sm text-[#6c7086]">
         <p>📦 Box size = Project importance (tech stack + privacy features + completeness)</p>
         <p className="mt-1">💡 Hover for details • Click to filter by category</p>
         {selectedCategory && (
-          <p className="mt-2 text-brand-accent-purple">
+          <p className="mt-2 text-[#94e2d5]">
             Filtered: {selectedCategory}
             <button
               onClick={() => setSelectedCategory(null)}
-              className="ml-2 text-xs underline hover:text-brand-accent-purple-hover"
+              className="ml-2 text-xs underline hover:text-white"
             >
               Clear filter
             </button>
           </p>
         )}
       </div>
-      <svg ref={svgRef} className="bg-brand-bg-darker rounded-lg" />
+      <svg ref={svgRef} className="bg-[#111] rounded-lg" />
       {projects.length === 0 && (
         <div className="absolute inset-0 flex items-center justify-center">
-          <p className="text-brand-text-muted">No project data available</p>
+          <p className="text-[#6c7086]">No project data available</p>
         </div>
       )}
     </div>

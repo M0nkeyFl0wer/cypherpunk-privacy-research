@@ -149,12 +149,12 @@ export default function Timeline({ projects, width = 1000, height = 400 }: Timel
 
     gradient.append('stop')
       .attr('offset', '0%')
-      .attr('stop-color', '#8b5cf6')
+      .attr('stop-color', '#94e2d5')
       .attr('stop-opacity', 0.8);
 
     gradient.append('stop')
       .attr('offset', '100%')
-      .attr('stop-color', '#8b5cf6')
+      .attr('stop-color', '#94e2d5')
       .attr('stop-opacity', 0.1);
 
     // Line chart
@@ -166,7 +166,7 @@ export default function Timeline({ projects, width = 1000, height = 400 }: Timel
     g.append('path')
       .datum(yearData)
       .attr('fill', 'none')
-      .attr('stroke', '#8b5cf6')
+      .attr('stroke', '#94e2d5')
       .attr('stroke-width', 3)
       .attr('d', line as any);
 
@@ -179,7 +179,7 @@ export default function Timeline({ projects, width = 1000, height = 400 }: Timel
 
     dots.append('circle')
       .attr('r', 5)
-      .attr('fill', '#8b5cf6')
+      .attr('fill', '#94e2d5')
       .attr('stroke', '#1a202c')
       .attr('stroke-width', 2)
       .style('cursor', 'pointer');
@@ -235,7 +235,7 @@ export default function Timeline({ projects, width = 1000, height = 400 }: Timel
                 <strong style="font-size: 11px;">Projects:</strong>
                 ${topProjects.map(e => `
                   <div style="margin-top: 4px; padding: 4px; background: #2d3748; border-radius: 4px;">
-                    <div style="font-weight: bold; font-size: 11px; color: #8b5cf6; margin-bottom: 2px;">${e.name}</div>
+                    <div style="font-weight: bold; font-size: 11px; color: #94e2d5; margin-bottom: 2px;">${e.name}</div>
                     ${e.project?.description ? `
                       <div style="font-size: 9px; color: #cbd5e0; margin-bottom: 2px;">
                         ${e.project.description.slice(0, 80)}${e.project.description.length > 80 ? '...' : ''}
@@ -256,7 +256,7 @@ export default function Timeline({ projects, width = 1000, height = 400 }: Timel
               </div>
             ` : ''}
             <div style="color: #718096; font-size: 10px; margin-top: 8px; padding-top: 8px; border-top: 1px solid #4a5568;">
-              <span style="color: #8b5cf6; font-weight: bold;">Click dot to view year • Click project names below →</span>
+              <span style="color: #94e2d5; font-weight: bold;">Click dot to view year • Click project names below →</span>
             </div>
           `)
           .style('left', (event.pageX + 10) + 'px')
@@ -322,14 +322,14 @@ export default function Timeline({ projects, width = 1000, height = 400 }: Timel
 
   return (
     <div className="relative">
-      <div className="mb-4 text-sm text-brand-text-muted">
+      <div className="mb-4 text-sm text-[#6c7086]">
         <p>📅 Timeline shows when privacy projects were founded</p>
         <p className="mt-1">💡 Hover over dots for details • Peak years show privacy innovation waves</p>
       </div>
-      <svg ref={svgRef} className="bg-brand-bg-darker rounded-lg" />
+      <svg ref={svgRef} className="bg-[#111] rounded-lg" />
       {projects.filter(p => p.foundedYear && p.foundedYear > 1900).length === 0 && (
         <div className="absolute inset-0 flex items-center justify-center">
-          <p className="text-brand-text-muted">No timeline data available</p>
+          <p className="text-[#6c7086]">No timeline data available</p>
         </div>
       )}
     </div>

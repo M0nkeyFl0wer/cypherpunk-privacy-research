@@ -33,11 +33,11 @@ interface ObsidianGraphProps {
 }
 
 const NODE_COLORS: Record<string, string> = {
-  project: '#8b5cf6',      // Purple for projects
-  language: '#3b82f6',     // Blue for languages
-  topic: '#10b981',        // Green for topics
-  license: '#f59e0b',      // Amber for licenses
-  contributor: '#ec4899',  // Pink for contributors
+  project: '#94e2d5',      // Cyan for projects (OLED-first)
+  language: '#89b4fa',     // Blue for languages
+  topic: '#a6e3a1',        // Green for topics
+  license: '#f9e2af',      // Yellow for licenses
+  contributor: '#f38ba8',  // Red/pink for contributors
 };
 
 const NODE_SHAPES: Record<string, string> = {
@@ -103,10 +103,10 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
       .attr('id', 'osint-gradient');
     osintGradient.append('stop')
       .attr('offset', '0%')
-      .attr('stop-color', '#c084fc');
+      .attr('stop-color', '#b8e8e0');
     osintGradient.append('stop')
       .attr('offset', '100%')
-      .attr('stop-color', '#8b5cf6');
+      .attr('stop-color', '#94e2d5');
 
     // Container for zoom
     const g = svg.append('g');
@@ -153,11 +153,11 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
       .join('line')
       .attr('stroke', d => {
         const type = (d as any).type;
-        if (type === 'uses_language') return '#3b82f6';
-        if (type === 'tagged_with') return '#10b981';
-        if (type === 'licensed_under') return '#f59e0b';
-        if (type === 'contributes_to') return '#ec4899';
-        return '#4a5568';
+        if (type === 'uses_language') return '#89b4fa';
+        if (type === 'tagged_with') return '#a6e3a1';
+        if (type === 'licensed_under') return '#f9e2af';
+        if (type === 'contributes_to') return '#f38ba8';
+        return '#252525';
       })
       .attr('stroke-opacity', 0.3)
       .attr('stroke-width', 1);
@@ -186,7 +186,7 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
         el.append('circle')
           .attr('r', size)
           .attr('fill', d.tier === 'osint' ? 'url(#osint-gradient)' : NODE_COLORS.project)
-          .attr('stroke', d.tier === 'osint' ? '#c084fc' : '#6d28d9')
+          .attr('stroke', d.tier === 'osint' ? '#b8e8e0' : '#74b8b0')
           .attr('stroke-width', d.tier === 'osint' ? 3 : 1.5);
       } else if (d.type === 'language') {
         // Hexagon for languages
@@ -197,7 +197,7 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
         el.append('polygon')
           .attr('points', hexPoints)
           .attr('fill', NODE_COLORS.language)
-          .attr('stroke', '#2563eb')
+          .attr('stroke', '#7aa2d8')
           .attr('stroke-width', 1.5);
       } else if (d.type === 'topic') {
         // Diamond for topics
@@ -205,7 +205,7 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
         el.append('polygon')
           .attr('points', diamondPoints)
           .attr('fill', NODE_COLORS.topic)
-          .attr('stroke', '#059669')
+          .attr('stroke', '#8dc48d')
           .attr('stroke-width', 1.5);
       } else if (d.type === 'license') {
         // Square for licenses
@@ -215,14 +215,14 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
           .attr('width', size * 2)
           .attr('height', size * 2)
           .attr('fill', NODE_COLORS.license)
-          .attr('stroke', '#d97706')
+          .attr('stroke', '#d8c58d')
           .attr('stroke-width', 1.5);
       } else if (d.type === 'contributor') {
         // Small circle for contributors
         el.append('circle')
           .attr('r', size)
           .attr('fill', NODE_COLORS.contributor)
-          .attr('stroke', '#db2777')
+          .attr('stroke', '#d07890')
           .attr('stroke-width', 1);
       }
     });
@@ -234,7 +234,7 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
       .attr('x', 0)
       .attr('y', d => (d.size || 10) + 12)
       .attr('text-anchor', 'middle')
-      .attr('fill', '#9ca3af')
+      .attr('fill', '#a6adc8')
       .attr('font-size', d => d.type === 'project' ? '10px' : '8px')
       .attr('pointer-events', 'none');
 
@@ -243,11 +243,11 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
       .append('div')
       .attr('class', 'obsidian-tooltip')
       .style('position', 'absolute')
-      .style('background', 'rgba(17, 24, 39, 0.95)')
-      .style('border', '1px solid #374151')
+      .style('background', 'rgba(17, 17, 17, 0.95)')
+      .style('border', '1px solid #252525')
       .style('border-radius', '8px')
       .style('padding', '12px')
-      .style('color', '#e5e7eb')
+      .style('color', '#e0e0e0')
       .style('font-size', '12px')
       .style('pointer-events', 'none')
       .style('opacity', 0)
@@ -287,7 +287,7 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
         content += `<div style="color: ${NODE_COLORS[d.type]}; font-size: 10px; text-transform: uppercase; margin-bottom: 8px;">${d.type}</div>`;
 
         if (d.type === 'project' && d.tier === 'osint') {
-          content += `<div style="color: #c084fc; font-size: 11px; margin-bottom: 4px;">OSINT Deep Dive</div>`;
+          content += `<div style="color: #94e2d5; font-size: 11px; margin-bottom: 4px;">OSINT Deep Dive</div>`;
         }
         if (d.stars) {
           content += `<div style="font-size: 11px;">Stars: ${d.stars.toLocaleString()}</div>`;
@@ -302,10 +302,10 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
           return sourceId === d.id || targetId === d.id;
         }).length;
 
-        content += `<div style="color: #6b7280; font-size: 10px; margin-top: 8px; padding-top: 8px; border-top: 1px solid #374151;">${connectionCount} connections</div>`;
+        content += `<div style="color: #6c7086; font-size: 10px; margin-top: 8px; padding-top: 8px; border-top: 1px solid #252525;">${connectionCount} connections</div>`;
 
         if (d.type === 'project') {
-          content += `<div style="color: #8b5cf6; font-size: 10px; margin-top: 4px;">Click to view details →</div>`;
+          content += `<div style="color: #94e2d5; font-size: 10px; margin-top: 4px;">Click to view details →</div>`;
         }
 
         tooltip
@@ -380,7 +380,7 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
   if (loading) {
     return (
       <div className="flex items-center justify-center h-96">
-        <div className="animate-spin w-8 h-8 border-2 border-purple-500 border-t-transparent rounded-full"></div>
+        <div className="animate-spin w-8 h-8 border-2 border-[#94e2d5] border-t-transparent rounded-full"></div>
       </div>
     );
   }
@@ -388,16 +388,16 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
   return (
     <div className="relative">
       {/* Legend & Filters */}
-      <div className="flex flex-wrap items-center gap-4 mb-4 p-4 bg-gray-800/50 rounded-lg">
-        <span className="text-sm text-gray-400">Show:</span>
+      <div className="flex flex-wrap items-center gap-4 mb-4 p-4 bg-[#111]/50 rounded-lg">
+        <span className="text-sm text-[#6c7086]">Show:</span>
         {Object.entries(NODE_COLORS).map(([type, color]) => (
           <button
             key={type}
             onClick={() => toggleFilter(type)}
             className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm transition-all ${
               activeFilters.has(type)
-                ? 'bg-gray-700 text-white'
-                : 'bg-gray-800/50 text-gray-500 opacity-50'
+                ? 'bg-[#1a1a1a] text-white'
+                : 'bg-[#111]/50 text-[#6c7086] opacity-50'
             }`}
           >
             <span
@@ -410,7 +410,7 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
       </div>
 
       {/* Instructions */}
-      <div className="text-xs text-gray-500 mb-2 flex items-center gap-4">
+      <div className="text-xs text-[#6c7086] mb-2 flex items-center gap-4">
         <span>Scroll to zoom</span>
         <span>•</span>
         <span>Drag nodes to rearrange</span>
@@ -423,13 +423,13 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
       {/* Graph */}
       <svg
         ref={svgRef}
-        className="bg-gray-900/50 rounded-xl border border-gray-800"
+        className="bg-[#111]/50 rounded-xl border border-[#252525]"
         style={{ width: '100%', height }}
       />
 
       {/* Stats */}
       {data && (
-        <div className="mt-4 flex items-center gap-6 text-sm text-gray-400">
+        <div className="mt-4 flex items-center gap-6 text-sm text-[#6c7086]">
           <span>
             {data.nodes.filter(n => activeFilters.has(n.type)).length} nodes
           </span>

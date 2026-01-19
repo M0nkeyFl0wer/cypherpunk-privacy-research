@@ -28,10 +28,10 @@ export default function VisualizationsPage() {
 
   if (!stats) {
     return (
-      <div className="min-h-screen bg-brand-bg-dark flex items-center justify-center">
+      <div className="min-h-screen bg-[#000] flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin w-12 h-12 border-4 border-brand-accent-purple border-t-transparent rounded-full mx-auto mb-4"></div>
-          <p className="text-brand-text-secondary">Loading visualizations...</p>
+          <div className="animate-spin w-12 h-12 border-4 border-[#94e2d5] border-t-transparent rounded-full mx-auto mb-4"></div>
+          <p className="text-[#a6adc8]">Loading visualizations...</p>
         </div>
       </div>
     );
@@ -89,17 +89,17 @@ export default function VisualizationsPage() {
   }));
 
   return (
-    <div className="min-h-screen bg-brand-bg-dark">
+    <div className="min-h-screen bg-[#000]">
       {/* Header */}
-      <header className="bg-brand-bg-darker border-b border-brand-bg-active sticky top-0 z-10">
+      <header className="bg-[#111] border-b border-[#252525] sticky top-0 z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex items-center justify-between mb-4">
             <div>
-              <h1 className="text-3xl font-bold text-brand-text-primary flex items-center gap-3">
-                <img src="/brand/logo-white.svg" alt="Web3Privacy Now" className="h-10 w-auto" />
+              <h1 className="text-3xl font-bold text-[#e0e0e0] flex items-center gap-3">
+                <img src="/images/w3p-logo.svg" alt="Web3Privacy Now" className="h-10 w-auto opacity-60" />
                 Data Visualizations
               </h1>
-              <p className="mt-1 text-sm text-brand-text-secondary">
+              <p className="mt-1 text-sm text-[#a6adc8]">
                 Interactive analysis of {stats.totalProjects} Web3 privacy projects
               </p>
             </div>
@@ -108,19 +108,19 @@ export default function VisualizationsPage() {
             <nav className="flex items-center gap-4">
               <Link
                 href="/"
-                className="text-sm font-medium text-brand-text-secondary hover:text-brand-accent-blue transition-colors"
+                className="text-sm font-medium text-[#a6adc8] hover:text-[#89b4fa] transition-colors"
               >
                 Home
               </Link>
               <Link
                 href="/search"
-                className="text-sm font-medium text-brand-text-secondary hover:text-brand-accent-purple transition-colors"
+                className="text-sm font-medium text-[#a6adc8] hover:text-[#94e2d5] transition-colors"
               >
                 Search
               </Link>
               <Link
                 href="/chat"
-                className="text-sm font-medium text-brand-text-secondary hover:text-brand-accent-green transition-colors"
+                className="text-sm font-medium text-[#a6adc8] hover:text-[#a6e3a1] transition-colors"
               >
                 AI Assistant
               </Link>
@@ -133,8 +133,8 @@ export default function VisualizationsPage() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Overview Stats */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-brand-text-primary mb-6 flex items-center gap-2">
-            <svg className="w-6 h-6 text-brand-accent-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <h2 className="text-2xl font-bold text-[#e0e0e0] mb-6 flex items-center gap-2">
+            <svg className="w-6 h-6 text-[#94e2d5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
             </svg>
             Overview Statistics
@@ -189,8 +189,8 @@ export default function VisualizationsPage() {
 
         {/* Privacy Techniques & Tech Stack */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-brand-text-primary mb-6 flex items-center gap-2">
-            <svg className="w-6 h-6 text-brand-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <h2 className="text-2xl font-bold text-[#e0e0e0] mb-6 flex items-center gap-2">
+            <svg className="w-6 h-6 text-[#89b4fa]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
             </svg>
             Technology Analysis
@@ -201,7 +201,7 @@ export default function VisualizationsPage() {
               data={privacyTechniquesData}
               title="Privacy Techniques"
               description="Most common privacy technologies used"
-              color="purple"
+              color="cyan"
               maxBars={12}
             />
 
@@ -217,8 +217,8 @@ export default function VisualizationsPage() {
 
         {/* Project Status & Categories */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-brand-text-primary mb-6 flex items-center gap-2">
-            <svg className="w-6 h-6 text-brand-accent-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <h2 className="text-2xl font-bold text-[#e0e0e0] mb-6 flex items-center gap-2">
+            <svg className="w-6 h-6 text-[#a6e3a1]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
             </svg>
             Project Distribution
@@ -241,8 +241,8 @@ export default function VisualizationsPage() {
 
         {/* Confidence & Timeline */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-brand-text-primary mb-6 flex items-center gap-2">
-            <svg className="w-6 h-6 text-brand-accent-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <h2 className="text-2xl font-bold text-[#e0e0e0] mb-6 flex items-center gap-2">
+            <svg className="w-6 h-6 text-[#f9e2af]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
             </svg>
             Quality & Timeline Metrics
@@ -260,15 +260,15 @@ export default function VisualizationsPage() {
               data={foundedYearsData}
               title="Projects by Year Founded"
               description="When privacy projects were established"
-              color="pink"
+              color="red"
             />
           </div>
         </section>
 
         {/* Geographic Distribution */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-brand-text-primary mb-6 flex items-center gap-2">
-            <svg className="w-6 h-6 text-brand-accent-pink" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <h2 className="text-2xl font-bold text-[#e0e0e0] mb-6 flex items-center gap-2">
+            <svg className="w-6 h-6 text-[#f38ba8]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             Geographic Distribution
@@ -285,52 +285,52 @@ export default function VisualizationsPage() {
 
         {/* Network Graph - Relationships */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-brand-text-primary mb-6 flex items-center gap-2">
-            <svg className="w-6 h-6 text-brand-accent-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <h2 className="text-2xl font-bold text-[#e0e0e0] mb-6 flex items-center gap-2">
+            <svg className="w-6 h-6 text-[#94e2d5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
             </svg>
             Project Network
           </h2>
 
-          <div className="bg-brand-bg-darker rounded-lg p-6 border border-brand-bg-active">
+          <div className="bg-[#111] rounded-lg p-6 border border-[#252525]">
             <NetworkGraph projects={projects} width={800} height={600} />
           </div>
         </section>
 
         {/* Timeline Visualization */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-brand-text-primary mb-6 flex items-center gap-2">
-            <svg className="w-6 h-6 text-brand-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <h2 className="text-2xl font-bold text-[#e0e0e0] mb-6 flex items-center gap-2">
+            <svg className="w-6 h-6 text-[#89b4fa]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             Historical Timeline
           </h2>
 
-          <div className="bg-brand-bg-darker rounded-lg p-6 border border-brand-bg-active">
+          <div className="bg-[#111] rounded-lg p-6 border border-[#252525]">
             <Timeline projects={projects} width={800} height={400} />
           </div>
         </section>
 
         {/* Treemap - Hierarchical View */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-brand-text-primary mb-6 flex items-center gap-2">
-            <svg className="w-6 h-6 text-brand-accent-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <h2 className="text-2xl font-bold text-[#e0e0e0] mb-6 flex items-center gap-2">
+            <svg className="w-6 h-6 text-[#a6e3a1]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h4a1 1 0 011 1v7a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM14 5a1 1 0 011-1h4a1 1 0 011 1v2a1 1 0 01-1 1h-4a1 1 0 01-1-1V5zM14 12a1 1 0 011-1h4a1 1 0 011 1v7a1 1 0 01-1 1h-4a1 1 0 01-1-1v-7z" />
             </svg>
             Category Hierarchy
           </h2>
 
-          <div className="bg-brand-bg-darker rounded-lg p-6 border border-brand-bg-active">
+          <div className="bg-[#111] rounded-lg p-6 border border-[#252525]">
             <Treemap projects={projects} width={800} height={600} />
           </div>
         </section>
       </main>
 
       {/* Footer */}
-      <footer className="bg-brand-bg-darker border-t border-brand-bg-active mt-16">
+      <footer className="bg-[#111] border-t border-[#252525] mt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-sm text-brand-text-muted">
+            <p className="text-sm text-[#6c7086]">
               © 2025 Web3Privacy Now Research. All visualizations based on constitutionally verified data.
             </p>
 
@@ -339,7 +339,7 @@ export default function VisualizationsPage() {
                 href="https://github.com/M0nkeyFl0wer/web3-privacy-ethereum-cypherpunk-research"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-brand-text-secondary hover:text-brand-accent-blue transition-colors flex items-center gap-2"
+                className="text-sm text-[#a6adc8] hover:text-[#89b4fa] transition-colors flex items-center gap-2"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path
@@ -353,7 +353,7 @@ export default function VisualizationsPage() {
 
               <Link
                 href="/feedback"
-                className="text-sm text-brand-text-secondary hover:text-brand-accent-green transition-colors"
+                className="text-sm text-[#a6adc8] hover:text-[#a6e3a1] transition-colors"
               >
                 Submit Feedback
               </Link>

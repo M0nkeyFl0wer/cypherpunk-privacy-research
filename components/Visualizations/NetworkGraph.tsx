@@ -179,12 +179,12 @@ export default function NetworkGraph({ projects, width = 1000, height = 600 }: N
             ` : '<div style="margin-bottom: 8px; color: #718096; font-size: 11px; font-style: italic;">Technical details being researched...</div>'}
             ${p.website ? `
               <div style="margin-bottom: 4px; font-size: 10px;">
-                🌐 <a href="${p.website}" target="_blank" style="color: #8b5cf6;">${new URL(p.website).hostname}</a>
+                🌐 <a href="${p.website}" target="_blank" style="color: #94e2d5;">${new URL(p.website).hostname}</a>
               </div>
             ` : ''}
             ${p.github ? `
               <div style="margin-bottom: 4px; font-size: 10px;">
-                💻 <a href="${p.github}" target="_blank" style="color: #8b5cf6;">${p.github.replace('https://github.com/', '')}</a>
+                💻 <a href="${p.github}" target="_blank" style="color: #94e2d5;">${p.github.replace('https://github.com/', '')}</a>
               </div>
             ` : ''}
             ${d.techStack.length > 0 ? `
@@ -199,7 +199,7 @@ export default function NetworkGraph({ projects, width = 1000, height = 600 }: N
             ` : ''}
             <div style="color: #718096; font-size: 10px; margin-top: 8px; padding-top: 8px; border-top: 1px solid #4a5568;">
               ${links.filter(l => (l.source as Node).id === d.id || (l.target as Node).id === d.id).length} connections •
-              <span style="color: #8b5cf6; font-weight: bold;">Click for details →</span>
+              <span style="color: #94e2d5; font-weight: bold;">Click for details →</span>
             </div>
           `)
           .style('left', (event.pageX + 10) + 'px')
@@ -262,14 +262,14 @@ export default function NetworkGraph({ projects, width = 1000, height = 600 }: N
 
   return (
     <div className="relative">
-      <div className="mb-4 text-sm text-brand-text-muted">
+      <div className="mb-4 text-sm text-[#6c7086]">
         <p>🔵 Nodes = Projects • 🔗 Links = Category Connections</p>
         <p className="mt-1">💡 Drag nodes to rearrange • Scroll to zoom • Hover for details • Click to explore</p>
       </div>
-      <svg ref={svgRef} className="bg-brand-bg-darker rounded-lg" />
+      <svg ref={svgRef} className="bg-[#111] rounded-lg" />
       {projects.length === 0 && (
         <div className="absolute inset-0 flex items-center justify-center">
-          <p className="text-brand-text-muted">No project data available</p>
+          <p className="text-[#6c7086]">No project data available</p>
         </div>
       )}
     </div>
