@@ -32,6 +32,9 @@ BATCH_*_AUDIT_*.md
 *_COMMANDS.sh
 *_VERIFICATION.txt
 
+# OSINT raw scan data (large JSON files)
+analysis/osint/*_scan.json
+
 # IDE
 .vscode/
 .idea/
