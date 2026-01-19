@@ -56,16 +56,19 @@ export default function ProjectsPage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 flex items-center justify-center">
-        <div className="text-white text-xl">Loading projects...</div>
+      <div className="min-h-screen bg-[#000] flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin w-12 h-12 border-4 border-[#94e2d5] border-t-transparent rounded-full mx-auto mb-4"></div>
+          <p className="text-[#a6adc8]">Loading projects...</p>
+        </div>
       </div>
     );
   }
 
   if (!data) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 flex items-center justify-center">
-        <div className="text-red-400 text-xl">Failed to load project data</div>
+      <div className="min-h-screen bg-[#000] flex items-center justify-center">
+        <div className="text-[#f38ba8] text-xl">Failed to load project data</div>
       </div>
     );
   }
@@ -75,12 +78,12 @@ export default function ProjectsPage() {
   const insufficientProjects = data.projects.filter(p => p.dataQuality === 'insufficient').sort((a, b) => b.stars - a.stars);
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900">
+    <main className="min-h-screen bg-[#000]">
       {/* Header */}
       <div className="max-w-7xl mx-auto px-8 py-12">
         <Link
           href="/"
-          className="text-sm font-medium text-purple-400 hover:text-purple-300 flex items-center gap-1 transition-colors mb-6"
+          className="text-sm font-medium text-[#94e2d5] hover:text-white flex items-center gap-1 transition-colors mb-6"
         >
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
@@ -88,10 +91,10 @@ export default function ProjectsPage() {
           Back to Home
         </Link>
 
-        <h1 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 mb-4">
+        <h1 className="text-5xl font-bold text-[#e0e0e0] mb-4">
           Project Research
         </h1>
-        <p className="text-xl text-gray-400 max-w-3xl">
+        <p className="text-xl text-[#6c7086] max-w-3xl">
           Comprehensive research on {data.metadata.completeProjects} Web3 privacy projects.
           {' '}{osintProjects.length} include deep OSINT analysis, {standardProjects.length} have standard research.
         </p>
@@ -100,10 +103,10 @@ export default function ProjectsPage() {
       {/* OSINT Deep Dives Section */}
       <section className="max-w-7xl mx-auto px-8 pb-12">
         <div className="flex items-center gap-3 mb-6">
-          <h2 className="text-3xl font-bold text-white">OSINT Deep Dives</h2>
+          <h2 className="text-3xl font-bold text-[#e0e0e0]">OSINT Deep Dives</h2>
           <TierBadge tier="osint" size="lg" />
         </div>
-        <p className="text-gray-400 mb-8">
+        <p className="text-[#6c7086] mb-8">
           Projects with comprehensive infrastructure analysis, subdomain mapping, and security research.
         </p>
 
@@ -112,22 +115,22 @@ export default function ProjectsPage() {
             <Link
               key={project.id}
               href={`/projects/${project.id}`}
-              className="bg-gray-800/50 backdrop-blur-lg rounded-xl p-6 border border-purple-500/30 hover:border-purple-500 transition-all group hover:shadow-xl hover:shadow-purple-500/20"
+              className="bg-[#111] rounded-xl p-6 border border-[#252525] hover:border-[#94e2d5] transition-all group"
             >
               <div className="flex items-start justify-between mb-3">
-                <h3 className="text-xl font-bold text-white group-hover:text-purple-400 transition-colors">
+                <h3 className="text-xl font-bold text-[#e0e0e0] group-hover:text-[#94e2d5] transition-colors">
                   {project.name}
                 </h3>
-                <span className="text-xs text-purple-400 bg-purple-500/10 px-2 py-1 rounded">
+                <span className="text-xs text-[#94e2d5] bg-[#94e2d5]/10 px-2 py-1 rounded">
                   {project.osintLines.toLocaleString()} lines
                 </span>
               </div>
 
-              <p className="text-gray-400 text-sm mb-4 line-clamp-2">
+              <p className="text-[#a6adc8] text-sm mb-4 line-clamp-2">
                 {project.description || 'Privacy-focused Web3 project'}
               </p>
 
-              <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
+              <div className="flex items-center gap-4 text-sm text-[#6c7086] mb-3">
                 <span className="flex items-center gap-1">
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
@@ -135,14 +138,14 @@ export default function ProjectsPage() {
                   {project.stars.toLocaleString()}
                 </span>
                 {project.primaryLanguage && (
-                  <span className="text-gray-500">{project.primaryLanguage}</span>
+                  <span className="text-[#6c7086]">{project.primaryLanguage}</span>
                 )}
               </div>
 
               {project.topics.length > 0 && (
                 <div className="flex flex-wrap gap-1">
                   {project.topics.slice(0, 2).map(topic => (
-                    <span key={topic} className="text-xs bg-purple-500/10 text-purple-300 px-2 py-0.5 rounded">
+                    <span key={topic} className="text-xs bg-[#94e2d5]/10 text-[#94e2d5] px-2 py-0.5 rounded">
                       {topic}
                     </span>
                   ))}
@@ -156,10 +159,10 @@ export default function ProjectsPage() {
       {/* Standard Research Section */}
       <section className="max-w-7xl mx-auto px-8 pb-16">
         <div className="flex items-center gap-3 mb-6">
-          <h2 className="text-3xl font-bold text-white">Standard Research</h2>
+          <h2 className="text-3xl font-bold text-[#e0e0e0]">Standard Research</h2>
           <TierBadge tier="standard" size="lg" />
         </div>
-        <p className="text-gray-400 mb-8">
+        <p className="text-[#6c7086] mb-8">
           Projects with GitHub code analysis, team verification, and security assessments.
         </p>
 
@@ -168,17 +171,17 @@ export default function ProjectsPage() {
             <Link
               key={project.id}
               href={`/projects/${project.id}`}
-              className="bg-gray-800/50 backdrop-blur-lg rounded-xl p-6 border border-gray-700/50 hover:border-gray-600 transition-all group hover:shadow-lg"
+              className="bg-[#111] rounded-xl p-6 border border-[#252525] hover:border-[#89b4fa] transition-all group"
             >
-              <h3 className="text-lg font-bold text-white group-hover:text-blue-400 transition-colors mb-2">
+              <h3 className="text-lg font-bold text-[#e0e0e0] group-hover:text-[#89b4fa] transition-colors mb-2">
                 {project.name}
               </h3>
 
-              <p className="text-gray-400 text-sm mb-4 line-clamp-2">
+              <p className="text-[#a6adc8] text-sm mb-4 line-clamp-2">
                 {project.description || 'Privacy-focused Web3 project'}
               </p>
 
-              <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
+              <div className="flex items-center gap-4 text-sm text-[#6c7086] mb-3">
                 <span className="flex items-center gap-1">
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
@@ -199,7 +202,7 @@ export default function ProjectsPage() {
               {project.languages.length > 0 && (
                 <div className="flex flex-wrap gap-1">
                   {project.languages.slice(0, 3).map(lang => (
-                    <span key={lang.name} className="text-xs bg-gray-700/50 text-gray-400 px-2 py-0.5 rounded">
+                    <span key={lang.name} className="text-xs bg-[#1a1a1a] text-[#6c7086] px-2 py-0.5 rounded">
                       {lang.name}
                     </span>
                   ))}
@@ -214,12 +217,12 @@ export default function ProjectsPage() {
       {insufficientProjects.length > 0 && (
         <section className="max-w-7xl mx-auto px-8 pb-12">
           <div className="flex items-center gap-3 mb-4">
-            <h2 className="text-xl font-bold text-gray-400">Insufficient Data</h2>
-            <span className="text-xs bg-yellow-500/20 text-yellow-300 px-2 py-1 rounded">
+            <h2 className="text-xl font-bold text-[#6c7086]">Insufficient Data</h2>
+            <span className="text-xs bg-[#f9e2af]/20 text-[#f9e2af] px-2 py-1 rounded">
               {insufficientProjects.length} projects
             </span>
           </div>
-          <p className="text-gray-500 text-sm mb-6">
+          <p className="text-[#6c7086] text-sm mb-6">
             These projects have incomplete research data. We include them for transparency.
           </p>
 
@@ -227,10 +230,10 @@ export default function ProjectsPage() {
             {insufficientProjects.map(project => (
               <div
                 key={project.id}
-                className="bg-gray-800/30 rounded-lg p-4 border border-gray-700/30 opacity-60"
+                className="bg-[#111]/30 rounded-lg p-4 border border-[#252525]/30 opacity-60"
               >
-                <h3 className="text-sm font-medium text-gray-400 mb-1">{project.name}</h3>
-                <div className="text-xs text-gray-500">
+                <h3 className="text-sm font-medium text-[#6c7086] mb-1">{project.name}</h3>
+                <div className="text-xs text-[#6c7086]">
                   {project.stars > 0 ? `${project.stars} stars` : 'No data'}
                 </div>
               </div>
@@ -241,15 +244,15 @@ export default function ProjectsPage() {
 
       {/* Footer CTA */}
       <section className="max-w-7xl mx-auto px-8 pb-16">
-        <div className="bg-gradient-to-r from-purple-900/50 to-blue-900/50 rounded-xl p-8 border border-purple-500/30 text-center">
-          <h3 className="text-2xl font-bold text-white mb-4">Explore the Data</h3>
-          <p className="text-gray-400 mb-6">
+        <div className="bg-[#111] rounded-xl p-8 border border-[#252525] text-center">
+          <h3 className="text-2xl font-bold text-[#e0e0e0] mb-4">Explore the Data</h3>
+          <p className="text-[#6c7086] mb-6">
             View interactive visualizations and relationships between projects
           </p>
           <div className="flex gap-4 justify-center">
             <Link
               href="/portal"
-              className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition-colors"
+              className="bg-[#94e2d5] hover:bg-[#74c7ba] text-[#000] px-6 py-3 rounded-lg font-medium transition-colors"
             >
               Open Portal
             </Link>
