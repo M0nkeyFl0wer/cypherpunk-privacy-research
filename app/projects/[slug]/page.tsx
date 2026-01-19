@@ -2,6 +2,13 @@ import Link from 'next/link';
 import { promises as fs } from 'fs';
 import path from 'path';
 import ReactMarkdown from 'react-markdown';
+import dynamic from 'next/dynamic';
+
+// Dynamic import for client-side visualization
+const ProjectMiniGraph = dynamic(
+  () => import('@/components/Visualizations/ProjectMiniGraph'),
+  { ssr: false, loading: () => <div className="h-[300px] bg-[#111] rounded-lg animate-pulse" /> }
+);
 
 // Generate static params for all projects
 export async function generateStaticParams() {
@@ -20,10 +27,10 @@ interface ProjectData {
   github: string;
   website: string;
   tier: 'osint' | 'standard';
-  codeReview: string | null;
+  repoAnalysis: string | null;
   team: string | null;
   security: string | null;
-  osint: string | null;
+  osintSummary: string | null;
   readme: string | null;
   metadata: any;
   githubAnalysis: any;
@@ -61,11 +68,12 @@ async function getProjectData(slug: string): Promise<ProjectData | null> {
   const tier = osintProjects.includes(slug) ? 'osint' : 'standard';
 
   // Load reports
-  const [codeReview, team, security, readme] = await Promise.all([
+  const [repoAnalysis, team, security, readme, osintSummary] = await Promise.all([
     readFile(path.join(base, 'reports', 'CODE_REVIEW.md')),
     readFile(path.join(base, 'reports', 'TEAM.md')),
     readFile(path.join(base, 'reports', 'SECURITY.md')),
     readFile(path.join(base, 'README.md')),
+    readFile(path.join(base, 'reports', 'opsec_vulnerability_assessment.md')),
   ]);
 
   // Load JSON data
@@ -74,25 +82,16 @@ async function getProjectData(slug: string): Promise<ProjectData | null> {
     readJson(path.join(base, 'analysis', 'github_analysis.json')),
   ]);
 
-  // OSINT data
-  let osint = null;
-  if (tier === 'osint') {
-    const osintJson = await readJson(path.join(base, 'analysis', 'osint_data.json'));
-    if (osintJson) {
-      osint = JSON.stringify(osintJson, null, 2);
-    }
-  }
-
   return {
     name: metadata?.name || slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase()),
     description: githubAnalysis?.repository?.description || metadata?.description || '',
     github: githubAnalysis?.repository?.html_url || metadata?.github_url || '',
     website: metadata?.website || '',
     tier,
-    codeReview,
+    repoAnalysis,
     team,
     security,
-    osint,
+    osintSummary,
     readme,
     metadata,
     githubAnalysis,
@@ -108,7 +107,7 @@ export default async function ProjectPage({ params }: { params: { slug: string }
       <main className="min-h-screen bg-[#000] p-8">
         <div className="max-w-4xl mx-auto">
           <p className="text-[#f38ba8]">Project not found: {slug}</p>
-          <Link href="/projects" className="text-[#cba6f7] hover:underline mt-4 inline-block">
+          <Link href="/projects" className="text-[#94e2d5] hover:underline mt-4 inline-block">
             ← Back
           </Link>
         </div>
@@ -123,16 +122,20 @@ export default async function ProjectPage({ params }: { params: { slug: string }
     <main className="min-h-screen bg-[#000]">
       <div className="max-w-4xl mx-auto px-6 py-8">
         {/* Header */}
-        <Link href="/projects" className="text-[#a6adc8] hover:text-[#cba6f7] text-sm mb-6 inline-block">
+        <Link href="/projects" className="text-[#a6adc8] hover:text-[#94e2d5] text-sm mb-6 inline-block">
           ← projects
         </Link>
 
         <div className="flex items-start gap-4 mb-6">
           <div className="flex-1">
             <div className="flex items-center gap-3 mb-2">
-              <h1 className="text-2xl font-semibold text-[#cdd6f4]">{project.name}</h1>
-              <span className={project.tier === 'osint' ? 'badge-osint' : 'badge-standard'}>
-                {project.tier}
+              <h1 className="text-2xl font-semibold text-[#e0e0e0]">{project.name}</h1>
+              <span className={`px-2 py-0.5 text-xs rounded-full font-medium ${
+                project.tier === 'osint'
+                  ? 'bg-[#94e2d5]/20 text-[#94e2d5]'
+                  : 'bg-[#89b4fa]/20 text-[#89b4fa]'
+              }`}>
+                {project.tier === 'osint' ? 'OSINT Deep Dive' : 'Standard'}
               </span>
             </div>
             {project.description && (
@@ -177,34 +180,61 @@ export default async function ProjectPage({ params }: { params: { slug: string }
           </div>
         )}
 
+        {/* Connection Graph */}
+        <div className="mb-8">
+          <h2 className="text-sm font-medium text-[#6c7086] mb-3">Project Connections</h2>
+          <ProjectMiniGraph projectId={slug} height={280} />
+        </div>
+
         {/* Reports */}
-        <div className="space-y-6">
-          {project.codeReview && (
-            <ReportSection title="CODE_REVIEW.md" content={project.codeReview} defaultOpen />
+        <div className="space-y-4">
+          {project.readme && (
+            <ReportSection
+              title="README"
+              content={project.readme}
+              defaultOpen
+              color="#94e2d5"
+            />
+          )}
+
+          {project.osintSummary && (
+            <ReportSection
+              title="OSINT Assessment"
+              content={project.osintSummary}
+              color="#f9e2af"
+            />
+          )}
+
+          {project.repoAnalysis && (
+            <ReportSection
+              title="Repository Analysis"
+              content={project.repoAnalysis}
+              color="#89b4fa"
+              methodology="Analysis performed using cargo audit, semgrep, and direct code inspection on cloned repositories."
+            />
           )}
 
           {project.team && (
-            <ReportSection title="TEAM.md" content={project.team} />
+            <ReportSection
+              title="Team Research"
+              content={project.team}
+              color="#a6e3a1"
+            />
           )}
 
           {project.security && (
-            <ReportSection title="SECURITY.md" content={project.security} />
-          )}
-
-          {project.osint && (
-            <ReportSection title="OSINT_DATA.json" content={project.osint} isCode />
-          )}
-
-          {project.readme && (
-            <ReportSection title="README.md" content={project.readme} />
+            <ReportSection
+              title="Security Analysis"
+              content={project.security}
+              color="#f38ba8"
+            />
           )}
         </div>
 
         {/* Footer */}
-        <div className="mt-12 pt-6 border-t border-[#313244] text-center">
+        <div className="mt-12 pt-6 border-t border-[#252525] text-center">
           <a href="https://web3privacy.info" target="_blank" rel="noopener noreferrer"
-             className="w3p-badge">
-            <img src="/images/w3p-logo.svg" alt="Web3Privacy" className="h-4" />
+             className="inline-flex items-center gap-2 text-[#6c7086] hover:text-[#94e2d5] transition-colors text-sm">
             <span>Community research for Web3Privacy</span>
           </a>
         </div>
@@ -213,26 +243,59 @@ export default async function ProjectPage({ params }: { params: { slug: string }
   );
 }
 
-function ReportSection({ title, content, defaultOpen = false, isCode = false }: {
+function ReportSection({ title, content, defaultOpen = false, color = '#94e2d5', methodology }: {
   title: string;
   content: string;
   defaultOpen?: boolean;
-  isCode?: boolean;
+  color?: string;
+  methodology?: string;
 }) {
+  // Transform image URLs to use local /media/ path
+  const transformedContent = content.replace(
+    /!\[([^\]]*)\]\(([^)]+)\)/g,
+    (match, alt, url) => {
+      // Extract just the filename from any URL
+      const filename = url.split('/').pop();
+      if (filename && (filename.endsWith('.png') || filename.endsWith('.jpg') || filename.endsWith('.svg'))) {
+        // Use local media path
+        return `![${alt}](/media/${filename})`;
+      }
+      return match;
+    }
+  );
+
   return (
-    <details open={defaultOpen} className="group">
-      <summary className="accordion-trigger list-none cursor-pointer">
-        <span className="text-[#cdd6f4] font-medium">{title}</span>
-        <span className="text-[#6c7086] group-open:rotate-180 transition-transform">▼</span>
+    <details open={defaultOpen} className="group border border-[#252525] rounded-lg overflow-hidden">
+      <summary className="flex items-center justify-between px-4 py-3 bg-[#111] cursor-pointer hover:bg-[#1a1a1a] transition-colors list-none">
+        <span className="font-medium" style={{ color }}>{title}</span>
+        <span className="text-[#6c7086] group-open:rotate-180 transition-transform text-sm">▼</span>
       </summary>
-      <div className="accordion-content">
-        {isCode ? (
-          <pre className="text-xs overflow-x-auto text-[#a6adc8]">{content}</pre>
-        ) : (
-          <div className="prose text-sm">
-            <ReactMarkdown>{content}</ReactMarkdown>
+      <div className="p-4 bg-[#0a0a0a]">
+        {methodology && (
+          <div className="mb-4 pb-3 border-b border-[#252525]">
+            <Link href="/methodology" className="text-xs text-[#6c7086] hover:text-[#94e2d5] transition-colors flex items-center gap-2">
+              <span className="text-[#89b4fa]">⚙</span>
+              <span>{methodology}</span>
+              <span className="text-[#89b4fa]">→ methodology</span>
+            </Link>
           </div>
         )}
+        <div className="prose prose-invert prose-sm max-w-none prose-headings:text-[#e0e0e0] prose-p:text-[#a6adc8] prose-strong:text-[#e0e0e0] prose-code:text-[#94e2d5] prose-a:text-[#89b4fa]">
+          <ReactMarkdown
+            components={{
+              img: ({ src, alt }) => (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={src}
+                  alt={alt || ''}
+                  className="max-w-[200px] h-auto rounded-lg my-4"
+                />
+              ),
+            }}
+          >
+            {transformedContent}
+          </ReactMarkdown>
+        </div>
       </div>
     </details>
   );
