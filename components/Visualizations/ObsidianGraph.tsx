@@ -30,6 +30,8 @@ interface ObsidianGraphProps {
   width?: number;
   height?: number;
   initialFilter?: string[];
+  initialZoom?: number;
+  projectsOnly?: boolean; // Start with only projects visible
 }
 
 const NODE_COLORS: Record<string, string> = {
@@ -48,13 +50,13 @@ const NODE_SHAPES: Record<string, string> = {
   contributor: 'circle',
 };
 
-export default function ObsidianGraph({ width = 1000, height = 700, initialFilter }: ObsidianGraphProps) {
+export default function ObsidianGraph({ width = 1000, height = 700, initialFilter, initialZoom = 1, projectsOnly = false }: ObsidianGraphProps) {
   const svgRef = useRef<SVGSVGElement>(null);
   const router = useRouter();
   const [data, setData] = useState<GraphData | null>(null);
   const [loading, setLoading] = useState(true);
   const [activeFilters, setActiveFilters] = useState<Set<string>>(
-    new Set(initialFilter || ['project', 'language', 'topic'])
+    new Set(projectsOnly ? ['project'] : (initialFilter || ['project', 'language', 'topic']))
   );
   const [hoveredNode, setHoveredNode] = useState<string | null>(null);
   const [focusedNode, setFocusedNode] = useState<GraphNode | null>(null); // For sub-graph view
@@ -142,6 +144,13 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
         g.attr('transform', event.transform);
       });
     svg.call(zoom);
+
+    // Apply initial zoom - center and scale appropriately
+    const initialTransform = d3.zoomIdentity
+      .translate(width / 2, height / 2)
+      .scale(initialZoom)
+      .translate(-width / 2, -height / 2);
+    svg.call(zoom.transform, initialTransform);
 
     // Create simulation
     const simulation = d3.forceSimulation<GraphNode>(filteredNodes)

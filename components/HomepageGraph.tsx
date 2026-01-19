@@ -141,8 +141,9 @@ export function HomepageGraph() {
         <div className="rounded-lg overflow-hidden border border-[#252525]">
           <ObsidianGraph
             width={800}
-            height={500}
-            initialFilter={['project', 'language', 'topic']}
+            height={450}
+            projectsOnly={true}
+            initialZoom={0.85}
           />
         </div>
       )}
@@ -151,9 +152,9 @@ export function HomepageGraph() {
       <div className="flex items-center gap-6 text-xs text-[#6c7086]">
         <span>{allProjects.length} projects</span>
         <span>•</span>
-        <span>Click any node to explore</span>
+        <span>Click project to explore its connections</span>
         <span>•</span>
-        <span>Language/topic nodes show related projects</span>
+        <span>Click again for full details</span>
       </div>
     </div>
   );

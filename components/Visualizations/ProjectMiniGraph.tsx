@@ -1,12 +1,14 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { useRouter } from 'next/navigation';
 import * as d3 from 'd3';
 
 interface ProjectMiniGraphProps {
   projectId: string;
   width?: number;
   height?: number;
+  onNodeClick?: (nodeId: string, nodeType: string) => void;
 }
 
 interface GraphNode extends d3.SimulationNodeDatum {
@@ -30,10 +32,23 @@ const NODE_COLORS: Record<string, string> = {
   license: '#f9e2af',
 };
 
-export default function ProjectMiniGraph({ projectId, width = 400, height = 300 }: ProjectMiniGraphProps) {
+export default function ProjectMiniGraph({ projectId, width = 400, height = 300, onNodeClick }: ProjectMiniGraphProps) {
   const svgRef = useRef<SVGSVGElement>(null);
+  const router = useRouter();
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+
+  const handleNodeClick = (node: GraphNode) => {
+    if (onNodeClick) {
+      onNodeClick(node.id, node.type);
+    } else if (node.type === 'project' && node.id !== projectId) {
+      // Navigate to another project
+      router.push(`/projects/${node.id}`);
+    } else if (node.type !== 'project') {
+      // Navigate to portal with this node focused
+      router.push(`/portal?focus=${node.id}&type=${node.type}`);
+    }
+  };
 
   useEffect(() => {
     if (!svgRef.current) return;
@@ -123,12 +138,28 @@ export default function ProjectMiniGraph({ projectId, width = 400, height = 300 
       .attr('stroke-opacity', 0.4)
       .attr('stroke-width', 1.5);
 
+    // Tooltip
+    const tooltip = d3.select('body')
+      .append('div')
+      .attr('class', 'mini-graph-tooltip')
+      .style('position', 'absolute')
+      .style('background', 'rgba(17, 17, 17, 0.95)')
+      .style('border', '1px solid #252525')
+      .style('border-radius', '6px')
+      .style('padding', '8px 12px')
+      .style('color', '#e0e0e0')
+      .style('font-size', '11px')
+      .style('pointer-events', 'none')
+      .style('opacity', 0)
+      .style('z-index', 1000);
+
     // Draw nodes
     const node = g.append('g')
       .selectAll('g')
       .data(nodes)
       .join('g')
-      .attr('class', 'node');
+      .attr('class', 'node')
+      .style('cursor', 'pointer');
 
     // Add shapes
     node.each(function(d) {
@@ -179,6 +210,48 @@ export default function ProjectMiniGraph({ projectId, width = 400, height = 300 
       .attr('fill', '#a6adc8')
       .attr('font-size', d => d.type === 'project' ? '11px' : '9px')
       .attr('pointer-events', 'none');
+
+    // Node interactions
+    node
+      .on('mouseover', function(event, d) {
+        let hint = '';
+        if (d.id === projectId) {
+          hint = 'Current project';
+        } else if (d.type === 'project') {
+          hint = 'Click to view project';
+        } else {
+          hint = `Click to explore ${d.type}`;
+        }
+
+        tooltip
+          .html(`<div style="font-weight: 500;">${d.name}</div><div style="color: ${NODE_COLORS[d.type]}; font-size: 10px;">${hint}</div>`)
+          .style('opacity', 1)
+          .style('left', (event.pageX + 10) + 'px')
+          .style('top', (event.pageY - 10) + 'px');
+
+        // Highlight on hover
+        d3.select(this).select('circle, polygon, rect')
+          .attr('stroke-width', 3);
+      })
+      .on('mousemove', function(event) {
+        tooltip
+          .style('left', (event.pageX + 10) + 'px')
+          .style('top', (event.pageY - 10) + 'px');
+      })
+      .on('mouseout', function() {
+        tooltip.style('opacity', 0);
+        d3.select(this).select('circle, polygon, rect')
+          .attr('stroke-width', d => (d as GraphNode).type === 'project' ? 2 : 1);
+      })
+      .on('click', function(event, d) {
+        event.stopPropagation();
+        handleNodeClick(d);
+      });
+
+    // Cleanup tooltip on unmount
+    return () => {
+      tooltip.remove();
+    };
 
     // Update positions
     simulation.on('tick', () => {
