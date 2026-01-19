@@ -11,10 +11,10 @@ module.exports = {
       colors: {
         brand: {
           bg: {
-            dark: '#0a0b0d',
-            darker: '#06070a',
-            active: '#151620',
-            hover: '#1e1f2e',
+            dark: '#000000',
+            darker: '#000000',
+            active: '#111111',
+            hover: '#1a1a1a',
           },
           text: {
             primary: '#ffffff',
@@ -22,13 +22,13 @@ module.exports = {
             muted: '#6b6d7a',
           },
           accent: {
-            purple: '#8b5cf6',
-            'purple-hover': '#7c3aed',
-            'purple-active': '#6d28d9',
-            blue: '#3b82f6',
-            green: '#10b981',
-            yellow: '#f59e0b',
-            pink: '#ec4899',
+            white: '#ffffff',
+            primary: '#ffffff',
+            blue: '#89b4fa',
+            green: '#a6e3a1',
+            yellow: '#f9e2af',
+            cyan: '#94e2d5',
+            red: '#f38ba8',
           }
         }
       },
