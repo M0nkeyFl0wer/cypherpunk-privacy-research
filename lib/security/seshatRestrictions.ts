@@ -120,6 +120,9 @@ export interface SafeOllamaRequest {
   stream?: boolean;
 }
 
+// Model configuration - use env var or default to qwen3:8b (good balance of speed/quality)
+const OLLAMA_MODEL = process.env.NEXT_PUBLIC_OLLAMA_MODEL || 'qwen3:8b';
+
 export function createSafeOllamaRequest(
   query: string,
   stream: boolean = false
@@ -134,7 +137,7 @@ export function createSafeOllamaRequest(
   const sanitized = sanitizeSeshatQuery(query);
 
   return {
-    model: 'llama3.1:8b',
+    model: OLLAMA_MODEL,
     prompt: sanitized,
     stream,
   };

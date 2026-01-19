@@ -12,7 +12,9 @@ import {
   logSecurityEvent,
 } from '@/lib/security/seshatRestrictions';
 
-const SESHAT_OLLAMA_URL = 'https://your-server.example.com:11434/api/generate';
+// Use local tunnel (via scripts/start-ollama-tunnel.sh) or direct connection
+// Tunnel: ssh -N -L 11434:localhost:11434 seshat
+const SESHAT_OLLAMA_URL = process.env.NEXT_PUBLIC_OLLAMA_URL || 'http://localhost:11434/api/generate';
 
 export interface SecureOllamaMessage {
   role: 'user' | 'assistant';
