@@ -1,0 +1,56 @@
+{
+  "nodes": [
+    {"id": "signal", "label": "Signal", "category": "messaging", "ecosystem": "standalone", "language": "Rust", "postQuantum": true},
+    {"id": "telegram", "label": "Telegram", "category": "messaging", "ecosystem": "standalone", "language": "C++", "postQuantum": false},
+    {"id": "meshtastic", "label": "Meshtastic", "category": "mesh-network", "ecosystem": "standalone", "language": "C++", "postQuantum": false},
+    {"id": "protonmail", "label": "ProtonMail", "category": "email", "ecosystem": "standalone", "language": "Go/TypeScript", "postQuantum": false},
+    {"id": "miden", "label": "Miden", "category": "zk-rollup", "ecosystem": "ethereum", "language": "Rust", "postQuantum": true},
+    {"id": "nym", "label": "NYM", "category": "mixnet", "ecosystem": "cosmos", "language": "Rust", "postQuantum": false},
+    {"id": "secret-network", "label": "Secret Network", "category": "privacy-blockchain", "ecosystem": "cosmos", "language": "Rust/Go", "postQuantum": false},
+    {"id": "cake-wallet", "label": "Cake Wallet", "category": "wallet", "ecosystem": "monero", "language": "Dart/Flutter", "postQuantum": false},
+    {"id": "zano", "label": "Zano", "category": "privacy-coin", "ecosystem": "cryptonote", "language": "C++", "postQuantum": false}
+  ],
+  "edges": [
+    {"source": "signal", "target": "meshtastic", "relationship": "shared-crypto", "detail": "Curve25519"},
+    {"source": "signal", "target": "nym", "relationship": "shared-crypto", "detail": "Curve25519/x25519"},
+    {"source": "nym", "target": "secret-network", "relationship": "shared-framework", "detail": "Cosmos SDK"},
+    {"source": "signal", "target": "miden", "relationship": "shared-property", "detail": "Post-Quantum Ready"},
+    {"source": "signal", "target": "nym", "relationship": "shared-language", "detail": "Rust"},
+    {"source": "signal", "target": "miden", "relationship": "shared-language", "detail": "Rust"},
+    {"source": "signal", "target": "secret-network", "relationship": "shared-language", "detail": "Rust"},
+    {"source": "nym", "target": "miden", "relationship": "shared-language", "detail": "Rust"},
+    {"source": "nym", "target": "secret-network", "relationship": "shared-language", "detail": "Rust"},
+    {"source": "miden", "target": "secret-network", "relationship": "shared-language", "detail": "Rust"},
+    {"source": "telegram", "target": "meshtastic", "relationship": "shared-language", "detail": "C++"},
+    {"source": "telegram", "target": "zano", "relationship": "shared-language", "detail": "C++"},
+    {"source": "meshtastic", "target": "zano", "relationship": "shared-language", "detail": "C++"},
+    {"source": "secret-network", "target": "protonmail", "relationship": "shared-language", "detail": "Go"}
+  ],
+  "clusters": {
+    "rust-privacy": {
+      "label": "Rust Memory-Safe Privacy",
+      "members": ["signal", "miden", "nym", "secret-network"],
+      "description": "Projects using Rust for cryptographic safety"
+    },
+    "cosmos-ecosystem": {
+      "label": "Cosmos SDK Ecosystem",
+      "members": ["nym", "secret-network"],
+      "description": "Privacy projects built on Cosmos"
+    },
+    "post-quantum": {
+      "label": "Post-Quantum Ready",
+      "members": ["signal", "miden"],
+      "description": "Projects with quantum-resistant cryptography"
+    },
+    "curve25519-users": {
+      "label": "Curve25519 Implementations",
+      "members": ["signal", "meshtastic", "nym"],
+      "description": "Projects using Curve25519/x25519 key exchange"
+    }
+  },
+  "metadata": {
+    "generated": "2026-01-19",
+    "source": "Constitutional Research Code Analysis",
+    "version": "1.0"
+  }
+}
