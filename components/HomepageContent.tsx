@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { CollapsibleSection } from './CollapsibleSection';
+import { HomepageGraph } from './HomepageGraph';
 
 interface Project {
   slug: string;
@@ -29,6 +30,13 @@ export function HomepageContent({
 }: HomepageContentProps) {
   return (
     <>
+      {/* Interactive Graph & Search - Primary navigation */}
+      <div className="border-b border-[#252525]">
+        <div className="max-w-4xl mx-auto px-6 py-12">
+          <HomepageGraph />
+        </div>
+      </div>
+
       {/* Executive Summary - NOW FIRST after Hero (Constitution III) */}
       <div className="border-b border-[#252525]">
         <div className="max-w-4xl mx-auto px-6 py-12">
