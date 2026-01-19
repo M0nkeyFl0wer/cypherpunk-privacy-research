@@ -57,6 +57,7 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
     new Set(initialFilter || ['project', 'language', 'topic'])
   );
   const [hoveredNode, setHoveredNode] = useState<string | null>(null);
+  const [focusedNode, setFocusedNode] = useState<GraphNode | null>(null); // For sub-graph view
 
   // Load data
   useEffect(() => {
@@ -79,14 +80,37 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
   useEffect(() => {
     if (!svgRef.current || !data) return;
 
-    // Filter nodes and links based on active filters
-    const filteredNodes = data.nodes.filter(n => activeFilters.has(n.type));
-    const nodeIds = new Set(filteredNodes.map(n => n.id));
-    const filteredLinks = data.links.filter(l => {
-      const sourceId = typeof l.source === 'string' ? l.source : l.source.id;
-      const targetId = typeof l.target === 'string' ? l.target : l.target.id;
-      return nodeIds.has(sourceId) && nodeIds.has(targetId);
-    });
+    // Filter nodes and links based on active filters AND focused node
+    let filteredNodes: GraphNode[];
+    let filteredLinks: GraphLink[];
+
+    if (focusedNode) {
+      // Sub-graph mode: show only the focused node and its direct connections
+      const connectedProjectIds = new Set<string>();
+      data.links.forEach(l => {
+        const sourceId = typeof l.source === 'string' ? l.source : l.source.id;
+        const targetId = typeof l.target === 'string' ? l.target : l.target.id;
+        if (sourceId === focusedNode.id) connectedProjectIds.add(targetId);
+        if (targetId === focusedNode.id) connectedProjectIds.add(sourceId);
+      });
+      connectedProjectIds.add(focusedNode.id);
+
+      filteredNodes = data.nodes.filter(n => connectedProjectIds.has(n.id));
+      filteredLinks = data.links.filter(l => {
+        const sourceId = typeof l.source === 'string' ? l.source : l.source.id;
+        const targetId = typeof l.target === 'string' ? l.target : l.target.id;
+        return connectedProjectIds.has(sourceId) && connectedProjectIds.has(targetId);
+      });
+    } else {
+      // Normal mode: filter by type
+      filteredNodes = data.nodes.filter(n => activeFilters.has(n.type));
+      const nodeIds = new Set(filteredNodes.map(n => n.id));
+      filteredLinks = data.links.filter(l => {
+        const sourceId = typeof l.source === 'string' ? l.source : l.source.id;
+        const targetId = typeof l.target === 'string' ? l.target : l.target.id;
+        return nodeIds.has(sourceId) && nodeIds.has(targetId);
+      });
+    }
 
     // Clear previous
     d3.select(svgRef.current).selectAll('*').remove();
@@ -169,7 +193,7 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
       .data(filteredNodes)
       .join('g')
       .attr('class', 'node')
-      .style('cursor', d => d.type === 'project' ? 'pointer' : 'default')
+      .style('cursor', 'pointer') // All nodes are clickable now
       .call(d3.drag<SVGGElement, GraphNode>()
         .on('start', dragstarted)
         .on('drag', dragged)
@@ -306,6 +330,8 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
 
         if (d.type === 'project') {
           content += `<div style="color: #94e2d5; font-size: 10px; margin-top: 4px;">Click to view details →</div>`;
+        } else {
+          content += `<div style="color: #89b4fa; font-size: 10px; margin-top: 4px;">Click to explore related projects →</div>`;
         }
 
         tooltip
@@ -328,6 +354,9 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
       .on('click', function(event, d) {
         if (d.type === 'project') {
           router.push(`/projects/${d.id}`);
+        } else {
+          // Non-project node: enter sub-graph focus mode
+          setFocusedNode(d);
         }
       });
 
@@ -363,7 +392,7 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
       simulation.stop();
       tooltip.remove();
     };
-  }, [data, activeFilters, width, height, router]);
+  }, [data, activeFilters, width, height, router, focusedNode]);
 
   const toggleFilter = (type: string) => {
     setActiveFilters(prev => {
@@ -387,27 +416,53 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
 
   return (
     <div className="relative">
-      {/* Legend & Filters */}
-      <div className="flex flex-wrap items-center gap-4 mb-4 p-4 bg-[#111]/50 rounded-lg">
-        <span className="text-sm text-[#6c7086]">Show:</span>
-        {Object.entries(NODE_COLORS).map(([type, color]) => (
-          <button
-            key={type}
-            onClick={() => toggleFilter(type)}
-            className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm transition-all ${
-              activeFilters.has(type)
-                ? 'bg-[#1a1a1a] text-white'
-                : 'bg-[#111]/50 text-[#6c7086] opacity-50'
-            }`}
-          >
+      {/* Focus Mode Header */}
+      {focusedNode && (
+        <div className="mb-4 p-4 bg-[#111] rounded-lg border border-[#252525] flex items-center justify-between">
+          <div className="flex items-center gap-3">
             <span
-              className="w-3 h-3 rounded-full"
-              style={{ backgroundColor: color }}
+              className="w-4 h-4 rounded-full"
+              style={{ backgroundColor: NODE_COLORS[focusedNode.type] }}
             />
-            <span className="capitalize">{type}s</span>
+            <div>
+              <div className="text-[#e0e0e0] font-medium">{focusedNode.name}</div>
+              <div className="text-xs text-[#6c7086]">
+                Showing all projects using this {focusedNode.type}
+              </div>
+            </div>
+          </div>
+          <button
+            onClick={() => setFocusedNode(null)}
+            className="px-4 py-2 bg-[#252525] hover:bg-[#303030] text-[#e0e0e0] rounded-lg text-sm transition-colors"
+          >
+            ← Back to full graph
           </button>
-        ))}
-      </div>
+        </div>
+      )}
+
+      {/* Legend & Filters - hide when focused */}
+      {!focusedNode && (
+        <div className="flex flex-wrap items-center gap-4 mb-4 p-4 bg-[#111]/50 rounded-lg">
+          <span className="text-sm text-[#6c7086]">Show:</span>
+          {Object.entries(NODE_COLORS).map(([type, color]) => (
+            <button
+              key={type}
+              onClick={() => toggleFilter(type)}
+              className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm transition-all ${
+                activeFilters.has(type)
+                  ? 'bg-[#1a1a1a] text-white'
+                  : 'bg-[#111]/50 text-[#6c7086] opacity-50'
+              }`}
+            >
+              <span
+                className="w-3 h-3 rounded-full"
+                style={{ backgroundColor: color }}
+              />
+              <span className="capitalize">{type}s</span>
+            </button>
+          ))}
+        </div>
+      )}
 
       {/* Instructions */}
       <div className="text-xs text-[#6c7086] mb-2 flex items-center gap-4">
@@ -417,7 +472,7 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
         <span>•</span>
         <span>Hover for details</span>
         <span>•</span>
-        <span>Click projects to explore</span>
+        <span>Click to explore</span>
       </div>
 
       {/* Graph */}
