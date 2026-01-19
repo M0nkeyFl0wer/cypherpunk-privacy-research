@@ -1,0 +1,448 @@
+'use client';
+
+import { useEffect, useRef, useState } from 'react';
+import { useRouter } from 'next/navigation';
+import * as d3 from 'd3';
+
+interface GraphNode extends d3.SimulationNodeDatum {
+  id: string;
+  name: string;
+  type: 'project' | 'language' | 'topic' | 'license' | 'contributor';
+  size: number;
+  tier?: 'osint' | 'standard';
+  stars?: number;
+  count?: number;
+}
+
+interface GraphLink extends d3.SimulationLinkDatum<GraphNode> {
+  source: string | GraphNode;
+  target: string | GraphNode;
+  type: string;
+  weight?: number;
+}
+
+interface GraphData {
+  nodes: GraphNode[];
+  links: GraphLink[];
+}
+
+interface ObsidianGraphProps {
+  width?: number;
+  height?: number;
+  initialFilter?: string[];
+}
+
+const NODE_COLORS: Record<string, string> = {
+  project: '#8b5cf6',      // Purple for projects
+  language: '#3b82f6',     // Blue for languages
+  topic: '#10b981',        // Green for topics
+  license: '#f59e0b',      // Amber for licenses
+  contributor: '#ec4899',  // Pink for contributors
+};
+
+const NODE_SHAPES: Record<string, string> = {
+  project: 'circle',
+  language: 'hexagon',
+  topic: 'diamond',
+  license: 'square',
+  contributor: 'circle',
+};
+
+export default function ObsidianGraph({ width = 1000, height = 700, initialFilter }: ObsidianGraphProps) {
+  const svgRef = useRef<SVGSVGElement>(null);
+  const router = useRouter();
+  const [data, setData] = useState<GraphData | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [activeFilters, setActiveFilters] = useState<Set<string>>(
+    new Set(initialFilter || ['project', 'language', 'topic'])
+  );
+  const [hoveredNode, setHoveredNode] = useState<string | null>(null);
+
+  // Load data
+  useEffect(() => {
+    fetch('/data/research-graph.json')
+      .then(res => res.json())
+      .then(graphData => {
+        setData({
+          nodes: graphData.nodes,
+          links: graphData.links,
+        });
+        setLoading(false);
+      })
+      .catch(err => {
+        console.error('Failed to load graph data:', err);
+        setLoading(false);
+      });
+  }, []);
+
+  // Render graph
+  useEffect(() => {
+    if (!svgRef.current || !data) return;
+
+    // Filter nodes and links based on active filters
+    const filteredNodes = data.nodes.filter(n => activeFilters.has(n.type));
+    const nodeIds = new Set(filteredNodes.map(n => n.id));
+    const filteredLinks = data.links.filter(l => {
+      const sourceId = typeof l.source === 'string' ? l.source : l.source.id;
+      const targetId = typeof l.target === 'string' ? l.target : l.target.id;
+      return nodeIds.has(sourceId) && nodeIds.has(targetId);
+    });
+
+    // Clear previous
+    d3.select(svgRef.current).selectAll('*').remove();
+
+    const svg = d3.select(svgRef.current)
+      .attr('width', width)
+      .attr('height', height)
+      .attr('viewBox', [0, 0, width, height]);
+
+    // Add gradient definitions for OSINT projects
+    const defs = svg.append('defs');
+
+    const osintGradient = defs.append('radialGradient')
+      .attr('id', 'osint-gradient');
+    osintGradient.append('stop')
+      .attr('offset', '0%')
+      .attr('stop-color', '#c084fc');
+    osintGradient.append('stop')
+      .attr('offset', '100%')
+      .attr('stop-color', '#8b5cf6');
+
+    // Container for zoom
+    const g = svg.append('g');
+
+    // Zoom behavior
+    const zoom = d3.zoom<SVGSVGElement, unknown>()
+      .scaleExtent([0.2, 4])
+      .on('zoom', (event) => {
+        g.attr('transform', event.transform);
+      });
+    svg.call(zoom);
+
+    // Create simulation
+    const simulation = d3.forceSimulation<GraphNode>(filteredNodes)
+      .force('link', d3.forceLink<GraphNode, GraphLink>(filteredLinks)
+        .id(d => d.id)
+        .distance(d => {
+          // Shorter distances for language/topic connections
+          const linkType = (d as any).type;
+          if (linkType === 'uses_language' || linkType === 'tagged_with') return 60;
+          return 100;
+        })
+        .strength(0.5)
+      )
+      .force('charge', d3.forceManyBody()
+        .strength(d => {
+          // Projects attract more strongly
+          if ((d as GraphNode).type === 'project') return -200;
+          return -80;
+        })
+      )
+      .force('center', d3.forceCenter(width / 2, height / 2))
+      .force('collision', d3.forceCollide()
+        .radius(d => (d as GraphNode).size + 5)
+      )
+      .force('x', d3.forceX(width / 2).strength(0.05))
+      .force('y', d3.forceY(height / 2).strength(0.05));
+
+    // Draw links
+    const link = g.append('g')
+      .attr('class', 'links')
+      .selectAll('line')
+      .data(filteredLinks)
+      .join('line')
+      .attr('stroke', d => {
+        const type = (d as any).type;
+        if (type === 'uses_language') return '#3b82f6';
+        if (type === 'tagged_with') return '#10b981';
+        if (type === 'licensed_under') return '#f59e0b';
+        if (type === 'contributes_to') return '#ec4899';
+        return '#4a5568';
+      })
+      .attr('stroke-opacity', 0.3)
+      .attr('stroke-width', 1);
+
+    // Draw nodes
+    const node = g.append('g')
+      .attr('class', 'nodes')
+      .selectAll('g')
+      .data(filteredNodes)
+      .join('g')
+      .attr('class', 'node')
+      .style('cursor', d => d.type === 'project' ? 'pointer' : 'default')
+      .call(d3.drag<SVGGElement, GraphNode>()
+        .on('start', dragstarted)
+        .on('drag', dragged)
+        .on('end', dragended) as any
+      );
+
+    // Add shapes based on type
+    node.each(function(d) {
+      const el = d3.select(this);
+      const size = d.size || 10;
+
+      if (d.type === 'project') {
+        // Circle for projects
+        el.append('circle')
+          .attr('r', size)
+          .attr('fill', d.tier === 'osint' ? 'url(#osint-gradient)' : NODE_COLORS.project)
+          .attr('stroke', d.tier === 'osint' ? '#c084fc' : '#6d28d9')
+          .attr('stroke-width', d.tier === 'osint' ? 3 : 1.5);
+      } else if (d.type === 'language') {
+        // Hexagon for languages
+        const hexPoints = Array.from({ length: 6 }, (_, i) => {
+          const angle = (i * 60 - 30) * Math.PI / 180;
+          return `${Math.cos(angle) * size},${Math.sin(angle) * size}`;
+        }).join(' ');
+        el.append('polygon')
+          .attr('points', hexPoints)
+          .attr('fill', NODE_COLORS.language)
+          .attr('stroke', '#2563eb')
+          .attr('stroke-width', 1.5);
+      } else if (d.type === 'topic') {
+        // Diamond for topics
+        const diamondPoints = `0,${-size} ${size},0 0,${size} ${-size},0`;
+        el.append('polygon')
+          .attr('points', diamondPoints)
+          .attr('fill', NODE_COLORS.topic)
+          .attr('stroke', '#059669')
+          .attr('stroke-width', 1.5);
+      } else if (d.type === 'license') {
+        // Square for licenses
+        el.append('rect')
+          .attr('x', -size)
+          .attr('y', -size)
+          .attr('width', size * 2)
+          .attr('height', size * 2)
+          .attr('fill', NODE_COLORS.license)
+          .attr('stroke', '#d97706')
+          .attr('stroke-width', 1.5);
+      } else if (d.type === 'contributor') {
+        // Small circle for contributors
+        el.append('circle')
+          .attr('r', size)
+          .attr('fill', NODE_COLORS.contributor)
+          .attr('stroke', '#db2777')
+          .attr('stroke-width', 1);
+      }
+    });
+
+    // Add labels for larger nodes
+    node.filter(d => d.size >= 8 || d.type === 'project')
+      .append('text')
+      .text(d => d.name.length > 12 ? d.name.slice(0, 10) + '...' : d.name)
+      .attr('x', 0)
+      .attr('y', d => (d.size || 10) + 12)
+      .attr('text-anchor', 'middle')
+      .attr('fill', '#9ca3af')
+      .attr('font-size', d => d.type === 'project' ? '10px' : '8px')
+      .attr('pointer-events', 'none');
+
+    // Tooltip
+    const tooltip = d3.select('body')
+      .append('div')
+      .attr('class', 'obsidian-tooltip')
+      .style('position', 'absolute')
+      .style('background', 'rgba(17, 24, 39, 0.95)')
+      .style('border', '1px solid #374151')
+      .style('border-radius', '8px')
+      .style('padding', '12px')
+      .style('color', '#e5e7eb')
+      .style('font-size', '12px')
+      .style('pointer-events', 'none')
+      .style('opacity', 0)
+      .style('z-index', 1000)
+      .style('max-width', '300px')
+      .style('box-shadow', '0 10px 25px rgba(0,0,0,0.5)');
+
+    // Interactions
+    node
+      .on('mouseover', function(event, d) {
+        setHoveredNode(d.id);
+
+        // Highlight connected links
+        link.attr('stroke-opacity', l => {
+          const sourceId = typeof l.source === 'string' ? l.source : l.source.id;
+          const targetId = typeof l.target === 'string' ? l.target : l.target.id;
+          return (sourceId === d.id || targetId === d.id) ? 0.8 : 0.1;
+        }).attr('stroke-width', l => {
+          const sourceId = typeof l.source === 'string' ? l.source : l.source.id;
+          const targetId = typeof l.target === 'string' ? l.target : l.target.id;
+          return (sourceId === d.id || targetId === d.id) ? 2 : 1;
+        });
+
+        // Dim unconnected nodes
+        const connectedIds = new Set([d.id]);
+        filteredLinks.forEach(l => {
+          const sourceId = typeof l.source === 'string' ? l.source : l.source.id;
+          const targetId = typeof l.target === 'string' ? l.target : l.target.id;
+          if (sourceId === d.id) connectedIds.add(targetId);
+          if (targetId === d.id) connectedIds.add(sourceId);
+        });
+
+        node.style('opacity', n => connectedIds.has(n.id) ? 1 : 0.3);
+
+        // Show tooltip
+        let content = `<div style="font-weight: 600; font-size: 14px; margin-bottom: 4px;">${d.name}</div>`;
+        content += `<div style="color: ${NODE_COLORS[d.type]}; font-size: 10px; text-transform: uppercase; margin-bottom: 8px;">${d.type}</div>`;
+
+        if (d.type === 'project' && d.tier === 'osint') {
+          content += `<div style="color: #c084fc; font-size: 11px; margin-bottom: 4px;">OSINT Deep Dive</div>`;
+        }
+        if (d.stars) {
+          content += `<div style="font-size: 11px;">Stars: ${d.stars.toLocaleString()}</div>`;
+        }
+        if (d.count) {
+          content += `<div style="font-size: 11px;">Used by: ${d.count} projects</div>`;
+        }
+
+        const connectionCount = filteredLinks.filter(l => {
+          const sourceId = typeof l.source === 'string' ? l.source : l.source.id;
+          const targetId = typeof l.target === 'string' ? l.target : l.target.id;
+          return sourceId === d.id || targetId === d.id;
+        }).length;
+
+        content += `<div style="color: #6b7280; font-size: 10px; margin-top: 8px; padding-top: 8px; border-top: 1px solid #374151;">${connectionCount} connections</div>`;
+
+        if (d.type === 'project') {
+          content += `<div style="color: #8b5cf6; font-size: 10px; margin-top: 4px;">Click to view details →</div>`;
+        }
+
+        tooltip
+          .html(content)
+          .style('opacity', 1)
+          .style('left', (event.pageX + 15) + 'px')
+          .style('top', (event.pageY - 10) + 'px');
+      })
+      .on('mousemove', function(event) {
+        tooltip
+          .style('left', (event.pageX + 15) + 'px')
+          .style('top', (event.pageY - 10) + 'px');
+      })
+      .on('mouseout', function() {
+        setHoveredNode(null);
+        link.attr('stroke-opacity', 0.3).attr('stroke-width', 1);
+        node.style('opacity', 1);
+        tooltip.style('opacity', 0);
+      })
+      .on('click', function(event, d) {
+        if (d.type === 'project') {
+          router.push(`/projects/${d.id}`);
+        }
+      });
+
+    // Update positions
+    simulation.on('tick', () => {
+      link
+        .attr('x1', d => (d.source as GraphNode).x!)
+        .attr('y1', d => (d.source as GraphNode).y!)
+        .attr('x2', d => (d.target as GraphNode).x!)
+        .attr('y2', d => (d.target as GraphNode).y!);
+
+      node.attr('transform', d => `translate(${d.x},${d.y})`);
+    });
+
+    function dragstarted(event: any, d: GraphNode) {
+      if (!event.active) simulation.alphaTarget(0.3).restart();
+      d.fx = d.x;
+      d.fy = d.y;
+    }
+
+    function dragged(event: any, d: GraphNode) {
+      d.fx = event.x;
+      d.fy = event.y;
+    }
+
+    function dragended(event: any, d: GraphNode) {
+      if (!event.active) simulation.alphaTarget(0);
+      d.fx = null;
+      d.fy = null;
+    }
+
+    return () => {
+      simulation.stop();
+      tooltip.remove();
+    };
+  }, [data, activeFilters, width, height, router]);
+
+  const toggleFilter = (type: string) => {
+    setActiveFilters(prev => {
+      const next = new Set(prev);
+      if (next.has(type)) {
+        next.delete(type);
+      } else {
+        next.add(type);
+      }
+      return next;
+    });
+  };
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center h-96">
+        <div className="animate-spin w-8 h-8 border-2 border-purple-500 border-t-transparent rounded-full"></div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="relative">
+      {/* Legend & Filters */}
+      <div className="flex flex-wrap items-center gap-4 mb-4 p-4 bg-gray-800/50 rounded-lg">
+        <span className="text-sm text-gray-400">Show:</span>
+        {Object.entries(NODE_COLORS).map(([type, color]) => (
+          <button
+            key={type}
+            onClick={() => toggleFilter(type)}
+            className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm transition-all ${
+              activeFilters.has(type)
+                ? 'bg-gray-700 text-white'
+                : 'bg-gray-800/50 text-gray-500 opacity-50'
+            }`}
+          >
+            <span
+              className="w-3 h-3 rounded-full"
+              style={{ backgroundColor: color }}
+            />
+            <span className="capitalize">{type}s</span>
+          </button>
+        ))}
+      </div>
+
+      {/* Instructions */}
+      <div className="text-xs text-gray-500 mb-2 flex items-center gap-4">
+        <span>Scroll to zoom</span>
+        <span>•</span>
+        <span>Drag nodes to rearrange</span>
+        <span>•</span>
+        <span>Hover for details</span>
+        <span>•</span>
+        <span>Click projects to explore</span>
+      </div>
+
+      {/* Graph */}
+      <svg
+        ref={svgRef}
+        className="bg-gray-900/50 rounded-xl border border-gray-800"
+        style={{ width: '100%', height }}
+      />
+
+      {/* Stats */}
+      {data && (
+        <div className="mt-4 flex items-center gap-6 text-sm text-gray-400">
+          <span>
+            {data.nodes.filter(n => activeFilters.has(n.type)).length} nodes
+          </span>
+          <span>
+            {data.links.filter(l => {
+              const sourceId = typeof l.source === 'string' ? l.source : l.source.id;
+              const targetId = typeof l.target === 'string' ? l.target : l.target.id;
+              const nodeIds = new Set(data.nodes.filter(n => activeFilters.has(n.type)).map(n => n.id));
+              return nodeIds.has(sourceId) && nodeIds.has(targetId);
+            }).length} connections
+          </span>
+        </div>
+      )}
+    </div>
+  );
+}
