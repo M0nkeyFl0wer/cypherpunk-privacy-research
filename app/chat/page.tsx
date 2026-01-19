@@ -178,17 +178,17 @@ Be helpful, accurate, and privacy-focused.`,
   const exampleQueries = getExampleQueries();
 
   return (
-    <div className="min-h-screen bg-brand-bg-dark flex flex-col">
+    <div className="min-h-screen bg-[#000] flex flex-col">
       {/* Header */}
-      <header className="bg-brand-bg-darker border-b border-brand-bg-active sticky top-0 z-10">
+      <header className="bg-[#111] border-b border-[#252525] sticky top-0 z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex items-center justify-between">
             <div>
-              <h1 className="text-3xl font-bold text-brand-text-primary flex items-center gap-3">
+              <h1 className="text-3xl font-bold text-[#e0e0e0] flex items-center gap-3">
                 <img src="/brand/logo-white.svg" alt="Web3Privacy Now" className="h-10 w-auto" />
                 AI Assistant
               </h1>
-              <p className="mt-1 text-sm text-brand-text-secondary">
+              <p className="mt-1 text-sm text-[#a6adc8]">
                 Ask questions about Web3 privacy projects
               </p>
             </div>
@@ -197,19 +197,19 @@ Be helpful, accurate, and privacy-focused.`,
             <nav className="flex items-center gap-4">
               <Link
                 href="/"
-                className="text-sm font-medium text-brand-text-secondary hover:text-brand-accent-blue transition-colors"
+                className="text-sm font-medium text-[#a6adc8] hover:text-[#89b4fa] transition-colors"
               >
                 Home
               </Link>
               <Link
                 href="/search"
-                className="text-sm font-medium text-brand-text-secondary hover:text-brand-accent-purple transition-colors"
+                className="text-sm font-medium text-[#a6adc8] hover:text-[#94e2d5] transition-colors"
               >
                 Search
               </Link>
               <Link
                 href="/visualizations"
-                className="text-sm font-medium text-brand-text-secondary hover:text-brand-accent-green transition-colors"
+                className="text-sm font-medium text-[#a6adc8] hover:text-[#a6e3a1] transition-colors"
               >
                 Visualizations
               </Link>
@@ -217,7 +217,7 @@ Be helpful, accurate, and privacy-focused.`,
               {/* Settings Button */}
               <button
                 onClick={() => setShowSettings(true)}
-                className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-brand-text-secondary hover:text-brand-accent-purple hover:bg-brand-bg-active rounded-lg transition-colors"
+                className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-[#a6adc8] hover:text-[#94e2d5] hover:bg-[#252525] rounded-lg transition-colors"
                 title="AI Settings"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -258,26 +258,26 @@ Be helpful, accurate, and privacy-focused.`,
 
             {isProcessing && (
               <div className="flex gap-4 justify-start">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-brand-accent-purple flex items-center justify-center">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#94e2d5] flex items-center justify-center">
+                  <svg className="w-6 h-6 text-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                   </svg>
                 </div>
                 <div className="flex-1 max-w-3xl">
                   {streamingMessage ? (
-                    <div className="px-6 py-4 rounded-lg bg-brand-bg-darker border border-brand-bg-active">
-                      <div className="text-brand-text-primary whitespace-pre-wrap">
+                    <div className="px-6 py-4 rounded-lg bg-[#111] border border-[#252525]">
+                      <div className="text-[#e0e0e0] whitespace-pre-wrap">
                         {streamingMessage}
-                        <span className="inline-block w-2 h-4 ml-1 bg-brand-accent-purple animate-pulse"></span>
+                        <span className="inline-block w-2 h-4 ml-1 bg-[#94e2d5] animate-pulse"></span>
                       </div>
                     </div>
                   ) : (
-                    <div className="inline-block px-6 py-4 rounded-lg bg-brand-bg-darker border border-brand-bg-active">
+                    <div className="inline-block px-6 py-4 rounded-lg bg-[#111] border border-[#252525]">
                       <div className="flex items-center gap-2">
-                        <div className="w-2 h-2 bg-brand-accent-purple rounded-full animate-pulse"></div>
-                        <div className="w-2 h-2 bg-brand-accent-purple rounded-full animate-pulse" style={{ animationDelay: '0.2s' }}></div>
-                        <div className="w-2 h-2 bg-brand-accent-purple rounded-full animate-pulse" style={{ animationDelay: '0.4s' }}></div>
-                        <span className="text-sm text-brand-text-muted ml-2">Connecting to AI...</span>
+                        <div className="w-2 h-2 bg-[#94e2d5] rounded-full animate-pulse"></div>
+                        <div className="w-2 h-2 bg-[#94e2d5] rounded-full animate-pulse" style={{ animationDelay: '0.2s' }}></div>
+                        <div className="w-2 h-2 bg-[#94e2d5] rounded-full animate-pulse" style={{ animationDelay: '0.4s' }}></div>
+                        <span className="text-sm text-[#6c7086] ml-2">Connecting to AI...</span>
                       </div>
                     </div>
                   )}
@@ -301,9 +301,9 @@ Be helpful, accurate, and privacy-focused.`,
       />
 
       {/* Info Banner */}
-      <div className="bg-brand-bg-darker border-t border-brand-bg-active">
+      <div className="bg-[#111] border-t border-[#252525]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
-          <p className="text-xs text-brand-text-muted text-center">
+          <p className="text-xs text-[#6c7086] text-center">
             {provider === 'ollama' ? (
               <>
                 🤖 Powered by <strong>Ollama</strong> (self-hosted AI on Seshat) • Free, private, and aligned with Web3 privacy values
