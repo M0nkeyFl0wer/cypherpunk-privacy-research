@@ -328,10 +328,18 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
 
         content += `<div style="color: #6c7086; font-size: 10px; margin-top: 8px; padding-top: 8px; border-top: 1px solid #252525;">${connectionCount} connections</div>`;
 
-        if (d.type === 'project') {
-          content += `<div style="color: #94e2d5; font-size: 10px; margin-top: 4px;">Click to view details →</div>`;
+        // Show appropriate action hint based on context
+        if (focusedNode && focusedNode.id === d.id) {
+          // This is the currently focused node
+          if (d.type === 'project') {
+            content += `<div style="color: #94e2d5; font-size: 10px; margin-top: 4px;">Click again for full details →</div>`;
+          } else {
+            content += `<div style="color: #6c7086; font-size: 10px; margin-top: 4px; font-style: italic;">Currently viewing this ${d.type}</div>`;
+          }
+        } else if (d.type === 'project') {
+          content += `<div style="color: #89b4fa; font-size: 10px; margin-top: 4px;">Click to explore connections</div>`;
         } else {
-          content += `<div style="color: #89b4fa; font-size: 10px; margin-top: 4px;">Click to explore related projects →</div>`;
+          content += `<div style="color: #89b4fa; font-size: 10px; margin-top: 4px;">Click to see related projects →</div>`;
         }
 
         tooltip
@@ -352,10 +360,13 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
         tooltip.style('opacity', 0);
       })
       .on('click', function(event, d) {
-        if (d.type === 'project') {
-          router.push(`/projects/${d.id}`);
+        if (focusedNode && focusedNode.id === d.id) {
+          // Second click on focused node: navigate to project page (if project)
+          if (d.type === 'project') {
+            router.push(`/projects/${d.id}`);
+          }
         } else {
-          // Non-project node: enter sub-graph focus mode
+          // First click on any node: enter sub-graph focus mode
           setFocusedNode(d);
         }
       });
@@ -418,25 +429,58 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
     <div className="relative">
       {/* Focus Mode Header */}
       {focusedNode && (
-        <div className="mb-4 p-4 bg-[#111] rounded-lg border border-[#252525] flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <span
-              className="w-4 h-4 rounded-full"
-              style={{ backgroundColor: NODE_COLORS[focusedNode.type] }}
-            />
-            <div>
-              <div className="text-[#e0e0e0] font-medium">{focusedNode.name}</div>
-              <div className="text-xs text-[#6c7086]">
-                Showing all projects using this {focusedNode.type}
+        <div className="mb-4 p-4 bg-[#111] rounded-lg border border-[#252525]">
+          <div className="flex items-center justify-between mb-3">
+            <div className="flex items-center gap-3">
+              <span
+                className="w-4 h-4 rounded-full"
+                style={{ backgroundColor: NODE_COLORS[focusedNode.type] }}
+              />
+              <div>
+                <div className="text-[#e0e0e0] font-medium">{focusedNode.name}</div>
+                <div className="text-xs text-[#6c7086]">
+                  {focusedNode.type === 'project'
+                    ? 'Explore this project\'s tech stack and connections'
+                    : `Showing all projects using this ${focusedNode.type}`
+                  }
+                </div>
               </div>
             </div>
+            <button
+              onClick={() => setFocusedNode(null)}
+              className="px-4 py-2 bg-[#252525] hover:bg-[#303030] text-[#e0e0e0] rounded-lg text-sm transition-colors"
+            >
+              ← Back to full graph
+            </button>
           </div>
-          <button
-            onClick={() => setFocusedNode(null)}
-            className="px-4 py-2 bg-[#252525] hover:bg-[#303030] text-[#e0e0e0] rounded-lg text-sm transition-colors"
-          >
-            ← Back to full graph
-          </button>
+          {/* Action hints */}
+          <div className="flex items-center gap-4 text-xs text-[#6c7086] pt-3 border-t border-[#252525]">
+            {focusedNode.type === 'project' ? (
+              <>
+                <span className="flex items-center gap-1.5">
+                  <span className="text-[#94e2d5]">●</span>
+                  Click the project again for full details
+                </span>
+                <span>•</span>
+                <span className="flex items-center gap-1.5">
+                  <span className="text-[#89b4fa]">●</span>
+                  Click a language/topic to discover similar projects
+                </span>
+              </>
+            ) : (
+              <>
+                <span className="flex items-center gap-1.5">
+                  <span className="text-[#94e2d5]">●</span>
+                  Click any project to explore its connections
+                </span>
+                <span>•</span>
+                <span className="flex items-center gap-1.5">
+                  <span className="text-[#a6e3a1]">●</span>
+                  Click another {focusedNode.type} to switch focus
+                </span>
+              </>
+            )}
+          </div>
         </div>
       )}
 
@@ -468,11 +512,11 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
       <div className="text-xs text-[#6c7086] mb-2 flex items-center gap-4">
         <span>Scroll to zoom</span>
         <span>•</span>
-        <span>Drag nodes to rearrange</span>
+        <span>Drag to rearrange</span>
         <span>•</span>
-        <span>Hover for details</span>
+        <span>Click to explore connections</span>
         <span>•</span>
-        <span>Click to explore</span>
+        <span>Click again for full details</span>
       </div>
 
       {/* Graph */}
