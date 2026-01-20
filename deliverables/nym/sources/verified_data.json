@@ -1,21 +1,40 @@
 {
   "project_id": "nym",
-  "verification_date": "2026-01-19",
+  "verification_date": "2026-01-20",
+  "last_updated": "2026-01-20",
+  "constitutional_version": "v3.0.0",
   "verified_data_points": [
-    {"field": "website", "value": "https://nymtech.net", "confidence": 1.0},
+    {"field": "website", "value": "https://nym.com", "confidence": 1.0, "note": "Rebranded from nymtech.net (2026)"},
+    {"field": "legacy_website", "value": "https://nymtech.net", "confidence": 1.0, "note": "Redirects to nym.com"},
     {"field": "github", "value": "https://github.com/nymtech", "confidence": 1.0},
+    {"field": "github_repos", "value": 57, "confidence": 1.0},
+    {"field": "github_stars_main", "value": 1599, "confidence": 1.0},
     {"field": "founder_ceo", "value": "Harry Halpin", "confidence": 1.0},
     {"field": "technology", "value": "Mixnet with Sphinx packets", "confidence": 1.0},
-    {"field": "academic_foundation", "value": "Loopix (Piotrowska et al.)", "confidence": 1.0},
+    {"field": "academic_foundation", "value": "Loopix (Piotrowska et al., 2017)", "confidence": 1.0},
     {"field": "eu_project", "value": "PANORAMIX (5M EUR)", "confidence": 0.95},
     {"field": "a16z_funding", "value": "$13M Series A (Nov 2021)", "confidence": 0.95},
     {"field": "language", "value": "Rust", "confidence": 1.0},
     {"field": "mainnet_status", "value": "Production", "confidence": 0.95},
-    {"field": "token", "value": "NYM", "confidence": 1.0}
+    {"field": "token", "value": "NYM", "confidence": 1.0},
+    {"field": "dns_provider", "value": "Gandi", "confidence": 1.0},
+    {"field": "hosting_provider", "value": "Vercel (web), AWS Global Accelerator, Exoscale (Swiss)", "confidence": 1.0},
+    {"field": "security_headers", "value": "EXCELLENT (HSTS, CSP, X-Frame-Options, X-Content-Type-Options)", "confidence": 1.0},
+    {"field": "cves_detected", "value": 0, "confidence": 1.0},
+    {"field": "zcash_integration", "value": "zcash-swapper.nym.com", "confidence": 1.0}
   ],
+  "osint_findings": {
+    "subdomains_found": 12,
+    "notable_services": ["governator (governance)", "node-status (monitoring)", "zcash-swapper"],
+    "infrastructure_security": "EXCELLENT - No CVEs, minimal port exposure",
+    "third_party_integrations": ["BTCPay", "Spectre DAO", "Stripe"],
+    "swiss_hosting": "Exoscale (sos-ch-dk-2.exo.io) for CMS"
+  },
   "research_gaps": [
     "Specific security audit reports",
     "Complete employee count",
-    "Detailed organizational structure"
-  ]
+    "Detailed organizational structure",
+    "Mixnet node operational security documentation"
+  ],
+  "confidence_score": 0.94
 }

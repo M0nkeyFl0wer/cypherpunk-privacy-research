@@ -1,0 +1,145 @@
+{
+  "project": "miden",
+  "timestamp": "2026-01-19T17:30:00-05:00",
+  "osint_version": "v3_github_homepage",
+  "domain": "miden.io",
+
+  "dns_infrastructure": {
+    "nameservers": [
+      "ns-1045.awsdns-02.org",
+      "ns-1652.awsdns-14.co.uk",
+      "ns-468.awsdns-58.com",
+      "ns-694.awsdns-22.net"
+    ],
+    "provider": "AWS Route53",
+    "notes": "DNS managed through Amazon Web Services"
+  },
+
+  "subdomains": {
+    "total_found": 20,
+    "source": "crt.sh certificate transparency",
+    "list": [
+      "miden.io",
+      "devnet.miden.io",
+      "testnet.miden.io",
+      "explorer.miden.io",
+      "explorer.testnet.miden.io",
+      "playground.miden.io",
+      "faucet.devnet.miden.io",
+      "faucet.testnet.miden.io",
+      "faucet-api.devnet.miden.io",
+      "faucet-api.testnet.miden.io",
+      "rpc.devnet.miden.io",
+      "rpc.testnet.miden.io",
+      "tx-prover.devnet.miden.io",
+      "tx-prover.testnet.miden.io",
+      "status.devnet.miden.io",
+      "status.testnet.miden.io",
+      "monitoring-tx-prover.devnet.miden.io",
+      "monitoring-tx-prover.testnet.miden.io",
+      "draft.testnet.miden.io",
+      "transport.miden.io"
+    ]
+  },
+
+  "infrastructure_mapping": {
+    "github_pages": {
+      "subdomain": "playground.miden.io",
+      "cname": "0xmiden.github.io",
+      "ips": ["185.199.108.153", "185.199.109.153", "185.199.110.153", "185.199.111.153"],
+      "provider": "GitHub Pages / Fastly CDN"
+    },
+    "aws_services": {
+      "region": "eu-north-1 (Stockholm)",
+      "services": [
+        {
+          "subdomain": "rpc.testnet.miden.io",
+          "type": "Application Load Balancer",
+          "hostname": "rpc-lb-testnet-174389996.eu-north-1.elb.amazonaws.com",
+          "ips": ["13.62.146.108", "13.48.115.192"]
+        },
+        {
+          "subdomain": "faucet.testnet.miden.io",
+          "type": "Application Load Balancer",
+          "hostname": "faucet-lb-testnet-1421763297.eu-north-1.elb.amazonaws.com"
+        },
+        {
+          "subdomain": "tx-prover.testnet.miden.io",
+          "type": "Application Load Balancer",
+          "hostname": "prover-backend-testnet-alb-1224313206.eu-north-1.elb.amazonaws.com"
+        },
+        {
+          "subdomain": "status.testnet.miden.io",
+          "type": "Application Load Balancer",
+          "hostname": "monitor-lb-testnet-764180457.eu-north-1.elb.amazonaws.com"
+        }
+      ]
+    }
+  },
+
+  "shodan_data": {
+    "rpc_testnet": {
+      "ip": "13.62.146.108",
+      "hostnames": ["rpc.testnet.miden.io", "ec2-13-62-146-108.eu-north-1.compute.amazonaws.com"],
+      "ports": [443],
+      "tags": ["cloud"],
+      "cpes": [],
+      "vulns": []
+    },
+    "github_pages": {
+      "ip": "185.199.110.153",
+      "hostnames": ["github.io", "github.com", "cdn-185-199-110-153.github.com"],
+      "ports": [80, 443],
+      "cpes": ["cpe:/a:varnish-software:varnish_cache", "cpe:/a:fastly:fastly"],
+      "vulns": []
+    }
+  },
+
+  "security_headers": {
+    "playground.miden.io": {
+      "server": "GitHub.com",
+      "strict-transport-security": "max-age=31556952",
+      "cdn": "Fastly",
+      "hsts_enabled": true,
+      "notes": "Hosted on GitHub Pages with standard security headers"
+    }
+  },
+
+  "github_organization": {
+    "login": "0xPolygonMiden",
+    "name": "Polygon Miden",
+    "public_repos": 5,
+    "blog": "https://polygon.technology/solutions/polygon-miden/",
+    "twitter": "@0xPolygonMiden",
+    "created": "2022-09-23T17:10:26Z"
+  },
+
+  "risk_assessment": {
+    "centralization_concerns": [
+      "All infrastructure hosted on single cloud provider (AWS eu-north-1)",
+      "DNS managed through AWS Route53",
+      "Static site on GitHub Pages (controlled by 0xMiden org)"
+    ],
+    "positive_findings": [
+      "No known vulnerabilities detected via Shodan",
+      "HTTPS enforced on all endpoints",
+      "HSTS enabled on accessible endpoints",
+      "Cloud infrastructure properly tagged",
+      "Separate devnet/testnet environments"
+    ],
+    "recommendations": [
+      "Consider multi-region deployment for production",
+      "Add Content-Security-Policy headers",
+      "Monitor for certificate transparency logs"
+    ]
+  },
+
+  "confidence_score": 0.92,
+  "sources": [
+    "crt.sh certificate transparency",
+    "Shodan InternetDB API",
+    "DNS resolution (dig)",
+    "HTTP header analysis",
+    "GitHub API"
+  ]
+}

@@ -1,17 +1,37 @@
 {
   "project_id": "secret-network",
-  "verification_date": "2026-01-19",
+  "verification_date": "2026-01-20",
+  "last_updated": "2026-01-20",
+  "constitutional_version": "v3.0.0",
   "verified_data_points": [
     {"field": "website", "value": "https://scrt.network", "confidence": 1.0},
     {"field": "github", "value": "https://github.com/scrtlabs/SecretNetwork", "confidence": 1.0},
+    {"field": "github_org", "value": "https://github.com/scrtlabs", "confidence": 1.0},
+    {"field": "github_repos", "value": 248, "confidence": 1.0},
+    {"field": "github_stars", "value": 573, "confidence": 1.0},
     {"field": "founder", "value": "Guy Zyskind", "confidence": 1.0},
     {"field": "launch_date", "value": "February 2020", "confidence": 0.95},
     {"field": "technology", "value": "Cosmos SDK + Intel SGX TEE", "confidence": 1.0},
     {"field": "token", "value": "SCRT", "confidence": 1.0},
     {"field": "consensus", "value": "Tendermint BFT (Proof of Stake)", "confidence": 1.0},
     {"field": "smart_contracts", "value": "CosmWasm (Rust → WASM)", "confidence": 1.0},
-    {"field": "ibc_enabled", "value": true, "confidence": 1.0}
+    {"field": "ibc_enabled", "value": true, "confidence": 1.0},
+    {"field": "dns_provider", "value": "Cloudflare", "confidence": 1.0},
+    {"field": "hosting_provider", "value": "Framer (web), Fastly (RPC)", "confidence": 1.0}
   ],
+  "osint_findings": {
+    "subdomains_found": 37,
+    "critical_vulnerabilities": {
+      "api_server_ip": "85.17.52.219",
+      "cves_detected": 5,
+      "cve_list": ["CVE-2023-44487", "CVE-2025-23419", "CVE-2021-23017", "CVE-2021-3618", "CVE-2019-20372"],
+      "nginx_version": "1.16.1 (EOL)",
+      "severity": "CRITICAL"
+    },
+    "main_website_status": "CLEAN - No vulnerabilities",
+    "security_headers": "PARTIAL - Missing CSP, X-Frame-Options",
+    "rpc_infrastructure": "Fastly CDN (clean)"
+  },
   "research_gaps": [
     "Complete team roster",
     "Detailed funding history",
@@ -27,6 +47,13 @@
       "issue": "SGX vulnerabilities",
       "description": "Wiretap.fail academic attack (physical access required)",
       "status": "mitigated in v1.22 upgrade"
+    },
+    {
+      "issue": "API server vulnerabilities",
+      "description": "5 CVEs detected on api.scrt.network, nginx 1.16.1 EOL",
+      "status": "CRITICAL - Requires immediate attention",
+      "discovered": "2026-01-20"
     }
-  ]
+  ],
+  "confidence_score": 0.91
 }

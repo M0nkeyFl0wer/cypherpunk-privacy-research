@@ -1,0 +1,172 @@
+{
+  "project": "signal",
+  "timestamp": "2026-01-19T18:15:00-05:00",
+  "osint_version": "v3_github_homepage",
+  "domain": "signal.org",
+
+  "dns_infrastructure": {
+    "nameservers": [
+      "casey.ns.cloudflare.com",
+      "zita.ns.cloudflare.com"
+    ],
+    "provider": "Cloudflare",
+    "notes": "DNS managed through Cloudflare with DDoS protection"
+  },
+
+  "subdomains": {
+    "total_found": 52,
+    "source": "crt.sh certificate transparency",
+    "categories": {
+      "main": ["signal.org", "www.signal.org"],
+      "cdn": ["cdn2.signal.org", "cdn3.signal.org", "cdn-ca.signal.org"],
+      "api": ["chat.reflector.signal.org", "chat.staging.reflector.signal.org"],
+      "backup": ["api.backup.signal.org", "api-staging.backup.signal.org"],
+      "payments": ["donations.api.signal.org", "stripe.api.signal.org", "braintree.api.signal.org"],
+      "svr": ["svr2.reflector.signal.org", "svrb.reflector.signal.org", "backend1.svr3.reflector.signal.org", "backend2.svr3.reflector.signal.org", "backend3.svr3.reflector.signal.org"],
+      "cdsi": ["cdsi.reflector.signal.org", "cdsi.staging.reflector.signal.org"],
+      "voip": ["gcp.sfu.dev.voip.signal.org", "turn3.signal.org"],
+      "key_transparency": ["kt.signal.org", "audit.kt.signal.org"],
+      "storage": ["storage-manager.signal.org", "storage-manager-staging.signal.org"],
+      "operations": ["status.signal.org", "updates.signal.org", "updates2.signal.org", "build-artifacts.signal.org"],
+      "internal": ["internal.signal.org", "desktop.build.internal.signal.org"]
+    },
+    "full_list": [
+      "signal.org", "www.signal.org", "api.backup.signal.org", "api-staging.backup.signal.org",
+      "audit.kt.signal.org", "audit.kt.staging.signal.org", "backend1.svr3.reflector.signal.org",
+      "backend1.svr3.staging.reflector.signal.org", "backend2.svr3.reflector.signal.org",
+      "backend2.svr3.staging.reflector.signal.org", "backend3.svr3.reflector.signal.org",
+      "backend3.svr3.staging.reflector.signal.org", "braintree.api.signal.org",
+      "braintree.api.staging.signal.org", "build-artifacts.signal.org", "cdn-ca.signal.org",
+      "cdn2-staging.signal.org", "cdn2.signal.org", "cdn3-staging.signal.org", "cdn3.signal.org",
+      "cdsi.reflector.signal.org", "cdsi.staging.reflector.signal.org", "chat.reflector.signal.org",
+      "chat.staging.reflector.signal.org", "desktop.build.internal.signal.org",
+      "donations.api.signal.org", "donations.api.staging.signal.org", "ech-chat.staging.signal.org",
+      "gcp.sfu.dev.voip.signal.org", "internal.signal.org", "kt.signal.org", "kt.staging.signal.org",
+      "mta-sts.signal.org", "science.signal.org", "shop.signal.org", "status-staging.signal.org",
+      "status-test.signal.org", "status.signal.org", "storage-manager-staging.signal.org",
+      "storage-manager.signal.org", "stripe.api.signal.org", "stripe.api.staging.signal.org",
+      "support.signal.org", "svr2.reflector.signal.org", "svr2.staging.reflector.signal.org",
+      "svrb.reflector.signal.org", "svrb.staging.reflector.signal.org", "turn3.signal.org",
+      "updates.signal.org", "updates2.signal.org", "uploaderdemo.signal.org", "uploaderdemo2.signal.org"
+    ]
+  },
+
+  "infrastructure_mapping": {
+    "cloudflare": {
+      "purpose": "CDN, DDoS protection, DNS",
+      "main_ips": ["104.18.10.47", "104.18.11.47"],
+      "services": ["Website", "CDN endpoints"]
+    },
+    "service_architecture": {
+      "chat_service": {
+        "subdomain": "chat.reflector.signal.org",
+        "cname": "chat.signal.org",
+        "purpose": "Main messaging service"
+      },
+      "svr_service": {
+        "subdomains": ["svr2.reflector.signal.org", "svrb.reflector.signal.org"],
+        "purpose": "Secure Value Recovery - encrypted backup of PINs/keys"
+      },
+      "cdsi_service": {
+        "subdomain": "cdsi.reflector.signal.org",
+        "purpose": "Contact Discovery Service Interface - private contact lookup"
+      },
+      "key_transparency": {
+        "subdomain": "kt.signal.org",
+        "purpose": "Key Transparency - verifiable key directory"
+      },
+      "voip": {
+        "subdomains": ["turn3.signal.org", "gcp.sfu.dev.voip.signal.org"],
+        "purpose": "Voice/video calling infrastructure"
+      }
+    }
+  },
+
+  "shodan_data": {
+    "main_website": {
+      "ip": "104.18.10.47",
+      "hostnames": [],
+      "ports": [80, 443, 2052, 2053, 2082, 2083, 2086, 2087, 2095, 2096, 8080, 8443, 8880],
+      "cpes": ["cpe:/a:cloudflare:cloudflare"],
+      "tags": ["cdn"],
+      "vulns": [],
+      "notes": "Standard Cloudflare ports - many are Cloudflare-specific"
+    },
+    "backend_services": {
+      "status": "not_exposed",
+      "notes": "Backend services not visible in Shodan - likely private IPs behind Cloudflare"
+    }
+  },
+
+  "security_headers": {
+    "signal.org": {
+      "server": "cloudflare",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-content-type-options": "nosniff",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "present",
+      "hsts_missing": true,
+      "csp_missing": true
+    }
+  },
+
+  "github_organization": {
+    "login": "signalapp",
+    "name": "Signal",
+    "public_repos": 126,
+    "blog": "https://www.signal.org",
+    "twitter": "@signalapp",
+    "created": "2011-03-31T21:19:39Z",
+    "key_repositories": [
+      "Signal-Android",
+      "Signal-iOS",
+      "Signal-Desktop",
+      "libsignal",
+      "Signal-Server"
+    ]
+  },
+
+  "privacy_architecture": {
+    "documented_features": [
+      "End-to-end encryption (Signal Protocol)",
+      "Sealed Sender - hides sender from server",
+      "Private Contact Discovery - encrypted contact lookup",
+      "Secure Value Recovery - encrypted backup",
+      "Key Transparency - auditable key directory"
+    ],
+    "open_source": true,
+    "reproducible_builds": true
+  },
+
+  "risk_assessment": {
+    "positive_findings": [
+      "No known vulnerabilities detected",
+      "Cloudflare DDoS protection",
+      "126 public repositories - fully open source",
+      "Comprehensive infrastructure (chat, backup, SVR, CDSI, KT)",
+      "Key Transparency for verifiable keys",
+      "Sealed Sender for metadata protection",
+      "Backend services not exposed to Shodan",
+      "Well-documented privacy architecture"
+    ],
+    "areas_for_improvement": [
+      "HSTS header not detected on main site",
+      "CSP header not detected on main site"
+    ],
+    "centralization_concerns": [
+      "Single organization controls all infrastructure",
+      "Cloudflare dependency for DDoS protection",
+      "Cannot self-host (federation not supported)"
+    ]
+  },
+
+  "confidence_score": 0.96,
+  "sources": [
+    "crt.sh certificate transparency",
+    "Shodan InternetDB API",
+    "DNS resolution (dig)",
+    "HTTP header analysis",
+    "GitHub API",
+    "Signal documentation"
+  ]
+}

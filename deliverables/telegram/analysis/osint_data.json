@@ -1,0 +1,185 @@
+{
+  "project": "telegram",
+  "timestamp": "2026-01-19T18:45:00-05:00",
+  "osint_version": "v3_github_homepage",
+  "domain": "telegram.org",
+
+  "dns_infrastructure": {
+    "nameservers": [
+      "ns-cloud-b1.googledomains.com",
+      "ns-cloud-b2.googledomains.com",
+      "ns-cloud-b3.googledomains.com",
+      "ns-cloud-b4.googledomains.com"
+    ],
+    "provider": "Google Domains",
+    "notes": "Using Google Cloud DNS"
+  },
+
+  "subdomains": {
+    "total_found": 36,
+    "source": "crt.sh certificate transparency",
+    "legitimate_services": [
+      "telegram.org",
+      "api.telegram.org",
+      "web.telegram.org",
+      "core.telegram.org",
+      "osx.telegram.org",
+      "macupdates.telegram.org",
+      "mail.telegram.org",
+      "proxy.telegram.org",
+      "gbot.integrations.telegram.org"
+    ],
+    "mail_servers": [
+      "mx1.telegram.org",
+      "mx2.telegram.org",
+      "mx10.telegram.org",
+      "mx101.telegram.org",
+      "mx110.telegram.org"
+    ],
+    "suspicious_patterns": {
+      "note": "Multiple double-dash domains found (chinese--telegram.org, china--telegram.org) - likely phishing attempts sharing certificate transparency logs",
+      "examples": ["chinese--telegram.org", "china--telegram.org", "chinas--telegram.org"]
+    }
+  },
+
+  "infrastructure_mapping": {
+    "main_website": {
+      "subdomain": "telegram.org",
+      "ip": "149.154.167.99",
+      "server": "nginx/1.18.0"
+    },
+    "api_service": {
+      "subdomain": "api.telegram.org",
+      "ip": "149.154.166.110"
+    },
+    "web_client": {
+      "subdomain": "web.telegram.org",
+      "ip": "149.154.167.99"
+    }
+  },
+
+  "shodan_data": {
+    "main_website": {
+      "ip": "149.154.167.99",
+      "hostnames": ["telegram.org"],
+      "ports": [80, 443],
+      "cpes": ["cpe:/a:f5:nginx:1.18.0"],
+      "tags": ["eol-product"],
+      "vulns": [
+        "CVE-2023-44487",
+        "CVE-2025-23419",
+        "CVE-2021-23017",
+        "CVE-2021-3618"
+      ]
+    }
+  },
+
+  "vulnerability_analysis": {
+    "CVE-2023-44487": {
+      "name": "HTTP/2 Rapid Reset Attack",
+      "severity": "High",
+      "description": "DDoS vulnerability in HTTP/2 protocol implementation",
+      "status": "Detected"
+    },
+    "CVE-2025-23419": {
+      "severity": "Unknown",
+      "description": "Recent vulnerability - requires investigation",
+      "status": "Detected"
+    },
+    "CVE-2021-23017": {
+      "name": "nginx DNS Resolver Vulnerability",
+      "severity": "High",
+      "description": "DNS response processing vulnerability in nginx",
+      "status": "Detected"
+    },
+    "CVE-2021-3618": {
+      "name": "ALPACA Attack",
+      "severity": "Medium",
+      "description": "TLS confusion attack affecting nginx",
+      "status": "Detected"
+    },
+    "eol_warning": {
+      "component": "nginx 1.18.0",
+      "status": "End of Life product",
+      "recommendation": "Upgrade to supported nginx version"
+    }
+  },
+
+  "security_headers": {
+    "telegram.org": {
+      "server": "nginx/1.18.0",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "x-frame-options": "SAMEORIGIN",
+      "hsts_enabled": true,
+      "hsts_preload": true,
+      "missing_headers": [
+        "Content-Security-Policy",
+        "X-Content-Type-Options",
+        "Referrer-Policy"
+      ]
+    }
+  },
+
+  "github_organization": {
+    "login": "telegramdesktop",
+    "public_repos": 20,
+    "created": "2013-12-05T12:09:18Z",
+    "notes": "Only desktop client open-source - server and mobile apps are not fully open"
+  },
+
+  "privacy_concerns": {
+    "encryption_model": {
+      "default": "Server-side encryption (NOT end-to-end)",
+      "secret_chats": "End-to-end encryption (opt-in only)",
+      "groups": "No E2E encryption available"
+    },
+    "metadata": {
+      "phone_number": "Required for registration",
+      "contacts": "Server has access to contact list",
+      "messages": "Server can read non-secret chat messages"
+    },
+    "open_source_status": {
+      "desktop_client": "Open source",
+      "mobile_clients": "Partially open source",
+      "server": "Closed source"
+    }
+  },
+
+  "risk_assessment": {
+    "critical_findings": [
+      "4 CVEs detected on main server",
+      "nginx 1.18.0 is end-of-life",
+      "Server-side encryption by default (not E2E)",
+      "Server is closed source"
+    ],
+    "security_concerns": [
+      "Outdated nginx version with known vulnerabilities",
+      "Missing security headers (CSP, X-Content-Type-Options)",
+      "Phone number required (identity linkage)",
+      "Telegram can read non-secret chat messages"
+    ],
+    "positive_findings": [
+      "HSTS with preload enabled",
+      "X-Frame-Options set",
+      "Secret Chats offer E2E encryption",
+      "Desktop client is open source"
+    ],
+    "recommendations": [
+      "URGENT: Upgrade nginx to current stable version",
+      "Patch CVE-2023-44487 and other vulnerabilities",
+      "Add Content-Security-Policy header",
+      "Add X-Content-Type-Options header",
+      "Consider E2E encryption by default"
+    ]
+  },
+
+  "confidence_score": 0.91,
+  "sources": [
+    "crt.sh certificate transparency",
+    "Shodan InternetDB API",
+    "DNS resolution (dig)",
+    "HTTP header analysis",
+    "GitHub API",
+    "CVE databases"
+  ]
+}

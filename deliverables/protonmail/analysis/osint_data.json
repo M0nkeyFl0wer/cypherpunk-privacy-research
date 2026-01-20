@@ -1,0 +1,168 @@
+{
+  "project": "protonmail",
+  "timestamp": "2026-01-19T18:30:00-05:00",
+  "osint_version": "v3_github_homepage",
+  "domain": "proton.me",
+
+  "dns_infrastructure": {
+    "nameservers": [
+      "ns1.proton.me",
+      "ns2.proton.me",
+      "ns3.proton.me"
+    ],
+    "provider": "Self-hosted",
+    "notes": "Proton runs their own authoritative nameservers - not using third-party DNS"
+  },
+
+  "ip_ownership": {
+    "range": "185.70.42.0/24",
+    "netname": "CH-PROTONMAIL-20140915",
+    "organization": "Proton AG",
+    "address": "Route de la Galaise 32, 1228 Plan-les-Ouates, Switzerland",
+    "country": "CH",
+    "notes": "Proton owns their IP allocation - not cloud-hosted"
+  },
+
+  "subdomains": {
+    "note": "crt.sh query timed out due to large certificate volume - using DNS enumeration",
+    "verified_services": {
+      "mail.proton.me": {"ip": "185.70.42.37", "service": "ProtonMail webmail"},
+      "account.proton.me": {"ip": "185.70.42.36", "service": "Account management"},
+      "calendar.proton.me": {"ip": "185.70.42.39", "service": "Proton Calendar"},
+      "drive.proton.me": {"ip": "185.70.42.40", "service": "Proton Drive"},
+      "vpn.proton.me": {"ip": "185.70.42.45", "service": "ProtonVPN"},
+      "pass.proton.me": {"ip": "185.70.42.63", "service": "Proton Pass"},
+      "verify.proton.me": {"ip": "185.70.42.52", "service": "Email verification"},
+      "proton.me": {"ip": "185.70.42.45", "service": "Main website"}
+    },
+    "product_ecosystem": [
+      "ProtonMail - Encrypted email",
+      "ProtonVPN - VPN service",
+      "Proton Calendar - Encrypted calendar",
+      "Proton Drive - Encrypted cloud storage",
+      "Proton Pass - Password manager"
+    ]
+  },
+
+  "infrastructure_analysis": {
+    "hosting_model": "Self-hosted data centers",
+    "location": "Switzerland",
+    "ip_allocation": "Own /24 block (185.70.42.0/24)",
+    "dns": "Self-managed nameservers",
+    "advantages": [
+      "Swiss privacy laws",
+      "No reliance on US cloud providers",
+      "Full control over infrastructure",
+      "No third-party DNS exposure"
+    ]
+  },
+
+  "shodan_data": {
+    "main_website": {
+      "ip": "185.70.42.45",
+      "hostnames": ["pr.tn", "proton.me", "185-70-42-45.protonmail.ch"],
+      "ports": [80, 443],
+      "cpes": [],
+      "tags": [],
+      "vulns": []
+    },
+    "mail_service": {
+      "ip": "185.70.42.37",
+      "hostnames": ["proton.me", "185-70-42-37.protonmail.ch", "pr.tn"],
+      "ports": [80, 443],
+      "cpes": [],
+      "tags": [],
+      "vulns": []
+    }
+  },
+
+  "security_headers": {
+    "proton.me": {
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "content-security-policy": "comprehensive CSP with report-uri",
+      "x-content-type-options": "nosniff",
+      "x-xss-protection": "0",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-permitted-cross-domain-policies": "none",
+      "hsts_preload": true,
+      "csp_report_uri": "https://reports.proton.me/reports/csp"
+    }
+  },
+
+  "security_header_analysis": {
+    "hsts": {
+      "status": "excellent",
+      "max_age": "31536000 (1 year)",
+      "includeSubDomains": true,
+      "preload": true
+    },
+    "csp": {
+      "status": "comprehensive",
+      "features": [
+        "default-src 'self'",
+        "report-uri configured",
+        "frame-ancestors restricted"
+      ]
+    },
+    "additional": {
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-permitted-cross-domain-policies": "none"
+    }
+  },
+
+  "github_organization": {
+    "login": "ProtonMail",
+    "name": "Proton Mail",
+    "public_repos": 179,
+    "blog": "https://proton.me/mail",
+    "created": "2014-03-14T18:07:21Z",
+    "key_repositories": [
+      "proton-mail-android",
+      "proton-mail-ios",
+      "WebClients",
+      "go-proton-api",
+      "gopenpgp"
+    ]
+  },
+
+  "privacy_architecture": {
+    "encryption": "End-to-end encryption with PGP",
+    "zero_access": "Proton cannot read user emails",
+    "jurisdiction": "Swiss law - strong privacy protections",
+    "transparency_reports": "Published annually",
+    "audit": "Regular third-party security audits"
+  },
+
+  "risk_assessment": {
+    "positive_findings": [
+      "No known vulnerabilities detected",
+      "Owns IP allocation - no cloud dependency",
+      "Self-hosted nameservers",
+      "Swiss jurisdiction - strong privacy laws",
+      "Excellent security headers (HSTS preload, comprehensive CSP)",
+      "179 public repositories - strong open-source commitment",
+      "Only ports 80/443 exposed",
+      "CSP with report-uri for monitoring"
+    ],
+    "centralization_concerns": [
+      "Single company controls all infrastructure",
+      "Single geographic location (Switzerland)",
+      "Cannot self-host email service"
+    ],
+    "recommendations": [
+      "Geographic redundancy for disaster recovery",
+      "Consider publishing more infrastructure details"
+    ]
+  },
+
+  "confidence_score": 0.93,
+  "sources": [
+    "DNS resolution",
+    "Shodan InternetDB API",
+    "HTTP header analysis",
+    "GitHub API",
+    "WHOIS lookup",
+    "Proton documentation"
+  ]
+}

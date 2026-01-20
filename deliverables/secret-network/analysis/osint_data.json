@@ -1,0 +1,253 @@
+{
+  "project": "secret-network",
+  "timestamp": "2026-01-20T12:15:00-05:00",
+  "osint_version": "v3_github_homepage",
+  "primary_domain": "scrt.network",
+
+  "dns_infrastructure": {
+    "nameservers": [
+      "darl.ns.cloudflare.com",
+      "penny.ns.cloudflare.com"
+    ],
+    "provider": "Cloudflare",
+    "notes": "Using Cloudflare DNS and potentially CDN"
+  },
+
+  "ip_infrastructure": {
+    "main_website": {
+      "domain": "scrt.network",
+      "ips": ["31.43.161.6", "31.43.160.6"],
+      "provider": "Framer",
+      "notes": "Website hosted on Framer platform"
+    },
+    "api_server": {
+      "domain": "api.scrt.network",
+      "ip": "85.17.52.219",
+      "provider": "Unknown",
+      "status": "CRITICAL - Has vulnerabilities"
+    },
+    "rpc_server": {
+      "domain": "rpc.scrt.network",
+      "ips": ["151.101.1.91", "151.101.65.91", "151.101.129.91", "151.101.193.91"],
+      "provider": "Fastly CDN",
+      "notes": "Using Fastly for RPC endpoints"
+    }
+  },
+
+  "subdomains": {
+    "total_found": 37,
+    "source": "crt.sh certificate transparency",
+    "domains": [
+      "scrt.network",
+      "www.scrt.network",
+      "api.scrt.network",
+      "beta-api.scrt.network",
+      "rpc.scrt.network",
+      "grpc-web.scrt.network",
+      "beta-lcd.scrt.network",
+      "bridge.scrt.network",
+      "dashboard.scrt.network",
+      "dashboard1.scrt.network",
+      "dash.scrt.network",
+      "docs.scrt.network",
+      "learn.scrt.network",
+      "build.scrt.network",
+      "blog.scrt.network",
+      "blog-admin.scrt.network",
+      "ghost.scrt.network",
+      "forum.scrt.network",
+      "chat.scrt.network",
+      "meet.scrt.network",
+      "agents.scrt.network",
+      "auctions.scrt.network",
+      "quicksync.scrt.network",
+      "roulette.scrt.network",
+      "secretadmin.scrt.network",
+      "secretjs.scrt.network",
+      "stage.scrt.network",
+      "staging.scrt.network",
+      "strapiv3.scrt.network",
+      "strapiv4.scrt.network",
+      "test.scrt.network",
+      "tunnel.scrt.network",
+      "ust.scrt.network",
+      "webdev.scrt.network",
+      "wrap.scrt.network",
+      "new.scrt.network"
+    ],
+    "notable_services": {
+      "api_infrastructure": ["api.scrt.network", "beta-api.scrt.network", "rpc.scrt.network", "grpc-web.scrt.network"],
+      "developer_tools": ["docs.scrt.network", "secretjs.scrt.network", "build.scrt.network"],
+      "defi_services": ["bridge.scrt.network", "wrap.scrt.network", "auctions.scrt.network"],
+      "community": ["forum.scrt.network", "chat.scrt.network", "meet.scrt.network"]
+    }
+  },
+
+  "shodan_data": {
+    "main_website": {
+      "ip": "31.43.161.6",
+      "hostnames": ["sites.framer.app"],
+      "ports": [80, 443],
+      "cpes": [],
+      "tags": [],
+      "vulns": [],
+      "assessment": "CLEAN"
+    },
+    "api_server": {
+      "ip": "85.17.52.219",
+      "hostnames": [],
+      "ports": [8080, 31210],
+      "cpes": [
+        "cpe:/a:f5:nginx:1.16.1",
+        "cpe:/a:f5:nginx"
+      ],
+      "tags": ["eol-product"],
+      "vulns": [
+        "CVE-2023-44487",
+        "CVE-2025-23419",
+        "CVE-2021-23017",
+        "CVE-2021-3618",
+        "CVE-2019-20372"
+      ],
+      "assessment": "CRITICAL - 5 CVEs detected, EOL nginx version"
+    }
+  },
+
+  "vulnerability_analysis": {
+    "CVE-2023-44487": {
+      "name": "HTTP/2 Rapid Reset Attack",
+      "severity": "HIGH",
+      "description": "DDoS vulnerability in HTTP/2 protocol implementation",
+      "status": "Detected on API server"
+    },
+    "CVE-2025-23419": {
+      "severity": "Unknown",
+      "description": "Recent vulnerability - requires investigation",
+      "status": "Detected on API server"
+    },
+    "CVE-2021-23017": {
+      "name": "nginx DNS Resolver Vulnerability",
+      "severity": "HIGH",
+      "description": "DNS response processing vulnerability in nginx",
+      "status": "Detected on API server"
+    },
+    "CVE-2021-3618": {
+      "name": "ALPACA Attack",
+      "severity": "MEDIUM",
+      "description": "TLS confusion attack affecting nginx",
+      "status": "Detected on API server"
+    },
+    "CVE-2019-20372": {
+      "name": "nginx HTTP Request Smuggling",
+      "severity": "MEDIUM",
+      "description": "HTTP request smuggling vulnerability",
+      "status": "Detected on API server"
+    },
+    "eol_warning": {
+      "component": "nginx 1.16.1",
+      "status": "End of Life product",
+      "released": "August 2019",
+      "recommendation": "URGENT: Upgrade to supported nginx version"
+    }
+  },
+
+  "security_headers": {
+    "scrt.network": {
+      "server": "Framer/7c13ce5",
+      "strict-transport-security": "max-age=31536000",
+      "x-content-type-options": "nosniff",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "alt-svc": "h3=\":443\"; ma=2592000",
+      "hsts_enabled": true,
+      "missing_headers": [
+        "Content-Security-Policy",
+        "X-Frame-Options",
+        "Referrer-Policy",
+        "Permissions-Policy"
+      ],
+      "grade": "PARTIAL"
+    }
+  },
+
+  "github_organization": {
+    "login": "scrtlabs",
+    "name": "SCRT Labs",
+    "public_repos": 248,
+    "created": "2016-06-27T20:20:15Z",
+    "description": "Solving for privacy",
+    "website": "https://scrtlabs.com",
+    "main_repository": {
+      "name": "SecretNetwork",
+      "stars": 573,
+      "forks": 228,
+      "open_issues": 78,
+      "language": "Rust",
+      "created": "2020-01-29T11:02:01Z"
+    }
+  },
+
+  "privacy_architecture": {
+    "technology": "Intel SGX Trusted Execution Environment",
+    "blockchain_base": "Cosmos SDK",
+    "consensus": "Tendermint BFT (Proof of Stake)",
+    "smart_contracts": "CosmWasm (Rust → WASM)",
+    "encryption_flow": "Client encrypts → SGX decrypts → Computes → Re-encrypts",
+    "key_features": [
+      "Encrypted smart contract state",
+      "Encrypted function inputs/outputs",
+      "Viewing keys for selective disclosure",
+      "IBC interoperability"
+    ],
+    "trust_assumptions": [
+      "Intel SGX hardware security",
+      "Intel Attestation Services",
+      "Shared validator key management"
+    ]
+  },
+
+  "known_issues": {
+    "sgx_vulnerability": {
+      "name": "wiretap.fail",
+      "type": "Academic side-channel attack",
+      "requirements": "Physical access to hardware",
+      "status": "Mitigated in v1.22 upgrade"
+    },
+    "foundation_controversy_2023": {
+      "description": "Dispute over $2.6M dividend payment to Tor Bair",
+      "status": "Documented",
+      "source": "Public governance discussions"
+    }
+  },
+
+  "risk_assessment": {
+    "critical_findings": [
+      "5 CVEs detected on API server (85.17.52.219)",
+      "nginx 1.16.1 is End of Life",
+      "Missing security headers (CSP, X-Frame-Options)"
+    ],
+    "positive_findings": [
+      "Main website clean (Framer hosted)",
+      "HSTS enabled",
+      "248 public repositories - high transparency",
+      "RPC on Fastly CDN for performance",
+      "SGX vulnerabilities actively mitigated"
+    ],
+    "recommendations": [
+      "URGENT: Upgrade nginx on API server",
+      "URGENT: Patch all CVEs on api.scrt.network",
+      "Add Content-Security-Policy header",
+      "Add X-Frame-Options header",
+      "Consider moving API to more secure infrastructure"
+    ]
+  },
+
+  "confidence_score": 0.91,
+  "sources": [
+    "crt.sh certificate transparency",
+    "Shodan InternetDB API",
+    "DNS resolution (dig)",
+    "HTTP header analysis",
+    "GitHub API",
+    "Public governance documentation"
+  ]
+}

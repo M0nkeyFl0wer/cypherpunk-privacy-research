@@ -1,0 +1,180 @@
+{
+  "project": "nym",
+  "timestamp": "2026-01-20T12:00:00-05:00",
+  "osint_version": "v3_github_homepage",
+  "primary_domain": "nym.com",
+  "legacy_domain": "nymtech.net",
+  "legacy_redirect": "nymtech.net → nym.com (308 redirect)",
+
+  "dns_infrastructure": {
+    "nameservers": [
+      "ns-48-a.gandi.net",
+      "ns-230-c.gandi.net",
+      "ns-106-b.gandi.net"
+    ],
+    "provider": "Gandi",
+    "notes": "Using Gandi managed DNS"
+  },
+
+  "ip_infrastructure": {
+    "main_website": {
+      "domain": "nym.com",
+      "ip": "76.76.21.22",
+      "provider": "Vercel"
+    },
+    "vpn_website": {
+      "domain": "nymvpn.com",
+      "ip": "76.76.21.21",
+      "provider": "Vercel"
+    },
+    "infrastructure": {
+      "domain": "nymte.ch",
+      "ip": "217.70.184.55",
+      "provider": "OVH/Gandi"
+    },
+    "network_services": {
+      "domain": "nyx.network",
+      "ips": ["76.223.54.146", "13.248.169.48"],
+      "provider": "AWS Global Accelerator"
+    }
+  },
+
+  "subdomains": {
+    "total_found": 12,
+    "source": "crt.sh certificate transparency",
+    "domains": [
+      "nym.com",
+      "www.nym.com",
+      "assets.nym.com",
+      "bridge.nym.com",
+      "forms.nym.com",
+      "forum.nym.com",
+      "governator.nym.com",
+      "node-status.nym.com",
+      "stats.nym.com",
+      "support.nym.com",
+      "swapper.nym.com",
+      "zcash-swapper.nym.com"
+    ],
+    "notable_services": {
+      "zcash_integration": "zcash-swapper.nym.com - Zcash token swapping capability",
+      "governance": "governator.nym.com - NYM governance system",
+      "network_monitoring": "node-status.nym.com, stats.nym.com - Mixnet monitoring"
+    }
+  },
+
+  "related_domains": {
+    "from_csp_analysis": [
+      "*.nymtech.net",
+      "*.nymvpn.com",
+      "*.nymte.ch",
+      "*.nyx.network",
+      "btcpay.nymte.ch",
+      "api.nym.spectredao.net",
+      "strapi-www-nym-com.sos-ch-dk-2.exo.io"
+    ],
+    "infrastructure_notes": {
+      "swiss_hosting": "Exoscale (sos-ch-dk-2.exo.io) for CMS/media storage",
+      "bitcoin_payments": "BTCPay server at btcpay.nymte.ch",
+      "spectre_dao": "Integration with Spectre DAO (api.nym.spectredao.net)"
+    }
+  },
+
+  "shodan_data": {
+    "main_website": {
+      "ip": "76.76.21.22",
+      "hostnames": ["quotashare.ium.co"],
+      "ports": [80, 443],
+      "cpes": [],
+      "tags": [],
+      "vulns": []
+    },
+    "assessment": "CLEAN - No vulnerabilities detected, minimal port exposure"
+  },
+
+  "security_headers": {
+    "nym.com": {
+      "server": "Vercel",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "content-security-policy": "Comprehensive CSP with strict default-src 'self'",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "permissions-policy": "geolocation=(), microphone=(), camera=(), fullscreen=(self)",
+      "hsts_enabled": true,
+      "csp_highlights": {
+        "default_src": "'self'",
+        "frame_ancestors": "'none'",
+        "upgrade_insecure_requests": true
+      },
+      "grade": "EXCELLENT"
+    }
+  },
+
+  "github_organization": {
+    "login": "nymtech",
+    "name": "Nym",
+    "public_repos": 57,
+    "created": "2019-06-12T14:35:33Z",
+    "description": "Protecting user privacy at the network and application levels, using mixnets and threshold credential systems",
+    "website": "https://nym.com",
+    "key_repositories": [
+      {"name": "nym", "stars": 1599, "language": "Rust", "purpose": "Core mixnet implementation"},
+      {"name": "nym-vpn-client", "stars": 353, "language": "Rust", "purpose": "NymVPN client"},
+      {"name": "sphinx", "stars": 283, "language": "Rust", "purpose": "Sphinx packet format library"},
+      {"name": "nyxd", "stars": 189, "language": "Go", "purpose": "Cosmos-based validator"},
+      {"name": "CensorshipMeasurements", "stars": 145, "language": "Go", "purpose": "Internet censorship research"}
+    ],
+    "primary_language": "Rust",
+    "secondary_languages": ["Go", "TypeScript", "Kotlin", "Python"]
+  },
+
+  "privacy_architecture": {
+    "technology": "Decentralized Mixnet",
+    "academic_basis": "Loopix (Piotrowska et al., 2017)",
+    "key_features": [
+      "Sphinx packet format (unlinkable encryption layers)",
+      "Cover traffic (timing obfuscation)",
+      "Coconut credentials (anonymous service access)",
+      "Economic incentives (NYM token staking)"
+    ],
+    "comparison_to_tor": {
+      "cover_traffic": "Yes (Tor: No)",
+      "timing_obfuscation": "Yes (Tor: Limited)",
+      "economic_model": "Token-based (Tor: Volunteer)",
+      "latency": "Higher (Tor: Lower)"
+    }
+  },
+
+  "risk_assessment": {
+    "critical_findings": [],
+    "positive_findings": [
+      "No CVEs detected on any infrastructure",
+      "Excellent security headers (HSTS, CSP, X-Frame-Options)",
+      "Minimal attack surface (only 80/443 exposed)",
+      "57 public repositories - high transparency",
+      "Swiss hosting for sensitive services (Exoscale)",
+      "Multi-cloud architecture (Vercel, AWS, OVH/Gandi)"
+    ],
+    "areas_to_monitor": [
+      "Mixnet node security (distributed infrastructure)",
+      "Cosmos validator security (nyxd)",
+      "Third-party integrations (Spectre DAO, BTCPay)"
+    ],
+    "recommendations": [
+      "Continue excellent security header practices",
+      "Consider publishing infrastructure security audits",
+      "Document mixnet node operational security requirements"
+    ]
+  },
+
+  "confidence_score": 0.94,
+  "sources": [
+    "crt.sh certificate transparency",
+    "Shodan InternetDB API",
+    "DNS resolution (dig)",
+    "HTTP header analysis",
+    "GitHub API",
+    "CSP header analysis"
+  ]
+}

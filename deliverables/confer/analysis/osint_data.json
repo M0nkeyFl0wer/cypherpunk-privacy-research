@@ -1,0 +1,137 @@
+{
+  "project": "confer",
+  "timestamp": "2026-01-19T18:00:00-05:00",
+  "osint_version": "v3_github_homepage",
+  "domain": "confer.to",
+
+  "dns_infrastructure": {
+    "nameservers": [
+      "ns-10.awsdns-01.com",
+      "ns-1522.awsdns-62.org",
+      "ns-1560.awsdns-03.co.uk",
+      "ns-583.awsdns-08.net"
+    ],
+    "provider": "AWS Route53",
+    "notes": "DNS managed through Amazon Web Services"
+  },
+
+  "subdomains": {
+    "total_found": 7,
+    "source": "crt.sh certificate transparency",
+    "list": [
+      "confer.to",
+      "api.confer.to",
+      "api-staging.confer.to",
+      "artifacts.confer.to",
+      "inference.confer.to",
+      "inference-staging.confer.to",
+      "inference-baremetal-staging.confer.to"
+    ],
+    "notes": "'inference-baremetal' suggests custom hardware for TEE/confidential computing"
+  },
+
+  "infrastructure_mapping": {
+    "aws_cloudfront": {
+      "purpose": "Main website CDN and static content",
+      "subdomains": ["confer.to"],
+      "ips": ["52.85.12.44", "52.85.12.117", "52.85.12.104", "52.85.12.83"],
+      "edge_location": "ORD56 (Chicago)",
+      "backend": "Amazon S3"
+    },
+    "google_cloud": {
+      "purpose": "AI inference with confidential computing (TEE)",
+      "subdomains": ["inference.confer.to"],
+      "ip": "34.160.220.247",
+      "hostname": "247.220.160.34.bc.googleusercontent.com",
+      "notes": "Google Cloud likely chosen for Confidential VM / TEE capabilities"
+    },
+    "aws_services": {
+      "purpose": "API backend",
+      "subdomains": ["api.confer.to", "artifacts.confer.to"],
+      "notes": "Returns 404 without proper authentication"
+    }
+  },
+
+  "shodan_data": {
+    "cloudfront_cdn": {
+      "ip": "52.85.12.44",
+      "hostnames": ["server-52-85-12-44.ord56.r.cloudfront.net"],
+      "ports": [80, 443],
+      "cpes": ["cpe:/a:amazon:amazon_cloudfront"],
+      "tags": ["cloud", "cdn"],
+      "vulns": []
+    },
+    "inference_server": {
+      "ip": "34.160.220.247",
+      "hostnames": ["inference.confer.to", "247.220.160.34.bc.googleusercontent.com"],
+      "ports": [80, 443],
+      "cpes": ["cpe:/a:google:cloud_platform"],
+      "tags": ["cloud"],
+      "vulns": []
+    }
+  },
+
+  "security_headers": {
+    "confer.to": {
+      "server": "AmazonS3",
+      "x-amz-server-side-encryption": "AES256",
+      "cdn": "CloudFront",
+      "x-cache": "Hit from cloudfront",
+      "notes": "S3 server-side encryption enabled"
+    }
+  },
+
+  "github_presence": {
+    "status": "none_found",
+    "searched": ["conferai", "confer-ai", "moxie0/confer"],
+    "notes": "No public GitHub repositories found. Confer is a proprietary service relying on TEE guarantees rather than open-source auditing."
+  },
+
+  "privacy_architecture": {
+    "documented_claims": [
+      "End-to-end encryption of prompts before leaving device",
+      "Confidential computing with Trusted Execution Environment (TEE)",
+      "Passkeys (Face ID/Touch ID) for key derivation",
+      "No data collection by design"
+    ],
+    "infrastructure_alignment": [
+      "Google Cloud inference suggests Confidential VMs for TEE",
+      "S3 encryption at rest (AES256) for artifacts",
+      "Staging environments indicate active development"
+    ],
+    "verification_status": "claims_unverifiable_without_source_code"
+  },
+
+  "risk_assessment": {
+    "centralization_concerns": [
+      "Multi-cloud (AWS + GCP) reduces single-provider risk",
+      "No open-source code means trust relies entirely on TEE claims",
+      "Closed source prevents independent security audits"
+    ],
+    "positive_findings": [
+      "No known vulnerabilities detected via Shodan",
+      "HTTPS enforced on all endpoints",
+      "S3 server-side encryption enabled",
+      "Minimal attack surface (only 80/443 exposed)",
+      "Google Cloud likely provides Confidential VMs for TEE",
+      "Staging environments suggest mature development practices"
+    ],
+    "recommendations": [
+      "Request third-party TEE attestation audit",
+      "Publish cryptographic protocol specification",
+      "Consider open-sourcing client-side encryption code",
+      "Document TEE implementation details"
+    ]
+  },
+
+  "confidence_score": 0.78,
+  "confidence_notes": "Lower confidence due to closed-source nature. Infrastructure verified but privacy claims cannot be independently verified.",
+  "sources": [
+    "crt.sh certificate transparency",
+    "Shodan InternetDB API",
+    "DNS resolution (dig)",
+    "HTTP header analysis",
+    "GitHub API search",
+    "WHOIS lookup"
+  ]
+}

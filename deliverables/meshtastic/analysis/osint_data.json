@@ -1,0 +1,163 @@
+{
+  "project": "meshtastic",
+  "timestamp": "2026-01-19T17:45:00-05:00",
+  "osint_version": "v3_github_homepage",
+  "domain": "meshtastic.org",
+
+  "dns_infrastructure": {
+    "nameservers": [
+      "gene.ns.cloudflare.com",
+      "woz.ns.cloudflare.com"
+    ],
+    "provider": "Cloudflare",
+    "notes": "DNS managed through Cloudflare with DDoS protection"
+  },
+
+  "subdomains": {
+    "total_found": 22,
+    "source": "crt.sh certificate transparency",
+    "list": [
+      "meshtastic.org",
+      "www.meshtastic.org",
+      "api.meshtastic.org",
+      "mqtt.meshtastic.org",
+      "devmqtt.meshtastic.org",
+      "flash.meshtastic.org",
+      "flasher.meshtastic.org",
+      "client.meshtastic.org",
+      "client-test.meshtastic.org",
+      "map.meshtastic.org",
+      "status.meshtastic.org",
+      "js.meshtastic.org",
+      "python.meshtastic.org",
+      "homepage.meshtastic.org",
+      "site.meshtastic.org",
+      "crowdin.meshtastic.org",
+      "translate.meshtastic.org",
+      "openwrt.meshtastic.org",
+      "burn.meshtastic.org",
+      "defcon.meshtastic.org",
+      "hamvention.meshtastic.org",
+      "opensauce.meshtastic.org"
+    ]
+  },
+
+  "infrastructure_mapping": {
+    "vercel": {
+      "purpose": "Static site hosting and web apps",
+      "subdomains": [
+        "meshtastic.org",
+        "flash.meshtastic.org",
+        "flasher.meshtastic.org",
+        "map.meshtastic.org",
+        "client.meshtastic.org"
+      ],
+      "cname": "cname.vercel-dns.com",
+      "ip": "76.76.21.21"
+    },
+    "railway": {
+      "purpose": "API backend hosting",
+      "subdomains": ["api.meshtastic.org"],
+      "cname": "api-production-871d.up.railway.app"
+    },
+    "better_uptime": {
+      "purpose": "Status monitoring",
+      "subdomains": ["status.meshtastic.org"],
+      "cname": "statuspage.betteruptime.com"
+    },
+    "mqtt_server": {
+      "purpose": "MQTT message broker for mesh network",
+      "subdomains": ["mqtt.meshtastic.org", "devmqtt.meshtastic.org"],
+      "ip": "159.223.197.197",
+      "provider": "DigitalOcean (cloud VPS)",
+      "os": "Ubuntu Linux",
+      "ports": [22, 1883, 8883]
+    }
+  },
+
+  "shodan_data": {
+    "main_website": {
+      "ip": "76.76.21.21",
+      "hostnames": ["no-sni.vercel-infra.com"],
+      "ports": [80, 443],
+      "cpes": [],
+      "vulns": [],
+      "tags": []
+    },
+    "mqtt_server": {
+      "ip": "159.223.197.197",
+      "hostnames": ["mqtt.meshtastic.org"],
+      "ports": [22, 1883, 8883],
+      "cpes": ["cpe:/a:openbsd:openssh:9.7p1", "cpe:/o:canonical:ubuntu_linux"],
+      "vulns": [],
+      "tags": ["cloud"],
+      "services": {
+        "22": "SSH (OpenSSH 9.7p1)",
+        "1883": "MQTT (unencrypted)",
+        "8883": "MQTT over TLS (encrypted)"
+      }
+    }
+  },
+
+  "security_headers": {
+    "meshtastic.org": {
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "hsts_enabled": true,
+      "x-vercel-cache": "HIT",
+      "cdn": "Vercel Edge Network"
+    }
+  },
+
+  "github_organization": {
+    "login": "meshtastic",
+    "name": "Meshtastic",
+    "description": "Open Source, decentralized mesh networking ecosystem",
+    "public_repos": 118,
+    "blog": "https://meshtastic.org",
+    "twitter": "@TheMeshtastic",
+    "created": "2020-02-29T15:13:30Z"
+  },
+
+  "event_subdomains": {
+    "note": "Conference/event specific subdomains indicate active community",
+    "list": [
+      "defcon.meshtastic.org",
+      "hamvention.meshtastic.org",
+      "opensauce.meshtastic.org"
+    ]
+  },
+
+  "risk_assessment": {
+    "centralization_concerns": [
+      "MQTT server on single VPS (DigitalOcean)",
+      "SSH port (22) exposed on MQTT server",
+      "MQTT port 1883 allows unencrypted connections"
+    ],
+    "positive_findings": [
+      "No known vulnerabilities detected via Shodan",
+      "HTTPS enforced on all web endpoints",
+      "HSTS enabled with long max-age (2 years)",
+      "MQTT TLS (8883) available for encrypted connections",
+      "Cloudflare DNS provides DDoS protection",
+      "Modern SSH version (OpenSSH 9.7p1)",
+      "118 public repos indicates strong open-source commitment",
+      "Multiple hosting providers (Vercel, Railway, DigitalOcean) = decentralized"
+    ],
+    "recommendations": [
+      "Consider disabling unencrypted MQTT (1883) or restricting access",
+      "Move SSH to non-standard port or behind VPN",
+      "Add rate limiting to MQTT broker",
+      "Consider MQTT broker redundancy for mesh network reliability"
+    ]
+  },
+
+  "confidence_score": 0.94,
+  "sources": [
+    "crt.sh certificate transparency",
+    "Shodan InternetDB API",
+    "DNS resolution (dig)",
+    "HTTP header analysis",
+    "GitHub API"
+  ]
+}
