@@ -84,12 +84,26 @@ async function getProjectData(slug: string): Promise<ProjectData | null> {
   ]);
 
   // Find logo - check various naming patterns
+  const slugUnderscore = slug.replace(/-/g, '_');
   const logoPatterns = [
     `${slug}-logo.png`,
     `${slug}-logo.svg`,
     `${slug}_logo.png`,
-    `${slug.replace(/-/g, '_')}_logo.png`,
+    `${slugUnderscore}_logo.png`,
     `${slug}-github-avatar.png`,
+    `${slugUnderscore}-github-avatar.png`,
+    // Special cases for specific projects
+    ...(slug === 'cake-wallet' ? ['cake_logo.png'] : []),
+    ...(slug === 'darkfi' ? ['darkfi-github-avatar.png'] : []),
+    ...(slug === 'mysterium-network' ? ['mysterium-github-avatar.png', 'myst-token-logo.png'] : []),
+    ...(slug === 'hopr' ? ['hopr_logo.png'] : []),
+    ...(slug === 'fluidkey' ? ['fluidkey_logo_github.png'] : []),
+    ...(slug === 'iron-fish' ? ['logo.svg'] : []),
+    ...(slug === 'sienna-network' ? ['sienna-logo.svg'] : []),
+    ...(slug === 'snarkjs' ? ['circom-favicon.png'] : []),
+    ...(slug === 'zk-money' ? ['aztec-logo.png'] : []),
+    ...(slug === 'starkex' ? ['starkware-logo.svg'] : []),
+    ...(slug === 'zeal' ? ['logo_icon.svg'] : []),
   ];
 
   let logo = '/media/default-project.svg';
