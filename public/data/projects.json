@@ -1031,7 +1031,7 @@
   {
     "id": "zcash",
     "slug": "zcash",
-    "confidence": 0.95,
+    "confidence": 0.97,
     "researchDate": "2025-10-07",
     "name": "Zcash",
     "description": "The first cryptocurrency to develop zero-knowledge encryption for private peer-to-peer payments",

@@ -171,7 +171,7 @@ export default async function ProjectPage({ params }: { params: { slug: string }
             <img
               src={project.logo}
               alt={`${project.name} logo`}
-              className="w-16 h-16 rounded-lg object-contain bg-[#111] p-2"
+              className="w-24 h-24 rounded-xl object-contain bg-[#111] p-3 border border-[#252525]"
             />
           </div>
           <div className="flex-1">

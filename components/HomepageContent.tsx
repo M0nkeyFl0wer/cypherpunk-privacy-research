@@ -260,15 +260,15 @@ export function HomepageContent({
           <h2 className="text-sm font-medium text-[#6c7086] uppercase tracking-wider mb-6">Explore</h2>
 
           <div className="flex gap-4">
-            <Link href="/visualizations"
-                  className="flex-1 p-4 border border-[#252525] rounded hover:border-[#a6e3a1] transition-colors">
-              <div className="text-[#a6e3a1] mb-1">data visualizations</div>
-              <div className="text-[#6c7086] text-sm">charts, graphs, treemaps</div>
-            </Link>
             <Link href="/portal"
+                  className="flex-1 p-4 border border-[#252525] rounded hover:border-[#94e2d5] transition-colors">
+              <div className="text-[#94e2d5] mb-1">network graph</div>
+              <div className="text-[#6c7086] text-sm">explore project relationships</div>
+            </Link>
+            <Link href="/methodology"
                   className="flex-1 p-4 border border-[#252525] rounded hover:border-[#89b4fa] transition-colors">
-              <div className="text-[#89b4fa] mb-1">network graph</div>
-              <div className="text-[#6c7086] text-sm">project relationships</div>
+              <div className="text-[#89b4fa] mb-1">methodology</div>
+              <div className="text-[#6c7086] text-sm">research approach & sources</div>
             </Link>
           </div>
         </div>

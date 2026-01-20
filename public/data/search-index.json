@@ -747,7 +747,7 @@
       "description": "The first cryptocurrency to develop zero-knowledge encryption for private peer-to-peer payments",
       "category": "Privacy Infrastructure",
       "ecosystem": "zcash",
-      "confidence": 0.95,
+      "confidence": 0.97,
       "website": "https://z.cash/",
       "github": "https://github.com/zcash/zcash",
       "team": [
@@ -915,5 +915,5 @@
     "projects_with_team": 8
   },
   "total_projects": 48,
-  "generated_at": "2026-01-19T19:08:35.910Z"
+  "generated_at": "2026-01-20T22:22:38.263Z"
 }

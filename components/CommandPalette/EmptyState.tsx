@@ -10,7 +10,7 @@ interface EmptyStateProps {
 export function EmptyState({ query, onClose }: EmptyStateProps) {
   const links = [
     { href: '/projects', label: 'Projects' },
-    { href: '/visualizations', label: 'Visualizations' },
+    { href: '/portal', label: 'Graph Explorer' },
     { href: '/methodology', label: 'Methodology' },
   ];
 
