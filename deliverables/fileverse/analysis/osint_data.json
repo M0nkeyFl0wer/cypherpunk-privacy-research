@@ -191,10 +191,11 @@
         "affected": ["gun-node.fileverse.io", "prod-gun-node.fileverse.io"]
       },
       "CVE-2025-23419": {
-        "name": "Recent nginx vulnerability",
-        "severity": "TBD",
-        "description": "Recently disclosed vulnerability - requires investigation",
-        "affected": ["gun-node.fileverse.io", "prod-gun-node.fileverse.io"]
+        "name": "SSL Session Reuse Authentication Bypass",
+        "severity": "MEDIUM (CVSS 4.3)",
+        "description": "Allows bypassing client certificate authentication via TLS session resumption when multiple server blocks share IP:port. Disclosed February 5, 2025. Affects nginx 1.11.4-1.27.3. Fixed in 1.26.3+ and 1.27.4+.",
+        "affected": ["gun-node.fileverse.io", "prod-gun-node.fileverse.io"],
+        "source": "https://nginx.org/en/security_advisories.html"
       }
     },
     "eol_warnings": [

@@ -104,16 +104,16 @@ export default function SearchPage() {
                 Home
               </a>
               <a
-                href="/visualizations"
+                href="/portal"
                 className="text-sm font-medium text-[#a6adc8] hover:text-[#94e2d5] transition-colors"
               >
-                Visualizations
+                Graph Explorer
               </a>
               <a
-                href="/chat"
+                href="/methodology"
                 className="text-sm font-medium text-[#a6adc8] hover:text-[#a6e3a1] transition-colors"
               >
-                AI Assistant
+                Methodology
               </a>
             </nav>
           </div>

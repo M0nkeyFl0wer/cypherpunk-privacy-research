@@ -257,10 +257,10 @@ export default function ProjectsPage() {
               Open Portal
             </Link>
             <Link
-              href="/visualizations"
+              href="/methodology"
               className="bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-lg font-medium transition-colors border border-white/20"
             >
-              View Visualizations
+              View Methodology
             </Link>
           </div>
         </div>

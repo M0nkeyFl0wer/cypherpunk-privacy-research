@@ -172,7 +172,7 @@
     },
     {
       "id": "hopr",
-      "name": "hoprnet",
+      "name": "HOPR",
       "type": "project",
       "tier": "osint",
       "size": 26.3531153606971,
@@ -223,7 +223,7 @@
     },
     {
       "id": "mask-network",
-      "name": "Maskbook",
+      "name": "Mask Network",
       "type": "project",
       "tier": "osint",
       "size": 32.04189910222949,
@@ -274,7 +274,7 @@
     },
     {
       "id": "mysterium-network",
-      "name": "node",
+      "name": "Mysterium Network",
       "type": "project",
       "tier": "osint",
       "size": 31.181429097999402,
@@ -461,7 +461,7 @@
     },
     {
       "id": "suterusu",
-      "name": "suter-proofs",
+      "name": "Suterusu",
       "type": "project",
       "tier": "osint",
       "size": 16.59167373200866,
@@ -597,7 +597,7 @@
     },
     {
       "id": "zeal",
-      "name": "Wallet",
+      "name": "Zeal",
       "type": "project",
       "tier": "standard",
       "size": 20.990684938388938,
@@ -5410,7 +5410,7 @@
     },
     {
       "id": "hopr",
-      "name": "hoprnet",
+      "name": "HOPR",
       "tier": "osint",
       "stars": 232,
       "forks": 98,
@@ -5609,7 +5609,7 @@
     },
     {
       "id": "mask-network",
-      "name": "Maskbook",
+      "name": "Mask Network",
       "tier": "osint",
       "stars": 1551,
       "forks": 317,
@@ -5858,7 +5858,7 @@
     },
     {
       "id": "mysterium-network",
-      "name": "node",
+      "name": "Mysterium Network",
       "tier": "osint",
       "stars": 1164,
       "forks": 326,
@@ -6667,7 +6667,7 @@
     },
     {
       "id": "suterusu",
-      "name": "suter-proofs",
+      "name": "Suterusu",
       "tier": "osint",
       "stars": 8,
       "forks": 15,
@@ -7137,7 +7137,7 @@
     },
     {
       "id": "zeal",
-      "name": "Wallet",
+      "name": "Zeal",
       "tier": "standard",
       "stars": 38,
       "forks": 10,
@@ -8985,7 +8985,7 @@
       },
       {
         "id": "mask-network",
-        "name": "Maskbook",
+        "name": "Mask Network",
         "stars": 1551,
         "tier": "osint"
       },
@@ -9015,7 +9015,7 @@
       },
       {
         "id": "mysterium-network",
-        "name": "node",
+        "name": "Mysterium Network",
         "stars": 1164,
         "tier": "osint"
       },

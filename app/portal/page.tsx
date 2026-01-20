@@ -110,20 +110,19 @@ export default function PortalPage() {
         {/* Feature Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <Link
-            href="/visualizations"
+            href="/methodology"
             className="bg-[#111] rounded-xl p-6 border border-[#252525] hover:border-[#89b4fa] transition-all group"
           >
             <div className="w-10 h-10 rounded-full bg-[#89b4fa]/10 flex items-center justify-center mb-4">
               <svg className="w-5 h-5 text-[#89b4fa]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
               </svg>
             </div>
             <h3 className="text-lg font-semibold text-[#e0e0e0] group-hover:text-[#89b4fa] transition-colors mb-2">
-              Data Visualizations
+              Methodology
             </h3>
             <p className="text-[#6c7086] text-sm">
-              Charts, graphs, and treemaps showing project metrics and relationships.
+              Research approach, data sources, and constitutional verification process.
             </p>
           </Link>
 

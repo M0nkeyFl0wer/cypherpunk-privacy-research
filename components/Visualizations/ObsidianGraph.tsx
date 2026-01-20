@@ -271,7 +271,8 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
       .attr('font-size', d => d.type === 'project' ? '10px' : '8px')
       .attr('pointer-events', 'none');
 
-    // Tooltip
+    // Tooltip - remove any existing tooltips first to prevent duplicates
+    d3.selectAll('.obsidian-tooltip').remove();
     const tooltip = d3.select('body')
       .append('div')
       .attr('class', 'obsidian-tooltip')

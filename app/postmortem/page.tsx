@@ -269,10 +269,10 @@ export default function PostmortemPage() {
                 Search Projects
               </Link>
               <Link
-                href="/visualizations"
+                href="/portal"
                 className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-[#e0e0e0] bg-[#111] border border-[#252525] rounded-lg hover:border-[#89b4fa] transition-colors"
               >
-                View Visualizations
+                View Graph
               </Link>
             </div>
           </section>

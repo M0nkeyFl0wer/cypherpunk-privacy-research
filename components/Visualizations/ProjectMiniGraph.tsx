@@ -138,7 +138,8 @@ export default function ProjectMiniGraph({ projectId, width = 400, height = 300,
       .attr('stroke-opacity', 0.4)
       .attr('stroke-width', 1.5);
 
-    // Tooltip
+    // Tooltip - remove any existing tooltips first
+    d3.selectAll('.mini-graph-tooltip').remove();
     const tooltip = d3.select('body')
       .append('div')
       .attr('class', 'mini-graph-tooltip')

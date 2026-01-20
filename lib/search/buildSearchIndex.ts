@@ -26,14 +26,6 @@ const STATIC_PAGES: SearchItem[] = [
     icon: TYPE_ICONS.page,
   },
   {
-    id: 'page-visualizations',
-    type: 'page',
-    name: 'Visualizations',
-    description: 'Data visualizations and charts',
-    url: '/visualizations',
-    icon: TYPE_ICONS.page,
-  },
-  {
     id: 'page-portal',
     type: 'page',
     name: 'Research Portal',

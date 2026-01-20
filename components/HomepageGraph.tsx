@@ -141,9 +141,9 @@ export function HomepageGraph() {
         <div className="rounded-lg overflow-hidden border border-[#252525]">
           <ObsidianGraph
             width={800}
-            height={450}
-            projectsOnly={true}
-            initialZoom={0.85}
+            height={500}
+            initialFilter={['project', 'language', 'topic']}
+            initialZoom={0.65}
           />
         </div>
       )}
