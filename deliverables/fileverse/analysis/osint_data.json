@@ -4,6 +4,14 @@
   "osint_version": "v3_full_deep_dive",
   "assessment_type": "COMPREHENSIVE",
 
+  "disclosure_status": {
+    "status": "EMBARGOED",
+    "reported_date": "2026-01-20",
+    "embargo_expires": "2026-04-20",
+    "contact": "hello@fileverse.io",
+    "note": "Do not publish vulnerability details until embargo expires or vendor confirms fix"
+  },
+
   "domains": {
     "primary": "fileverse.io",
     "products": ["ddocs.new", "dsheets.new", "portal.fileverse.io"],
