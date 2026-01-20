@@ -34,6 +34,7 @@ interface ProjectData {
   readme: string | null;
   metadata: any;
   githubAnalysis: any;
+  logo: string; // Path to logo image
 }
 
 async function getProjectData(slug: string): Promise<ProjectData | null> {
@@ -82,6 +83,28 @@ async function getProjectData(slug: string): Promise<ProjectData | null> {
     readJson(path.join(base, 'analysis', 'github_analysis.json')),
   ]);
 
+  // Find logo - check various naming patterns
+  const logoPatterns = [
+    `${slug}-logo.png`,
+    `${slug}-logo.svg`,
+    `${slug}_logo.png`,
+    `${slug.replace(/-/g, '_')}_logo.png`,
+    `${slug}-github-avatar.png`,
+  ];
+
+  let logo = '/media/default-project.svg';
+  const mediaDir = path.join(process.cwd(), 'public', 'media');
+
+  for (const pattern of logoPatterns) {
+    try {
+      await fs.access(path.join(mediaDir, pattern));
+      logo = `/media/${pattern}`;
+      break;
+    } catch {
+      // File doesn't exist, try next pattern
+    }
+  }
+
   return {
     name: metadata?.name || slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase()),
     description: githubAnalysis?.repository?.description || metadata?.description || '',
@@ -95,6 +118,7 @@ async function getProjectData(slug: string): Promise<ProjectData | null> {
     readme,
     metadata,
     githubAnalysis,
+    logo,
   };
 }
 
@@ -127,6 +151,15 @@ export default async function ProjectPage({ params }: { params: { slug: string }
         </Link>
 
         <div className="flex items-start gap-4 mb-6">
+          {/* Project Logo */}
+          <div className="flex-shrink-0">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={project.logo}
+              alt={`${project.name} logo`}
+              className="w-16 h-16 rounded-lg object-contain bg-[#111] p-2"
+            />
+          </div>
           <div className="flex-1">
             <div className="flex items-center gap-3 mb-2">
               <h1 className="text-2xl font-semibold text-[#e0e0e0]">{project.name}</h1>
