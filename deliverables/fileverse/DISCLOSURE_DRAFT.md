@@ -39,6 +39,8 @@ Also worth putting Cloudflare in front of these - they're currently direct to AW
 Everything else looks solid - your API and storage services have great security headers.
 
 **How I found this:**
+
+Part of the research includes proactive vulnerability scanning to help secure the ecosystem overall. Tools used:
 - Subdomain enumeration via crt.sh (certificate transparency)
 - Shodan InternetDB API for passive vulnerability scanning
 - Direct HTTP header checks with curl
