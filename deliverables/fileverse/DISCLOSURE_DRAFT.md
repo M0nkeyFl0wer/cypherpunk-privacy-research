@@ -53,4 +53,4 @@ No active exploitation or pentesting - just passive OSINT.
 Let me know if you want more details or help verifying fixes.
 
 Cheers,
-[Your name]
+Ben
