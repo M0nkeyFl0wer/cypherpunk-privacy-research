@@ -7,11 +7,13 @@
 
 Hey Fileverse team,
 
-I'm working on a research project surveying Web3 privacy tools and infrastructure for the cypherpunk/Ethereum ecosystem. While reviewing Fileverse, I noticed your Gun relay nodes have a couple of issues worth fixing:
+I'm working on a research project surveying Web3 privacy tools and infrastructure for the cypherpunk/Ethereum ecosystem. While reviewing Fileverse, I noticed some older infrastructure that may need attention.
 
 **Affected:**
 - `gun-node.fileverse.io` (13.213.218.98)
 - `prod-gun-node.fileverse.io` (18.136.133.200)
+
+**Note:** These appear to be legacy Gun.js relay nodes - I see dDocs now uses Yjs for real-time sync. The gun-node endpoint returns "Home page temporarily disabled" so these may no longer be in active use. Still wanted to flag since they're still running and publicly exposed.
 
 **Issues:**
 
