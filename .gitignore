@@ -41,3 +41,5 @@ analysis/osint/*_scan.json
 *.swp
 *.swo
 
+# Private disclosures - not for public repo
+deliverables/*/DISCLOSURE_DRAFT.md
