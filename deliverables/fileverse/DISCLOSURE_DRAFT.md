@@ -38,6 +38,14 @@ Also worth putting Cloudflare in front of these - they're currently direct to AW
 
 Everything else looks solid - your API and storage services have great security headers.
 
+**How I found this:**
+- Subdomain enumeration via crt.sh (certificate transparency)
+- Shodan InternetDB API for passive vulnerability scanning
+- Direct HTTP header checks with curl
+- DNS resolution to map IPs
+
+No active exploitation or pentesting - just passive OSINT.
+
 Let me know if you want more details or help verifying fixes.
 
 Cheers,
