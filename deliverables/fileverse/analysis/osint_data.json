@@ -1,67 +1,275 @@
 {
   "project": "fileverse",
-  "timestamp": "2026-01-20T12:30:00-05:00",
-  "osint_version": "v3_github_homepage",
-  "primary_domain": "fileverse.io",
-  "product_domains": ["ddocs.new", "dsheets.new"],
+  "timestamp": "2026-01-20T17:00:00-05:00",
+  "osint_version": "v3_full_deep_dive",
+  "assessment_type": "COMPREHENSIVE",
 
-  "dns_infrastructure": {
-    "nameservers": [
-      "addilyn.ns.cloudflare.com",
-      "gabriel.ns.cloudflare.com"
-    ],
-    "provider": "Cloudflare",
-    "notes": "Using Cloudflare DNS for all domains"
+  "domains": {
+    "primary": "fileverse.io",
+    "products": ["ddocs.new", "dsheets.new", "portal.fileverse.io"],
+    "total_subdomains_discovered": 63
   },
 
-  "ip_infrastructure": {
-    "main_website": {
-      "domain": "fileverse.io",
-      "ips": ["216.150.1.1", "216.150.16.1"],
-      "provider": "Vercel",
-      "notes": "Vercel hosting infrastructure"
+  "dns_infrastructure": {
+    "fileverse.io": {
+      "provider": "Cloudflare",
+      "nameservers": ["addilyn.ns.cloudflare.com", "gabriel.ns.cloudflare.com"],
+      "mx_records": [
+        "1 aspmx.l.google.com",
+        "5 alt1.aspmx.l.google.com",
+        "5 alt2.aspmx.l.google.com",
+        "10 alt3.aspmx.l.google.com",
+        "10 alt4.aspmx.l.google.com"
+      ],
+      "txt_records": [
+        "google-site-verification=XrjH6oAHkFywvSulniuDc_gsdqpHzgNU1Mk38Ry0rRM",
+        "v=spf1 mx ~all"
+      ],
+      "email_provider": "Google Workspace"
     },
-    "ddocs_product": {
-      "domain": "ddocs.new",
-      "ip": "216.150.1.1",
-      "provider": "Vercel",
-      "notes": "Same infrastructure as main site"
+    "ddocs.new": {
+      "provider": "Cloudflare",
+      "nameservers": ["addilyn.ns.cloudflare.com", "gabriel.ns.cloudflare.com"]
+    },
+    "dsheets.new": {
+      "provider": "Porkbun",
+      "nameservers": ["salvador.ns.porkbun.com", "maceio.ns.porkbun.com", "curitiba.ns.porkbun.com", "fortaleza.ns.porkbun.com"],
+      "note": "Different DNS provider than main domain"
     }
   },
 
-  "shodan_data": {
-    "main_website": {
-      "ip": "216.150.1.1",
-      "hostnames": ["no-sni.vercel-infra.com"],
-      "ports": [80, 443],
-      "cpes": [],
-      "tags": [],
-      "vulns": []
-    },
-    "assessment": "CLEAN - No vulnerabilities detected, minimal port exposure"
+  "subdomains": {
+    "total_found": 63,
+    "source": "crt.sh certificate transparency",
+    "categorized": {
+      "core_products": [
+        "fileverse.io",
+        "ddocs.new",
+        "dsheets.new",
+        "portal.fileverse.io",
+        "docs.fileverse.io",
+        "blog.fileverse.io"
+      ],
+      "api_and_backend": [
+        "api.fileverse.io",
+        "sync.fileverse.io",
+        "rtc.fileverse.io",
+        "export.fileverse.io",
+        "onchain-proxy.fileverse.io"
+      ],
+      "storage_and_ipfs": [
+        "ipfs.fileverse.io",
+        "apps-storage.fileverse.io",
+        "apps-ipfs.fileverse.io",
+        "images.fileverse.io"
+      ],
+      "indexers": [
+        "ddocs-indexer.fileverse.io",
+        "apps-indexer.fileverse.io",
+        "comments-indexer.fileverse.io"
+      ],
+      "gun_nodes": [
+        "gun-node.fileverse.io",
+        "prod-gun-node.fileverse.io"
+      ],
+      "blockchain_services": [
+        "ens.fileverse.io",
+        "verify-ens.fileverse.io",
+        "gnosis-chain.fileverse.io",
+        "gnosis-heartbit.fileverse.io",
+        "base-heartbit.fileverse.io",
+        "sepolia-heartbit.fileverse.io"
+      ],
+      "events_and_hackathons": [
+        "devcon.fileverse.io",
+        "ethdenver.fileverse.io",
+        "ethereumnyc.fileverse.io",
+        "ethsf.fileverse.io",
+        "dappcon.fileverse.io"
+      ],
+      "development": [
+        "dev.fileverse.io",
+        "dev-docs.fileverse.io",
+        "dev-ipfs.fileverse.io",
+        "dev-sync.fileverse.io",
+        "beta.fileverse.io",
+        "stage.fileverse.io",
+        "staging.fileverse.io"
+      ],
+      "community": [
+        "community.fileverse.io",
+        "community-server.fileverse.io",
+        "agents.fileverse.io",
+        "frame.fileverse.io"
+      ],
+      "misc_services": [
+        "seed.fileverse.io",
+        "walkaway.fileverse.io",
+        "identity-v1.fileverse.io",
+        "apps-voprf.fileverse.io"
+      ]
+    }
   },
 
-  "security_headers": {
+  "ip_infrastructure": {
+    "vercel_hosted": {
+      "ips": ["216.150.1.1", "216.150.16.1", "76.76.21.142", "66.33.60.66", "76.76.21.22", "66.33.60.129"],
+      "services": ["fileverse.io", "ddocs.new", "ens.fileverse.io", "docs.fileverse.io"],
+      "status": "CLEAN"
+    },
+    "heroku_backend": {
+      "services": ["api.fileverse.io", "sync.fileverse.io", "rtc.fileverse.io", "apps-storage.fileverse.io", "onchain-proxy.fileverse.io", "ddocs-indexer.fileverse.io"],
+      "frontend": "Cloudflare",
+      "status": "CLEAN"
+    },
+    "aws_singapore": {
+      "ips": ["13.213.218.98", "18.136.133.200"],
+      "services": ["gun-node.fileverse.io", "prod-gun-node.fileverse.io"],
+      "region": "ap-southeast-1",
+      "status": "CRITICAL - HAS VULNERABILITIES"
+    },
+    "aws_oregon": {
+      "ips": ["44.230.85.241", "52.33.207.7"],
+      "services": ["dsheets.new"],
+      "region": "us-west-2",
+      "status": "CLEAN"
+    },
+    "bunnycdn": {
+      "ips": ["169.150.219.114"],
+      "services": ["portal.fileverse.io"],
+      "exposed_ports": [22, 80, 1935, 3337, "6000-6020", "7000-7018", "8082-8189"],
+      "note": "BunnyCDN infrastructure with many ports open (normal for CDN)",
+      "status": "ACCEPTABLE"
+    },
+    "fastly_cdn": {
+      "ips": ["151.101.127.7", "151.101.1.91", "151.101.65.91"],
+      "services": ["blog.fileverse.io (via Ghost.io)"],
+      "status": "CLEAN"
+    },
+    "cloudflare_proxied": {
+      "ips": ["104.26.4.202", "104.26.5.202", "172.67.70.23"],
+      "services": ["community-server.fileverse.io", "onchain-proxy.fileverse.io"],
+      "status": "CLEAN"
+    }
+  },
+
+  "shodan_vulnerability_scan": {
+    "critical_findings": [
+      {
+        "ip": "13.213.218.98",
+        "hostname": "gun-node.fileverse.io",
+        "provider": "AWS ap-southeast-1",
+        "cpes": ["cpe:/a:f5:nginx:1.24.0", "cpe:/o:canonical:ubuntu_linux"],
+        "tags": ["eol-product", "cloud"],
+        "vulns": ["CVE-2023-44487", "CVE-2025-23419"],
+        "ports": [80],
+        "severity": "CRITICAL"
+      },
+      {
+        "ip": "18.136.133.200",
+        "hostname": "prod-gun-node.fileverse.io",
+        "provider": "AWS ap-southeast-1",
+        "cpes": ["cpe:/a:f5:nginx:1.24.0", "cpe:/o:canonical:ubuntu_linux"],
+        "tags": ["eol-product", "cloud"],
+        "vulns": ["CVE-2023-44487", "CVE-2025-23419"],
+        "ports": [80, 443],
+        "severity": "CRITICAL"
+      }
+    ],
+    "clean_services": [
+      {"ip": "216.150.1.1", "service": "fileverse.io", "provider": "Vercel"},
+      {"ip": "76.76.21.142", "service": "docs.fileverse.io", "provider": "Vercel"},
+      {"ip": "44.230.85.241", "service": "dsheets.new", "provider": "AWS us-west-2"},
+      {"ip": "151.101.127.7", "service": "blog (Fastly)", "provider": "Fastly CDN"},
+      {"ip": "104.26.4.202", "service": "community-server", "provider": "Cloudflare"}
+    ],
+    "cve_details": {
+      "CVE-2023-44487": {
+        "name": "HTTP/2 Rapid Reset Attack",
+        "severity": "HIGH (CVSS 7.5)",
+        "description": "DDoS vulnerability allowing resource exhaustion via HTTP/2 stream cancellation",
+        "affected": ["gun-node.fileverse.io", "prod-gun-node.fileverse.io"]
+      },
+      "CVE-2025-23419": {
+        "name": "Recent nginx vulnerability",
+        "severity": "TBD",
+        "description": "Recently disclosed vulnerability - requires investigation",
+        "affected": ["gun-node.fileverse.io", "prod-gun-node.fileverse.io"]
+      }
+    },
+    "eol_warnings": [
+      {
+        "component": "nginx 1.24.0",
+        "location": "Gun nodes (AWS Singapore)",
+        "status": "End of Life product",
+        "recommendation": "URGENT: Upgrade nginx to supported version"
+      }
+    ]
+  },
+
+  "security_headers_analysis": {
     "fileverse.io": {
       "server": "Vercel",
-      "strict-transport-security": "max-age=63072000",
-      "access-control-allow-origin": "*",
-      "cache-control": "public, max-age=0, must-revalidate",
-      "hsts_enabled": true,
-      "hsts_max_age": 63072000,
-      "missing_headers": [
-        "Content-Security-Policy",
-        "X-Frame-Options",
-        "X-Content-Type-Options",
-        "Referrer-Policy"
-      ],
-      "grade": "PARTIAL"
+      "hsts": "max-age=63072000",
+      "cors": "Access-Control-Allow-Origin: *",
+      "csp": "NOT SET",
+      "x_frame_options": "NOT SET",
+      "x_content_type_options": "NOT SET",
+      "referrer_policy": "NOT SET",
+      "grade": "PARTIAL",
+      "issues": ["Missing CSP", "Missing X-Frame-Options", "Overly permissive CORS"]
     },
-    "ddocs.new": {
-      "server": "Vercel",
-      "strict-transport-security": "max-age=63072000",
-      "hsts_enabled": true,
-      "grade": "PARTIAL"
+    "api.fileverse.io": {
+      "server": "Cloudflare (Heroku backend)",
+      "hsts": "max-age=15552000; includeSubDomains",
+      "csp": "default-src 'none'",
+      "x_content_type_options": "nosniff",
+      "referrer_policy": "no-referrer",
+      "x_dns_prefetch_control": "off",
+      "x_download_options": "noopen",
+      "x_permitted_cross_domain_policies": "none",
+      "x_xss_protection": "0",
+      "grade": "EXCELLENT"
+    },
+    "apps-storage.fileverse.io": {
+      "server": "Cloudflare (Heroku backend)",
+      "hsts": "max-age=15552000; includeSubDomains",
+      "csp": "default-src 'none'",
+      "coep": "require-corp",
+      "coop": "same-origin",
+      "corp": "same-origin",
+      "referrer_policy": "no-referrer",
+      "x_content_type_options": "nosniff",
+      "grade": "EXCELLENT"
+    },
+    "rtc.fileverse.io": {
+      "server": "Cloudflare (Heroku backend)",
+      "hsts": "max-age=15552000; includeSubDomains",
+      "coop": "same-origin",
+      "corp": "same-origin",
+      "referrer_policy": "no-referrer",
+      "x_content_type_options": "nosniff",
+      "grade": "GOOD"
+    },
+    "gun-node.fileverse.io": {
+      "server": "nginx/1.24.0 (Ubuntu)",
+      "cors": "Access-Control-Allow-Origin: *",
+      "hsts": "NOT SET",
+      "csp": "NOT SET",
+      "grade": "POOR",
+      "issues": ["Server version exposed", "No HSTS", "No security headers", "Not behind CDN"]
+    },
+    "portal.fileverse.io": {
+      "server": "BunnyCDN-CA1-1025",
+      "cors": "Access-Control-Allow-Origin: *",
+      "ipfs_headers": ["X-Ipfs-Path", "X-Ipfs-Roots", "X-Chunked-Output"],
+      "grade": "ACCEPTABLE"
+    },
+    "ddocs-indexer.fileverse.io": {
+      "server": "Cloudflare (Heroku backend)",
+      "x_powered_by": "Express (EXPOSED)",
+      "grade": "PARTIAL",
+      "issues": ["X-Powered-By header exposes technology", "Currently returning 500 errors"]
     }
   },
 
@@ -70,19 +278,16 @@
     "name": "Fileverse",
     "public_repos": 49,
     "created": "2022-02-03T11:24:26Z",
-    "description": "Privacy-first workspace & collaboration apps – end-to-end encrypted, decentralized, onchain",
-    "website": "https://fileverse.io/",
     "location": "Greece",
     "email": "hello@fileverse.io",
+    "description": "Privacy-first workspace & collaboration apps – end-to-end encrypted, decentralized, onchain",
     "key_repositories": [
-      {"name": "fileverse-ddoc", "stars": 140, "forks": 20, "language": "TypeScript", "purpose": "Main dDocs application"},
-      {"name": "fileverse-backend", "stars": 43, "language": "JavaScript", "purpose": "Backend services"},
-      {"name": "fileverse-dsheet", "stars": 34, "language": "TypeScript", "purpose": "dSheets product"},
-      {"name": "fileverse-storage", "stars": 22, "language": "JavaScript", "purpose": "Storage layer"},
-      {"name": "fortune-sheet", "stars": 16, "language": "TypeScript", "purpose": "Spreadsheet library fork"},
-      {"name": "self-hosted-public-drive", "stars": 13, "language": "TypeScript", "purpose": "Decentralized file management"},
-      {"name": "fileverse-cryptography", "stars": 10, "language": "TypeScript", "purpose": "E2E encryption implementation"},
-      {"name": "zkovery", "stars": 8, "language": "Solidity", "purpose": "ZK-based account recovery"}
+      {"name": "fileverse-ddoc", "stars": 140, "forks": 20, "language": "TypeScript"},
+      {"name": "fileverse-backend", "stars": 43, "language": "JavaScript"},
+      {"name": "fileverse-dsheet", "stars": 34, "language": "TypeScript"},
+      {"name": "fileverse-storage", "stars": 22, "language": "JavaScript"},
+      {"name": "fileverse-cryptography", "stars": 10, "language": "TypeScript"},
+      {"name": "zkovery", "stars": 8, "language": "Solidity"}
     ],
     "top_contributors": [
       {"login": "kylengn", "contributions": 224},
@@ -93,110 +298,103 @@
     ]
   },
 
-  "privacy_architecture": {
-    "encryption": "End-to-end encryption by default",
-    "storage": {
-      "primary": "IPFS (InterPlanetary File System)",
-      "secondary": "Arweave (permanent storage)",
-      "notes": "No centralized servers for user data"
+  "technology_stack": {
+    "hosting": {
+      "primary_web": "Vercel",
+      "backend_api": "Heroku",
+      "cdn": ["Cloudflare", "BunnyCDN", "Fastly"],
+      "compute": "AWS (Singapore, Oregon)",
+      "blog": "Ghost.io"
     },
-    "blockchain_integration": {
-      "networks": ["Ethereum", "Gnosis Chain"],
-      "features": [
-        "On-chain permissions",
-        "Social recovery methods",
-        "Trustless group accounts",
-        "ENS integration",
-        "Farcaster frames support"
-      ]
+    "decentralized": {
+      "storage": "IPFS",
+      "realtime_db": "Gun.js",
+      "permanent_storage": "Arweave"
     },
-    "zk_features": {
-      "zkovery": "ZK-based account recovery for dDocs and dSheets",
-      "granular_permissions": "zk-granular-permissions repo for access control"
-    }
-  },
-
-  "products": {
-    "ddocs": {
-      "url": "https://ddocs.new",
-      "description": "Decentralized alternative to Google Docs",
-      "features": ["E2E encryption", "Real-time collaboration", "IPFS storage", "No account required"],
-      "status": "Public Beta"
+    "blockchain": {
+      "networks": ["Ethereum", "Gnosis Chain", "Base", "Sepolia (testnet)"],
+      "features": ["ENS integration", "HeartBit", "On-chain permissions"]
     },
-    "dsheets": {
-      "url": "https://dsheets.new",
-      "description": "Decentralized alternative to Google Sheets",
-      "features": ["E2E encryption", "On-chain data import", "Protocol interactions"],
-      "status": "Active"
-    },
-    "portal": {
-      "url": "https://portal.fileverse.io",
-      "description": "Broader collaboration platform",
-      "status": "Active"
-    }
-  },
-
-  "funding_and_endorsements": {
-    "pre_seed": {
-      "amount": "$1.5M",
-      "date": "2022",
-      "investors": [
-        "Factor (VC)",
-        "Balaji Srinivasan",
-        "Safe (wallet provider)",
-        "Gnosis Chain"
-      ],
-      "confidence": 0.95,
-      "source": "The Block, web search results"
-    },
-    "gitcoin_funding": {
-      "description": "Multiple funding rounds from Gitcoin crowdfunding",
-      "start_year": 2022,
-      "confidence": 0.90
-    },
-    "vitalik_endorsement": {
-      "date": "2025-12-10",
-      "quote": "I've been impressed by (decentralized open-source encrypted docs). Every month more bugs get fixed, and recently it's finally at the point where I can comfortably send docs off for comment or collaboration, and things reliably don't break.",
-      "confidence": 1.0,
-      "source": "The Block"
+    "security": {
+      "encryption": "E2E encryption (fileverse-cryptography)",
+      "zk_features": "zkovery (ZK account recovery)"
     }
   },
 
   "risk_assessment": {
+    "critical_issues": [
+      {
+        "issue": "Gun nodes have 2 CVEs",
+        "affected": ["gun-node.fileverse.io", "prod-gun-node.fileverse.io"],
+        "cves": ["CVE-2023-44487", "CVE-2025-23419"],
+        "impact": "DDoS vulnerability, potential service disruption",
+        "recommendation": "URGENT: Update nginx and patch CVEs"
+      },
+      {
+        "issue": "nginx 1.24.0 marked as EOL",
+        "affected": ["Gun nodes"],
+        "impact": "No longer receiving security updates",
+        "recommendation": "Upgrade to nginx 1.25.x or 1.26.x"
+      }
+    ],
+    "medium_issues": [
+      {
+        "issue": "Main website missing security headers",
+        "affected": ["fileverse.io", "ddocs.new"],
+        "headers_missing": ["Content-Security-Policy", "X-Frame-Options", "X-Content-Type-Options"],
+        "recommendation": "Add security headers via Vercel configuration"
+      },
+      {
+        "issue": "X-Powered-By header exposed",
+        "affected": ["ddocs-indexer.fileverse.io"],
+        "recommendation": "Remove X-Powered-By header in Express config"
+      },
+      {
+        "issue": "CORS overly permissive",
+        "affected": ["Most services"],
+        "current": "Access-Control-Allow-Origin: *",
+        "recommendation": "Restrict CORS to specific trusted origins"
+      }
+    ],
     "positive_findings": [
-      "No CVEs detected on infrastructure",
-      "HSTS enabled with 2-year max-age",
-      "49 public repositories - high transparency",
-      "Active development (commits in Jan 2026)",
-      "E2E encryption implemented in dedicated cryptography repo",
+      "49 public repositories - excellent transparency",
+      "Backend services (api, storage, rtc) have excellent security headers",
+      "Main products hosted on Vercel - no CVEs",
+      "Cloudflare protection on many services",
+      "HSTS enabled with long duration (2 years) on main sites",
       "ZK features for account recovery",
-      "Vitalik Buterin endorsement",
-      "Decentralized storage (IPFS/Arweave)"
-    ],
-    "areas_for_improvement": [
-      "Missing Content-Security-Policy header",
-      "Missing X-Frame-Options header",
-      "Missing X-Content-Type-Options header",
-      "CORS set to * (overly permissive)",
-      "License information unclear for main repos"
-    ],
-    "recommendations": [
-      "Add Content-Security-Policy header",
-      "Add X-Frame-Options header",
-      "Add X-Content-Type-Options header",
-      "Restrict CORS to specific origins",
-      "Add clear license files to repositories"
+      "E2E encryption implementation",
+      "Active development (commits in Jan 2026)",
+      "Vitalik Buterin endorsement (Dec 2025)"
     ]
   },
 
-  "confidence_score": 0.92,
+  "recommendations": {
+    "urgent": [
+      "Patch CVE-2023-44487 and CVE-2025-23419 on Gun nodes",
+      "Upgrade nginx on Gun nodes to supported version",
+      "Add CDN protection (Cloudflare) in front of Gun nodes"
+    ],
+    "high": [
+      "Add Content-Security-Policy header to fileverse.io and ddocs.new",
+      "Add X-Frame-Options header to prevent clickjacking",
+      "Add X-Content-Type-Options: nosniff",
+      "Remove X-Powered-By header from indexer services"
+    ],
+    "medium": [
+      "Restrict CORS to specific trusted origins",
+      "Consider using same DNS provider across all domains",
+      "Add security.txt file for vulnerability disclosure"
+    ]
+  },
+
+  "confidence_score": 0.95,
   "sources": [
+    "crt.sh certificate transparency",
     "Shodan InternetDB API",
     "DNS resolution (dig)",
-    "HTTP header analysis",
+    "HTTP header analysis (curl)",
     "GitHub API",
-    "The Block",
-    "Fileverse blog",
-    "Web search results"
+    "Direct service probing"
   ]
 }
