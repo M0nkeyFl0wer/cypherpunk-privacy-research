@@ -57,8 +57,12 @@ export default function ProjectMiniGraph({ projectId, width = 400, height = 300,
     fetch('/data/research-graph.json')
       .then(res => res.json())
       .then(data => {
+        console.log('[MiniGraph] Loading graph for:', projectId);
+        console.log('[MiniGraph] Total nodes:', data.nodes.length, 'Total links:', data.links.length);
+
         // Find the project node
         const projectNode = data.nodes.find((n: any) => n.id === projectId && n.type === 'project');
+        console.log('[MiniGraph] Found project node:', projectNode);
         if (!projectNode) {
           setError('Project not found in graph');
           setLoading(false);
@@ -69,6 +73,7 @@ export default function ProjectMiniGraph({ projectId, width = 400, height = 300,
         const connectedLinks = data.links.filter((l: any) =>
           l.source === projectId || l.target === projectId
         );
+        console.log('[MiniGraph] Connected links:', connectedLinks.length, connectedLinks.slice(0, 3));
 
         // Get connected node IDs
         const connectedIds = new Set<string>([projectId]);
@@ -76,6 +81,7 @@ export default function ProjectMiniGraph({ projectId, width = 400, height = 300,
           connectedIds.add(l.source);
           connectedIds.add(l.target);
         });
+        console.log('[MiniGraph] Connected IDs:', Array.from(connectedIds));
 
         // Filter nodes to only connected ones (excluding contributors for cleaner view)
         const filteredNodes: GraphNode[] = data.nodes
@@ -84,12 +90,14 @@ export default function ProjectMiniGraph({ projectId, width = 400, height = 300,
             ...n,
             size: n.type === 'project' ? 25 : 12,
           }));
+        console.log('[MiniGraph] Filtered nodes:', filteredNodes.length);
 
         const filteredLinks = connectedLinks.filter((l: any) => {
           const sourceNode = filteredNodes.find(n => n.id === l.source);
           const targetNode = filteredNodes.find(n => n.id === l.target);
           return sourceNode && targetNode;
         });
+        console.log('[MiniGraph] Filtered links:', filteredLinks.length);
 
         renderGraph(filteredNodes, filteredLinks);
         setLoading(false);

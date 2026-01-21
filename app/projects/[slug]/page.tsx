@@ -4,6 +4,26 @@ import path from 'path';
 import ReactMarkdown from 'react-markdown';
 import dynamic from 'next/dynamic';
 
+// Helper to check if a report has substantive content vs just "not found" text
+function isEmptyReport(content: string): boolean {
+  const emptyMarkers = [
+    'not publicly available',
+    'No public security audit',
+    'No public bug bounty',
+    'information not publicly available',
+    'No audit reports found',
+    'Research needed',
+    'Data unavailable',
+  ];
+
+  // Check if the report is mostly "not found" messages
+  const lines = content.split('\n').filter(l => l.trim() && !l.startsWith('#') && !l.startsWith('*Research'));
+  const emptyLines = lines.filter(l => emptyMarkers.some(m => l.toLowerCase().includes(m.toLowerCase())));
+
+  // If more than 50% of content lines are "not found" markers, consider it empty
+  return lines.length < 5 || (emptyLines.length / lines.length) > 0.3;
+}
+
 // Dynamic import for client-side visualization
 const ProjectMiniGraph = dynamic(
   () => import('@/components/Visualizations/ProjectMiniGraph'),
@@ -261,7 +281,7 @@ export default async function ProjectPage({ params }: { params: { slug: string }
             />
           )}
 
-          {project.team && (
+          {project.team && !isEmptyReport(project.team) && (
             <ReportSection
               title="Team Research"
               content={project.team}
@@ -269,7 +289,7 @@ export default async function ProjectPage({ params }: { params: { slug: string }
             />
           )}
 
-          {project.security && (
+          {project.security && !isEmptyReport(project.security) && (
             <ReportSection
               title="Security Analysis"
               content={project.security}
@@ -335,7 +355,7 @@ function ReportSection({ title, content, defaultOpen = false, color = '#94e2d5',
                 <img
                   src={src}
                   alt={alt || ''}
-                  className="max-w-[200px] h-auto rounded-lg my-4"
+                  className="max-w-[400px] h-auto rounded-lg my-4"
                 />
               ),
             }}
