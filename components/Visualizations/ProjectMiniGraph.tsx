@@ -48,6 +48,9 @@ export default function ProjectMiniGraph({ projectId, width = 400, height = 400 
   const [visibleNodes, setVisibleNodes] = useState<GraphNode[]>([]);
   const [visibleLinks, setVisibleLinks] = useState<GraphLink[]>([]);
   const simulationRef = useRef<d3.Simulation<GraphNode, undefined> | null>(null);
+  const zoomRef = useRef<d3.ZoomBehavior<SVGSVGElement, unknown> | null>(null);
+  const lastClickTimeRef = useRef<number>(0);
+  const lastClickNodeRef = useRef<string | null>(null);
 
   // Load full graph data once
   useEffect(() => {
@@ -117,7 +120,7 @@ export default function ProjectMiniGraph({ projectId, width = 400, height = 400 
     setVisibleLinks(validLinks);
   }, [fullData, expandedNodes]);
 
-  // Handle node expansion (single click)
+  // Handle node expansion (single click) with smooth zoom
   const handleNodeExpand = useCallback((node: GraphNode) => {
     if (node.id === projectId) return; // Don't collapse the main project
 
@@ -127,12 +130,24 @@ export default function ProjectMiniGraph({ projectId, width = 400, height = 400 
         // Already expanded - collapse it
         next.delete(node.id);
       } else {
-        // Expand it
+        // Expand it and zoom smoothly
         next.add(node.id);
+
+        // Smooth zoom to the expanded node
+        if (svgRef.current && zoomRef.current && node.x !== undefined && node.y !== undefined) {
+          const svg = d3.select(svgRef.current);
+          const transform = d3.zoomIdentity
+            .translate(width / 2 - node.x * 1.3, height / 2 - node.y * 1.3)
+            .scale(1.3);
+          svg.transition()
+            .duration(400)
+            .ease(d3.easeCubicInOut)
+            .call(zoomRef.current.transform, transform);
+        }
       }
       return next;
     });
-  }, [projectId]);
+  }, [projectId, width, height]);
 
   // Handle navigation (double click)
   const handleNavigate = useCallback((node: GraphNode) => {
@@ -159,6 +174,7 @@ export default function ProjectMiniGraph({ projectId, width = 400, height = 400 
         g.attr('transform', event.transform);
       });
     svg.call(zoom);
+    zoomRef.current = zoom;
 
     // Center initial view
     svg.call(zoom.transform, d3.zoomIdentity.translate(width / 2 - 200, height / 2 - 200).scale(1));
@@ -310,9 +326,7 @@ export default function ProjectMiniGraph({ projectId, width = 400, height = 400 
 
     node.call(drag);
 
-    // Click and double-click handling
-    let clickTimer: NodeJS.Timeout | null = null;
-
+    // Click handling with timestamp-based double-click detection
     node
       .on('mouseover', function(event, d) {
         const isExpanded = expandedNodes.has(d.id);
@@ -361,18 +375,26 @@ export default function ProjectMiniGraph({ projectId, width = 400, height = 400 
       .on('click', function(event, d) {
         event.stopPropagation();
 
-        // Handle double-click detection
-        if (clickTimer) {
-          clearTimeout(clickTimer);
-          clickTimer = null;
+        // Timestamp-based double-click detection (more reliable)
+        const now = Date.now();
+        const timeSinceLastClick = now - lastClickTimeRef.current;
+        const isSameNode = lastClickNodeRef.current === d.id;
+
+        if (timeSinceLastClick < 300 && isSameNode) {
           // Double click - navigate
+          lastClickTimeRef.current = 0;
+          lastClickNodeRef.current = null;
           handleNavigate(d);
         } else {
-          clickTimer = setTimeout(() => {
-            clickTimer = null;
-            // Single click - expand/collapse
-            handleNodeExpand(d);
-          }, 250);
+          // Single click - expand/collapse
+          lastClickTimeRef.current = now;
+          lastClickNodeRef.current = d.id;
+          // Use timeout to allow for potential double-click
+          setTimeout(() => {
+            if (lastClickTimeRef.current === now) {
+              handleNodeExpand(d);
+            }
+          }, 300);
         }
       });
 
@@ -417,20 +439,32 @@ export default function ProjectMiniGraph({ projectId, width = 400, height = 400 
         style={{ opacity: loading ? 0.3 : 1 }}
       />
 
-      {/* Stats bar */}
+      {/* Stats bar with SVG legend */}
       <div className="flex items-center justify-between mt-3 text-xs text-[#6c7086]">
         <div className="flex gap-4">
           <span className="flex items-center gap-1.5">
-            <span className="w-3 h-3 rounded-full bg-[#94e2d5]"></span> project
+            <svg width="14" height="14" viewBox="-7 -7 14 14">
+              <circle r="5" fill="#94e2d5" stroke="#74b8b0" strokeWidth="1"/>
+            </svg>
+            project
           </span>
           <span className="flex items-center gap-1.5">
-            <span className="w-3 h-3 bg-[#89b4fa]" style={{ clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)' }}></span> language
+            <svg width="14" height="14" viewBox="-7 -7 14 14">
+              <polygon points="0,-5 4.3,-2.5 4.3,2.5 0,5 -4.3,2.5 -4.3,-2.5" fill="#89b4fa" stroke="#7aa2d8" strokeWidth="1"/>
+            </svg>
+            language
           </span>
           <span className="flex items-center gap-1.5">
-            <span className="w-3 h-3 bg-[#a6e3a1]" style={{ clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)' }}></span> topic
+            <svg width="14" height="14" viewBox="-7 -7 14 14">
+              <polygon points="0,-5 5,0 0,5 -5,0" fill="#a6e3a1" stroke="#8dc48d" strokeWidth="1"/>
+            </svg>
+            topic
           </span>
           <span className="flex items-center gap-1.5">
-            <span className="w-3 h-3 bg-[#f9e2af]"></span> license
+            <svg width="14" height="14" viewBox="-7 -7 14 14">
+              <rect x="-4" y="-4" width="8" height="8" fill="#f9e2af" stroke="#d8c58d" strokeWidth="1"/>
+            </svg>
+            license
           </span>
         </div>
         <div className="text-[#555]">
