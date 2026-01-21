@@ -49,8 +49,6 @@ export default function ProjectMiniGraph({ projectId, width = 400, height = 400 
   const [visibleLinks, setVisibleLinks] = useState<GraphLink[]>([]);
   const simulationRef = useRef<d3.Simulation<GraphNode, undefined> | null>(null);
   const zoomRef = useRef<d3.ZoomBehavior<SVGSVGElement, unknown> | null>(null);
-  const lastClickTimeRef = useRef<number>(0);
-  const lastClickNodeRef = useRef<string | null>(null);
 
   // Load full graph data once
   useEffect(() => {
@@ -374,28 +372,14 @@ export default function ProjectMiniGraph({ projectId, width = 400, height = 400 
       })
       .on('click', function(event, d) {
         event.stopPropagation();
-
-        // Timestamp-based double-click detection (more reliable)
-        const now = Date.now();
-        const timeSinceLastClick = now - lastClickTimeRef.current;
-        const isSameNode = lastClickNodeRef.current === d.id;
-
-        if (timeSinceLastClick < 300 && isSameNode) {
-          // Double click - navigate
-          lastClickTimeRef.current = 0;
-          lastClickNodeRef.current = null;
-          handleNavigate(d);
-        } else {
-          // Single click - expand/collapse
-          lastClickTimeRef.current = now;
-          lastClickNodeRef.current = d.id;
-          // Use timeout to allow for potential double-click
-          setTimeout(() => {
-            if (lastClickTimeRef.current === now) {
-              handleNodeExpand(d);
-            }
-          }, 300);
-        }
+        // Single click - expand/collapse connections
+        handleNodeExpand(d);
+      })
+      .on('dblclick', function(event, d) {
+        event.stopPropagation();
+        event.preventDefault();
+        // Double click - navigate to project/page
+        handleNavigate(d);
       });
 
     // Update positions on tick

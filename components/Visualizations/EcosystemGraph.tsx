@@ -347,9 +347,6 @@ export default function EcosystemGraph({ width = 900, height = 600, initialFocus
     node.call(drag);
 
     // Interaction handlers
-    let clickTimeout: NodeJS.Timeout | null = null;
-    let lastClickTime = 0;
-
     node
       .on('mouseover', function(event, d) {
         const isExpanded = expandedNodes.has(d.id);
@@ -393,23 +390,16 @@ export default function EcosystemGraph({ width = 900, height = 600, initialFocus
       })
       .on('click', function(event, d) {
         event.stopPropagation();
-        const now = Date.now();
-
-        if (now - lastClickTime < 300) {
-          // Double click - navigate
-          if (clickTimeout) clearTimeout(clickTimeout);
-          clickTimeout = null;
-          if (d.type === 'project') {
-            handleNavigate(d);
-          }
-        } else {
-          // Single click - expand after delay
-          clickTimeout = setTimeout(() => {
-            handleNodeExpand(d, event);
-            clickTimeout = null;
-          }, 300);
+        // Single click - expand/collapse connections
+        handleNodeExpand(d, event);
+      })
+      .on('dblclick', function(event, d) {
+        event.stopPropagation();
+        event.preventDefault();
+        // Double click - navigate to project page
+        if (d.type === 'project') {
+          handleNavigate(d);
         }
-        lastClickTime = now;
       });
 
     // Simulation tick

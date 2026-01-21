@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
+import { useCommandPaletteContext } from '@/components/CommandPalette/CommandPaletteProvider';
 
 // Dynamically import the graph to avoid SSR issues with D3
 const ObsidianGraph = dynamic(
@@ -11,13 +12,12 @@ const ObsidianGraph = dynamic(
 );
 
 export default function PortalPage() {
-  const [query, setQuery] = useState('');
   const [showGraph, setShowGraph] = useState(true);
+  const { open: openSearch } = useCommandPaletteContext();
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // TODO: Implement AI search with Ollama
-    console.log('Search query:', query);
+  const handleSearchFocus = () => {
+    // Open the command palette when user focuses search bar
+    openSearch();
   };
 
   return (
@@ -44,18 +44,20 @@ export default function PortalPage() {
           </p>
         </div>
 
-        {/* Search Bar */}
-        <form onSubmit={handleSubmit} className="max-w-3xl mx-auto mb-8">
+        {/* Search Bar - Opens Command Palette */}
+        <div className="max-w-3xl mx-auto mb-8">
           <div className="relative">
             <input
               type="text"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              placeholder="Ask about privacy projects... (e.g., &quot;Which projects use zk-SNARKs?&quot;)"
-              className="w-full px-6 py-4 pr-14 bg-[#111] border border-[#252525] rounded-xl text-[#e0e0e0] placeholder-[#6c7086] focus:outline-none focus:border-[#94e2d5] focus:ring-1 focus:ring-[#94e2d5] text-lg"
+              readOnly
+              onFocus={handleSearchFocus}
+              onClick={handleSearchFocus}
+              placeholder="Search projects, techniques, pages... (⌘K)"
+              className="w-full px-6 py-4 pr-14 bg-[#111] border border-[#252525] rounded-xl text-[#e0e0e0] placeholder-[#6c7086] focus:outline-none focus:border-[#94e2d5] focus:ring-1 focus:ring-[#94e2d5] text-lg cursor-pointer"
             />
             <button
-              type="submit"
+              type="button"
+              onClick={handleSearchFocus}
               className="absolute right-2 top-1/2 -translate-y-1/2 p-2 bg-[#1a1a1a] hover:bg-[#252525] border border-[#252525] hover:border-[#94e2d5] rounded-lg transition-colors"
             >
               <svg className="w-6 h-6 text-[#94e2d5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -63,35 +65,13 @@ export default function PortalPage() {
               </svg>
             </button>
           </div>
-          <div className="flex flex-wrap gap-2 mt-4 justify-center">
-            <button
-              type="button"
-              onClick={() => setQuery('Which projects use zk-SNARKs?')}
-              className="text-sm px-3 py-1 bg-[#111] text-[#6c7086] rounded-lg hover:bg-[#1a1a1a] hover:text-[#e0e0e0] transition-colors border border-[#252525]"
-            >
-              zk-SNARKs projects
-            </button>
-            <button
-              type="button"
-              onClick={() => setQuery('Compare OSINT projects by subdomain count')}
-              className="text-sm px-3 py-1 bg-[#111] text-[#6c7086] rounded-lg hover:bg-[#1a1a1a] hover:text-[#e0e0e0] transition-colors border border-[#252525]"
-            >
-              Compare OSINT projects
-            </button>
-            <button
-              type="button"
-              onClick={() => setQuery('Show projects written in Rust')}
-              className="text-sm px-3 py-1 bg-[#111] text-[#6c7086] rounded-lg hover:bg-[#1a1a1a] hover:text-[#e0e0e0] transition-colors border border-[#252525]"
-            >
-              Rust projects
-            </button>
+          <div className="text-center mt-3 text-xs text-[#6c7086]">
+            Press <kbd className="px-1.5 py-0.5 bg-[#1a1a1a] rounded border border-[#252525] mx-1">⌘K</kbd> or click to search
           </div>
-        </form>
+        </div>
 
-        {/* AI Coming Soon + Toggle */}
-        <div className="flex items-center justify-center gap-4 mb-8">
-          <span className="text-sm text-[#6c7086]">AI search coming soon</span>
-          <span className="text-[#252525]">•</span>
+        {/* Graph Toggle */}
+        <div className="flex items-center justify-center mb-8">
           <button
             onClick={() => setShowGraph(!showGraph)}
             className="text-sm text-[#94e2d5] hover:text-white transition-colors"
