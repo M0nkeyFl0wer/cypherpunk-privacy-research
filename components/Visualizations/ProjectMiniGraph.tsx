@@ -110,6 +110,10 @@ export default function ProjectMiniGraph({ projectId, width = 400, height = 300,
   }, [projectId, width, height]);
 
   const renderGraph = (nodes: GraphNode[], links: GraphLink[]) => {
+    console.log('[MiniGraph Render] Nodes:', nodes.length, 'Links:', links.length);
+    console.log('[MiniGraph Render] Sample node:', nodes[0]);
+    console.log('[MiniGraph Render] Sample link:', links[0]);
+
     if (!svgRef.current) return;
 
     d3.select(svgRef.current).selectAll('*').remove();
@@ -220,6 +224,25 @@ export default function ProjectMiniGraph({ projectId, width = 400, height = 300,
       .attr('font-size', d => d.type === 'project' ? '11px' : '9px')
       .attr('pointer-events', 'none');
 
+    // Add drag behavior
+    const drag = d3.drag<SVGGElement, GraphNode>()
+      .on('start', (event, d) => {
+        if (!event.active) simulation.alphaTarget(0.3).restart();
+        d.fx = d.x;
+        d.fy = d.y;
+      })
+      .on('drag', (event, d) => {
+        d.fx = event.x;
+        d.fy = event.y;
+      })
+      .on('end', (event, d) => {
+        if (!event.active) simulation.alphaTarget(0);
+        d.fx = null;
+        d.fy = null;
+      });
+
+    node.call(drag);
+
     // Node interactions
     node
       .on('mouseover', function(event, d) {
@@ -257,12 +280,7 @@ export default function ProjectMiniGraph({ projectId, width = 400, height = 300,
         handleNodeClick(d);
       });
 
-    // Cleanup tooltip on unmount
-    return () => {
-      tooltip.remove();
-    };
-
-    // Update positions
+    // Update positions on simulation tick
     simulation.on('tick', () => {
       link
         .attr('x1', d => (d.source as any).x)

@@ -1,6 +1,6 @@
 # semaphore
 
-![semaphore logo](https://raw.githubusercontent.com/M0nkeyFl0wer/web3-privacy-ethereum-cypherpunk-research/master/deliverables/semaphore/media/semaphore-logo.svg)
+![semaphore logo](/media/semaphore-github-avatar.png)
 
 
 ## 📝 Description
