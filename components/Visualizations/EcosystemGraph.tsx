@@ -344,7 +344,7 @@ export default function EcosystemGraph({ width = 900, height = 600, initialFocus
         d.fy = null;
       });
 
-    node.call(drag);
+    node.call(drag as any);
 
     // Interaction handlers
     node
