@@ -1,6 +1,6 @@
 # hopr
 
-![hopr logo](https://raw.githubusercontent.com/M0nkeyFl0wer/web3-privacy-ethereum-cypherpunk-research/master/deliverables/hopr/media/hopr_logo.png)
+![hopr logo](/media/hopr_logo.png)
 
 
 ## 📝 Description

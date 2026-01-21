@@ -1,6 +1,6 @@
 # elusiv
 
-![elusiv logo](https://raw.githubusercontent.com/M0nkeyFl0wer/web3-privacy-ethereum-cypherpunk-research/master/deliverables/elusiv/media/elusiv-logo.svg)
+![elusiv logo](/media/elusiv-logo.svg)
 
 
 ## 📝 Description

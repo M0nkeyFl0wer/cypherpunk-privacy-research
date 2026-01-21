@@ -1,6 +1,6 @@
 # mysterium-network
 
-![mysterium-network logo](https://raw.githubusercontent.com/M0nkeyFl0wer/web3-privacy-ethereum-cypherpunk-research/master/deliverables/mysterium-network/media/myst-token-logo.png)
+![mysterium-network logo](/media/myst-token-logo.png)
 
 
 ## 📝 Description

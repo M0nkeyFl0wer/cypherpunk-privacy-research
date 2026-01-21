@@ -247,12 +247,6 @@ export default async function ProjectPage({ params }: { params: { slug: string }
           </div>
         )}
 
-        {/* Connection Graph */}
-        <div className="mb-8">
-          <h2 className="text-sm font-medium text-[#6c7086] mb-3">Project Connections</h2>
-          <ProjectMiniGraph projectId={slug} height={280} />
-        </div>
-
         {/* Reports */}
         <div className="space-y-4">
           {project.readme && (
@@ -296,6 +290,15 @@ export default async function ProjectPage({ params }: { params: { slug: string }
               color="#f38ba8"
             />
           )}
+        </div>
+
+        {/* Explore Related Projects - Graph at bottom for navigation */}
+        <div className="mt-12 pt-8 border-t border-[#252525]">
+          <h2 className="text-lg font-medium text-[#e0e0e0] mb-2">Explore Related Projects</h2>
+          <p className="text-sm text-[#6c7086] mb-4">
+            Click nodes to explore connections. Drag to reposition.
+          </p>
+          <ProjectMiniGraph projectId={slug} height={400} />
         </div>
 
         {/* Footer */}

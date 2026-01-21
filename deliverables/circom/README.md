@@ -1,6 +1,6 @@
 # circom
 
-![circom logo](https://raw.githubusercontent.com/M0nkeyFl0wer/web3-privacy-ethereum-cypherpunk-research/master/deliverables/circom/media/circom-logo-black.png)
+![circom logo](/media/circom-logo.png)
 
 
 ## 📝 Description

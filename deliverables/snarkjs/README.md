@@ -1,6 +1,6 @@
 # snarkjs
 
-![snarkjs logo](https://raw.githubusercontent.com/M0nkeyFl0wer/web3-privacy-ethereum-cypherpunk-research/master/deliverables/snarkjs/media/circom-favicon.png)
+![snarkjs logo](/media/snarkjs-logo.png)
 
 
 ## 📝 Description

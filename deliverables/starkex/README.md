@@ -1,6 +1,6 @@
 # starkex
 
-![starkex logo](https://raw.githubusercontent.com/M0nkeyFl0wer/web3-privacy-ethereum-cypherpunk-research/master/deliverables/starkex/media/starkware-logo.svg)
+![starkex logo](/media/starkex-logo.svg)
 
 
 ## 📝 Description

@@ -1,6 +1,6 @@
 # fluidkey
 
-![fluidkey logo](https://raw.githubusercontent.com/M0nkeyFl0wer/web3-privacy-ethereum-cypherpunk-research/master/deliverables/fluidkey/media/fluidkey_logo_github.png)
+![fluidkey logo](/media/fluidkey_logo_github.png)
 
 
 ## 📝 Description

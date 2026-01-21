@@ -1,6 +1,6 @@
 # zk-money
 
-![zk-money logo](https://raw.githubusercontent.com/M0nkeyFl0wer/web3-privacy-ethereum-cypherpunk-research/master/deliverables/zk-money/media/aztec-logo.png)
+![zk-money logo](/media/zk-money-logo.png)
 
 
 ## 📝 Description

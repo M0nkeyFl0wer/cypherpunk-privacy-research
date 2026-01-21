@@ -1,6 +1,6 @@
 # darkfi
 
-![darkfi logo](https://raw.githubusercontent.com/M0nkeyFl0wer/web3-privacy-ethereum-cypherpunk-research/master/deliverables/darkfi/media/darkfi-github-avatar.png)
+![darkfi logo](/media/darkfi-github-avatar.png)
 
 
 ## 📝 Description

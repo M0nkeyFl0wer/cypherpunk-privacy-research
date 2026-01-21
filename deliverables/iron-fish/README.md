@@ -1,6 +1,6 @@
 # iron-fish
 
-![iron-fish logo](https://raw.githubusercontent.com/M0nkeyFl0wer/web3-privacy-ethereum-cypherpunk-research/master/deliverables/iron-fish/media/github-logo.png)
+![iron-fish logo](/media/iron-fish-logo.png)
 
 
 ## 📝 Description

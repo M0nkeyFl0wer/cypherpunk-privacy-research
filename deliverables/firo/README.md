@@ -1,6 +1,6 @@
 # firo
 
-![firo logo](https://raw.githubusercontent.com/M0nkeyFl0wer/web3-privacy-ethereum-cypherpunk-research/master/deliverables/firo/media/firo-logo.png)
+![firo logo](/media/firo-logo.png)
 
 
 ## 📝 Description

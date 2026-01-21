@@ -1,6 +1,6 @@
 # sienna-network
 
-![sienna-network logo](https://raw.githubusercontent.com/M0nkeyFl0wer/web3-privacy-ethereum-cypherpunk-research/master/deliverables/sienna-network/media/sienna-logo.svg)
+![sienna-network logo](/media/sienna-logo.svg)
 
 
 ## 📝 Description

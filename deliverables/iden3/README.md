@@ -1,6 +1,6 @@
 # iden3
 
-![iden3 logo](https://raw.githubusercontent.com/M0nkeyFl0wer/web3-privacy-ethereum-cypherpunk-research/master/deliverables/iden3/media/iden3-logo.svg)
+![iden3 logo](/media/iden3-logo.svg)
 
 
 ## 📝 Description

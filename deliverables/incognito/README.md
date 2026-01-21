@@ -1,6 +1,6 @@
 # incognito
 
-![incognito logo](https://raw.githubusercontent.com/M0nkeyFl0wer/web3-privacy-ethereum-cypherpunk-research/master/deliverables/incognito/media/incognito-logo.png)
+![incognito logo](/media/incognito-logo.png)
 
 
 ## 📝 Description

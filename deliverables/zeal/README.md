@@ -1,6 +1,6 @@
 # zeal
 
-![zeal logo](https://raw.githubusercontent.com/M0nkeyFl0wer/web3-privacy-ethereum-cypherpunk-research/master/deliverables/zeal/media/logo_icon.svg)
+![zeal logo](/media/zeal-logo.svg)
 
 
 ## 📝 Description
