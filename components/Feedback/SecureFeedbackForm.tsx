@@ -169,6 +169,7 @@ export default function SecureFeedbackForm({ onSuccess, onError }: SecureFeedbac
       {/* Honeypot fields - hidden from users, visible to bots */}
       <div
         aria-hidden="true"
+        tabIndex={-1}
         style={{
           position: 'absolute',
           left: '-9999px',
@@ -176,7 +177,6 @@ export default function SecureFeedbackForm({ onSuccess, onError }: SecureFeedbac
           opacity: 0,
           height: 0,
           overflow: 'hidden',
-          tabIndex: -1,
         }}
       >
         <label htmlFor={HONEYPOT_FIELDS.website}>Website (leave blank)</label>
