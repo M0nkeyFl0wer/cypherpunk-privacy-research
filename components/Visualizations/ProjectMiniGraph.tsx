@@ -187,11 +187,15 @@ export default function ProjectMiniGraph({ projectId, width = 400, height = 400 
     });
   }, [projectId, zoomToNode]);
 
-  // Handle navigation (double click)
+  // Handle navigation
   const handleNavigate = useCallback((node: GraphNode) => {
-    if (node.type === 'project' && node.id !== projectId) {
-      router.push(`/projects/${node.id}`);
-    } else if (node.type !== 'project') {
+    if (node.type === 'project') {
+      if (node.id !== projectId) {
+        router.push(`/projects/${node.id}`);
+      }
+      // Clicking center project does nothing (already on that page)
+    } else {
+      // Non-project nodes: go to portal with focus
       router.push(`/portal?focus=${node.id}&type=${node.type}`);
     }
   }, [router, projectId]);
@@ -298,12 +302,12 @@ export default function ProjectMiniGraph({ projectId, width = 400, height = 400 
         hint = 'Current project (center)';
       } else if (d.type === 'project') {
         hint = isExpanded
-          ? 'Click to collapse • Double-click to open'
-          : 'Click to expand connections • Double-click to open';
+          ? 'Click to open project page'
+          : 'Click to expand connections';
       } else {
         hint = isExpanded
-          ? 'Click to collapse • Double-click to explore'
-          : 'Click to expand • Double-click to explore';
+          ? 'Click to explore in portal'
+          : 'Click to expand connections';
       }
 
       let content = `
@@ -479,20 +483,36 @@ export default function ProjectMiniGraph({ projectId, width = 400, height = 400 
       })
       .on('click', function(event, d) {
         event.stopPropagation();
-        // Single click - expand/collapse connections and enter focus mode
-        handleNodeExpand(d);
+
+        const isCurrentlyExpanded = expandedNodes.has(d.id);
+
+        if (d.id === projectId) {
+          // Clicking center node clears focus
+          setFocusedNode(null);
+          return;
+        }
+
+        if (isCurrentlyExpanded) {
+          // Already expanded - navigate to the page
+          handleNavigate(d);
+        } else {
+          // First click - expand connections
+          handleNodeExpand(d);
+        }
       })
       .on('dblclick', function(event, d) {
         event.stopPropagation();
         event.preventDefault();
 
-        // Check for external link in metadata
-        const metadata = getNodeMetadata(d.id, d.type);
-        if (metadata?.learnMoreUrl && d.type !== 'project') {
-          window.open(metadata.learnMoreUrl, '_blank', 'noopener,noreferrer');
-        } else {
-          // Double click - navigate to project/page
-          handleNavigate(d);
+        // Double-click always navigates (backup for users who expect it)
+        if (d.id !== projectId) {
+          // Check for external link in metadata for non-projects
+          const metadata = getNodeMetadata(d.id, d.type);
+          if (metadata?.learnMoreUrl && d.type !== 'project') {
+            window.open(metadata.learnMoreUrl, '_blank', 'noopener,noreferrer');
+          } else {
+            handleNavigate(d);
+          }
         }
       });
 
