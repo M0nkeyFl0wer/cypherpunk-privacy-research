@@ -1,56 +1,161 @@
 {
   "nodes": [
-    {"id": "signal", "label": "Signal", "category": "messaging", "ecosystem": "standalone", "language": "Rust", "postQuantum": true},
-    {"id": "telegram", "label": "Telegram", "category": "messaging", "ecosystem": "standalone", "language": "C++", "postQuantum": false},
-    {"id": "meshtastic", "label": "Meshtastic", "category": "mesh-network", "ecosystem": "standalone", "language": "C++", "postQuantum": false},
-    {"id": "protonmail", "label": "ProtonMail", "category": "email", "ecosystem": "standalone", "language": "Go/TypeScript", "postQuantum": false},
-    {"id": "miden", "label": "Miden", "category": "zk-rollup", "ecosystem": "ethereum", "language": "Rust", "postQuantum": true},
-    {"id": "nym", "label": "NYM", "category": "mixnet", "ecosystem": "cosmos", "language": "Rust", "postQuantum": false},
-    {"id": "secret-network", "label": "Secret Network", "category": "privacy-blockchain", "ecosystem": "cosmos", "language": "Rust/Go", "postQuantum": false},
-    {"id": "cake-wallet", "label": "Cake Wallet", "category": "wallet", "ecosystem": "monero", "language": "Dart/Flutter", "postQuantum": false},
-    {"id": "zano", "label": "Zano", "category": "privacy-coin", "ecosystem": "cryptonote", "language": "C++", "postQuantum": false}
+    {"id": "monero", "label": "Monero", "category": "privacy-coin", "ecosystem": "cryptonote", "language": "C++", "privacyTech": ["ring-signatures", "stealth-addresses", "ringct", "bulletproofs"], "postQuantum": false},
+    {"id": "zcash", "label": "Zcash", "category": "privacy-coin", "ecosystem": "bitcoin-fork", "language": "C++", "privacyTech": ["zk-snarks", "groth16", "halo2"], "postQuantum": false},
+    {"id": "signal", "label": "Signal", "category": "messaging", "ecosystem": "standalone", "language": "Rust", "privacyTech": ["signal-protocol", "double-ratchet", "sealed-sender", "sgx-tee"], "postQuantum": true},
+    {"id": "telegram", "label": "Telegram", "category": "messaging", "ecosystem": "standalone", "language": "C++", "privacyTech": ["mtproto", "e2e-optional"], "postQuantum": false},
+    {"id": "protonmail", "label": "ProtonMail", "category": "email", "ecosystem": "standalone", "language": "Go", "privacyTech": ["pgp", "e2e-encryption"], "postQuantum": false},
+    {"id": "nym", "label": "NYM", "category": "mixnet", "ecosystem": "cosmos", "language": "Rust", "privacyTech": ["mixnet", "sphinx-packets", "cover-traffic", "coconut-credentials"], "postQuantum": false},
+    {"id": "secret-network", "label": "Secret Network", "category": "privacy-blockchain", "ecosystem": "cosmos", "language": "Rust", "privacyTech": ["sgx-tee", "encrypted-contracts"], "postQuantum": false},
+    {"id": "tornado-cash", "label": "Tornado Cash", "category": "mixer", "ecosystem": "ethereum", "language": "Solidity", "privacyTech": ["zk-snarks", "nullifiers", "merkle-tree"], "postQuantum": false},
+    {"id": "miden", "label": "Miden", "category": "zk-rollup", "ecosystem": "ethereum", "language": "Rust", "privacyTech": ["zk-starks", "recursive-proofs"], "postQuantum": true},
+    {"id": "zksync", "label": "zkSync", "category": "zk-rollup", "ecosystem": "ethereum", "language": "Rust", "privacyTech": ["zk-snarks", "plonk"], "postQuantum": false},
+    {"id": "semaphore", "label": "Semaphore", "category": "identity", "ecosystem": "ethereum", "language": "Solidity", "privacyTech": ["zk-snarks", "anonymous-credentials", "merkle-tree", "nullifiers"], "postQuantum": false},
+    {"id": "hopr", "label": "HOPR", "category": "mixnet", "ecosystem": "ethereum", "language": "TypeScript", "privacyTech": ["mixnet", "sphinx-packets", "cover-traffic"], "postQuantum": false},
+    {"id": "oasis-network", "label": "Oasis Network", "category": "privacy-blockchain", "ecosystem": "standalone", "language": "Rust", "privacyTech": ["sgx-tee", "confidential-smart-contracts"], "postQuantum": false},
+    {"id": "iron-fish", "label": "Iron Fish", "category": "privacy-coin", "ecosystem": "standalone", "language": "Rust", "privacyTech": ["zk-snarks", "sapling-protocol"], "postQuantum": false},
+    {"id": "firo", "label": "Firo", "category": "privacy-coin", "ecosystem": "bitcoin-fork", "language": "C++", "privacyTech": ["lelantus", "spark", "zk-snarks"], "postQuantum": false},
+    {"id": "mobilecoin", "label": "MobileCoin", "category": "privacy-coin", "ecosystem": "stellar-adjacent", "language": "Rust", "privacyTech": ["sgx-tee", "ringct", "bulletproofs"], "postQuantum": false},
+    {"id": "oxen", "label": "Oxen", "category": "privacy-coin", "ecosystem": "cryptonote", "language": "C++", "privacyTech": ["ring-signatures", "stealth-addresses"], "postQuantum": false},
+    {"id": "orchid", "label": "Orchid", "category": "vpn", "ecosystem": "ethereum", "language": "Go", "privacyTech": ["onion-routing", "nanopayments"], "postQuantum": false},
+    {"id": "meshtastic", "label": "Meshtastic", "category": "mesh-network", "ecosystem": "standalone", "language": "C++", "privacyTech": ["mesh-routing", "aes-encryption"], "postQuantum": false},
+    {"id": "briar", "label": "Briar", "category": "messaging", "ecosystem": "standalone", "language": "Java", "privacyTech": ["tor", "mesh-routing", "e2e-encryption"], "postQuantum": false},
+    {"id": "darkfi", "label": "DarkFi", "category": "privacy-blockchain", "ecosystem": "standalone", "language": "Rust", "privacyTech": ["zk-snarks", "anonymous-smart-contracts"], "postQuantum": false},
+    {"id": "iden3", "label": "iden3", "category": "identity", "ecosystem": "ethereum", "language": "Go", "privacyTech": ["zk-snarks", "circom", "anonymous-credentials"], "postQuantum": false},
+    {"id": "circom", "label": "Circom", "category": "zk-tooling", "ecosystem": "ethereum", "language": "Rust", "privacyTech": ["zk-snarks", "circuit-compiler"], "postQuantum": false},
+    {"id": "snarkjs", "label": "SnarkJS", "category": "zk-tooling", "ecosystem": "ethereum", "language": "JavaScript", "privacyTech": ["zk-snarks", "groth16", "plonk"], "postQuantum": false},
+    {"id": "mysterium-network", "label": "Mysterium", "category": "vpn", "ecosystem": "ethereum", "language": "Go", "privacyTech": ["vpn-tunneling", "decentralized-network"], "postQuantum": false},
+    {"id": "sentinel", "label": "Sentinel", "category": "vpn", "ecosystem": "cosmos", "language": "Go", "privacyTech": ["vpn-tunneling", "decentralized-network"], "postQuantum": false},
+    {"id": "deeper-network", "label": "Deeper Network", "category": "vpn", "ecosystem": "substrate", "language": "Rust", "privacyTech": ["vpn-tunneling", "hardware-node"], "postQuantum": false},
+    {"id": "mask-network", "label": "Mask Network", "category": "social", "ecosystem": "ethereum", "language": "TypeScript", "privacyTech": ["e2e-encryption", "steganography"], "postQuantum": false},
+    {"id": "zano", "label": "Zano", "category": "privacy-coin", "ecosystem": "cryptonote", "language": "C++", "privacyTech": ["ring-signatures", "stealth-addresses", "confidential-assets"], "postQuantum": false},
+    {"id": "wasabi-wallet", "label": "Wasabi Wallet", "category": "wallet", "ecosystem": "bitcoin", "language": "C#", "privacyTech": ["coinjoin", "tor"], "postQuantum": false},
+    {"id": "cake-wallet", "label": "Cake Wallet", "category": "wallet", "ecosystem": "monero", "language": "Dart", "privacyTech": ["ring-signatures", "atomic-swaps"], "postQuantum": false},
+    {"id": "rotki", "label": "Rotki", "category": "finance", "ecosystem": "multi-chain", "language": "Python", "privacyTech": ["local-first", "no-cloud"], "postQuantum": false},
+    {"id": "xx-network", "label": "xx Network", "category": "mixnet", "ecosystem": "standalone", "language": "Go", "privacyTech": ["cmix", "quantum-resistant"], "postQuantum": true},
+    {"id": "concordium", "label": "Concordium", "category": "privacy-blockchain", "ecosystem": "standalone", "language": "Rust", "privacyTech": ["zk-proofs", "id-layer"], "postQuantum": false},
+    {"id": "findora", "label": "Findora", "category": "privacy-blockchain", "ecosystem": "standalone", "language": "Rust", "privacyTech": ["bulletproofs", "turbo-plonk"], "postQuantum": false},
+    {"id": "webb-protocol", "label": "Webb Protocol", "category": "bridge", "ecosystem": "multi-chain", "language": "Rust", "privacyTech": ["zk-snarks", "cross-chain-privacy"], "postQuantum": false},
+    {"id": "incognito", "label": "Incognito", "category": "privacy-blockchain", "ecosystem": "standalone", "language": "Go", "privacyTech": ["ring-signatures", "confidential-assets"], "postQuantum": false},
+    {"id": "suterusu", "label": "Suterusu", "category": "privacy-layer", "ecosystem": "multi-chain", "language": "Rust", "privacyTech": ["zk-consnark"], "postQuantum": false},
+    {"id": "sienna-network", "label": "Sienna", "category": "defi", "ecosystem": "secret-network", "language": "Rust", "privacyTech": ["sgx-tee", "private-defi"], "postQuantum": false},
+    {"id": "fluidkey", "label": "Fluidkey", "category": "wallet", "ecosystem": "ethereum", "language": "TypeScript", "privacyTech": ["stealth-addresses", "eip-5564"], "postQuantum": false},
+    {"id": "elusiv", "label": "Elusiv", "category": "privacy-layer", "ecosystem": "solana", "language": "Rust", "privacyTech": ["zk-snarks", "compliant-privacy"], "postQuantum": false},
+    {"id": "zeal", "label": "Zeal", "category": "wallet", "ecosystem": "ethereum", "language": "TypeScript", "privacyTech": ["local-first", "self-custody"], "postQuantum": false},
+    {"id": "zk-money", "label": "zk.money", "category": "privacy-layer", "ecosystem": "ethereum", "language": "TypeScript", "privacyTech": ["zk-snarks", "aztec-connect"], "postQuantum": false},
+    {"id": "starkex", "label": "StarkEx", "category": "zk-rollup", "ecosystem": "ethereum", "language": "Cairo", "privacyTech": ["zk-starks"], "postQuantum": true},
+    {"id": "privatepool", "label": "PrivatePool", "category": "mev", "ecosystem": "ethereum", "language": "Solidity", "privacyTech": ["private-mempool"], "postQuantum": false},
+    {"id": "zkvote", "label": "zkVote", "category": "governance", "ecosystem": "ethereum", "language": "Solidity", "privacyTech": ["zk-snarks", "anonymous-voting"], "postQuantum": false},
+    {"id": "fileverse", "label": "Fileverse", "category": "storage", "ecosystem": "ethereum", "language": "TypeScript", "privacyTech": ["e2e-encryption", "ipfs"], "postQuantum": false},
+    {"id": "confer", "label": "Confer", "category": "messaging", "ecosystem": "ethereum", "language": "TypeScript", "privacyTech": ["e2e-encryption", "decentralized"], "postQuantum": false}
   ],
   "edges": [
-    {"source": "signal", "target": "meshtastic", "relationship": "shared-crypto", "detail": "Curve25519"},
-    {"source": "signal", "target": "nym", "relationship": "shared-crypto", "detail": "Curve25519/x25519"},
+    {"source": "monero", "target": "oxen", "relationship": "shared-tech", "detail": "Ring Signatures"},
+    {"source": "monero", "target": "zano", "relationship": "shared-tech", "detail": "Ring Signatures"},
+    {"source": "monero", "target": "mobilecoin", "relationship": "shared-tech", "detail": "RingCT"},
+    {"source": "monero", "target": "incognito", "relationship": "shared-tech", "detail": "Ring Signatures"},
+    {"source": "monero", "target": "cake-wallet", "relationship": "implements", "detail": "Monero Protocol"},
+    {"source": "zcash", "target": "tornado-cash", "relationship": "shared-tech", "detail": "zk-SNARKs"},
+    {"source": "zcash", "target": "iron-fish", "relationship": "shared-tech", "detail": "Sapling Protocol"},
+    {"source": "zcash", "target": "semaphore", "relationship": "shared-tech", "detail": "zk-SNARKs"},
+    {"source": "zcash", "target": "zksync", "relationship": "shared-tech", "detail": "zk-SNARKs"},
+    {"source": "zcash", "target": "iden3", "relationship": "shared-tech", "detail": "zk-SNARKs"},
+    {"source": "zcash", "target": "darkfi", "relationship": "shared-tech", "detail": "zk-SNARKs"},
+    {"source": "zcash", "target": "zk-money", "relationship": "shared-tech", "detail": "zk-SNARKs"},
+    {"source": "zcash", "target": "firo", "relationship": "shared-tech", "detail": "zk-SNARKs"},
+    {"source": "tornado-cash", "target": "semaphore", "relationship": "shared-tech", "detail": "Nullifiers + Merkle Trees"},
+    {"source": "nym", "target": "hopr", "relationship": "shared-tech", "detail": "Mixnet + Sphinx Packets"},
+    {"source": "nym", "target": "xx-network", "relationship": "shared-tech", "detail": "Mixnet"},
+    {"source": "secret-network", "target": "oasis-network", "relationship": "shared-tech", "detail": "SGX TEE"},
+    {"source": "secret-network", "target": "mobilecoin", "relationship": "shared-tech", "detail": "SGX TEE"},
+    {"source": "secret-network", "target": "signal", "relationship": "shared-tech", "detail": "SGX TEE (CDSI)"},
+    {"source": "secret-network", "target": "sienna-network", "relationship": "built-on", "detail": "Secret Network"},
+    {"source": "miden", "target": "starkex", "relationship": "shared-tech", "detail": "zk-STARKs"},
+    {"source": "circom", "target": "snarkjs", "relationship": "toolchain", "detail": "Circom compiles to SnarkJS"},
+    {"source": "circom", "target": "iden3", "relationship": "toolchain", "detail": "Built with Circom"},
+    {"source": "circom", "target": "semaphore", "relationship": "toolchain", "detail": "Built with Circom"},
+    {"source": "signal", "target": "briar", "relationship": "shared-property", "detail": "E2E Messaging"},
+    {"source": "orchid", "target": "mysterium-network", "relationship": "shared-tech", "detail": "Decentralized VPN"},
+    {"source": "orchid", "target": "sentinel", "relationship": "shared-tech", "detail": "Decentralized VPN"},
+    {"source": "sentinel", "target": "deeper-network", "relationship": "shared-tech", "detail": "Decentralized VPN"},
+    {"source": "wasabi-wallet", "target": "briar", "relationship": "shared-tech", "detail": "Tor Integration"},
+    {"source": "monero", "target": "findora", "relationship": "shared-tech", "detail": "Bulletproofs"},
+    {"source": "fluidkey", "target": "monero", "relationship": "shared-tech", "detail": "Stealth Addresses"},
+    {"source": "webb-protocol", "target": "tornado-cash", "relationship": "shared-tech", "detail": "zk-SNARKs for Privacy"},
+    {"source": "elusiv", "target": "tornado-cash", "relationship": "shared-tech", "detail": "zk-SNARKs for Privacy"},
     {"source": "nym", "target": "secret-network", "relationship": "shared-framework", "detail": "Cosmos SDK"},
-    {"source": "signal", "target": "miden", "relationship": "shared-property", "detail": "Post-Quantum Ready"},
-    {"source": "signal", "target": "nym", "relationship": "shared-language", "detail": "Rust"},
-    {"source": "signal", "target": "miden", "relationship": "shared-language", "detail": "Rust"},
-    {"source": "signal", "target": "secret-network", "relationship": "shared-language", "detail": "Rust"},
-    {"source": "nym", "target": "miden", "relationship": "shared-language", "detail": "Rust"},
-    {"source": "nym", "target": "secret-network", "relationship": "shared-language", "detail": "Rust"},
-    {"source": "miden", "target": "secret-network", "relationship": "shared-language", "detail": "Rust"},
-    {"source": "telegram", "target": "meshtastic", "relationship": "shared-language", "detail": "C++"},
-    {"source": "telegram", "target": "zano", "relationship": "shared-language", "detail": "C++"},
-    {"source": "meshtastic", "target": "zano", "relationship": "shared-language", "detail": "C++"},
-    {"source": "secret-network", "target": "protonmail", "relationship": "shared-language", "detail": "Go"}
+    {"source": "sentinel", "target": "secret-network", "relationship": "shared-framework", "detail": "Cosmos SDK"}
   ],
   "clusters": {
-    "rust-privacy": {
-      "label": "Rust Memory-Safe Privacy",
-      "members": ["signal", "miden", "nym", "secret-network"],
-      "description": "Projects using Rust for cryptographic safety"
+    "zk-snarks-family": {
+      "label": "zk-SNARK Projects",
+      "members": ["zcash", "tornado-cash", "semaphore", "zksync", "iden3", "darkfi", "zk-money", "firo", "iron-fish", "circom", "snarkjs", "webb-protocol", "elusiv", "zkvote"],
+      "description": "Projects using zk-SNARKs for privacy"
+    },
+    "zk-starks-family": {
+      "label": "zk-STARK Projects",
+      "members": ["miden", "starkex"],
+      "description": "Projects using zk-STARKs (quantum resistant, no trusted setup)"
+    },
+    "ring-signature-family": {
+      "label": "Ring Signature Projects",
+      "members": ["monero", "oxen", "zano", "mobilecoin", "incognito"],
+      "description": "Projects using ring signatures for sender privacy"
+    },
+    "tee-family": {
+      "label": "TEE-Based Privacy",
+      "members": ["secret-network", "oasis-network", "mobilecoin", "signal"],
+      "description": "Projects using Trusted Execution Environments (Intel SGX)"
+    },
+    "mixnet-family": {
+      "label": "Mixnet Projects",
+      "members": ["nym", "hopr", "xx-network"],
+      "description": "Projects using mixnet architecture for network privacy"
     },
     "cosmos-ecosystem": {
       "label": "Cosmos SDK Ecosystem",
-      "members": ["nym", "secret-network"],
+      "members": ["nym", "secret-network", "sentinel"],
       "description": "Privacy projects built on Cosmos"
+    },
+    "ethereum-privacy": {
+      "label": "Ethereum Privacy Layer",
+      "members": ["tornado-cash", "semaphore", "zksync", "miden", "zk-money", "mask-network", "fluidkey", "privatepool", "zkvote"],
+      "description": "Privacy solutions on Ethereum"
+    },
+    "decentralized-vpn": {
+      "label": "Decentralized VPN",
+      "members": ["orchid", "mysterium-network", "sentinel", "deeper-network"],
+      "description": "Decentralized VPN/proxy networks"
     },
     "post-quantum": {
       "label": "Post-Quantum Ready",
-      "members": ["signal", "miden"],
+      "members": ["signal", "miden", "starkex", "xx-network"],
       "description": "Projects with quantum-resistant cryptography"
     },
-    "curve25519-users": {
-      "label": "Curve25519 Implementations",
-      "members": ["signal", "meshtastic", "nym"],
-      "description": "Projects using Curve25519/x25519 key exchange"
+    "privacy-messaging": {
+      "label": "Private Messaging",
+      "members": ["signal", "telegram", "briar", "meshtastic", "confer"],
+      "description": "End-to-end encrypted messaging"
     }
   },
+  "privacyTechLegend": {
+    "zk-snarks": {"label": "zk-SNARKs", "color": "#94e2d5", "description": "Zero-Knowledge Succinct Arguments"},
+    "zk-starks": {"label": "zk-STARKs", "color": "#89b4fa", "description": "Scalable Transparent Arguments (quantum resistant)"},
+    "ring-signatures": {"label": "Ring Signatures", "color": "#f9e2af", "description": "Sender hidden among group"},
+    "bulletproofs": {"label": "Bulletproofs", "color": "#a6e3a1", "description": "Short range proofs"},
+    "sgx-tee": {"label": "Intel SGX", "color": "#f38ba8", "description": "Trusted Execution Environment"},
+    "mixnet": {"label": "Mixnet", "color": "#cba6f7", "description": "Message mixing network"},
+    "signal-protocol": {"label": "Signal Protocol", "color": "#fab387", "description": "Double Ratchet encryption"},
+    "stealth-addresses": {"label": "Stealth Addresses", "color": "#74c7ec", "description": "One-time receiver addresses"},
+    "tor": {"label": "Tor/Onion", "color": "#b4befe", "description": "Onion routing"},
+    "e2e-encryption": {"label": "E2E Encryption", "color": "#f5c2e7", "description": "End-to-end encryption"}
+  },
   "metadata": {
-    "generated": "2026-01-19",
-    "source": "Constitutional Research Code Analysis",
-    "version": "1.0"
+    "generated": "2026-01-22",
+    "source": "Constitutional Research Framework v3",
+    "version": "2.0",
+    "nodeCount": 48,
+    "edgeCount": 35,
+    "clusterCount": 10
   }
 }
