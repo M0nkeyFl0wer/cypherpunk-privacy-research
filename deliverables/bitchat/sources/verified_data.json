@@ -1,0 +1,409 @@
+{
+  "project": "Bitchat",
+  "research_date": "2026-01-22",
+  "methodology": "Constitutional Research Framework v3",
+  "confidence_score": 0.92,
+  "last_updated": "2026-01-22T18:30:00Z",
+
+  "basic_info": {
+    "name": "Bitchat",
+    "tagline": "Bluetooth mesh chat, IRC vibes",
+    "website": "https://bitchat.free/",
+    "github": "https://github.com/permissionlesstech/bitchat",
+    "github_android": "https://github.com/permissionlesstech/bitchat-android",
+    "license": "The Unlicense (Public Domain)",
+    "category": ["Privacy Messaging", "P2P Communication", "Mesh Networking", "Nostr"]
+  },
+
+  "team": {
+    "founder": {
+      "name": "Jack Dorsey",
+      "github": "jackjackbits",
+      "role": "Creator",
+      "background": "Co-founder of Twitter/X and Block, Inc.",
+      "contributions": 485,
+      "verified": true
+    },
+    "core_contributors": [
+      {
+        "github": "nothankyou1",
+        "contributions": 128,
+        "identity": "Unknown (pseudonymous)",
+        "verified": false
+      },
+      {
+        "github": "qalandarov",
+        "name": "Islam",
+        "contributions": 87,
+        "company": "Facebook/Meta",
+        "location": "London, UK",
+        "twitter": "qalandarov",
+        "verified": true
+      },
+      {
+        "github": "callebtc",
+        "name": "Calle (pseudonymous)",
+        "contributions": 23,
+        "role": "Contributor (iOS), Lead (Android - 286 contributions)",
+        "background": "Creator of Cashu (Chaumian ecash for Bitcoin)",
+        "projects": ["Cashu", "nutshell", "cashu.me"],
+        "twitter": "callebtc",
+        "verified": true
+      },
+      {
+        "github": "nadimkobeissi",
+        "name": "Nadim Kobeissi",
+        "contributions": 9,
+        "company": "Symbolic Software, Cure53",
+        "location": "Paris, France",
+        "background": "Security researcher, PhD in cryptography formal verification, creator of Cryptocat, 250+ security audits",
+        "website": "https://nadim.computer/",
+        "verified": true
+      },
+      {
+        "github": "michaelneale",
+        "contributions": 6,
+        "verified": false
+      }
+    ],
+    "android_team": [
+      {
+        "github": "callebtc",
+        "contributions": 286,
+        "role": "Lead maintainer"
+      },
+      {
+        "github": "moehamade",
+        "contributions": 9
+      },
+      {
+        "github": "yet300",
+        "contributions": 8
+      },
+      {
+        "github": "hector6872",
+        "contributions": 8
+      }
+    ],
+    "total_contributors": "30+ (iOS), 20+ (Android)"
+  },
+
+  "funding": {
+    "direct_funding": "Unknown (developed as personal project)",
+    "related_investment": {
+      "amount": "$10,000,000",
+      "recipient": "andOtherStuff collective",
+      "date": "2025-07",
+      "purpose": "Open source social media projects including Nostr",
+      "source": "https://techcrunch.com/2025/07/16/jack-dorsey-pumps-10m-into-a-nonprofit-focused-on-open-source-social-media/"
+    },
+    "andOtherStuff_members": [
+      {
+        "name": "Jack Dorsey",
+        "role": "Funder/Member",
+        "background": "Twitter co-founder, Block CEO"
+      },
+      {
+        "name": "Evan Henshaw-Plath",
+        "role": "Member",
+        "background": "Twitter's first employee"
+      },
+      {
+        "name": "Calle",
+        "role": "Member",
+        "background": "Cashu creator"
+      },
+      {
+        "name": "Alex Gleason",
+        "role": "Member",
+        "background": "Former engineering head at Truth Social"
+      },
+      {
+        "name": "Jeff Gardner",
+        "role": "Member",
+        "background": "4th employee at Intercom"
+      }
+    ],
+    "corporate_backing": "None direct (personal project by Dorsey)"
+  },
+
+  "github_metrics": {
+    "ios": {
+      "repo": "permissionlesstech/bitchat",
+      "stars": 24644,
+      "forks": 2302,
+      "open_issues": 232,
+      "primary_language": "Swift",
+      "created_at": "2025-07-04T14:34:38Z",
+      "last_updated": "2026-01-22T17:55:10Z"
+    },
+    "android": {
+      "repo": "permissionlesstech/bitchat-android",
+      "stars": 4560,
+      "forks": 636,
+      "primary_language": "Kotlin",
+      "created_at": "2025-07-08T18:36:23Z",
+      "last_updated": "2026-01-22T15:43:38Z"
+    }
+  },
+
+  "technical_architecture": {
+    "transport_layers": [
+      {
+        "name": "Bluetooth Low Energy Mesh",
+        "purpose": "Offline/local communication",
+        "range": "30m direct, 300m via relay",
+        "protocol": "Custom binary protocol optimized for BLE"
+      },
+      {
+        "name": "Nostr Protocol",
+        "purpose": "Internet-based global reach",
+        "relays": "290+",
+        "encryption": "NIP-17 gift-wrapped messages"
+      }
+    ],
+    "cryptography": {
+      "framework": "Noise Protocol Framework",
+      "handshake_pattern": "XX (mutual authentication, forward secrecy)",
+      "cipher": "ChaCha20-Poly1305 (AEAD)",
+      "key_exchange": "X25519 (Curve25519)",
+      "hash": "SHA-256",
+      "key_derivation": "HKDF-SHA256",
+      "rekey_trigger": "1 hour or 10,000 messages"
+    },
+    "privacy_features": {
+      "dummy_messages": "30-120 second intervals",
+      "timing_jitter": "50-500ms random delays",
+      "message_padding": "PKCS#7-style",
+      "metadata": "TTL and message ID only, no sender/recipient"
+    },
+    "dependencies": {
+      "swift-secp256k1": {
+        "version": "0.21.1",
+        "source": "https://github.com/21-DOT-DEV/swift-secp256k1",
+        "purpose": "Elliptic curve cryptography"
+      },
+      "Arti": {
+        "source": "Local package",
+        "purpose": "Tor integration for anonymous networking"
+      },
+      "BitLogger": {
+        "source": "Local package",
+        "purpose": "Logging"
+      }
+    }
+  },
+
+  "code_structure": {
+    "noise_implementation": [
+      "NoiseProtocol.swift",
+      "NoiseSession.swift",
+      "NoiseSessionManager.swift",
+      "NoiseEncryptionService.swift",
+      "NoiseSecurityValidator.swift",
+      "NoiseSecurityConstants.swift",
+      "NoiseRateLimiter.swift"
+    ],
+    "services": [
+      "KeychainManager.swift",
+      "MessageDeduplicationService.swift",
+      "VerificationService.swift",
+      "PrivateChatManager.swift",
+      "NostrTransport.swift",
+      "MessageRouter.swift"
+    ],
+    "security_features": {
+      "rate_limiting": "NoiseRateLimiter.swift",
+      "replay_protection": "MessageDeduplicationService.swift",
+      "key_storage": "KeychainManager.swift (iOS Keychain)",
+      "validation": "NoiseSecurityValidator.swift"
+    }
+  },
+
+  "security_audit_status": {
+    "external_audit": false,
+    "audit_firm": null,
+    "internal_review": true,
+    "bug_bounty": false,
+    "security_contributors": [
+      {
+        "name": "Nadim Kobeissi",
+        "role": "Contributor",
+        "credentials": "Cure53 auditor, 250+ security audits"
+      }
+    ],
+    "official_disclaimer": "This software has not received external security review and may contain vulnerabilities and does not necessarily meet its stated security goals. Do not use it for production use, and do not rely on its security whatsoever until it has been reviewed."
+  },
+
+  "distribution": {
+    "ios": {
+      "app_store": true,
+      "app_id": "id6748219622",
+      "testflight": true,
+      "min_version": "iOS 16.0+",
+      "source_available": true
+    },
+    "android": {
+      "play_store": true,
+      "github_apk": true,
+      "min_version": "Android 8.0+",
+      "source_available": true
+    },
+    "macos": {
+      "available": true,
+      "min_version": "macOS 13+"
+    }
+  },
+
+  "adoption": {
+    "total_downloads": "360,000+",
+    "as_of": "2025-09",
+    "testflight_limit": 10000,
+    "testflight_status": "Reached limit quickly",
+    "notable_adoption": [
+      {
+        "location": "Madagascar",
+        "date": "2025-09",
+        "downloads": 70000,
+        "timeframe": "1 week",
+        "context": "Protests"
+      },
+      {
+        "location": "Nepal",
+        "date": "2025-09-08",
+        "downloads": 50000,
+        "timeframe": "1 day",
+        "context": "Protests"
+      },
+      {
+        "location": "Uganda",
+        "date": "2026-01",
+        "downloads": "spike",
+        "context": "Internet blackout"
+      },
+      {
+        "location": "Iran",
+        "date": "2026-01",
+        "downloads": "spike",
+        "context": "Internet blackout"
+      }
+    ],
+    "notable_endorsements": [
+      {
+        "name": "Bill Ackman",
+        "date": "2026-01",
+        "context": "Suggested usefulness for Iran during internet shutdowns",
+        "source": "https://www.benzinga.com/crypto/cryptocurrency/26/01/49987787/bill-ackman-says-jack-dorseys-bitchat-messaging-app-may-be-useful-in-iran-to-evade-internet"
+      }
+    ]
+  },
+
+  "infrastructure": {
+    "architecture": "Fully decentralized P2P",
+    "servers_operated": "None",
+    "website_hosting": "GitHub Pages",
+    "domains": {
+      "official": {
+        "domain": "bitchat.free",
+        "hosting": "GitHub Pages",
+        "ips": ["185.199.110.153", "185.199.108.153", "185.199.109.153", "185.199.111.153"]
+      },
+      "unofficial": [
+        {
+          "domain": "bitchat.io",
+          "note": "Not official"
+        },
+        {
+          "domain": "bitchat.app",
+          "note": "Parked"
+        }
+      ]
+    }
+  },
+
+  "known_vulnerabilities": {
+    "disclosed_date": "2025-07-09",
+    "researcher": "Alex Radocea",
+    "vulnerabilities": [
+      {
+        "id": "BITCHAT-2025-001",
+        "name": "Identity Authentication Bypass",
+        "severity": "CRITICAL",
+        "cvss": null,
+        "description": "Ephemeral keys not verified against identity keys, enabling MITM impersonation",
+        "status": "In progress - migrating to Noise Protocol Framework",
+        "source": "https://techcrunch.com/2025/07/09/jack-dorsey-says-his-secure-new-bitchat-app-has-not-been-tested-for-security/"
+      },
+      {
+        "id": "BITCHAT-2025-002",
+        "name": "Insufficient Forward Secrecy",
+        "severity": "HIGH",
+        "description": "Session-level forward secrecy only, not per-message (no Double Ratchet)",
+        "status": "Acknowledged"
+      },
+      {
+        "id": "BITCHAT-2025-003",
+        "name": "Master Key Single Point of Failure",
+        "severity": "HIGH",
+        "description": "Single master key compromise = total permanent access, no rotation mechanism",
+        "status": "Design limitation"
+      },
+      {
+        "id": "BITCHAT-2025-004",
+        "name": "Buffer Overflow",
+        "severity": "MEDIUM",
+        "description": "Memory corruption vulnerability",
+        "status": "PATCHED",
+        "response_time": "4 hours"
+      }
+    ],
+    "third_party_analysis": [
+      {
+        "source": "Trail of Bits",
+        "url": "https://blog.trailofbits.com/2025/07/18/building-secure-messaging-is-hard-a-nuanced-take-on-the-bitchat-security-debate/",
+        "assessment": "Vulnerabilities are legitimate and concerning, fundamental design flaws, but early signs promising for fixes"
+      }
+    ]
+  },
+
+  "timeline": [
+    {"date": "2025-05-20", "event": "jackjackbits GitHub account created"},
+    {"date": "2025-07-04", "event": "Bitchat iOS repo created"},
+    {"date": "2025-07-06", "event": "Jack Dorsey announces Bitchat on X"},
+    {"date": "2025-07-07", "event": "Whitepaper published"},
+    {"date": "2025-07-08", "event": "Android repo created"},
+    {"date": "2025-07-09", "event": "Security vulnerabilities disclosed by Alex Radocea"},
+    {"date": "2025-07-16", "event": "Dorsey invests $10M in andOtherStuff collective"},
+    {"date": "2025-07-29", "event": "App released on App Store"},
+    {"date": "2025-09", "event": "Madagascar protest adoption (70k downloads)"},
+    {"date": "2025-09-08", "event": "Nepal protest adoption (50k downloads in 1 day)"},
+    {"date": "2026-01", "event": "Usage spikes in Uganda and Iran during blackouts"},
+    {"date": "2026-01-14", "event": "v1.5.0 release"},
+    {"date": "2026-01-22", "event": "Research conducted - 360k+ total downloads"}
+  ],
+
+  "sources": {
+    "primary": [
+      "https://bitchat.free/",
+      "https://github.com/permissionlesstech/bitchat",
+      "https://github.com/permissionlesstech/bitchat-android",
+      "https://github.com/permissionlesstech/bitchat/blob/main/WHITEPAPER.md",
+      "https://github.com/permissionlesstech/bitchat/blob/main/BRING_THE_NOISE.md"
+    ],
+    "security_research": [
+      "https://blog.trailofbits.com/2025/07/18/building-secure-messaging-is-hard-a-nuanced-take-on-the-bitchat-security-debate/",
+      "https://techcrunch.com/2025/07/09/jack-dorsey-says-his-secure-new-bitchat-app-has-not-been-tested-for-security/"
+    ],
+    "news": [
+      "https://en.wikipedia.org/wiki/Bitchat",
+      "https://www.engadget.com/apps/jack-dorsey-just-released-a-bluetooth-messaging-app-that-doesnt-need-the-internet-191023870.html",
+      "https://www.cnbc.com/2025/07/07/jack-dorsey-whatsapp-bluetooth.html",
+      "https://techcrunch.com/2025/07/16/jack-dorsey-pumps-10m-into-a-nonprofit-focused-on-open-source-social-media/"
+    ],
+    "team_profiles": [
+      "https://nadim.computer/",
+      "https://en.wikipedia.org/wiki/Nadim_Kobeissi",
+      "https://cashu.space/"
+    ]
+  }
+}
