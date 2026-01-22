@@ -322,7 +322,7 @@ export default function ProjectMiniGraph({ projectId, width = 400, height = 400 
         d.fy = null;
       });
 
-    node.call(drag);
+    node.call(drag as unknown as (selection: d3.Selection<d3.BaseType | SVGGElement, GraphNode, SVGGElement, unknown>) => void);
 
     // Click handling with timestamp-based double-click detection
     node

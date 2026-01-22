@@ -1,5 +1,39 @@
 [
   {
+    "id": "bitchat",
+    "slug": "bitchat",
+    "confidence": 0.8,
+    "researchDate": "",
+    "name": "Bitchat",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [],
+      "techStack": [],
+      "platforms": []
+    },
+    "ecosystem": "multichain",
+    "category": "Privacy Infrastructure",
+    "githubMetrics": {
+      "ios": {
+        "repo": "permissionlesstech/bitchat",
+        "stars": 24644,
+        "forks": 2302,
+        "open_issues": 232,
+        "primary_language": "Swift",
+        "created_at": "2025-07-04T14:34:38Z",
+        "last_updated": "2026-01-22T17:55:10Z"
+      },
+      "android": {
+        "repo": "permissionlesstech/bitchat-android",
+        "stars": 4560,
+        "forks": 636,
+        "primary_language": "Kotlin",
+        "created_at": "2025-07-08T18:36:23Z",
+        "last_updated": "2026-01-22T15:43:38Z"
+      }
+    }
+  },
+  {
     "id": "cake-wallet",
     "slug": "cake-wallet",
     "confidence": 0.8,
