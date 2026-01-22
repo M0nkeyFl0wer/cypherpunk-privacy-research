@@ -6,7 +6,7 @@
 
 ## Repository Overview
 
-**Repository**: [Unknown](https://github.com/semaphore-protocol/semaphore)
+**Repository**: [semaphore-protocol/semaphore](https://github.com/semaphore-protocol/semaphore)
 
 **Description**: A zero-knowledge protocol for anonymous interactions.
 

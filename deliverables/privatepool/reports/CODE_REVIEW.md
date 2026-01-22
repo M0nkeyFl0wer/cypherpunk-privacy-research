@@ -6,7 +6,7 @@
 
 ## Repository Overview
 
-**Repository**: [Unknown](https://github.com/0xbow-io/privacy-pools-core)
+**Repository**: [0xbow-io/privacy-pools-core](https://github.com/0xbow-io/privacy-pools-core)
 
 **Description**: Privacy Pools by 0xbow is a compliant way to anonymously transact on Ethereum. 0xbow blocks illicit actors to ensure pool integrity.
 

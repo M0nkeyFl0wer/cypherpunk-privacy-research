@@ -6,7 +6,7 @@
 
 ## Repository Overview
 
-**Repository**: [Unknown](https://github.com/zealwallet/Wallet)
+**Repository**: [zealwallet/Wallet](https://github.com/zealwallet/Wallet)
 
 **Description**: Code repository for Zeal wallet
 

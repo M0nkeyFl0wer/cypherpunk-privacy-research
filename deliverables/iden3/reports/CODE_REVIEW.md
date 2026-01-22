@@ -6,7 +6,7 @@
 
 ## Repository Overview
 
-**Repository**: [Unknown](https://github.com/iden3/iden3-docs)
+**Repository**: [iden3/iden3-docs](https://github.com/iden3/iden3-docs)
 
 **Description**: iden3 documentation
 

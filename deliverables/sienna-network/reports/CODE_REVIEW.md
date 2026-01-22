@@ -6,7 +6,7 @@
 
 ## Repository Overview
 
-**Repository**: [Unknown](https://github.com/SiennaNetwork/SiennaNetwork)
+**Repository**: [SiennaNetwork/SiennaNetwork](https://github.com/SiennaNetwork/SiennaNetwork)
 
 **Description**: Sienna Network Monorepo
 

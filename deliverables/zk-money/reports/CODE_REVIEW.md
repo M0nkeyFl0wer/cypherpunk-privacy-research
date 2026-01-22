@@ -6,7 +6,7 @@
 
 ## Repository Overview
 
-**Repository**: [Unknown](https://github.com/AztecProtocol/zk-money)
+**Repository**: [AztecProtocol/zk-money](https://github.com/AztecProtocol/zk-money)
 
 **Description**: None
 

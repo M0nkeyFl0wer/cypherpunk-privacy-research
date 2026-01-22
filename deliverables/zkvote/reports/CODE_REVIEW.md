@@ -6,7 +6,7 @@
 
 ## Repository Overview
 
-**Repository**: [Unknown](https://github.com/KimiWu123/zkvote)
+**Repository**: [KimiWu123/zkvote](https://github.com/KimiWu123/zkvote)
 
 **Description**: Zero-knowledge voting based on Semaphore
 

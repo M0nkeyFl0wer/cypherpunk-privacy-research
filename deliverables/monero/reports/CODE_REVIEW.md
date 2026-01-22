@@ -6,7 +6,7 @@
 
 ## Repository Overview
 
-**Repository**: [Unknown](https://github.com/monero-project/monero)
+**Repository**: [monero-project/monero](https://github.com/monero-project/monero)
 
 **Description**: Monero: the secure, private, untraceable cryptocurrency
 

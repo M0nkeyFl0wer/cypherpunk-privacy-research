@@ -6,7 +6,7 @@
 
 ## Repository Overview
 
-**Repository**: [Unknown](https://github.com/tornadocash/tornado-core)
+**Repository**: [tornadocash/tornado-core](https://github.com/tornadocash/tornado-core)
 
 **Description**: Tornado cash. Non-custodial private transactions on Ethereum. 
 

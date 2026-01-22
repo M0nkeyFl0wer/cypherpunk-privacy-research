@@ -6,7 +6,7 @@
 
 ## Repository Overview
 
-**Repository**: [Unknown](https://github.com/iron-fish/ironfish)
+**Repository**: [iron-fish/ironfish](https://github.com/iron-fish/ironfish)
 
 **Description**: A novel cryptocurrency focused on privacy and accessibility.
 

@@ -6,7 +6,7 @@
 
 ## Repository Overview
 
-**Repository**: [Unknown](https://github.com/sentinel-official/hub)
+**Repository**: [sentinel-official/hub](https://github.com/sentinel-official/hub)
 
 **Description**: Blockchain core managing Sentinel network services, staking, and governance
 

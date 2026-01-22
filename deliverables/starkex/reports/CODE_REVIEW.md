@@ -6,7 +6,7 @@
 
 ## Repository Overview
 
-**Repository**: [Unknown](https://github.com/starkware-libs/starkex-contracts)
+**Repository**: [starkware-libs/starkex-contracts](https://github.com/starkware-libs/starkex-contracts)
 
 **Description**: None
 

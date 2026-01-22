@@ -6,7 +6,7 @@
 
 ## Repository Overview
 
-**Repository**: [Unknown](https://github.com/WalletWasabi/WalletWasabi)
+**Repository**: [WalletWasabi/WalletWasabi](https://github.com/WalletWasabi/WalletWasabi)
 
 **Description**: Open-source, non-custodial, privacy preserving Bitcoin wallet for Windows, Linux, and Mac.
 

@@ -6,7 +6,7 @@
 
 ## Repository Overview
 
-**Repository**: [Unknown](https://github.com/oxen-io/oxen-core)
+**Repository**: [oxen-io/oxen-core](https://github.com/oxen-io/oxen-core)
 
 **Description**: Oxen core repository, containing oxend and oxen cli wallets 
 
