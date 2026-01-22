@@ -12,6 +12,41 @@
 - **Creator:** Jack Dorsey (co-founder of Twitter/X and Block, Inc.)
 - **License:** The Unlicense (public domain)
 
+### Team (Verified via GitHub API)
+
+**Founder:**
+| Name | GitHub | Role | Background |
+|------|--------|------|------------|
+| Jack Dorsey | @jackjackbits | Creator (485 contributions) | Co-founder Twitter/X, CEO Block Inc. |
+
+**Core Contributors:**
+| GitHub | Name | Contributions | Background |
+|--------|------|---------------|------------|
+| @nothankyou1 | Unknown | 128 | Pseudonymous |
+| @qalandarov | Islam | 87 | Facebook/Meta, London |
+| @callebtc | Calle | 23 (iOS), 286 (Android lead) | Creator of Cashu (ecash for Bitcoin) |
+| @nadimkobeissi | Nadim Kobeissi | 9 | Cure53 auditor, Cryptocat creator, PhD cryptography |
+
+**Notable:** Nadim Kobeissi brings significant security credibility - founder of Symbolic Software, 250+ security audits, formal verification researcher.
+
+### Funding
+
+**Direct:** None disclosed (developed as personal "weekend project")
+
+**Related Investment:**
+- **$10M** to "andOtherStuff" collective (July 2025)
+- Purpose: Open source social media projects, primarily Nostr
+- Source: [TechCrunch](https://techcrunch.com/2025/07/16/jack-dorsey-pumps-10m-into-a-nonprofit-focused-on-open-source-social-media/)
+
+**andOtherStuff Team:**
+| Name | Background |
+|------|------------|
+| Jack Dorsey | Twitter co-founder, Block CEO |
+| Evan Henshaw-Plath | Twitter's first employee |
+| Calle | Cashu creator |
+| Alex Gleason | Former Truth Social engineering head |
+| Jeff Gardner | 4th employee at Intercom |
+
 ### Technical Stack (Verified via GitHub)
 **Primary Language:** Swift (98.3%)
 
@@ -95,9 +130,9 @@ Bitchat has **minimal server infrastructure** by design:
 | Global Messaging | 290+ public Nostr relays (not operated by Bitchat) |
 
 ### Domain Notes
-- **bitchat.io:** Resolves to 185.53.179.128 - **may not be official**. GitHub repo has no homepage set.
-- **bitchat.app:** Returns 0.0.0.0 (likely parked/unused)
-- No official web presence found - distribution is via App Store only
+- **bitchat.free:** Official site, hosted on GitHub Pages (185.199.x.x)
+- **bitchat.io:** Not official (different ownership)
+- **bitchat.app:** Parked/unused
 
 ### OSINT Scan Results
 - No dedicated Bitchat servers identified
@@ -117,6 +152,51 @@ Bitchat has **minimal server infrastructure** by design:
 | Iran | Jan 2026 | Spike reported | Internet blackout |
 
 This adoption pattern validates the use case but also raises the stakes for security - users in these contexts face real risks if the app's security claims don't hold.
+
+---
+
+## Code Review
+
+### Repository Structure
+```
+bitchat/
+├── Noise/           # Noise Protocol implementation
+│   ├── NoiseProtocol.swift
+│   ├── NoiseSession.swift
+│   ├── NoiseSessionManager.swift
+│   ├── NoiseSecurityValidator.swift
+│   └── NoiseRateLimiter.swift
+├── Services/        # Core services
+│   ├── NoiseEncryptionService.swift
+│   ├── KeychainManager.swift
+│   ├── MessageDeduplicationService.swift
+│   └── VerificationService.swift
+├── Nostr/           # Nostr protocol integration
+└── Identity/        # Identity management
+```
+
+### Dependencies (Package.swift)
+| Package | Version | Purpose |
+|---------|---------|---------|
+| swift-secp256k1 | 0.21.1 | Elliptic curve cryptography |
+| Arti | Local | Tor integration |
+| BitLogger | Local | Logging |
+
+### Security Implementation Review
+
+**Positive findings:**
+- Noise Protocol XX pattern properly implemented (mutual auth, forward secrecy)
+- Rate limiting via `NoiseRateLimiter.swift`
+- Replay protection via `MessageDeduplicationService.swift`
+- Key storage in iOS Keychain (`KeychainManager.swift`)
+- Automatic rekey after 1 hour or 10,000 messages
+- Security validation in `NoiseSecurityValidator.swift`
+
+**Concerns:**
+- No external security audit completed
+- Forward secrecy is session-level, not per-message (no Double Ratchet)
+- Identity authentication issues as disclosed by Alex Radocea
+- Single master key with no rotation mechanism
 
 ---
 
@@ -163,6 +243,6 @@ This adoption pattern validates the use case but also raises the stakes for secu
 
 ---
 
-*Research Date: January 2026*
+*Research Date: January 22, 2026*
 *Methodology: Constitutional Research Framework v3*
-*Confidence Score: 0.90*
+*Confidence Score: 0.92*
