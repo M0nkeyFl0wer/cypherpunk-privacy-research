@@ -47,7 +47,38 @@
     {"id": "privatepool", "label": "PrivatePool", "category": "mev", "ecosystem": "ethereum", "language": "Solidity", "privacyTech": ["private-mempool"], "postQuantum": false},
     {"id": "zkvote", "label": "zkVote", "category": "governance", "ecosystem": "ethereum", "language": "Solidity", "privacyTech": ["zk-snarks", "anonymous-voting"], "postQuantum": false},
     {"id": "fileverse", "label": "Fileverse", "category": "storage", "ecosystem": "ethereum", "language": "TypeScript", "privacyTech": ["e2e-encryption", "ipfs"], "postQuantum": false},
-    {"id": "confer", "label": "Confer", "category": "messaging", "ecosystem": "ethereum", "language": "TypeScript", "privacyTech": ["e2e-encryption", "decentralized"], "postQuantum": false}
+    {"id": "confer", "label": "Confer", "category": "messaging", "ecosystem": "ethereum", "language": "TypeScript", "privacyTech": ["e2e-encryption", "decentralized"], "postQuantum": false},
+
+    {"id": "ethereum", "label": "Ethereum", "category": "layer1", "ecosystem": "ethereum", "language": "Go", "privacyTech": ["public-blockchain"], "postQuantum": false, "isChain": true},
+    {"id": "arbitrum", "label": "Arbitrum", "category": "l2-optimistic", "ecosystem": "ethereum-l2", "language": "Go", "privacyTech": ["optimistic-rollup"], "postQuantum": false, "isChain": true, "parent": "ethereum"},
+    {"id": "optimism", "label": "Optimism", "category": "l2-optimistic", "ecosystem": "ethereum-l2", "language": "Go", "privacyTech": ["optimistic-rollup"], "postQuantum": false, "isChain": true, "parent": "ethereum"},
+    {"id": "zksync-era", "label": "zkSync Era", "category": "l2-zk", "ecosystem": "ethereum-l2", "language": "Rust", "privacyTech": ["zk-snarks", "plonk"], "postQuantum": false, "isChain": true, "parent": "ethereum"},
+    {"id": "scroll", "label": "Scroll", "category": "l2-zk", "ecosystem": "ethereum-l2", "language": "Rust", "privacyTech": ["zk-snarks", "zkevm"], "postQuantum": false, "isChain": true, "parent": "ethereum"},
+    {"id": "polygon-zkevm", "label": "Polygon zkEVM", "category": "l2-zk", "ecosystem": "ethereum-l2", "language": "Go", "privacyTech": ["zk-snarks", "zkevm"], "postQuantum": false, "isChain": true, "parent": "ethereum"},
+    {"id": "starknet", "label": "Starknet", "category": "l2-zk", "ecosystem": "ethereum-l2", "language": "Cairo", "privacyTech": ["zk-starks"], "postQuantum": true, "isChain": true, "parent": "ethereum"},
+    {"id": "base", "label": "Base", "category": "l2-optimistic", "ecosystem": "ethereum-l2", "language": "Go", "privacyTech": ["optimistic-rollup"], "postQuantum": false, "isChain": true, "parent": "ethereum"},
+    {"id": "taiko", "label": "Taiko", "category": "l2-zk", "ecosystem": "ethereum-l2", "language": "Solidity", "privacyTech": ["zk-snarks", "based-rollup"], "postQuantum": false, "isChain": true, "parent": "ethereum"},
+    {"id": "linea", "label": "Linea", "category": "l2-zk", "ecosystem": "ethereum-l2", "language": "Go", "privacyTech": ["zk-snarks", "zkevm"], "postQuantum": false, "isChain": true, "parent": "ethereum"},
+
+    {"id": "aztec", "label": "Aztec", "category": "privacy-l2", "ecosystem": "ethereum-l2", "language": "Noir", "privacyTech": ["zk-snarks", "private-execution", "noir-language"], "postQuantum": false, "parent": "ethereum"},
+    {"id": "railgun", "label": "RAILGUN", "category": "privacy-layer", "ecosystem": "ethereum", "language": "Solidity", "privacyTech": ["zk-snarks", "private-defi", "railgun-engine"], "postQuantum": false},
+    {"id": "0xbow", "label": "0xBow", "category": "mixer", "ecosystem": "ethereum", "language": "Solidity", "privacyTech": ["zk-snarks", "compliant-privacy"], "postQuantum": false},
+    {"id": "nocturne", "label": "Nocturne", "category": "privacy-layer", "ecosystem": "ethereum", "language": "Solidity", "privacyTech": ["zk-snarks", "stealth-addresses"], "postQuantum": false},
+    {"id": "polygon-nightfall", "label": "Polygon Nightfall", "category": "privacy-l2", "ecosystem": "ethereum-l2", "language": "Solidity", "privacyTech": ["zk-snarks", "optimistic-rollup"], "postQuantum": false, "parent": "ethereum"},
+
+    {"id": "wormhole", "label": "Wormhole", "category": "bridge", "ecosystem": "multi-chain", "language": "Rust", "privacyTech": ["guardian-network"], "postQuantum": false, "securityRisk": "high", "exploitHistory": [{"date": "2022-02-02", "amount": "$320M", "type": "signature-bypass"}]},
+    {"id": "layerzero", "label": "LayerZero", "category": "bridge", "ecosystem": "multi-chain", "language": "Solidity", "privacyTech": ["oracle-relayer"], "postQuantum": false, "securityRisk": "medium"},
+    {"id": "stargate", "label": "Stargate", "category": "bridge", "ecosystem": "multi-chain", "language": "Solidity", "privacyTech": ["unified-liquidity"], "postQuantum": false, "parent": "layerzero"},
+    {"id": "hop-protocol", "label": "Hop Protocol", "category": "bridge", "ecosystem": "ethereum-l2", "language": "Solidity", "privacyTech": ["bonder-network"], "postQuantum": false, "securityRisk": "medium"},
+    {"id": "across", "label": "Across", "category": "bridge", "ecosystem": "ethereum-l2", "language": "Solidity", "privacyTech": ["optimistic-relaying"], "postQuantum": false, "securityRisk": "low"},
+    {"id": "connext", "label": "Connext", "category": "bridge", "ecosystem": "multi-chain", "language": "TypeScript", "privacyTech": ["nxtp-protocol"], "postQuantum": false, "securityRisk": "low"},
+    {"id": "celer-cbridge", "label": "Celer cBridge", "category": "bridge", "ecosystem": "multi-chain", "language": "Solidity", "privacyTech": ["state-guardian"], "postQuantum": false, "securityRisk": "medium"},
+    {"id": "orbiter", "label": "Orbiter Finance", "category": "bridge", "ecosystem": "ethereum-l2", "language": "Solidity", "privacyTech": ["maker-model"], "postQuantum": false, "securityRisk": "low"},
+    {"id": "synapse", "label": "Synapse", "category": "bridge", "ecosystem": "multi-chain", "language": "Solidity", "privacyTech": ["amm-bridge"], "postQuantum": false, "securityRisk": "medium"},
+
+    {"id": "arbitrum-bridge", "label": "Arbitrum Bridge", "category": "native-bridge", "ecosystem": "ethereum-l2", "language": "Solidity", "privacyTech": ["canonical-bridge"], "postQuantum": false, "parent": "arbitrum", "securityRisk": "low"},
+    {"id": "optimism-bridge", "label": "Optimism Bridge", "category": "native-bridge", "ecosystem": "ethereum-l2", "language": "Solidity", "privacyTech": ["canonical-bridge"], "postQuantum": false, "parent": "optimism", "securityRisk": "low"},
+    {"id": "zksync-bridge", "label": "zkSync Bridge", "category": "native-bridge", "ecosystem": "ethereum-l2", "language": "Solidity", "privacyTech": ["canonical-bridge", "zk-verified"], "postQuantum": false, "parent": "zksync-era", "securityRisk": "low"}
   ],
   "edges": [
     {"source": "monero", "target": "oxen", "relationship": "shared-tech", "detail": "Ring Signatures"},
@@ -84,7 +115,50 @@
     {"source": "webb-protocol", "target": "tornado-cash", "relationship": "shared-tech", "detail": "zk-SNARKs for Privacy"},
     {"source": "elusiv", "target": "tornado-cash", "relationship": "shared-tech", "detail": "zk-SNARKs for Privacy"},
     {"source": "nym", "target": "secret-network", "relationship": "shared-framework", "detail": "Cosmos SDK"},
-    {"source": "sentinel", "target": "secret-network", "relationship": "shared-framework", "detail": "Cosmos SDK"}
+    {"source": "sentinel", "target": "secret-network", "relationship": "shared-framework", "detail": "Cosmos SDK"},
+
+    {"source": "ethereum", "target": "arbitrum", "relationship": "l2-of", "detail": "Optimistic Rollup L2"},
+    {"source": "ethereum", "target": "optimism", "relationship": "l2-of", "detail": "Optimistic Rollup L2"},
+    {"source": "ethereum", "target": "zksync-era", "relationship": "l2-of", "detail": "ZK Rollup L2"},
+    {"source": "ethereum", "target": "scroll", "relationship": "l2-of", "detail": "ZK Rollup L2"},
+    {"source": "ethereum", "target": "polygon-zkevm", "relationship": "l2-of", "detail": "ZK Rollup L2"},
+    {"source": "ethereum", "target": "starknet", "relationship": "l2-of", "detail": "ZK Rollup L2 (STARKs)"},
+    {"source": "ethereum", "target": "base", "relationship": "l2-of", "detail": "Optimistic Rollup L2"},
+    {"source": "ethereum", "target": "taiko", "relationship": "l2-of", "detail": "Based Rollup L2"},
+    {"source": "ethereum", "target": "linea", "relationship": "l2-of", "detail": "ZK Rollup L2"},
+    {"source": "ethereum", "target": "aztec", "relationship": "l2-of", "detail": "Privacy L2"},
+    {"source": "ethereum", "target": "polygon-nightfall", "relationship": "l2-of", "detail": "Privacy L2"},
+
+    {"source": "aztec", "target": "zk-money", "relationship": "built-on", "detail": "Aztec Connect"},
+    {"source": "railgun", "target": "tornado-cash", "relationship": "shared-tech", "detail": "zk-SNARKs for Privacy"},
+    {"source": "0xbow", "target": "tornado-cash", "relationship": "shared-tech", "detail": "Tornado successor"},
+    {"source": "nocturne", "target": "fluidkey", "relationship": "shared-tech", "detail": "Stealth Addresses"},
+
+    {"source": "arbitrum-bridge", "target": "arbitrum", "relationship": "native-bridge", "detail": "Canonical Bridge"},
+    {"source": "optimism-bridge", "target": "optimism", "relationship": "native-bridge", "detail": "Canonical Bridge"},
+    {"source": "zksync-bridge", "target": "zksync-era", "relationship": "native-bridge", "detail": "ZK-verified Bridge"},
+
+    {"source": "hop-protocol", "target": "arbitrum", "relationship": "bridges-to", "detail": "L2 Bridge"},
+    {"source": "hop-protocol", "target": "optimism", "relationship": "bridges-to", "detail": "L2 Bridge"},
+    {"source": "hop-protocol", "target": "polygon-zkevm", "relationship": "bridges-to", "detail": "L2 Bridge"},
+    {"source": "across", "target": "arbitrum", "relationship": "bridges-to", "detail": "L2 Bridge"},
+    {"source": "across", "target": "optimism", "relationship": "bridges-to", "detail": "L2 Bridge"},
+    {"source": "across", "target": "zksync-era", "relationship": "bridges-to", "detail": "L2 Bridge"},
+    {"source": "orbiter", "target": "arbitrum", "relationship": "bridges-to", "detail": "L2 Bridge"},
+    {"source": "orbiter", "target": "optimism", "relationship": "bridges-to", "detail": "L2 Bridge"},
+    {"source": "orbiter", "target": "zksync-era", "relationship": "bridges-to", "detail": "L2 Bridge"},
+    {"source": "orbiter", "target": "scroll", "relationship": "bridges-to", "detail": "L2 Bridge"},
+    {"source": "orbiter", "target": "linea", "relationship": "bridges-to", "detail": "L2 Bridge"},
+
+    {"source": "stargate", "target": "layerzero", "relationship": "built-on", "detail": "LayerZero Protocol"},
+    {"source": "wormhole", "target": "ethereum", "relationship": "bridges-to", "detail": "Cross-chain"},
+    {"source": "layerzero", "target": "ethereum", "relationship": "bridges-to", "detail": "Cross-chain"},
+    {"source": "celer-cbridge", "target": "ethereum", "relationship": "bridges-to", "detail": "Cross-chain"},
+    {"source": "synapse", "target": "ethereum", "relationship": "bridges-to", "detail": "Cross-chain"},
+    {"source": "connext", "target": "ethereum", "relationship": "bridges-to", "detail": "Cross-chain"},
+
+    {"source": "starknet", "target": "starkex", "relationship": "shared-tech", "detail": "zk-STARKs"},
+    {"source": "zksync", "target": "zksync-era", "relationship": "successor", "detail": "zkSync 2.0"}
   ],
   "clusters": {
     "zk-snarks-family": {
@@ -119,8 +193,34 @@
     },
     "ethereum-privacy": {
       "label": "Ethereum Privacy Layer",
-      "members": ["tornado-cash", "semaphore", "zksync", "miden", "zk-money", "mask-network", "fluidkey", "privatepool", "zkvote"],
+      "members": ["tornado-cash", "semaphore", "zksync", "miden", "zk-money", "mask-network", "fluidkey", "privatepool", "zkvote", "railgun", "0xbow", "nocturne", "aztec", "polygon-nightfall"],
       "description": "Privacy solutions on Ethereum"
+    },
+    "ethereum-l2-optimistic": {
+      "label": "Optimistic Rollups",
+      "members": ["arbitrum", "optimism", "base"],
+      "description": "Ethereum L2s using optimistic rollup technology"
+    },
+    "ethereum-l2-zk": {
+      "label": "ZK Rollups",
+      "members": ["zksync-era", "scroll", "polygon-zkevm", "starknet", "taiko", "linea", "miden"],
+      "description": "Ethereum L2s using zero-knowledge proofs"
+    },
+    "privacy-l2": {
+      "label": "Privacy L2s",
+      "members": ["aztec", "polygon-nightfall", "miden"],
+      "description": "Layer 2 solutions with native privacy"
+    },
+    "cross-chain-bridges": {
+      "label": "Cross-Chain Bridges",
+      "members": ["wormhole", "layerzero", "stargate", "celer-cbridge", "connext", "synapse"],
+      "description": "Bridges connecting multiple blockchains - security critical infrastructure",
+      "securityContext": "High-value attack targets. Combined exploit losses exceed $2B."
+    },
+    "l2-bridges": {
+      "label": "L2 Bridges",
+      "members": ["hop-protocol", "across", "orbiter", "arbitrum-bridge", "optimism-bridge", "zksync-bridge"],
+      "description": "Bridges optimized for Ethereum L2 transfers"
     },
     "decentralized-vpn": {
       "label": "Decentralized VPN",
@@ -153,9 +253,10 @@
   "metadata": {
     "generated": "2026-01-22",
     "source": "Constitutional Research Framework v3",
-    "version": "2.0",
-    "nodeCount": 48,
-    "edgeCount": 35,
-    "clusterCount": 10
+    "version": "2.1",
+    "nodeCount": 78,
+    "edgeCount": 75,
+    "clusterCount": 16,
+    "changelog": ["Added Ethereum L2 hierarchy (Arbitrum, Optimism, zkSync Era, Scroll, Starknet, Base, Taiko, Linea)", "Added cross-chain bridges (Wormhole, LayerZero, Stargate, Hop, Across, etc.)", "Added privacy L2s (Aztec, Polygon Nightfall)", "Added bridge security context"]
   }
 }

@@ -13,6 +13,9 @@ interface EcosystemNode {
   language?: string;
   privacyTech: string[];
   postQuantum?: boolean;
+  isChain?: boolean; // L1/L2 chain node
+  parent?: string; // Parent chain (e.g., L2s have "ethereum" as parent)
+  securityRisk?: 'low' | 'medium' | 'high'; // For bridges
   x?: number;
   y?: number;
   fx?: number | null;
@@ -81,6 +84,27 @@ const CATEGORY_SHAPES: Record<string, string> = {
   'default': 'circle',
 };
 
+// Chain/ecosystem colors
+const CHAIN_COLORS: Record<string, string> = {
+  'ethereum': '#627eea',
+  'arbitrum': '#28a0f0',
+  'optimism': '#ff0420',
+  'zksync-era': '#8c8dfc',
+  'scroll': '#ffeeda',
+  'polygon-zkevm': '#8247e5',
+  'starknet': '#ec796b',
+  'base': '#0052ff',
+  'taiko': '#e81899',
+  'linea': '#121212',
+};
+
+// Bridge security colors
+const SECURITY_COLORS: Record<string, string> = {
+  'low': '#a6e3a1',
+  'medium': '#f9e2af',
+  'high': '#f38ba8',
+};
+
 export default function PrivacyTechGraph({ width = 1000, height = 700, defaultFilter }: Props) {
   const svgRef = useRef<SVGSVGElement>(null);
   const zoomRef = useRef<d3.ZoomBehavior<SVGSVGElement, unknown> | null>(null);
@@ -88,6 +112,7 @@ export default function PrivacyTechGraph({ width = 1000, height = 700, defaultFi
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState<EcosystemData | null>(null);
   const [highlightedTech, setHighlightedTech] = useState<string | null>(defaultFilter || null);
+  const [focusedEcosystem, setFocusedEcosystem] = useState<string | null>(null); // Chain/ecosystem filter
   const [expandedNodes, setExpandedNodes] = useState<Set<string>>(new Set());
   const [hoveredNode, setHoveredNode] = useState<string | null>(null);
   const [focusedNode, setFocusedNode] = useState<string | null>(null);
@@ -109,17 +134,52 @@ export default function PrivacyTechGraph({ width = 1000, height = 700, defaultFi
 
   // Get primary privacy tech color for a node
   const getNodeColor = useCallback((node: EcosystemNode): string => {
+    // Chain nodes get chain colors
+    if (node.isChain && CHAIN_COLORS[node.id]) {
+      return CHAIN_COLORS[node.id];
+    }
+    // Bridge nodes with security risk
+    if (node.category === 'bridge' && node.securityRisk) {
+      return SECURITY_COLORS[node.securityRisk] || TECH_COLORS.default;
+    }
     if (!node.privacyTech || node.privacyTech.length === 0) return TECH_COLORS.default;
     const primaryTech = node.privacyTech[0];
     return TECH_COLORS[primaryTech] || TECH_COLORS.default;
   }, []);
 
-  // Check if a node should be highlighted (matches tech filter or is expanded)
+  // Check if node is in focused ecosystem (chain or its L2s/projects)
+  const isInFocusedEcosystem = useCallback((node: EcosystemNode): boolean => {
+    if (!focusedEcosystem) return true; // No filter = show all
+
+    // Direct match (the focused chain itself)
+    if (node.id === focusedEcosystem) return true;
+
+    // L2 of the focused chain
+    if (node.parent === focusedEcosystem) return true;
+
+    // Project on the focused ecosystem
+    if (node.ecosystem === focusedEcosystem) return true;
+    if (node.ecosystem === 'ethereum-l2' && focusedEcosystem === 'ethereum') return true;
+
+    // Projects on L2s when Ethereum is focused
+    if (focusedEcosystem === 'ethereum') {
+      // Include all L2 projects
+      if (node.ecosystem === 'ethereum-l2') return true;
+      // Include projects that have ethereum parent chain
+      const parentChain = data?.nodes.find(n => n.id === node.parent);
+      if (parentChain?.parent === 'ethereum' || parentChain?.ecosystem === 'ethereum-l2') return true;
+    }
+
+    return false;
+  }, [focusedEcosystem, data]);
+
+  // Check if a node should be highlighted (matches tech filter, ecosystem filter, or is expanded)
   const isNodeHighlighted = useCallback((node: EcosystemNode): boolean => {
     if (expandedNodes.has(node.id)) return true;
+    if (focusedEcosystem && isInFocusedEcosystem(node)) return true;
     if (!highlightedTech) return false;
     return node.privacyTech?.includes(highlightedTech) || false;
-  }, [highlightedTech, expandedNodes]);
+  }, [highlightedTech, expandedNodes, focusedEcosystem, isInFocusedEcosystem]);
 
   // Check if a node is connected to an expanded node
   const isConnectedToExpanded = useCallback((nodeId: string, edges: EcosystemEdge[]): boolean => {
@@ -131,9 +191,9 @@ export default function PrivacyTechGraph({ width = 1000, height = 700, defaultFi
     });
   }, [expandedNodes]);
 
-  // Get visible edges (only show edges for expanded nodes or highlighted tech)
+  // Get visible edges (only show edges for expanded nodes, highlighted tech, or focused ecosystem)
   const getVisibleEdges = useCallback((edges: EcosystemEdge[]): EcosystemEdge[] => {
-    if (expandedNodes.size === 0 && !highlightedTech) return [];
+    if (expandedNodes.size === 0 && !highlightedTech && !focusedEcosystem) return [];
 
     return edges.filter(e => {
       const sourceId = typeof e.source === 'string' ? e.source : e.source.id;
@@ -141,6 +201,15 @@ export default function PrivacyTechGraph({ width = 1000, height = 700, defaultFi
 
       // Show edge if either end is expanded
       if (expandedNodes.has(sourceId) || expandedNodes.has(targetId)) return true;
+
+      // Show edge if both ends are in focused ecosystem
+      if (focusedEcosystem) {
+        const sourceNode = data?.nodes.find(n => n.id === sourceId);
+        const targetNode = data?.nodes.find(n => n.id === targetId);
+        if (sourceNode && targetNode && isInFocusedEcosystem(sourceNode) && isInFocusedEcosystem(targetNode)) {
+          return true;
+        }
+      }
 
       // Show edge if both ends match the highlighted tech
       if (highlightedTech) {
@@ -154,7 +223,7 @@ export default function PrivacyTechGraph({ width = 1000, height = 700, defaultFi
 
       return false;
     });
-  }, [expandedNodes, highlightedTech, data]);
+  }, [expandedNodes, highlightedTech, focusedEcosystem, data, isInFocusedEcosystem]);
 
   // Render graph
   useEffect(() => {
@@ -257,28 +326,62 @@ export default function PrivacyTechGraph({ width = 1000, height = 700, defaultFi
       .style('cursor', 'pointer');
 
     // Add circles for nodes with expanded/highlighted states
-    node.append('circle')
+    // Chain nodes get hexagon shape via path
+    node.filter(d => d.isChain === true)
+      .append('path')
+      .attr('d', d => {
+        const size = expandedNodes.has(d.id) ? 32 : 28;
+        // Hexagon path
+        const a = size * 0.866; // cos(30)
+        const b = size * 0.5;   // sin(30)
+        return `M0,${-size} L${a},${-b} L${a},${b} L0,${size} L${-a},${b} L${-a},${-b} Z`;
+      })
+      .attr('fill', d => getNodeColor(d))
+      .attr('stroke', d => {
+        if (expandedNodes.has(d.id)) return '#fff';
+        if (focusedEcosystem === d.id) return '#fff';
+        return '#333';
+      })
+      .attr('stroke-width', d => {
+        if (expandedNodes.has(d.id) || focusedEcosystem === d.id) return 3;
+        return 2;
+      })
+      .attr('opacity', d => {
+        if (expandedNodes.has(d.id)) return 1;
+        if (focusedEcosystem && !isInFocusedEcosystem(d)) return 0.2;
+        if (focusedEcosystem && isInFocusedEcosystem(d)) return 1;
+        return 0.9;
+      });
+
+    // Regular project nodes get circles
+    node.filter(d => d.isChain !== true)
+      .append('circle')
       .attr('r', d => {
         if (expandedNodes.has(d.id)) return 26;
         if (d.postQuantum) return 22;
+        if (d.category === 'bridge') return 20; // Bridges slightly larger
         return 18;
       })
       .attr('fill', d => getNodeColor(d))
       .attr('stroke', d => {
         if (expandedNodes.has(d.id)) return '#fff';
         if (d.postQuantum) return '#f9e2af';
+        if (d.category === 'bridge' && d.securityRisk === 'high') return '#f38ba8';
         if (highlightedTech && d.privacyTech?.includes(highlightedTech)) return getNodeColor(d);
         return '#333';
       })
       .attr('stroke-width', d => {
         if (expandedNodes.has(d.id)) return 4;
         if (d.postQuantum) return 3;
+        if (d.category === 'bridge') return 2.5;
         if (highlightedTech && d.privacyTech?.includes(highlightedTech)) return 3;
         return 1.5;
       })
       .attr('opacity', d => {
         // Full opacity for expanded, highlighted, or connected nodes
         if (expandedNodes.has(d.id)) return 1;
+        if (focusedEcosystem && !isInFocusedEcosystem(d)) return 0.15;
+        if (focusedEcosystem && isInFocusedEcosystem(d)) return 0.95;
         if (highlightedTech && d.privacyTech?.includes(highlightedTech)) return 0.95;
         if (isConnectedToExpanded(d.id, data.edges)) return 0.85;
         // Dim others when something is active
@@ -425,6 +528,19 @@ export default function PrivacyTechGraph({ width = 1000, height = 700, defaultFi
         // Skip if this was a drag
         if (draggedRef.current) return;
 
+        // Chain nodes toggle ecosystem focus
+        if (d.isChain) {
+          if (focusedEcosystem === d.id) {
+            // Already focused on this chain - clear focus
+            setFocusedEcosystem(null);
+          } else {
+            // Focus on this chain's ecosystem
+            setFocusedEcosystem(d.id);
+            setHighlightedTech(null); // Clear tech filter when focusing ecosystem
+          }
+          return;
+        }
+
         const isCurrentlyExpanded = expandedNodes.has(d.id);
 
         if (isCurrentlyExpanded) {
@@ -478,7 +594,7 @@ export default function PrivacyTechGraph({ width = 1000, height = 700, defaultFi
       tooltip.remove();
       simulation.stop();
     };
-  }, [data, highlightedTech, expandedNodes, getVisibleEdges, getNodeColor, isConnectedToExpanded, width, height, router]);
+  }, [data, highlightedTech, expandedNodes, focusedEcosystem, getVisibleEdges, getNodeColor, isConnectedToExpanded, isInFocusedEcosystem, width, height, router]);
 
   // Reset zoom
   const resetZoom = useCallback(() => {
@@ -513,8 +629,62 @@ export default function PrivacyTechGraph({ width = 1000, height = 700, defaultFi
     ? data.nodes.filter(n => n.privacyTech?.includes(highlightedTech)).length
     : 0;
 
+  // Get chain nodes for filter buttons
+  const chainNodes = data.nodes.filter(n => n.isChain);
+  const bridgeCount = data.nodes.filter(n => n.category === 'bridge' || n.category === 'native-bridge').length;
+
   return (
     <div className="space-y-4">
+      {/* Ecosystem/Chain filter */}
+      <div className="flex flex-wrap items-center gap-2">
+        <span className="text-sm text-[#6c7086]">Focus ecosystem:</span>
+        <button
+          onClick={() => setFocusedEcosystem(null)}
+          className={`px-3 py-1 text-xs rounded-full transition-colors ${
+            !focusedEcosystem
+              ? 'bg-[#94e2d5] text-[#1a1a1a]'
+              : 'bg-[#1a1a1a] text-[#888] hover:bg-[#252525]'
+          }`}
+        >
+          All Networks
+        </button>
+        {chainNodes.filter(n => n.category === 'layer1' || n.id === 'ethereum').slice(0, 1).map(chain => (
+          <button
+            key={chain.id}
+            onClick={() => setFocusedEcosystem(focusedEcosystem === chain.id ? null : chain.id)}
+            className={`px-3 py-1 text-xs rounded-full transition-colors flex items-center gap-1.5 ${
+              focusedEcosystem === chain.id
+                ? 'text-[#1a1a1a]'
+                : 'bg-[#1a1a1a] text-[#888] hover:bg-[#252525]'
+            }`}
+            style={focusedEcosystem === chain.id ? { backgroundColor: CHAIN_COLORS[chain.id] || '#94e2d5' } : {}}
+          >
+            <span className="w-2 h-2 rounded-sm" style={{ backgroundColor: CHAIN_COLORS[chain.id] }} />
+            {chain.label}
+          </button>
+        ))}
+        <span className="text-[#444] mx-1">|</span>
+        <span className="text-xs text-[#555]">L2s:</span>
+        {chainNodes.filter(n => n.category?.includes('l2')).slice(0, 6).map(chain => (
+          <button
+            key={chain.id}
+            onClick={() => setFocusedEcosystem(focusedEcosystem === chain.id ? null : chain.id)}
+            className={`px-2 py-0.5 text-[10px] rounded-full transition-colors flex items-center gap-1 ${
+              focusedEcosystem === chain.id
+                ? 'text-[#1a1a1a]'
+                : 'bg-[#1a1a1a] text-[#666] hover:bg-[#252525]'
+            }`}
+            style={focusedEcosystem === chain.id ? { backgroundColor: CHAIN_COLORS[chain.id] || '#94e2d5' } : {}}
+          >
+            <span className="w-1.5 h-1.5 rounded-sm" style={{ backgroundColor: CHAIN_COLORS[chain.id] }} />
+            {chain.label}
+          </button>
+        ))}
+        <span className="text-[10px] text-[#f9e2af] ml-2">
+          {bridgeCount} bridges
+        </span>
+      </div>
+
       {/* Highlight controls */}
       <div className="flex flex-wrap items-center gap-2">
         <span className="text-sm text-[#6c7086]">Highlight technology:</span>
@@ -553,8 +723,17 @@ export default function PrivacyTechGraph({ width = 1000, height = 700, defaultFi
           {data.nodes.length} projects • {visibleEdges.length} connections shown
           {expandedNodes.size > 0 && ` • ${expandedNodes.size} expanded`}
           {highlightedTech && ` • ${highlightedCount} using ${highlightedTech}`}
+          {focusedEcosystem && ` • Viewing ${chainNodes.find(c => c.id === focusedEcosystem)?.label || focusedEcosystem} ecosystem`}
         </span>
         <div className="flex gap-2">
+          {focusedEcosystem && (
+            <button
+              onClick={() => setFocusedEcosystem(null)}
+              className="px-3 py-1.5 text-xs bg-[#627eea]/20 hover:bg-[#627eea]/30 text-[#627eea] rounded border border-[#627eea]/30 transition-colors"
+            >
+              Clear Ecosystem Filter
+            </button>
+          )}
           {expandedNodes.size > 0 && (
             <button
               onClick={() => {
