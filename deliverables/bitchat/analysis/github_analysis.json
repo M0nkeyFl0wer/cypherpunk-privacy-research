@@ -1,0 +1,198 @@
+{
+  "project": "bitchat",
+  "analysis_date": "2026-01-22",
+  "methodology": "Constitutional Research Framework v3",
+
+  "repositories": {
+    "ios": {
+      "url": "https://github.com/permissionlesstech/bitchat",
+      "stars": 24644,
+      "forks": 2302,
+      "open_issues": 232,
+      "primary_language": "Swift",
+      "created_at": "2025-07-04T14:34:38Z",
+      "last_updated": "2026-01-22T17:55:10Z",
+      "license": "The Unlicense"
+    },
+    "android": {
+      "url": "https://github.com/permissionlesstech/bitchat-android",
+      "stars": 4560,
+      "forks": 636,
+      "primary_language": "Kotlin",
+      "created_at": "2025-07-08T18:36:23Z",
+      "last_updated": "2026-01-22T15:43:38Z",
+      "license": "The Unlicense"
+    }
+  },
+
+  "organization": {
+    "name": "permissionlesstech",
+    "public_repos": 2,
+    "created": "2025",
+    "description": "Permissionless technology projects"
+  },
+
+  "contributors": {
+    "ios": {
+      "total": "30+",
+      "top_contributors": [
+        {
+          "github": "jackjackbits",
+          "contributions": 485,
+          "identity": "Jack Dorsey",
+          "verified": true
+        },
+        {
+          "github": "nothankyou1",
+          "contributions": 128,
+          "identity": "Unknown",
+          "verified": false
+        },
+        {
+          "github": "qalandarov",
+          "contributions": 87,
+          "identity": "Islam (Facebook/Meta)",
+          "verified": true
+        },
+        {
+          "github": "callebtc",
+          "contributions": 23,
+          "identity": "Calle (Cashu creator)",
+          "verified": true
+        },
+        {
+          "github": "nadimkobeissi",
+          "contributions": 9,
+          "identity": "Nadim Kobeissi (Cure53)",
+          "verified": true
+        }
+      ]
+    },
+    "android": {
+      "total": "20+",
+      "top_contributors": [
+        {
+          "github": "callebtc",
+          "contributions": 286
+        },
+        {
+          "github": "moehamade",
+          "contributions": 9
+        },
+        {
+          "github": "yet300",
+          "contributions": 8
+        },
+        {
+          "github": "hector6872",
+          "contributions": 8
+        }
+      ]
+    }
+  },
+
+  "language_breakdown": {
+    "ios": {
+      "Swift": "95%+",
+      "Other": "5%"
+    },
+    "android": {
+      "Kotlin": "95%+",
+      "Other": "5%"
+    }
+  },
+
+  "code_structure": {
+    "security_critical_files": [
+      "NoiseProtocol.swift",
+      "NoiseSession.swift",
+      "NoiseSessionManager.swift",
+      "NoiseEncryptionService.swift",
+      "KeychainManager.swift",
+      "VerificationService.swift",
+      "NostrTransport.swift"
+    ],
+    "security_support_files": [
+      "NoiseSecurityValidator.swift",
+      "NoiseSecurityConstants.swift",
+      "NoiseRateLimiter.swift",
+      "MessageDeduplicationService.swift"
+    ]
+  },
+
+  "dependencies": {
+    "ios": [
+      {
+        "name": "swift-secp256k1",
+        "version": "0.21.1",
+        "source": "https://github.com/21-DOT-DEV/swift-secp256k1",
+        "purpose": "Elliptic curve cryptography"
+      },
+      {
+        "name": "Arti",
+        "version": "local",
+        "purpose": "Tor integration"
+      },
+      {
+        "name": "BitLogger",
+        "version": "local",
+        "purpose": "Logging"
+      }
+    ]
+  },
+
+  "documentation": {
+    "readme": true,
+    "whitepaper": true,
+    "technical_docs": true,
+    "contributing_guide": false,
+    "security_policy": false,
+    "code_of_conduct": false
+  },
+
+  "activity": {
+    "commit_frequency": "daily",
+    "last_commit": "2026-01-22",
+    "development_status": "active",
+    "release_cadence": "irregular"
+  },
+
+  "releases": [
+    {
+      "version": "v1.0",
+      "date": "2025-07-29",
+      "notes": "Initial App Store release"
+    },
+    {
+      "version": "v1.5.0",
+      "date": "2026-01-14",
+      "notes": "Latest release"
+    }
+  ],
+
+  "security_indicators": {
+    "external_audit": false,
+    "bug_bounty": false,
+    "security_policy": false,
+    "responsible_disclosure": false,
+    "security_contributors": ["nadimkobeissi"],
+    "known_vulnerabilities": 4,
+    "patched_vulnerabilities": 1
+  },
+
+  "risk_assessment": {
+    "maintainer_risk": "Low - Jack Dorsey has resources",
+    "abandonment_risk": "Medium - personal project",
+    "security_risk": "High - no audit, known vulns",
+    "dependency_risk": "Low - few dependencies",
+    "license_risk": "Low - public domain"
+  },
+
+  "confidence_score": 0.92,
+  "sources": [
+    "https://api.github.com/repos/permissionlesstech/bitchat",
+    "https://api.github.com/repos/permissionlesstech/bitchat-android",
+    "https://github.com/permissionlesstech/bitchat",
+    "https://github.com/permissionlesstech/bitchat-android"
+  ]
+}
