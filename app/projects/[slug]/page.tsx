@@ -313,6 +313,16 @@ export default async function ProjectPage({ params }: { params: { slug: string }
   );
 }
 
+// Map report filenames to section IDs and display names
+const reportSectionMap: Record<string, { id: string; name: string }> = {
+  'TEAM.md': { id: 'team-research', name: 'Team Research' },
+  'SECURITY.md': { id: 'security-analysis', name: 'Security Analysis' },
+  'CODE_REVIEW.md': { id: 'repository-analysis', name: 'Repository Analysis' },
+  'opsec_vulnerability_assessment.md': { id: 'osint-assessment', name: 'OSINT Assessment' },
+  'TECHNICAL.md': { id: 'technical-analysis', name: 'Technical Analysis' },
+  'RESEARCH_SUMMARY.md': { id: 'research-summary', name: 'Research Summary' },
+};
+
 function ReportSection({ title, content, defaultOpen = false, color = '#94e2d5', methodology }: {
   title: string;
   content: string;
@@ -320,8 +330,11 @@ function ReportSection({ title, content, defaultOpen = false, color = '#94e2d5',
   color?: string;
   methodology?: string;
 }) {
+  // Generate section ID from title
+  const sectionId = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
+
   // Transform image URLs to use local /media/ path
-  const transformedContent = content.replace(
+  let transformedContent = content.replace(
     /!\[([^\]]*)\]\(([^)]+)\)/g,
     (match, alt, url) => {
       // Extract just the filename from any URL
@@ -334,8 +347,22 @@ function ReportSection({ title, content, defaultOpen = false, color = '#94e2d5',
     }
   );
 
+  // Transform report links to section anchors
+  // Matches [text](reports/filename.md) or [filename.md](reports/filename.md)
+  transformedContent = transformedContent.replace(
+    /\[([^\]]+)\]\(reports\/([^)]+\.md)\)/g,
+    (match, linkText, filename) => {
+      const section = reportSectionMap[filename];
+      if (section) {
+        return `[${section.name}](#${section.id})`;
+      }
+      // Fallback: just show as "see below" text without broken link
+      return `**${linkText.replace('.md', '')}** *(see below)*`;
+    }
+  );
+
   return (
-    <details open={defaultOpen} className="group border border-[#252525] rounded-lg overflow-hidden">
+    <details id={sectionId} open={defaultOpen} className="group border border-[#252525] rounded-lg overflow-hidden scroll-mt-4">
       <summary className="flex items-center justify-between px-4 py-3 bg-[#111] cursor-pointer hover:bg-[#1a1a1a] transition-colors list-none">
         <span className="font-medium" style={{ color }}>{title}</span>
         <span className="text-[#6c7086] group-open:rotate-180 transition-transform text-sm">▼</span>
