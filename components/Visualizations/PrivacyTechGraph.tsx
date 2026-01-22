@@ -363,19 +363,46 @@ export default function PrivacyTechGraph({ width = 1000, height = 700, defaultFi
           return isConnected ? 0.9 : 0.3;
         });
 
-        tooltip
-          .html(`
-            <div style="font-weight: 600; font-size: 14px; margin-bottom: 6px; color: ${getNodeColor(d)}">${d.label}</div>
-            <div style="font-size: 10px; color: #888; text-transform: uppercase; margin-bottom: 8px;">${d.category}</div>
-            <div style="margin-bottom: 8px;">
-              <div style="font-size: 10px; color: #666; margin-bottom: 4px;">Privacy Technologies:</div>
-              <div style="display: flex; flex-wrap: wrap; gap: 4px;">
-                ${d.privacyTech.map(t => `<span style="background: ${TECH_COLORS[t] || '#444'}; color: #1a1a1a; padding: 2px 6px; border-radius: 4px; font-size: 9px;">${t}</span>`).join('')}
-              </div>
+        // Build rich tooltip with project metadata
+        const metadata = getProjectMetadata(d.id);
+        const isExpanded = expandedNodes.has(d.id);
+
+        let tooltipHtml = `
+          <div style="font-weight: 600; font-size: 14px; margin-bottom: 4px; color: ${getNodeColor(d)}">${d.label}</div>
+          <div style="font-size: 10px; color: #888; text-transform: uppercase; margin-bottom: 8px;">${d.category}</div>
+        `;
+
+        // Add project description if available
+        if (metadata) {
+          tooltipHtml += `<div style="color: #a6adc8; font-size: 11px; line-height: 1.5; margin-bottom: 8px; border-top: 1px solid #333; padding-top: 8px;">${metadata.description}</div>`;
+
+          if (metadata.highlights && metadata.highlights.length > 0) {
+            tooltipHtml += `<ul style="margin: 0 0 8px 0; padding-left: 14px; color: #888; font-size: 10px; line-height: 1.6;">`;
+            metadata.highlights.forEach(h => {
+              tooltipHtml += `<li style="color: #6c7086;">${h}</li>`;
+            });
+            tooltipHtml += `</ul>`;
+          }
+        }
+
+        tooltipHtml += `
+          <div style="margin-bottom: 8px;">
+            <div style="font-size: 10px; color: #666; margin-bottom: 4px;">Privacy Technologies:</div>
+            <div style="display: flex; flex-wrap: wrap; gap: 4px;">
+              ${d.privacyTech.map(t => `<span style="background: ${TECH_COLORS[t] || '#444'}; color: #1a1a1a; padding: 2px 6px; border-radius: 4px; font-size: 9px;">${t}</span>`).join('')}
             </div>
-            ${d.postQuantum ? '<div style="color: #f9e2af; font-size: 10px;">Quantum Resistant</div>' : ''}
-            <div style="color: #555; font-size: 10px; margin-top: 8px;">Double-click for project details</div>
-          `)
+          </div>
+          ${d.postQuantum ? '<div style="color: #f9e2af; font-size: 10px; margin-bottom: 6px;">⚛ Quantum Resistant</div>' : ''}
+        `;
+
+        // Dynamic hint based on state
+        const hint = isExpanded
+          ? 'Click again to open project page'
+          : 'Click to expand connections';
+        tooltipHtml += `<div style="color: #555; font-size: 10px; margin-top: 8px; border-top: 1px solid #252525; padding-top: 6px;">${hint}</div>`;
+
+        tooltip
+          .html(tooltipHtml)
           .style('opacity', 1)
           .style('left', (event.pageX + 15) + 'px')
           .style('top', (event.pageY - 15) + 'px');
@@ -394,31 +421,41 @@ export default function PrivacyTechGraph({ width = 1000, height = 700, defaultFi
       })
       .on('click', function(event, d) {
         event.stopPropagation();
-        // Single click: expand/collapse node to show connections
-        setExpandedNodes(prev => {
-          const next = new Set(prev);
-          if (next.has(d.id)) {
-            next.delete(d.id);
-          } else {
+
+        // Skip if this was a drag
+        if (draggedRef.current) return;
+
+        const isCurrentlyExpanded = expandedNodes.has(d.id);
+
+        if (isCurrentlyExpanded) {
+          // Already expanded - navigate to project page
+          router.push(`/projects/${d.id}`);
+        } else {
+          // First click - expand to show connections
+          setExpandedNodes(prev => {
+            const next = new Set(prev);
             next.add(d.id);
-            // Zoom to the expanded node
-            if (svgRef.current && zoomRef.current && d.x && d.y) {
-              const svg = d3.select(svgRef.current);
-              const transform = d3.zoomIdentity
-                .translate(width / 2 - d.x * 1.5, height / 2 - d.y * 1.5)
-                .scale(1.5);
-              svg.transition()
-                .duration(500)
-                .ease(d3.easeCubicInOut)
-                .call(zoomRef.current.transform, transform);
-            }
+            return next;
+          });
+          setFocusedNode(d.id);
+
+          // Zoom to the expanded node
+          if (svgRef.current && zoomRef.current && d.x && d.y) {
+            const svg = d3.select(svgRef.current);
+            const transform = d3.zoomIdentity
+              .translate(width / 2 - d.x * 1.5, height / 2 - d.y * 1.5)
+              .scale(1.5);
+            svg.transition()
+              .duration(500)
+              .ease(d3.easeCubicInOut)
+              .call(zoomRef.current.transform, transform);
           }
-          return next;
-        });
+        }
       })
       .on('dblclick', function(event, d) {
         event.stopPropagation();
         event.preventDefault();
+        // Double-click always navigates
         router.push(`/projects/${d.id}`);
       });
 
@@ -520,7 +557,10 @@ export default function PrivacyTechGraph({ width = 1000, height = 700, defaultFi
         <div className="flex gap-2">
           {expandedNodes.size > 0 && (
             <button
-              onClick={() => setExpandedNodes(new Set())}
+              onClick={() => {
+                setExpandedNodes(new Set());
+                setFocusedNode(null);
+              }}
               className="px-3 py-1.5 text-xs bg-[#1a1a1a] hover:bg-[#252525] text-[#a6adc8] rounded border border-[#333] transition-colors"
             >
               Collapse All
@@ -558,17 +598,61 @@ export default function PrivacyTechGraph({ width = 1000, height = 700, defaultFi
         </span>
       </div>
 
-      {/* Graph */}
-      <svg
-        ref={svgRef}
-        width={width}
-        height={height}
-        className="bg-[#0a0a0a] rounded-lg border border-[#252525]"
-      />
+      {/* Graph container with floating labels */}
+      <div className="relative">
+        <svg
+          ref={svgRef}
+          width={width}
+          height={height}
+          className="bg-[#0a0a0a] rounded-lg border border-[#252525]"
+        />
+
+        {/* Category labels - floating overlay */}
+        <div className="absolute top-3 left-3 flex flex-col gap-1.5 pointer-events-none">
+          {(() => {
+            const categories = [...new Set(data.nodes.map(n => n.category))];
+            const categoryColors: Record<string, string> = {
+              'privacy-coin': '#94e2d5',
+              'messaging': '#fab387',
+              'mixer': '#eba0ac',
+              'zk-rollup': '#89b4fa',
+              'mixnet': '#cba6f7',
+              'identity': '#f9e2af',
+              'wallet': '#a6e3a1',
+              'vpn': '#89dceb',
+              'default': '#6c7086',
+            };
+            return categories.slice(0, 8).map(cat => {
+              const count = data.nodes.filter(n => n.category === cat).length;
+              return (
+                <span
+                  key={cat}
+                  className="flex items-center gap-1.5 text-[10px] bg-[#0a0a0a]/80 px-2 py-0.5 rounded"
+                >
+                  <span
+                    className="w-2 h-2 rounded-sm"
+                    style={{ backgroundColor: categoryColors[cat] || categoryColors.default }}
+                  />
+                  <span style={{ color: categoryColors[cat] || categoryColors.default }}>
+                    {cat} ({count})
+                  </span>
+                </span>
+              );
+            });
+          })()}
+        </div>
+
+        {/* Focused node indicator */}
+        {focusedNode && (
+          <div className="absolute top-3 right-3 px-2 py-1 text-xs bg-[#94e2d5]/20 text-[#94e2d5] rounded border border-[#94e2d5]/30">
+            Selected: {data.nodes.find(n => n.id === focusedNode)?.label || focusedNode}
+          </div>
+        )}
+      </div>
 
       {/* Help text */}
       <p className="text-xs text-[#444]">
-        Drag to pan • Scroll to zoom • Click to expand connections • Double-click for project details
+        Drag to pan • Scroll to zoom • Click once to expand • Click expanded node to open project
       </p>
     </div>
   );
