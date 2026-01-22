@@ -1,7 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import FeedbackForm from '@/components/Feedback/FeedbackForm';
+import SecureFeedbackForm from '@/components/Feedback/SecureFeedbackForm';
+import ObfuscatedEmail from '@/components/ObfuscatedEmail';
 
 export default function FeedbackPage() {
   const [showSuccess, setShowSuccess] = useState(false);
@@ -224,7 +225,7 @@ export default function FeedbackPage() {
         </div>
 
         {/* Feedback Form */}
-        <FeedbackForm onSuccess={handleSuccess} onError={handleError} />
+        <SecureFeedbackForm onSuccess={handleSuccess} onError={handleError} />
 
         {/* Email Alternative - For Non-Technical Users */}
         <div className="mt-10 p-6 bg-[#0d1117] border border-[#89b4fa]/30 rounded-lg">
@@ -241,15 +242,17 @@ export default function FeedbackPage() {
               <p className="text-[#a6adc8] mb-4">
                 No GitHub account? No problem. Send corrections, updates, or new project suggestions directly via email. Just describe what needs to change in plain text.
               </p>
-              <a
-                href="mailto:web3privacy@benwest.io?subject=Web3%20Privacy%20Research%20Feedback"
+              <ObfuscatedEmail
+                user="web3privacy"
+                domain="benwest.io"
+                subject="Web3 Privacy Research Feedback"
                 className="inline-flex items-center gap-2 px-4 py-2 bg-[#89b4fa] text-[#000] font-medium rounded-lg hover:bg-[#89b4fa]/90 transition-colors"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                web3privacy@benwest.io
-              </a>
+                <span>Send Email</span>
+              </ObfuscatedEmail>
             </div>
           </div>
         </div>
