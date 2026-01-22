@@ -4,7 +4,7 @@
 
 ### Basic Project Information
 - **Name:** Bitchat
-- **Website:** None official (App Store/TestFlight distribution)
+- **Website:** https://bitchat.free/ (hosted on GitHub Pages)
 - **GitHub:** https://github.com/permissionlesstech/bitchat (24.6k stars, 2.3k forks)
 - **Description:** "Bluetooth mesh chat, IRC vibes" - P2P messaging via BLE mesh + Nostr fallback
 - **Category:** Privacy Messaging, P2P Communication

@@ -9,7 +9,7 @@
     "tagline": "Bluetooth mesh chat, IRC vibes",
     "creator": "Jack Dorsey",
     "organization": "permissionlesstech",
-    "website": null,
+    "website": "https://bitchat.free/",
     "github": "https://github.com/permissionlesstech/bitchat",
     "license": "The Unlicense (Public Domain)",
     "category": ["Privacy Messaging", "P2P Communication", "Mesh Networking"]
@@ -45,9 +45,14 @@
   "distribution": {
     "ios": {
       "app_store": true,
-      "testflight": true
+      "testflight": true,
+      "min_version": "iOS 16.0+"
     },
-    "android": "unknown"
+    "android": {
+      "play_store": true,
+      "github_apk": true,
+      "min_version": "Android 8.0+"
+    }
   },
 
   "adoption_metrics": {
@@ -118,9 +123,16 @@
     "servers": "None (by design)",
     "domains_checked": [
       {
+        "domain": "bitchat.free",
+        "ip": ["185.199.110.153", "185.199.108.153", "185.199.109.153", "185.199.111.153"],
+        "hosting": "GitHub Pages",
+        "official": true,
+        "shodan_vulns": []
+      },
+      {
         "domain": "bitchat.io",
         "ip": "185.53.179.128",
-        "note": "May not be official - no homepage in GitHub",
+        "note": "Not official - different ownership",
         "shodan_vulns": []
       },
       {
@@ -144,6 +156,7 @@
 
   "sources": {
     "primary": [
+      "https://bitchat.free/",
       "https://github.com/permissionlesstech/bitchat",
       "https://github.com/permissionlesstech/bitchat/blob/main/WHITEPAPER.md"
     ],
