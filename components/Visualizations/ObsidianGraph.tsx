@@ -59,7 +59,8 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
     new Set(projectsOnly ? ['project'] : (initialFilter || ['project', 'language', 'topic']))
   );
   const [hoveredNode, setHoveredNode] = useState<string | null>(null);
-  const [focusedNode, setFocusedNode] = useState<GraphNode | null>(null); // For sub-graph view
+  const [expandedNodes, setExpandedNodes] = useState<Set<string>>(new Set()); // Nodes with visible connections
+  const zoomRef = useRef<d3.ZoomBehavior<SVGSVGElement, unknown> | null>(null);
 
   // Load data
   useEffect(() => {
@@ -82,37 +83,35 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
   useEffect(() => {
     if (!svgRef.current || !data) return;
 
-    // Filter nodes and links based on active filters AND focused node
-    let filteredNodes: GraphNode[];
-    let filteredLinks: GraphLink[];
+    // Always show all nodes matching the type filter - never filter by focus
+    const filteredNodes = data.nodes.filter(n => activeFilters.has(n.type));
+    const nodeIds = new Set(filteredNodes.map(n => n.id));
 
-    if (focusedNode) {
-      // Sub-graph mode: show only the focused node and its direct connections
-      const connectedProjectIds = new Set<string>();
-      data.links.forEach(l => {
-        const sourceId = typeof l.source === 'string' ? l.source : l.source.id;
-        const targetId = typeof l.target === 'string' ? l.target : l.target.id;
-        if (sourceId === focusedNode.id) connectedProjectIds.add(targetId);
-        if (targetId === focusedNode.id) connectedProjectIds.add(sourceId);
-      });
-      connectedProjectIds.add(focusedNode.id);
+    // Show all edges for layout, but only draw edges connected to expanded nodes
+    const allLinks = data.links.filter(l => {
+      const sourceId = typeof l.source === 'string' ? l.source : l.source.id;
+      const targetId = typeof l.target === 'string' ? l.target : l.target.id;
+      return nodeIds.has(sourceId) && nodeIds.has(targetId);
+    });
 
-      filteredNodes = data.nodes.filter(n => connectedProjectIds.has(n.id));
-      filteredLinks = data.links.filter(l => {
+    // Only show edges where at least one end is expanded
+    const visibleLinks = allLinks.filter(l => {
+      const sourceId = typeof l.source === 'string' ? l.source : l.source.id;
+      const targetId = typeof l.target === 'string' ? l.target : l.target.id;
+      return expandedNodes.has(sourceId) || expandedNodes.has(targetId);
+    });
+
+    // Track which nodes are connected to expanded nodes
+    const connectedToExpanded = new Set<string>();
+    expandedNodes.forEach(expandedId => {
+      connectedToExpanded.add(expandedId);
+      allLinks.forEach(l => {
         const sourceId = typeof l.source === 'string' ? l.source : l.source.id;
         const targetId = typeof l.target === 'string' ? l.target : l.target.id;
-        return connectedProjectIds.has(sourceId) && connectedProjectIds.has(targetId);
+        if (sourceId === expandedId) connectedToExpanded.add(targetId);
+        if (targetId === expandedId) connectedToExpanded.add(sourceId);
       });
-    } else {
-      // Normal mode: filter by type
-      filteredNodes = data.nodes.filter(n => activeFilters.has(n.type));
-      const nodeIds = new Set(filteredNodes.map(n => n.id));
-      filteredLinks = data.links.filter(l => {
-        const sourceId = typeof l.source === 'string' ? l.source : l.source.id;
-        const targetId = typeof l.target === 'string' ? l.target : l.target.id;
-        return nodeIds.has(sourceId) && nodeIds.has(targetId);
-      });
-    }
+    });
 
     // Clear previous
     d3.select(svgRef.current).selectAll('*').remove();
@@ -137,12 +136,13 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
     // Container for zoom
     const g = svg.append('g');
 
-    // Zoom behavior
+    // Zoom behavior with ref for external control
     const zoom = d3.zoom<SVGSVGElement, unknown>()
       .scaleExtent([0.2, 4])
       .on('zoom', (event) => {
         g.attr('transform', event.transform);
       });
+    zoomRef.current = zoom;
     svg.call(zoom);
 
     // Apply initial zoom - center and scale appropriately
@@ -152,37 +152,44 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
       .translate(-width / 2, -height / 2);
     svg.call(zoom.transform, initialTransform);
 
-    // Create simulation
+    // Create simulation - use ALL links for layout, even if not visible
     const simulation = d3.forceSimulation<GraphNode>(filteredNodes)
-      .force('link', d3.forceLink<GraphNode, GraphLink>(filteredLinks)
+      .force('link', d3.forceLink<GraphNode, GraphLink>(allLinks)
         .id(d => d.id)
         .distance(d => {
-          // Shorter distances for language/topic connections
+          const sourceId = typeof d.source === 'string' ? d.source : (d.source as GraphNode).id;
+          const targetId = typeof d.target === 'string' ? d.target : (d.target as GraphNode).id;
+          // Expanded nodes get more space
+          if (expandedNodes.has(sourceId) || expandedNodes.has(targetId)) return 120;
           const linkType = (d as any).type;
           if (linkType === 'uses_language' || linkType === 'tagged_with') return 60;
-          return 100;
+          return 80;
         })
-        .strength(0.5)
+        .strength(0.4)
       )
       .force('charge', d3.forceManyBody()
         .strength(d => {
-          // Projects attract more strongly
-          if ((d as GraphNode).type === 'project') return -200;
-          return -80;
+          // Expanded nodes repel more strongly
+          if (expandedNodes.has((d as GraphNode).id)) return -350;
+          if ((d as GraphNode).type === 'project') return -150;
+          return -60;
         })
       )
       .force('center', d3.forceCenter(width / 2, height / 2))
       .force('collision', d3.forceCollide()
-        .radius(d => (d as GraphNode).size + 5)
+        .radius(d => {
+          const node = d as GraphNode;
+          return expandedNodes.has(node.id) ? node.size + 20 : node.size + 5;
+        })
       )
-      .force('x', d3.forceX(width / 2).strength(0.05))
-      .force('y', d3.forceY(height / 2).strength(0.05));
+      .force('x', d3.forceX(width / 2).strength(0.03))
+      .force('y', d3.forceY(height / 2).strength(0.03));
 
-    // Draw links
+    // Draw only visible links (connected to expanded nodes)
     const link = g.append('g')
       .attr('class', 'links')
       .selectAll('line')
-      .data(filteredLinks)
+      .data(visibleLinks)
       .join('line')
       .attr('stroke', d => {
         const type = (d as any).type;
@@ -190,10 +197,10 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
         if (type === 'tagged_with') return '#a6e3a1';
         if (type === 'licensed_under') return '#f9e2af';
         if (type === 'contributes_to') return '#f38ba8';
-        return '#252525';
+        return '#444';
       })
-      .attr('stroke-opacity', 0.3)
-      .attr('stroke-width', 1);
+      .attr('stroke-opacity', 0.6)
+      .attr('stroke-width', 2);
 
     // Draw nodes
     const node = g.append('g')
@@ -209,18 +216,25 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
         .on('end', dragended) as any
       );
 
-    // Add shapes based on type
+    // Add shapes based on type - with expanded state styling
     node.each(function(d) {
       const el = d3.select(this);
-      const size = d.size || 10;
+      const isExpanded = expandedNodes.has(d.id);
+      const isConnected = connectedToExpanded.has(d.id);
+      const size = isExpanded ? (d.size || 10) * 1.3 : (d.size || 10);
+
+      // Determine opacity: full for expanded/connected, dimmed for others when something is expanded
+      const opacity = expandedNodes.size === 0 ? 0.9 :
+        (isExpanded ? 1 : (isConnected ? 0.85 : 0.25));
 
       if (d.type === 'project') {
         // Circle for projects
         el.append('circle')
           .attr('r', size)
           .attr('fill', d.tier === 'osint' ? 'url(#osint-gradient)' : NODE_COLORS.project)
-          .attr('stroke', d.tier === 'osint' ? '#b8e8e0' : '#74b8b0')
-          .attr('stroke-width', d.tier === 'osint' ? 3 : 1.5);
+          .attr('stroke', isExpanded ? '#fff' : (d.tier === 'osint' ? '#b8e8e0' : '#74b8b0'))
+          .attr('stroke-width', isExpanded ? 4 : (d.tier === 'osint' ? 3 : 1.5))
+          .attr('opacity', opacity);
       } else if (d.type === 'language') {
         // Hexagon for languages
         const hexPoints = Array.from({ length: 6 }, (_, i) => {
@@ -230,16 +244,18 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
         el.append('polygon')
           .attr('points', hexPoints)
           .attr('fill', NODE_COLORS.language)
-          .attr('stroke', '#7aa2d8')
-          .attr('stroke-width', 1.5);
+          .attr('stroke', isExpanded ? '#fff' : '#7aa2d8')
+          .attr('stroke-width', isExpanded ? 3 : 1.5)
+          .attr('opacity', opacity);
       } else if (d.type === 'topic') {
         // Diamond for topics
         const diamondPoints = `0,${-size} ${size},0 0,${size} ${-size},0`;
         el.append('polygon')
           .attr('points', diamondPoints)
           .attr('fill', NODE_COLORS.topic)
-          .attr('stroke', '#8dc48d')
-          .attr('stroke-width', 1.5);
+          .attr('stroke', isExpanded ? '#fff' : '#8dc48d')
+          .attr('stroke-width', isExpanded ? 3 : 1.5)
+          .attr('opacity', opacity);
       } else if (d.type === 'license') {
         // Square for licenses
         el.append('rect')
@@ -248,15 +264,17 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
           .attr('width', size * 2)
           .attr('height', size * 2)
           .attr('fill', NODE_COLORS.license)
-          .attr('stroke', '#d8c58d')
-          .attr('stroke-width', 1.5);
+          .attr('stroke', isExpanded ? '#fff' : '#d8c58d')
+          .attr('stroke-width', isExpanded ? 3 : 1.5)
+          .attr('opacity', opacity);
       } else if (d.type === 'contributor') {
         // Small circle for contributors
         el.append('circle')
           .attr('r', size)
           .attr('fill', NODE_COLORS.contributor)
-          .attr('stroke', '#d07890')
-          .attr('stroke-width', 1);
+          .attr('stroke', isExpanded ? '#fff' : '#d07890')
+          .attr('stroke-width', isExpanded ? 2 : 1)
+          .attr('opacity', opacity);
       }
     });
 
@@ -307,14 +325,14 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
 
         // Dim unconnected nodes
         const connectedIds = new Set([d.id]);
-        filteredLinks.forEach(l => {
+        allLinks.forEach(l => {
           const sourceId = typeof l.source === 'string' ? l.source : l.source.id;
           const targetId = typeof l.target === 'string' ? l.target : l.target.id;
           if (sourceId === d.id) connectedIds.add(targetId);
           if (targetId === d.id) connectedIds.add(sourceId);
         });
 
-        node.style('opacity', n => connectedIds.has(n.id) ? 1 : 0.3);
+        node.select('circle, polygon, rect').attr('opacity', n => connectedIds.has(n.id) ? 1 : 0.3);
 
         // Show tooltip
         let content = `<div style="font-weight: 600; font-size: 14px; margin-bottom: 4px;">${d.name}</div>`;
@@ -330,7 +348,7 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
           content += `<div style="font-size: 11px;">Used by: ${d.count} projects</div>`;
         }
 
-        const connectionCount = filteredLinks.filter(l => {
+        const connectionCount = allLinks.filter(l => {
           const sourceId = typeof l.source === 'string' ? l.source : l.source.id;
           const targetId = typeof l.target === 'string' ? l.target : l.target.id;
           return sourceId === d.id || targetId === d.id;
@@ -339,17 +357,17 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
         content += `<div style="color: #6c7086; font-size: 10px; margin-top: 8px; padding-top: 8px; border-top: 1px solid #252525;">${connectionCount} connections</div>`;
 
         // Show appropriate action hint based on context
-        if (focusedNode && focusedNode.id === d.id) {
-          // This is the currently focused node
+        const isExpanded = expandedNodes.has(d.id);
+        if (isExpanded) {
+          content += `<div style="color: #94e2d5; font-size: 10px; margin-top: 4px;">Click to collapse</div>`;
           if (d.type === 'project') {
-            content += `<div style="color: #94e2d5; font-size: 10px; margin-top: 4px;">Click again for full details →</div>`;
-          } else {
-            content += `<div style="color: #6c7086; font-size: 10px; margin-top: 4px; font-style: italic;">Currently viewing this ${d.type}</div>`;
+            content += `<div style="color: #89b4fa; font-size: 10px;">Double-click for full details →</div>`;
           }
-        } else if (d.type === 'project') {
-          content += `<div style="color: #89b4fa; font-size: 10px; margin-top: 4px;">Click to explore connections</div>`;
         } else {
-          content += `<div style="color: #89b4fa; font-size: 10px; margin-top: 4px;">Click to see related projects →</div>`;
+          content += `<div style="color: #89b4fa; font-size: 10px; margin-top: 4px;">Click to expand connections</div>`;
+          if (d.type === 'project') {
+            content += `<div style="color: #6c7086; font-size: 10px;">Double-click for details</div>`;
+          }
         }
 
         tooltip
@@ -365,19 +383,47 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
       })
       .on('mouseout', function() {
         setHoveredNode(null);
-        link.attr('stroke-opacity', 0.3).attr('stroke-width', 1);
-        node.style('opacity', 1);
+        link.attr('stroke-opacity', 0.6).attr('stroke-width', 2);
+        // Restore opacity based on expanded state
+        node.select('circle, polygon, rect').attr('opacity', n => {
+          if (expandedNodes.size === 0) return 0.9;
+          if (expandedNodes.has(n.id)) return 1;
+          if (connectedToExpanded.has(n.id)) return 0.85;
+          return 0.25;
+        });
         tooltip.style('opacity', 0);
       })
       .on('click', function(event, d) {
-        if (focusedNode && focusedNode.id === d.id) {
-          // Second click on focused node: navigate to project page (if project)
-          if (d.type === 'project') {
-            router.push(`/projects/${d.id}`);
+        event.stopPropagation();
+        // Toggle expand/collapse
+        setExpandedNodes(prev => {
+          const next = new Set(prev);
+          if (next.has(d.id)) {
+            next.delete(d.id);
+          } else {
+            next.add(d.id);
+            // Smooth zoom toward the expanded node
+            if (svgRef.current && zoomRef.current && d.x && d.y) {
+              const svg = d3.select(svgRef.current);
+              const scale = 1.5;
+              const transform = d3.zoomIdentity
+                .translate(width / 2 - d.x * scale, height / 2 - d.y * scale)
+                .scale(scale);
+              svg.transition()
+                .duration(500)
+                .ease(d3.easeCubicInOut)
+                .call(zoomRef.current.transform, transform);
+            }
           }
-        } else {
-          // First click on any node: enter sub-graph focus mode
-          setFocusedNode(d);
+          return next;
+        });
+      })
+      .on('dblclick', function(event, d) {
+        event.stopPropagation();
+        event.preventDefault();
+        // Double-click navigates to project page
+        if (d.type === 'project') {
+          router.push(`/projects/${d.id}`);
         }
       });
 
@@ -413,7 +459,7 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
       simulation.stop();
       tooltip.remove();
     };
-  }, [data, activeFilters, width, height, router, focusedNode]);
+  }, [data, activeFilters, width, height, router, expandedNodes]);
 
   const toggleFilter = (type: string) => {
     setActiveFilters(prev => {
@@ -435,67 +481,39 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
     );
   }
 
+  // Reset zoom handler
+  const resetView = () => {
+    setExpandedNodes(new Set());
+    if (svgRef.current && zoomRef.current) {
+      const svg = d3.select(svgRef.current);
+      svg.transition()
+        .duration(500)
+        .call(zoomRef.current.transform, d3.zoomIdentity
+          .translate(width / 2, height / 2)
+          .scale(initialZoom)
+          .translate(-width / 2, -height / 2));
+    }
+  };
+
   return (
     <div className="relative">
-      {/* Focus Mode Header */}
-      {focusedNode && (
-        <div className="mb-4 p-4 bg-[#111] rounded-lg border border-[#252525]">
-          <div className="flex items-center justify-between mb-3">
-            <div className="flex items-center gap-3">
-              <span
-                className="w-4 h-4 rounded-full"
-                style={{ backgroundColor: NODE_COLORS[focusedNode.type] }}
-              />
-              <div>
-                <div className="text-[#e0e0e0] font-medium">{focusedNode.name}</div>
-                <div className="text-xs text-[#6c7086]">
-                  {focusedNode.type === 'project'
-                    ? 'Explore this project\'s tech stack and connections'
-                    : `Showing all projects using this ${focusedNode.type}`
-                  }
-                </div>
-              </div>
-            </div>
-            <button
-              onClick={() => setFocusedNode(null)}
-              className="px-4 py-2 bg-[#252525] hover:bg-[#303030] text-[#e0e0e0] rounded-lg text-sm transition-colors"
-            >
-              ← Back to full graph
-            </button>
+      {/* Status bar when nodes are expanded */}
+      {expandedNodes.size > 0 && (
+        <div className="mb-4 p-3 bg-[#111] rounded-lg border border-[#252525] flex items-center justify-between">
+          <div className="text-sm text-[#a6adc8]">
+            <span className="text-[#94e2d5] font-medium">{expandedNodes.size}</span> node{expandedNodes.size > 1 ? 's' : ''} expanded
           </div>
-          {/* Action hints */}
-          <div className="flex items-center gap-4 text-xs text-[#6c7086] pt-3 border-t border-[#252525]">
-            {focusedNode.type === 'project' ? (
-              <>
-                <span className="flex items-center gap-1.5">
-                  <span className="text-[#94e2d5]">●</span>
-                  Click the project again for full details
-                </span>
-                <span>•</span>
-                <span className="flex items-center gap-1.5">
-                  <span className="text-[#89b4fa]">●</span>
-                  Click a language/topic to discover similar projects
-                </span>
-              </>
-            ) : (
-              <>
-                <span className="flex items-center gap-1.5">
-                  <span className="text-[#94e2d5]">●</span>
-                  Click any project to explore its connections
-                </span>
-                <span>•</span>
-                <span className="flex items-center gap-1.5">
-                  <span className="text-[#a6e3a1]">●</span>
-                  Click another {focusedNode.type} to switch focus
-                </span>
-              </>
-            )}
-          </div>
+          <button
+            onClick={resetView}
+            className="px-3 py-1.5 bg-[#252525] hover:bg-[#303030] text-[#e0e0e0] rounded text-xs transition-colors"
+          >
+            Collapse All
+          </button>
         </div>
       )}
 
-      {/* Legend & Filters - hide when focused */}
-      {!focusedNode && (
+      {/* Legend & Filters */}
+      {expandedNodes.size === 0 && (
         <div className="flex flex-wrap items-center gap-4 mb-4 p-4 bg-[#111]/50 rounded-lg">
           <span className="text-sm text-[#6c7086]">Show:</span>
           {Object.entries(NODE_COLORS).map(([type, color]) => (
@@ -522,11 +540,11 @@ export default function ObsidianGraph({ width = 1000, height = 700, initialFilte
       <div className="text-xs text-[#6c7086] mb-2 flex items-center gap-4">
         <span>Scroll to zoom</span>
         <span>•</span>
-        <span>Drag to rearrange</span>
+        <span>Drag nodes to rearrange</span>
         <span>•</span>
-        <span>Click to explore connections</span>
+        <span>Click to expand connections</span>
         <span>•</span>
-        <span>Click again for full details</span>
+        <span>Double-click for project details</span>
       </div>
 
       {/* Graph */}

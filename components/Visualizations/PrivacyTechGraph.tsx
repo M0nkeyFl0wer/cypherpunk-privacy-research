@@ -282,7 +282,7 @@ export default function PrivacyTechGraph({ width = 1000, height = 700, defaultFi
       });
 
     // Post-quantum indicator
-    node.filter(d => d.postQuantum)
+    node.filter(d => d.postQuantum === true)
       .append('text')
       .attr('text-anchor', 'middle')
       .attr('dy', '0.35em')
@@ -346,7 +346,7 @@ export default function PrivacyTechGraph({ width = 1000, height = 700, defaultFi
         // Dim unconnected nodes
         node.select('circle').attr('opacity', n => {
           if (n.id === d.id) return 1;
-          const isConnected = edges.some(e => {
+          const isConnected = visibleEdges.some((e: EcosystemEdge) => {
             const sourceId = typeof e.source === 'string' ? e.source : (e.source as EcosystemNode).id;
             const targetId = typeof e.target === 'string' ? e.target : (e.target as EcosystemNode).id;
             return (sourceId === d.id && targetId === n.id) || (targetId === d.id && sourceId === n.id);
