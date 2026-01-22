@@ -190,32 +190,6 @@ export function HomepageContent({
         </div>
       </div>
 
-      {/* Key Findings - MOVED DOWN per Constitution III */}
-      <div className="border-b border-[#252525]">
-        <div className="max-w-4xl mx-auto px-6 py-12">
-          <h2 className="text-sm font-medium text-[#6c7086] uppercase tracking-wider mb-6">Key Findings</h2>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div>
-              <div className="text-3xl font-bold text-[#e0e0e0] mb-1">{projectCount}</div>
-              <div className="text-sm text-[#6c7086]">projects analyzed</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-[#94e2d5] mb-1">{osintCount}</div>
-              <div className="text-sm text-[#6c7086]">OSINT deep dives</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-[#a6e3a1] mb-1">{totalStars.toLocaleString()}</div>
-              <div className="text-sm text-[#6c7086]">combined stars</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-[#89b4fa] mb-1">{languageCount}</div>
-              <div className="text-sm text-[#6c7086]">languages tracked</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* OSINT Deep Dives */}
       <div className="border-b border-[#252525]">
         <div className="max-w-4xl mx-auto px-6 py-12">
