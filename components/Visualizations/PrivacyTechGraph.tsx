@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 import * as d3 from 'd3';
+import { getProjectMetadata } from '@/lib/graphMetadata';
 
 interface EcosystemNode {
   id: string;
@@ -16,6 +17,8 @@ interface EcosystemNode {
   y?: number;
   fx?: number | null;
   fy?: number | null;
+  // Computed for display
+  expansionDepth?: number; // How many clicks from initial view
 }
 
 interface EcosystemEdge {
@@ -87,6 +90,8 @@ export default function PrivacyTechGraph({ width = 1000, height = 700, defaultFi
   const [highlightedTech, setHighlightedTech] = useState<string | null>(defaultFilter || null);
   const [expandedNodes, setExpandedNodes] = useState<Set<string>>(new Set());
   const [hoveredNode, setHoveredNode] = useState<string | null>(null);
+  const [focusedNode, setFocusedNode] = useState<string | null>(null);
+  const draggedRef = useRef(false); // Track if drag occurred to prevent click
 
   // Load graph data
   useEffect(() => {
@@ -301,14 +306,16 @@ export default function PrivacyTechGraph({ width = 1000, height = 700, defaultFi
       .attr('font-size', '10px')
       .attr('pointer-events', 'none');
 
-    // Drag behavior
+    // Drag behavior - track when dragging to prevent click firing
     const drag = d3.drag<SVGGElement, EcosystemNode>()
       .on('start', (event, d) => {
+        draggedRef.current = false;
         if (!event.active) simulation.alphaTarget(0.3).restart();
         d.fx = d.x;
         d.fy = d.y;
       })
       .on('drag', (event, d) => {
+        draggedRef.current = true; // Mark as dragged
         d.fx = event.x;
         d.fy = event.y;
       })
@@ -316,6 +323,8 @@ export default function PrivacyTechGraph({ width = 1000, height = 700, defaultFi
         if (!event.active) simulation.alphaTarget(0);
         d.fx = null;
         d.fy = null;
+        // Reset after a short delay to allow click to check
+        setTimeout(() => { draggedRef.current = false; }, 100);
       });
 
     node.call(drag as any);

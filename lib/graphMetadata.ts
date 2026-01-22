@@ -349,6 +349,243 @@ export const licenseMetadata: Record<string, LicenseMetadata> = {
   },
 };
 
+// Project descriptions for the ecosystem graph
+export const projectMetadata: Record<string, {
+  description: string;
+  highlights?: string[];
+  url?: string;
+}> = {
+  // Privacy Coins
+  'monero': {
+    description: 'Leading privacy cryptocurrency using ring signatures, stealth addresses, and RingCT to obscure sender, receiver, and amounts.',
+    highlights: ['Battle-tested since 2014', 'Default privacy (no transparent mode)', 'Active research community'],
+    url: 'https://getmonero.org',
+  },
+  'zcash': {
+    description: 'First cryptocurrency to implement zk-SNARKs, enabling fully shielded transactions while maintaining optional transparency.',
+    highlights: ['Pioneered zk-SNARKs in production', 'Halo2 eliminates trusted setup', 'Foundation-funded development'],
+    url: 'https://z.cash',
+  },
+  'iron-fish': {
+    description: 'Privacy-focused Layer 1 blockchain using zk-SNARKs with Sapling protocol, designed for everyday transactions.',
+    highlights: ['Full privacy by default', 'Rust implementation', 'Custom Sapling variant'],
+    url: 'https://ironfish.network',
+  },
+  'firo': {
+    description: 'Privacy coin pioneering Lelantus and Spark protocols for trustless anonymous transactions.',
+    highlights: ['Lelantus burns and redeems', 'Spark adds receiver privacy', 'No trusted setup'],
+    url: 'https://firo.org',
+  },
+  'oxen': {
+    description: 'Privacy coin powering the Session messenger and Lokinet, using CryptoNote-based ring signatures.',
+    highlights: ['Powers Session messenger', 'Service node network', 'Lokinet integration'],
+    url: 'https://oxen.io',
+  },
+  'zano': {
+    description: 'Privacy coin with confidential assets support, enabling private token creation on top of CryptoNote.',
+    highlights: ['Confidential assets', 'Hybrid PoW/PoS', 'Ionic Swaps'],
+    url: 'https://zano.org',
+  },
+  'mobilecoin': {
+    description: 'Mobile-first privacy coin using SGX TEE and RingCT, designed for fast payments on phones.',
+    highlights: ['3-second finality', 'SGX hardware security', 'Signal integration (paused)'],
+    url: 'https://mobilecoin.com',
+  },
+
+  // Messaging
+  'signal': {
+    description: 'Gold standard for secure messaging. Double Ratchet protocol, sealed sender, and SGX-based contact discovery.',
+    highlights: ['Post-quantum PQXDH upgrade', 'Sealed sender metadata protection', 'Open source'],
+    url: 'https://signal.org',
+  },
+  'telegram': {
+    description: 'Popular messenger with optional E2E encryption via MTProto. Secret chats are encrypted; regular chats are not.',
+    highlights: ['Optional E2E only', 'Custom MTProto protocol', '900M+ users'],
+    url: 'https://telegram.org',
+  },
+  'briar': {
+    description: 'Mesh-capable messenger that works without internet using Tor, Wi-Fi, and Bluetooth for censorship resistance.',
+    highlights: ['Works without internet', 'Tor integration', 'Mesh networking'],
+    url: 'https://briarproject.org',
+  },
+
+  // Mixnets
+  'nym': {
+    description: 'Incentivized mixnet using Sphinx packets and cover traffic to prevent traffic analysis at network layer.',
+    highlights: ['Economic incentives for nodes', 'Coconut credentials', 'Cosmos SDK'],
+    url: 'https://nymtech.net',
+  },
+  'hopr': {
+    description: 'Decentralized mixnet with Ethereum-based incentives, using layered encryption and packet mixing.',
+    highlights: ['ETH-based incentives', 'Cover traffic', 'Node running rewards'],
+    url: 'https://hoprnet.org',
+  },
+  'xx-network': {
+    description: 'Quantum-resistant mixnet using cMix protocol, founded by cryptographer David Chaum.',
+    highlights: ['Quantum resistant', 'cMix protocol', 'David Chaum project'],
+    url: 'https://xx.network',
+  },
+
+  // Privacy Blockchains
+  'secret-network': {
+    description: 'First blockchain with encrypted smart contracts using Intel SGX TEE for confidential computation.',
+    highlights: ['Encrypted contract state', 'SGX TEE security', 'Cosmos ecosystem'],
+    url: 'https://scrt.network',
+  },
+  'oasis-network': {
+    description: 'Privacy-enabled blockchain with confidential ParaTimes using TEE technology for private smart contracts.',
+    highlights: ['ParaTime architecture', 'Data tokenization', 'Confidential compute'],
+    url: 'https://oasisprotocol.org',
+  },
+  'darkfi': {
+    description: 'Anonymous smart contract platform using zk-SNARKs for fully private DeFi and DAOs.',
+    highlights: ['Anonymous smart contracts', 'Private DAOs', 'Lunarpunk ethos'],
+    url: 'https://dark.fi',
+  },
+  'concordium': {
+    description: 'Blockchain with built-in ID layer and zero-knowledge proofs for regulatory compliance with privacy.',
+    highlights: ['ID layer for compliance', 'ZK proofs', 'Science-backed'],
+    url: 'https://concordium.com',
+  },
+  'findora': {
+    description: 'Privacy blockchain using Bulletproofs and Turbo-PLONK for confidential transactions and assets.',
+    highlights: ['Bulletproofs + PLONK', 'Confidential assets', 'Auditable privacy'],
+    url: 'https://findora.org',
+  },
+  'incognito': {
+    description: 'Privacy layer for other blockchains using ring signatures to shield assets from any chain.',
+    highlights: ['Cross-chain privacy', 'Ring signatures', 'pTokens'],
+    url: 'https://incognito.org',
+  },
+
+  // Mixers
+  'tornado-cash': {
+    description: 'Ethereum mixer using zk-SNARKs to break transaction links. Sanctioned by OFAC in 2022.',
+    highlights: ['zk-SNARK based', 'OFAC sanctioned', 'Open source continues'],
+    url: 'https://tornadocash.eth.link',
+  },
+
+  // ZK Rollups & Tooling
+  'miden': {
+    description: 'Polygon zk-rollup using STARKs for quantum resistance and no trusted setup requirements.',
+    highlights: ['STARK-based (quantum safe)', 'No trusted setup', 'Polygon ecosystem'],
+    url: 'https://polygon.technology/polygon-miden',
+  },
+  'zksync': {
+    description: 'Ethereum L2 using zk-SNARKs (PLONK) for scalable and secure transactions.',
+    highlights: ['PLONK proving system', 'Account abstraction', 'Matter Labs'],
+    url: 'https://zksync.io',
+  },
+  'starkex': {
+    description: 'StarkWare scaling engine using STARKs, powering dYdX, Immutable X, and others.',
+    highlights: ['Powers major apps', 'STARK proofs', 'StarkWare'],
+    url: 'https://starkware.co/starkex',
+  },
+  'circom': {
+    description: 'Domain-specific language for writing zk-SNARK circuits, widely used in Ethereum ecosystem.',
+    highlights: ['Circuit compiler', 'iden3 team', 'Groth16/PLONK output'],
+    url: 'https://docs.circom.io',
+  },
+  'snarkjs': {
+    description: 'JavaScript library for zk-SNARK proof generation and verification, companion to Circom.',
+    highlights: ['Browser-compatible', 'Groth16 & PLONK', 'iden3 team'],
+    url: 'https://github.com/iden3/snarkjs',
+  },
+  'zk-money': {
+    description: 'Aztec privacy layer for Ethereum using zk-SNARKs. Service discontinued in 2023.',
+    highlights: ['Aztec Connect (discontinued)', 'zk.money frontend', 'Private DeFi access'],
+    url: 'https://aztec.network',
+  },
+
+  // Identity
+  'semaphore': {
+    description: 'Zero-knowledge protocol for anonymous membership proofs and signaling in groups.',
+    highlights: ['Anonymous group membership', 'PSE/EF supported', 'Widely integrated'],
+    url: 'https://semaphore.pse.dev',
+  },
+  'iden3': {
+    description: 'Self-sovereign identity protocol using zk-SNARKs for private credential verification.',
+    highlights: ['Circom creators', 'ZK identity proofs', 'Polygon ID basis'],
+    url: 'https://iden3.io',
+  },
+
+  // VPNs
+  'orchid': {
+    description: 'Decentralized VPN marketplace with nanopayments, using onion routing architecture.',
+    highlights: ['Nano-payments', 'Multi-hop routing', 'OXT token'],
+    url: 'https://orchid.com',
+  },
+  'mysterium-network': {
+    description: 'Decentralized VPN and proxy network with node operators earning for bandwidth.',
+    highlights: ['P2P VPN network', 'Node rewards', 'Residential IPs'],
+    url: 'https://mysterium.network',
+  },
+  'sentinel': {
+    description: 'Cosmos-based decentralized VPN with dVPN nodes operated by community members.',
+    highlights: ['Cosmos SDK', 'Community nodes', 'dVPN framework'],
+    url: 'https://sentinel.co',
+  },
+  'deeper-network': {
+    description: 'Hardware-based decentralized VPN with physical nodes for home network privacy.',
+    highlights: ['Hardware nodes', 'Substrate chain', 'Home network focus'],
+    url: 'https://deeper.network',
+  },
+
+  // Wallets
+  'wasabi-wallet': {
+    description: 'Bitcoin privacy wallet with built-in CoinJoin and mandatory Tor connection.',
+    highlights: ['WabiSabi CoinJoin', 'Mandatory Tor', 'Bitcoin only'],
+    url: 'https://wasabiwallet.io',
+  },
+  'cake-wallet': {
+    description: 'Multi-currency mobile wallet with Monero focus, supporting atomic swaps.',
+    highlights: ['Monero-first', 'Atomic swaps', 'Mobile native'],
+    url: 'https://cakewallet.com',
+  },
+  'fluidkey': {
+    description: 'Ethereum wallet using stealth addresses (EIP-5564) for receiving private payments.',
+    highlights: ['EIP-5564 stealth addresses', 'Ethereum native', 'Fresh addresses per payment'],
+    url: 'https://fluidkey.com',
+  },
+  'zeal': {
+    description: 'Self-custody Ethereum wallet focused on local-first architecture and user sovereignty.',
+    highlights: ['Local-first', 'No tracking', 'Open source'],
+    url: 'https://zeal.app',
+  },
+
+  // Other
+  'protonmail': {
+    description: 'End-to-end encrypted email service based in Switzerland with zero-access encryption.',
+    highlights: ['Swiss jurisdiction', 'Zero-access encryption', 'PGP compatible'],
+    url: 'https://proton.me',
+  },
+  'mask-network': {
+    description: 'Browser extension for encrypted social media posts and Web3 integration on Twitter/Facebook.',
+    highlights: ['Social media encryption', 'Web3 bridge', 'Steganography option'],
+    url: 'https://mask.io',
+  },
+  'meshtastic': {
+    description: 'Open-source mesh networking for off-grid communication using LoRa radios.',
+    highlights: ['LoRa mesh', 'No internet needed', 'AES encryption'],
+    url: 'https://meshtastic.org',
+  },
+  'rotki': {
+    description: 'Local-first portfolio tracker that never sends your data to the cloud.',
+    highlights: ['No cloud uploads', 'Privacy respecting', 'Open source'],
+    url: 'https://rotki.com',
+  },
+  'webb-protocol': {
+    description: 'Cross-chain private bridge using zk-SNARKs for private transfers between blockchains.',
+    highlights: ['Cross-chain privacy', 'ZK bridges', 'Multi-chain'],
+    url: 'https://webb.tools',
+  },
+  'elusiv': {
+    description: 'Privacy layer for Solana using zk-SNARKs with optional compliance features.',
+    highlights: ['Solana native', 'Compliant privacy', 'ZK proofs'],
+    url: 'https://elusiv.io',
+  },
+};
+
 // Helper function to get metadata for a node
 export function getNodeMetadata(nodeId: string, nodeType: string): {
   description: string;
@@ -391,4 +628,14 @@ export function getNodeMetadata(nodeId: string, nodeType: string): {
   }
 
   return null;
+}
+
+// Helper function to get project metadata for ecosystem graph
+export function getProjectMetadata(projectId: string): {
+  description: string;
+  highlights?: string[];
+  url?: string;
+} | null {
+  const normalizedId = projectId.toLowerCase().replace(/[^a-z0-9-]/g, '-');
+  return projectMetadata[normalizedId] || null;
 }
