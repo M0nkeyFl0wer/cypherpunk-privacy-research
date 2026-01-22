@@ -6,7 +6,7 @@
 
 ## Repository Overview
 
-**Repository**: [Unknown](https://github.com/hyle-team/zano)
+**Repository**: [hyle-team/zano](https://github.com/hyle-team/zano)
 
 **Description**: Confidential, Secure, Easy-to-Use
 

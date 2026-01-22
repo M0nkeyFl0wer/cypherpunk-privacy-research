@@ -6,7 +6,7 @@
 
 ## Repository Overview
 
-**Repository**: [Unknown](https://github.com/matter-labs/zksync)
+**Repository**: [matter-labs/zksync](https://github.com/matter-labs/zksync)
 
 **Description**: zkSync: trustless scaling and privacy engine for Ethereum
 

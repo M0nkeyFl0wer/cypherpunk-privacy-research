@@ -6,7 +6,7 @@
 
 ## Repository Overview
 
-**Repository**: [Unknown](https://github.com/webb-tools/webb-dapp)
+**Repository**: [webb-tools/webb-dapp](https://github.com/webb-tools/webb-dapp)
 
 **Description**: Monorepo for the Tangle ecosystem.
 

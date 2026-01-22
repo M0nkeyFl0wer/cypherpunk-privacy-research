@@ -6,7 +6,7 @@
 
 ## Repository Overview
 
-**Repository**: [Unknown](https://github.com/OrchidTechnologies/orchid)
+**Repository**: [OrchidTechnologies/orchid](https://github.com/OrchidTechnologies/orchid)
 
 **Description**: Orchid: VPN, Personal Firewall
 

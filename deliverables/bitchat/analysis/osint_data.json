@@ -1,0 +1,160 @@
+{
+  "project": "Bitchat",
+  "research_date": "2026-01-22",
+  "methodology": "Constitutional Research Framework v3",
+  "confidence_score": 0.90,
+
+  "basic_info": {
+    "name": "Bitchat",
+    "tagline": "Bluetooth mesh chat, IRC vibes",
+    "creator": "Jack Dorsey",
+    "organization": "permissionlesstech",
+    "website": null,
+    "github": "https://github.com/permissionlesstech/bitchat",
+    "license": "The Unlicense (Public Domain)",
+    "category": ["Privacy Messaging", "P2P Communication", "Mesh Networking"]
+  },
+
+  "github_metrics": {
+    "stars": 24644,
+    "forks": 2302,
+    "open_issues": 232,
+    "primary_language": "Swift",
+    "created_at": "2025-07-04T14:34:38Z",
+    "last_updated": "2026-01-22T17:55:10Z"
+  },
+
+  "technical_stack": {
+    "languages": {
+      "Swift": "98.3%"
+    },
+    "transport_protocols": [
+      "Bluetooth Low Energy (BLE) mesh",
+      "Nostr protocol"
+    ],
+    "cryptography": {
+      "framework": "Noise Protocol Framework",
+      "handshake": "Noise_XX_25519_ChaChaPoly_SHA256",
+      "cipher": "ChaCha20-Poly1305",
+      "key_exchange": "Curve25519",
+      "hash": "SHA-256"
+    },
+    "nostr_relays": "290+"
+  },
+
+  "distribution": {
+    "ios": {
+      "app_store": true,
+      "testflight": true
+    },
+    "android": "unknown"
+  },
+
+  "adoption_metrics": {
+    "total_downloads": "360,000+",
+    "as_of": "September 2025",
+    "notable_events": [
+      {
+        "location": "Madagascar",
+        "date": "2025-09",
+        "downloads": 70000,
+        "context": "Protests"
+      },
+      {
+        "location": "Nepal",
+        "date": "2025-09-08",
+        "downloads": 50000,
+        "context": "Protests"
+      },
+      {
+        "location": "Uganda",
+        "date": "2026-01",
+        "downloads": "spike",
+        "context": "Internet blackout"
+      },
+      {
+        "location": "Iran",
+        "date": "2026-01",
+        "downloads": "spike",
+        "context": "Internet blackout"
+      }
+    ]
+  },
+
+  "security_vulnerabilities": {
+    "disclosed": "2025-07-09",
+    "researcher": "Alex Radocea",
+    "vulnerabilities": [
+      {
+        "name": "Identity Authentication Bypass",
+        "severity": "CRITICAL",
+        "description": "Ephemeral keys not verified against identity keys, allowing MITM impersonation",
+        "status": "acknowledged, migration to Noise Framework in progress"
+      },
+      {
+        "name": "Insufficient Forward Secrecy",
+        "severity": "HIGH",
+        "description": "Session-level forward secrecy only, not per-message",
+        "status": "acknowledged"
+      },
+      {
+        "name": "Master Key Exposure Risk",
+        "severity": "HIGH",
+        "description": "Single master key compromise = total permanent access",
+        "status": "design limitation"
+      },
+      {
+        "name": "Buffer Overflow",
+        "severity": "MEDIUM",
+        "description": "Memory corruption vulnerability",
+        "status": "PATCHED within 4 hours"
+      }
+    ],
+    "official_disclaimer": "This software has not received external security review and may contain vulnerabilities and does not necessarily meet its stated security goals."
+  },
+
+  "infrastructure": {
+    "architecture": "Decentralized P2P",
+    "servers": "None (by design)",
+    "domains_checked": [
+      {
+        "domain": "bitchat.io",
+        "ip": "185.53.179.128",
+        "note": "May not be official - no homepage in GitHub",
+        "shodan_vulns": []
+      },
+      {
+        "domain": "bitchat.app",
+        "ip": "0.0.0.0",
+        "note": "Parked/unused"
+      }
+    ],
+    "attack_surface": "Minimal due to P2P architecture"
+  },
+
+  "timeline": [
+    {"date": "2025-07-04", "event": "GitHub repo created"},
+    {"date": "2025-07-06", "event": "Jack Dorsey announces Bitchat on X"},
+    {"date": "2025-07-07", "event": "Whitepaper published"},
+    {"date": "2025-07-09", "event": "Security vulnerabilities disclosed"},
+    {"date": "2025-07-29", "event": "App released on App Store"},
+    {"date": "2025-09", "event": "Madagascar protest adoption (70k downloads)"},
+    {"date": "2026-01", "event": "v1.5.0 release"}
+  ],
+
+  "sources": {
+    "primary": [
+      "https://github.com/permissionlesstech/bitchat",
+      "https://github.com/permissionlesstech/bitchat/blob/main/WHITEPAPER.md"
+    ],
+    "security_research": [
+      "https://blog.trailofbits.com/2025/07/18/building-secure-messaging-is-hard-a-nuanced-take-on-the-bitchat-security-debate/",
+      "https://techcrunch.com/2025/07/09/jack-dorsey-says-his-secure-new-bitchat-app-has-not-been-tested-for-security/"
+    ],
+    "news": [
+      "https://en.wikipedia.org/wiki/Bitchat",
+      "https://www.engadget.com/apps/jack-dorsey-just-released-a-bluetooth-messaging-app-that-doesnt-need-the-internet-191023870.html",
+      "https://www.cnbc.com/2025/07/07/jack-dorsey-whatsapp-bluetooth.html"
+    ]
+  }
+}

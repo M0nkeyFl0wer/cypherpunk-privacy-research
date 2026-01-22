@@ -6,7 +6,7 @@
 
 ## Repository Overview
 
-**Repository**: [Unknown](https://github.com/xx-labs/xxchain)
+**Repository**: [xx-labs/xxchain](https://github.com/xx-labs/xxchain)
 
 **Description**: xx network Substrate based blockchain node
 

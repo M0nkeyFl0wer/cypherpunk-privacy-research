@@ -6,7 +6,7 @@
 
 ## Repository Overview
 
-**Repository**: [Unknown](https://github.com/mysteriumnetwork/node)
+**Repository**: [mysteriumnetwork/node](https://github.com/mysteriumnetwork/node)
 
 **Description**: Mysterium Network Node -  official implementation of distributed VPN network (dVPN) protocol
 

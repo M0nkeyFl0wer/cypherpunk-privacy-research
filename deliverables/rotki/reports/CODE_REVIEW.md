@@ -6,7 +6,7 @@
 
 ## Repository Overview
 
-**Repository**: [Unknown](https://github.com/rotki/rotki)
+**Repository**: [rotki/rotki](https://github.com/rotki/rotki)
 
 **Description**: A portfolio tracking, analytics, accounting and management application that protects your privacy
 

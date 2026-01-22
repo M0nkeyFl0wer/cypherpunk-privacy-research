@@ -6,7 +6,7 @@
 
 ## Repository Overview
 
-**Repository**: [Unknown](https://github.com/zcash/zcash)
+**Repository**: [zcash/zcash](https://github.com/zcash/zcash)
 
 **Description**: Zcash - Internet Money
 

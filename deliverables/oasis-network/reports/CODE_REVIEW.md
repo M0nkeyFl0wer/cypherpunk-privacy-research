@@ -6,7 +6,7 @@
 
 ## Repository Overview
 
-**Repository**: [Unknown](https://github.com/oasisprotocol/oasis-core)
+**Repository**: [oasisprotocol/oasis-core](https://github.com/oasisprotocol/oasis-core)
 
 **Description**: Performant and Confidentiality-Preserving Smart Contracts + Blockchains
 

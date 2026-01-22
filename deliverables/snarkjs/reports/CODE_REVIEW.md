@@ -6,7 +6,7 @@
 
 ## Repository Overview
 
-**Repository**: [Unknown](https://github.com/iden3/snarkjs)
+**Repository**: [iden3/snarkjs](https://github.com/iden3/snarkjs)
 
 **Description**: zkSNARK implementation in JavaScript & WASM
 

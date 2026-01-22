@@ -6,7 +6,7 @@
 
 ## Repository Overview
 
-**Repository**: [Unknown](https://github.com/hoprnet/hoprnet)
+**Repository**: [hoprnet/hoprnet](https://github.com/hoprnet/hoprnet)
 
 **Description**: HOPR is an open incentivized mixnet which enables privacy-preserving point-to-point data exchange. HOPR is similar to Tor but actually private, decentralized and economically sustainable.
 

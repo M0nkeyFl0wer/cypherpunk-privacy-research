@@ -6,7 +6,7 @@
 
 ## Repository Overview
 
-**Repository**: [Unknown](https://github.com/suterusu-team/suter-proofs)
+**Repository**: [suterusu-team/suter-proofs](https://github.com/suterusu-team/suter-proofs)
 
 **Description**: zk-ConSNARK rust implementation
 

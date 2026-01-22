@@ -6,7 +6,7 @@
 
 ## Repository Overview
 
-**Repository**: [Unknown](https://github.com/mobilecoinfoundation/mobilecoin)
+**Repository**: [mobilecoinfoundation/mobilecoin](https://github.com/mobilecoinfoundation/mobilecoin)
 
 **Description**: Private payments for mobile devices.
 
