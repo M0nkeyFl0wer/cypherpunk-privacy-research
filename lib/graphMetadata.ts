@@ -460,8 +460,8 @@ export const projectMetadata: Record<string, {
 
   // Mixers
   'tornado-cash': {
-    description: 'Ethereum mixer using zk-SNARKs to break transaction links. Sanctioned by OFAC in 2022.',
-    highlights: ['zk-SNARK based', 'OFAC sanctioned', 'Open source continues'],
+    description: 'Ethereum mixer using zk-SNARKs to break transaction links. OFAC sanctions (2022) lifted March 2025 after Fifth Circuit ruling. Protocol remains operational.',
+    highlights: ['zk-SNARK based', 'Sanctions lifted 2025', 'Protocol operational'],
     url: 'https://tornadocash.eth.link',
   },
 
