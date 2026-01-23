@@ -174,7 +174,6 @@ export default async function ProjectPage({ params }: { params: { slug: string }
   }
 
   const stats = project.githubAnalysis?.repository;
-  const explorerUrl = `https://github.com/web3privacy/explorer-data/tree/main/src/projects/${slug}`;
 
   return (
     <main className="min-h-screen bg-[#000]">
@@ -221,8 +220,6 @@ export default async function ProjectPage({ params }: { params: { slug: string }
             <a href={project.website} target="_blank" rel="noopener noreferrer"
                className="text-[#94e2d5] hover:underline">website</a>
           )}
-          <a href={explorerUrl} target="_blank" rel="noopener noreferrer"
-             className="text-[#cba6f7] hover:underline">w3p explorer</a>
         </div>
 
         {/* Stats */}
