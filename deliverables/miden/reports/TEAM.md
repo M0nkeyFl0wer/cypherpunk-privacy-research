@@ -59,12 +59,22 @@ Miden was originally developed under Polygon Labs and became independent on Marc
 **Role**: Co-founder
 
 **Background**:
-- Former Meta blockchain team member
-- Expertise in blockchain development
+- Co-founder of MorphL2
+- Former Partnerships & Fundraising Lead at Gitcoin ($69M+ in grants distributed)
+- Former Venture Partner at Foresight Ventures
+- ConsenSys alumni
+- CoinDesk columnist, Forbes contributor
+- UNICEF CryptoFund consultant
+- World Economic Forum Crypto Sustainability Coalition member
+- B.A./M.A. Biology & Medical Sciences (thesis at Harvard Medical School)
 
-**Verification Level**: Medium
-- Confirmed in funding announcements
-- Limited additional public profile information
+**Verification Level**: High
+- [LinkedIn](https://www.linkedin.com/in/theazeemkhan)
+- [CoinDesk Author Profile](https://www.coindesk.com/author/azeem-khan)
+- [The Org](https://theorg.com/org/miden/org-chart/azeem-khan)
+- [CypherHunter](https://www.cypherhunter.com/en/p/azeem-khan/)
+
+**Note**: Business development and communications focus, not engineering.
 
 ---
 

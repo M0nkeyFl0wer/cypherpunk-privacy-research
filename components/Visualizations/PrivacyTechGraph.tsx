@@ -128,6 +128,12 @@ export default function PrivacyTechGraph({ width = 1000, height = 700, defaultFi
   const [hoveredNode, setHoveredNode] = useState<string | null>(null);
   const [focusedNode, setFocusedNode] = useState<string | null>(null);
   const draggedRef = useRef(false); // Track if drag occurred to prevent click
+  const expandedNodesRef = useRef<Set<string>>(new Set()); // Ref for click handler closure
+
+  // Keep ref in sync with state for click handler closure
+  useEffect(() => {
+    expandedNodesRef.current = expandedNodes;
+  }, [expandedNodes]);
 
   // Load graph data
   useEffect(() => {
@@ -576,15 +582,22 @@ export default function PrivacyTechGraph({ width = 1000, height = 700, defaultFi
           return;
         }
 
-        const isCurrentlyExpanded = expandedNodes.has(d.id);
+        // Use ref to get CURRENT expanded state (avoids stale closure)
+        const isCurrentlyExpanded = expandedNodesRef.current.has(d.id);
+
+        console.log(`Click on ${d.id}: isExpanded=${isCurrentlyExpanded}, hasPage=${PROJECTS_WITH_PAGES.has(d.id)}`);
 
         if (isCurrentlyExpanded) {
           // Already expanded - navigate to project page (only if it exists)
           if (PROJECTS_WITH_PAGES.has(d.id)) {
+            console.log(`Navigating to /projects/${d.id}`);
             router.push(`/projects/${d.id}`);
+          } else {
+            console.log(`No page for ${d.id} - research in progress`);
           }
         } else {
           // First click - expand to show connections
+          console.log(`Expanding ${d.id}`);
           setExpandedNodes(prev => {
             const next = new Set(prev);
             next.add(d.id);

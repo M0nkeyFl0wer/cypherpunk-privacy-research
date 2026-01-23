@@ -39,7 +39,6 @@ Signal is developed by **Signal Messenger LLC**, a wholly-owned subsidiary of th
 **Notable Achievements**:
 - Created the most widely-deployed end-to-end encryption protocol in history
 - Protocol adopted by WhatsApp (2B+ users), Facebook Messenger, Google Messages, Skype
-- First released open-source STARK prover (genSTARK) - later founded Confer AI
 
 **Current Status**: Stepped down from Signal in January 2022, launched Confer (privacy-focused AI) in December 2025
 
