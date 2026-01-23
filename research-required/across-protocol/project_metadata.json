@@ -1,0 +1,62 @@
+{
+  "project_name": "Across Protocol",
+  "category": "bridge",
+  "status": "active",
+  "ecosystem": "ethereum",
+  "technology": "optimistic_oracle",
+  "description": "Intent-based cross-chain bridge secured by UMA's optimistic oracle, using canonical assets and relayer competition for fast, secure transfers",
+  "website": "https://across.to",
+  "github": "https://github.com/across-protocol",
+  "documentation": "https://docs.across.to",
+  "discovery_date": "2026-01-22T00:00:00.000000",
+  "discovery_source": "constitutional_research",
+  "research_progress": {
+    "status": "complete",
+    "completion_percent": 95,
+    "last_updated": "2026-01-22T00:00:00.000000"
+  },
+  "mainnet_status": "live",
+  "is_mainnet": true,
+  "launch_date": "2021",
+  "token": {
+    "symbol": "ACX",
+    "type": "ERC-20",
+    "total_supply": "1,000,000,000",
+    "governance": true
+  },
+  "audit_count": 10,
+  "audits": [
+    "OpenZeppelin - Across V2 (2022-2023)",
+    "OpenZeppelin - Across V3 Incremental (January 2024)",
+    "OpenZeppelin - Arbitrum CustomGasToken & ExclusivityPeriod Diff",
+    "OpenZeppelin - OFT Integration Differential",
+    "OpenZeppelin - Periphery Changes",
+    "OpenZeppelin - Linea CCTP Diff",
+    "OpenZeppelin - EVM Universal Adapter",
+    "OpenZeppelin - Sponsored Periphery",
+    "OpenZeppelin - L3 Support (29 issues, 26 resolved)",
+    "OpenZeppelin - SVM Solidity"
+  ],
+  "supported_chains": [
+    "ethereum",
+    "arbitrum",
+    "optimism",
+    "polygon",
+    "base",
+    "linea",
+    "zksync",
+    "solana"
+  ],
+  "launch_status": "Live since 2021",
+  "funding": {
+    "total_raised": "$41M",
+    "date": "March 2025",
+    "investors": ["Paradigm", "Bain Capital Crypto", "Coinbase Ventures", "Multicoin Capital"]
+  },
+  "metrics": {
+    "total_bridge_volume": "$20.7B+",
+    "total_transfers": "14.4M+",
+    "2024_volume": "$11.6B",
+    "security_incidents": 0
+  }
+}

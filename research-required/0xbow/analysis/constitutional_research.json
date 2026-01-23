@@ -1,0 +1,271 @@
+{
+  "project_id": "0xbow",
+  "research_framework": "Constitutional Research Framework v3",
+  "research_date": "2026-01-22",
+  "researcher": "Claude Opus 4.5",
+
+  "1_discovery": {
+    "official_website": "https://0xbow.io",
+    "github": {
+      "organization": "https://github.com/0xbow-io",
+      "primary_repository": "https://github.com/0xbow-io/privacy-pools-core",
+      "secondary_repositories": [
+        "https://github.com/0xbow-io/privacy-pools-website"
+      ]
+    },
+    "social_media": {
+      "twitter": "https://x.com/0xbowio"
+    },
+    "tornado_cash_relationship": {
+      "is_fork": true,
+      "relationship_type": "Compliant successor/fork of Tornado Cash",
+      "key_differences": [
+        "Adds Association Set Provider (ASP) compliance layer",
+        "Screens deposits using blockchain forensics (KYT)",
+        "Allows users to prove funds are not from illicit sources",
+        "Users can choose compliance curators (from 'Strict OFAC' to 'community-vetted')",
+        "Non-custodial ragequit function if deposit fails screening"
+      ],
+      "research_origins": "Based on 2023 research paper co-authored by Vitalik Buterin, Ameen Soleimani, Jacob Illum (Chainalysis), Matthias Nadler, and Fabian Schar",
+      "confidence": 0.95
+    },
+    "confidence": 0.98,
+    "sources": [
+      "https://0xbow.io/",
+      "https://github.com/0xbow-io/privacy-pools-core",
+      "https://www.theblock.co/post/348959/0xbow-privacy-pools-new-cypherpunk-tool-inspired-research-ethereum-founder-vitalik-buterin",
+      "https://forklog.com/en/0xbow-implements-vitalik-buterins-alternative-to-tornado-cash/"
+    ]
+  },
+
+  "2_security": {
+    "audit_reports": {
+      "total_audits": 4,
+      "auditors": [
+        {
+          "name": "Oxorio",
+          "audited_items": ["Circuits", "Contracts", "Entrypoint Upgrade"],
+          "reputation": "Audited Aztec & Starkware",
+          "findings_summary": "Identified critical and major vulnerabilities that required fixes before deployment. Team was responsive and addressed all issues."
+        },
+        {
+          "name": "Auditware",
+          "audited_items": ["Contracts"],
+          "reputation": "Independent security firm"
+        }
+      ],
+      "trusted_setup_ceremony": {
+        "completed": true,
+        "participants": 514,
+        "audited_by": "Oxorio"
+      }
+    },
+    "tornado_cash_differences": {
+      "compliance_mechanisms": [
+        "Association Set Provider (ASP) - compliance layer screening deposits",
+        "Know Your Transaction (KYT) service for vetting fund sources",
+        "Real-time monitoring for suspicious activity",
+        "Blacklist of 16,000+ addresses linked to illicit activity",
+        "User-selectable compliance curators"
+      ],
+      "fund_safety": "Non-custodial design with ragequit function for rejected deposits"
+    },
+    "security_features": [
+      "Zero-knowledge proofs (ZK-SNARKs via Groth16)",
+      "Poseidon hash function",
+      "Merkle tree (Lean IMT) for commitment tracking",
+      "AccessControlUpgradeable pattern (OpenZeppelin)",
+      "UUPSUpgradeable proxy pattern",
+      "ReentrancyGuard protection",
+      "SafeERC20 for token transfers"
+    ],
+    "testing_infrastructure": {
+      "unit_tests": true,
+      "integration_tests": true,
+      "fuzz_tests": true,
+      "invariant_tests": true,
+      "ci_cd": true,
+      "frameworks": ["Foundry Forge", "Vitest", "Mocha", "Medusa (fuzzing)"]
+    },
+    "confidence": 0.95,
+    "sources": [
+      "https://x.com/0xorio/status/1796628339769127112",
+      "https://oxor.io/reports",
+      "https://0xbow.io/blog/privacy-pools-trusted-setup-ceremony-join-us-in-strengthening-privacy",
+      "Repository audit/ directory analysis"
+    ]
+  },
+
+  "3_privacy_technology": {
+    "zk_snark_implementation": {
+      "proof_system": "Groth16 (via SnarkJS 0.7.5)",
+      "circuit_language": "Circom",
+      "hash_function": "Poseidon",
+      "commitment_structure": "Lean IMT (Merkle trees)",
+      "verification_contracts": ["WithdrawalVerifier.sol", "CommitmentVerifier.sol"]
+    },
+    "mixer_mechanics": {
+      "deposit_process": "Users deposit publicly, funds screened by ASP",
+      "withdrawal_process": "Users generate zero-knowledge membership proofs to withdraw privately",
+      "proof_of_association": "Core compliance primitive - cryptographic proof that funds belong to pre-vetted 'Association Set' of compliant transactions",
+      "anonymity_set": "Users prove membership without revealing specific deposit"
+    },
+    "supported_chains": {
+      "mainnet": ["Ethereum Mainnet", "Gnosis"],
+      "planned_expansion": true,
+      "v2_features": "Shielded pool for internal p2p payments, swaps, multisig, yield (planned ETHCC March 2026)"
+    },
+    "supported_assets": [
+      "ETH",
+      "wBTC (Wrapped Bitcoin)",
+      "USDC",
+      "USDT",
+      "DAI",
+      "Other major stablecoins"
+    ],
+    "deployed_contracts": {
+      "entrypoint": "0x6818809EefCe719E480a7526D76bD3e561526b46",
+      "privacy_pools": "0xf241d57c6debae225c0f2e6ea1529373c9a9c9fb"
+    },
+    "protocol_stats": {
+      "launch_date": "March 2025",
+      "total_volume": "$6 million",
+      "total_users": "1,500+",
+      "total_withdrawals": 1186,
+      "data_as_of": "November 2025"
+    },
+    "confidence": 0.95,
+    "sources": [
+      "https://github.com/0xbow-io/privacy-pools-core",
+      "https://0xbow.io/blog/getting-started-with-privacy-pools",
+      "https://iq.wiki/wiki/0xbow",
+      "https://www.globenewswire.com/news-release/2025/11/18/3190435/0/en/0xbow-Closes-3-5M-Round-for-Compliant-Crypto-Privacy-Technology-Following-Ethereum-Foundation-Integration.html"
+    ]
+  },
+
+  "4_regulatory_status": {
+    "sanctions_status": {
+      "is_sanctioned": false,
+      "ofac_status": "NOT sanctioned (unlike Tornado Cash)",
+      "compliance_by_design": true
+    },
+    "compliance_mechanisms": {
+      "association_set_provider": {
+        "description": "Off-chain compliance layer that screens deposits and monitors transactions in real-time",
+        "function": "Blockchain forensics check that deposited funds aren't linked to hacks or sanctioned entities"
+      },
+      "know_your_transaction": {
+        "description": "KYT service vets source of funds, not user identity",
+        "approach": "Doesn't care who you are, only cares where money has been"
+      },
+      "user_selectable_curators": {
+        "options": ["Strict OFAC", "Community-vetted", "Custom"],
+        "description": "Users decide which compliance curators to trust"
+      },
+      "tornado_cash_proof_of_association": {
+        "description": "Tool allowing existing Tornado Cash users to dissociate funds from illicit activity",
+        "status": "First working mechanism reconciling privacy with compliance on Tornado Cash",
+        "blacklisted_addresses": "16,000+"
+      }
+    },
+    "institutional_backing": {
+      "ethereum_foundation_integration": "Privacy Pools integrated into Ethereum Foundation's Kohaku wallet (demonstrated at Cypherpunk Congress, Devconnect Buenos Aires)",
+      "listed_on_ethereum_org": true
+    },
+    "tornado_cash_context": {
+      "tc_sanctioned_date": "August 2022",
+      "tc_sanction_reason": "Alleged role in laundering billions including Lazarus Group funds",
+      "tc_sanction_reversal": "November 2024 - US appeals court ruled immutable smart contracts don't qualify as seizable property",
+      "0xbow_differentiation": "Designed from ground up for compliance while preserving privacy"
+    },
+    "confidence": 0.90,
+    "sources": [
+      "https://0xbow.io/blog/unlocking-privacy-preserving-compliance-with-association-sets",
+      "https://www.theblock.co/post/374410/tornado-cash-users-maintain-anonymity-without-helping-hackers-0xbow-blacklist",
+      "https://bitcoinethereumnews.com/tech/0xbow-launches-privacy-pools-for-legal-on-chain-privacy/",
+      "https://ethereum.org/apps/0xbow/"
+    ]
+  },
+
+  "5_team_and_funding": {
+    "founders": [
+      {
+        "name": "Ameen Soleimani",
+        "background": "Iranian-American software engineer, ConsenSys alumni, SpankChain founder/CEO, MolochDAO summoner, Reflexer Finance (RAI stablecoin), IranUnchained humanitarian efforts",
+        "role": "Co-founder, Strategic Advisor"
+      },
+      {
+        "name": "Nathaniel Fried",
+        "role": "Co-founder"
+      },
+      {
+        "name": "Zak Cole",
+        "role": "Co-founder"
+      }
+    ],
+    "location": "Nashville, USA",
+    "funding": {
+      "seed_round": {
+        "amount": "$3.5 million",
+        "date": "November 2025",
+        "lead_investor": "Starbloom Capital",
+        "participants": [
+          "Coinbase Ventures",
+          "BOOST VC",
+          "Status Research & Development GmbH",
+          "Balaji Srinivasan (angel)"
+        ]
+      },
+      "pre_seed_round": {
+        "date": "March 2024",
+        "notable_investor": "Vitalik Buterin"
+      },
+      "total_raised": "$3.5M+ (seed only, pre-seed amount undisclosed)"
+    },
+    "partnerships_and_integrations": [
+      {
+        "partner": "Ethereum Foundation",
+        "integration": "Privacy Pools in Kohaku wallet"
+      },
+      {
+        "partner": "Status Research & Development",
+        "type": "Investor"
+      }
+    ],
+    "confidence": 0.95,
+    "sources": [
+      "https://www.globenewswire.com/news-release/2025/11/18/3190435/0/en/0xbow-Closes-3-5M-Round-for-Compliant-Crypto-Privacy-Technology-Following-Ethereum-Foundation-Integration.html",
+      "https://www.theblock.co/post/379395/0xbow-raises-3-5-million-seed-round-ethereum-foundation-backed-privacy-pools",
+      "https://iq.wiki/wiki/ameen-soleimani",
+      "https://www.crunchbase.com/person/ameen-soleimani"
+    ]
+  },
+
+  "summary": {
+    "project_description": "0xBow is a privacy infrastructure project that implements Privacy Pools - a compliant, zero-knowledge-based privacy protocol for Ethereum. It is a forked successor to Tornado Cash that adds an Association Set Provider (ASP) compliance layer, allowing users to prove their funds are not associated with illicit activity without revealing transaction details.",
+    "key_innovation": "Reconciles blockchain privacy with regulatory compliance through zero-knowledge proofs combined with blockchain forensics screening (KYT), enabling legal anonymous transactions",
+    "maturity": "Production (Mainnet since March 2025)",
+    "risk_assessment": {
+      "technical_risk": "Low - Well-audited (4 audits), uses proven cryptographic primitives (Groth16, Poseidon), professional codebase with extensive testing",
+      "regulatory_risk": "Low - Designed for compliance, not sanctioned, integrated by Ethereum Foundation, backed by major VCs including Coinbase Ventures",
+      "adoption_risk": "Medium - Still early with $6M volume and 1,500 users, but growing with institutional backing"
+    },
+    "overall_confidence": 0.93
+  },
+
+  "research_gaps": [
+    "Specific details of all audit findings not publicly available (only summary)",
+    "Exact test coverage percentage not disclosed",
+    "L2 deployment timeline for Optimism/Arbitrum/Polygon not confirmed",
+    "Privacy Pools V2 shielded pool specifications pending"
+  ],
+
+  "constitutional_compliance": {
+    "real_data_only": true,
+    "multi_source_verification": true,
+    "confidence_scoring_applied": true,
+    "gaps_documented": true,
+    "synthetic_data_used": false,
+    "sources_provided": true
+  }
+}

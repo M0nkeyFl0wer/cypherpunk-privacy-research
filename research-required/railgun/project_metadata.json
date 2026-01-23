@@ -1,27 +1,37 @@
 {
-  "project_name": "Railgun",
+  "project_name": "RAILGUN",
   "category": "defi",
+  "subcategory": "privacy_protocol",
   "status": "active",
   "ecosystem": "ethereum",
-  "technology": "",
-  "description": "Privacy protocol for DeFi",
+  "technology": "zk-SNARKs (Groth16)",
+  "description": "Zero-knowledge privacy protocol enabling private DeFi transactions on Ethereum, Polygon, Arbitrum, and BSC. Uses shielded addresses and Private Proofs of Innocence for compliance-aware privacy.",
   "website": "https://railgun.org",
+  "documentation": "https://docs.railgun.org",
   "github": "https://github.com/Railgun-Privacy",
+  "github_community": "https://github.com/Railgun-Community",
   "discovery_date": "2025-09-29T14:06:45.268050",
   "discovery_source": "web3privacy_github",
   "research_progress": {
-    "status": "initial_discovery",
-    "completion_percent": 10,
-    "last_updated": "2025-09-29T14:06:45.268057"
+    "status": "comprehensive_analysis_complete",
+    "completion_percent": 92,
+    "last_updated": "2026-01-22T00:00:00.000000",
+    "research_framework": "Constitutional Research Framework v3"
   },
   "web3privacy_enriched": true,
   "enriched_at": "2025-09-29T16:11:39.090513",
   "mainnet_status": "live",
   "is_mainnet": true,
   "launch_date": "2021-07",
-  "audit_count": 5,
+  "audit_count": "10+",
   "audits": [
-    "5 audits (details in GitHub)"
+    "Trail of Bits",
+    "ABDK Consulting",
+    "Hashcloak",
+    "Zokyo (100/100 score)",
+    "Pessimistic",
+    "Hacken",
+    "Halborn (scheduled)"
   ],
   "supported_chains": [
     "ethereum",
@@ -29,5 +39,26 @@
     "arbitrum",
     "bsc"
   ],
-  "launch_status": "Live July 2021"
+  "planned_chains": [
+    "polkadot",
+    "solana"
+  ],
+  "launch_status": "Live July 2021",
+  "governance": "RAILGUN DAO",
+  "governance_token": "RAIL",
+  "tvl_current": "$106-113M",
+  "total_volume": "$4B+",
+  "security_status": {
+    "protocol_exploits": "None known",
+    "ofac_status": "Not sanctioned",
+    "compliance_system": "Private Proofs of Innocence (PPOI)"
+  },
+  "notable_endorsements": [
+    "Vitalik Buterin (662 ETH transferred to RAILGUN)",
+    "Ethereum Foundation (Kohaku toolkit integration)"
+  ],
+  "smart_contracts": {
+    "ethereum_relay": "0xfa7093cdd9ee6932b4eb2c9e1cde7ce00b1fa4b9",
+    "rail_token": "0xe76C6c83af64e4C60245D8C7dE953DF673a7A33D"
+  }
 }

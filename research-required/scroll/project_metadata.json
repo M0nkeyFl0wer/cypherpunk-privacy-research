@@ -3,26 +3,38 @@
   "category": "layer2",
   "status": "active",
   "ecosystem": "Ethereum",
-  "technology": "",
-  "description": "zkEVM-based zkRollup",
-  "website": "",
-  "github": "",
+  "technology": "zkEVM (Type 2)",
+  "description": "zkEVM-based zkRollup - First ZK rollup to achieve Stage 1 decentralization",
+  "website": "https://scroll.io",
+  "github": "https://github.com/scroll-tech/scroll",
   "discovery_date": "2025-09-29T14:06:45.278833",
   "discovery_source": "web3privacy_github",
   "research_progress": {
-    "status": "initial_discovery",
-    "completion_percent": 10,
-    "last_updated": "2025-09-29T14:06:45.278842"
+    "status": "complete",
+    "completion_percent": 95,
+    "last_updated": "2026-01-22T12:00:00-05:00"
   },
   "web3privacy_enriched": true,
   "enriched_at": "2025-09-29T16:11:39.095062",
   "mainnet_status": "mainnet",
   "is_mainnet": true,
-  "launch_date": "2023-10",
-  "audit_count": 0,
-  "audits": [],
+  "launch_date": "2023-10-17",
+  "audit_count": 12,
+  "audits": [
+    "Trail of Bits (zkEVM circuits - 7 audits)",
+    "OpenZeppelin (Bridge & Rollup contracts - 5 audits)",
+    "Zellic (Bridge, Rollup, zkEVM)",
+    "KALOS (zkEVM circuits)"
+  ],
   "supported_chains": [
     "ethereum-l2"
   ],
-  "launch_status": "Mainnet October 2023"
+  "launch_status": "Mainnet October 2023",
+  "token": {
+    "symbol": "SCR",
+    "launch_date": "2024-10-22"
+  },
+  "tvl_usd": 124540000,
+  "l2beat_stage": "Stage 1",
+  "privacy_features": false
 }

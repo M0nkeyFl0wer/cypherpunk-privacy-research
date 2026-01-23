@@ -1,0 +1,16 @@
+{
+  "project_name": "Wormhole Bridge",
+  "category": "cross-chain-bridge",
+  "status": "active",
+  "discovery_date": "2026-01-22T00:00:00.000000",
+  "discovery_source": "constitutional_research_framework",
+  "website": "https://wormhole.com",
+  "website_source": "Web Search 2026-01-22",
+  "github": "https://github.com/wormhole-foundation/wormhole",
+  "github_source": "Web Search 2026-01-22",
+  "github_confidence": "high",
+  "github_org": "https://github.com/wormhole-foundation",
+  "documentation": "https://docs.wormhole.com",
+  "portal_bridge": "https://portalbridge.com",
+  "dashboard": "https://wormhole-foundation.github.io/wormhole-dashboard"
+}

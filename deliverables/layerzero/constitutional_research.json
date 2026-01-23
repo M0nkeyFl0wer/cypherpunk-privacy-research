@@ -1,0 +1,378 @@
+{
+  "project_name": "layerzero",
+  "research_timestamp": "2026-01-22T18:30:00-05:00",
+  "research_method": "constitutional_research_framework_v3_bridge_security_extension",
+  "security_rating": "MEDIUM-HIGH",
+  "security_rating_rationale": "Extensive audit coverage (11+ audits), $15M bug bounty, immutable core contracts. However, application-layer security depends on DVN configuration choices. September 2025 $GAIN exploit demonstrated peer initialization vulnerabilities. V2 architecture significantly improves over V1 trust model.",
+
+  "project_overview": {
+    "name": "LayerZero",
+    "type": "Omnichain Interoperability Protocol",
+    "description": "Open-source, immutable messaging protocol enabling cross-chain communication for omnichain applications",
+    "founded": "2021",
+    "headquarters": "Vancouver, Canada",
+    "confidence": 0.95
+  },
+
+  "discovery": {
+    "official_website": "https://layerzero.network/",
+    "documentation": "https://docs.layerzero.network/v2",
+    "github": "https://github.com/LayerZero-Labs",
+    "whitepaper": "https://c3.coinlore.com/pdf/layerzero-white-paper.pdf",
+    "supported_chains": {
+      "count": "120+",
+      "chain_types": ["EVM", "Solana", "Sui", "Move", "TON"],
+      "major_networks": [
+        "Ethereum",
+        "BNB Chain",
+        "Avalanche",
+        "Polygon",
+        "Arbitrum",
+        "Optimism",
+        "Fantom",
+        "Solana",
+        "TON",
+        "Aptos",
+        "Cronos EVM",
+        "Cronos zkEVM"
+      ],
+      "endpoints_deployed": "132+"
+    },
+    "token": {
+      "symbol": "ZRO",
+      "network": "Ethereum",
+      "type": "Governance/Utility"
+    },
+    "daily_transfer_volume": "$293 million",
+    "total_transfer_volume_secured": "$50+ billion"
+  },
+
+  "security_analysis": {
+    "audit_history": {
+      "total_audits": "11+",
+      "audit_firms": [
+        "ChainSecurity",
+        "Zellic",
+        "Dedaub",
+        "Code4rena",
+        "Paladin"
+      ],
+      "recent_audits": [
+        {
+          "auditor": "Zellic",
+          "scope": "OApp & OFT",
+          "date": "September 2025",
+          "duration": "May 12-30, 2024 and September 11-16, 2025"
+        },
+        {
+          "auditor": "Code4rena",
+          "scope": "LayerZero Endpoint V2 - Sui",
+          "date": "September 17-30, 2025",
+          "bounty": "$103,000 USDC"
+        },
+        {
+          "auditor": "Code4rena",
+          "scope": "LayerZero Starknet Endpoint",
+          "date": "October 24 - November 7, 2025",
+          "bounty": "$100,000 USDC"
+        },
+        {
+          "auditor": "Dedaub",
+          "scope": "AVS, EigenLayer Middleware, Omnichain Protocol",
+          "date": "May 19, 2025"
+        }
+      ],
+      "audit_repository": "https://github.com/LayerZero-Labs/Audits"
+    },
+    "bug_bounty": {
+      "platform": "Immunefi",
+      "max_reward": "$15,000,000",
+      "status": "Active",
+      "tier_group_1": {
+        "chains": ["Ethereum", "BNB Chain", "Avalanche", "Polygon", "Arbitrum", "Optimism", "Fantom"],
+        "critical_range": "$250,000 - $15,000,000"
+      },
+      "tier_group_2": {
+        "minimum": "$25,000 or 10% of value at risk",
+        "maximum": "$1,500,000"
+      },
+      "total_paid_to_whitehats": "~$1,000,000",
+      "requirements": ["KYC", "OFAC Screening", "PoC Required"],
+      "url": "https://immunefi.com/bug-bounty/layerzero/"
+    },
+    "known_vulnerabilities": [
+      {
+        "date": "January 2023",
+        "type": "Critical Vulnerability Allegation",
+        "reporter": "James Prestwich (Summa)",
+        "description": "Two vulnerabilities identified in Endpoint and UltraLightNodeV2 contracts allowing LayerZero MultiSig to pass arbitrary messages without Relayer/Oracle sign-off",
+        "impact": "Potential theft of all user funds (requires insider collusion)",
+        "response": "LayerZero CEO denied allegations, noted vulnerability only applies to default configurations",
+        "status": "Disputed - most projects used default config at time of disclosure"
+      },
+      {
+        "date": "September 2025",
+        "type": "Peer Initialization Exploit",
+        "affected_project": "Griffin AI ($GAIN)",
+        "description": "Attackers created fake LayerZero Peer on Ethereum, bridged tokens to BSC, minted 5 billion counterfeit tokens",
+        "impact": "84% price crash, $3 million laundered via Tornado Cash",
+        "root_cause": "Fundamental flaw in LayerZero peer initialization process",
+        "similar_incident": "Yala Attack",
+        "analysis": "GoPlus and CertiK highlighted broader implications for cross-chain assets"
+      }
+    ],
+    "security_features": [
+      "Immutable core contracts",
+      "Pre-Crime invariant checking",
+      "Application-owned security model",
+      "Non-upgradeable endpoints"
+    ]
+  },
+
+  "trust_model": {
+    "architecture_version": "V2 (current) - also V1 legacy",
+    "v1_architecture": {
+      "name": "Ultra Light Node (ULN)",
+      "components": {
+        "oracle": "Delivers block headers from source to destination chain",
+        "relayer": "Submits transaction proofs"
+      },
+      "trust_assumption": "2-of-2 trust model - both Oracle AND Relayer must collude to compromise security",
+      "verification": "On-chain verification using UltraLightNode.sol smart contract",
+      "limitations": [
+        "Collusion risk relies solely on social trust and economic incentives",
+        "No cryptoeconomic enforcement mechanisms",
+        "Most applications defaulted to LayerZero Labs relayer and Chainlink/Google Cloud oracles",
+        "Single point of failure if LayerZero Labs relayer went down"
+      ]
+    },
+    "v2_architecture": {
+      "name": "Decentralized Verifier Networks (DVNs)",
+      "model": "X-of-Y-of-N configurable security",
+      "description": "Applications choose any combination of DVNs to verify messages with customizable thresholds",
+      "dvn_count": "35+ DVNs available",
+      "dvn_types": [
+        "zk-technology (Polyhedra Network)",
+        "Middlechains",
+        "Consortium signers",
+        "Third-party bridges (Wormhole, Axelar adapters)",
+        "Oracle providers (Chainlink, Google Cloud)",
+        "Enterprise (Deutsche Telekom MMS, IBM)"
+      ],
+      "verification_process": "Each DVN independently verifies payloadHash of each message. Message marked verified only after threshold reached.",
+      "improvements_over_v1": [
+        "Decoupled security from execution",
+        "Permissionless DVN participation",
+        "Out-of-order nonce execution while maintaining censorship resistance",
+        "No single point of failure"
+      ]
+    },
+    "chainlink_integration": {
+      "role": "DVN provider for message verification",
+      "features": [
+        "Manipulation resistant infrastructure",
+        "Security-reviewed Sybil-resistant node operators",
+        "High availability with redundancies"
+      ]
+    },
+    "eigenlayer_integration": {
+      "name": "CryptoEconomic DVN Framework",
+      "description": "Partnership with Eigen Labs to bring cryptoeconomic security to omnichain messaging",
+      "features": [
+        "Financial incentives for honest verification",
+        "Slashing rules for malicious behavior",
+        "Bootstrap DVNs using ANY tokens"
+      ]
+    },
+    "censorship_resistance": {
+      "guarantees": [
+        "Lossless message delivery",
+        "Exactly-once delivery (no duplicates, no replay attacks)",
+        "Guaranteed delivery to destination if source transaction succeeds"
+      ],
+      "implementation": [
+        "OApp-exclusive Security Stack ownership",
+        "Immutable channel enforcement",
+        "Isolated channels per path (adversarial apps cannot deny liveness of other apps)",
+        "Gapless strictly monotonically increasing nonce per channel"
+      ],
+      "v2_improvements": "Messages can be verified and executed out-of-order while maintaining censorship resistance"
+    }
+  },
+
+  "stargate_relationship": {
+    "type": "First dApp built on LayerZero",
+    "acquisition": "Stargate DAO approved LayerZero acquisition of Stargate (STG)",
+    "description": "Community-driven organization building first fully composable native asset bridge on LayerZero",
+    "technical_details": {
+      "bridge_type": "Hybrid Bridge (mainly Liquidity Network)",
+      "features": [
+        "Unified liquidity pools",
+        "Instant guaranteed finality",
+        "Native asset transfers",
+        "Optional batching",
+        "Hydra Token Bridge mode (mint tokens at destination)"
+      ],
+      "verification": "2/2 of Stargate and Nethermind custom Multisigs as DVNs",
+      "supported_assets": ["USDC", "USDT", "ETH", "BTC", "OFTs"],
+      "supported_chains": "80+",
+      "total_value_transferred": "$70 billion"
+    },
+    "ecosystem_integration": "ZRO and STG now form single asset ecosystem - ZRO is base communication layer, Stargate handles app-level value transfer",
+    "l2beat_data": {
+      "stargate_v1": "https://l2beat.com/bridges/projects/stargate",
+      "stargate_v2": "https://l2beat.com/bridges/projects/stargatev2"
+    }
+  },
+
+  "governance": {
+    "token": "ZRO",
+    "fee_switch": {
+      "status": "Disabled",
+      "recent_vote": "Third fee switch vote failed to meet quorum (December 2025)"
+    }
+  },
+
+  "metadata": {
+    "confidence_score": 0.92,
+    "completeness": 90,
+    "sources_count": 25,
+    "research_method": "claude_code_constitutional_research",
+    "framework_version": "v3_bridge_security_extension"
+  },
+
+  "gaps_and_missing_data": [
+    "Full list of all 120+ supported chain addresses",
+    "Complete DVN operator list with security configurations",
+    "Detailed incident response timeline for September 2025 $GAIN exploit",
+    "Quantitative metrics on DVN adoption rates by applications"
+  ],
+
+  "sources": [
+    {
+      "type": "official",
+      "name": "LayerZero Official Website",
+      "url": "https://layerzero.network/"
+    },
+    {
+      "type": "official",
+      "name": "LayerZero V2 Documentation",
+      "url": "https://docs.layerzero.network/v2"
+    },
+    {
+      "type": "official",
+      "name": "LayerZero GitHub",
+      "url": "https://github.com/LayerZero-Labs"
+    },
+    {
+      "type": "official",
+      "name": "LayerZero Audits Repository",
+      "url": "https://github.com/LayerZero-Labs/Audits"
+    },
+    {
+      "type": "security",
+      "name": "Immunefi Bug Bounty",
+      "url": "https://immunefi.com/bug-bounty/layerzero/"
+    },
+    {
+      "type": "security",
+      "name": "ChainSecurity Audit",
+      "url": "https://www.chainsecurity.com/security-audit/layerzero-oft-oapp"
+    },
+    {
+      "type": "security",
+      "name": "Zellic Audit Reports",
+      "url": "https://reports.zellic.io/publications/layerzero-oapp--oft"
+    },
+    {
+      "type": "security",
+      "name": "Code4rena Sui Audit",
+      "url": "https://code4rena.com/audits/2025-09-layerzero-endpoint-v2-sui"
+    },
+    {
+      "type": "security",
+      "name": "Code4rena Starknet Audit",
+      "url": "https://code4rena.com/audits/2025-10-layerzero-starknet-endpoint"
+    },
+    {
+      "type": "security",
+      "name": "CertiK Skynet",
+      "url": "https://skynet.certik.com/projects/layerzero"
+    },
+    {
+      "type": "analysis",
+      "name": "Messari Understanding LayerZero",
+      "url": "https://messari.io/report/understanding-layerzero"
+    },
+    {
+      "type": "analysis",
+      "name": "L2BEAT Stargate Analysis",
+      "url": "https://l2beat.com/bridges/projects/stargate"
+    },
+    {
+      "type": "analysis",
+      "name": "L2BEAT Stargate V2 Analysis",
+      "url": "https://l2beat.com/bridges/projects/stargatev2"
+    },
+    {
+      "type": "official",
+      "name": "LayerZero V2 DVN Explanation",
+      "url": "https://medium.com/layerzero-official/layerzero-v2-explaining-dvns-02e08cce4e80"
+    },
+    {
+      "type": "official",
+      "name": "LayerZero Chainlink Integration",
+      "url": "https://medium.com/layerzero-official/layerzero-integrates-chainlink-oracles-expanding-decentralization-of-the-omnichain-communication-2d9963678483"
+    },
+    {
+      "type": "official",
+      "name": "LayerZero x EigenLayer DVN Framework",
+      "url": "https://medium.com/layerzero-official/layerzero-x-eigenlayer-the-cryptoeconomic-dvn-framework-68af27ca040"
+    },
+    {
+      "type": "security",
+      "name": "James Prestwich Vulnerability Analysis",
+      "url": "https://prestwich.substack.com/p/zero-validation"
+    },
+    {
+      "type": "news",
+      "name": "TechCrunch Bug Bounty Announcement",
+      "url": "https://techcrunch.com/2023/05/17/layerzero-and-immunefi-launch-largest-crypto-bug-bounty-program-with-up-to-15m-in-rewards/"
+    },
+    {
+      "type": "news",
+      "name": "Cointelegraph Vulnerability Response",
+      "url": "https://cointelegraph.com/news/layerzero-bridging-protocol-denies-accusation-of-critical-vulnerabilities"
+    },
+    {
+      "type": "news",
+      "name": "Deutsche Telekom DVN Announcement",
+      "url": "https://layerzero.network/blog/deutsche-telekom-mms-joins-layerzero-as-dvn"
+    },
+    {
+      "type": "official",
+      "name": "Stargate Finance",
+      "url": "https://stargate.finance/"
+    },
+    {
+      "type": "official",
+      "name": "Stargate Documentation",
+      "url": "https://stargateprotocol.gitbook.io/stargate/user-docs"
+    },
+    {
+      "type": "academic",
+      "name": "LayerZero ArXiv Paper",
+      "url": "https://arxiv.org/html/2312.09118v2"
+    },
+    {
+      "type": "news",
+      "name": "LayerZero 2025 Stats",
+      "url": "https://layerzero.network/blog/25-stats-explaining-how-crypto-accelerated-in-2025"
+    },
+    {
+      "type": "security",
+      "name": "GoPlus LayerZero Exploit Analysis",
+      "url": "https://phemex.com/news/article/goplus-analyzes-attack-exploiting-unauthorized-layerzero-peer-initialization-21109"
+    }
+  ]
+}

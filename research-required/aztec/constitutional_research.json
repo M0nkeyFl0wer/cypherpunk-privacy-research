@@ -1,0 +1,461 @@
+{
+  "$schema": "constitutional_research_v3",
+
+  "project_name": "Aztec Network",
+  "research_timestamp": "2026-01-22T23:45:00Z",
+  "research_method": "constitutional_research_v3",
+
+  "project_overview": {
+    "name": "Aztec Network",
+    "type": "Privacy-Preserving Layer 2 zkRollup",
+    "ecosystem": "Ethereum",
+    "tagline": "The first decentralized, privacy-preserving L2 on Ethereum",
+    "confidence": 0.95
+  },
+
+  "website": "https://aztec.network",
+  "website_confidence": 1.0,
+
+  "description": "Aztec is a privacy-first Layer 2 zkRollup on Ethereum that brings programmable privacy to smart contracts. It enables confidential transactions and private state through zero-knowledge proofs, combining public and private execution into a single rollup with seamless composability across encrypted and unencrypted transactions.",
+  "description_confidence": 0.95,
+
+  "github_data": {
+    "organization": "AztecProtocol",
+    "organization_url": "https://github.com/AztecProtocol",
+    "verified_domains": ["aztec.network"],
+    "followers": null,
+    "key_repositories": [
+      {
+        "name": "aztec-packages",
+        "description": "Monorepo containing Aztec core packages",
+        "stars": 420,
+        "forks": 584,
+        "language": "C++",
+        "license": "Apache License 2.0",
+        "last_updated": "2026-01-22"
+      },
+      {
+        "name": "aztec-connect",
+        "description": "Aztec Connect repository (deprecated)",
+        "stars": 458,
+        "language": "TypeScript",
+        "last_updated": "2026-01-20"
+      },
+      {
+        "name": "barretenberg",
+        "description": "Aztec's proving backend library",
+        "stars": 194,
+        "language": "C++",
+        "last_updated": "2026-01-19"
+      },
+      {
+        "name": "aztec-nr",
+        "description": "Mirror of Aztec smart contract framework for Noir",
+        "stars": 146,
+        "language": "Noir",
+        "last_updated": "2026-01-22"
+      },
+      {
+        "name": "aztec-starter",
+        "description": "Simple Aztec contract + test to get started",
+        "stars": 112,
+        "language": "TypeScript",
+        "last_updated": "2026-01-21"
+      }
+    ]
+  },
+
+  "technical_highlights": {
+    "protocol": "zkRollup with PLONK-based proving system",
+    "encryption_algorithm": "zk-SNARKs (PLONK, TurboPlonk, UltraPlonk, Honk)",
+    "privacy_model": "UTXO-based private state with encrypted notes and nullifiers",
+    "key_features": [
+      "Programmable privacy at user, data, metadata, transaction, and code levels",
+      "Client-side proof generation (proofs generated on user devices)",
+      "Hybrid execution: private functions run locally, public functions on network",
+      "UTXO model for private state, account-based model for public state",
+      "Composable privacy across chains via bridges (Wormhole, TRAIN, Substance)",
+      "Decentralized sequencing, proving, and governance from day one",
+      "Noir DSL for writing private smart contracts"
+    ],
+    "open_source": true,
+    "license": "Apache License 2.0"
+  },
+
+  "noir_language": {
+    "description": "Open-source Domain-Specific Language for safe and seamless construction of privacy-preserving Zero-Knowledge programs",
+    "syntax": "Rust-like",
+    "features": [
+      "Backend agnostic - compiles to ACIR intermediate representation",
+      "No cryptography knowledge required",
+      "Supports integers, booleans, strings, arrays, slices, tuples, structs",
+      "Works on cloud backends and smartphones",
+      "Default backend: Barretenberg"
+    ],
+    "documentation": "https://noir-lang.org/docs/",
+    "confidence": 0.95
+  },
+
+  "trust_model": {
+    "sequencer_model": "Decentralized Proof-of-Stake",
+    "sequencer_requirements": "200,000 AZTEC tokens staked",
+    "decentralization_pillars": [
+      "Decentralized sequencing - anyone can run a sequencer node",
+      "Decentralized proving - trustless block validation",
+      "Decentralized governance - community-guided network evolution"
+    ],
+    "validator_count": "23,000+ operators across 6 continents (as of Sept 2025)",
+    "multisig_admin": "4-of-7 configuration (to be removed over time)",
+    "multisig_emergency": "2-of-8 configuration for rapid incident response",
+    "escape_hatch": "Opens every 8 hours for 2-hour window allowing anyone to submit rollup proofs",
+    "no_centralized_sequencers": true,
+    "no_backdoors": true,
+    "no_tees": true,
+    "confidence": 0.9
+  },
+
+  "cryptography": {
+    "proving_system": "PLONK (Permutations over Lagrange-bases for Oecumenical Noninteractive arguments of Knowledge)",
+    "plonk_inventors": "Ariel Gabizon, Zac Williamson, Oana Ciobotaru",
+    "plonk_variants": [
+      "TurboPlonk - enhanced PLONK with additional boolean gates",
+      "UltraPlonk - variant using Ultra circuit arithmetisation",
+      "Honk - highly optimized PLONK with sum-check protocol",
+      "Goblin Plonk - recursion for resource-constrained provers"
+    ],
+    "polynomial_commitment": "KZG (Kate, Zaverucha, Goldberg)",
+    "elliptic_curves": [
+      "BN254 - main curve",
+      "Grumpkin - paired with BN254 for curve cycling"
+    ],
+    "trusted_setup": "Universal and updateable (single setup for all programs up to max size)",
+    "zero_knowledge_property": "Statistically zero-knowledge proven",
+    "confidence": 0.95
+  },
+
+  "security_audits": [
+    {
+      "date": "2025-ongoing",
+      "organization": "ZKSecurity",
+      "scope": "Bigfield primitive (circuit standard library)",
+      "result": "Part of pre-mainnet audit preparation",
+      "source": "https://aztec.network/blog/security-of-the-aztec-network-audits-of-bigfield"
+    },
+    {
+      "date": "2025-ongoing",
+      "organization": "Zellic",
+      "scope": "Bigfield primitive",
+      "result": "Part of pre-mainnet audit preparation",
+      "source": "https://aztec.network/blog/security-of-the-aztec-network-audits-of-bigfield"
+    },
+    {
+      "date": "2025-ongoing",
+      "organization": "Spearbit",
+      "scope": "Bigfield primitive",
+      "result": "Part of pre-mainnet audit preparation",
+      "source": "https://aztec.network/blog/security-of-the-aztec-network-audits-of-bigfield"
+    },
+    {
+      "date": "2022-05",
+      "organization": "Internal (Aztec Labs)",
+      "scope": "Aztec Connect upstream contracts and cryptography systems",
+      "result": "Completed",
+      "source": "https://aztec.network/blog/layer-by-layer-a-guide-to-aztecs-security-approach"
+    },
+    {
+      "date": "2022-05",
+      "organization": "Solidified",
+      "scope": "Rollup smart contracts",
+      "result": "Two minor vulnerabilities patched",
+      "source": "https://aztec.network/blog/layer-by-layer-a-guide-to-aztecs-security-approach"
+    },
+    {
+      "date": "2022",
+      "organization": "Sentnl",
+      "scope": "Cryptography fuzzing",
+      "result": "Completed",
+      "source": "https://aztec.network/blog/layer-by-layer-a-guide-to-aztecs-security-approach"
+    },
+    {
+      "date": "2022",
+      "organization": "Solidified",
+      "scope": "Lido and Element bridge contracts",
+      "result": "Completed",
+      "source": "https://aztec.network/blog/layer-by-layer-a-guide-to-aztecs-security-approach"
+    },
+    {
+      "date": "2025",
+      "organization": "Nethermind Security",
+      "scope": "Noir language audit",
+      "result": "Completed - compared Noir with Circom and o1js",
+      "source": "https://www.nethermind.io/blog/our-first-deep-dive-into-noir-what-zk-auditors-learned"
+    }
+  ],
+
+  "bug_bounty": {
+    "program": "ImmuneFi partnership",
+    "total_bounty": "$2,000,000",
+    "critical_smart_contract": "Up to $1,000,000",
+    "critical_cryptography": "Up to $1,000,000",
+    "source": "https://medium.com/aztec-protocol/aztec-raises-bug-bounty-to-2-million-for-critical-vulnerabilities-8e42df622659",
+    "confidence": 0.95
+  },
+
+  "known_vulnerabilities": [
+    {
+      "date": "Historical (pre-2022)",
+      "issue": "BigField class vulnerability allowing incorrect equations to be proven mod p",
+      "severity": "Critical (potential double-spend)",
+      "affected": "Rollup proofs only - Aztec was sole provider",
+      "resolution": "Added range check of 32 bits to tree index variable in joinsplit circuit",
+      "bounty_paid": "$50,000 USD",
+      "discoverers": "Xin Gao and Onur Kilic",
+      "exploitation": "No exploitation occurred - fixed before any external parties could exploit",
+      "source": "https://hackmd.io/@aztec-network/disclosure-of-recent-vulnerabilities"
+    },
+    {
+      "date": "Historical",
+      "issue": "Insufficient range checks in non-native field operations (CRT-based)",
+      "severity": "High",
+      "resolution": "Added more strict range checks and asserts in BigField class",
+      "source": "https://hackmd.io/@aztec-network/disclosure-of-recent-vulnerabilities"
+    }
+  ],
+
+  "organization": {
+    "name": "Aztec Labs",
+    "type": "Private company",
+    "founded": "2018",
+    "headquarters": "London, United Kingdom",
+    "confidence": 0.9
+  },
+
+  "team": {
+    "leadership": [
+      {
+        "name": "Zac Williamson",
+        "role": "CEO & Co-Founder",
+        "background": "PhD in particle physics, worked at CERN and T2K Japan, co-invented PLONK",
+        "source": "https://aztec-labs.com/team",
+        "confidence": 0.95
+      },
+      {
+        "name": "Joe Andrews",
+        "role": "CPO & Co-Founder",
+        "background": "Former CTO of Radish (Silicon Valley food tech), B.Eng. Materials Science from Imperial College London",
+        "source": "https://aztec-labs.com/team",
+        "confidence": 0.95
+      },
+      {
+        "name": "Tom Pocock",
+        "role": "Co-Founder",
+        "source": "https://tracxn.com/d/companies/aztec",
+        "confidence": 0.85
+      },
+      {
+        "name": "Arnaud Schenk",
+        "role": "Co-Founder",
+        "source": "https://tracxn.com/d/companies/aztec",
+        "confidence": 0.85
+      },
+      {
+        "name": "Ariel Gabizon",
+        "role": "Chief Scientist",
+        "background": "PhD Theoretical Computer Science from Weizmann Institute, worked on STARKs, helped with first Zcash trusted setup, co-author of PLONK",
+        "source": "https://aztec-labs.com/team",
+        "confidence": 0.95
+      },
+      {
+        "name": "Charlie Lye",
+        "role": "CTO",
+        "source": "https://tracxn.com/d/companies/aztec",
+        "confidence": 0.85
+      },
+      {
+        "name": "Jonathan Wu",
+        "role": "Head of Growth",
+        "source": "https://tracxn.com/d/companies/aztec",
+        "confidence": 0.85
+      },
+      {
+        "name": "Lisa Cuesta",
+        "role": "Head of Business Development",
+        "source": "https://tracxn.com/d/companies/aztec",
+        "confidence": 0.85
+      },
+      {
+        "name": "Michael Connor",
+        "role": "Cryptography Engineering Lead",
+        "source": "https://tracxn.com/d/companies/aztec",
+        "confidence": 0.85
+      },
+      {
+        "name": "Kev Wedderburn",
+        "role": "Noir Lead",
+        "source": "https://tracxn.com/d/companies/aztec",
+        "confidence": 0.85
+      }
+    ],
+    "team_size": null,
+    "team_confidence": 0.85
+  },
+
+  "funding": {
+    "total_raised": "$119,000,000+",
+    "funding_rounds": 4,
+    "latest_round": {
+      "type": "Series B",
+      "amount": "$100,000,000",
+      "date": "2022",
+      "source": "https://tracxn.com/d/companies/aztec"
+    },
+    "investors": [
+      "Andreessen Horowitz (a16z)",
+      "Paradigm",
+      "Consensys",
+      "Coinbase Ventures",
+      "Ethereal Ventures",
+      "Vitalik Buterin"
+    ],
+    "valuation": "~428M GBP (estimated)",
+    "confidence": 0.9
+  },
+
+  "token": {
+    "symbol": "AZTEC",
+    "total_supply": "10,350,000,000",
+    "token_sale_allocation": "1,547,000,000 (14.95%)",
+    "token_sale_raised": "19,476 ETH",
+    "token_sale_participants": "16,700+",
+    "token_sale_date": "2025-12-02 to 2025-12-06",
+    "tge_date": "As early as 2026-02-11 (pending governance vote)",
+    "tge_requirements": {
+      "min_participation": "100,000,000 tokens",
+      "approval_threshold": "66%"
+    },
+    "community_participation": "~50%",
+    "kyc_required": true,
+    "source": "https://aztec.network",
+    "confidence": 0.95
+  },
+
+  "network_status": {
+    "mainnet": false,
+    "testnet": true,
+    "testnet_launch": "2025-05",
+    "ignition_chain_launch": "2025-11",
+    "mainnet_planned": "End of 2025 / Early 2026",
+    "validator_threshold_reached": "500 validators for Ignition Chain launch",
+    "confidence": 0.9
+  },
+
+  "regulatory_context": {
+    "kyc_for_token_sale": true,
+    "compliance_approach": "Application-level compliance, not network-level",
+    "ceo_position": "Privacy networks can be consistent with regulator goals while protecting user privacy",
+    "selective_disclosure": "Users can prove parts of their identity without full disclosure",
+    "post_tornado_cash": "Benefited from Nov 2024 court ruling that OFAC sanctions on Tornado Cash were illegal",
+    "risks": [
+      "Increased regulatory scrutiny for privacy-focused projects",
+      "Competition from other privacy solutions",
+      "Adoption rates unproven (not yet mainnet)"
+    ],
+    "confidence": 0.85
+  },
+
+  "ecosystem_projects": [
+    "Azguard (wallet)",
+    "Nemi (private DEX)",
+    "Olla",
+    "Raven House (NFT platform)",
+    "ZKPassport (identity verification)"
+  ],
+
+  "bridges": [
+    "Wormhole",
+    "TRAIN",
+    "Substance"
+  ],
+
+  "contract_addresses": {
+    "gse_mainnet": "0xa92ecFD0E70c9cd5E5cd76c50Af0F7Da93567a4f",
+    "note": "Full L1 contract list available in AztecProtocol/l1-contracts repository",
+    "confidence": 0.7
+  },
+
+  "timeline": {
+    "2018": "Aztec Labs founded in London",
+    "2019": "PLONK paper published by Gabizon, Williamson, Ciobotaru",
+    "2020": "Aztec 2.0 and zk.money launched",
+    "2022-03": "Series B funding ($100M)",
+    "2022-05": "Security audits completed for Aztec Connect",
+    "2023-03": "Sunset of zk.money and Aztec Connect announced (decision to not progressively decentralize)",
+    "2025-05": "Public Testnet launched",
+    "2025-09": "Network upgrade with redesigned slashing system",
+    "2025-11": "Ignition Chain launched (first decentralized L2 consensus layer)",
+    "2025-12": "Token sale completed (19,476 ETH raised)",
+    "2026-01-22": "TGE governance vote began",
+    "2026-02-11": "Potential TGE date (pending vote)"
+  },
+
+  "differentiators_vs_public_rollups": [
+    "Private by default - optional privacy at every level",
+    "Client-side proof generation - data never leaves user device",
+    "UTXO model for private state (vs account model)",
+    "Encrypted notes with nullifiers prevent double-spending while hiding ownership",
+    "Hybrid execution: private functions local, public functions on-chain",
+    "Composable privacy across multiple chains via bridges"
+  ],
+
+  "metadata": {
+    "confidence_score": 0.88,
+    "completeness": 92,
+    "sources_count": 25,
+    "research_host": "local",
+    "enhancement_track": "deep_research"
+  },
+
+  "gaps_and_missing_data": [
+    "Exact team size not publicly disclosed",
+    "Complete list of L1 contract addresses requires checking live deployment",
+    "Detailed tokenomics breakdown beyond sale allocation",
+    "Mainnet launch date still TBD",
+    "CertiK audit status - project not audited by CertiK according to their platform",
+    "Detailed validator economics and rewards structure"
+  ],
+
+  "sources": [
+    "https://aztec.network (Official website)",
+    "https://docs.aztec.network (Official documentation)",
+    "https://github.com/AztecProtocol (GitHub organization)",
+    "https://noir-lang.org/docs/ (Noir language docs)",
+    "https://aztec.network/blog/layer-by-layer-a-guide-to-aztecs-security-approach",
+    "https://aztec.network/blog/security-of-the-aztec-network-audits-of-bigfield",
+    "https://aztec.network/blog/decentralization-is-not-a-meme-part-1",
+    "https://aztec.network/blog/request-for-comments-aztec-sequencer-selection-and-prover-coordination-protocols",
+    "https://aztec.network/blog/introducing-aztec-nr-aztecs-private-smart-contract-framework",
+    "https://aztec.network/blog/privacy-abstraction-with-aztec",
+    "https://hackmd.io/@aztec-network/disclosure-of-recent-vulnerabilities",
+    "https://medium.com/aztec-protocol/aztec-raises-bug-bounty-to-2-million-for-critical-vulnerabilities-8e42df622659",
+    "https://a16zcrypto.com/posts/article/investing-in-aztec/",
+    "https://tracxn.com/d/companies/aztec",
+    "https://www.crunchbase.com/organization/aztec-protocol",
+    "https://aztec-labs.com/team",
+    "https://research.nansen.ai/articles/aztec-network-and-the-role-of-privacy-protocols",
+    "https://www.theblock.co/post/352776/aztec-network-launches-public-testnet-for-privacy-focused-ethereum-layer-2",
+    "https://skynet.certik.com/projects/aztec-network",
+    "https://www.nethermind.io/blog/our-first-deep-dive-into-noir-what-zk-auditors-learned",
+    "https://beincrypto.com/regulating-web3-aztec-ceo-future-privacy-tornado-cash-sanctions/",
+    "https://www.coingecko.com/learn/what-is-aztec-network-ethereum-privacy-layer-2",
+    "https://eprint.iacr.org/2019/953.pdf (PLONK paper)",
+    "GitHub API (repository metadata)",
+    "https://github.com/AztecProtocol/aztec-connect/blob/master/audits/Security%20Audit%20Results%20-%20Aztec%20Protocol.pdf"
+  ],
+
+  "research_metadata": {
+    "constitutional_research_complete": true,
+    "web_research_date": "2026-01-22",
+    "multi_source_verification": true,
+    "researcher_notes": "Aztec is one of the most significant privacy L2 projects on Ethereum, with strong cryptographic foundations (PLONK invention), substantial funding, and a commitment to day-one decentralization. The team's decision to sunset earlier products rather than progressively decentralize shows commitment to principles. Security posture is strong with multiple audits, $2M bug bounty, and responsible vulnerability disclosure. Main risks are regulatory uncertainty and unproven adoption post-mainnet."
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "project_name": "Hop Protocol",
+  "assessment_date": "2026-01-22",
+  "methodology": "constitutional_research_v3_bridge_extension",
+
+  "overview": {
+    "description": "Liquidity Network enabling fast cross-chain token transfers between Ethereum L1 and L2s using optimistic message passing with Bonder-provided liquidity",
+    "website": "https://hop.exchange",
+    "github": "https://github.com/hop-protocol",
+    "documentation": "https://docs.hop.exchange",
+    "launch_date": "2021",
+    "founder": "Christopher Winfrey",
+    "tvl_usd": "3250000",
+    "tvl_updated": "2026-01-22"
+  },
+
+  "supported_chains": [
+    "Ethereum Mainnet",
+    "Arbitrum",
+    "Optimism",
+    "Polygon",
+    "Gnosis Chain"
+  ],
+
+  "supported_assets": [
+    "ETH",
+    "USDC",
+    "USDT",
+    "DAI",
+    "MATIC",
+    "HOP",
+    "SNX"
+  ],
+
+  "trust_model": {
+    "type": "optimistic",
+    "mechanism": "Bonder-based liquidity with 24-hour challenge period",
+    "validator_count": "Whitelisted Bonders (permissioned)",
+    "multisig_threshold": "2-of-3",
+    "multisig_role": "Manages bridge parameters, bond sizes, challenge periods, and Bonder whitelist",
+    "permissioned": true,
+    "bonder_requirements": {
+      "collateral": "110% of transfer root value",
+      "challenge_window_hours": 24,
+      "slashing_penalty": "Fraudulent transfer value + 10% bounty to challenger",
+      "fallback_mechanism": "If all Bonders offline, transfers settle via native rollup exit (7+ day delay)"
+    },
+    "decentralization_status": "Working toward fully decentralizing Bonder role",
+    "confidence": 0.9
+  },
+
+  "security_mechanism": {
+    "how_it_works": [
+      "1. User sends tokens on source chain",
+      "2. Bonder runs verifier node, validates source chain state",
+      "3. Bonder bonds 110% collateral and mints hTokens on destination",
+      "4. hTokens swapped to canonical tokens via AMM on destination",
+      "5. Transfer roots batched and sent to L1 via native AMB (~1 week)",
+      "6. 24-hour challenge period for anyone to dispute invalid roots",
+      "7. If unchallenged, Bonder reclaims collateral"
+    ],
+    "challenge_system": {
+      "challenger_stake": "Equal to challenged transfer root bond",
+      "reward_if_successful": "Stake returned + 75% of Bonder's 10% bounty",
+      "penalty_if_failed": "Challenger stake goes to Bonder",
+      "burn_on_success": "25% of Bonder bounty burned",
+      "open_source_watcher": "Challenge Watcher available for anyone to run"
+    },
+    "htoken_mechanism": "Specialized bridge tokens (hETH, hDAI) that can transfer rollup-to-rollup in batches, converted via AMM to canonical tokens"
+  },
+
+  "smart_contracts": {
+    "verified": true,
+    "upgradeable": false,
+    "upgrade_timelock_hours": 24,
+    "proxy_admin": "2-of-3 multisig",
+    "formal_verification": false,
+    "core_contracts": [
+      "Accounting.sol - Bonder collateral and credit tracking",
+      "Bridge.sol - Base withdrawal and settlement logic",
+      "L1_Bridge.sol - L1 transfer operations and root bonding",
+      "L2_Bridge.sol - L2 minting and cross-chain transfers",
+      "HopBridgeToken.sol - hToken ERC20 implementation"
+    ],
+    "chain_specific": [
+      "L2_ArbitrumBridge.sol",
+      "L2_OptimismBridge.sol",
+      "L2_XDaiBridge.sol"
+    ],
+    "immutable_on_ethereum": true
+  },
+
+  "audits": [
+    {
+      "date": "2021-05",
+      "auditor": "Solidified",
+      "scope": "Core bridge contracts",
+      "critical_findings": 0,
+      "high_findings": 0,
+      "all_fixed": true,
+      "report_url": "https://s3.us-west-1.amazonaws.com/assets.hop.exchange/reports/Audit_Report_-_Hop_05.05.2021.pdf"
+    },
+    {
+      "date": "2021-05",
+      "auditor": "Monoceros Alpha (Clean Unicorn)",
+      "scope": "Core bridge contracts",
+      "critical_findings": 0,
+      "high_findings": 0,
+      "all_fixed": true,
+      "report_url": "https://github.com/hop-protocol/contracts/tree/master/audits"
+    }
+  ],
+
+  "exploits": [],
+
+  "bug_bounty": {
+    "active": false,
+    "platform": "None documented",
+    "max_payout": "Unknown",
+    "continuous_monitoring": "CertiK Skynet (reported but not verified)",
+    "note": "DeFiSafety found no bug bounty program in documentation - significant gap"
+  },
+
+  "governance": {
+    "token": "HOP",
+    "total_supply": "1,000,000,000",
+    "dao_name": "Hop DAO",
+    "dao_controls": [
+      "Supported L2 networks",
+      "Supported tokens",
+      "Treasury management",
+      "Protocol parameters"
+    ],
+    "token_distribution": {
+      "treasury": "60%",
+      "team": "25%",
+      "airdrop": "8%",
+      "other": "7%"
+    },
+    "governance_url": "https://forum.hop.exchange"
+  },
+
+  "privacy_features": {
+    "shielded_transfers": false,
+    "metadata_protection": false,
+    "censorship_resistant": false,
+    "surveillance_risk": "high",
+    "privacy_analysis": {
+      "timing_correlation": "HIGH - Transfer times visible on both chains",
+      "amount_correlation": "HIGH - Matching amounts easily linkable",
+      "address_linkage": "HIGH - Same address typically used on both chains",
+      "bonder_observation": "MEDIUM - Whitelisted Bonders see all transfer data",
+      "recommendation": "Not suitable for privacy-focused transfers. Consider shielded bridges (Aztec, Webb) for privacy needs."
+    }
+  },
+
+  "operational_security": {
+    "relayer_infrastructure": "Decentralized Bonder network (but permissioned)",
+    "oracle_dependency": "None - relies on native chain AMBs",
+    "admin_key_storage": "2-of-3 multisig",
+    "incident_response": "Not documented"
+  },
+
+  "third_party_assessments": {
+    "l2beat": {
+      "url": "https://l2beat.com/bridges/projects/hop",
+      "tvl": "$3.25M",
+      "classification": "Liquidity Network with optimistic validation",
+      "warnings": [
+        "Invalid message bundles could succeed if unchallenged for 24 hours",
+        "Destination token contracts may be upgradeable",
+        "Destination chain AMBs could censor messages"
+      ]
+    },
+    "defisafety": {
+      "url": "https://www.defisafety.com/app/pqrs/433",
+      "score": "67% (FAIL)",
+      "date": "2022-04-21",
+      "strengths": [
+        "Multiple audits completed (100% audit score)",
+        "Good documentation quality",
+        "959 GitHub commits showing active development",
+        "Excellent test-to-code ratio (1121%)"
+      ],
+      "weaknesses": [
+        "No bug bounty program (0%)",
+        "Poor admin controls documentation (11%)",
+        "24-hour timelock below 48-hour recommendation",
+        "Ownership structure unclear"
+      ]
+    }
+  },
+
+  "security_rating": "MEDIUM",
+  "security_rating_justification": "Hop Protocol uses an optimistic security model with economic guarantees (110% collateral, 24-hour challenge period) that has proven effective with no exploits since 2021 launch. However, the permissioned Bonder whitelist, lack of documented bug bounty program, and reliance on active challenge watchers introduce trust assumptions. The 2-of-3 multisig control over critical parameters and 24-hour timelock (below recommended 48-hour) present moderate centralization risks. Multiple audits before launch and clean security track record are positive indicators.",
+
+  "risk_summary": {
+    "primary_risks": [
+      "Permissioned Bonder whitelist - not fully decentralized",
+      "24-hour challenge window requires active watchers",
+      "2-of-3 multisig can change critical parameters",
+      "No documented bug bounty program",
+      "If all watchers fail, invalid transfers could succeed"
+    ],
+    "mitigating_factors": [
+      "No exploits or security incidents since 2021 launch",
+      "110% collateral requirement creates strong economic disincentives",
+      "Open-source Challenge Watcher available",
+      "Multiple pre-launch audits with all findings addressed",
+      "Fallback to native rollup exits if Bonders offline",
+      "Active DAO governance with HOP token"
+    ],
+    "worst_case_scenario": "If all Bonders go offline, transfers experience standard rollup exit delays (7+ days). If a malicious Bonder submits invalid transfer root AND no one challenges for 24 hours, fraudulent withdrawal could succeed (capped by Bonder's collateral)."
+  },
+
+  "gaps_and_missing_data": [
+    "Specific number of active Bonders not publicly documented",
+    "Challenge Watcher operator count unknown",
+    "Bug bounty program status needs verification",
+    "Multisig key holder identities not fully disclosed",
+    "Insurance/backing status unclear",
+    "Detailed incident response procedures not documented"
+  ],
+
+  "sources": [
+    "https://hop.exchange",
+    "https://docs.hop.exchange",
+    "https://github.com/hop-protocol/contracts",
+    "https://l2beat.com/bridges/projects/hop",
+    "https://www.defisafety.com/app/pqrs/433",
+    "https://s3.us-west-1.amazonaws.com/assets.hop.exchange/reports/Audit_Report_-_Hop_05.05.2021.pdf",
+    "https://help.hop.exchange/hc/en-us/articles/4406104412685-What-happens-if-The-Bonder-bonds-fraudulent-transactions-",
+    "https://forum.hop.exchange",
+    "https://beincrypto.com/learn/hop-protocol/",
+    "https://consensys.io/blog/how-to-bridge-your-assets-using-hop-protocol",
+    "https://blog.li.fi/hop-protocol-a-deep-dive-5075eddc4dd"
+  ]
+}

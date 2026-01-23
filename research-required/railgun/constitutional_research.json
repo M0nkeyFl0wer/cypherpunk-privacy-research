@@ -1,79 +1,356 @@
 {
-  "project_name": "railgun",
-  "research_timestamp": "2025-10-04T18:39:32-07:00",
-  "research_method": "seshat_track1_multiSource",
-  "project_overview": {
-    "name": "railgun",
-    "confidence": 0.5
-  },
-  "github_data": {
-    "message": "API rate limit exceeded for 66.183.173.49. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)",
-    "documentation_url": "https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"
-  },
-  "metadata": {
+  "project_name": "RAILGUN",
+  "research_date": "2026-01-22",
+  "research_framework": "Constitutional Research Framework v3",
+  "overall_confidence_score": 0.92,
+  "previous_research": {
+    "research_timestamp": "2025-10-04T18:39:32-07:00",
     "confidence_score": 0.75,
-    "completeness": 65,
-    "sources_count": 3,
-    "research_host": "seshat",
-    "enhancement_track": "track1_gap_filling"
+    "status": "superseded_by_comprehensive_analysis"
   },
-  "gaps_and_missing_data": [
-    "Full research pending - initial data only"
-  ],
-  "sources": [
-    "GitHub API"
-  ],
-  "enhancement_timestamp": "2025-10-04T19:01:25-07:00",
-  "github_enhanced": {},
-  "web3privacy_data": {
-    "error": true,
-    "url": "https://explorer.web3privacy.info/api/project/railgun",
-    "statusCode": 404,
-    "statusMessage": "Page not found: /api/project/railgun",
-    "message": "Page not found: /api/project/railgun",
-    "data": {
-      "path": "/api/project/railgun"
+
+  "discovery": {
+    "official_website": {
+      "url": "https://railgun.org",
+      "verified": true,
+      "confidence": 1.0,
+      "source": "Direct verification via WebFetch"
+    },
+    "documentation": {
+      "url": "https://docs.railgun.org",
+      "verified": true,
+      "confidence": 1.0
+    },
+    "github_repositories": {
+      "main_organization": "https://github.com/Railgun-Privacy",
+      "community_organization": "https://github.com/Railgun-Community",
+      "key_repos": [
+        {
+          "name": "contract",
+          "url": "https://github.com/Railgun-Privacy/contract",
+          "description": "Smart contract implementations (70.5% TypeScript, 29.1% Solidity)",
+          "commits": 494
+        },
+        {
+          "name": "engine",
+          "url": "https://github.com/Railgun-Community/engine",
+          "description": "JavaScript library to interact with RAILGUN smart contracts"
+        },
+        {
+          "name": "wallet",
+          "url": "https://github.com/Railgun-Community/wallet",
+          "description": "SDK for dApp/DeFi developers to enable privacy features"
+        },
+        {
+          "name": "private-proof-of-innocence",
+          "url": "https://github.com/Railgun-Community/private-proof-of-innocence",
+          "description": "PPOI Node and Dashboard for bad transaction prevention"
+        }
+      ],
+      "verified": true,
+      "confidence": 1.0,
+      "source": "GitHub search and WebFetch verification"
+    },
+    "smart_contracts": {
+      "ethereum": {
+        "relay_proxy": "0xfa7093cdd9ee6932b4eb2c9e1cde7ce00b1fa4b9",
+        "implementation": "0xb4f2d77bd12c6b548ae398244d7fad4abce4d89b",
+        "rail_token": "0xe76C6c83af64e4C60245D8C7dE953DF673a7A33D",
+        "treasury_proxy": "0xe8a8b458bcd1ececc6b6b58f80929b29ccecff40",
+        "relay_adapt": "0xc3f2C8F9d5F0705De706b1302B7a039e1e11aC88",
+        "verified_on_etherscan": true
+      },
+      "arbitrum": {
+        "relay_contract": "0xFA7093CDD9EE6932B4eb2c9e1cde7CE00B1FA4b9",
+        "additional": "0x3b374464a714525498e445ba050b91571937bfc8"
+      },
+      "polygon": {
+        "contracts": [
+          "0xdca05161ee5b5fa6df170191c88857e70ffb4094",
+          "0xc3f2c8f9d5f0705de706b1302b7a039e1e11ac88",
+          "0x25f795A8eC8aF7904aa403fF2Cc7205ce683BF52",
+          "0x9AC2bA4bf7FaCB0bbB33447e5fF8f8D63B71dDC1"
+        ]
+      },
+      "bsc": {
+        "contracts": [
+          "0x590162bf4b50f6576a459b75309ee21d92178a10",
+          "0xdca05161eE5b5FA6DF170191c88857E70FFB4094",
+          "0xc3f2c8f9d5f0705de706b1302b7a039e1e11ac88",
+          "0xa7A9582C2563a1b923dbff6a8A2fa625ee2FB1f8",
+          "0x753f0f9ba003dda95eb9284533cf5b0f19e441dc"
+        ]
+      },
+      "contract_pattern": "EIP-1967 Transparent Proxy",
+      "confidence": 0.95,
+      "source": "Etherscan verification, web search results"
     }
   },
-  "market_data": {},
-  "on_chain_analysis": {
-    "project_name": "railgun",
-    "analysis_timestamp": "2025-10-04T19:01:43-07:00",
-    "analysis_method": "seshat_track2_blockchain",
-    "contract_search": {
-      "github_contracts": [],
-      "known_addresses": [
-        ""
+
+  "security_analysis": {
+    "audits": {
+      "total_audits": "10+",
+      "audit_firms": [
+        "Trail of Bits",
+        "ABDK Consulting",
+        "Hashcloak",
+        "Zokyo",
+        "Pessimistic",
+        "Hacken",
+        "Halborn (scheduled)"
       ],
-      "explorers_checked": [
-        "etherscan",
-        "github"
+      "notable_results": {
+        "zokyo_score": "100/100 (highest score ever given by Zokyo)",
+        "audit_access": "https://assets.railgun.org/docs/audits/",
+        "trustblock_transparency": "All audits publicly accessible via Trustblock"
+      },
+      "ongoing_security": "Continuous audit relationships with multiple firms",
+      "confidence": 0.95,
+      "source": "Multiple web sources, official documentation"
+    },
+    "trust_model": {
+      "broadcaster_network": {
+        "description": "Decentralized network of relayers that submit transactions on behalf of users",
+        "trust_properties": [
+          "No custody of funds - broadcasters never hold user assets",
+          "Cannot decrypt or modify transaction details",
+          "Economic disincentives for misbehavior (gas costs without fee completion)",
+          "Permissionless participation - anyone can run a broadcaster"
+        ],
+        "communication_protocol": "Waku peer-to-peer messaging (decentralized, privacy-preserving)",
+        "fee_structure": "Default 10% premium to gas fees, user-selectable broadcasters",
+        "game_theory": "Only requires 1 cooperative broadcaster for transaction success"
+      },
+      "trusted_setup": {
+        "type": "Perpetual Powers of Tau MPC ceremony",
+        "security_model": "Secure if at least 1 participant is honest",
+        "unlimited_participants": true,
+        "industry_standard": "Same approach used by Zcash, Filecoin, Ethereum Semaphore"
+      },
+      "smart_contract_verification": {
+        "snark_proof_verification": "Contracts verify zk-SNARK proofs without signature",
+        "on_chain_verifiers": "EIP-197 and EIP-198 enable on-chain circuit verification"
+      },
+      "confidence": 0.90
+    },
+    "known_exploits_vulnerabilities": {
+      "protocol_exploits": "None known - RAILGUN smart contracts have not been directly exploited",
+      "related_incidents": [
+        {
+          "incident": "zkLend Hack (February 2025)",
+          "amount": "$4.9M-$9.5M stolen from Starknet",
+          "railgun_involvement": "Hacker attempted to use RAILGUN to launder funds",
+          "outcome": "RAILGUN's automated PPOI system blocked the deposit, funds returned to original wallet"
+        },
+        {
+          "incident": "Upbit Hack (November 2025)",
+          "amount": "$36M+ stolen",
+          "railgun_involvement": "Hacker successfully used RAILGUN to mix some funds",
+          "outcome": "PPOI list was outdated due to rapid address hopping by hacker"
+        },
+        {
+          "incident": "Harmony Horizon Bridge Hack (June 2022)",
+          "amount": "$100M stolen by Lazarus Group",
+          "railgun_involvement": "Lazarus Group laundered ~$60M ETH through RAILGUN in January 2023",
+          "outcome": "Portion of funds frozen in coordination with exchanges; led to PPOI development"
+        }
+      ],
+      "security_response": "PPOI system developed to prevent illicit fund mixing",
+      "confidence": 0.88
+    },
+    "ofac_sanctions_status": {
+      "current_status": "NOT SANCTIONED",
+      "comparison_to_tornado_cash": {
+        "tornado_cash_sanctioned": "August 8, 2022 by OFAC",
+        "tornado_cash_delisted": "March 2025 (Fifth Circuit Court ruling)",
+        "railgun_status": "Never sanctioned despite Lazarus Group usage"
+      },
+      "regulatory_differentiation": {
+        "proactive_compliance": "PPOI system using Chainalysis OFAC list by default",
+        "treasury_recognition": "Under Secretary Brian Nelson acknowledged difference between 'obfuscation' and 'privacy-enhancing services'",
+        "co_founder_cooperation": "RAILGUN co-founder has communicated with federal authorities"
+      },
+      "risk_assessment": {
+        "level": "MODERATE",
+        "factors": [
+          "Historical use by Lazarus Group for money laundering",
+          "PPOI system can be bypassed with rapid address changes",
+          "Regulatory environment for privacy protocols remains uncertain",
+          "No explicit regulatory approval or safe harbor"
+        ],
+        "mitigating_factors": [
+          "Proactive PPOI compliance system",
+          "Transparent audit history",
+          "Cooperation with authorities",
+          "Vitalik Buterin public endorsement and usage"
+        ]
+      },
+      "confidence": 0.85,
+      "source": "FBI press releases, Treasury statements, court rulings, news reports"
+    }
+  },
+
+  "privacy_technology": {
+    "cryptographic_foundation": {
+      "primary_technology": "zk-SNARKs (Zero-Knowledge Succinct Non-Interactive Arguments of Knowledge)",
+      "proving_system": "Groth16",
+      "elliptic_curve": "ECC (Elliptic Curve Cryptography) for smaller keys and succinct proofs",
+      "eips_used": ["EIP-197", "EIP-198"],
+      "circuit_count": 54,
+      "circuit_purpose": "Different input/output combinations for gas optimization"
+    },
+    "private_defi_capabilities": [
+      "Shield ERC-20 tokens into private addresses",
+      "Shield ERC-721 (NFT) tokens",
+      "Shield ERC-1155 (multi-token) assets",
+      "Private transfers between 0zk addresses",
+      "Private DEX swaps",
+      "Private lending/borrowing interactions",
+      "Private smart contract calls"
+    ],
+    "shielded_transfer_mechanism": {
+      "process": [
+        "1. Create: User generates non-custodial RAILGUN wallet with private 0zk address",
+        "2. Shield: Tokens deposited into 0zk address, entering encrypted state",
+        "3. Transact: All balances and transactions become encrypted",
+        "4. Use: Transfer between 0zk addresses or interact with DeFi privately"
+      ],
+      "utxo_model": "Uses UTXOs (Unspent Transaction Outputs) similar to Bitcoin/Zcash",
+      "proof_generation": "Client-side zk-SNARK proof generation, on-chain verification"
+    },
+    "private_proofs_of_innocence": {
+      "description": "Decentralized bad transaction prevention system",
+      "how_it_works": [
+        "Monitors tokens entering RAILGUN smart contract",
+        "Verifies tokens are not from known illicit sources",
+        "Generates ZK proof of non-inclusion in blocklist",
+        "Proofs carry forward through all subsequent transactions"
+      ],
+      "blocklist_providers": [
+        "Chainalysis (default OFAC list)",
+        "Elliptic",
+        "ScamSniffer",
+        "PureFi",
+        "SlowMist"
+      ],
+      "standby_period": "1 hour before shielded tokens can be used (allows list updates)",
+      "accumulator_system": "Merkle tree accumulator for blinded proof verification",
+      "privacy_preservation": "No data shared with list providers; only yes/no inclusion check",
+      "user_flexibility": "Users can select jurisdiction-specific lists (EU, US, etc.)"
+    },
+    "viewing_keys": {
+      "description": "Shareable read-only keys for transaction history",
+      "use_cases": ["Tax reporting", "Compliance audits", "Proof of funds"]
+    },
+    "confidence": 0.95
+  },
+
+  "protocol_metrics": {
+    "total_value_locked": {
+      "current_tvl": "$106-113M (as of late 2025)",
+      "historical_growth": {
+        "january_2023": "$3M",
+        "january_2024": "$14M",
+        "december_2024": "$90M",
+        "november_2025": "$95M"
+      },
+      "growth_rate": "30x increase over 2 years"
+    },
+    "transaction_volume": {
+      "total_shielded_volume": "$4B+ since inception (2021)",
+      "2025_volume": "$1.6B",
+      "monthly_average_2025": "$151.4M",
+      "dominant_asset": "WETH (76% of volume)"
+    },
+    "fee_revenue": {
+      "q3_2025": "$1.31M"
+    },
+    "launch_date": "July 2021",
+    "supported_chains": ["Ethereum", "Polygon", "Arbitrum", "BSC"],
+    "planned_chains": ["Polkadot", "Solana"],
+    "confidence": 0.90,
+    "source": "DefiLlama, official documentation, news reports"
+  },
+
+  "governance": {
+    "structure": "RAILGUN DAO",
+    "governance_token": "RAIL",
+    "token_address_ethereum": "0xe76C6c83af64e4C60245D8C7dE953DF673a7A33D",
+    "multi_chain_tokens": {
+      "ethereum": "RAIL",
+      "polygon": "RAILPOLY",
+      "bsc": "RAILBSC"
+    },
+    "decentralization": "Fully decentralized, no central company",
+    "staking": "DAO staking and governance (also audited by Zokyo)"
+  },
+
+  "notable_endorsements": {
+    "vitalik_buterin": {
+      "usage": "Transferred 662 ETH (~$1.91M) to RAILGUN over 10 months",
+      "notable_transaction": "400 ETH ($1.05M) on August 19, 2024",
+      "public_statements": "Emphasized importance of RAILGUN's privacy pools"
+    },
+    "ethereum_foundation": {
+      "recognition": "RAILGUN incorporated into Kohaku toolkit (October 2025)"
+    }
+  },
+
+  "comparison_to_alternatives": {
+    "vs_tornado_cash": {
+      "similarity": "Both use zk-SNARKs for privacy",
+      "differences": [
+        "RAILGUN: Full DeFi privacy vs Tornado Cash: Simple mixing",
+        "RAILGUN: PPOI compliance system vs Tornado Cash: No compliance features",
+        "RAILGUN: Never sanctioned vs Tornado Cash: OFAC sanctioned (later reversed)",
+        "RAILGUN: On-chain privacy pools vs Tornado Cash: Fixed denomination pools"
       ]
     },
-    "on_chain_metrics": {
-      "contract_found": false,
-      "deployment_network": "ethereum",
-      "analysis_status": "preliminary"
-    },
-    "metadata": {
-      "confidence_score": 0.6,
-      "data_source": "block_explorers",
-      "requires_manual_verification": true
-    },
-    "next_steps": [
-      "Verify contract addresses",
-      "Analyze transaction patterns",
-      "Check audit reports on-chain"
+    "vs_aztec": {
+      "railgun": "Layer 1 on-chain solution, live since 2021",
+      "aztec": "Layer 2 rollup approach, more centralized during development"
+    }
+  },
+
+  "research_gaps": {
+    "items_requiring_verification": [
+      "Complete list of all audit findings (critical/high severity issues)",
+      "Detailed PPOI blocklist update frequency and coverage",
+      "Exact number of trusted setup ceremony participants",
+      "Current active broadcaster count"
+    ],
+    "areas_for_deeper_research": [
+      "Long-term regulatory trajectory given evolving sanctions landscape",
+      "PPOI effectiveness against sophisticated laundering techniques",
+      "Cross-chain bridge security implications"
     ]
   },
-  "website": "https://railgun.io",
-  "website_confidence": 0.85,
-  "website_sources": [
-    "https://railgun.io",
-    "seshat domain discovery"
-  ],
-  "research_metadata": {
-    "batch3_seshat_processed": true,
-    "seshat_website_found": true
+
+  "sources": {
+    "primary": [
+      "https://railgun.org",
+      "https://docs.railgun.org",
+      "https://github.com/Railgun-Privacy",
+      "https://github.com/Railgun-Community",
+      "https://etherscan.io/address/0xfa7093cdd9ee6932b4eb2c9e1cde7ce00b1fa4b9"
+    ],
+    "security_audits": [
+      "https://assets.railgun.org/docs/audits/",
+      "https://trustblock.run/blog/how-the-railgun-protocol-sets-the-new-standard-for-privacy"
+    ],
+    "regulatory_legal": [
+      "https://www.fbi.gov/news/press-releases/fbi-confirms-lazarus-group-cyber-actors-responsible-for-harmonys-horizon-bridge-currency-theft",
+      "https://coinmarketcap.com/academy/article/privacy-protocol-railgun-dismisses-north-korea-laundering-claims",
+      "https://www.dlnews.com/articles/defi/railgun-co-founder-talks-crypto-privacy-and-tornado-cash/"
+    ],
+    "technical": [
+      "https://docs.railgun.org/wiki/learn/privacy-system/zero-knowledge-cryptography",
+      "https://docs.railgun.org/wiki/assurance/private-proofs-of-innocence",
+      "https://docs.railgun.org/wiki/learn/privacy-system/trusted-setup-ceremony"
+    ],
+    "metrics": [
+      "https://defillama.com/protocol/railgun",
+      "https://medium.com/@Railgun_Project/railgun-2024-a-year-in-review-fb93e6420172"
+    ]
   }
 }

@@ -1,13 +1,3 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/feedback/page": "app/feedback/page.js",
-  "/lessons/page": "app/lessons/page.js",
-  "/methodology/page": "app/methodology/page.js",
-  "/page": "app/page.js",
-  "/postmortem/page": "app/postmortem/page.js",
-  "/portal/page": "app/portal/page.js",
-  "/search/page": "app/search/page.js",
-  "/projects/page": "app/projects/page.js",
-  "/project/[id]/page": "app/project/[id]/page.js",
-  "/projects/[slug]/page": "app/projects/[slug]/page.js"
+  "/page": "app/page.js"
 }

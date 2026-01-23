@@ -1,0 +1,35 @@
+{
+  "name": "LayerZero",
+  "slug": "layerzero",
+  "category": "Cross-Chain Infrastructure",
+  "subcategory": "Omnichain Messaging Protocol",
+  "description": "Open-source, immutable messaging protocol enabling cross-chain communication for omnichain applications across 120+ blockchains",
+  "website": "https://layerzero.network/",
+  "github": "https://github.com/LayerZero-Labs",
+  "documentation": "https://docs.layerzero.network/v2",
+  "token": {
+    "symbol": "ZRO",
+    "network": "Ethereum",
+    "type": "Governance/Utility"
+  },
+  "supported_chains": 120,
+  "daily_volume": "$293M",
+  "total_volume_secured": "$50B+",
+  "security_rating": "MEDIUM-HIGH",
+  "audit_count": 11,
+  "bug_bounty_max": "$15,000,000",
+  "architecture_version": "V2",
+  "trust_model": "DVN (Decentralized Verifier Networks)",
+  "related_projects": ["Stargate Finance"],
+  "tags": [
+    "cross-chain",
+    "omnichain",
+    "messaging-protocol",
+    "interoperability",
+    "bridge-infrastructure",
+    "dvn",
+    "multichain"
+  ],
+  "research_status": "complete",
+  "last_updated": "2026-01-22"
+}

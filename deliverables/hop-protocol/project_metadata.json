@@ -1,0 +1,32 @@
+{
+  "project_name": "Hop Protocol",
+  "category": "bridges",
+  "status": "active",
+  "ecosystem": "ethereum",
+  "technology": "optimistic-bridge",
+  "description": "Cross-chain token bridge enabling fast L2-to-L2 transfers using Bonder liquidity network and hToken AMM mechanism",
+  "website": "https://hop.exchange",
+  "github": "https://github.com/hop-protocol",
+  "documentation": "https://docs.hop.exchange",
+  "governance_forum": "https://forum.hop.exchange",
+  "token": "HOP",
+  "discovery_date": "2026-01-22T00:00:00Z",
+  "discovery_source": "constitutional_research_v3",
+  "research_progress": {
+    "status": "complete",
+    "completion_percent": 95,
+    "last_updated": "2026-01-22T00:00:00Z"
+  },
+  "supported_chains": [
+    "Ethereum",
+    "Arbitrum",
+    "Optimism",
+    "Polygon",
+    "Gnosis"
+  ],
+  "trust_model": "optimistic",
+  "security_rating": "MEDIUM",
+  "tvl_usd": "3250000",
+  "launch_year": 2021,
+  "exploit_history": []
+}

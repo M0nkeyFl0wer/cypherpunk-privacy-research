@@ -1,11 +1,17 @@
 {
-  "project_name": "Aztec",
-  "category": "unknown",
+  "project_name": "Aztec Network",
+  "category": "Privacy L2 / zkRollup",
   "status": "active",
   "discovery_date": "2025-09-29T15:10:44.565463",
   "discovery_source": "web_search_manual",
   "github": "https://github.com/AztecProtocol/aztec-packages",
   "github_source": "Web Search Manual 2025-09-29",
   "github_confidence": "high",
-  "github_org": "https://github.com/AztecProtocol"
+  "github_org": "https://github.com/AztecProtocol",
+  "website": "https://aztec.network",
+  "documentation": "https://docs.aztec.network",
+  "ecosystem": "Ethereum",
+  "privacy_technology": "zk-SNARKs (PLONK)",
+  "constitutional_research_complete": true,
+  "research_date": "2026-01-22"
 }

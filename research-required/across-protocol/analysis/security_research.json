@@ -1,0 +1,273 @@
+{
+  "project": "Across Protocol",
+  "research_date": "2026-01-22",
+  "research_framework": "Constitutional Framework v3",
+  "security_rating": "B+",
+  "security_rating_rationale": "Strong security architecture with 10+ OpenZeppelin audits, zero hacks since 2021, innovative intent-based design eliminating honeypot risks. Downgraded from A due to: (1) recent governance manipulation allegations, (2) reliance on external UMA oracle infrastructure, (3) some audit issues remain acknowledged but unresolved.",
+
+  "discovery": {
+    "website": "https://across.to",
+    "github": "https://github.com/across-protocol",
+    "documentation": "https://docs.across.to",
+    "github_repositories": {
+      "total": 34,
+      "primary": [
+        {"name": "contracts", "language": "Solidity", "stars": 134, "forks": 79, "updated": "2026-01-22"},
+        {"name": "relayer", "language": "TypeScript", "stars": 84, "forks": 102, "updated": "2026-01-22"},
+        {"name": "frontend", "language": "TypeScript", "stars": 54, "forks": 65, "updated": "2026-01-22"},
+        {"name": "sdk", "language": "TypeScript", "stars": 24, "forks": 25, "updated": "2026-01-22"}
+      ]
+    },
+    "uma_integration": {
+      "component": "Optimistic Oracle",
+      "purpose": "Dispute resolution and transaction verification",
+      "mechanism": "1-of-N security model - requires only one honest actor to dispute invalid claims"
+    }
+  },
+
+  "security": {
+    "audit_history": {
+      "primary_auditor": "OpenZeppelin",
+      "total_audits": 10,
+      "audits": [
+        {
+          "name": "Across V3 Incremental Audit",
+          "date": "February 2024",
+          "period": "January 8 - January 30, 2024",
+          "findings": {
+            "critical": 0,
+            "high": 0,
+            "medium": 4,
+            "low": 7,
+            "notes": 16,
+            "total": 27,
+            "resolved": 25
+          },
+          "key_findings": [
+            "Deadline Buffer Not Respected - Resolved",
+            "Blacklisted Address Refund Failure - Acknowledged",
+            "EIP-712 Non-Compliance - Resolved",
+            "Polygon Lock Bypass - Resolved"
+          ]
+        },
+        {
+          "name": "L3 Support Audit",
+          "findings": {
+            "critical": 1,
+            "high": 2,
+            "medium": 8,
+            "low": 3,
+            "notes": 14,
+            "total": 29,
+            "resolved": 26
+          }
+        },
+        {
+          "name": "Sponsored Periphery Audit",
+          "findings": {
+            "critical": 0,
+            "high": 4,
+            "medium": 5,
+            "low": 11,
+            "notes": 12,
+            "total": 36,
+            "resolved": 32
+          },
+          "key_findings": [
+            "Issues in execution context",
+            "Token configuration problems",
+            "Internal accounting logic issues"
+          ]
+        },
+        {
+          "name": "SVM Solidity Audit",
+          "key_findings": [
+            "Critical: Valid duplicate fills could be executed leading to fund loss",
+            "Hash derivation differences between SpokePool versions"
+          ]
+        },
+        {
+          "name": "Arbitrum CustomGasToken Diff Audit",
+          "findings": {
+            "critical": 1,
+            "high": 0,
+            "medium": 1,
+            "low": 4,
+            "notes": 7,
+            "total": 13,
+            "resolved": 8
+          }
+        }
+      ]
+    },
+    "optimistic_relaying_mechanism": {
+      "description": "Intent-based architecture where relayers compete to fulfill user bridge requests",
+      "process": [
+        "1. User submits bridge request (intent) on source chain",
+        "2. Relayers compete to fulfill by fronting funds on destination chain",
+        "3. Dataworker aggregates fulfilled intents into repayment bundle",
+        "4. Bundle submitted to UMA's Optimistic Oracle for verification",
+        "5. Dispute window allows anyone to challenge invalid claims",
+        "6. If unchallenged, relayers are reimbursed from liquidity pool"
+      ],
+      "speed": "Most users receive funds in under 3 seconds",
+      "gas_efficiency": "O(1) scaling for repayment vs O(N) in traditional approaches"
+    },
+    "security_incidents": {
+      "total_hacks": 0,
+      "funds_lost": "$0",
+      "volume_processed_safely": "$20.7B+"
+    },
+    "bug_bounty": {
+      "platform": "Not confirmed on Immunefi",
+      "status": "Security disclosures encouraged via documentation",
+      "details_url": "https://docs.across.to/user-docs/how-across-works/security"
+    }
+  },
+
+  "trust_model": {
+    "relayer_mechanism": {
+      "role": "Front capital for user transfers, earn fees upon verification",
+      "bonding": "Relayers must post bond as security",
+      "competition": "Market-driven competition creates natural security incentives",
+      "risk_bearing": "Relayers temporarily assume risk for user benefit"
+    },
+    "dispute_resolution": {
+      "system": "UMA Data Verification Mechanism (DVM)",
+      "process": [
+        "1. Dataworker proposes transaction details to Optimistic Oracle",
+        "2. Dispute window opens for challenges",
+        "3. If disputed, UMA token holders vote on validity",
+        "4. Economic incentives ensure honest behavior"
+      ],
+      "security_model": "1-of-N - only one honest actor needed to dispute invalid transfers"
+    },
+    "speed_vs_security_tradeoffs": {
+      "fast_path": "Relayers provide instant liquidity (sub-3 second fills)",
+      "verification": "Batch verification via Optimistic Oracle (delayed but gas-efficient)",
+      "settlement": "Canonical bridge settlement after oracle verification",
+      "tradeoff_summary": "Users get speed, relayers bear temporary risk, oracle provides eventual security"
+    },
+    "trust_assumptions": [
+      "UMA Optimistic Oracle operates correctly",
+      "At least one honest actor exists to dispute invalid claims",
+      "Relayer infrastructure remains operational",
+      "Canonical bridges on underlying L1/L2s are secure",
+      "No coordinated attack on UMA token holder voting"
+    ],
+    "canonical_assets": {
+      "description": "Only transfers authentic assets, not wrapped tokens",
+      "benefit": "Eliminates minting exploit vulnerabilities",
+      "mechanism": "Relayers front real assets; no locked funds creating honeypot"
+    }
+  },
+
+  "governance": {
+    "token": "ACX",
+    "mechanism": "Forum + Snapshot + oSnap",
+    "osnap_integration": {
+      "description": "Decentralized execution of approved proposals",
+      "benefit": "Eliminates multi-signature bottlenecks",
+      "security": "Economic dispute resolution through UMA"
+    },
+    "recent_controversies": {
+      "date": "2024-2025",
+      "allegations": [
+        "Governance manipulation via undisclosed wallets",
+        "Front-running Binance listing",
+        "150M ACX tokens transferred to Risk Labs via two proposals"
+      ],
+      "response": "Co-founder Hart Lambur denied allegations, claimed standard DAO practices",
+      "impact": "10% token price drop, ongoing community debate"
+    }
+  },
+
+  "risk_assessment": {
+    "strengths": [
+      "Zero security breaches since 2021",
+      "10+ comprehensive OpenZeppelin audits",
+      "No locked funds (eliminates honeypot risk)",
+      "Intent-based architecture shifts risk to professional relayers",
+      "1-of-N security model (only needs one honest actor)",
+      "Canonical assets only (no wrapped token risks)",
+      "$20.7B+ volume processed safely"
+    ],
+    "risks": [
+      "Dependency on UMA oracle infrastructure",
+      "Governance manipulation allegations (unresolved)",
+      "Some audit findings acknowledged but not resolved",
+      "Relayer centralization risk if few relayers dominate",
+      "L2 or canonical bridge failures could impact protocol",
+      "Complex multi-chain deployment increases attack surface"
+    ],
+    "recommendations": [
+      "Verify current bug bounty program status",
+      "Monitor governance transparency improvements",
+      "Track resolution of acknowledged audit findings",
+      "Assess relayer decentralization metrics"
+    ]
+  },
+
+  "sources": [
+    {
+      "title": "Why Across Has Never Been Hacked",
+      "url": "https://across.to/blog/why-across-has-never-been-hacked",
+      "type": "official"
+    },
+    {
+      "title": "Across Security Documentation",
+      "url": "https://docs.across.to/user-docs/how-across-works/security",
+      "type": "official"
+    },
+    {
+      "title": "Case Study: How UMA Secures Across Protocol",
+      "url": "https://blog.uma.xyz/articles/case-study-how-uma-secures-across-protocol",
+      "type": "official"
+    },
+    {
+      "title": "UMA's Optimistic Oracle Unpacked",
+      "url": "https://medium.com/uma-project/umas-optimistic-oracle-unpacked-an-across-protocol-case-study-0f203285efce",
+      "type": "official"
+    },
+    {
+      "title": "OpenZeppelin - Across V3 Incremental Audit",
+      "url": "https://www.openzeppelin.com/news/across-v3-incremental-audit",
+      "type": "audit"
+    },
+    {
+      "title": "OpenZeppelin - Across Protocol Diff Audit",
+      "url": "https://www.openzeppelin.com/news/across-protocol-diff-audit",
+      "type": "audit"
+    },
+    {
+      "title": "OpenZeppelin - Across SVM Solidity Audit",
+      "url": "https://blog.openzeppelin.com/across-protocol-svm-solidity-audit",
+      "type": "audit"
+    },
+    {
+      "title": "Across Protocol Bridge Security Analysis",
+      "url": "https://levex.com/en/blog/acx-bridge-security-analysis",
+      "type": "analysis"
+    },
+    {
+      "title": "LI.FI - Across Deep Dive",
+      "url": "https://li.fi/knowledge-hub/across-a-deep-dive/",
+      "type": "analysis"
+    },
+    {
+      "title": "Across DefiLlama",
+      "url": "https://defillama.com/protocol/across",
+      "type": "metrics"
+    },
+    {
+      "title": "ACX Governance Allegations - OKX",
+      "url": "https://www.okx.com/en-us/learn/acx-token-governance-allegations-market-impact",
+      "type": "news"
+    },
+    {
+      "title": "GitHub - Across Protocol",
+      "url": "https://github.com/across-protocol",
+      "type": "code"
+    }
+  ]
+}

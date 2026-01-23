@@ -1,70 +1,300 @@
 {
   "project_name": "polygon-nightfall",
-  "research_timestamp": "2025-10-04T18:39:28-07:00",
-  "research_method": "seshat_track1_multiSource",
-  "project_overview": {
-    "name": "polygon-nightfall",
-    "confidence": 0.5
+  "research_timestamp": "2026-01-22T12:00:00-05:00",
+  "research_method": "constitutional_framework_v3",
+  "constitutional_framework_version": "3.0",
+
+  "discovery": {
+    "official_resources": {
+      "websites": [
+        {
+          "url": "https://polygon.technology/blog/introducing-polygon-nightfall-mainnet-decentralized-private-transactions-for-enterprise",
+          "type": "official_announcement",
+          "confidence": 0.95
+        },
+        {
+          "url": "https://wiki.polygon.technology/docs/category/nightfall-protocol/",
+          "type": "official_documentation",
+          "confidence": 0.95
+        },
+        {
+          "url": "https://blockchain.ey.com/technology",
+          "type": "ey_blockchain_platform",
+          "confidence": 0.95
+        }
+      ],
+      "confidence": 0.95
+    },
+    "github_repositories": [
+      {
+        "name": "nightfall_3",
+        "url": "https://github.com/EYBlockchain/nightfall_3",
+        "description": "Mono-repo containing optimistic version of Nightfall (legacy)",
+        "language": "JavaScript",
+        "stars": 274,
+        "forks": 55,
+        "open_issues": 67,
+        "license": "CC0-1.0 (Public Domain)",
+        "created_at": "2021-04-29",
+        "last_pushed": "2024-10-09",
+        "status": "legacy_maintained",
+        "confidence": 0.98
+      },
+      {
+        "name": "nightfall_4_CE",
+        "url": "https://github.com/EYBlockchain/nightfall_4_CE",
+        "description": "Community Edition of Nightfall_4 - current version",
+        "language": "Rust",
+        "stars": 15,
+        "forks": 6,
+        "open_issues": 4,
+        "license": "CC0-1.0 (Public Domain)",
+        "created_at": "2025-04-10",
+        "last_pushed": "2026-01-22",
+        "status": "active_development",
+        "confidence": 0.98
+      },
+      {
+        "name": "nightfall-artifacts",
+        "url": "https://github.com/EYBlockchain/nightfall-artifacts",
+        "description": "Trusted setup and smart contract data for Nightfall nodes",
+        "status": "supporting_repository",
+        "confidence": 0.95
+      },
+      {
+        "name": "ZKPChallenge",
+        "url": "https://github.com/EYBlockchain/ZKPChallenge",
+        "description": "Challenge built on Nightfall Protocol",
+        "stars": 37,
+        "status": "educational",
+        "confidence": 0.90
+      }
+    ],
+    "network_status": {
+      "mainnet": {
+        "launched": true,
+        "launch_date": "2022-05-17",
+        "status": "mainnet_beta",
+        "details": "Limited beta release with wallet amount and validator restrictions",
+        "confidence": 0.90
+      },
+      "testnet": {
+        "active": true,
+        "duration": "6+ months before production beta (as of Jan 2023)",
+        "confidence": 0.85
+      },
+      "current_version": {
+        "name": "Nightfall_4",
+        "release_date": "2025-04-03",
+        "major_change": "Replaced optimistic rollup with full ZK rollup for near-instant finality",
+        "confidence": 0.95
+      }
+    },
+    "confidence": 0.92
   },
-  "github_data": {
-    "message": "API rate limit exceeded for 66.183.173.49. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)",
-    "documentation_url": "https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"
+
+  "security": {
+    "audits": {
+      "formal_audits": [],
+      "audit_status": "unaudited_at_beta_launch",
+      "planned_audits": {
+        "mentioned": true,
+        "details": "Thorough audit was planned before full mainnet release (per May 2022 announcement)",
+        "completion_status": "no_public_audit_report_found",
+        "confidence": 0.70
+      },
+      "confidence": 0.60
+    },
+    "ey_involvement": {
+      "role": "primary_developer_and_contributor",
+      "history": {
+        "initial_contribution": "2019 - EY contributed Nightfall to public domain",
+        "collaboration_start": "September 2021 - EY partnered with Polygon",
+        "ongoing_development": true,
+        "details": "EY is a Big Four accounting firm and primary developer of Nightfall technology"
+      },
+      "products_using_nightfall": [
+        {
+          "name": "EY OpsChain",
+          "description": "Enterprise blockchain services platform",
+          "platform": "Blockchain.ey.com"
+        },
+        {
+          "name": "EY Blockchain Analyzer",
+          "description": "Blockchain analysis and reconciliation tool"
+        },
+        {
+          "name": "EY OpsChain Supply Chain Manager",
+          "description": "Supply chain tracking with ZK privacy",
+          "launch_date": "2022-05"
+        }
+      ],
+      "confidence": 0.95
+    },
+    "enterprise_focus": {
+      "target_users": "enterprises",
+      "identity_requirements": {
+        "x509_certificates": true,
+        "details": "Users required to have enterprise-class X.509 identification certificate for deposit/withdraw",
+        "purpose": "Prevent anonymous usage while maintaining permissionless network model",
+        "confidence": 0.95
+      },
+      "regulatory_compliance": {
+        "kyc_compatible": true,
+        "audit_trail": true,
+        "whitelisting_support": true,
+        "confidence": 0.90
+      },
+      "confidence": 0.92
+    },
+    "code_quality": {
+      "open_source": true,
+      "license": "CC0-1.0 (Public Domain)",
+      "disclaimer": "Code is not owned by EY; EY provides no warranty and disclaims all liability",
+      "experimental_warning": "Software should be treated as experimental; not for significant value transactions",
+      "confidence": 0.95
+    },
+    "confidence": 0.75
   },
-  "metadata": {
-    "confidence_score": 0.75,
-    "completeness": 65,
-    "sources_count": 3,
-    "research_host": "seshat",
-    "enhancement_track": "track1_gap_filling"
+
+  "privacy_technology": {
+    "architecture": {
+      "type": "hybrid_rollup",
+      "versions": {
+        "nightfall_3": {
+          "approach": "optimistic_zk_hybrid",
+          "description": "Optimistic Rollup combined with ZK cryptography",
+          "challenge_period": "7 days",
+          "liquidity_providers_required": true
+        },
+        "nightfall_4": {
+          "approach": "pure_zk_rollup",
+          "description": "Full zero-knowledge rollup replacing optimistic approach",
+          "challenge_period": "none_required",
+          "finality": "near_instant",
+          "liquidity_providers_required": false
+        }
+      },
+      "confidence": 0.95
+    },
+    "private_transaction_mechanism": {
+      "zk_technology": "zk-SNARKs",
+      "hidden_elements": [
+        "sender_address",
+        "recipient_address",
+        "transaction_value"
+      ],
+      "verifiable_on_chain": true,
+      "gas_cost": "~12,000 gas per transaction",
+      "gas_savings": "up to 86% compared to standard ERC20 transfers",
+      "confidence": 0.90
+    },
+    "supported_tokens": {
+      "nightfall_3": ["ERC20", "ERC721", "ERC1155"],
+      "nightfall_4": ["ERC20", "ERC721", "ERC1155", "ERC3525"],
+      "confidence": 0.95
+    },
+    "transaction_flow": {
+      "deposit": "L1 Ethereum to L2 Nightfall (requires X.509 certificate)",
+      "transfer": "Private L2 transfers with ZK proofs",
+      "withdrawal": "L2 to L1 Ethereum (requires X.509 certificate)",
+      "confidence": 0.90
+    },
+    "enterprise_use_cases": [
+      {
+        "name": "Supply Chain Management",
+        "description": "Track assets across extended supply chain with privacy from competitors",
+        "features": ["product_traceability", "inventory_management", "provenance_tracking"]
+      },
+      {
+        "name": "Private NFT Marketplace",
+        "description": "Trade NFTs with transaction privacy"
+      },
+      {
+        "name": "Token Transfers",
+        "description": "Private fungible and non-fungible token transfers at scale"
+      }
+    ],
+    "privacy_guarantees": {
+      "transaction_privacy": "high",
+      "identity_privacy": "limited_by_x509_requirement",
+      "metadata_privacy": "medium",
+      "regulatory_compliance": true,
+      "confidence": 0.85
+    },
+    "confidence": 0.90
   },
-  "gaps_and_missing_data": [
-    "Full research pending - initial data only"
-  ],
-  "sources": [
-    "GitHub API"
-  ],
-  "enhancement_timestamp": "2025-10-04T19:01:24-07:00",
-  "github_enhanced": {},
-  "web3privacy_data": {
-    "error": true,
-    "url": "https://explorer.web3privacy.info/api/project/polygon-nightfall",
-    "statusCode": 404,
-    "statusMessage": "Page not found: /api/project/polygon-nightfall",
-    "message": "Page not found: /api/project/polygon-nightfall",
-    "data": {
-      "path": "/api/project/polygon-nightfall"
+
+  "key_personnel": {
+    "ey_blockchain_lead": {
+      "name": "Paul Brody",
+      "title": "Global Blockchain Lead at EY",
+      "confidence": 0.95
     }
   },
-  "market_data": {},
-  "on_chain_analysis": {
-    "project_name": "polygon-nightfall",
-    "analysis_timestamp": "2025-10-04T19:01:38-07:00",
-    "analysis_method": "seshat_track2_blockchain",
-    "contract_search": {
-      "github_contracts": [],
-      "known_addresses": [
-        ""
-      ],
-      "explorers_checked": [
-        "etherscan",
-        "github"
-      ]
-    },
-    "on_chain_metrics": {
-      "contract_found": false,
-      "deployment_network": "ethereum",
-      "analysis_status": "preliminary"
-    },
-    "metadata": {
-      "confidence_score": 0.6,
-      "data_source": "block_explorers",
-      "requires_manual_verification": true
-    },
-    "next_steps": [
-      "Verify contract addresses",
-      "Analyze transaction patterns",
-      "Check audit reports on-chain"
+
+  "timeline": {
+    "2019": "EY first contributes Nightfall to public domain",
+    "2021-09": "EY partners with Polygon to develop Nightfall",
+    "2022-05-17": "Polygon Nightfall Mainnet Beta launches",
+    "2022-05": "EY OpsChain Supply Chain Manager launches on Nightfall",
+    "2023-01": "Nightfall D3 source code update released (production beta)",
+    "2025-04-03": "Nightfall_4 upgrade released - pure ZK rollup architecture"
+  },
+
+  "metadata": {
+    "confidence_score": 0.85,
+    "completeness": 80,
+    "sources_count": 15,
+    "research_method": "web_search_and_github_api",
+    "gaps_identified": [
+      "No public security audit reports found",
+      "Exact TPS/throughput metrics need verification",
+      "Current user adoption numbers unavailable",
+      "Smart contract addresses on mainnet not documented"
     ]
   },
-  "github": "https://github.com/EYBlockchain/nightfall_3"
+
+  "sources": [
+    {
+      "url": "https://polygon.technology/blog/introducing-polygon-nightfall-mainnet-decentralized-private-transactions-for-enterprise",
+      "type": "official_blog",
+      "accessed": "2026-01-22"
+    },
+    {
+      "url": "https://www.ey.com/en_gl/newsroom/2025/04/ey-upgrades-nightfall-a-zero-knowledge-roll-up-enabling-private-transactions-on-the-ethereum-blockchain",
+      "type": "press_release",
+      "accessed": "2026-01-22"
+    },
+    {
+      "url": "https://www.ey.com/en_gl/newsroom/2023/01/the-ey-and-polygon-organizations-update-source-code-for-blockchain-privacy-based-protocol-nightfall",
+      "type": "press_release",
+      "accessed": "2026-01-22"
+    },
+    {
+      "url": "https://github.com/EYBlockchain/nightfall_3",
+      "type": "github_repository",
+      "accessed": "2026-01-22"
+    },
+    {
+      "url": "https://github.com/EYBlockchain/nightfall_4_CE",
+      "type": "github_repository",
+      "accessed": "2026-01-22"
+    },
+    {
+      "url": "https://www.coindesk.com/business/2023/01/18/ey-and-polygon-ready-privacy-focused-ethereum-for-enterprise-release",
+      "type": "news_article",
+      "accessed": "2026-01-22"
+    },
+    {
+      "url": "https://www.theblock.co/post/147287/ey-unveils-supply-chain-tracking-service-on-polygon-nightfall",
+      "type": "news_article",
+      "accessed": "2026-01-22"
+    },
+    {
+      "url": "https://decrypt.co/313079/ey-nightfall-zero-knowledge-tech-private-ethereum-transactions",
+      "type": "news_article",
+      "accessed": "2026-01-22"
+    }
+  ]
 }
