@@ -16,12 +16,9 @@ export default function MethodologyPage() {
         </Link>
 
         {/* Header */}
-        <h1 className="text-4xl md:text-5xl font-bold text-[#e0e0e0] mb-6">
+        <h1 className="text-4xl md:text-5xl font-bold text-[#e0e0e0] mb-12">
           Research Methodology
         </h1>
-        <p className="text-xl text-[#6c7086] mb-12">
-          How we verified 40 privacy-focused Web3 projects with traceable, defensible data.
-        </p>
 
         {/* Constitutional Research Framework */}
         <section className="mb-12">
