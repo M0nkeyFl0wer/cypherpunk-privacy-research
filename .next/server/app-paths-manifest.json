@@ -1,5 +1,16 @@
 {
-  "/page": "app/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/constitution/page": "app/constitution/page.js",
+  "/admin/analytics/page": "app/admin/analytics/page.js",
+  "/ecosystem/page": "app/ecosystem/page.js",
+  "/feedback/page": "app/feedback/page.js",
   "/how-it-works/page": "app/how-it-works/page.js",
-  "/projects/[slug]/page": "app/projects/[slug]/page.js"
+  "/methodology/page": "app/methodology/page.js",
+  "/page": "app/page.js",
+  "/portal/page": "app/portal/page.js",
+  "/postmortem/page": "app/postmortem/page.js",
+  "/projects/page": "app/projects/page.js",
+  "/search/page": "app/search/page.js",
+  "/projects/[slug]/page": "app/projects/[slug]/page.js",
+  "/project/[id]/page": "app/project/[id]/page.js"
 }

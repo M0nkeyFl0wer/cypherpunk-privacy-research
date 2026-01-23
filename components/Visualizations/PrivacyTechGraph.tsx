@@ -772,6 +772,68 @@ export default function PrivacyTechGraph({ width = 1000, height = 700 }: Props) 
         />
       </div>
 
+      {/* Filters - below graph */}
+      <div className="flex flex-wrap items-center gap-2 pt-4 border-t border-[#252525]">
+        <span className="text-sm text-[#6c7086]">Filter:</span>
+        <button
+          onClick={() => setShowWeb3Only(null)}
+          className={`px-3 py-1 text-xs rounded-full transition-colors ${
+            showWeb3Only === null ? 'bg-[#94e2d5] text-[#1a1a1a]' : 'bg-[#1a1a1a] text-[#888] hover:bg-[#252525]'
+          }`}
+        >
+          All
+        </button>
+        <button
+          onClick={() => setShowWeb3Only(true)}
+          className={`px-3 py-1 text-xs rounded-full transition-colors ${
+            showWeb3Only === true ? 'bg-[#89b4fa] text-[#1a1a1a]' : 'bg-[#1a1a1a] text-[#888] hover:bg-[#252525]'
+          }`}
+        >
+          Web3
+        </button>
+        <button
+          onClick={() => setShowWeb3Only(false)}
+          className={`px-3 py-1 text-xs rounded-full transition-colors ${
+            showWeb3Only === false ? 'bg-[#fab387] text-[#1a1a1a]' : 'bg-[#1a1a1a] text-[#888] hover:bg-[#252525]'
+          }`}
+        >
+          Traditional
+        </button>
+        <span className="text-[#333] mx-1">|</span>
+        {categories.map(([key, info]) => {
+          const count = data.nodes.filter(n => n.category === key &&
+            (showWeb3Only === null || (showWeb3Only ? n.isWeb3 : !n.isWeb3))).length;
+          if (count === 0) return null;
+          return (
+            <button
+              key={key}
+              onClick={() => setSelectedCategory(selectedCategory === key ? null : key)}
+              className={`px-2 py-1 text-xs rounded-full transition-colors flex items-center gap-1 ${
+                selectedCategory === key ? 'text-[#1a1a1a]' : 'bg-[#1a1a1a] text-[#666] hover:bg-[#252525]'
+              }`}
+              style={selectedCategory === key ? { backgroundColor: info.color } : {}}
+            >
+              <span className="w-2 h-2 rounded-full" style={{ backgroundColor: info.color }} />
+              {info.label}
+            </button>
+          );
+        })}
+        <div className="ml-auto flex gap-2">
+          <button
+            onClick={unlockNodes}
+            className="px-2 py-1 text-xs bg-[#1a1a1a] hover:bg-[#252525] text-[#666] rounded"
+          >
+            Unlock
+          </button>
+          <button
+            onClick={resetView}
+            className="px-2 py-1 text-xs bg-[#1a1a1a] hover:bg-[#252525] text-[#666] rounded"
+          >
+            Reset
+          </button>
+        </div>
+      </div>
+
       {/* Relationship legend */}
       <div className="flex flex-wrap items-center gap-4 text-xs border-t border-[#252525] pt-3">
         <span className="text-[#555]">Connections:</span>
