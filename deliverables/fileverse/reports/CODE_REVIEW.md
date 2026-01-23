@@ -115,7 +115,7 @@ The repository contains code and development for this project. The presence of:
 - Issues/discussions show community security awareness
 
 **How to Review**:
-1. Clone: `git clone https://github.com/fileverse/fileverse-ddoc.git`
+1. Clone: `git clone https://github.com/fileverse/fileverse-ddoc.git
 2. Browse: [https://github.com/fileverse/fileverse-ddoc](https://github.com/fileverse/fileverse-ddoc)
 3. License: Not specified
 

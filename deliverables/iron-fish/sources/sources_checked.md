@@ -9,7 +9,7 @@
 ## API Sources (Direct Data Retrieval)
 
 ### 1. GitHub API - Repository
-**URL**: `https://api.github.com/repos/iron-fish/ironfish`
+**URL**: `https://api.github.com/repos/iron-fish/ironfish
 **Method**: GET request
 **Data Retrieved**:
 - Repository name: "ironfish"
@@ -28,7 +28,7 @@
 ---
 
 ### 2. GitHub API - Organization
-**URL**: `https://api.github.com/orgs/iron-fish`
+**URL**: `https://api.github.com/orgs/iron-fish
 **Method**: GET request
 **Data Retrieved**:
 - Organization login: "iron-fish"
@@ -45,7 +45,7 @@
 ---
 
 ### 3. CoinGecko API
-**URL**: `https://api.coingecko.com/api/v3/coins/iron-fish`
+**URL**: `https://api.coingecko.com/api/v3/coins/iron-fish
 **Method**: GET request
 **Data Retrieved**:
 - ID: "iron-fish"

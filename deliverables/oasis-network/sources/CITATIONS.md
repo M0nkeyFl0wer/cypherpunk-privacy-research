@@ -8,7 +8,7 @@ All data points in this research are backed by verifiable sources. This document
 ## PRIMARY SOURCES
 
 ### 1. GitHub API - Organization Data
-**Endpoint:** `https://api.github.com/orgs/oasisprotocol`
+**Endpoint:** `https://api.github.com/orgs/oasisprotocol
 **Access Date:** 2025-10-08T01:42:10Z
 **Method:** `curl -s "https://api.github.com/orgs/oasisprotocol"`
 
@@ -26,7 +26,7 @@ All data points in this research are backed by verifiable sources. This document
 ---
 
 ### 2. GitHub API - oasis-core Repository
-**Endpoint:** `https://api.github.com/repos/oasisprotocol/oasis-core`
+**Endpoint:** `https://api.github.com/repos/oasisprotocol/oasis-core
 **Access Date:** 2025-10-08T01:42:10Z
 
 **Data Extracted:**
@@ -42,7 +42,7 @@ All data points in this research are backed by verifiable sources. This document
 ---
 
 ### 3. GitHub API - oasis-core Contributors
-**Endpoint:** `https://api.github.com/repos/oasisprotocol/oasis-core/contributors?per_page=10`
+**Endpoint:** `https://api.github.com/repos/oasisprotocol/oasis-core/contributors?per_page=10
 **Access Date:** 2025-10-08T01:42:10Z
 
 **Data Extracted:**
@@ -57,7 +57,7 @@ All data points in this research are backed by verifiable sources. This document
 ---
 
 ### 4. GitHub API - sapphire-paratime Repository
-**Endpoint:** `https://api.github.com/repos/oasisprotocol/sapphire-paratime`
+**Endpoint:** `https://api.github.com/repos/oasisprotocol/sapphire-paratime
 **Access Date:** 2025-10-08T01:42:10Z
 
 **Data Extracted:**
@@ -72,7 +72,7 @@ All data points in this research are backed by verifiable sources. This document
 ---
 
 ### 5. GitHub API - emerald-paratime Repository
-**Endpoint:** `https://api.github.com/repos/oasisprotocol/emerald-paratime`
+**Endpoint:** `https://api.github.com/repos/oasisprotocol/emerald-paratime
 **Access Date:** 2025-10-08T01:42:10Z
 
 **Data Extracted:**
@@ -87,7 +87,7 @@ All data points in this research are backed by verifiable sources. This document
 ---
 
 ### 6. GitHub API - oasis-sdk Repository
-**Endpoint:** `https://api.github.com/repos/oasisprotocol/oasis-sdk`
+**Endpoint:** `https://api.github.com/repos/oasisprotocol/oasis-sdk
 **Access Date:** 2025-10-08T01:42:10Z
 
 **Data Extracted:**
@@ -101,7 +101,7 @@ All data points in this research are backed by verifiable sources. This document
 ---
 
 ### 7. GitHub API - oasis-web3-gateway Repository
-**Endpoint:** `https://api.github.com/repos/oasisprotocol/oasis-web3-gateway`
+**Endpoint:** `https://api.github.com/repos/oasisprotocol/oasis-web3-gateway
 **Access Date:** 2025-10-08T01:42:10Z
 
 **Data Extracted:**
@@ -115,7 +115,7 @@ All data points in this research are backed by verifiable sources. This document
 ---
 
 ### 8. CoinGecko API - ROSE Token Market Data
-**Endpoint:** `https://api.coingecko.com/api/v3/coins/oasis-network`
+**Endpoint:** `https://api.coingecko.com/api/v3/coins/oasis-network
 **Access Date:** 2025-10-08T01:40:00Z
 **Method:** `curl -s "https://api.coingecko.com/api/v3/coins/oasis-network"`
 
@@ -135,7 +135,7 @@ All data points in this research are backed by verifiable sources. This document
 ---
 
 ### 9. CoinGecko API - Social Links (Earlier Successful Call)
-**Endpoint:** `https://api.coingecko.com/api/v3/coins/oasis-network`
+**Endpoint:** `https://api.coingecko.com/api/v3/coins/oasis-network
 **Access Date:** 2025-10-08T01:35:00Z (approximate)
 
 **Data Extracted from Earlier Call:**
@@ -152,7 +152,7 @@ All data points in this research are backed by verifiable sources. This document
 ---
 
 ### 10. Official Website - oasisprotocol.org
-**URL:** `https://oasisprotocol.org`
+**URL:** `https://oasisprotocol.org
 **Access Date:** 2025-10-08T01:42:10Z
 **Method:** `curl -s -L "https://oasisprotocol.org"`
 
@@ -170,7 +170,7 @@ All data points in this research are backed by verifiable sources. This document
 ---
 
 ### 11. Official Website - Dawn Song Mention
-**URL:** `https://oasisprotocol.org`
+**URL:** `https://oasisprotocol.org
 **Access Date:** 2025-10-08T01:42:10Z
 **Method:** `curl -s -L "https://oasisprotocol.org" | grep -o 'Dawn Song'`
 
@@ -181,7 +181,7 @@ All data points in this research are backed by verifiable sources. This document
 ---
 
 ### 12. Documentation Site - docs.oasis.io
-**URL:** `https://docs.oasis.io`
+**URL:** `https://docs.oasis.io
 **Access Date:** 2025-10-08T01:42:10Z
 **Method:** `curl -s -L "https://docs.oasis.io" | grep -o 'ParaTime\|Sapphire\|Emerald\|confidential\|privacy'`
 
@@ -197,7 +197,7 @@ All data points in this research are backed by verifiable sources. This document
 ## SECONDARY SOURCES (For Verification)
 
 ### Web3Privacy Database
-**URL:** `https://explorer.web3privacy.info/api/project/oasis-network`
+**URL:** `https://explorer.web3privacy.info/api/project/oasis-network
 **Status:** 404 Not Found
 **Note:** Project not in Web3Privacy database (as expected for this research)
 

@@ -126,7 +126,7 @@ The repository contains code and development for this project. The presence of:
 - Issues/discussions show community security awareness
 
 **How to Review**:
-1. Clone: `git clone https://github.com/darkrenaissance/darkfi.git`
+1. Clone: `git clone https://github.com/darkrenaissance/darkfi.git
 2. Browse: [https://github.com/darkrenaissance/darkfi](https://github.com/darkrenaissance/darkfi)
 3. License: GNU Affero General Public License v3.0
 

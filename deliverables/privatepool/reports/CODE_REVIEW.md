@@ -117,7 +117,7 @@ The repository contains code and development for this project. The presence of:
 - Issues/discussions show community security awareness
 
 **How to Review**:
-1. Clone: `git clone https://github.com/0xbow-io/privacy-pools-core.git`
+1. Clone: `git clone https://github.com/0xbow-io/privacy-pools-core.git
 2. Browse: [https://github.com/0xbow-io/privacy-pools-core](https://github.com/0xbow-io/privacy-pools-core)
 3. License: Apache License 2.0
 

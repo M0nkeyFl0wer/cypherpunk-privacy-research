@@ -170,7 +170,7 @@ The Miden VM codebase is organized into seven primary components:
 - Active issue discussions
 
 **How to Review**:
-1. Clone: `git clone https://github.com/0xPolygonMiden/miden-vm.git`
+1. Clone: `git clone https://github.com/0xPolygonMiden/miden-vm.git
 2. Browse: [GitHub Repository](https://github.com/0xPolygonMiden/miden-vm)
 3. Language: Rust (familiarity required)
 4. Documentation: [docs.miden.xyz](https://docs.miden.xyz)

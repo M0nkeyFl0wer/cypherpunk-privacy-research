@@ -48,8 +48,8 @@ To complete blockchain metrics analysis:
 
 **Related Reports**:
 - [Security Analysis](./SECURITY.md)
-- [Technical Analysis](./TECHNICAL.md)
-- [Code Review](./CODE_REVIEW.md)
+- Technical Analysis
+- Code Review
 - [Main README](../README.md)
 
 ---

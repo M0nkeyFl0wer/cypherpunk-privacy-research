@@ -71,7 +71,7 @@
 
 ## 🔗 Related Reports
 
-- [OSINT Summary](./osint_summary.md)
+- OSINT Summary
 - [Technical Analysis](./technical_analysis.md)
 - [Main README](../README.md)
 

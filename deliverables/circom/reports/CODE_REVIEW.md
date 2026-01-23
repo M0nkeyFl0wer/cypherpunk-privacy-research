@@ -116,7 +116,7 @@ The repository contains code and development for this project. The presence of:
 - Issues/discussions show community security awareness
 
 **How to Review**:
-1. Clone: `git clone https://github.com/iden3/circom.git`
+1. Clone: `git clone https://github.com/iden3/circom.git
 2. Browse: [https://github.com/iden3/circom](https://github.com/iden3/circom)
 3. License: GNU General Public License v3.0
 

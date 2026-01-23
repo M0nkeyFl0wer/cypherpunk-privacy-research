@@ -117,7 +117,7 @@ The repository contains code and development for this project. The presence of:
 - Issues/discussions show community security awareness
 
 **How to Review**:
-1. Clone: `git clone https://github.com/iron-fish/ironfish.git`
+1. Clone: `git clone https://github.com/iron-fish/ironfish.git
 2. Browse: [https://github.com/iron-fish/ironfish](https://github.com/iron-fish/ironfish)
 3. License: Mozilla Public License 2.0
 

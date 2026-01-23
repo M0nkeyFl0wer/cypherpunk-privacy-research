@@ -111,7 +111,7 @@ The repository contains code and development for this project. The presence of:
 - Issues/discussions show community security awareness
 
 **How to Review**:
-1. Clone: `git clone https://github.com/fluidkey/fluidkey-stealth-account-kit.git`
+1. Clone: `git clone https://github.com/fluidkey/fluidkey-stealth-account-kit.git
 2. Browse: [https://github.com/fluidkey/fluidkey-stealth-account-kit](https://github.com/fluidkey/fluidkey-stealth-account-kit)
 3. License: MIT License
 

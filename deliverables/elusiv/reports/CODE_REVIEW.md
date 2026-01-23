@@ -113,7 +113,7 @@ The repository contains code and development for this project. The presence of:
 - Issues/discussions show community security awareness
 
 **How to Review**:
-1. Clone: `git clone https://github.com/elusiv-privacy/elusiv.git`
+1. Clone: `git clone https://github.com/elusiv-privacy/elusiv.git
 2. Browse: [https://github.com/elusiv-privacy/elusiv](https://github.com/elusiv-privacy/elusiv)
 3. License: GNU General Public License v3.0
 

@@ -41,10 +41,10 @@ Constitutional research on **Firo** (formerly Zcoin) privacy cryptocurrency was 
 
 ### Sources Attempted
 
-1. ❌ `https://firo.org` - Official website
-2. ❌ `https://docs.firo.org` - Technical documentation
-3. ❌ `https://github.com/firoorg/firo` - Main repository
-4. ❌ `https://api.github.com/repos/firoorg/firo` - GitHub API
+1. ❌ `https://firo.org - Official website
+2. ❌ `https://docs.firo.org - Technical documentation
+3. ❌ `https://github.com/firoorg/firo - Main repository
+4. ❌ `https://api.github.com/repos/firoorg/firo - GitHub API
 5. ✅ Local project structure analysis - Success
 
 ---

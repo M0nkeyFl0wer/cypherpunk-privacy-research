@@ -53,7 +53,7 @@
 ---
 
 **Related Reports**:
-- [Blockchain Metrics](./blockchain_metrics.md)
+- Blockchain Metrics
 - [Organization Profile](./organization_profile.md)
 - [Main README](../README.md)
 

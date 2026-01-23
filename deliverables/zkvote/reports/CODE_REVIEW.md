@@ -112,7 +112,7 @@ The repository contains code and development for this project. The presence of:
 - Issues/discussions show community security awareness
 
 **How to Review**:
-1. Clone: `git clone https://github.com/KimiWu123/zkvote.git`
+1. Clone: `git clone https://github.com/KimiWu123/zkvote.git
 2. Browse: [https://github.com/KimiWu123/zkvote](https://github.com/KimiWu123/zkvote)
 3. License: None
 

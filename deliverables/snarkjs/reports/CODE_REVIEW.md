@@ -115,7 +115,7 @@ The repository contains code and development for this project. The presence of:
 - Issues/discussions show community security awareness
 
 **How to Review**:
-1. Clone: `git clone https://github.com/iden3/snarkjs.git`
+1. Clone: `git clone https://github.com/iden3/snarkjs.git
 2. Browse: [https://github.com/iden3/snarkjs](https://github.com/iden3/snarkjs)
 3. License: GNU General Public License v3.0
 

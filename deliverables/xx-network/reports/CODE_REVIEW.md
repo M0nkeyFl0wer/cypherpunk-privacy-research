@@ -114,7 +114,7 @@ The repository contains code and development for this project. The presence of:
 - Issues/discussions show community security awareness
 
 **How to Review**:
-1. Clone: `git clone https://github.com/xx-labs/xxchain.git`
+1. Clone: `git clone https://github.com/xx-labs/xxchain.git
 2. Browse: [https://github.com/xx-labs/xxchain](https://github.com/xx-labs/xxchain)
 3. License: GNU General Public License v3.0
 

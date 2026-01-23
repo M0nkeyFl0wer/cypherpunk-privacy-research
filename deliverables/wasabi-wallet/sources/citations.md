@@ -8,7 +8,7 @@
 ## Primary Sources (Direct API Access)
 
 ### 1. GitHub API - Repository Data
-**URL**: `https://api.github.com/repos/WalletWasabi/WalletWasabi`
+**URL**: `https://api.github.com/repos/WalletWasabi/WalletWasabi
 **Access Method**: Public GitHub REST API
 **Data Retrieved**:
 - Repository name: "WalletWasabi"
@@ -27,7 +27,7 @@
 ---
 
 ### 2. GitHub API - Contributors
-**URL**: `https://api.github.com/repos/WalletWasabi/WalletWasabi/contributors`
+**URL**: `https://api.github.com/repos/WalletWasabi/WalletWasabi/contributors
 **Access Method**: Public GitHub REST API
 **Data Retrieved**:
 ```json
@@ -51,7 +51,7 @@
 ---
 
 ### 3. Official Website - wasabiwallet.io
-**URL**: `https://wasabiwallet.io`
+**URL**: `https://wasabiwallet.io
 **Access Method**: Direct HTTP request
 **Verification**: HTTP 200 OK response
 **Server**: nginx/1.24.0 (Ubuntu)
@@ -71,7 +71,7 @@
 ---
 
 ### 4. GitHub README.md
-**URL**: `https://raw.githubusercontent.com/WalletWasabi/WalletWasabi/master/README.md`
+**URL**: `https://raw.githubusercontent.com/WalletWasabi/WalletWasabi/master/README.md
 **Access Method**: Direct file retrieval
 **Data Retrieved**:
 - Logo: https://github.com/WalletWasabi/WalletWasabi/blob/master/ui-ww.png
@@ -94,7 +94,7 @@
 ---
 
 ### 5. SECURITY.md
-**URL**: `https://raw.githubusercontent.com/WalletWasabi/WalletWasabi/master/SECURITY.md`
+**URL**: `https://raw.githubusercontent.com/WalletWasabi/WalletWasabi/master/SECURITY.md
 **Access Method**: Direct file retrieval
 **Data Retrieved**:
 - Security contact: molnardavid84@gmail.com
@@ -110,7 +110,7 @@
 ---
 
 ### 6. CONTRIBUTING.md
-**URL**: `https://raw.githubusercontent.com/WalletWasabi/WalletWasabi/master/CONTRIBUTING.md`
+**URL**: `https://raw.githubusercontent.com/WalletWasabi/WalletWasabi/master/CONTRIBUTING.md
 **Access Method**: Direct file retrieval
 **Data Retrieved**:
 - Slack community: https://join.slack.com/t/tumblebit/shared_invite/...
@@ -131,7 +131,7 @@
 ---
 
 ### 7. Documentation Site
-**URL**: `https://docs.wasabiwallet.io`
+**URL**: `https://docs.wasabiwallet.io
 **Access Method**: Direct HTTP request
 **Title**: "Wasabi Docs"
 **Status**: HTTP 200 OK (verified accessible)
@@ -142,7 +142,7 @@
 ---
 
 ### 8. YouTube Channel
-**URL**: `https://www.youtube.com/c/WasabiWallet`
+**URL**: `https://www.youtube.com/c/WasabiWallet
 **Access Method**: Direct HTTP request
 **Status**: HTTP 200 OK (channel exists and accessible)
 
@@ -188,8 +188,8 @@ All releases include PGP signatures (.asc files)
 
 ### 11. Web3Privacy.info API
 **URLs Attempted**:
-- `https://api.web3privacy.info/v1/projects`
-- `https://data.web3privacy.info/v1/projects.json`
+- `https://api.web3privacy.info/v1/projects
+- `https://data.web3privacy.info/v1/projects.json
 
 **Result**: API endpoints not accessible or incorrect URL
 **Error**: "API endpoint not accessible" / JSON parse error
@@ -199,11 +199,11 @@ All releases include PGP signatures (.asc files)
 ---
 
 ### 12. zkSNACKs Organization Data
-**URL Attempted**: `https://api.github.com/orgs/zkSNACKs`
+**URL Attempted**: `https://api.github.com/orgs/zkSNACKs
 **Result**: Empty response (all fields null)
 **Conclusion**: Organization may not exist on GitHub or name is different
 
-**Alternative Searched**: `https://api.github.com/orgs/WalletWasabi`
+**Alternative Searched**: `https://api.github.com/orgs/WalletWasabi
 **Result**: Empty response
 
 **Recommendation**: Manual research of company registration, LinkedIn
@@ -211,7 +211,7 @@ All releases include PGP signatures (.asc files)
 ---
 
 ### 13. GitHub Releases API
-**URL Attempted**: `https://api.github.com/repos/WalletWasabi/WalletWasabi/releases/latest`
+**URL Attempted**: `https://api.github.com/repos/WalletWasabi/WalletWasabi/releases/latest
 **Result**: Empty response (null fields)
 **Workaround**: Version inferred from website download links
 

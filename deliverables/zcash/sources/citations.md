@@ -54,8 +54,8 @@
 
 ### 5. GitHub API (Contributor Data)
 - **Endpoints Used**:
-  - `https://api.github.com/repos/zcash/zcash`
-  - `https://api.github.com/repos/zcash/zcash/contributors`
+  - `https://api.github.com/repos/zcash/zcash
+  - `https://api.github.com/repos/zcash/zcash/contributors
   - `https://api.github.com/users/[username]`
 - **Data Extracted**:
   - Top 10 contributors with contribution counts

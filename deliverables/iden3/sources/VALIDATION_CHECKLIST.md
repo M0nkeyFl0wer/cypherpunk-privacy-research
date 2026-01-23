@@ -52,7 +52,7 @@
 | GitHub API | `/users/{username}` | Team member profiles |
 | GitHub API | `/repos/iden3/{repo}` | Repository details |
 | File System | `/home/flower/web3privacy-research/research-data/` | Local verified database |
-| GitHub Raw | `https://raw.githubusercontent.com/iden3/...` | README files, docs |
+| GitHub Raw | `https://raw.githubusercontent.com/iden3/... | README files, docs |
 
 **RESULT**: ✅ **COMPLIANT** - All data from real API calls and verified files
 

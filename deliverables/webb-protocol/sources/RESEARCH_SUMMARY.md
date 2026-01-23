@@ -36,7 +36,7 @@ Successfully collected **REAL, VERIFIED** data for Webb Protocol following const
 ### Tier 1: Core Information
 
 #### 1️⃣ GitHub URL ✅
-- **Value**: `https://github.com/webb-tools`
+- **Value**: `https://github.com/webb-tools
 - **Confidence**: 0.95
 - **Sources**:
   - GitHub API: https://api.github.com/orgs/webb-tools
