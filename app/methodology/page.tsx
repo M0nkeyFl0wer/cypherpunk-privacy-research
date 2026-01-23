@@ -23,26 +23,6 @@ export default function MethodologyPage() {
           How we verified 40 privacy-focused Web3 projects with traceable, defensible data.
         </p>
 
-        {/* Quick Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-          <div className="bg-[#111] rounded-xl p-4 text-center border border-[#252525]">
-            <div className="text-3xl font-bold text-[#94e2d5]">959</div>
-            <div className="text-sm text-[#6c7086]">Projects Scoped</div>
-          </div>
-          <div className="bg-[#111] rounded-xl p-4 text-center border border-[#252525]">
-            <div className="text-3xl font-bold text-[#a6e3a1]">40</div>
-            <div className="text-sm text-[#6c7086]">Fully Analyzed</div>
-          </div>
-          <div className="bg-[#111] rounded-xl p-4 text-center border border-[#252525]">
-            <div className="text-3xl font-bold text-[#89b4fa]">8</div>
-            <div className="text-sm text-[#6c7086]">OSINT Deep Dives</div>
-          </div>
-          <div className="bg-[#111] rounded-xl p-4 text-center border border-[#252525]">
-            <div className="text-3xl font-bold text-[#f9e2af]">788</div>
-            <div className="text-sm text-[#6c7086]">Awaiting Research</div>
-          </div>
-        </div>
-
         {/* Constitutional Research Framework */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-[#e0e0e0] mb-4 flex items-center gap-3">
@@ -298,10 +278,10 @@ export default function MethodologyPage() {
               View Projects
             </Link>
             <Link
-              href="/lessons"
+              href="/how-it-works"
               className="bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-lg font-medium transition-colors border border-white/20"
             >
-              Lessons Learned
+              How It Works
             </Link>
           </div>
         </section>

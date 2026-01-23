@@ -91,7 +91,7 @@ export default async function Home() {
 
           <div className="flex gap-6 text-sm">
             <Link href="/methodology" className="text-[#89b4fa] hover:underline">methodology →</Link>
-            <Link href="/lessons" className="text-[#89b4fa] hover:underline">lessons learned →</Link>
+            <Link href="/how-it-works" className="text-[#89b4fa] hover:underline">how it works →</Link>
           </div>
         </div>
       </div>
