@@ -129,6 +129,7 @@ export default function PrivacyTechGraph({ width = 1000, height = 700, defaultFi
   const [focusedNode, setFocusedNode] = useState<string | null>(null);
   const draggedRef = useRef(false); // Track if drag occurred to prevent click
   const expandedNodesRef = useRef<Set<string>>(new Set()); // Ref for click handler closure
+  const nodePositionsRef = useRef<Map<string, { fx: number | null; fy: number | null }>>(new Map()); // Preserve node positions across re-renders
 
   // Keep ref in sync with state for click handler closure
   useEffect(() => {
@@ -264,6 +265,15 @@ export default function PrivacyTechGraph({ width = 1000, height = 700, defaultFi
     zoomRef.current = zoom;
     svg.call(zoom)
       .on('dblclick.zoom', null); // Disable double-click zoom so our node dblclick works
+
+    // Restore preserved positions for nodes that were dragged
+    nodes.forEach(node => {
+      const savedPos = nodePositionsRef.current.get(node.id);
+      if (savedPos) {
+        node.fx = savedPos.fx;
+        node.fy = savedPos.fy;
+      }
+    });
 
     // Create simulation - use all edges for positioning, but only show visible ones
     const simulation = d3.forceSimulation<EcosystemNode>(nodes)
@@ -457,9 +467,11 @@ export default function PrivacyTechGraph({ width = 1000, height = 700, defaultFi
       })
       .on('end', (event, d) => {
         if (!event.active) simulation.alphaTarget(0);
-        // Keep node where it was dragged (don't reset fx/fy)
-        // This allows users to arrange the graph as they like
-        // Reset after a short delay to allow click to check
+        // Keep node where it was dragged - save to ref so it persists across re-renders
+        if (draggedRef.current && d.fx != null && d.fy != null) {
+          nodePositionsRef.current.set(d.id, { fx: d.fx ?? null, fy: d.fy ?? null });
+        }
+        // Reset drag flag after a short delay to allow click to check
         setTimeout(() => { draggedRef.current = false; }, 100);
       });
 
@@ -598,6 +610,13 @@ export default function PrivacyTechGraph({ width = 1000, height = 700, defaultFi
         } else {
           // First click - expand to show connections
           console.log(`Expanding ${d.id}`);
+
+          // CRITICAL: Update ref IMMEDIATELY so rapid second click sees it as expanded
+          // Don't wait for React re-render cycle
+          const newExpanded = new Set(expandedNodesRef.current);
+          newExpanded.add(d.id);
+          expandedNodesRef.current = newExpanded;
+
           setExpandedNodes(prev => {
             const next = new Set(prev);
             next.add(d.id);
