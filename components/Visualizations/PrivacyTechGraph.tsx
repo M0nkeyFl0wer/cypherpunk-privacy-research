@@ -450,16 +450,16 @@ export default function PrivacyTechGraph({ width = 1000, height = 700 }: Props) 
       })
       .on('end', (event, d) => {
         if (!event.active) simulation.alphaTarget(0);
-        // Save position for persistence
-        if (d.x !== undefined && d.y !== undefined) {
-          nodePositionsRef.current.set(d.id, {
-            x: d.x,
-            y: d.y,
-            fx: d.fx ?? null,
-            fy: d.fy ?? null
-          });
-        }
-        setTimeout(() => { draggedRef.current = false; }, 100);
+        // KEEP the node pinned where user dropped it - don't release fx/fy
+        // This prevents bouncing back
+        nodePositionsRef.current.set(d.id, {
+          x: d.x!,
+          y: d.y!,
+          fx: d.fx ?? null,
+          fy: d.fy ?? null
+        });
+        // Short delay before allowing clicks again
+        setTimeout(() => { draggedRef.current = false; }, 50);
       });
 
     node.call(drag as any);
@@ -558,11 +558,19 @@ export default function PrivacyTechGraph({ width = 1000, height = 700 }: Props) 
       })
       .on('click', function(event, d) {
         event.stopPropagation();
-        if (draggedRef.current) return;
+        event.preventDefault();
 
-        // Click navigates to project page
+        // Skip if this was a drag
+        if (draggedRef.current) {
+          return;
+        }
+
+        // Navigate to project page
         if (PROJECTS_WITH_PAGES.has(d.id)) {
-          router.push(`/projects/${d.id}`);
+          console.log('Navigating to:', d.id);
+          window.location.href = `/projects/${d.id}/`;
+        } else {
+          console.log('No page for:', d.id);
         }
       });
 
