@@ -114,7 +114,7 @@ The repository contains code and development for this project. The presence of:
 - Issues/discussions show community security awareness
 
 **How to Review**:
-1. Clone: `git clone https://github.com/sentinel-official/hub.git`
+1. Clone: `git clone https://github.com/sentinel-official/hub.git
 2. Browse: [https://github.com/sentinel-official/hub](https://github.com/sentinel-official/hub)
 3. License: Apache License 2.0
 

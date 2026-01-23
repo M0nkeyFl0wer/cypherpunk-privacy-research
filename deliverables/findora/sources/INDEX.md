@@ -133,7 +133,7 @@
 
 ### Social & Professional:
 9. https://x.com/findora (Twitter)
-10. https://www.linkedin.com/posts/findorafoundation_* (LinkedIn)
+10. https://www.linkedin.com/posts/findorafoundation_ (LinkedIn)
 
 ### Company Information:
 11. https://www.crunchbase.com/organization/findora (Requires access)
@@ -143,8 +143,8 @@
 
 ### Additional GitHub:
 13. https://github.com/findoraorg (Secondary org)
-14. https://github.com/FindoraNetwork/platform (Repository - inaccessible)
-15. https://github.com/FindoraNetwork/findora-sdk (Repository - inaccessible)
+14. FindoraNetwork/platform (Repository - removed/renamed, no longer accessible)
+15. FindoraNetwork/findora-sdk (Repository - removed/renamed, no longer accessible)
 
 ---
 

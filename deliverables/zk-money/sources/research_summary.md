@@ -56,7 +56,7 @@
 ## Key Data Sources (All Verified)
 
 1. **Official Sunset Documentation**
-   - https://github.com/AztecProtocol/docs/tree/aztec-connect/docs/aztec_connect_sunset.mdx
+   - Medium announcement: https://medium.com/aztec-protocol/sunsetting-aztec-connect-a786edce5cae
    - Confidence: 0.95
 
 2. **Medium Announcement**

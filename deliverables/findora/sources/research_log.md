@@ -65,7 +65,7 @@ Successfully collected and verified Tier 1 data for Findora privacy blockchain p
 8. https://cryptonews.net/news/blockchain/20896518/
 9. https://coinmarketcap.com/currencies/findora/
 10. https://www.crunchbase.com/organization/findora
-11. https://www.linkedin.com/posts/findorafoundation_*
+11. https://www.linkedin.com/posts/findorafoundation_
 12. https://mainnet.findora.org/
 13. https://github.com/findoraorg
 14. https://github.com/FindoraNetwork/platform

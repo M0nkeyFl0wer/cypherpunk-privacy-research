@@ -117,7 +117,7 @@ The repository contains code and development for this project. The presence of:
 - Issues/discussions show community security awareness
 
 **How to Review**:
-1. Clone: `git clone https://github.com/webb-tools/webb-dapp.git`
+1. Clone: `git clone https://github.com/webb-tools/webb-dapp.git
 2. Browse: [https://github.com/webb-tools/webb-dapp](https://github.com/webb-tools/webb-dapp)
 3. License: Apache License 2.0
 

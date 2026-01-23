@@ -111,7 +111,7 @@ The repository contains code and development for this project. The presence of:
 - Issues/discussions show community security awareness
 
 **How to Review**:
-1. Clone: `git clone https://github.com/suterusu-team/suter-proofs.git`
+1. Clone: `git clone https://github.com/suterusu-team/suter-proofs.git
 2. Browse: [https://github.com/suterusu-team/suter-proofs](https://github.com/suterusu-team/suter-proofs)
 3. License: None
 

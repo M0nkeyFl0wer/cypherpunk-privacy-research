@@ -127,7 +127,7 @@ The repository contains code and development for this project. The presence of:
 - Issues/discussions show community security awareness
 
 **How to Review**:
-1. Clone: `git clone https://github.com/firoorg/firo.git`
+1. Clone: `git clone https://github.com/firoorg/firo.git
 2. Browse: [https://github.com/firoorg/firo](https://github.com/firoorg/firo)
 3. License: MIT License
 

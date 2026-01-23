@@ -143,9 +143,8 @@
 
 ### 3. GitHub Repository Deep Dive
 ```bash
-# Clone and explore key repos:
-git clone https://github.com/FindoraNetwork/platform
-git clone https://github.com/FindoraNetwork/findora-sdk
+# Explore key repos (note: some may have been archived/renamed):
+# Check https://github.com/FindoraNetwork for current active repositories
 
 # Search for:
 - Contract addresses in code

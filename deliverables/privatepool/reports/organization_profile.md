@@ -60,7 +60,7 @@
 
 **Related Reports**:
 - [Technical Analysis](./technical_analysis.md)
-- [Blockchain Metrics](./blockchain_metrics.md)
+- Blockchain Metrics
 - [Main README](../README.md)
 
 ---

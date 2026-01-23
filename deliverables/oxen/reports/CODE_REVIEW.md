@@ -122,7 +122,7 @@ The repository contains code and development for this project. The presence of:
 - Issues/discussions show community security awareness
 
 **How to Review**:
-1. Clone: `git clone https://github.com/oxen-io/oxen-core.git`
+1. Clone: `git clone https://github.com/oxen-io/oxen-core.git
 2. Browse: [https://github.com/oxen-io/oxen-core](https://github.com/oxen-io/oxen-core)
 3. License: Other
 

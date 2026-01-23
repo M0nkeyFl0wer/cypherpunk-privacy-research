@@ -65,7 +65,7 @@ Rotki is a **verified, constitutionally-compliant privacy project** with high-qu
 ## Tier 2: Core Data (100% Complete)
 
 ### Logo
-- **URL**: `https://rotki.com/assets/images/rotki_logo.svg`
+- **URL**: `https://rotki.com/assets/images/rotki_logo.svg
 - **Confidence**: 0.90
 - **Sources**: Official website assets, GitHub repository
 

@@ -113,7 +113,7 @@ The repository contains code and development for this project. The presence of:
 - Issues/discussions show community security awareness
 
 **How to Review**:
-1. Clone: `git clone https://github.com/semaphore-protocol/semaphore.git`
+1. Clone: `git clone https://github.com/semaphore-protocol/semaphore.git
 2. Browse: [https://github.com/semaphore-protocol/semaphore](https://github.com/semaphore-protocol/semaphore)
 3. License: MIT License
 

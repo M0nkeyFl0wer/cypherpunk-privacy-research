@@ -134,7 +134,7 @@ The repository shows ongoing collaborative development with multiple active cont
 - Issues/discussions show community security awareness
 
 **How to Review**:
-1. Clone: `git clone https://github.com/cake-tech/cake_wallet.git`
+1. Clone: `git clone https://github.com/cake-tech/cake_wallet.git
 2. Browse: [GitHub repository](https://github.com/cake-tech/cake_wallet)
 3. Language: Primarily Dart (Flutter framework)
 4. License: MIT (free to review, modify, and redistribute)

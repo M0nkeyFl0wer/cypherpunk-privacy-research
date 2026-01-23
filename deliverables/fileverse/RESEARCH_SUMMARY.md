@@ -200,7 +200,7 @@ Fileverse is a **privacy-first workspace and collaboration platform** offering d
    - Direct API confirmation - highest reliability
    - Used for: Org data, repo metrics, languages
 
-2. **GitHub Repositories** (https://github.com/fileverse/*)
+2. **GitHub Repositories** (https://github.com/fileverse/)
    - Source code analysis
    - Commit history for contributors
    - Technical specifications

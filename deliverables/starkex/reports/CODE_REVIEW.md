@@ -111,7 +111,7 @@ The repository contains code and development for this project. The presence of:
 - Issues/discussions show community security awareness
 
 **How to Review**:
-1. Clone: `git clone https://github.com/starkware-libs/starkex-contracts.git`
+1. Clone: `git clone https://github.com/starkware-libs/starkex-contracts.git
 2. Browse: [https://github.com/starkware-libs/starkex-contracts](https://github.com/starkware-libs/starkex-contracts)
 3. License: Other
 

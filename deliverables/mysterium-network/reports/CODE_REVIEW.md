@@ -118,7 +118,7 @@ The repository contains code and development for this project. The presence of:
 - Issues/discussions show community security awareness
 
 **How to Review**:
-1. Clone: `git clone https://github.com/mysteriumnetwork/node.git`
+1. Clone: `git clone https://github.com/mysteriumnetwork/node.git
 2. Browse: [https://github.com/mysteriumnetwork/node](https://github.com/mysteriumnetwork/node)
 3. License: GNU General Public License v3.0
 

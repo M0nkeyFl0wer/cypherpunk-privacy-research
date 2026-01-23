@@ -134,7 +134,7 @@ The repository contains code and development for this project. The presence of:
 - Issues/discussions show community security awareness
 
 **How to Review**:
-1. Clone: `git clone https://github.com/OrchidTechnologies/orchid.git`
+1. Clone: `git clone https://github.com/OrchidTechnologies/orchid.git
 2. Browse: [https://github.com/OrchidTechnologies/orchid](https://github.com/OrchidTechnologies/orchid)
 3. License: GNU Affero General Public License v3.0
 
