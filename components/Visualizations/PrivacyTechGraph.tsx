@@ -55,6 +55,17 @@ interface Props {
   defaultFilter?: string;
 }
 
+// Projects that have detail pages (used to determine if clickable)
+const PROJECTS_WITH_PAGES = new Set([
+  'bitchat', 'cake-wallet', 'circom', 'concordium', 'confer', 'darkfi', 'deeper-network',
+  'elusiv', 'fileverse', 'findora', 'firo', 'fluidkey', 'hop-protocol', 'hopr', 'iden3',
+  'incognito', 'iron-fish', 'layerzero', 'mask-network', 'meshtastic', 'miden', 'mobilecoin',
+  'monero', 'mysterium-network', 'nym', 'oasis-network', 'orchid', 'oxen', 'privatepool',
+  'protonmail', 'rotki', 'secret-network', 'semaphore', 'sentinel', 'sienna-network', 'signal',
+  'snarkjs', 'starkex', 'suterusu', 'telegram', 'tornado-cash', 'typhoon-network', 'wasabi-wallet',
+  'webb-protocol', 'xx-network', 'zano', 'zcash', 'zeal', 'zk-money', 'zksync', 'zkvote'
+]);
+
 // Primary privacy tech determines node color
 const TECH_COLORS: Record<string, string> = {
   'zk-snarks': '#94e2d5',
@@ -389,6 +400,21 @@ export default function PrivacyTechGraph({ width = 1000, height = 700, defaultFi
         return 0.85;
       });
 
+    // Clickable indicator - subtle outer ring for nodes with project pages
+    node.filter(d => PROJECTS_WITH_PAGES.has(d.id) && !d.isChain)
+      .append('circle')
+      .attr('r', d => {
+        if (expandedNodes.has(d.id)) return 30;
+        if (d.postQuantum) return 26;
+        return 22;
+      })
+      .attr('fill', 'none')
+      .attr('stroke', '#94e2d5')
+      .attr('stroke-width', 1)
+      .attr('stroke-dasharray', '3,3')
+      .attr('opacity', 0.4)
+      .attr('class', 'clickable-indicator');
+
     // Post-quantum indicator
     node.filter(d => d.postQuantum === true)
       .append('text')
@@ -424,8 +450,8 @@ export default function PrivacyTechGraph({ width = 1000, height = 700, defaultFi
       })
       .on('end', (event, d) => {
         if (!event.active) simulation.alphaTarget(0);
-        d.fx = null;
-        d.fy = null;
+        // Keep node where it was dragged (don't reset fx/fy)
+        // This allows users to arrange the graph as they like
         // Reset after a short delay to allow click to check
         setTimeout(() => { draggedRef.current = false; }, 100);
       });
@@ -498,10 +524,18 @@ export default function PrivacyTechGraph({ width = 1000, height = 700, defaultFi
           ${d.postQuantum ? '<div style="color: #f9e2af; font-size: 10px; margin-bottom: 6px;">⚛ Quantum Resistant</div>' : ''}
         `;
 
-        // Dynamic hint based on state
-        const hint = isExpanded
-          ? 'Click again to open project page'
-          : 'Click to expand connections';
+        // Dynamic hint based on state and whether project has a page
+        const hasPage = PROJECTS_WITH_PAGES.has(d.id);
+        let hint: string;
+        if (d.isChain) {
+          hint = 'Click to filter ecosystem';
+        } else if (isExpanded && hasPage) {
+          hint = '🔗 Click again to open project page';
+        } else if (isExpanded && !hasPage) {
+          hint = 'Research in progress - page coming soon';
+        } else {
+          hint = 'Click to expand connections';
+        }
         tooltipHtml += `<div style="color: #555; font-size: 10px; margin-top: 8px; border-top: 1px solid #252525; padding-top: 6px;">${hint}</div>`;
 
         tooltip
@@ -544,8 +578,10 @@ export default function PrivacyTechGraph({ width = 1000, height = 700, defaultFi
         const isCurrentlyExpanded = expandedNodes.has(d.id);
 
         if (isCurrentlyExpanded) {
-          // Already expanded - navigate to project page
-          router.push(`/projects/${d.id}`);
+          // Already expanded - navigate to project page (only if it exists)
+          if (PROJECTS_WITH_PAGES.has(d.id)) {
+            router.push(`/projects/${d.id}`);
+          }
         } else {
           // First click - expand to show connections
           setExpandedNodes(prev => {
@@ -571,8 +607,10 @@ export default function PrivacyTechGraph({ width = 1000, height = 700, defaultFi
       .on('dblclick', function(event, d) {
         event.stopPropagation();
         event.preventDefault();
-        // Double-click always navigates
-        router.push(`/projects/${d.id}`);
+        // Double-click navigates if project page exists
+        if (PROJECTS_WITH_PAGES.has(d.id)) {
+          router.push(`/projects/${d.id}`);
+        }
       });
 
     // Simulation tick
