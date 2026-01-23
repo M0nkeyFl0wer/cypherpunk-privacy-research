@@ -256,7 +256,8 @@ export default function PrivacyTechGraph({ width = 1000, height = 700, defaultFi
         g.attr('transform', event.transform);
       });
     zoomRef.current = zoom;
-    svg.call(zoom);
+    svg.call(zoom)
+      .on('dblclick.zoom', null); // Disable double-click zoom so our node dblclick works
 
     // Create simulation - use all edges for positioning, but only show visible ones
     const simulation = d3.forceSimulation<EcosystemNode>(nodes)
