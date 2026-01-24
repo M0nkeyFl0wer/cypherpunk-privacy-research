@@ -86,13 +86,16 @@
     {"id": "use-private-messaging", "label": "Private Messaging", "type": "use-case"},
     {"id": "use-anon-identity", "label": "Anonymous Identity", "type": "use-case"},
     {"id": "use-mev-protection", "label": "MEV Protection", "type": "use-case"},
+    {"id": "use-anon-browsing", "label": "Anonymous Browsing", "type": "use-case"},
+    {"id": "use-private-storage", "label": "Private Storage", "type": "use-case"},
 
     {"id": "lang-rust", "label": "Rust", "type": "language"},
     {"id": "lang-typescript", "label": "TypeScript", "type": "language"},
     {"id": "lang-solidity", "label": "Solidity", "type": "language"},
     {"id": "lang-go", "label": "Go", "type": "language"},
     {"id": "lang-cpp", "label": "C++", "type": "language"},
-    {"id": "lang-circom", "label": "Circom DSL", "type": "language"}
+    {"id": "lang-circom", "label": "Circom DSL", "type": "language"},
+    {"id": "lang-python", "label": "Python", "type": "language"}
   ],
   "edges": [
     {"source": "monero", "target": "cat-privacy-coin", "type": "belongs-to"},
@@ -177,6 +180,14 @@
     {"source": "iden3", "target": "l1-ethereum", "type": "deployed-on"},
     {"source": "zksync", "target": "l2-zksync-era", "type": "deployed-on"},
     {"source": "miden", "target": "l2-polygon-zkevm", "type": "deployed-on"},
+    {"source": "zeal", "target": "l1-ethereum", "type": "deployed-on"},
+    {"source": "starkex", "target": "l1-ethereum", "type": "deployed-on"},
+    {"source": "fileverse", "target": "l1-ethereum", "type": "deployed-on"},
+    {"source": "suterusu", "target": "l1-ethereum", "type": "deployed-on"},
+    {"source": "webb-protocol", "target": "l1-ethereum", "type": "deployed-on"},
+    {"source": "elusiv", "target": "l1-ethereum", "type": "deployed-on"},
+    {"source": "privatepool", "target": "l1-ethereum", "type": "deployed-on"},
+    {"source": "zkvote", "target": "l1-ethereum", "type": "deployed-on"},
 
     {"source": "tornado-cash", "target": "use-private-tx", "type": "enables"},
     {"source": "zk-money", "target": "use-private-tx", "type": "enables"},
@@ -188,11 +199,19 @@
     {"source": "oxen", "target": "use-private-tx", "type": "enables"},
     {"source": "mobilecoin", "target": "use-private-tx", "type": "enables"},
     {"source": "incognito", "target": "use-private-tx", "type": "enables"},
+    {"source": "elusiv", "target": "use-private-tx", "type": "enables"},
+    {"source": "suterusu", "target": "use-private-tx", "type": "enables"},
+    {"source": "webb-protocol", "target": "use-private-tx", "type": "enables"},
+    {"source": "findora", "target": "use-private-tx", "type": "enables"},
+    {"source": "darkfi", "target": "use-private-tx", "type": "enables"},
+    {"source": "wasabi-wallet", "target": "use-private-tx", "type": "enables"},
+    {"source": "cake-wallet", "target": "use-private-tx", "type": "enables"},
 
     {"source": "zkvote", "target": "use-anon-voting", "type": "enables"},
     {"source": "semaphore", "target": "use-anon-voting", "type": "enables"},
     {"source": "semaphore", "target": "use-anon-identity", "type": "enables"},
     {"source": "iden3", "target": "use-anon-identity", "type": "enables"},
+    {"source": "concordium", "target": "use-anon-identity", "type": "enables"},
 
     {"source": "sienna-network", "target": "use-confidential-defi", "type": "enables"},
     {"source": "secret-network", "target": "use-confidential-defi", "type": "enables"},
@@ -203,8 +222,20 @@
     {"source": "confer", "target": "use-private-messaging", "type": "enables"},
     {"source": "meshtastic", "target": "use-private-messaging", "type": "enables"},
     {"source": "bitchat", "target": "use-private-messaging", "type": "enables"},
+    {"source": "protonmail", "target": "use-private-messaging", "type": "enables"},
+    {"source": "xx-network", "target": "use-private-messaging", "type": "enables"},
 
     {"source": "privatepool", "target": "use-mev-protection", "type": "enables"},
+
+    {"source": "nym", "target": "use-anon-browsing", "type": "enables"},
+    {"source": "hopr", "target": "use-anon-browsing", "type": "enables"},
+    {"source": "orchid", "target": "use-anon-browsing", "type": "enables"},
+    {"source": "mysterium-network", "target": "use-anon-browsing", "type": "enables"},
+    {"source": "sentinel", "target": "use-anon-browsing", "type": "enables"},
+    {"source": "deeper-network", "target": "use-anon-browsing", "type": "enables"},
+    {"source": "xx-network", "target": "use-anon-browsing", "type": "enables"},
+
+    {"source": "fileverse", "target": "use-private-storage", "type": "enables"},
 
     {"source": "monero", "target": "lang-cpp", "type": "built-with"},
     {"source": "zcash", "target": "lang-rust", "type": "built-with"},
@@ -212,29 +243,74 @@
     {"source": "firo", "target": "lang-cpp", "type": "built-with"},
     {"source": "iron-fish", "target": "lang-rust", "type": "built-with"},
     {"source": "iron-fish", "target": "lang-typescript", "type": "built-with"},
-    {"source": "tornado-cash", "target": "lang-solidity", "type": "built-with"},
-    {"source": "tornado-cash", "target": "lang-circom", "type": "built-with"},
-    {"source": "semaphore", "target": "lang-solidity", "type": "built-with"},
-    {"source": "semaphore", "target": "lang-circom", "type": "built-with"},
-    {"source": "iden3", "target": "lang-circom", "type": "built-with"},
-    {"source": "circom", "target": "lang-rust", "type": "built-with"},
-    {"source": "snarkjs", "target": "lang-typescript", "type": "built-with"},
+    {"source": "oxen", "target": "lang-cpp", "type": "built-with"},
+    {"source": "zano", "target": "lang-cpp", "type": "built-with"},
+    {"source": "mobilecoin", "target": "lang-rust", "type": "built-with"},
+
+    {"source": "signal", "target": "lang-rust", "type": "built-with"},
+    {"source": "signal", "target": "lang-cpp", "type": "built-with"},
+    {"source": "telegram", "target": "lang-cpp", "type": "built-with"},
+    {"source": "confer", "target": "lang-typescript", "type": "built-with"},
+    {"source": "meshtastic", "target": "lang-cpp", "type": "built-with"},
+    {"source": "bitchat", "target": "lang-typescript", "type": "built-with"},
+
+    {"source": "protonmail", "target": "lang-go", "type": "built-with"},
+    {"source": "protonmail", "target": "lang-typescript", "type": "built-with"},
+
+    {"source": "wasabi-wallet", "target": "lang-cpp", "type": "built-with"},
+    {"source": "cake-wallet", "target": "lang-cpp", "type": "built-with"},
+    {"source": "zeal", "target": "lang-typescript", "type": "built-with"},
+    {"source": "rotki", "target": "lang-python", "type": "built-with"},
+    {"source": "rotki", "target": "lang-typescript", "type": "built-with"},
+
     {"source": "nym", "target": "lang-rust", "type": "built-with"},
     {"source": "hopr", "target": "lang-rust", "type": "built-with"},
     {"source": "hopr", "target": "lang-solidity", "type": "built-with"},
+    {"source": "xx-network", "target": "lang-go", "type": "built-with"},
+    {"source": "orchid", "target": "lang-go", "type": "built-with"},
+    {"source": "mysterium-network", "target": "lang-go", "type": "built-with"},
+    {"source": "sentinel", "target": "lang-go", "type": "built-with"},
+    {"source": "deeper-network", "target": "lang-rust", "type": "built-with"},
+
+    {"source": "tornado-cash", "target": "lang-solidity", "type": "built-with"},
+    {"source": "tornado-cash", "target": "lang-circom", "type": "built-with"},
+    {"source": "sienna-network", "target": "lang-rust", "type": "built-with"},
+    {"source": "elusiv", "target": "lang-rust", "type": "built-with"},
+    {"source": "suterusu", "target": "lang-solidity", "type": "built-with"},
+    {"source": "webb-protocol", "target": "lang-rust", "type": "built-with"},
+    {"source": "privatepool", "target": "lang-solidity", "type": "built-with"},
+
     {"source": "secret-network", "target": "lang-rust", "type": "built-with"},
     {"source": "secret-network", "target": "lang-go", "type": "built-with"},
     {"source": "oasis-network", "target": "lang-rust", "type": "built-with"},
     {"source": "oasis-network", "target": "lang-go", "type": "built-with"},
     {"source": "darkfi", "target": "lang-rust", "type": "built-with"},
     {"source": "miden", "target": "lang-rust", "type": "built-with"},
+    {"source": "concordium", "target": "lang-rust", "type": "built-with"},
+    {"source": "findora", "target": "lang-rust", "type": "built-with"},
+    {"source": "incognito", "target": "lang-go", "type": "built-with"},
     {"source": "zksync", "target": "lang-rust", "type": "built-with"},
     {"source": "zksync", "target": "lang-solidity", "type": "built-with"},
+
+    {"source": "semaphore", "target": "lang-solidity", "type": "built-with"},
+    {"source": "semaphore", "target": "lang-circom", "type": "built-with"},
+    {"source": "iden3", "target": "lang-circom", "type": "built-with"},
+    {"source": "iden3", "target": "lang-go", "type": "built-with"},
+    {"source": "zkvote", "target": "lang-solidity", "type": "built-with"},
+    {"source": "zkvote", "target": "lang-circom", "type": "built-with"},
+
+    {"source": "circom", "target": "lang-rust", "type": "built-with"},
+    {"source": "snarkjs", "target": "lang-typescript", "type": "built-with"},
+    {"source": "starkex", "target": "lang-typescript", "type": "built-with"},
+
+    {"source": "mask-network", "target": "lang-typescript", "type": "built-with"},
+    {"source": "fileverse", "target": "lang-typescript", "type": "built-with"},
 
     {"source": "circom", "target": "snarkjs", "type": "toolchain"},
     {"source": "semaphore", "target": "circom", "type": "uses"},
     {"source": "tornado-cash", "target": "circom", "type": "uses"},
     {"source": "iden3", "target": "circom", "type": "uses"},
+    {"source": "zkvote", "target": "circom", "type": "uses"},
 
     {"source": "zcash", "target": "zcash", "type": "shared-tech", "detail": "zk-SNARKs"},
     {"source": "tornado-cash", "target": "zcash", "type": "shared-tech", "detail": "zk-SNARKs"},
@@ -242,7 +318,9 @@
     {"source": "monero", "target": "zano", "type": "shared-tech", "detail": "Ring Signatures"},
     {"source": "monero", "target": "mobilecoin", "type": "shared-tech", "detail": "RingCT"},
     {"source": "cake-wallet", "target": "monero", "type": "supports"},
-    {"source": "wasabi-wallet", "target": "use-private-tx", "type": "enables"}
+
+    {"source": "signal", "target": "mobilecoin", "type": "integrates"},
+    {"source": "oxen", "target": "use-private-messaging", "type": "enables"}
   ],
   "nodeTypes": {
     "project": {"shape": "circle", "color": "#f9e2af", "description": "Privacy projects with research pages"},
@@ -253,8 +331,8 @@
     "language": {"shape": "square", "color": "#6c7086", "description": "Programming languages"}
   },
   "metadata": {
-    "generated": "2026-01-23",
-    "version": "4.0",
-    "description": "Privacy ecosystem with categories, L2s, use cases, and languages as nodes"
+    "generated": "2026-01-24",
+    "version": "5.0",
+    "description": "Privacy ecosystem with richer connections - minimum 2 edges per project"
   }
 }
