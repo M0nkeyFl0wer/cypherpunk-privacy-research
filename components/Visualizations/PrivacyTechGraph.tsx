@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useRef, useState, useCallback } from 'react';
-import { useRouter } from 'next/navigation';
 import * as d3 from 'd3';
 
 interface PrivacyTechGraphProps {
@@ -45,12 +44,10 @@ const PROJECTS_WITH_PAGES = new Set([
   'incognito', 'iron-fish', 'layerzero', 'mask-network', 'meshtastic', 'miden', 'mobilecoin',
   'monero', 'mysterium-network', 'nym', 'oasis-network', 'orchid', 'oxen', 'privatepool',
   'protonmail', 'rotki', 'secret-network', 'semaphore', 'sentinel', 'sienna-network', 'signal',
-  'snarkjs', 'starkex', 'suterusu', 'telegram', 'tornado-cash', 'wasabi-wallet',
-  'webb-protocol', 'xx-network', 'zano', 'zcash', 'zeal', 'zk-money', 'zksync', 'zkvote',
-  'briar', 'railgun', '0xbow', 'nocturne'
+  'snarkjs', 'starkex', 'suterusu', 'telegram', 'tornado-cash', 'typhoon-network', 'wasabi-wallet',
+  'webb-protocol', 'xx-network', 'zano', 'zcash', 'zeal', 'zk-money', 'zksync', 'zkvote'
 ]);
 
-// Get node color based on type
 function getNodeColor(node: GraphNode, nodeTypes: NodeTypes): string {
   if (node.type === 'l1' || node.type === 'l2') {
     return node.color || '#627EEA';
@@ -58,7 +55,6 @@ function getNodeColor(node: GraphNode, nodeTypes: NodeTypes): string {
   return nodeTypes[node.type]?.color || '#6c7086';
 }
 
-// Get node size based on type
 function getNodeSize(node: GraphNode): number {
   switch (node.type) {
     case 'project': return 12;
@@ -71,16 +67,17 @@ function getNodeSize(node: GraphNode): number {
   }
 }
 
-// Draw different shapes
-function drawNodeShape(selection: any, node: GraphNode, nodeTypes: NodeTypes) {
+function drawNodeShape(selection: any, node: GraphNode, nodeTypes: NodeTypes, isSelected: boolean) {
   const size = getNodeSize(node);
   const color = getNodeColor(node, nodeTypes);
 
   selection.selectAll('*').remove();
 
+  const strokeColor = isSelected ? '#94e2d5' : (node.type === 'project' && PROJECTS_WITH_PAGES.has(node.id) ? '#fff' : '#555');
+  const strokeWidth = isSelected ? 3 : (node.type === 'project' && PROJECTS_WITH_PAGES.has(node.id) ? 2 : 1);
+
   switch (node.type) {
     case 'category':
-      // Hexagon
       const hexPoints = d3.range(6).map(i => {
         const angle = (i * 60 - 30) * Math.PI / 180;
         return [size * Math.cos(angle), size * Math.sin(angle)].join(',');
@@ -88,60 +85,62 @@ function drawNodeShape(selection: any, node: GraphNode, nodeTypes: NodeTypes) {
       selection.append('polygon')
         .attr('points', hexPoints)
         .attr('fill', color)
-        .attr('stroke', '#fff')
-        .attr('stroke-width', 1.5);
+        .attr('stroke', strokeColor)
+        .attr('stroke-width', strokeWidth);
       break;
 
     case 'l1':
     case 'l2':
     case 'use-case':
-      // Diamond/ETH shape
-      const diamondSize = size;
       selection.append('polygon')
-        .attr('points', `0,${-diamondSize} ${diamondSize * 0.7},0 0,${diamondSize} ${-diamondSize * 0.7},0`)
+        .attr('points', `0,${-size} ${size * 0.7},0 0,${size} ${-size * 0.7},0`)
         .attr('fill', color)
-        .attr('stroke', '#fff')
-        .attr('stroke-width', 1);
+        .attr('stroke', strokeColor)
+        .attr('stroke-width', strokeWidth);
       break;
 
     case 'language':
-      // Square
       selection.append('rect')
         .attr('x', -size / 2)
         .attr('y', -size / 2)
         .attr('width', size)
         .attr('height', size)
         .attr('fill', color)
-        .attr('stroke', '#444')
-        .attr('stroke-width', 1)
+        .attr('stroke', strokeColor)
+        .attr('stroke-width', strokeWidth)
         .attr('rx', 2);
       break;
 
     default:
-      // Circle for projects
       selection.append('circle')
         .attr('r', size)
         .attr('fill', color)
-        .attr('stroke', PROJECTS_WITH_PAGES.has(node.id) ? '#fff' : '#555')
-        .attr('stroke-width', PROJECTS_WITH_PAGES.has(node.id) ? 2 : 1);
+        .attr('stroke', strokeColor)
+        .attr('stroke-width', strokeWidth);
   }
 }
 
 export default function PrivacyTechGraph({ width = 900, height = 600 }: PrivacyTechGraphProps) {
   const svgRef = useRef<SVGSVGElement>(null);
-  const router = useRouter();
   const [data, setData] = useState<GraphData | null>(null);
   const [loading, setLoading] = useState(true);
+  const [selectedNode, setSelectedNode] = useState<string | null>(null);
   const nodePositionsRef = useRef<Map<string, { x: number; y: number; fx: number | null; fy: number | null }>>(new Map());
-  const draggedRef = useRef(false);
   const simulationRef = useRef<d3.Simulation<GraphNode, undefined> | null>(null);
   const zoomRef = useRef<d3.ZoomBehavior<SVGSVGElement, unknown> | null>(null);
 
-  // Load data
   useEffect(() => {
     fetch('/data/ecosystem-graph.json')
       .then(res => res.json())
       .then((graphData: GraphData) => {
+        // Filter out nodes with no connections
+        const connectedNodes = new Set<string>();
+        graphData.edges.forEach(e => {
+          connectedNodes.add(typeof e.source === 'string' ? e.source : e.source.id);
+          connectedNodes.add(typeof e.target === 'string' ? e.target : e.target.id);
+        });
+        graphData.nodes = graphData.nodes.filter(n => connectedNodes.has(n.id));
+
         setData(graphData);
         setLoading(false);
       })
@@ -151,7 +150,6 @@ export default function PrivacyTechGraph({ width = 900, height = 600 }: PrivacyT
       });
   }, []);
 
-  // Render graph
   useEffect(() => {
     if (!svgRef.current || !data) return;
 
@@ -160,9 +158,14 @@ export default function PrivacyTechGraph({ width = 900, height = 600 }: PrivacyT
 
     const g = svg.append('g');
 
-    // Zoom
+    // Zoom - disable double-click zoom
     const zoom = d3.zoom<SVGSVGElement, unknown>()
-      .scaleExtent([0.2, 4])
+      .scaleExtent([0.3, 3])
+      .filter(event => {
+        // Disable double-click zoom
+        if (event.type === 'dblclick') return false;
+        return true;
+      })
       .on('zoom', (event) => g.attr('transform', event.transform));
     svg.call(zoom);
     zoomRef.current = zoom;
@@ -175,21 +178,16 @@ export default function PrivacyTechGraph({ width = 900, height = 600 }: PrivacyT
 
     const edges = data.edges.map(e => ({ ...e }));
 
-    // Create simulation
+    // Create simulation with weaker forces
     const simulation = d3.forceSimulation<GraphNode>(nodes)
       .force('link', d3.forceLink<GraphNode, GraphEdge>(edges)
         .id(d => d.id)
-        .distance(d => {
-          const edge = d as unknown as GraphEdge;
-          if (edge.type === 'belongs-to') return 60;
-          if (edge.type === 'deployed-on') return 80;
-          return 100;
-        })
-        .strength(0.5)
+        .distance(80)
+        .strength(0.3)
       )
-      .force('charge', d3.forceManyBody().strength(-200))
-      .force('center', d3.forceCenter(width / 2, height / 2))
-      .force('collision', d3.forceCollide().radius(25));
+      .force('charge', d3.forceManyBody().strength(-150))
+      .force('center', d3.forceCenter(width / 2, height / 2).strength(0.05))
+      .force('collision', d3.forceCollide().radius(30));
 
     simulationRef.current = simulation;
 
@@ -222,7 +220,7 @@ export default function PrivacyTechGraph({ width = 900, height = 600 }: PrivacyT
       .style('padding', '12px')
       .style('color', '#e0e0e0')
       .style('font-size', '12px')
-      .style('pointer-events', 'none')
+      .style('pointer-events', 'auto')
       .style('opacity', 0)
       .style('z-index', 9999)
       .style('max-width', '280px');
@@ -234,11 +232,11 @@ export default function PrivacyTechGraph({ width = 900, height = 600 }: PrivacyT
       .data(nodes)
       .join('g')
       .attr('class', 'node')
-      .style('cursor', d => d.type === 'project' && PROJECTS_WITH_PAGES.has(d.id) ? 'pointer' : 'grab');
+      .style('cursor', 'pointer');
 
     // Draw shapes
     node.each(function(d) {
-      drawNodeShape(d3.select(this), d, data.nodeTypes);
+      drawNodeShape(d3.select(this), d, data.nodeTypes, selectedNode === d.id);
     });
 
     // Labels
@@ -251,55 +249,100 @@ export default function PrivacyTechGraph({ width = 900, height = 600 }: PrivacyT
       .attr('font-size', d => d.type === 'project' ? '10px' : '9px')
       .attr('pointer-events', 'none');
 
-    // Drag
+    // Drag behavior - completely pin nodes
+    let isDragging = false;
     const drag = d3.drag<SVGGElement, GraphNode>()
       .on('start', (event, d) => {
-        draggedRef.current = false;
-        if (!event.active) simulation.alphaTarget(0.3).restart();
+        isDragging = false;
+        if (!event.active) simulation.alphaTarget(0.1).restart();
         d.fx = d.x;
         d.fy = d.y;
       })
       .on('drag', (event, d) => {
-        draggedRef.current = true;
+        isDragging = true;
         d.fx = event.x;
         d.fy = event.y;
       })
       .on('end', (event, d) => {
         if (!event.active) simulation.alphaTarget(0);
-        // Keep pinned
+        // Keep node pinned at final position
         nodePositionsRef.current.set(d.id, {
           x: d.x!,
           y: d.y!,
           fx: d.fx ?? null,
           fy: d.fy ?? null
         });
-        setTimeout(() => { draggedRef.current = false; }, 50);
       });
 
     node.call(drag as any);
 
-    // Interactions
-    node
-      .on('mouseover', function(event, d) {
-        // Highlight connections
-        link.attr('stroke-opacity', e => {
-          const sourceId = typeof e.source === 'string' ? e.source : (e.source as GraphNode).id;
-          const targetId = typeof e.target === 'string' ? e.target : (e.target as GraphNode).id;
-          return (sourceId === d.id || targetId === d.id) ? 0.9 : 0.1;
-        }).attr('stroke-width', e => {
-          const sourceId = typeof e.source === 'string' ? e.source : (e.source as GraphNode).id;
-          const targetId = typeof e.target === 'string' ? e.target : (e.target as GraphNode).id;
-          return (sourceId === d.id || targetId === d.id) ? 3 : 1;
-        });
+    // Highlight function
+    function highlightConnections(nodeId: string | null) {
+      if (!nodeId) {
+        link.attr('stroke-opacity', 0.4).attr('stroke-width', 1.5);
+        node.style('opacity', 1);
+        return;
+      }
 
-        // Build tooltip
+      const connectedIds = new Set<string>([nodeId]);
+      edges.forEach(e => {
+        const sourceId = typeof e.source === 'string' ? e.source : (e.source as GraphNode).id;
+        const targetId = typeof e.target === 'string' ? e.target : (e.target as GraphNode).id;
+        if (sourceId === nodeId) connectedIds.add(targetId);
+        if (targetId === nodeId) connectedIds.add(sourceId);
+      });
+
+      link.attr('stroke-opacity', e => {
+        const sourceId = typeof e.source === 'string' ? e.source : (e.source as GraphNode).id;
+        const targetId = typeof e.target === 'string' ? e.target : (e.target as GraphNode).id;
+        return (sourceId === nodeId || targetId === nodeId) ? 0.9 : 0.1;
+      }).attr('stroke-width', e => {
+        const sourceId = typeof e.source === 'string' ? e.source : (e.source as GraphNode).id;
+        const targetId = typeof e.target === 'string' ? e.target : (e.target as GraphNode).id;
+        return (sourceId === nodeId || targetId === nodeId) ? 3 : 1;
+      });
+
+      node.style('opacity', (d: GraphNode) => connectedIds.has(d.id) ? 1 : 0.3);
+    }
+
+    // Click handler - select node, show connections
+    node.on('click', function(event, d) {
+      event.stopPropagation();
+
+      // If we were dragging, don't select
+      if (isDragging) {
+        isDragging = false;
+        return;
+      }
+
+      // Toggle selection
+      const newSelected = selectedNode === d.id ? null : d.id;
+      setSelectedNode(newSelected);
+      highlightConnections(newSelected);
+
+      // Update visual selection
+      node.each(function(n) {
+        drawNodeShape(d3.select(this), n as GraphNode, data.nodeTypes, newSelected === n.id);
+      });
+      // Re-add labels
+      node.selectAll('text').remove();
+      node.append('text')
+        .text((n: GraphNode) => n.label.length > 12 ? n.label.slice(0, 11) + '..' : n.label)
+        .attr('x', 0)
+        .attr('y', (n: GraphNode) => getNodeSize(n) + 12)
+        .attr('text-anchor', 'middle')
+        .attr('fill', (n: GraphNode) => n.type === 'project' ? '#e0e0e0' : '#888')
+        .attr('font-size', (n: GraphNode) => n.type === 'project' ? '10px' : '9px')
+        .attr('pointer-events', 'none');
+
+      // Show tooltip with project link
+      if (newSelected) {
         const hasPage = d.type === 'project' && PROJECTS_WITH_PAGES.has(d.id);
         const typeLabel = data.nodeTypes[d.type]?.description || d.type;
 
         let html = `<div style="font-weight: 600; font-size: 14px; color: ${getNodeColor(d, data.nodeTypes)}">${d.label}</div>`;
         html += `<div style="font-size: 10px; color: #666; margin-bottom: 8px;">${typeLabel}</div>`;
 
-        // Show connections
         const connections = edges.filter(e => {
           const sourceId = typeof e.source === 'string' ? e.source : (e.source as GraphNode).id;
           const targetId = typeof e.target === 'string' ? e.target : (e.target as GraphNode).id;
@@ -307,11 +350,11 @@ export default function PrivacyTechGraph({ width = 900, height = 600 }: PrivacyT
         });
 
         if (connections.length > 0) {
-          html += `<div style="font-size: 10px; color: #888;">${connections.length} connections</div>`;
+          html += `<div style="font-size: 10px; color: #888; margin-bottom: 8px;">${connections.length} connections highlighted</div>`;
         }
 
         if (hasPage) {
-          html += `<div style="font-size: 10px; color: #94e2d5; margin-top: 6px;">Click to open project →</div>`;
+          html += `<a href="/projects/${d.id}" style="display: inline-block; margin-top: 4px; padding: 6px 12px; background: #1a1a1a; border: 1px solid #94e2d5; border-radius: 4px; color: #94e2d5; text-decoration: none; font-size: 11px;">Open Project →</a>`;
         }
 
         tooltip
@@ -319,25 +362,41 @@ export default function PrivacyTechGraph({ width = 900, height = 600 }: PrivacyT
           .style('opacity', 1)
           .style('left', (event.pageX + 15) + 'px')
           .style('top', (event.pageY - 15) + 'px');
-      })
-      .on('mousemove', function(event) {
-        tooltip
-          .style('left', (event.pageX + 15) + 'px')
-          .style('top', (event.pageY - 15) + 'px');
-      })
-      .on('mouseout', function() {
-        link.attr('stroke-opacity', 0.4).attr('stroke-width', 1.5);
+      } else {
         tooltip.style('opacity', 0);
+      }
+    });
+
+    // Click on background to deselect
+    svg.on('click', function(event) {
+      if (event.target === svgRef.current) {
+        setSelectedNode(null);
+        highlightConnections(null);
+        tooltip.style('opacity', 0);
+        node.each(function(n) {
+          drawNodeShape(d3.select(this), n as GraphNode, data.nodeTypes, false);
+        });
+        node.selectAll('text').remove();
+        node.append('text')
+          .text((n: GraphNode) => n.label.length > 12 ? n.label.slice(0, 11) + '..' : n.label)
+          .attr('x', 0)
+          .attr('y', (n: GraphNode) => getNodeSize(n) + 12)
+          .attr('text-anchor', 'middle')
+          .attr('fill', (n: GraphNode) => n.type === 'project' ? '#e0e0e0' : '#888')
+          .attr('font-size', (n: GraphNode) => n.type === 'project' ? '10px' : '9px')
+          .attr('pointer-events', 'none');
+      }
+    });
+
+    // Hover for quick preview
+    node
+      .on('mouseenter', function(event, d) {
+        if (selectedNode) return; // Don't show hover if something selected
+        highlightConnections(d.id);
       })
-      .on('click', function(event, d) {
-        event.stopPropagation();
-        event.preventDefault();
-
-        if (draggedRef.current) return;
-
-        if (d.type === 'project' && PROJECTS_WITH_PAGES.has(d.id)) {
-          window.location.href = `/projects/${d.id}/`;
-        }
+      .on('mouseleave', function() {
+        if (selectedNode) return;
+        highlightConnections(null);
       });
 
     // Tick
@@ -351,13 +410,17 @@ export default function PrivacyTechGraph({ width = 900, height = 600 }: PrivacyT
       node.attr('transform', d => `translate(${d.x || 0},${d.y || 0})`);
     });
 
+    // Let simulation settle then reduce activity
+    setTimeout(() => {
+      simulation.alphaTarget(0).alphaDecay(0.05);
+    }, 2000);
+
     return () => {
       tooltip.remove();
       simulation.stop();
     };
-  }, [data, width, height]);
+  }, [data, width, height, selectedNode]);
 
-  // Reset
   const resetView = useCallback(() => {
     if (svgRef.current && zoomRef.current) {
       d3.select(svgRef.current)
@@ -367,7 +430,6 @@ export default function PrivacyTechGraph({ width = 900, height = 600 }: PrivacyT
     }
   }, []);
 
-  // Unlock all
   const unlockNodes = useCallback(() => {
     nodePositionsRef.current.clear();
     if (simulationRef.current && data) {
@@ -391,7 +453,6 @@ export default function PrivacyTechGraph({ width = 900, height = 600 }: PrivacyT
 
   return (
     <div className="space-y-3">
-      {/* Graph */}
       <svg
         ref={svgRef}
         width={width}
@@ -399,7 +460,6 @@ export default function PrivacyTechGraph({ width = 900, height = 600 }: PrivacyT
         className="bg-[#0a0a0a] rounded-lg border border-[#252525]"
       />
 
-      {/* Legend */}
       <div className="flex flex-wrap items-center gap-4 text-xs text-[#888]">
         <span className="flex items-center gap-1.5">
           <span className="w-3 h-3 rounded-full bg-[#f9e2af]"></span>
@@ -432,7 +492,7 @@ export default function PrivacyTechGraph({ width = 900, height = 600 }: PrivacyT
       </div>
 
       <p className="text-xs text-[#555]">
-        Drag to arrange • Scroll to zoom • Click project to open • Hover for connections
+        Click node to select & see connections • Drag to arrange • Scroll to zoom
       </p>
     </div>
   );
