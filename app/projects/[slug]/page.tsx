@@ -3,6 +3,7 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import ReactMarkdown from 'react-markdown';
 import dynamic from 'next/dynamic';
+import { getExplorerUrl } from '@/lib/explorerMapping';
 
 // Helper to check if a report has substantive content vs just "not found" text
 function isEmptyReport(content: string): boolean {
@@ -179,8 +180,8 @@ export default async function ProjectPage({ params }: { params: { slug: string }
     <main className="min-h-screen bg-[#000]">
       <div className="max-w-4xl mx-auto px-6 py-8">
         {/* Header */}
-        <Link href="/projects" className="text-[#a6adc8] hover:text-[#94e2d5] text-sm mb-6 inline-block">
-          ← projects
+        <Link href="/" className="text-[#a6adc8] hover:text-[#94e2d5] text-sm mb-6 inline-block">
+          ← back
         </Link>
 
         <div className="flex items-start gap-4 mb-6">
@@ -219,6 +220,10 @@ export default async function ProjectPage({ params }: { params: { slug: string }
           {project.website && (
             <a href={project.website} target="_blank" rel="noopener noreferrer"
                className="text-[#94e2d5] hover:underline">website</a>
+          )}
+          {getExplorerUrl(slug) && (
+            <a href={getExplorerUrl(slug)!} target="_blank" rel="noopener noreferrer"
+               className="text-[#fab387] hover:underline">web3privacy explorer</a>
           )}
         </div>
 
