@@ -7,7 +7,10 @@
   "github": "https://github.com/telegramdesktop",
   "documentation": "https://core.telegram.org",
   "category": "Privacy Infrastructure",
-  "subcategories": ["Messaging", "Cloud Communication"],
+  "subcategories": [
+    "Messaging",
+    "Cloud Communication"
+  ],
   "tech_stack": [
     "C++ (Desktop, TDLib)",
     "Java (Android)",
@@ -21,24 +24,26 @@
     "Self-destructing messages",
     "Anonymous accounts (phone number optional with Premium)"
   ],
-  "blockchain_platforms": ["TON (formerly, now separate)"],
+  "blockchain_platforms": [
+    "TON (formerly, now separate)"
+  ],
   "status": "active_production",
   "maturity_level": "production",
-  "last_update": "2026-01-19",
+  "last_update": "2026-01-28",
   "launch_date": "2013-08-14",
-  "confidence": 0.9,
+  "confidence": 0.8,
   "sources": [
     {
       "type": "official_website",
       "url": "https://telegram.org",
       "retrieved_at": "2026-01-19",
-      "confidence": 1.0
+      "confidence": 1
     },
     {
       "type": "github",
       "url": "https://github.com/telegramdesktop",
       "retrieved_at": "2026-01-19",
-      "confidence": 1.0
+      "confidence": 1
     }
   ],
   "user_metrics": {
@@ -49,5 +54,14 @@
     "server": "Closed source",
     "protocol": "Documented but proprietary"
   },
-  "encryption_notes": "E2E encryption only available in 'Secret Chats' feature, not enabled by default. Regular chats use server-client encryption only."
+  "encryption_notes": "E2E encryption only available in 'Secret Chats' feature, not enabled by default. Regular chats use server-client encryption only.",
+  "team": [],
+  "social_links": {
+    "twitter": "",
+    "discord": "",
+    "telegram": "",
+    "medium": "",
+    "mirror": "",
+    "blog": ""
+  }
 }
