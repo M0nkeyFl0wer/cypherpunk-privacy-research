@@ -74,15 +74,15 @@
       "role": "Co-founder",
       "github": "",
       "twitter": "",
-      "background": "Former Meta blockchain team",
-      "verification": "verified"
+      "background": "Background unverified - limited public profile",
+      "verification": "unverified"
     },
     {
       "name": "Azeem Khan",
-      "role": "Co-founder",
+      "role": "Co-founder, Business Development",
       "github": "",
-      "twitter": "",
-      "background": "Former Meta blockchain team",
+      "twitter": "https://twitter.com/0xAzeemK",
+      "background": "Former Gitcoin Partnerships Lead, ConsenSys alumni, Foresight Ventures",
       "verification": "verified"
     }
   ],

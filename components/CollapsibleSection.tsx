@@ -5,9 +5,8 @@ import { LengthToggle, LengthMode } from './LengthToggle';
 
 interface CollapsibleSectionProps {
   title: string;
-  brief: ReactNode;
+  summary: ReactNode;
   full: ReactNode;
-  extended?: ReactNode;
   defaultMode?: LengthMode;
   className?: string;
   titleClassName?: string;
@@ -15,19 +14,15 @@ interface CollapsibleSectionProps {
 
 export function CollapsibleSection({
   title,
-  brief,
+  summary,
   full,
-  extended,
-  defaultMode = 'brief',
+  defaultMode = 'summary',
   className = '',
   titleClassName = '',
 }: CollapsibleSectionProps) {
   const [mode, setMode] = useState<LengthMode>(defaultMode);
 
-  // If no extended content, fall back to full
-  const content = mode === 'extended' && !extended ? full :
-                  mode === 'full' ? full :
-                  mode === 'brief' ? brief : extended;
+  const content = mode === 'full' ? full : summary;
 
   return (
     <section className={className}>

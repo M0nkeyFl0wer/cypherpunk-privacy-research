@@ -43,7 +43,7 @@ export function HomepageContent({
           <CollapsibleSection
             title="Executive Summary"
             titleClassName="text-sm font-medium text-[#6c7086] uppercase tracking-wider"
-            brief={
+            summary={
               <p className="text-[#bac2de]">
                 Independent research covering {projectCount} Web3 privacy projects with verified data.
                 {osintCount} projects received comprehensive OSINT deep dives. All findings trace to
@@ -69,27 +69,6 @@ export function HomepageContent({
                   Every claim traces to a primary source. No synthetic data, placeholder text, or fabricated
                   information appears in this research. When data was unavailable, it was marked as such
                   rather than invented.
-                </p>
-              </div>
-            }
-            extended={
-              <div className="prose text-[#bac2de] space-y-4">
-                <p>
-                  This research covers the technical infrastructure, team composition, and security posture
-                  of {projectCount} Web3 privacy projects. Each project underwent standardized analysis
-                  including GitHub repository metrics, code composition breakdown, and contributor mapping.
-                </p>
-
-                <p>
-                  <strong className="text-[#e0e0e0]">{osintCount} projects received OSINT deep dives</strong> —
-                  comprehensive infrastructure analysis including Shodan reconnaissance, subdomain enumeration,
-                  DNS mapping, and security research.
-                </p>
-
-                <p>
-                  <strong className="text-[#e0e0e0]">Constitutional compliance</strong> was enforced throughout.
-                  Every claim traces to a primary source. No synthetic data, placeholder text, or fabricated
-                  information appears in this research.
                 </p>
 
                 <div className="mt-6 p-4 bg-[#111] rounded border border-[#252525]">
@@ -119,7 +98,7 @@ export function HomepageContent({
           <CollapsibleSection
             title="About This Research"
             titleClassName="text-sm font-medium text-[#6c7086] uppercase tracking-wider"
-            brief={
+            summary={
               <p className="text-[#bac2de]">
                 Web3Privacy community research analyzing privacy-focused blockchain projects.
                 Conducted using constitutional methodology that prohibits fabrication and requires
@@ -145,25 +124,6 @@ export function HomepageContent({
                   <strong className="text-[#e0e0e0]">Who it&apos;s for:</strong> Developers evaluating privacy tools,
                   researchers studying the Web3 privacy ecosystem, security professionals assessing project
                   maturity, and community members seeking verified information about privacy projects.
-                </p>
-              </div>
-            }
-            extended={
-              <div className="prose text-[#bac2de] space-y-4">
-                <p>
-                  <strong className="text-[#e0e0e0]">What this is:</strong> A systematic analysis of
-                  privacy-preserving Web3 infrastructure, wallets, protocols, and tools.
-                </p>
-
-                <p>
-                  <strong className="text-[#e0e0e0]">How it was conducted:</strong> Each project was analyzed
-                  using standardized templates. OSINT deep dives included Shodan reconnaissance,
-                  subdomain enumeration, and security analysis.
-                </p>
-
-                <p>
-                  <strong className="text-[#e0e0e0]">Who it&apos;s for:</strong> Developers, researchers, security
-                  professionals, and community members seeking verified project information.
                 </p>
 
                 <div className="mt-6 p-4 bg-[#111] rounded border border-[#252525]">

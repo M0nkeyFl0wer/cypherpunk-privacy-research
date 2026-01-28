@@ -42,6 +42,20 @@ interface GraphData {
   categories: Record<string, CategoryInfo>;
 }
 
+// Default category colors
+const CATEGORY_COLORS: Record<string, string> = {
+  'privacy-coin': '#f9e2af',
+  'messaging': '#89b4fa',
+  'email': '#cba6f7',
+  'wallet': '#a6e3a1',
+  'network-privacy': '#94e2d5',
+  'privacy-defi': '#fab387',
+  'privacy-infra': '#f38ba8',
+  'bridge': '#74c7ec',
+  'zk-toolkit': '#b4befe',
+  'identity': '#eba0ac',
+};
+
 // Projects that have detail pages
 const PROJECTS_WITH_PAGES = new Set([
   'bitchat', 'cake-wallet', 'circom', 'concordium', 'confer', 'darkfi', 'deeper-network',
@@ -189,7 +203,7 @@ export default function ProjectMiniGraph({ projectId, width = 400, height = 300 
     // Node circles
     node.append('circle')
       .attr('r', d => d.id === projectId ? 22 : 16)
-      .attr('fill', d => data.categories[d.category]?.color || '#6c7086')
+      .attr('fill', d => CATEGORY_COLORS[d.category] || '#6c7086')
       .attr('stroke', d => d.id === projectId ? '#fff' : (PROJECTS_WITH_PAGES.has(d.id) ? '#888' : '#333'))
       .attr('stroke-width', d => d.id === projectId ? 3 : 1.5)
       .attr('opacity', d => d.id === projectId ? 1 : 0.85);

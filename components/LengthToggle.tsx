@@ -1,6 +1,6 @@
 'use client';
 
-export type LengthMode = 'brief' | 'full' | 'extended';
+export type LengthMode = 'summary' | 'full';
 
 interface LengthToggleProps {
   mode: LengthMode;
@@ -9,13 +9,12 @@ interface LengthToggleProps {
 }
 
 const MODE_LABELS: Record<LengthMode, string> = {
-  brief: 'Brief',
+  summary: 'Summary',
   full: 'Full',
-  extended: 'Extended',
 };
 
 export function LengthToggle({ mode, onChange, className = '' }: LengthToggleProps) {
-  const modes: LengthMode[] = ['brief', 'full', 'extended'];
+  const modes: LengthMode[] = ['summary', 'full'];
 
   return (
     <div className={`inline-flex gap-1 p-1 bg-[#111] rounded-lg border border-[#252525] ${className}`}>

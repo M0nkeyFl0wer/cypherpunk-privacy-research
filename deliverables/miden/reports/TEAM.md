@@ -17,8 +17,8 @@ Miden was originally developed under Polygon Labs and became independent on Marc
 | Name | Role | Background | Verification |
 |------|------|------------|--------------|
 | Bobbin Threadbare | Founder & Lead Developer | Former Facebook/Novi ZK researcher | High (multiple sources) |
-| Dominik Schmid | Co-founder | Former Meta blockchain team | Medium |
-| Azeem Khan | Co-founder | Former Meta blockchain team | Medium |
+| Dominik Schmid | Co-founder | Background unverified | Low |
+| Azeem Khan | Co-founder | Business Development (Gitcoin, ConsenSys alumni) | High |
 
 ---
 
@@ -48,12 +48,13 @@ Miden was originally developed under Polygon Labs and became independent on Marc
 **Role**: Co-founder
 
 **Background**:
-- Former Meta blockchain team member
-- Expertise in blockchain development and zero-knowledge proofs
+- Confirmed co-founder per funding announcements
+- Background details require verification - limited public profile
 
-**Verification Level**: Medium
-- Confirmed in funding announcements
-- Limited additional public profile information
+**Verification Level**: LOW - NEEDS VERIFICATION
+- Confirmed in funding announcements only
+- No LinkedIn or public profile found to verify background claims
+- Previous "Meta blockchain team" claim UNVERIFIED - removed pending source
 
 ### Azeem Khan
 **Role**: Co-founder

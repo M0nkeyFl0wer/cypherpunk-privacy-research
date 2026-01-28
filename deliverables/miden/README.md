@@ -54,8 +54,8 @@ See [TEAM.md](reports/TEAM.md) for detailed team information.
 
 ### Founders
 - **Bobbin Threadbare** - Founder & Lead Developer (former Facebook/Novi ZK researcher, creator of Distaff VM and Winterfell)
-- **Dominik Schmid** - Co-founder (former Meta blockchain team)
-- **Azeem Khan** - Co-founder (former Meta blockchain team)
+- **Dominik Schmid** - Co-founder (background unverified)
+- **Azeem Khan** - Co-founder, Business Development (former Gitcoin, ConsenSys)
 
 ## Technical Details
 See [TECHNICAL.md](reports/TECHNICAL.md) for technical documentation.
