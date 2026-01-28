@@ -125,6 +125,7 @@ export default function PrivacyTechGraph({ width = 900, height = 600 }: PrivacyT
   const [data, setData] = useState<GraphData | null>(null);
   const [loading, setLoading] = useState(true);
   const [selectedNode, setSelectedNode] = useState<string | null>(null);
+  const selectedNodeRef = useRef<string | null>(null);
   const nodePositionsRef = useRef<Map<string, { x: number; y: number; fx: number | null; fy: number | null }>>(new Map());
   const simulationRef = useRef<d3.Simulation<GraphNode, undefined> | null>(null);
   const zoomRef = useRef<d3.ZoomBehavior<SVGSVGElement, unknown> | null>(null);
@@ -236,7 +237,7 @@ export default function PrivacyTechGraph({ width = 900, height = 600 }: PrivacyT
 
     // Draw shapes
     node.each(function(d) {
-      drawNodeShape(d3.select(this), d, data.nodeTypes, selectedNode === d.id);
+      drawNodeShape(d3.select(this), d, data.nodeTypes, selectedNodeRef.current === d.id);
     });
 
     // Labels
@@ -323,13 +324,14 @@ export default function PrivacyTechGraph({ width = 900, height = 600 }: PrivacyT
       }
 
       // For non-project nodes, toggle selection to show connections
-      const newSelected = selectedNode === d.id ? null : d.id;
-      setSelectedNode(newSelected);
+      const newSelected = selectedNodeRef.current === d.id ? null : d.id;
+      selectedNodeRef.current = newSelected;
+      setSelectedNode(newSelected); // Keep state in sync for any external use
       highlightConnections(newSelected);
 
       // Update visual selection
       node.each(function(n) {
-        drawNodeShape(d3.select(this), n as GraphNode, data.nodeTypes, newSelected === n.id);
+        drawNodeShape(d3.select(this), n as GraphNode, data.nodeTypes, selectedNodeRef.current === n.id);
       });
       // Re-add labels
       node.selectAll('text').remove();
@@ -372,6 +374,7 @@ export default function PrivacyTechGraph({ width = 900, height = 600 }: PrivacyT
     // Click on background to deselect
     svg.on('click', function(event) {
       if (event.target === svgRef.current) {
+        selectedNodeRef.current = null;
         setSelectedNode(null);
         highlightConnections(null);
         tooltip.style('opacity', 0);
@@ -393,11 +396,11 @@ export default function PrivacyTechGraph({ width = 900, height = 600 }: PrivacyT
     // Hover for quick preview
     node
       .on('mouseenter', function(event, d) {
-        if (selectedNode) return; // Don't show hover if something selected
+        if (selectedNodeRef.current) return; // Don't show hover if something selected
         highlightConnections(d.id);
       })
       .on('mouseleave', function() {
-        if (selectedNode) return;
+        if (selectedNodeRef.current) return;
         highlightConnections(null);
       });
 
@@ -421,7 +424,7 @@ export default function PrivacyTechGraph({ width = 900, height = 600 }: PrivacyT
       tooltip.remove();
       simulation.stop();
     };
-  }, [data, width, height, selectedNode]);
+  }, [data, width, height]); // Note: selectedNode removed - handled internally via D3
 
   const resetView = useCallback(() => {
     if (svgRef.current && zoomRef.current) {
