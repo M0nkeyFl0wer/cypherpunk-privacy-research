@@ -7,7 +7,10 @@
   "github": "https://github.com/ProtonMail",
   "documentation": "https://proton.me/support",
   "category": "Privacy Infrastructure",
-  "subcategories": ["Encrypted Email", "Privacy Suite"],
+  "subcategories": [
+    "Encrypted Email",
+    "Privacy Suite"
+  ],
   "tech_stack": [
     "TypeScript (Web)",
     "Swift (iOS)",
@@ -25,21 +28,21 @@
   "blockchain_platforms": [],
   "status": "active_production",
   "maturity_level": "production",
-  "last_update": "2026-01-19",
+  "last_update": "2026-01-28",
   "launch_date": "2014-05-16",
-  "confidence": 0.95,
+  "confidence": 0.8,
   "sources": [
     {
       "type": "official_website",
       "url": "https://proton.me",
       "retrieved_at": "2026-01-19",
-      "confidence": 1.0
+      "confidence": 1
     },
     {
       "type": "github",
       "url": "https://github.com/ProtonMail",
       "retrieved_at": "2026-01-19",
-      "confidence": 1.0
+      "confidence": 1
     },
     {
       "type": "wikipedia",
@@ -66,5 +69,14 @@
     "Proton Pass",
     "Proton Wallet"
   ],
-  "verified": true
+  "verified": true,
+  "team": [],
+  "social_links": {
+    "twitter": "",
+    "discord": "",
+    "telegram": "",
+    "medium": "",
+    "mirror": "",
+    "blog": ""
+  }
 }

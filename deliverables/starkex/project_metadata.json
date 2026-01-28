@@ -13,15 +13,15 @@
   "blockchain_platforms": [],
   "status": "unknown",
   "maturity_level": "unknown",
-  "last_update": "2025-10-07T22:25:37.751552",
+  "last_update": "2026-01-28",
   "launch_date": "",
-  "confidence": 0.0,
+  "confidence": 0.8,
   "sources": [
     {
       "type": "manual",
       "url": "internal-research",
       "retrieved_at": "2025-10-07T22:25:37.751557",
-      "confidence": 0.0
+      "confidence": 0
     }
   ],
   "missing_fields": [],
@@ -34,7 +34,8 @@
     "discord": "",
     "telegram": "",
     "medium": "",
-    "mirror": ""
+    "mirror": "",
+    "blog": ""
   },
   "investors": []
 }

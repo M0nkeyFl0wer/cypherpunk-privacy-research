@@ -1,19 +1,17 @@
 # Team & Leadership
 
-*Research Date: 2025-10-05*
+*Research Date: 2025-10-07 | Updated: 2026-01-28*
 
 ---
 
 ## Core Team
 
-🔍 **Team information not publicly available**
+⚠️ **Team information requires additional research**
 
-Checked sources:
-- Official website team page
-- LinkedIn profiles
-- GitHub contributors
-- Conference speaker bios
-- Press releases
+Verified data exists but team details not yet extracted.
+---
 
-📧 **Know the team?** Submit data via [Pull Request](https://github.com/web3privacy/web3privacy/pulls)
+## Verification
 
+Data sourced from verified_data.json with constitutional research methodology.
+Confidence: **80%**

@@ -37,6 +37,7 @@
     {"id": "suterusu", "label": "Suterusu", "type": "project", "category": "privacy-defi"},
     {"id": "webb-protocol", "label": "Webb Protocol", "type": "project", "category": "privacy-defi"},
     {"id": "privatepool", "label": "PrivatePool", "type": "project", "category": "privacy-defi"},
+    {"id": "typhoon-network", "label": "Typhoon Network", "type": "project", "category": "privacy-defi"},
     {"id": "hop-protocol", "label": "Hop Protocol", "type": "project", "category": "bridge"},
 
     {"id": "secret-network", "label": "Secret Network", "type": "project", "category": "privacy-infra"},
@@ -135,6 +136,7 @@
     {"source": "suterusu", "target": "cat-privacy-defi", "type": "belongs-to"},
     {"source": "webb-protocol", "target": "cat-privacy-defi", "type": "belongs-to"},
     {"source": "privatepool", "target": "cat-privacy-defi", "type": "belongs-to"},
+    {"source": "typhoon-network", "target": "cat-privacy-defi", "type": "belongs-to"},
 
     {"source": "hop-protocol", "target": "cat-bridge", "type": "belongs-to"},
     {"source": "layerzero", "target": "cat-bridge", "type": "belongs-to"},
