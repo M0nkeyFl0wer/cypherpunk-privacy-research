@@ -4,6 +4,7 @@ import path from 'path';
 import ReactMarkdown from 'react-markdown';
 import dynamic from 'next/dynamic';
 import { getExplorerUrl } from '@/lib/explorerMapping';
+import DetailsOpener from '@/components/DetailsOpener';
 
 // Helper to check if a report has substantive content vs just "not found" text
 function isEmptyReport(content: string): boolean {
@@ -178,6 +179,7 @@ export default async function ProjectPage({ params }: { params: { slug: string }
 
   return (
     <main className="min-h-screen bg-[#000]">
+      <DetailsOpener />
       <div className="max-w-4xl mx-auto px-6 py-8">
         {/* Header */}
         <Link href="/" className="text-[#a6adc8] hover:text-[#94e2d5] text-sm mb-6 inline-block">
