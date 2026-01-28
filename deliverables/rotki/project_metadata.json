@@ -1,40 +1,97 @@
 {
   "id": "rotki",
-  "name": "rotki",
+  "name": "Rotki",
   "slug": "rotki",
-  "description": "",
-  "website": "",
-  "github": "",
-  "documentation": "",
-  "category": "other",
-  "subcategories": [],
-  "tech_stack": [],
-  "privacy_techniques": [],
-  "blockchain_platforms": [],
-  "status": "unknown",
-  "maturity_level": "unknown",
-  "last_update": "2025-10-07T22:25:37.749845",
-  "launch_date": "",
-  "confidence": 0.0,
+  "description": "Open-source, self-hosted portfolio management tool that puts privacy first. Data encrypted and stored locally—ensuring users stay in control. Provides comprehensive portfolio tracking across multiple blockchains and exchanges, transaction decoding, analytics, accounting, and tax reporting.",
+  "website": "https://rotki.com",
+  "github": "https://github.com/rotki/rotki",
+  "documentation": "https://docs.rotki.com",
+  "category": "tooling",
+  "subcategories": ["privacy_tooling", "portfolio_tracking"],
+  "tech_stack": ["Python", "TypeScript", "Vue.js"],
+  "privacy_techniques": ["local-first", "encryption", "self-hosted"],
+  "blockchain_platforms": ["Ethereum", "Bitcoin", "Polygon", "BSC", "Arbitrum", "Optimism"],
+  "status": "active",
+  "maturity_level": "production",
+  "last_update": "2026-01-28",
+  "launch_date": "2018-03-05",
+  "confidence": 0.88,
   "sources": [
     {
-      "type": "manual",
-      "url": "internal-research",
-      "retrieved_at": "2025-10-07T22:25:37.749852",
-      "confidence": 0.0
+      "type": "primary",
+      "url": "https://rotki.com",
+      "retrieved_at": "2025-10-07",
+      "confidence": 0.95
+    },
+    {
+      "type": "primary",
+      "url": "https://github.com/rotki/rotki",
+      "retrieved_at": "2025-10-07",
+      "confidence": 0.95
+    },
+    {
+      "type": "primary",
+      "url": "https://www.northdata.com/Rotki+Solutions+GmbH",
+      "retrieved_at": "2025-10-07",
+      "confidence": 0.95
     }
   ],
   "missing_fields": [],
   "verified": true,
   "readme_path": "rotki/README.md",
   "card_path": "rotki/CARD.md",
-  "team": [],
+  "team": [
+    {
+      "name": "Lefteris Karapetsas",
+      "role": "Founder & Managing Director",
+      "github": "LefterisJP",
+      "linkedin": "https://de.linkedin.com/in/eleftherios-karapetsas-1a18b919",
+      "background": "Ethereum developer since 2014, attended Devcon 0, EthDev alumni",
+      "verified": true,
+      "sources": ["GitHub", "LinkedIn", "Company Registry (Northdata)"]
+    },
+    {
+      "name": "kelsos",
+      "role": "Frontend Developer",
+      "github": "kelsos",
+      "background": "Rewrote UI using Vue.js framework",
+      "verified": true,
+      "sources": ["GitHub"]
+    },
+    {
+      "name": "Yabir",
+      "role": "Developer",
+      "github": "yabirgb",
+      "verified": true,
+      "sources": ["GitHub"]
+    },
+    {
+      "name": "Luki Centuri",
+      "role": "Frontend Developer",
+      "github": "lukicenturi",
+      "background": "Joined end of 2021",
+      "verified": true,
+      "sources": ["GitHub", "Blog"]
+    }
+  ],
   "social_links": {
-    "twitter": "",
-    "discord": "",
+    "twitter": "https://twitter.com/rotkiapp",
+    "discord": "https://discord.rotki.com",
     "telegram": "",
     "medium": "",
-    "mirror": ""
+    "mirror": "",
+    "blog": "https://blog.rotki.com"
   },
-  "investors": []
+  "investors": [],
+  "legal_entity": {
+    "name": "Rotki Solutions GmbH",
+    "registration": "HRB 221065",
+    "location": "Berlin, Germany",
+    "founded": "2020-08-20"
+  },
+  "funding": {
+    "model": "Freemium + Grants",
+    "gitcoin_total_usd": 24857,
+    "vc_funded": false
+  }
 }
