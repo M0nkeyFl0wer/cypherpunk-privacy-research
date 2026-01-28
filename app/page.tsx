@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { HomepageGraph } from '@/components/HomepageGraph';
 
 export default function Home() {
@@ -11,10 +10,6 @@ export default function Home() {
             Cypherpunk toolkit research
             <span className="text-[#6c7086] text-sm font-normal ml-3">wip</span>
           </h1>
-          <div className="flex gap-4 text-sm">
-            <Link href="/methodology" className="text-[#6c7086] hover:text-[#94e2d5]">methodology</Link>
-            <a href="#how-it-works" className="text-[#6c7086] hover:text-[#94e2d5]">how it works</a>
-          </div>
         </div>
       </div>
 
@@ -44,8 +39,13 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="max-w-5xl mx-auto px-6 py-8 border-t border-[#252525]">
+        <p className="text-sm text-[#a6adc8] mb-4">
+          An independent open research project for cypherpunk tools. A contribution to the <a href="https://web3privacy.info" target="_blank" rel="noopener noreferrer" className="text-[#94e2d5] hover:underline">web3privacy</a> community.
+        </p>
         <div className="flex items-center justify-between text-xs text-[#6c7086]">
-          <span>community research</span>
+          <a href="https://explorer.web3privacy.info" target="_blank" rel="noopener noreferrer" className="hover:text-[#94e2d5]">
+            web3privacy explorer
+          </a>
           <a href="https://github.com/M0nkeyFl0wer/web3-privacy-ethereum-cypherpunk-research"
              target="_blank" rel="noopener noreferrer" className="hover:text-[#94e2d5]">source</a>
         </div>
