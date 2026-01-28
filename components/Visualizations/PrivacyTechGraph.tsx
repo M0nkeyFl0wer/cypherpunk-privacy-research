@@ -232,7 +232,7 @@ export default function PrivacyTechGraph({ width = 900, height = 600 }: PrivacyT
       .data(nodes)
       .join('g')
       .attr('class', 'node')
-      .style('cursor', 'pointer');
+      .style('cursor', d => (d.type === 'project' && PROJECTS_WITH_PAGES.has(d.id)) ? 'pointer' : 'grab');
 
     // Draw shapes
     node.each(function(d) {
@@ -305,17 +305,24 @@ export default function PrivacyTechGraph({ width = 900, height = 600 }: PrivacyT
       node.style('opacity', (d: GraphNode) => connectedIds.has(d.id) ? 1 : 0.3);
     }
 
-    // Click handler - select node, show connections
+    // Click handler - navigate to project or select non-project nodes
     node.on('click', function(event, d) {
       event.stopPropagation();
 
-      // If we were dragging, don't select
+      // If we were dragging, don't navigate
       if (isDragging) {
         isDragging = false;
         return;
       }
 
-      // Toggle selection
+      // For project nodes with pages, navigate directly
+      const hasPage = d.type === 'project' && PROJECTS_WITH_PAGES.has(d.id);
+      if (hasPage) {
+        window.location.href = `/projects/${d.id}`;
+        return;
+      }
+
+      // For non-project nodes, toggle selection to show connections
       const newSelected = selectedNode === d.id ? null : d.id;
       setSelectedNode(newSelected);
       highlightConnections(newSelected);
@@ -335,9 +342,8 @@ export default function PrivacyTechGraph({ width = 900, height = 600 }: PrivacyT
         .attr('font-size', (n: GraphNode) => n.type === 'project' ? '10px' : '9px')
         .attr('pointer-events', 'none');
 
-      // Show tooltip with project link
+      // Show tooltip for non-project nodes
       if (newSelected) {
-        const hasPage = d.type === 'project' && PROJECTS_WITH_PAGES.has(d.id);
         const typeLabel = data.nodeTypes[d.type]?.description || d.type;
 
         let html = `<div style="font-weight: 600; font-size: 14px; color: ${getNodeColor(d, data.nodeTypes)}">${d.label}</div>`;
@@ -350,11 +356,7 @@ export default function PrivacyTechGraph({ width = 900, height = 600 }: PrivacyT
         });
 
         if (connections.length > 0) {
-          html += `<div style="font-size: 10px; color: #888; margin-bottom: 8px;">${connections.length} connections highlighted</div>`;
-        }
-
-        if (hasPage) {
-          html += `<a href="/projects/${d.id}" style="display: inline-block; margin-top: 4px; padding: 6px 12px; background: #1a1a1a; border: 1px solid #94e2d5; border-radius: 4px; color: #94e2d5; text-decoration: none; font-size: 11px;">Open Project →</a>`;
+          html += `<div style="font-size: 10px; color: #888;">${connections.length} connected projects</div>`;
         }
 
         tooltip
@@ -492,7 +494,7 @@ export default function PrivacyTechGraph({ width = 900, height = 600 }: PrivacyT
       </div>
 
       <p className="text-xs text-[#555]">
-        Click node to select & see connections • Drag to arrange • Scroll to zoom
+        Click project to view details • Hover to see connections • Drag to arrange • Scroll to zoom
       </p>
     </div>
   );
