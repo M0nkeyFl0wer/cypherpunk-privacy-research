@@ -1,7 +1,7 @@
 {
   "metadata": {
     "research_date": "2025-10-07",
-    "last_updated": "2026-01-19",
+    "last_updated": "2026-01-28",
     "constitutional_version": "v2.0.0",
     "verification_status": "VERIFIED - Real data only, zero fabrication",
     "expert_review": {
@@ -120,7 +120,7 @@
         "Eli Ben-Sasson",
         "Eran Tromer",
         "Ian Miers",
-        "Madars Vizra",
+        "Madars Virza",
         "Matthew Green"
       ],
       "institutions": [
@@ -157,10 +157,27 @@
       "employee_count": "~15 employees across 5 continents (as of December 2024)",
       "work_structure": "Remote/distributed",
 
+      "january_2026_crisis": {
+        "event": "ECC Team Mass Resignation",
+        "date": "2026-01-07",
+        "description": "Entire Electric Coin Company team resigned, citing funding and sustainability concerns",
+        "impact": "Major organizational disruption to Zcash development",
+        "former_ceo_next_venture": {
+          "name": "CashZ",
+          "founder": "Josh Swihart",
+          "description": "New company being formed by former ECC CEO following resignation"
+        },
+        "sources": ["Web search January 2026", "Industry news"],
+        "confidence_score": 0.95
+      },
+
       "current_leadership": {
-        "ceo": {
+        "former_ceo": {
           "name": "Josh Swihart",
+          "status": "Resigned January 7, 2026",
           "appointed": "2023-12-18",
+          "resigned": "2026-01-07",
+          "next_venture": "Forming new company CashZ",
           "previous_roles": [
             "SVP of Growth at ECC (October 2018 - August 2023)",
             "CEO and owner of Aspenware (acquired by Aspen Ski Company and Alterra Resorts)",
@@ -170,7 +187,7 @@
             "Investor at Denver Angels"
           ],
           "confidence_score": 1.0,
-          "source": "Web search 2025, LinkedIn"
+          "source": "Web search 2025-2026, LinkedIn"
         },
         "other_leadership": {
           "nick_takacs": "Engineering Manager",
@@ -261,16 +278,20 @@
       "team_members": [
         {
           "name": "Alex Bornstein",
-          "title": "Interim Executive Director & Chief Operating Officer"
+          "title": "Executive Director",
+          "appointed_permanent": "2025-11",
+          "note": "Transitioned from Interim ED to permanent Executive Director in November 2025"
+        },
+        {
+          "name": "Danika Delano",
+          "title": "Chief Operating Officer (COO)",
+          "promoted": "2025-11",
+          "previous_title": "Operations Director"
         },
         {
           "name": "Elise Hamdon",
           "title": "Chief Communications Officer",
           "education": "Ph.D. in Educational Administration"
-        },
-        {
-          "name": "Danika Delano",
-          "title": "Operations Director"
         },
         {
           "name": "Pili Guerra",
@@ -359,8 +380,8 @@
     "description": "Zcash - Internet Money",
     "created_at": "2014-11-22T03:13:10Z",
     "last_updated": "2025-10-07T23:13:09Z",
-    "stars": 5080,
-    "forks": 2104,
+    "stars": 5356,
+    "forks": 2191,
     "primary_language": "C++",
     "languages": {
       "C++": "58.8%",
@@ -374,8 +395,9 @@
     "contributors_count": 492,
 
     "latest_release": {
-      "version": "v6.10.0",
-      "published_at": "2025-10-04T03:44:38Z",
+      "version": "v6.11.0",
+      "previous_version": "v6.10.0",
+      "updated_at": "2026-01-28",
       "notable_changes": [
         "Network Upgrade 6.1 support",
         "Mainnet activation height: 3146400 (approximately November 23, 2025)",
