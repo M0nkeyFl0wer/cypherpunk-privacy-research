@@ -41,5 +41,18 @@ analysis/osint/*_scan.json
 *.swp
 *.swo
 
+# Claude Code session data
+.claude/
+
+# Spec-kit working files
+.specify/
+.speckit/
+
+# Build artifacts
+tsconfig.tsbuildinfo
+
 # Private disclosures - not for public repo
 deliverables/*/DISCLOSURE_DRAFT.md
+
+# Archive folder (legacy content)
+archive/
