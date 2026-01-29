@@ -212,9 +212,10 @@ PHASE 3: REPORT GENERATION
                 caught it and helped us troubleshoot and roll it back.
               </p>
               <p className="text-[#a6adc8]">
-                This failure drove the constitutional framework. It was easier to create a standalone site
-                to share this research as opposed to trying to fit it all in the existing explorer setup.
-                We will submit another PR that adds links to additional research.
+                This mistake lead to a renewed effort to find the best way to share this work. It was easier
+                to create a standalone site as opposed to trying to fit it all in the existing explorer setup.
+                We will submit another PR to explorer that adds links to this additional research after sharing
+                this site to those in the community for feedback. Thanks.
               </p>
             </div>
 
