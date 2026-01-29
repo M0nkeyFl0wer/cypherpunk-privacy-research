@@ -99,11 +99,19 @@ async function getProjectData(slug: string): Promise<ProjectData | null> {
     readFile(path.join(base, 'reports', 'opsec_vulnerability_assessment.md')),
   ]);
 
-  // Load JSON data
-  const [metadata, githubAnalysis] = await Promise.all([
+  // Load JSON data - check both old and new locations
+  const [metadata, githubAnalysis, verifiedData] = await Promise.all([
     readJson(path.join(base, 'project_metadata.json')),
     readJson(path.join(base, 'analysis', 'github_analysis.json')),
+    readJson(path.join(base, 'sources', 'verified_data.json')),
   ]);
+
+  // Extract data from verified_data.json format
+  const getVerifiedValue = (obj: any) => {
+    if (!obj) return null;
+    if (typeof obj === 'string') return obj;
+    return obj.value || obj;
+  };
 
   // Find logo - check various naming patterns
   const slugUnderscore = slug.replace(/-/g, '_');
@@ -141,18 +149,30 @@ async function getProjectData(slug: string): Promise<ProjectData | null> {
     }
   }
 
+  // Get name from various sources with proper fallback chain
+  const verifiedName = getVerifiedValue(verifiedData?.basic_information?.name) || verifiedData?.project;
+  const projectName = metadata?.name || verifiedName || slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+
+  // Get description from various sources
+  const verifiedDesc = getVerifiedValue(verifiedData?.basic_information?.description);
+  const projectDesc = githubAnalysis?.repository?.description || metadata?.description || verifiedDesc || '';
+
+  // Get links from various sources
+  const verifiedGithub = getVerifiedValue(verifiedData?.official_links?.github);
+  const verifiedWebsite = getVerifiedValue(verifiedData?.official_links?.website);
+
   return {
-    name: metadata?.name || slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase()),
-    description: githubAnalysis?.repository?.description || metadata?.description || '',
-    github: githubAnalysis?.repository?.html_url || metadata?.github_url || '',
-    website: metadata?.website || '',
+    name: projectName,
+    description: projectDesc,
+    github: githubAnalysis?.repository?.html_url || metadata?.github_url || verifiedGithub || '',
+    website: metadata?.website || verifiedWebsite || '',
     tier,
     repoAnalysis,
     team,
     security,
     osintSummary,
     readme,
-    metadata,
+    metadata: metadata || verifiedData,
     githubAnalysis,
     logo,
   };
