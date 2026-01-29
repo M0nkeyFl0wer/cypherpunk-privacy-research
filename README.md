@@ -87,7 +87,7 @@ Not just repository descriptions — actual analysis:
 
 In January 2025, we submitted PR #1997 to web3privacy/explorer-data. The PR accidentally overwrote existing high-quality data with template placeholders. A Zcash community developer caught it and helped us roll it back.
 
-This failure drove the constitutional framework. It was easier to create a standalone site to share this research than to fit it into the existing explorer setup.
+This mistake lead to a renewed effort to find the best way to share this work. It was easier to create a standalone site as opposed to trying to fit it all in the existing explorer setup. We will submit another PR to explorer that adds links to this additional research after sharing this site to those in the community for feedback. Thanks.
 
 ---
 
