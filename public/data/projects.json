@@ -34,6 +34,44 @@
     }
   },
   {
+    "id": "briar",
+    "slug": "briar",
+    "confidence": 0.9,
+    "researchDate": "2026-01-28",
+    "name": "Briar",
+    "description": "A peer-to-peer encrypted messenger designed for activists, journalists, and anyone needing censorship-resistant communication. Can sync messages directly via Bluetooth, Wi-Fi, or Tor - functioning even during internet shutdowns.",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [
+        "Messages sync directly between devices",
+        "Built-in onion routing for online anonymity",
+        "Works via Bluetooth (~10-30m) or Wi-Fi",
+        "Briar Mailbox for asynchronous delivery"
+      ],
+      "techStack": [],
+      "platforms": []
+    },
+    "website": "https://briarproject.org/",
+    "github": "https://github.com/briar",
+    "ecosystem": "multichain",
+    "category": "Online/Offline Hybrid",
+    "status": "Production (Active Development)",
+    "milestones": [
+      {
+        "date": "2011",
+        "event": "Briar project founded by Michael Rogers"
+      },
+      {
+        "date": "2017",
+        "event": "First public beta release"
+      },
+      {
+        "date": "2025-12",
+        "event": "Version 1.5.15 released"
+      }
+    ]
+  },
+  {
     "id": "cake-wallet",
     "slug": "cake-wallet",
     "confidence": 0.8,
@@ -242,6 +280,50 @@
     "category": "Privacy Infrastructure"
   },
   {
+    "id": "gnupg",
+    "slug": "gnupg",
+    "confidence": 0.95,
+    "researchDate": "2026-01-28",
+    "name": "GnuPG",
+    "description": "A free implementation of the OpenPGP standard (RFC 4880) for encrypting and signing data. Created by Werner Koch in 1999, it serves as the open-source replacement for proprietary PGP. Used by Edward Snowden to evade NSA monitoring.",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [
+        "Email encryption and signing",
+        "File encryption",
+        "Digital signatures",
+        "Key management"
+      ],
+      "techStack": [],
+      "platforms": []
+    },
+    "website": "https://gnupg.org/",
+    "github": "https://github.com/gpg/gnupg",
+    "ecosystem": "multichain",
+    "category": "Online",
+    "status": "Production (25+ Years Active)",
+    "milestones": [
+      {
+        "date": "1999",
+        "event": "GnuPG 1.0 released"
+      },
+      {
+        "date": "2015",
+        "event": "Funding crisis and crowdfunding rescue"
+      },
+      {
+        "date": "2024-07",
+        "event": "RFC 9580 (OpenPGP v6) published"
+      }
+    ],
+    "githubMetrics": {
+      "stars": 893,
+      "forks": 189,
+      "contributors": "66+",
+      "note": "Mirror only - development on gnupg.org"
+    }
+  },
+  {
     "id": "hopr",
     "slug": "hopr",
     "confidence": 0.8,
@@ -258,6 +340,44 @@
     },
     "ecosystem": "multichain",
     "category": "Privacy Infrastructure"
+  },
+  {
+    "id": "i2p",
+    "slug": "i2p",
+    "confidence": 0.9,
+    "researchDate": "2026-01-28",
+    "name": "I2P",
+    "description": "A fully decentralized anonymous overlay network that uses 'garlic routing' (bundling multiple messages) and unidirectional tunnels to provide stronger traffic analysis resistance than traditional onion routing.",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [
+        "Bundles multiple messages ('cloves') vs single-message onion routing",
+        "4 tunnels per communication",
+        "No central directory servers like Tor",
+        "Rather than circuit-switched"
+      ],
+      "techStack": [],
+      "platforms": []
+    },
+    "website": "https://geti2p.net/",
+    "github": "https://github.com/i2p",
+    "ecosystem": "multichain",
+    "category": "Online",
+    "status": "Production (20+ Years Active)",
+    "milestones": [
+      {
+        "date": "2003",
+        "event": "I2P founded by jrandom"
+      },
+      {
+        "date": "2007",
+        "event": "jrandom disappeared, zzz took over"
+      },
+      {
+        "date": "2025",
+        "event": "20+ years active with ~55k nodes"
+      }
+    ]
   },
   {
     "id": "iden3",
@@ -724,6 +844,48 @@
     "category": "Privacy Infrastructure"
   },
   {
+    "id": "tails",
+    "slug": "tails",
+    "confidence": 0.95,
+    "researchDate": "2026-01-28",
+    "name": "Tails",
+    "description": "A portable operating system that protects against surveillance and censorship. Runs from a USB stick, leaves no trace on the host computer, and routes all internet traffic through Tor. Used by Edward Snowden during the NSA revelations.",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [
+        "Runs entirely in RAM, never writes to hard drive",
+        "Overwrites RAM on shutdown (cold boot attack protection)",
+        "Each boot starts from clean state",
+        "All internet traffic routed through Tor"
+      ],
+      "techStack": [],
+      "platforms": []
+    },
+    "website": "https://tails.net",
+    "github": "",
+    "ecosystem": "multichain",
+    "category": "Online",
+    "status": "Production (Part of Tor Project)",
+    "milestones": [
+      {
+        "date": "2009-06",
+        "event": "First release as 'amnesia 0.2'"
+      },
+      {
+        "date": "2011-09",
+        "event": "Renamed to 'Tails' (v0.8)"
+      },
+      {
+        "date": "2024-09",
+        "event": "Merged into Tor Project"
+      },
+      {
+        "date": "2026-01",
+        "event": "Tails 7.x (based on Debian 13)"
+      }
+    ]
+  },
+  {
     "id": "telegram",
     "slug": "telegram",
     "confidence": 0.8,
@@ -737,6 +899,48 @@
     },
     "ecosystem": "multichain",
     "category": "Privacy Infrastructure"
+  },
+  {
+    "id": "tor-project",
+    "slug": "tor-project",
+    "confidence": 0.95,
+    "researchDate": "2026-01-28",
+    "name": "Tor Project",
+    "description": "A 501(c)(3) nonprofit that maintains the Tor anonymity network and associated software. Tor enables anonymous communication by routing traffic through a worldwide volunteer network of relays using onion routing.",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [
+        "Multi-layer encryption where each relay peels one layer",
+        "Guard → Middle → Exit relay",
+        "Every ~10 minutes for traffic analysis resistance",
+        ""
+      ],
+      "techStack": [],
+      "platforms": []
+    },
+    "website": "https://www.torproject.org/",
+    "github": "https://github.com/torproject",
+    "ecosystem": "multichain",
+    "category": "Online",
+    "status": "Production (Active Development)",
+    "milestones": [
+      {
+        "date": "2002",
+        "event": "Alpha version released"
+      },
+      {
+        "date": "2006",
+        "event": "Tor Project nonprofit founded"
+      },
+      {
+        "date": "2024-09",
+        "event": "Tails OS merged into Tor Project"
+      },
+      {
+        "date": "2025",
+        "event": "~7,000+ volunteer relays worldwide"
+      }
+    ]
   },
   {
     "id": "tornado-cash",
@@ -1045,6 +1249,44 @@
     },
     "ecosystem": "multichain",
     "category": "Privacy Infrastructure"
+  },
+  {
+    "id": "yubikey",
+    "slug": "yubikey",
+    "confidence": 0.95,
+    "researchDate": "2026-01-28",
+    "name": "YubiKey",
+    "description": "Hardware security key manufactured by Yubico that provides strong two-factor, multi-factor, and passwordless authentication. Co-authored the FIDO U2F standard with Google.",
+    "team": [],
+    "technology": {
+      "privacyTechniques": [
+        "Hardware-bound passkeys, discoverable credentials",
+        "Universal 2nd Factor",
+        "NIST standard",
+        "RSA up to 4096 bits, ECC up to 384 bits"
+      ],
+      "techStack": [],
+      "platforms": []
+    },
+    "website": "https://www.yubico.com/",
+    "github": "https://github.com/Yubico",
+    "ecosystem": "multichain",
+    "category": "Offline",
+    "status": "Production (Public Company)",
+    "milestones": [
+      {
+        "date": "2007",
+        "event": "Founded in Sweden"
+      },
+      {
+        "date": "2012",
+        "event": "Co-developed FIDO U2F with Google"
+      },
+      {
+        "date": "2023-09",
+        "event": "IPO on Nasdaq Stockholm (~$800M valuation)"
+      }
+    ]
   },
   {
     "id": "zano",
