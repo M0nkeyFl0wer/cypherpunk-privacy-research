@@ -243,7 +243,7 @@ export default function ProjectMiniGraph({ projectId, width = 400, height = 300 
     // Interactions
     node
       .on('mouseover', function(event, d) {
-        const categoryInfo = data.categories[d.category];
+        const categoryInfo = data?.categories?.[d.category];
         const isCenter = d.id === projectId;
         const hasPage = PROJECTS_WITH_PAGES.has(d.id);
 
