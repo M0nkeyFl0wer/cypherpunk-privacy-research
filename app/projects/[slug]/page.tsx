@@ -107,10 +107,27 @@ async function getProjectData(slug: string): Promise<ProjectData | null> {
   ]);
 
   // Extract data from verified_data.json format
-  const getVerifiedValue = (obj: any) => {
+  // Handles nested objects like {value: ...}, {short: ..., detailed: ...}, etc.
+  const getVerifiedValue = (obj: any): string | null => {
     if (!obj) return null;
     if (typeof obj === 'string') return obj;
-    return obj.value || obj;
+    if (typeof obj === 'number') return String(obj);
+    if (typeof obj === 'object') {
+      // Handle {short, detailed} format
+      if (obj.short) return obj.short;
+      if (obj.detailed) return obj.detailed;
+      // Handle {value} format
+      if (obj.value !== undefined) {
+        if (typeof obj.value === 'string') return obj.value;
+        if (typeof obj.value === 'object' && obj.value.short) return obj.value.short;
+        return String(obj.value);
+      }
+      // Handle {long} format
+      if (obj.long) return obj.long;
+      // Don't return the object itself
+      return null;
+    }
+    return null;
   };
 
   // Find logo - check various naming patterns
