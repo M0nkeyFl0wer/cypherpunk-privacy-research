@@ -1,27 +1,87 @@
 {
   "project_id": "nym",
-  "verification_date": "2026-01-20",
-  "last_updated": "2026-01-20",
+  "verification_date": "2026-01-28",
+  "last_updated": "2026-01-28",
   "constitutional_version": "v3.0.0",
   "verified_data_points": [
     {"field": "website", "value": "https://nym.com", "confidence": 1.0, "note": "Rebranded from nymtech.net (2026)"},
     {"field": "legacy_website", "value": "https://nymtech.net", "confidence": 1.0, "note": "Redirects to nym.com"},
     {"field": "github", "value": "https://github.com/nymtech", "confidence": 1.0},
     {"field": "github_repos", "value": 57, "confidence": 1.0},
-    {"field": "github_stars_main", "value": 1599, "confidence": 1.0},
+    {"field": "github_stars_main", "value": 1604, "confidence": 1.0, "retrieved": "2026-01-28"},
+    {"field": "github_forks", "value": 263, "confidence": 1.0, "retrieved": "2026-01-28"},
+    {"field": "github_open_issues", "value": 120, "confidence": 1.0, "retrieved": "2026-01-28"},
+    {"field": "primary_language", "value": "Rust", "confidence": 1.0},
+    {"field": "license", "value": "GPL-3.0 (nym-node), Apache 2.0 (libraries)", "confidence": 1.0},
     {"field": "founder_ceo", "value": "Harry Halpin", "confidence": 1.0},
+    {"field": "chief_scientist", "value": "Claudia Diaz", "confidence": 1.0},
+    {"field": "cto", "value": "Mark Sinclair", "confidence": 1.0},
+    {"field": "coo", "value": "Alexis Roussel", "confidence": 1.0},
+    {"field": "cso", "value": "Ania Piotrowska (Chief Scientific Officer)", "confidence": 1.0},
+    {"field": "cpo", "value": "Marc Debizet", "confidence": 1.0},
+    {"field": "strategy_officer", "value": "Jaya Klara Brekke (Chief Strategy Officer)", "confidence": 1.0},
     {"field": "technology", "value": "Mixnet with Sphinx packets", "confidence": 1.0},
     {"field": "academic_foundation", "value": "Loopix (Piotrowska et al., 2017)", "confidence": 1.0},
     {"field": "eu_project", "value": "PANORAMIX (5M EUR)", "confidence": 0.95},
-    {"field": "a16z_funding", "value": "$13M Series A (Nov 2021)", "confidence": 0.95},
-    {"field": "language", "value": "Rust", "confidence": 1.0},
-    {"field": "mainnet_status", "value": "Production", "confidence": 0.95},
+    {"field": "total_funding", "value": "$322M over 7 rounds", "confidence": 0.95},
+    {"field": "a16z_funding", "value": "$13M Series A (Nov 2021)", "confidence": 1.0},
+    {"field": "polychain_funding", "value": "$6.5M Series A (Jul 2021)", "confidence": 1.0},
+    {"field": "innovation_fund", "value": "$300M commitments (May 2022)", "confidence": 0.95},
+    {"field": "mainnet_status", "value": "Production", "confidence": 1.0},
     {"field": "token", "value": "NYM", "confidence": 1.0},
+    {"field": "blockchain", "value": "Cosmos SDK", "confidence": 1.0},
+    {"field": "latest_release", "value": "nym-binaries-v2026.2-oscypek", "confidence": 1.0, "date": "2026-01-27"},
     {"field": "dns_provider", "value": "Gandi", "confidence": 1.0},
     {"field": "hosting_provider", "value": "Vercel (web), AWS Global Accelerator, Exoscale (Swiss)", "confidence": 1.0},
     {"field": "security_headers", "value": "EXCELLENT (HSTS, CSP, X-Frame-Options, X-Content-Type-Options)", "confidence": 1.0},
     {"field": "cves_detected", "value": 0, "confidence": 1.0},
     {"field": "zcash_integration", "value": "zcash-swapper.nym.com", "confidence": 1.0}
+  ],
+  "cryptographic_primitives": {
+    "key_exchange": "x25519 (RFC 7748)",
+    "identity_keys": "Ed25519 (RFC 8032)",
+    "packet_encryption": "AES-128-CTR (stream cipher)",
+    "gateway_encryption": "AES-256-GCM-SIV",
+    "hashing": "BLAKE3",
+    "credentials": "BLS12-381 (Coconut scheme)",
+    "signature_scheme": "Pointcheval-Sanders"
+  },
+  "security_audits": [
+    {
+      "auditor": "Cure53",
+      "date": "2024-07",
+      "scope": "Mobile apps, Desktop apps, Backend API, VPN software, Cryptographic implementations",
+      "duration": "56 working days",
+      "team_size": 6,
+      "total_findings": 43,
+      "critical_findings": 5,
+      "high_findings": 2,
+      "status": "All critical/high issues remediated",
+      "report_url": "https://cure53.de/audit-report_nym.pdf"
+    },
+    {
+      "auditor": "Oak Security",
+      "date": "2022-12",
+      "scope": "Mixnet contracts, Vesting contracts",
+      "duration": "2 weeks",
+      "team_size": 4,
+      "total_findings": 19,
+      "security_vulnerabilities": 9,
+      "status": "All critical/major issues resolved",
+      "report_published": "2023-03-27"
+    },
+    {
+      "auditor": "Cryspen",
+      "date": "2023-2024",
+      "scope": "Cryptographic implementations",
+      "status": "Completed"
+    },
+    {
+      "auditor": "Jean-Philippe Aumasson",
+      "date": "2021",
+      "scope": "Cryptography review",
+      "status": "Completed"
+    }
   ],
   "osint_findings": {
     "subdomains_found": 12,
@@ -30,11 +90,39 @@
     "third_party_integrations": ["BTCPay", "Spectre DAO", "Stripe"],
     "swiss_hosting": "Exoscale (sos-ch-dk-2.exo.io) for CMS"
   },
+  "top_contributors": [
+    {"username": "jstuczyn", "contributions": 2453},
+    {"username": "octol", "contributions": 1205},
+    {"username": "futurechimp", "contributions": 809},
+    {"username": "tommyv1987", "contributions": 737},
+    {"username": "fmtabbara", "contributions": 609},
+    {"username": "serinko", "contributions": 605},
+    {"username": "mmsinclair", "contributions": 474},
+    {"username": "benedettadavico", "contributions": 422},
+    {"username": "neacsu", "contributions": 381},
+    {"username": "mfahampshire", "contributions": 375}
+  ],
+  "investors": [
+    {"name": "Andreessen Horowitz (a16z)", "rounds": ["Series A", "Innovation Fund"]},
+    {"name": "Polychain Capital", "rounds": ["Series A", "Innovation Fund"]},
+    {"name": "Binance Labs", "rounds": ["Incubation"]},
+    {"name": "European Commission", "rounds": ["PANORAMIX grant"]},
+    {"name": "Eden Block", "rounds": ["Innovation Fund"]},
+    {"name": "Greenfield One", "rounds": ["Innovation Fund"]},
+    {"name": "Huobi Incubator", "rounds": ["Innovation Fund"]},
+    {"name": "HashKey Capital", "rounds": ["Innovation Fund"]},
+    {"name": "Figment", "rounds": ["Innovation Fund"]},
+    {"name": "Fenbushi Capital", "rounds": ["Innovation Fund"]},
+    {"name": "OKX Blockdream Ventures", "rounds": ["Innovation Fund"]},
+    {"name": "NGC Ventures", "rounds": ["Innovation Fund"]},
+    {"name": "KR1", "rounds": ["Innovation Fund"]},
+    {"name": "Lemniscap", "rounds": ["Innovation Fund"]},
+    {"name": "Zcash Community Grants", "rounds": ["Grant (Feb 2024)"]}
+  ],
   "research_gaps": [
-    "Specific security audit reports",
     "Complete employee count",
     "Detailed organizational structure",
-    "Mixnet node operational security documentation"
+    "Operational security documentation for mixnet nodes"
   ],
-  "confidence_score": 0.94
+  "confidence_score": 0.97
 }

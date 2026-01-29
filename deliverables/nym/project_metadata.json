@@ -1,9 +1,9 @@
 {
   "id": "nym",
-  "name": "NYM",
+  "name": "Nym",
   "slug": "nym",
-  "description": "A decentralized mixnet infrastructure providing network-level privacy against sophisticated end-to-end attackers. Uses Sphinx packet format for anonymous communication and blinded, re-randomizable credentials for anonymous transactions. Built on the Loopix academic research foundation.",
-  "website": "https://nymtech.net",
+  "description": "A decentralized mixnet infrastructure providing network-level privacy against sophisticated end-to-end attackers. Uses Sphinx packet format for anonymous communication and Coconut blinded, re-randomizable credentials for anonymous transactions. Built on the Loopix academic research foundation with economic incentives via the NYM token.",
+  "website": "https://nym.com",
   "github": "https://github.com/nymtech",
   "documentation": "https://nymtech.net/docs/",
   "category": "Privacy Infrastructure",
@@ -11,7 +11,10 @@
   "tech_stack": [
     "Rust",
     "Sphinx packet format",
+    "Coconut credentials",
+    "BLS12-381",
     "CosmWasm",
+    "Cosmos SDK",
     "Tauri (desktop apps)",
     "WireGuard",
     "WebAssembly"
@@ -19,37 +22,44 @@
   "privacy_techniques": [
     "Mixnet (multi-hop routing)",
     "Sphinx packet encryption",
-    "Cover traffic",
-    "Timing obfuscation",
+    "Cover traffic (Loopix model)",
+    "Timing obfuscation (Poisson delays)",
     "Blinded credentials (Coconut)",
     "Re-randomizable credentials",
-    "Zero-knowledge payments"
+    "Zero-knowledge proofs",
+    "Single Use Reply Blocks (SURBs)"
   ],
   "blockchain_platforms": [
     "cosmos"
   ],
   "status": "active_production",
   "maturity_level": "production",
-  "last_update": "2026-01-19",
+  "last_update": "2026-01-28",
   "launch_date": "2021",
-  "confidence": 0.9,
+  "confidence": 0.97,
   "sources": [
     {
       "type": "github",
       "url": "https://github.com/nymtech/nym",
-      "retrieved_at": "2026-01-19",
+      "retrieved_at": "2026-01-28",
       "confidence": 1.0
     },
     {
       "type": "official_website",
-      "url": "https://nymtech.net",
-      "retrieved_at": "2026-01-19",
+      "url": "https://nym.com",
+      "retrieved_at": "2026-01-28",
+      "confidence": 1.0
+    },
+    {
+      "type": "security_audit",
+      "url": "https://cure53.de/audit-report_nym.pdf",
+      "retrieved_at": "2026-01-28",
       "confidence": 1.0
     },
     {
       "type": "news",
       "url": "https://techcrunch.com/2021/11/19/nym-raises-13m-from-a16zs-crypto-fund/",
-      "retrieved_at": "2026-01-19",
+      "retrieved_at": "2026-01-28",
       "confidence": 0.95
     }
   ],
@@ -60,42 +70,82 @@
   "team": [
     {
       "name": "Harry Halpin",
-      "role": "CEO & Co-founder",
+      "role": "CEO & Chairman of Scientific Board",
       "github": "",
       "twitter": "",
-      "background": "Former Senior Research Scientist at MIT, led standardization of Web Cryptography API at W3C under Tim Berners-Lee, former Inria de Paris researcher",
-      "verification": "verified_multiple_sources"
-    },
-    {
-      "name": "George Danezis",
-      "role": "Co-founder",
-      "github": "",
-      "twitter": "",
-      "background": "Academic researcher, co-founder of Chainspace (acquired by Facebook/Libra), PhD supervisor of Loopix designer",
+      "background": "Former Senior Research Scientist at MIT, led standardization of Web Cryptography API at W3C under Tim Berners-Lee, former Inria de Paris researcher. PhD in Informatics and Philosophy from University of Edinburgh.",
       "verification": "verified_multiple_sources"
     },
     {
       "name": "Claudia Diaz",
-      "role": "Co-founder & Chief Scientist",
+      "role": "Chief Scientist & Co-founder",
       "github": "",
       "twitter": "",
-      "background": "Professor at KU Leuven COSIC research group, co-author of Nym white paper",
+      "background": "Associate Professor at KU Leuven COSIC research group, 60+ publications with 4,000+ citations, Program Chair of Privacy Enhancing Technologies Symposium. PhD in Engineering, Computer Security, and Privacy from KU Leuven.",
+      "verification": "verified_multiple_sources"
+    },
+    {
+      "name": "Mark Sinclair",
+      "role": "Chief Technology Officer (CTO)",
+      "github": "mmsinclair",
+      "twitter": "",
+      "background": "Serial entrepreneur in healthcare and security sectors. PhD in Computer Vision and Image Processing from University of Edinburgh. 474+ commits to main repository.",
+      "verification": "verified_multiple_sources"
+    },
+    {
+      "name": "Ania Piotrowska",
+      "role": "Chief Scientific Officer (CSO)",
+      "github": "",
+      "twitter": "",
+      "background": "Designer of Loopix mixnet (Nym's academic foundation), PhD under George Danezis at UCL. Expert in onion routing and mix networks.",
+      "verification": "verified_multiple_sources"
+    },
+    {
+      "name": "Alexis Roussel",
+      "role": "Chief Operating Officer (COO) & Co-founder",
+      "github": "",
+      "twitter": "",
+      "background": "Founded Bity (Swiss cryptocurrency brokerage), led Swiss Pirate Party. Master's in Law from Sorbonne University Paris.",
+      "verification": "verified_multiple_sources"
+    },
+    {
+      "name": "Jaya Klara Brekke",
+      "role": "Chief Strategy Officer",
+      "github": "",
+      "twitter": "",
+      "background": "PhD in Digital Geography from Durham University. Leads ecosystem development, operators, community, and communications.",
+      "verification": "verified"
+    },
+    {
+      "name": "Marc Debizet",
+      "role": "Chief Product Officer (CPO)",
+      "github": "",
+      "twitter": "",
+      "background": "Former Head of Retail Payments and Expansion at Revolut. Engineering graduate from Columbia University and Ecole Polytechnique.",
+      "verification": "verified"
+    },
+    {
+      "name": "George Danezis",
+      "role": "Advisor & Co-founder",
+      "github": "",
+      "twitter": "",
+      "background": "Professor at UCL, co-founder of Chainspace (acquired by Facebook/Libra), now Chief Scientist at Mysten Labs. PhD supervisor of Ania Piotrowska.",
       "verification": "verified_multiple_sources"
     },
     {
       "name": "Aggelos Kiayias",
-      "role": "Co-founder",
+      "role": "Advisor & Co-founder",
       "github": "",
       "twitter": "",
-      "background": "Professor, Project Coordinator of PANORAMIX (EU-funded mixnet project), co-author of Nym token economics",
-      "verification": "verified"
+      "background": "Chair in Cybersecurity and Privacy at University of Edinburgh, Chief Scientist at Input Output (Cardano). Project Coordinator of PANORAMIX. BCS Lovelace Medal recipient.",
+      "verification": "verified_multiple_sources"
     },
     {
-      "name": "Ania Piotrowska",
-      "role": "Co-founder",
+      "name": "Ben Laurie",
+      "role": "Advisor",
       "github": "",
       "twitter": "",
-      "background": "Designer of Loopix mixnet (the academic foundation for Nym), PhD under George Danezis",
+      "background": "Principal Engineer at Google, founding member of Apache Software Foundation, creator of Apache-SSL, core team member of OpenSSL. Levchin Prize recipient.",
       "verification": "verified"
     }
   ],
@@ -108,16 +158,16 @@
   },
   "investors": [
     {
-      "name": "a16z crypto",
+      "name": "Andreessen Horowitz (a16z)",
       "round": "Series A",
-      "amount": "$13M round",
+      "amount": "$13M",
       "date": "2021-11",
       "role": "lead"
     },
     {
       "name": "Polychain Capital",
-      "round": "Seed",
-      "amount": "$6M round",
+      "round": "Seed/Series A",
+      "amount": "$6.5M",
       "date": "2021-07",
       "role": "lead"
     },
@@ -125,11 +175,51 @@
       "name": "Binance Labs",
       "round": "Incubation",
       "date": "2019"
+    },
+    {
+      "name": "European Commission",
+      "round": "PANORAMIX Grant",
+      "amount": "5M EUR",
+      "date": "2016-2019"
+    },
+    {
+      "name": "Zcash Community Grants",
+      "round": "Grant",
+      "date": "2024-02"
     }
   ],
+  "total_funding": "$322M across 7 rounds from 23 investors",
   "academic_origins": {
     "project": "PANORAMIX",
     "funding": "5 million euros from European Commission",
-    "research_partners": ["KU Leuven COSIC", "EPFL SPRING Lab"]
+    "research_partners": ["KU Leuven COSIC", "EPFL SPRING Lab", "University College London", "University of Edinburgh"]
+  },
+  "security_audits": [
+    {
+      "auditor": "Cure53",
+      "date": "2024-07",
+      "status": "All critical issues remediated",
+      "report_url": "https://cure53.de/audit-report_nym.pdf"
+    },
+    {
+      "auditor": "Oak Security",
+      "date": "2022-12",
+      "status": "All major issues resolved"
+    },
+    {
+      "auditor": "Cryspen",
+      "date": "2023-2024",
+      "status": "Completed"
+    },
+    {
+      "auditor": "Jean-Philippe Aumasson",
+      "date": "2021",
+      "status": "Completed"
+    }
+  ],
+  "legal": {
+    "entity_name": "Nym Technologies SA",
+    "jurisdiction": "Switzerland",
+    "founded": "2019"
   }
 }

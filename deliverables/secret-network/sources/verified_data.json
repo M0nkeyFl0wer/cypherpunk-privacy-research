@@ -1,27 +1,187 @@
 {
   "project_id": "secret-network",
-  "verification_date": "2026-01-20",
-  "last_updated": "2026-01-20",
+  "verification_date": "2026-01-28",
+  "last_updated": "2026-01-28",
   "constitutional_version": "v3.0.0",
-  "verified_data_points": [
-    {"field": "website", "value": "https://scrt.network", "confidence": 1.0},
-    {"field": "github", "value": "https://github.com/scrtlabs/SecretNetwork", "confidence": 1.0},
-    {"field": "github_org", "value": "https://github.com/scrtlabs", "confidence": 1.0},
-    {"field": "github_repos", "value": 248, "confidence": 1.0},
-    {"field": "github_stars", "value": 573, "confidence": 1.0},
-    {"field": "founder", "value": "Guy Zyskind", "confidence": 1.0},
-    {"field": "launch_date", "value": "February 2020", "confidence": 0.95},
-    {"field": "technology", "value": "Cosmos SDK + Intel SGX TEE", "confidence": 1.0},
-    {"field": "token", "value": "SCRT", "confidence": 1.0},
-    {"field": "consensus", "value": "Tendermint BFT (Proof of Stake)", "confidence": 1.0},
-    {"field": "smart_contracts", "value": "CosmWasm (Rust → WASM)", "confidence": 1.0},
-    {"field": "ibc_enabled", "value": true, "confidence": 1.0},
-    {"field": "dns_provider", "value": "Cloudflare", "confidence": 1.0},
-    {"field": "hosting_provider", "value": "Framer (web), Fastly (RPC)", "confidence": 1.0}
-  ],
+  "basic_info": {
+    "name": "Secret Network",
+    "ticker": "SCRT",
+    "website": "https://scrt.network",
+    "documentation": "https://docs.scrt.network",
+    "launch_date": "September 2020",
+    "category": "Privacy Layer-1 Blockchain",
+    "description": "Privacy-focused Layer-1 blockchain enabling confidential smart contracts using TEE (Trusted Execution Environments)"
+  },
+  "github": {
+    "main_repo": "https://github.com/scrtlabs/SecretNetwork",
+    "organization": "https://github.com/scrtlabs",
+    "stats": {
+      "stars": 573,
+      "forks": 229,
+      "open_issues": 77,
+      "repos_count": 248
+    },
+    "languages": ["Rust", "Go"],
+    "license": "MIT (with Apache 2.0 components)",
+    "created": "2020-01-29",
+    "last_push": "2026-01-28",
+    "topics": ["blockchain", "computational-privacy", "cosmos-sdk", "privacy", "programmable-privacy", "secret-contracts", "sgx", "sgx-enclave", "tendermint", "wasm"]
+  },
+  "team": {
+    "organizations": [
+      {
+        "name": "SCRT Labs",
+        "role": "Core Development Company",
+        "website": "https://www.scrtlabs.com"
+      },
+      {
+        "name": "Secret Network Foundation",
+        "role": "Ecosystem Development & Governance",
+        "abbreviation": "SNF"
+      }
+    ],
+    "key_members": [
+      {
+        "name": "Alex Zaidelson",
+        "role": "CEO, SCRT Labs",
+        "background": "Former CEO of Beam blockchain, over two decades of executive leadership in blockchain privacy. Multi-disciplinary Web3 executive with experience in Product Management, VC, BD, R&D. Former Chief Business and Data Officer at VirtuSwap.",
+        "location": "Israel",
+        "confidence": 1.0
+      },
+      {
+        "name": "Guy Zyskind",
+        "role": "Founder, SCRT Labs (Former CEO)",
+        "background": "Former MIT Media Lab researcher, author of Secret Network whitepapers, one of the most highly-cited authors on blockchain privacy (2,500+ academic citations)",
+        "nationality": "US citizen",
+        "confidence": 1.0
+      },
+      {
+        "name": "Can Kisagun",
+        "role": "Co-founder, SCRT Labs",
+        "background": "Technical co-founder, academic foundation through exploration at MIT",
+        "confidence": 0.95
+      },
+      {
+        "name": "Lisa Loud",
+        "role": "Executive Director, Secret Network Foundation",
+        "background": "Leads ecosystem development and governance initiatives",
+        "confidence": 1.0
+      },
+      {
+        "name": "Tor Bair",
+        "role": "Founder, Secret Foundation (Departed)",
+        "background": "Core contributor, sole shareholder of Secret Foundation Inc. Subject of 2023 controversy over $2.625M dividend payment.",
+        "status": "departed",
+        "confidence": 1.0
+      }
+    ]
+  },
+  "technology": {
+    "architecture": "Cosmos SDK + Intel SGX TEE",
+    "consensus": "Tendermint BFT (Proof of Stake)",
+    "smart_contracts": "CosmWasm (Rust -> WASM)",
+    "privacy_approach": "Trusted Execution Environment (Hardware-based)",
+    "tee_implementation": "Intel Software Guard Extensions (SGX)",
+    "ibc_enabled": true,
+    "block_time": "~6 seconds",
+    "finality": "Immediate (Tendermint)",
+    "cryptographic_primitives": {
+      "authenticated_encryption": "AES-128-SIV (RFC 5297)",
+      "key_derivation": "HKDF-SHA256 (RFC 5869)",
+      "signatures": "Ed25519 (RFC 8032)",
+      "blockchain_signatures": "secp256k1 (SEC 2)",
+      "key_exchange": "ECDH (Elliptic Curve Diffie-Hellman)",
+      "hashing": "SHA-256 (FIPS 180-4)"
+    },
+    "encryption_details": {
+      "why_aes_siv": "Nonce-misuse resistant - unlike AES-GCM which catastrophically fails on nonce reuse. Risk of AES-SIV is much lesser than AES-GCM for SGX environment.",
+      "state_encryption": "Contract state encrypted at rest using consensus-derived keys",
+      "io_encryption": "User inputs/outputs encrypted via ECDH key exchange with enclave"
+    },
+    "what_is_encrypted": ["Transaction inputs (function parameters)", "Contract state (database)", "Transaction outputs (return values)"],
+    "what_is_public": ["Contract code (WASM binary)", "Transaction sender/receiver", "Gas fees", "Block height", "Transaction graph (who transacts with whom)"]
+  },
+  "funding": {
+    "rounds": [
+      {
+        "date": "May 2021",
+        "amount": "$11.5 million",
+        "lead_investors": ["Arrington Capital", "BlockTower Capital"],
+        "other_investors": ["Spartan Group", "Skynet Trading", "Outlier Ventures", "Fenbushi Capital", "Hashed"],
+        "confidence": 1.0
+      },
+      {
+        "date": "January 2022",
+        "amount": "$400 million (Ecosystem Fund)",
+        "lead": "SCRT Labs",
+        "investors": ["DeFiance Capital", "Alameda Research", "CoinFund", "HashKey", "Hashed", "Arrington Capital", "Dragonfly Capital", "Fenbushi Capital", "BlockTower Capital", "Terraform Labs", "NGC Ventures", "Figment", "Arkstream Capital", "Shima Capital", "Magnus Capital", "Bison Fund", "Momentum6", "Arca", "Iconium", "Huobi Ventures", "Kucoin Labs", "Skynet Trading"],
+        "investor_count": 25,
+        "confidence": 1.0
+      }
+    ],
+    "total_investors": 35,
+    "notable_investors": ["Dragonfly Capital", "Paradigm", "Coinbase Ventures", "SBI Investment", "Animoca Ventures"]
+  },
+  "releases": {
+    "current_version": "v1.23.3",
+    "release_date": "2025-12-02",
+    "recent_releases": [
+      {"version": "v1.23.3", "date": "2025-12-02"},
+      {"version": "v1.23.2", "date": "2025-12-02"},
+      {"version": "v1.23.1", "date": "2025-11-10"},
+      {"version": "v1.23.0", "date": "2025-10-30"},
+      {"version": "v1.22", "date": "2025-09-12", "notes": "Critical security upgrade with SGX vulnerability mitigations"}
+    ]
+  },
+  "security": {
+    "model": "Hardware-based (Intel SGX TEE)",
+    "trust_assumptions": [
+      "Intel SGX hardware is secure",
+      "Node operators run genuine enclaves",
+      "Attestation verification process works correctly"
+    ],
+    "known_vulnerabilities": [
+      {
+        "name": "xAPIC / AEPIC Leak",
+        "discovery_date": "August 2022",
+        "severity": "Critical",
+        "description": "Vulnerability in certain Intel SGX chips allowing uninitialized memory reads. Could expose consensus seed (master decryption key).",
+        "status": "Mitigated in v1.22",
+        "requires": "Physical access to servers"
+      },
+      {
+        "name": "Wiretap.fail",
+        "discovery_date": "2024",
+        "severity": "High",
+        "description": "Academic attack allowing attestation forgery on 3rd Gen Intel Scalable CPUs with physical access",
+        "status": "Mitigated in v1.22",
+        "requires": "Physical access"
+      },
+      {
+        "name": "TEE.fail",
+        "discovery_date": "2024",
+        "severity": "High",
+        "description": "Extension of wiretap.fail to 4th+ Gen Intel Scalable CPUs (DDR5 vulnerability)",
+        "status": "Not exploitable - different memory architecture",
+        "response": "SCRT Labs stated no action required"
+      }
+    ],
+    "mitigations_v1_22": [
+      "Network Access Control - suspended acceptance of new nodes",
+      "Trusted Node Allowlist - curated list of verified validators and RPC nodes",
+      "Network Seed Rotation - changed consensus seed"
+    ],
+    "v1_23_improvements": "Semi-permissioned mode - new validators added through governance, Azure nodes can join without limitation",
+    "security_contact": "info@scrtlabs.com",
+    "bug_bounty": "Exists (details not publicly specified)",
+    "audits": {
+      "status": "No comprehensive public audit reports found",
+      "note": "Individual contract audits exist but core protocol audit reports not publicly available"
+    }
+  },
   "osint_findings": {
     "subdomains_found": 37,
-    "critical_vulnerabilities": {
+    "infrastructure_issues": {
       "api_server_ip": "85.17.52.219",
       "cves_detected": 5,
       "cve_list": ["CVE-2023-44487", "CVE-2025-23419", "CVE-2021-23017", "CVE-2021-3618", "CVE-2019-20372"],
@@ -30,30 +190,47 @@
     },
     "main_website_status": "CLEAN - No vulnerabilities",
     "security_headers": "PARTIAL - Missing CSP, X-Frame-Options",
-    "rpc_infrastructure": "Fastly CDN (clean)"
+    "rpc_infrastructure": "Fastly CDN (clean)",
+    "dns_provider": "Cloudflare",
+    "hosting_provider": "Framer (web), Fastly (RPC)"
   },
-  "research_gaps": [
-    "Complete team roster",
-    "Detailed funding history",
-    "Full security audit reports list"
-  ],
-  "known_issues": [
-    {
-      "issue": "2023 foundation controversy",
-      "description": "Dispute over $2.6M dividend payment to Tor Bair",
-      "status": "documented"
-    },
-    {
-      "issue": "SGX vulnerabilities",
-      "description": "Wiretap.fail academic attack (physical access required)",
-      "status": "mitigated in v1.22 upgrade"
-    },
-    {
-      "issue": "API server vulnerabilities",
-      "description": "5 CVEs detected on api.scrt.network, nginx 1.16.1 EOL",
-      "status": "CRITICAL - Requires immediate attention",
-      "discovered": "2026-01-20"
+  "governance_history": {
+    "2023_controversy": {
+      "issue": "Foundation dividend dispute",
+      "description": "Guy Zyskind alleged undisclosed sale of foundation tokens by Tor Bair. Bair claimed funds were owed as part of SCRT vesting schedule.",
+      "amount": "$2.625 million",
+      "outcome": "Validator departures, calls for transparency reform",
+      "note": "Governance issue, does not affect technical privacy guarantees"
     }
-  ],
-  "confidence_score": 0.91
+  },
+  "roadmap_2026": {
+    "major_items": [
+      "SGX decoupling - ability to run nodes without SGX hardware",
+      "Continued security hardening",
+      "MRENCLAVE upgrades completed in H1 2025"
+    ]
+  },
+  "ecosystem": {
+    "dapps": "20+ active dApps",
+    "developers": "100+ full-time developers",
+    "community": "Active grassroots community",
+    "new_initiatives": {
+      "secret_ai_sdk": {
+        "announced": "January 2025",
+        "description": "Decentralized confidential computing leveraging NVIDIA Confidential Computing with TEE capabilities"
+      }
+    }
+  },
+  "social": {
+    "twitter": "@SecretNetwork",
+    "discord": "https://chat.scrt.network",
+    "telegram": "Multiple regional communities",
+    "forum": "https://forum.scrt.network"
+  },
+  "confidence_score": 0.95,
+  "research_gaps": [
+    "Complete security audit reports from third-party auditors",
+    "Detailed token economics and distribution",
+    "Full organizational chart"
+  ]
 }

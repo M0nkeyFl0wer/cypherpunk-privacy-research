@@ -702,6 +702,137 @@
     "category": "Privacy Infrastructure"
   },
   {
+    "id": "railgun",
+    "slug": "railgun",
+    "confidence": 0.8,
+    "researchDate": "",
+    "name": "RAILGUN",
+    "description": "RAILGUN is a decentralized smart contract system enabling zero-knowledge privacy for on-chain decentralized applications. It uses zk-SNARKs to provide private transactions, shielded balances, and anonymous DeFi interactions directly on Ethereum and other EVM-compatible chains without bridges or separate chains.",
+    "website": "https://railgun.org",
+    "github": "https://github.com/Railgun-Community",
+    "team": [
+      {
+        "name": "Emmanuel Goldstein",
+        "role": "Founder, Development Leader",
+        "status": null
+      }
+    ],
+    "technology": {
+      "privacyTechniques": [
+        "zk-SNARKs"
+      ],
+      "techStack": [
+        "zkSNARK_privacy_layer"
+      ],
+      "platforms": [
+        "ethereum",
+        "polygon",
+        "binance_smart_chain",
+        "arbitrum"
+      ]
+    },
+    "ecosystem": "ethereum",
+    "category": "privacy_protocol",
+    "status": "active",
+    "contracts": [
+      {
+        "network": "ethereum",
+        "name": "Railgun Relay (Proxy)",
+        "address": "0xfa7093cdd9ee6932b4eb2c9e1cde7ce00b1fa4b9",
+        "type": "EIP-1967 Transparent Proxy",
+        "implementation": "0xb4f2d77bd12c6b548ae398244d7fad4abce4d89b",
+        "verified": true,
+        "explorer_url": "https://etherscan.io/address/0xfa7093cdd9ee6932b4eb2c9e1cde7ce00b1fa4b9",
+        "confidence": 0.95
+      },
+      {
+        "network": "ethereum",
+        "name": "RAIL Token",
+        "address": "0xe76C6c83af64e4C60245D8C7dE953DF673a7A33D",
+        "type": "ERC-20 Governance Token",
+        "verified": true,
+        "explorer_url": "https://etherscan.io/address/0xe76C6c83af64e4C60245D8C7dE953DF673a7A33D",
+        "confidence": 0.98
+      },
+      {
+        "network": "ethereum",
+        "name": "Railgun Treasury",
+        "address": "0xe8a8b458bcd1ececc6b6b58f80929b29ccecff40",
+        "type": "Pausable Upgradeable Proxy",
+        "verified": true,
+        "explorer_url": "https://etherscan.io/address/0xe8a8b458bcd1ececc6b6b58f80929b29ccecff40",
+        "confidence": 0.95
+      }
+    ],
+    "milestones": [
+      {
+        "year": 2021,
+        "event": "RAILGUN Founded",
+        "description": "Emmanuel Goldstein founded RAILGUN in United Kingdom",
+        "confidence": 0.9
+      },
+      {
+        "year": 2022,
+        "month": 1,
+        "event": "Strategic Funding Round",
+        "description": "$10M raised in strategic funding",
+        "confidence": 0.9
+      },
+      {
+        "year": 2022,
+        "event": "Multi-Chain Expansion",
+        "description": "Deployed to Polygon, BSC, and Arbitrum",
+        "confidence": 0.85
+      },
+      {
+        "year": 2023,
+        "month": 1,
+        "event": "Lazarus Group Controversy",
+        "description": "FBI alleged Lazarus Group used RAILGUN to launder $60M from Harmony Bridge (before PPOI existed)",
+        "confidence": 0.95
+      },
+      {
+        "year": 2024,
+        "event": "Private Proofs of Innocence Deployed",
+        "description": "PPOI compliance system launched to screen for illicit funds",
+        "confidence": 0.95
+      },
+      {
+        "year": 2025,
+        "month": 2,
+        "event": "zkLend Attack Blocked",
+        "description": "PPOI successfully blocked $9.5M laundering attempt from zkLend hack",
+        "confidence": 0.98
+      },
+      {
+        "year": 2025,
+        "month": 6,
+        "event": "Ethereum Foundation Support",
+        "description": "Ethereum Foundation staked 50,000 RAIL tokens to support RAILGUN",
+        "confidence": 0.9
+      },
+      {
+        "year": 2025,
+        "month": 10,
+        "event": "Kohaku Integration",
+        "description": "Ethereum Foundation integrated RAILGUN into Kohaku privacy wallet toolkit, causing 300% RAIL price surge",
+        "confidence": 0.9
+      }
+    ],
+    "metrics": {
+      "total_volume_processed": "$2,000,000,000+",
+      "total_volume_numeric": 2000000000,
+      "tvl_november_2025": "$95,000,000",
+      "tvl_numeric": 95000000,
+      "dex_liquidity_tvl_october_2025": "$8,570,000",
+      "weth_percentage_of_volume": 76,
+      "active_governor_rewards_2024": "$1,900,000",
+      "monthly_treasury_fees_since_april_2024": "$300,000+",
+      "token_holders": 6193,
+      "token_transactions": 26749
+    }
+  },
+  {
     "id": "rotki",
     "slug": "rotki",
     "confidence": 0.8,
@@ -949,7 +1080,7 @@
     "researchDate": "",
     "name": "Tornado Cash",
     "description": "Fully decentralized, non-custodial cryptocurrency mixer protocol that runs on Ethereum Virtual Machine-compatible networks, enabling private transactions using zero-knowledge proof technology. Tornado Cash was sanctioned by OFAC in August 2022 but had sanctions lifted in March 2025 following a Fifth Circuit court ruling.",
-    "website": "https://tornado.cash",
+    "website": "https://tornadocash.eth.limo",
     "github": "https://github.com/tornadocash",
     "team": [
       {
@@ -1339,16 +1470,12 @@
         "role": "Founding Scientist"
       },
       {
-        "name": "Madars Vizra",
+        "name": "Madars Virza",
         "role": "Founding Scientist"
       },
       {
         "name": "Matthew Green",
         "role": "Founding Scientist"
-      },
-      {
-        "name": "Josh Swihart",
-        "role": "CEO"
       },
       {
         "name": "J.W. Verret",
@@ -1373,6 +1500,10 @@
       {
         "name": "Jack Gavigan",
         "role": "Executive Director of Zcash Foundation"
+      },
+      {
+        "name": "Peter Van Valkenburgh",
+        "role": "Director of Research at Coin Center"
       }
     ],
     "technology": {
