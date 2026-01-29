@@ -1,1 +1,0 @@
-../docs/RESEARCH_METHODOLOGY.md

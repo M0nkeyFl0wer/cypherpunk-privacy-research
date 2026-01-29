@@ -1,1 +1,0 @@
-../docs/FIELD_MAPPING.md
