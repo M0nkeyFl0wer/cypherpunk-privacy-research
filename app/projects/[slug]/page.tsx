@@ -150,16 +150,36 @@ async function getProjectData(slug: string): Promise<ProjectData | null> {
   }
 
   // Get name from various sources with proper fallback chain
-  const verifiedName = getVerifiedValue(verifiedData?.basic_information?.name) || verifiedData?.project;
-  const projectName = metadata?.name || verifiedName || slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+  // Handles multiple verified_data.json formats: basic_information, project_basic_info, tier_1_data
+  const verifiedName =
+    getVerifiedValue(verifiedData?.basic_information?.name) ||
+    verifiedData?.project_basic_info?.official_name ||
+    getVerifiedValue(verifiedData?.tier_1_data?.name) ||
+    getVerifiedValue(verifiedData?.tier_1_essential?.name) ||
+    verifiedData?.project_name ||
+    verifiedData?.project;
+
+  // Prefer verified_data over project_metadata when metadata looks like template data
+  // (empty description is a sign of template/placeholder data)
+  const metadataIsTemplate = metadata && !metadata.description;
+  const projectName = (metadataIsTemplate ? verifiedName : metadata?.name) || verifiedName || slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
 
   // Get description from various sources
-  const verifiedDesc = getVerifiedValue(verifiedData?.basic_information?.description);
+  const verifiedDesc =
+    getVerifiedValue(verifiedData?.basic_information?.description) ||
+    verifiedData?.project_basic_info?.description ||
+    getVerifiedValue(verifiedData?.tier_1_data?.description);
   const projectDesc = githubAnalysis?.repository?.description || metadata?.description || verifiedDesc || '';
 
   // Get links from various sources
-  const verifiedGithub = getVerifiedValue(verifiedData?.official_links?.github);
-  const verifiedWebsite = getVerifiedValue(verifiedData?.official_links?.website);
+  const verifiedGithub =
+    getVerifiedValue(verifiedData?.official_links?.github) ||
+    verifiedData?.project_basic_info?.github ||
+    getVerifiedValue(verifiedData?.tier_1_data?.github);
+  const verifiedWebsite =
+    getVerifiedValue(verifiedData?.official_links?.website) ||
+    verifiedData?.project_basic_info?.website ||
+    getVerifiedValue(verifiedData?.tier_1_data?.website);
 
   return {
     name: projectName,
