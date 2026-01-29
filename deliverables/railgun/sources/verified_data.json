@@ -1,0 +1,305 @@
+{
+  "project_id": "railgun",
+  "project_name": "RAILGUN",
+  "official_description": "On-chain ZK privacy ecosystem for DeFi using zero-knowledge proofs",
+  "status": "active",
+  "category": "privacy_protocol",
+  "subcategory": "defi_privacy",
+  "founded": "2021",
+  "founded_year": 2021,
+  "websites": {
+    "main": "https://railgun.org",
+    "docs": "https://docs.railgun.org/wiki",
+    "github": "https://github.com/Railgun-Community",
+    "github_privacy": "https://github.com/Railgun-Privacy/contract",
+    "wallet": "https://www.railway.xyz"
+  },
+  "description": "RAILGUN is a decentralized smart contract system enabling zero-knowledge privacy for on-chain decentralized applications. It uses zk-SNARKs to provide private transactions, shielded balances, and anonymous DeFi interactions directly on Ethereum and other EVM-compatible chains without bridges or separate chains.",
+  "founders": [
+    {
+      "name": "Emmanuel Goldstein",
+      "role": "Founder, Development Leader",
+      "background": "10 years mobile games and game economy development, cybersecurity experience in former government departments, long-term DeFi LP",
+      "pseudonymous": true,
+      "sources": [
+        "https://crypto.news/exclusive-interview-emmanuel-goldstein-defi-scientist-founder-railgun/",
+        "https://www.coincarp.com/project/railgun/"
+      ],
+      "confidence": 0.85
+    }
+  ],
+  "team": {
+    "structure": "Decentralized governance, no RAILGUN company",
+    "notable_members": [
+      {
+        "name": "Andrey Kravchenko",
+        "role": "Project Manager",
+        "background": "PhD, lecturer and MBA in Computer Science at Oxford University, Deep Learning research direction",
+        "sources": ["https://tokeninsight.com/en/research/analysts-pick/railgun-better-user-experiences-privacy-middleware"],
+        "confidence": 0.80
+      }
+    ],
+    "academic_background": "Team includes Ivy League educated members, high proportion of Oxford graduates, strong academic advisor backgrounds (top 3 UK universities)",
+    "sources": [
+      "https://tokeninsight.com/en/research/analysts-pick/railgun-better-user-experiences-privacy-middleware"
+    ]
+  },
+  "technology": {
+    "type": "zkSNARK_privacy_layer",
+    "base_layer": "ethereum_and_evm",
+    "multi_chain": true,
+    "supported_chains": [
+      "ethereum",
+      "polygon",
+      "binance_smart_chain",
+      "arbitrum"
+    ],
+    "privacy_mechanism": "zk-SNARKs",
+    "cryptography": [
+      "zk-SNARKs (Groth16)",
+      "Poseidon hash function",
+      "Elliptic Curve Cryptography (BN254)"
+    ],
+    "key_innovations": [
+      "54 unique circuits for different transaction types",
+      "On-chain zkSNARK verification via EIP-197 and EIP-198",
+      "UTXO-based shielded balance system",
+      "Merkle tree commitment storage with root history",
+      "Private Proofs of Innocence (PPOI) compliance system",
+      "Modular upgradeable architecture via EIP-1967 proxy"
+    ],
+    "token_support": ["ERC-20", "ERC-721 (NFTs)", "ERC-1155 (future)"],
+    "frameworks": [
+      "Circom (circuits)",
+      "Solidity ^0.8.7",
+      "OpenZeppelin (upgradeable contracts)"
+    ],
+    "license": "UNLICENSED (private)",
+    "decentralization": "Fully decentralized smart contracts, no centralized control"
+  },
+  "contracts": [
+    {
+      "network": "ethereum",
+      "name": "Railgun Relay (Proxy)",
+      "address": "0xfa7093cdd9ee6932b4eb2c9e1cde7ce00b1fa4b9",
+      "type": "EIP-1967 Transparent Proxy",
+      "implementation": "0xb4f2d77bd12c6b548ae398244d7fad4abce4d89b",
+      "verified": true,
+      "explorer_url": "https://etherscan.io/address/0xfa7093cdd9ee6932b4eb2c9e1cde7ce00b1fa4b9",
+      "confidence": 0.95
+    },
+    {
+      "network": "ethereum",
+      "name": "RAIL Token",
+      "address": "0xe76C6c83af64e4C60245D8C7dE953DF673a7A33D",
+      "type": "ERC-20 Governance Token",
+      "verified": true,
+      "explorer_url": "https://etherscan.io/address/0xe76C6c83af64e4C60245D8C7dE953DF673a7A33D",
+      "confidence": 0.98
+    },
+    {
+      "network": "ethereum",
+      "name": "Railgun Treasury",
+      "address": "0xe8a8b458bcd1ececc6b6b58f80929b29ccecff40",
+      "type": "Pausable Upgradeable Proxy",
+      "verified": true,
+      "explorer_url": "https://etherscan.io/address/0xe8a8b458bcd1ececc6b6b58f80929b29ccecff40",
+      "confidence": 0.95
+    }
+  ],
+  "token": {
+    "name": "RAIL",
+    "type": "governance",
+    "max_supply_ethereum": 100000000,
+    "circulating_supply": 57500000,
+    "initial_circulating": 50000000,
+    "dao_locked": 50000000,
+    "chains": {
+      "ethereum": "RAIL - 100M max",
+      "polygon": "RAILPOLY - 55M max",
+      "bsc": "RAILBSC - 44.5M max"
+    },
+    "utility": [
+      "DAO governance voting (1 token = 1 vote)",
+      "Staking for voting power",
+      "Active Governor Rewards eligibility",
+      "Treasury fee distribution (0.25% on shield/unshield)"
+    ],
+    "staking": {
+      "lock_time": "30 days",
+      "snapshot_interval": "1 day"
+    }
+  },
+  "compliance": {
+    "private_proofs_of_innocence": {
+      "deployed": "2024",
+      "description": "Zero-knowledge proof system that blocks illicit funds from entering privacy pools without revealing user information",
+      "data_source": "Publicly available blockchain data, curated exclusion lists",
+      "default_list": "OFAC designated list updated by Chainalysis",
+      "proven_blocks": [
+        {
+          "incident": "Inferno Drainer",
+          "amount": "$530,000",
+          "result": "blocked"
+        },
+        {
+          "incident": "zkLend attack",
+          "amount": "$9.5M",
+          "result": "blocked",
+          "praise": "Vitalik Buterin called it 'solid demonstration of compliant privacy in practice'"
+        }
+      ],
+      "limitations": "Some sophisticated attackers have bypassed the system (e.g., Upbit hacker)",
+      "sources": [
+        "https://docs.railgun.org/wiki/assurance/private-proofs-of-innocence",
+        "https://medium.com/@Railgun_Project/having-your-privacy-eating-it-too-railgun-proof-of-innocence-efcba557aac4",
+        "https://www.theblock.co/post/340807/vitalik-buterin-praises-compliance-focused-privacy-project-railgun"
+      ]
+    },
+    "viewing_keys": "Shareable read-only private keys for selective disclosure",
+    "tax_integration": "Transaction history exports compatible with crypto tax software"
+  },
+  "metrics": {
+    "total_volume_processed": "$2,000,000,000+",
+    "total_volume_numeric": 2000000000,
+    "tvl_november_2025": "$95,000,000",
+    "tvl_numeric": 95000000,
+    "dex_liquidity_tvl_october_2025": "$8,570,000",
+    "weth_percentage_of_volume": 76,
+    "active_governor_rewards_2024": "$1,900,000",
+    "monthly_treasury_fees_since_april_2024": "$300,000+",
+    "token_holders": 6193,
+    "token_transactions": 26749
+  },
+  "security_audits": {
+    "audit_count": "10+",
+    "auditors": [
+      "Trail of Bits",
+      "ABDK Consulting",
+      "Zokyo (100 rating)",
+      "Hashcloak",
+      "Pessimistic",
+      "Hacken",
+      "Halborn (upcoming)"
+    ],
+    "audit_reports_url": "https://assets.railgun.org/docs/audits/",
+    "sources": [
+      "https://coinex.medium.com/you-ask-we-answer-vol-21-insight-into-railgun-projects-response-54ff6e176a3d"
+    ],
+    "confidence": 0.90
+  },
+  "funding": {
+    "total_raised": "$10,000,000",
+    "rounds": [
+      {
+        "type": "Strategic",
+        "date": "2022-01-26",
+        "amount": "$10,000,000"
+      }
+    ],
+    "note": "No VC investors or equity holders - truly decentralized project",
+    "sources": [
+      "https://www.coincarp.com/project/railgun/"
+    ]
+  },
+  "milestones": [
+    {
+      "year": 2021,
+      "event": "RAILGUN Founded",
+      "description": "Emmanuel Goldstein founded RAILGUN in United Kingdom",
+      "confidence": 0.90
+    },
+    {
+      "year": 2022,
+      "month": 1,
+      "event": "Strategic Funding Round",
+      "description": "$10M raised in strategic funding",
+      "confidence": 0.90
+    },
+    {
+      "year": 2022,
+      "event": "Multi-Chain Expansion",
+      "description": "Deployed to Polygon, BSC, and Arbitrum",
+      "confidence": 0.85
+    },
+    {
+      "year": 2023,
+      "month": 1,
+      "event": "Lazarus Group Controversy",
+      "description": "FBI alleged Lazarus Group used RAILGUN to launder $60M from Harmony Bridge (before PPOI existed)",
+      "confidence": 0.95
+    },
+    {
+      "year": 2024,
+      "event": "Private Proofs of Innocence Deployed",
+      "description": "PPOI compliance system launched to screen for illicit funds",
+      "confidence": 0.95
+    },
+    {
+      "year": 2025,
+      "month": 2,
+      "event": "zkLend Attack Blocked",
+      "description": "PPOI successfully blocked $9.5M laundering attempt from zkLend hack",
+      "confidence": 0.98
+    },
+    {
+      "year": 2025,
+      "month": 6,
+      "event": "Ethereum Foundation Support",
+      "description": "Ethereum Foundation staked 50,000 RAIL tokens to support RAILGUN",
+      "confidence": 0.90
+    },
+    {
+      "year": 2025,
+      "month": 10,
+      "event": "Kohaku Integration",
+      "description": "Ethereum Foundation integrated RAILGUN into Kohaku privacy wallet toolkit, causing 300% RAIL price surge",
+      "confidence": 0.90
+    }
+  ],
+  "legal_status": {
+    "structure": "Decentralized DAO, no company entity",
+    "jurisdiction": "Founder based in United Kingdom",
+    "regulatory_position": "Compliance-focused with PPOI, viewing keys, and tax integration",
+    "sanctions_status": "Not sanctioned (as of January 2026)",
+    "legal_actions": "None known against protocol itself"
+  },
+  "research_metadata": {
+    "constitution_version": "2.0.0",
+    "constitutional_compliance": true,
+    "research_date": "2026-01-28",
+    "researcher": "claude-opus-4-5",
+    "research_type": "constitutional_deep_research",
+    "confidence_score_overall": 0.88,
+    "sources_count": 35,
+    "verification_methods": [
+      "Official RAILGUN documentation",
+      "GitHub repository code analysis",
+      "Etherscan blockchain verification",
+      "Multiple news and research sources",
+      "CoinGecko and CoinMarketCap data",
+      "Medium official project posts"
+    ],
+    "primary_sources": [
+      "https://railgun.org",
+      "https://docs.railgun.org/wiki",
+      "https://github.com/Railgun-Privacy/contract",
+      "https://github.com/Railgun-Community",
+      "https://etherscan.io/address/0xfa7093cdd9ee6932b4eb2c9e1cde7ce00b1fa4b9",
+      "https://etherscan.io/address/0xe76C6c83af64e4C60245D8C7dE953DF673a7A33D"
+    ],
+    "gaps_identified": [
+      "Full audit reports not publicly accessible via direct links",
+      "Complete team member list not disclosed (pseudonymous project)",
+      "Detailed circuit documentation not fully public",
+      "RAILGUN v3 specific timeline not confirmed"
+    ],
+    "data_quality_notes": [
+      "Founder Emmanuel Goldstein uses pseudonym (reference to 1984 character)",
+      "Contract addresses verified on Etherscan",
+      "Token metrics verified across multiple sources",
+      "PPOI effectiveness has mixed results documented",
+      "No critical security incidents affecting RAILGUN protocol itself"
+    ]
+  }
+}

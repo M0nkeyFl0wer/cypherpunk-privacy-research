@@ -9,12 +9,19 @@
   "founded_month": "August",
   "founded_year": 2019,
   "websites": {
-    "main": "https://tornado.cash",
+    "main": "https://tornadocash.eth.limo",
     "app": "https://tornadocash.eth.limo",
     "nova": "https://nova.tornadocash.eth.limo",
+    "alternate_interfaces": [
+      "https://tornado.ws",
+      "https://tornadocash.eth.link"
+    ],
     "whitepaper": "https://tornado.cash/audits/TornadoCash_whitepaper_v1.4.pdf",
     "github": "https://github.com/tornadocash",
-    "github_core": "https://github.com/tornadocash/tornado-core"
+    "github_core": "https://github.com/tornadocash/tornado-core",
+    "github_nova": "https://github.com/tornadocash/tornado-nova",
+    "github_cli": "https://github.com/tornadocash/tornado-cli",
+    "note": "Original tornado.cash domain was sanctioned; community uses eth.limo ENS gateway and IPFS deployments"
   },
   "description": "Fully decentralized, non-custodial cryptocurrency mixer protocol that runs on Ethereum Virtual Machine-compatible networks, enabling private transactions using zero-knowledge proof technology. Tornado Cash was sanctioned by OFAC in August 2022 but had sanctions lifted in March 2025 following a Fifth Circuit court ruling.",
   "founders": [
