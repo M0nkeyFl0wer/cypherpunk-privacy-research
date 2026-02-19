@@ -2,7 +2,7 @@
 
 An open research project exploring privacy technology using autonomous agent swarms, constitutional frameworks, and rigorous source verification.
 
-**Live Site:** [cypherpunk-research.benwest.io](https://cypherpunk-research.benwest.io)
+**Live Site:** [cypherpunk-research.monkeyflower.ca](https://cypherpunk-research.monkryflower.ca)
 
 ---
 
