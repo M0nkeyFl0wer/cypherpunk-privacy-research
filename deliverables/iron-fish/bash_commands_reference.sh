@@ -160,13 +160,13 @@ npx claude-flow@alpha memory search --pattern "swarm/iron-fish/*"
 # REMOTE EXECUTION (Seshat Server - if needed)
 # =============================================================================
 
-# Copy research to Seshat server (SanDisk storage)
-# scp -P 8888 \
-#   /home/flower/web3privacy-research/deliverables/iron-fish/sources/verified_data.json \
+# Copy research to remote server (external storage)
+# scp -P PORT \
+#   /home/user/web3privacy-research/deliverables/iron-fish/sources/verified_data.json \
 #   your-username@your-server.example.com:/path/to/web3privacy-research/iron-fish/
 
-# Execute validation on Seshat
-# ssh -p 8888 your-username@your-server.example.com \
+# Execute validation on remote server
+# ssh -p PORT your-username@your-server.example.com \
 #   "cd /path/to/web3privacy-research && ./validate_constitutional.sh iron-fish"
 
 # =============================================================================
